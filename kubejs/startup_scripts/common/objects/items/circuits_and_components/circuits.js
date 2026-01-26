@@ -102,6 +102,9 @@ StartupEvents.registry('item', event => {
     event.create('abyssal_processor_mainframe')
         .tooltip(Text.translate('item.kubejs.abyssal_processor_mainframe.tooltip.0'))
         .tooltip(Text.translate('item.kubejs.abyssal_processor_mainframe.tooltip.1'))
-        .texture('kubejs:item/circuits_and_components/circuits/abyssal/processor_mainframe');
+        .textureJson({ 
+            layer0: "kubejs:item/circuits_and_components/circuits/abyssal/processor_mainframe_layer_0",
+            layer1: "kubejs:item/circuits_and_components/circuits/abyssal/processor_mainframe_layer_1"
+        });
 
 });
