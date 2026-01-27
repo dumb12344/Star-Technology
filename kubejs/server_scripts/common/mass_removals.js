@@ -1,3 +1,4 @@
+// priority 10000
 ServerEvents.recipes(event => {
     const id = global.id;
     const toRemoveOutput = ['thermal:machine_furnace', 'thermal:machine_sawmill',
