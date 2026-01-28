@@ -22,6 +22,10 @@ StartupEvents.registry('item', event => {
         .texture(`kubejs:item/misc/extra/compass_of_the_flame`)
         .maxStackSize(1);
 
+    event.create(`moss_ball`)
+        .texture(`kubejs:item/misc/extra/moss_ball`)
+        .maxStackSize(16);
+
     //Tier Multiblocks
     event.create('multiblock_upgrade_kit')
         .tooltip(Text.translate('item.kubejs.multiblock_upgrade_kit.tooltip'))

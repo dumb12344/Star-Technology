@@ -189,6 +189,7 @@ global.not_hardmode(() => {
             .add('farmersdelight:rice_panicle', 0.05)
             .add('minecraft:pumpkin_seeds', 0.10)
             .add('minecraft:melon_seeds', 0.10)
+            .add(`kubejs:moss_ball`, .05)
             // Waterlogged Sand Sieving
             .input(csi.sand)
             .waterlogged(true)

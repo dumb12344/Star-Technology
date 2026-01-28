@@ -117,7 +117,14 @@ global.not_hardmode(() => {
             G: 'minecraft:glass',
             C: 'gtceu:bronze_machine_casing',
             B: 'minecraft:bucket'
-        });   
+        });
+        
+        event.shaped(Item.of(`minecraft:moss_block`), [
+            `BB`,
+            `BB`, 
+        ], {
+            B: `kubejs:moss_ball`
+        }).id(`minecraft:moss_block`);
         
     });
 });
