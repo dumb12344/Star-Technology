@@ -14,7 +14,17 @@ PlayerEvents.chat((event) => {
       let result = calculatorExec(ast);
 
       if (typeof result === "number") {
-        result = result.toFixed(5).replace(/\.?0+$/, "");
+        result = result
+          .toFixed(5)
+          .replace(/e([\-+])?(\d+)$/, (_, sign, digits) => {
+            sign = sign === "-" ? "⁻" : "";
+            digits = digits
+              .split("")
+              .map((c) => "⁰¹²³⁴⁵⁶⁷⁸⁹"[+c])
+              .join("");
+            return ` × 10${sign}${digits}`;
+          })
+          .replace(/\.?0+$/, "");
         if (result === "-0") result = "0";
       }
 
@@ -26,7 +36,7 @@ PlayerEvents.chat((event) => {
           Text.gray(" [Click to Copy]"),
         ])
           .clickCopy(result)
-          .hover(Text.of("Click to copy"))
+          .hover(Text.of("Click to copy")),
       );
     } catch (e) {
       /** @type {string} */
@@ -37,7 +47,7 @@ PlayerEvents.chat((event) => {
           Text.aqua(message),
           Text.red(": "),
           Text.gray(error),
-        ])
+        ]),
       );
     }
     event.cancel();
@@ -88,7 +98,7 @@ let calculatorExec = (() => {
         let args = Array.from(arguments);
         if (args.length === 0) {
           throw new Error(
-            "wrong argument count for max: expected 1 or more, got 0"
+            "wrong argument count for max: expected 1 or more, got 0",
           );
         }
         if (args.some((a) => typeof a !== "number")) {
@@ -102,7 +112,7 @@ let calculatorExec = (() => {
         let args = Array.from(arguments);
         if (args.length === 0) {
           throw new Error(
-            "wrong argument count for max: expected 1 or more, got 0"
+            "wrong argument count for max: expected 1 or more, got 0",
           );
         }
         if (args.some((a) => typeof a !== "number")) {
@@ -132,7 +142,7 @@ let calculatorExec = (() => {
           ": expected " +
           expectedArgs.length +
           ", got " +
-          args.length
+          args.length,
       );
     }
     let argTypes = args.map((arg) => typeof arg);
@@ -145,7 +155,7 @@ let calculatorExec = (() => {
         expectedArgs.join(", ") +
         "], got [" +
         argTypes.join(", ") +
-        "]"
+        "]",
     );
   }
 
@@ -155,6 +165,17 @@ let calculatorExec = (() => {
    */
   function calculate(node) {
     switch (node.type) {
+      case "unOp": {
+        let value = calculate(node.value);
+        switch (node.operator) {
+          case "+":
+            validateArguments("plus", ["number"], [value]);
+            return value;
+          case "-":
+            validateArguments("negate", ["number"], [value]);
+            return -value;
+        }
+      }
       case "binOp": {
         let left = calculate(node.left);
         let right = calculate(node.right);
@@ -166,14 +187,14 @@ let calculatorExec = (() => {
             validateArguments(
               "subtraction",
               ["number", "number"],
-              [left, right]
+              [left, right],
             );
             return left - right;
           case "*":
             validateArguments(
               "multiplication",
               ["number", "number"],
-              [left, right]
+              [left, right],
             );
             return left * right;
           case "/":
@@ -183,7 +204,7 @@ let calculatorExec = (() => {
             validateArguments(
               "floor division",
               ["number", "number"],
-              [left, right]
+              [left, right],
             );
             return Math.floor(left / right);
           case "%":
@@ -193,7 +214,7 @@ let calculatorExec = (() => {
             validateArguments(
               "exponentiation",
               ["number", "number"],
-              [left, right]
+              [left, right],
             );
             return Math.pow(left, right);
         }
@@ -459,7 +480,7 @@ function calculatorParse(tokens) {
   function expect(token) {
     if (!accept(token)) {
       throw new Error(
-        "expected " + token + " got " + prettyToken(next()) + " instead"
+        "expected " + token + " got " + prettyToken(next()) + " instead",
       );
     }
   }
