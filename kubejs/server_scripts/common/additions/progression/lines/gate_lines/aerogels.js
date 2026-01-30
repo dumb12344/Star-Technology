@@ -61,7 +61,7 @@ ServerEvents.recipes (event => {
     fs(id(`wet_aerogel_ingot`))
         .notConsumable(`gtceu:ingot_casting_mold`)
         .inputFluids(`gtceu:aerogel_precursor_solution 1000`)
-        .itemOutputs(`gtceu:wet_aerogel_ingot`)
+        .itemOutputs(`kubejs:wet_aerogel_ingot`)
         .duration(200)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
@@ -75,7 +75,5 @@ ServerEvents.recipes (event => {
 
     //dust removal
     event.remove({output: `gtceu:aerogel_dust`});
-    event.remove({output: `gtceu:wet_aerogel_dust`});
-    event.remove({output: `gtceu:wet_aerogel_nugget`});
-    
+    event.remove({input: `gtceu:aerogel_dust`});
 })
