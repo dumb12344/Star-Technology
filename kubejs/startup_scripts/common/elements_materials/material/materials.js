@@ -1791,14 +1791,11 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid(`tetraethyl_orthosilicate`, [`silicon`, `8x carbon`, `20x hydrogen`, `4x oxygen`], 0xDBDBDB, [no_decomp]);
     noCompFluid(`aerogel_precursor_solution`, 0xAEBBBF);
 
-    event.create(`wet_aerogel`)
-        .ingot()
-        .color(0xAEBBBF);
-    
     event.create(`aerogel`)
         .polymer()
         .ingot()
-        .color(0x9FACB3)
+        .color(0x9fcad9)
+        .secondaryColor(0xe5f1ee)
         .flags(foil, plates);
 
 
