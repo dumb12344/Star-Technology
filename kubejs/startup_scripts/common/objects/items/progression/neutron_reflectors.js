@@ -5,7 +5,6 @@ StartupEvents.registry('item', event => {
         event.create(`${reflector}_neutron_reflector`)
             .texture(`kubejs:item/progression/neutron_reflector/${reflector}`)
             .tooltip(Text.translate(`item.kubejs.${reflector}_neutron_reflector.tooltip`))
-            .tooltip(Text.translate(`item.kubejs.neutron_reflector_tier.tooltip`) + `§bT${i+1}`)
     });
 
 });

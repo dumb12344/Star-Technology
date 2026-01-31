@@ -626,11 +626,10 @@
     "block.kubejs.manganin_casing": "Manganin Casing",
     "block.kubejs.galvanized_steel_casing": "Galvanized Steel Casing",
 
-    "item.kubejs.neutron_reflector_tier.tooltip" : "Level of Refectivity:",
     "item.kubejs.basic_neutron_reflector" : "Basic Neutron Reflector",
     "item.kubejs.basic_neutron_reflector.tooltip" : "§7Used for \"Simple\" Fusion Reactions",
     "item.kubejs.advanced_neutron_reflector" : "Advanced Neutron Reflector",
-    "item.kubejs.advanced_neutron_reflector.tooltip" : "§7Stronger and more powerful, it uses heavier elements to enable it.",
+    "item.kubejs.advanced_neutron_reflector.tooltip" : "§7Stronger and more powerful.",
     "item.kubejs.complex_neutron_reflector" : "Complex Neutron Reflector",
     "item.kubejs.complex_neutron_reflector.tooltip" : "§7Capable of enabling Abydos Technologies.",
     "item.kubejs.reinforced_neutron_reflector" : "Reinforced Neutron Reflector",
