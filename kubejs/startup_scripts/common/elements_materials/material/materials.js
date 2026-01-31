@@ -1792,10 +1792,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid(`phosgene`, [`carbon`, `oxygen`, `2x chlorine`], 0xFDFEFC, [no_decomp]);
 
     event.create(`polycarbonate`)
-        .ingot()
-        .liquid()
-        .color(0xFAFAFA)
-        .secondaryColor(0xFAF5C0)
+        .polymer()
+        .fluid()
+        .color(0x141414)
         .components(`3x oxygen`, `16x carbon`, `16x hydrogen`)
         .flags(no_decomp, foil, plates)
         .fluidPipeProperties(388, 300, true, true, false, false);

@@ -36,4 +36,13 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/basic/fluix_casing');
 
+    event.create(`polycarbonate_casing`)
+        .hardness(5)
+        .resistance(1)
+        .soundType(`metal`)
+        .requiresTool(true)
+        .tagBlock(`mineable/pickaxe`)
+        .tagBlock(`minecraft:needs_iron_tool`)
+        .textureAll(`kubejs:block/casings/basic/machine_casing_polycarbonate`);
+
 });

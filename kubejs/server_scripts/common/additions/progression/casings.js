@@ -289,5 +289,10 @@ ServerEvents.recipes(event => {
         .duration(320)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-
+    event.recipes.gtceu.assembler(id(`polycarbonate_casing`))
+        .itemInputs(`gtceu:clean_machine_casing`)
+        .inputFluids(`gtceu:polycarbonate 216`)
+        .itemOutputs(`kubejs:polycarbonate_casing`)
+        .duration(200)
+        .EUt(GTValues.VHA[GTValues.LuV]);
 });
