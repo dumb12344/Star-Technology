@@ -22,6 +22,10 @@
             // sets multiblock to use steam
         //.recipeModifier($StarTRecipeModifiers.START_STEAM_PARALLEL)
             //Adds StartSteamMulti as a recipe modifier
+
+    // const $StarTHellForgeMulti = Java.loadClass('com.startechnology.start_core.machine.hellforge.StarTHellForgeMachine');
+        //.machine((holder) => new $StarTHellForgeMulti(holder))
+            // sets multiblock to have hell forge heating
     
     const $StarTThreadingStatBlocks = Java.loadClass('com.startechnology.start_core.machine.threading.StarTThreadingStatsPredicate');
         // $StarTThreadingStatBlocks.threadingStatBlocks()
