@@ -30,7 +30,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                     .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
                     .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                    .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1)))
+                    .or(Predicates.abilities(PartAbility.INPUT_ENERGY_2A).setExactLimit(1)))
                 .where(' ', Predicates.air())
                 .build())
             .workableCasingModel(`kubejs:block/casings/large_cubes/${casing}_casing`,
@@ -73,7 +73,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setExactLimit(1)))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY_2A).setExactLimit(1)))
             .where(' ', Predicates.air())
             .build())
         .workableCasingModel('kubejs:block/casings/large_cubes/red_steel_casing',
