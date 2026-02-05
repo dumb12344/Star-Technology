@@ -59,12 +59,6 @@ global.getComponentTotal = (components) => {
       secCount: 0,
       tertCount: 0
   }
-  const block = { 
-      primBlock: false,
-      cableBlock: false,
-      secBlock: false,
-      tertBlock: false
-  }
 
   // adds all sent component ingredients together
   let component; 
@@ -75,27 +69,6 @@ global.getComponentTotal = (components) => {
       totalCounts.secCount += component.secCount;
       totalCounts.tertCount += component.tertCount;
   }
-
-  // checks if the value should be sent in block form
-  if (totalCounts.primCount > 64) {
-      totalCounts.primCount = Math.trunc(totalCounts.primCount / 9);
-      block.primBlock = true;
-  }
-  if (totalCounts.cableCount > 64) {
-      totalCounts.cableCount = Math.trunc(totalCounts.cableCount / 9);
-      block.cableBlock = true;
-  }
-  if (totalCounts.secCount > 64) {
-      totalCounts.secCount = Math.trunc(totalCounts.secCount / 9);
-      block.secBlock = true;
-  }
-  if (totalCounts.tertCount > 64) {
-      totalCounts.tertCount = Math.trunc(totalCounts.tertCount / 9);
-      block.tertBlock = true;
-  }
   
-  return {
-    endCount: totalCounts,
-    blockBool: block
-  };
+  return totalCounts;
 }
