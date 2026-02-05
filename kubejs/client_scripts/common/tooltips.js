@@ -44,6 +44,11 @@ ItemEvents.tooltip(event => {
         text.add(4, Text.of('   §bAbsolute Stabilization'));
     });
 
+    event.addAdvanced('gtceu:large_maceration_tower', (item, advanced, text) => {
+        text.remove(2);
+        text.add(2, Text.translate('block.gtceu.large_maceration_tower.tooltip.1'));
+    });
+
     //Custom Colossal Chest Tooltips
     const colossalTypes = [`wood`, `copper`, `iron`, `silver`, `gold`, `diamond`, `obsidian`];
     colossalTypes.forEach(type => {

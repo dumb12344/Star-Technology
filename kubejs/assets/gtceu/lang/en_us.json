@@ -1349,7 +1349,7 @@
     "block.gtceu.material_annihilation_array.tooltip.0": "§3§lMulti-threaded Deconstructor",
     "block.gtceu.material_annihilation_array.tooltip.1": "§7A destructive-refinement array that vaporizes bulk matter into fundamental particulate clouds, then reforms them through extreme regimes.",
     "block.gtceu.material_annihilation_array.tooltip.2": "§8-----------------------------------",
-    "block.gtceu.material_annihilation_array.tooltip.3": "§7Available Recipe Types: §fBulk Ore Processing§7, §fArc Furnace§7, §fMacerator",
+    "block.gtceu.material_annihilation_array.tooltip.3": "§7Available Recipe Types: §fBulk Ore Processing§7, §fArc Furnace§7, §fMacerator§7, §fPulverizer",
     "block.gtceu.material_annihilation_array.tooltip.4": "Can use §3Parallel§r hatches§r, has §5Threading§r, §2Bulking§r, and §cSubtick Parallels§r",
 
     "block.gtceu.molecular_inducing_xanadu": "Molecular Inducing Xanadu",
@@ -1407,6 +1407,7 @@
     "material.gtceu.raw_brine": "Raw Brine",
     "material.gtceu.debrominated_brine": "Debrominated Brine",
     "material.gtceu.brominated_chlorine_vapor": "Brominated Chlorine Vapor",
-    "material.gtceu.acidic_bromine_exhaust": "Acidic Bromine Exhaust"
+    "material.gtceu.acidic_bromine_exhaust": "Acidic Bromine Exhaust",
 
+    "block.gtceu.large_maceration_tower.tooltip.1": "Available Recipe Types: Macerator, Pulverizer" 
 }
