@@ -112,7 +112,7 @@ global.componentMaterials = {
             buzz: 'duranium',
             chip: 'gtceu:uhpic',
             fluidStorage: 'start_core:enriched_naquadah_drum',
-            itemStorage: 'gtceu:lv_super_chest' //to be ENaq Crate when added
+            itemStorage: 'start_core:enriched_naquadah_crate' //to be ENaq Crate when added
         },
         scaling: {
             scaler: 3,
@@ -153,7 +153,7 @@ global.componentMaterials = {
             buzz: 'neutronium',
             chip: 'gtceu:uhpic',
             fluidStorage: 'start_core:neutronium_drum',
-            itemStorage: 'gtceu:mv_super_chest' //to be Nt Crate when added
+            itemStorage: 'start_core:neutronium_crate'
         },
         scaling: {
             scaler: 4,
