@@ -51,10 +51,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.rock_breaker(id(`sky_stone`))
         .notConsumable(`ae2:sky_dust`)
         .itemOutputs(`ae2:sky_stone_block`)
+        .adjacentFluids("minecraft:lava", 'thermal:ender')
         .duration(48)
-        .EUt(84)
-        .addDataString('fluidA', 'minecraft:lava')
-        .addDataString('fluidB', 'thermal:ender');
+        .EUt(84);
     
     event.recipes.gtceu.large_rock_crusher(id(`sky_stone_block`))
         .notConsumable(`ae2:sky_dust`)
