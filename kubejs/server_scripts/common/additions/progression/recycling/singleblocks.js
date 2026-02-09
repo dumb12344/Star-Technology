@@ -412,7 +412,7 @@ global.not_hardmode(() => {
 
             tiers.forEach(tier => {
                 outputs = getFinalOutputs(getSingleblockRecycleOutputs(singleblock, tier), false);
-                event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${singleblock}`))
+                event.recipes.gtceu.arc_furnace(`start:arc_${tier}_${singleblock}`)
                     .itemInputs(`gtceu:${tier}_${singleblock}`)
                     .itemOutputs(outputs)
                     .duration(calculateDuration(outputs))
@@ -429,7 +429,7 @@ global.not_hardmode(() => {
 
             tiers.forEach(tier => {
                 outputs = getFinalOutputs(getSingleblockRecycleOutputs(singleblock, tier), true);
-                event.recipes.gtceu.macerator(id(`macerate_${tier}_${singleblock}`))
+                event.recipes.gtceu.macerator(`start:macerate_${tier}_${singleblock}`)
                     .itemInputs(`gtceu:${tier}_${singleblock}`)
                     .itemOutputs(outputs)
                     .duration(calculateDuration(outputs))

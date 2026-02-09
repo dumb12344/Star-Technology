@@ -59,14 +59,44 @@ global.getComponentTotal = (components) => {
       secCount: 0,
       tertCount: 0
   }
+  let position;
 
   // adds all sent component ingredients together
-  for (let x=0; x<=length; x++) {
-      var component = componentRecycleCount[components[x]]
-      totalCounts.primCount += component.primCount;
-      totalCounts.cableCount += component.cableCount;
-      totalCounts.secCount += component.secCount;
-      totalCounts.tertCount += component.tertCount;
+  for (let x=0; x<=length; x++) { 
+    switch (components[x]) { //finds location of given component
+      case "sensor": {
+        position = 0;
+      }
+      case "emitter": {
+        position = 1;
+      }
+      case "field_generator": {
+        position = 2;
+      }
+      case "robot_arm": {
+        position = 3;
+      }
+      case "electric_piston": {
+        position = 4;
+      }
+      case "conveyor_module": {
+        position = 5;
+      }
+      case "fluid_regulator": {
+        position = 6;
+      }
+      case "electric_pump": {
+        position = 7;
+      }
+      case "electric_motor": {
+        position = 8;
+      }
+    }
+    var componentCount = componentCountRecycleCount[position]
+    totalCounts.primCount += componentCount.primCount;
+    totalCounts.cableCount += componentCount.cableCount;
+    totalCounts.secCount += componentCount.secCount;
+    totalCounts.tertCount += componentCount.tertCount;
   }
   
   return totalCounts;
