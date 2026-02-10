@@ -62,10 +62,8 @@ global.getComponentTotal = (components) => {
 
   // adds all sent component ingredients together
   components.forEach(component => {
-    console.log(`component: ${component}`);
     switch (component) {
       case "sensor": {
-        console.log(`sensor details: ${componentRecycleCount.sensor.primCount}, ${componentRecycleCount.sensor.cableCount}, ${componentRecycleCount.sensor.secCount}, ${componentRecycleCount.sensor.tertCount}`);
         totalCounts.primCount += componentRecycleCount.sensor.primCount;
         totalCounts.cableCount += componentRecycleCount.sensor.cableCount;
         totalCounts.secCount += componentRecycleCount.sensor.secCount;
@@ -73,7 +71,6 @@ global.getComponentTotal = (components) => {
         break;
       }
       case "emitter": {
-        console.log(`emitter details: ${componentRecycleCount.emitter.primCount}, ${componentRecycleCount.emitter.cableCount}, ${componentRecycleCount.emitter.secCount}, ${componentRecycleCount.emitter.tertCount}`);
         totalCounts.primCount += componentRecycleCount.emitter.primCount;
         totalCounts.cableCount += componentRecycleCount.emitter.cableCount;
         totalCounts.secCount += componentRecycleCount.emitter.secCount;
@@ -81,7 +78,6 @@ global.getComponentTotal = (components) => {
         break;
       }
       case "field_generator": {
-        console.log(`field_generator details: ${componentRecycleCount.field_generator.primCount}, ${componentRecycleCount.field_generator.cableCount}, ${componentRecycleCount.field_generator.secCount}, ${componentRecycleCount.field_generator.tertCount}`);
         totalCounts.primCount += componentRecycleCount.field_generator.primCount;
         totalCounts.cableCount += componentRecycleCount.field_generator.cableCount;
         totalCounts.secCount += componentRecycleCount.field_generator.secCount;
@@ -89,7 +85,6 @@ global.getComponentTotal = (components) => {
         break;
       }
       case "robot_arm": {
-        console.log(`robot_arm details: ${componentRecycleCount.robot_arm.primCount}, ${componentRecycleCount.robot_arm.cableCount}, ${componentRecycleCount.robot_arm.secCount}, ${componentRecycleCount.robot_arm.tertCount}`);
         totalCounts.primCount += componentRecycleCount.robot_arm.primCount;
         totalCounts.cableCount += componentRecycleCount.robot_arm.cableCount;
         totalCounts.secCount += componentRecycleCount.robot_arm.secCount;
@@ -97,7 +92,6 @@ global.getComponentTotal = (components) => {
         break;
       }
       case "electric_piston": {
-        console.log(`electric_piston details: ${componentRecycleCount.electric_piston.primCount}, ${componentRecycleCount.electric_piston.cableCount}, ${componentRecycleCount.electric_piston.secCount}, ${componentRecycleCount.electric_piston.tertCount}`);
         totalCounts.primCount += componentRecycleCount.electric_piston.primCount;
         totalCounts.cableCount += componentRecycleCount.electric_piston.cableCount;
         totalCounts.secCount += componentRecycleCount.electric_piston.secCount;
@@ -105,7 +99,6 @@ global.getComponentTotal = (components) => {
         break;
       }
       case "conveyor_module": {
-        console.log(`conveyor_module details: ${componentRecycleCount.conveyor_module.primCount}, ${componentRecycleCount.conveyor_module.cableCount}, ${componentRecycleCount.conveyor_module.secCount}, ${componentRecycleCount.conveyor_module.tertCount}`);
         totalCounts.primCount += componentRecycleCount.conveyor_module.primCount;
         totalCounts.cableCount += componentRecycleCount.conveyor_module.cableCount;
         totalCounts.secCount += componentRecycleCount.conveyor_module.secCount;
@@ -113,7 +106,6 @@ global.getComponentTotal = (components) => {
         break;
       }
       case "fluid_regulator": {
-        console.log(`fluid_regulator details: ${componentRecycleCount.fluid_regulator.primCount}, ${componentRecycleCount.fluid_regulator.cableCount}, ${componentRecycleCount.fluid_regulator.secCount}, ${componentRecycleCount.fluid_regulator.tertCount}`);
         totalCounts.primCount += componentRecycleCount.fluid_regulator.primCount;
         totalCounts.cableCount += componentRecycleCount.fluid_regulator.cableCount;
         totalCounts.secCount += componentRecycleCount.fluid_regulator.secCount;
@@ -121,7 +113,6 @@ global.getComponentTotal = (components) => {
         break;
       }
       case "electric_pump": {
-        console.log(`electric_pump details: ${componentRecycleCount.electric_pump.primCount}, ${componentRecycleCount.electric_pump.cableCount}, ${componentRecycleCount.electric_pump.secCount}, ${componentRecycleCount.electric_pump.tertCount}`);
         totalCounts.primCount += componentRecycleCount.electric_pump.primCount;
         totalCounts.cableCount += componentRecycleCount.electric_pump.cableCount;
         totalCounts.secCount += componentRecycleCount.electric_pump.secCount;
@@ -129,7 +120,6 @@ global.getComponentTotal = (components) => {
         break;
       }
       case "electric_motor": {
-        console.log(`electric_motor details: ${componentRecycleCount.electric_motor.primCount}, ${componentRecycleCount.electric_motor.cableCount}, ${componentRecycleCount.electric_motor.secCount}, ${componentRecycleCount.electric_motor.tertCount}`);
         totalCounts.primCount += componentRecycleCount.electric_motor.primCount;
         totalCounts.cableCount += componentRecycleCount.electric_motor.cableCount;
         totalCounts.secCount += componentRecycleCount.electric_motor.secCount;
@@ -137,7 +127,6 @@ global.getComponentTotal = (components) => {
         break;
       }
     }
-    console.log(`total counts: ${totalCounts.primCount}, ${totalCounts.cableCount}, ${totalCounts.secCount}, ${totalCounts.tertCount}`);
   });
   
   return totalCounts;

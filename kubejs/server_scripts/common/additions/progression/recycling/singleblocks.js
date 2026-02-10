@@ -307,9 +307,9 @@ global.not_hardmode(() => {
             }
             
             switch(tier) {
-                case `uhv`:
+                case "uhv": {
                     const CRuhv = componentRecycles.uhv;
-                    materials.casing = `gtceu:neutronium`,
+                    materials.casing = "gtceu:neutronium",
                     materials.compPrim = CRuhv.primMaterial,
                     materials.cable = CRuhv.cable,
                     materials.compSec = CRuhv.secMaterial,
@@ -317,9 +317,10 @@ global.not_hardmode(() => {
                     materials.wire = `gtceu:${singleComponents.uhv.materials.wire}`,
                     materials.elctrlyzWire = `gtceu:${singleComponents.uhv.materials.elctrlyzWire}`
                     break;
-                case `uev`:
+                }
+                case "uev": {
                     const CRuev = componentRecycles.uev;
-                    materials.casing = `gtceu:mythrolic_alloy`,
+                    materials.casing = "gtceu:mythrolic_alloy",
                     materials.compPrim = CRuev.primMaterial,
                     materials.cable = CRuev.cable,
                     materials.compSec = CRuev.secMaterial,
@@ -327,9 +328,10 @@ global.not_hardmode(() => {
                     materials.wire = `gtceu:${singleComponents.uev.materials.wire}`,
                     materials.elctrlyzWire = `gtceu:${singleComponents.uev.materials.elctrlyzWire}`
                     break;
-                case `uiv`:
-                    const CRuiv = componentRecycles.uev;
-                    materials.casing = `gtceu:chaotixic_alloy`,
+                }
+                case "uiv": {
+                    const CRuiv = componentRecycles.uiv;
+                    materials.casing = "gtceu:chaotixic_alloy",
                     materials.compPrim = CRuiv.primMaterial,
                     materials.cable = CRuiv.cable,
                     materials.compSec = CRuiv.secMaterial,
@@ -337,6 +339,7 @@ global.not_hardmode(() => {
                     materials.wire = `gtceu:${singleComponents.uiv.materials.wire}`,
                     materials.elctrlyzWire = `gtceu:${singleComponents.uiv.materials.elctrlyzWire}`
                     break;
+                }
             }
 
             const specialSingleOutputs = {
@@ -364,35 +367,69 @@ global.not_hardmode(() => {
             }
             else {
                 const tempTotals = global.getComponentTotal(components);
-                 tempTotals.cableCount += extraCables;
-                console.log(`counts pre block check: prim: ${tempTotals.primCount}, cable: ${tempTotals.cableCount}, sec: ${tempTotals.secCount}, tert: ${tempTotals.tertCount}`);
-                const tempArr = global.checkComponentCount(tempTotals);
-                const {
-                    blockBools: {
-                        primBlock,
-                        cableBlock,
-                        secBlock,
-                        tertBlock
-                    },
-                    totals: {
-                        primCount,
-                        cableCount,
-                        secCount,
-                        tertCount
-                    }
-                } = tempArr;
+                tempTotals.cableCount += extraCables;
+                if (tier == "uhv") {
+                    console.log(`counts pre block check: prim: ${tempTotals.primCount}, cable: ${tempTotals.cableCount}, sec: ${tempTotals.secCount}, tert: ${tempTotals.tertCount}`);
+                    const tempArr = global.checkComponentCount(tempTotals);
+                    const {
+                        blockBools: {
+                            primBlock,
+                            cableBlock,
+                            secBlock,
+                            tertBlock
+                        },
+                        totals: {
+                            primCount,
+                            cableCount,
+                            secCount,
+                            tertCount
+                        }
+                    } = tempArr;
+                    
+                    console.log(`counts post block check: prim: ${primCount}, cable: ${cableCount}, sec: ${secCount}, tert: ${tertCount}`);
+                    let position = 0;
                 
-                console.log(`counts post block check: prim: ${primCount}, cable: ${cableCount}, sec: ${secCount}, tert: ${tertCount}`);
-                let position = 0;
-                recycleOutputs[position] = `${casingCount}x ${materials.casing}`; position++;
-                if (primCount != 0) {recycleOutputs[position] = `${primCount}x ${materials.compPrim}`; position++;}
-                if (cableCount != 0) {recycleOutputs[position] = `${cableCount}x ${materials.cable}`; position++;}
-                if (secCount != 0) {recycleOutputs[position] = `${secCount}x ${materials.compSec}`; position++;}
-                if (tertCount != 0) {recycleOutputs[position] = `${tertCount}x ${materials.compTert}`; position++;}
-                recycleOutputs[position] = primBlock; position++;
-                recycleOutputs[position] = cableBlock; position++;
-                recycleOutputs[position] = secBlock; position++;
-                recycleOutputs[position] = tertBlock; position++;
+                    recycleOutputs[position] = `${casingCount}x ${materials.casing}`; position++;
+                    if (primCount != 0) {recycleOutputs[position] = `${primCount}x ${materials.compPrim}`; position++;}
+                    if (cableCount != 0) {recycleOutputs[position] = `${cableCount}x ${materials.cable}`; position++;}
+                    if (secCount != 0) {recycleOutputs[position] = `${secCount}x ${materials.compSec}`; position++;}
+                    if (tertCount != 0) {recycleOutputs[position] = `${tertCount}x ${materials.compTert}`; position++;}
+                    recycleOutputs[position] = primBlock; position++;
+                    recycleOutputs[position] = cableBlock; position++;
+                    recycleOutputs[position] = secBlock; position++;
+                    recycleOutputs[position] = tertBlock; position++;
+                }
+                else { //assuming all future tiers also have the tert material as the casing material
+                    tempTotals.tertCount += casingCount;
+                    console.log(`counts pre block check: prim: ${tempTotals.primCount}, cable: ${tempTotals.cableCount}, sec: ${tempTotals.secCount}, tert: ${tempTotals.tertCount}`);
+                    const tempArr = global.checkComponentCount(tempTotals);
+                    const {
+                        blockBools: {
+                            primBlock,
+                            cableBlock,
+                            secBlock,
+                            tertBlock
+                        },
+                        totals: {
+                            primCount,
+                            cableCount,
+                            secCount,
+                            tertCount
+                        }
+                    } = tempArr;
+                    
+                    console.log(`counts post block check: prim: ${primCount}, cable: ${cableCount}, sec: ${secCount}, tert: ${tertCount}`);
+                    let position = 0;
+                
+                    if (primCount != 0) {recycleOutputs[position] = `${primCount}x ${materials.compPrim}`; position++;}
+                    if (cableCount != 0) {recycleOutputs[position] = `${cableCount}x ${materials.cable}`; position++;}
+                    if (secCount != 0) {recycleOutputs[position] = `${secCount}x ${materials.compSec}`; position++;}
+                    if (tertCount != 0) {recycleOutputs[position] = `${tertCount}x ${materials.compTert}`; position++;}
+                    recycleOutputs[position] = primBlock; position++;
+                    recycleOutputs[position] = cableBlock; position++;
+                    recycleOutputs[position] = secBlock; position++;
+                    recycleOutputs[position] = tertBlock; position++;
+                }
             }
             if (recycleOutputs != undefined) {
                 console.log(`recycleOutputs: ${recycleOutputs}`);
@@ -400,11 +437,11 @@ global.not_hardmode(() => {
             }
         }
 
-        function getFinalOutputs(outputs, macBool, specialSingleBool) {
+        function getFinalOutputs(outputs, tier, macBool, specialSingleBool) {
             let finalOutputs = [];
             let len = outputs.length - 1;
             const blockBools = [outputs[len-3], outputs[len-2], outputs[len-1], outputs[len]]; //gets the booleans out of the end of the outputs array
-
+            
             //macerator
             if (macBool) {
                 //special singles
@@ -420,16 +457,30 @@ global.not_hardmode(() => {
                 }
                 //normal singles
                 else {
-                    finalOutputs[0] = `${outputs[0]}_dust`;
-                    //adds end sig to every output
-                    for (let x = 1; x < len-3; x++) {
-                        //if item is a block
-                        if (blockBools[x-1]) {
-                            finalOutputs[x] = `${outputs[x]}_dust_block`;
+                    if (tier == "uhv") {   
+                        finalOutputs[0] = `${outputs[0]}_dust`;
+                        //adds end sig to every output
+                        for (let x = 1; x < len-3; x++) {
+                            //if item is a block
+                            if (blockBools[x-1]) {
+                                finalOutputs[x] = `${outputs[x]}_dust_block`;
+                            }
+                            //if not
+                            else {
+                                finalOutputs[x] = `${outputs[x]}_dust`;
+                            }
                         }
-                        //if not
-                        else {
-                            finalOutputs[x] = `${outputs[x]}_dust`;
+                    }
+                    else {
+                        for (let x = 0; x < len-3; x++) {
+                            //if item is a block
+                            if (blockBools[x]) {
+                                finalOutputs[x] = `${outputs[x]}_dust_block`;
+                            }
+                            //if not
+                            else {
+                                finalOutputs[x] = `${outputs[x]}_dust`;
+                            }
                         }
                     }
                 }
@@ -450,16 +501,31 @@ global.not_hardmode(() => {
                     }
                 }
                 else {
-                    finalOutputs[0] = `${outputs[0]}_ingot`;
-                    //adds end sig to every output
-                    for (let x = 1; x < len-3; x++) {
-                        //if item is a block
-                        if (blockBools[x-1]) {
-                            finalOutputs[x] = `${outputs[x]}_block`;
+                    if (tier == "uhv") {
+                        finalOutputs[0] = `${outputs[0]}_ingot`;
+                        //adds end sig to every output
+                        for (let x = 1; x < len-3; x++) {
+                            //if item is a block
+                            if (blockBools[x-1]) {
+                                finalOutputs[x] = `${outputs[x]}_block`;
+                            }
+                            //if not
+                            else {
+                                finalOutputs[x] = `${outputs[x]}_ingot`;
+                            }
                         }
-                        //if not
-                        else {
-                            finalOutputs[x] = `${outputs[x]}_ingot`;
+                    }
+                    else {
+                        //adds end sig to every output
+                        for (let x = 0; x < len-3; x++) {
+                            //if item is a block
+                            if (blockBools[x]) {
+                                finalOutputs[x] = `${outputs[x]}_block`;
+                            }
+                            //if not
+                            else {
+                                finalOutputs[x] = `${outputs[x]}_ingot`;
+                            }
                         }
                     }
                 }
@@ -474,7 +540,7 @@ global.not_hardmode(() => {
             let outputs;
 
             tiers.forEach(tier => {
-                outputs = getFinalOutputs(getSingleblockRecycleOutputs(singleblock, specialSingleBool, tier, components, extraCasings, extraCables), false, specialSingleBool);
+                outputs = getFinalOutputs(getSingleblockRecycleOutputs(singleblock, specialSingleBool, tier, components, extraCasings, extraCables), tier, false, specialSingleBool);
                 console.log (`start:arc_${tier}_${singleblock} outputs: ${outputs}`);
                 event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${singleblock}`))
                     .itemInputs(`gtceu:${tier}_${singleblock}`)
