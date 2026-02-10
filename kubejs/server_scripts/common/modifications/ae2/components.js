@@ -51,10 +51,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.rock_breaker(id(`sky_stone`))
         .notConsumable(`ae2:sky_dust`)
         .itemOutputs(`ae2:sky_stone_block`)
+        .adjacentFluids("minecraft:lava", 'thermal:ender')
         .duration(48)
-        .EUt(84)
-        .addDataString('fluidA', 'minecraft:lava')
-        .addDataString('fluidB', 'thermal:ender');
+        .EUt(84);
     
     event.recipes.gtceu.large_rock_crusher(id(`sky_stone_block`))
         .notConsumable(`ae2:sky_dust`)
@@ -93,17 +92,17 @@ ServerEvents.recipes(event => {
             .itemOutputs(`8x kubejs:${tier.chip}_chip`)
             .duration(900)
             .EUt(global.va[tier.voltage]);
-
-        ['logic', 'engineering', 'calculation'].forEach(type => {
-            event.recipes.gtceu.me_assembler(id(`${type}_processor_${tier.chip}`))
-                .itemInputs(`kubejs:${tier.chip}_chip`, `ae2:printed_${type}_processor`, 'ae2:printed_silicon')
-                .inputFluids('gtceu:soldering_alloy 144')
-                .itemOutputs(`${tier.n}x ae2:${type}_processor`)
-                .duration(tier.dura)
-                .EUt(global.va[tier.voltage]);
-        });
-    
     });
+
+    ['logic', 'engineering', 'calculation'].forEach(type => {
+            event.recipes.gtceu.me_assembler(id(`${type}_processor`))
+                .itemInputs(`kubejs:acu_chip`, `ae2:printed_${type}_processor`, 'ae2:printed_silicon')
+                .inputFluids('gtceu:soldering_alloy 144')
+                .itemOutputs(`2x ae2:${type}_processor`)
+                .duration(360)
+                .EUt(global.va['mv']);
+        });
+
 
     [
         {circuit: 'logic', material: 'gold'},
@@ -191,12 +190,34 @@ ServerEvents.recipes(event => {
             .cleanroom(CleanroomType.CLEANROOM);
     });
 
+    [
+        {type: 'silicon', n:1, time: 900, voltage: 'mv'},
+        {type: 'phosphorus', n: 4, time: 500, voltage: 'hv'},
+        {type: 'naquadah', n: 8, time: 200, voltage: 'ev'},
+        {type: 'neutronium', n: 16, time: 50 , voltage: 'iv'},
+        {type: 'draco', n: 64, time: 20, voltage: 'luv'}
+    ].forEach(wafer => {
+        const { type, n, time, voltage} = wafer
+        event.recipes.gtceu.laser_engraver(id(`engrave_acu_wafer_${type}`))
+            .itemInputs(`${(type == 'draco') ? 'kubejs' : 'gtceu'}:${type}_wafer`)
+            .notConsumable('gtceu:certus_quartz_lens')
+            .itemOutputs(`${n}x kubejs:acu_wafer`)
+            .duration(time)
+            .EUt(global.va[voltage])
+    });
+
     event.recipes.gtceu.cutter(id('ae2_soc_chip'))
         .itemInputs('kubejs:ae2_soc_wafer')
         .itemOutputs('6x kubejs:ae2_soc_chip')
         .duration(900)
         .EUt(global.va['ev'])
         .cleanroom(CleanroomType.CLEANROOM);
+
+    event.recipes.gtceu.cutter(id('acu_chip'))
+        .itemInputs('kubejs:acu_wafer')
+        .itemOutputs('16x kubejs:acu_chip')
+        .duration(900)
+        .EUt(global.va['mv'])
 
     event.recipes.gtceu.chemical_bath(id('fluix_lens'))
         .itemInputs('gtceu:sapphire_lens')

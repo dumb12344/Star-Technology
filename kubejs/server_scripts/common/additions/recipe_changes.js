@@ -31,10 +31,9 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.rock_breaker(id(`${stone}`))
         .notConsumable(`minecraft:${stone}`)
         .itemOutputs(`minecraft:${stone}`)
+        .adjacentFluids("minecraft:lava", 'minecraft:water')
         .duration(16)
-        .EUt(7)
-        .addDataString('fluidA', 'minecraft:lava')
-        .addDataString('fluidB', 'minecraft:water');
+        .EUt(7);
     });
 
     //Added Tools

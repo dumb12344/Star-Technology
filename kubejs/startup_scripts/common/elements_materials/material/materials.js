@@ -307,6 +307,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('nether_star', foil);
     matmod('netherite', no_decomp);
     matmod('echo_shard', [lens, foil]);
+    matmod('certus_quartz', lens);
     matmod('copper', gear);
     matmod('vanadium_gallium', fine_wire);
     matmod('titanium', foil);

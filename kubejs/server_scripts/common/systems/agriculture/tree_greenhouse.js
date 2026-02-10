@@ -39,6 +39,19 @@ ServerEvents.recipes(event => {
             .EUt(global.va['lv']);
     })
 
+    event.shaped(`gtceu:greenhouse`, [
+            `FAF`,
+            `MHM`,
+            `PCP`
+        ], {
+            F: `gtceu:fertilizer`,
+            A: `gtceu:iron_axe`,
+            M: `gtceu:lv_electric_motor`,
+            H: `gtceu:lv_machine_hull`,
+            P: `gtceu:steel_plate`,
+            C: `#gtceu:circuits/mv`
+        }).id(`gtceu:greenhouse`);
+    
     event.shaped(Item.of('gtceu:tree_synthesizer'), [
         'ABC',
         'ADE',

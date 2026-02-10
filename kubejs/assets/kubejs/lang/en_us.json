@@ -153,10 +153,14 @@
     "item.kubejs.draco_chip": "§5Draco§r-Doped Chip",
 
     "item.kubejs.ae2_soc_wafer": "AE2 SoC Wafer",
-    "item.kubejs.ae2_soc_wafer.tooltip": "Raw Applied Circuit",
+    "item.kubejs.ae2_soc_wafer.tooltip": "§7Raw Applied Circuit",
     "item.kubejs.ae2_soc_chip": "AE2 SoC",
-    "item.kubejs.ae2_soc_chip.tooltip": "Applied System on Chip",
+    "item.kubejs.ae2_soc_chip.tooltip": "§7Applied System on Chip",
     "item.kubejs.fluix_lens": "Fluix Lens",
+    "item.kubejs.acu_wafer.tooltip": "§7Raw Applied Computational Unit",
+    "item.kubejs.acu_wafer": "ACU Wafer",
+    "item.kubejs.acu_chip.tooltip": "§7Applied Computation Unit", 
+    "item.kubejs.acu_chip": "ACU Chip",
 
     "item.kubejs.qram_wafer": "qRAM Wafer",
     "item.kubejs.qram_wafer.tooltip": "§7Raw Quantum Memory",
