@@ -294,7 +294,7 @@ global.not_hardmode(() => {
             }
         }
 
-        function getSingleblockRecycleOutputs(singleblock, specialSingleBool, tier, components /*not read if special*/, extraCasings /*0 if special*/, extraCables /*0 if special*/) {
+        function getSingleblockRecycleOutputs(arcBool, singleblock, specialSingleBool, tier, components /*not read if special*/, extraCasings /*0 if special*/, extraCables /*0 if special*/) {
             const singleComponents = global.componentMaterials;
             const componentRecycles = global.componentRecycles;
             const materials = {
@@ -306,7 +306,15 @@ global.not_hardmode(() => {
                 wire: "",
                 elctrlyzWire: ""
             }
+            let graphite;
             
+            if (arcBool) {
+                graphite = "7x gtceu:tiny_ash_dust";
+            }
+            else {
+                graphite = "gtceu:graphite_dust"; 
+            }
+
             switch(tier) {
                 case "uhv": {
                     const CRuhv = componentRecycles.uhv;
@@ -348,7 +356,7 @@ global.not_hardmode(() => {
                 electric_blast_furnace: [`10x ${materials.casing}`, `2x ${materials.cable}`, `4x ${materials.wire}`, " ", " ", " "],
                 electric_smoker: [`8x ${materials.casing}`, `2x ${materials.cable}`, `6x ${materials.wire}`, " ", " ", " "],
                 alloy_smelter: [`8x ${materials.casing}`, `2x ${materials.cable}`, `6x ${materials.wire}`, " ", " ", " "],
-                arc_furnace: [`11x ${materials.casing}`, `5x ${materials.cable}`, "gtceu:graphite_dust", " ", " ", " "],
+                arc_furnace: [`11x ${materials.casing}`, `5x ${materials.cable}`, `${graphite}`, " ", " ", " "],
                 electrolyzer: [`8x ${materials.casing}`, `1x ${materials.cable}`, `2x ${materials.elctrlyzWire}`, " ", " ", " "],
                 polarizer: [`8x ${materials.casing}`, `18x ${materials.cable}`, " ", " ", " ", " "],
                 charger_4x: [`8x ${materials.casing}`, `2x ${materials.cable}`, `8x ${materials.wire}`, " ", " ", " "]
@@ -438,110 +446,16 @@ global.not_hardmode(() => {
             }
         }
 
-        function getFinalOutputs(outputs, tier, macBool, specialSingleBool) {
-            let finalOutputs = [];
-            let len = outputs.length - 1;
-            const blockBools = [outputs[len-3], outputs[len-2], outputs[len-1], outputs[len]]; //gets the booleans out of the end of the outputs array
-            
-            //macerator
-            if (macBool) {
-                //special singles
-                if (specialSingleBool) {
-                    for (let x = 0; x < 5; x++) {
-                        if (outputs[x] == "gtceu:graphite_dust") {
-                            finalOutputs[x] = outputs[x];
-                        }
-                        else if (outputs[x] != " ") {
-                            finalOutputs[x] = `${outputs[x]}_dust`;
-                        }
-                    }
-                }
-                //normal singles
-                else {
-                    if (tier == "uhv") {   
-                        finalOutputs[0] = `${outputs[0]}_dust`;
-                        //adds end sig to every output
-                        for (let x = 1; x < len-3; x++) {
-                            //if item is a block
-                            if (blockBools[x-1]) {
-                                finalOutputs[x] = `${outputs[x]}_dust_block`;
-                            }
-                            //if not
-                            else {
-                                finalOutputs[x] = `${outputs[x]}_dust`;
-                            }
-                        }
-                    }
-                    else {
-                        for (let x = 0; x < len-3; x++) {
-                            //if item is a block
-                            if (blockBools[x]) {
-                                finalOutputs[x] = `${outputs[x]}_dust_block`;
-                            }
-                            //if not
-                            else {
-                                finalOutputs[x] = `${outputs[x]}_dust`;
-                            }
-                        }
-                    }
-                }
-            }
-            //arc furnace
-            else {
-                if (specialSingleBool) {
-                    //adds end sig to every output
-                    for (let x = 0; x < 5; x++) {
-                        //if single = arc furnace leave as is
-                        if (outputs[x] == "gtceu:graphite_dust") {
-                            finalOutputs[x] = outputs[x];
-                        }
-                        //if not empty
-                        else if (outputs[x] != " ") {
-                            finalOutputs[x] = `${outputs[x]}_ingot`;
-                        }
-                    }
-                }
-                else {
-                    if (tier == "uhv") {
-                        finalOutputs[0] = `${outputs[0]}_ingot`;
-                        //adds end sig to every output
-                        for (let x = 1; x < len-3; x++) {
-                            //if item is a block
-                            if (blockBools[x-1]) {
-                                finalOutputs[x] = `${outputs[x]}_block`;
-                            }
-                            //if not
-                            else {
-                                finalOutputs[x] = `${outputs[x]}_ingot`;
-                            }
-                        }
-                    }
-                    else {
-                        //adds end sig to every output
-                        for (let x = 0; x < len-3; x++) {
-                            //if item is a block
-                            if (blockBools[x]) {
-                                finalOutputs[x] = `${outputs[x]}_block`;
-                            }
-                            //if not
-                            else {
-                                finalOutputs[x] = `${outputs[x]}_ingot`;
-                            }
-                        }
-                    }
-                }
-            }
-
-            return finalOutputs;
-        }  
+        
 
         const arcRecipe = (singleblock, specialSingleBool, tiers, components, extraCasings, extraCables) => {
-            const calculateDuration = global.calculateRecyclingDuration;
             const id = global.id;
+            const calculateDuration = global.calculateRecyclingDuration;
+            const getFinalOutputs = global.getFinalRecycleOutputs;
             let outputs;
 
             tiers.forEach(tier => {
-                outputs = getFinalOutputs(getSingleblockRecycleOutputs(singleblock, specialSingleBool, tier, components, extraCasings, extraCables), tier, false, specialSingleBool);
+                outputs = getFinalOutputs(getSingleblockRecycleOutputs(true, singleblock, specialSingleBool, tier, components, extraCasings, extraCables), tier, false, specialSingleBool);
                 console.log (`start:arc_${tier}_${singleblock} outputs: ${outputs}`);
                 event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${singleblock}`))
                     .itemInputs(`gtceu:${tier}_${singleblock}`)
@@ -553,13 +467,14 @@ global.not_hardmode(() => {
         }
 
         const macRecipe = (singleblock, specialSingleBool, tiers, components, extraCasings, extraCables) => {
+            const id = global.id;
             const calculateDuration = global.calculateRecyclingDuration;
             const calculateVoltageMultiplier = global.calculateRecyclingVoltageMultiplier;
-            const id = global.id;
+            const getFinalOutputs = global.getFinalRecycleOutputs;
             let outputs;
 
             tiers.forEach(tier => {
-                outputs = getFinalOutputs(getSingleblockRecycleOutputs(singleblock, specialSingleBool, tier, components, extraCasings, extraCables), true, specialSingleBool);
+                outputs = getFinalOutputs(getSingleblockRecycleOutputs(true, singleblock, specialSingleBool, tier, components, extraCasings, extraCables), true, specialSingleBool);
                 console.log (`start:macerate_${tier}_${singleblock} outputs: ${outputs}`);
                 event.recipes.gtceu.macerator(id(`macerate_${tier}_${singleblock}`))
                     .itemInputs(`gtceu:${tier}_${singleblock}`)

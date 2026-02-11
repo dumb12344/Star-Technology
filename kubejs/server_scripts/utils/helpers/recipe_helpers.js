@@ -185,3 +185,99 @@ global.checkComponentCount = (tempTotals) => {
 
   return finalOutput;
 }
+
+//gives ending parameters to the outputs dependent on whether the output is a block or not
+global.getFinalRecycleOutputs = (outputs, tier, macBool, specialBool) => {
+  let finalOutputs = [];
+  let len = outputs.length - 1;
+  const blockBools = [outputs[len-3], outputs[len-2], outputs[len-1], outputs[len]]; //gets the booleans out of the end of the outputs array
+  
+  //macerator
+  if (macBool) {
+      if (specialBool) {
+          for (let x = 0; x < 5; x++) {
+              if (outputs[x] == "gtceu:graphite_dust") {
+                  finalOutputs[x] = outputs[x];
+              }
+              else if (outputs[x] != " ") {
+                  finalOutputs[x] = `${outputs[x]}_dust`;
+              }
+          }
+      }
+      else {
+          if (tier == "uhv") {   
+              finalOutputs[0] = `${outputs[0]}_dust`;
+              //adds end sig to every output
+              for (let x = 1; x < len-3; x++) {
+                  //if item is a block
+                  if (blockBools[x-1]) {
+                      finalOutputs[x] = `${outputs[x]}_dust_block`;
+                  }
+                  //if not
+                  else {
+                      finalOutputs[x] = `${outputs[x]}_dust`;
+                  }
+              }
+          }
+          else {
+              for (let x = 0; x < len-3; x++) {
+                  //if item is a block
+                  if (blockBools[x]) {
+                      finalOutputs[x] = `${outputs[x]}_dust_block`;
+                  }
+                  //if not
+                  else {
+                      finalOutputs[x] = `${outputs[x]}_dust`;
+                  }
+              }
+          }
+      }
+  }
+  //arc furnace
+  else {
+      if (specialBool) {
+          //adds end sig to every output
+          for (let x = 0; x < 5; x++) {
+              //if single = arc furnace leave as is
+              if (outputs[x] == "gtceu:graphite_dust" || outputs[x] == "7x gtceu:tiny_ash_dust") {
+                  finalOutputs[x] = outputs[x];
+              }
+              //if not empty
+              else if (outputs[x] != " ") {
+                  finalOutputs[x] = `${outputs[x]}_ingot`;
+              }
+          }
+      }
+      else {
+          if (tier == "uhv") {
+              finalOutputs[0] = `${outputs[0]}_ingot`;
+              //adds end sig to every output
+              for (let x = 1; x < len-3; x++) {
+                  //if item is a block
+                  if (blockBools[x-1]) {
+                      finalOutputs[x] = `${outputs[x]}_block`;
+                  }
+                  //if not
+                  else {
+                      finalOutputs[x] = `${outputs[x]}_ingot`;
+                  }
+              }
+          }
+          else {
+              //adds end sig to every output
+              for (let x = 0; x < len-3; x++) {
+                  //if item is a block
+                  if (blockBools[x]) {
+                      finalOutputs[x] = `${outputs[x]}_block`;
+                  }
+                  //if not
+                  else {
+                      finalOutputs[x] = `${outputs[x]}_ingot`;
+                  }
+              }
+          }
+      }
+  }
+
+  return finalOutputs;
+}  
