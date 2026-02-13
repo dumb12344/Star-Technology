@@ -1,8 +1,8 @@
 global.not_hardmode(() => {
     ServerEvents.recipes(event => {
         const CASINGS = [
-            "fusion_casing", "fusion_casing_mk2", "fusion_casing_mk3", "auxillary_boosted_fusion_casing_mk1", "fusion_casing_mk4",
-            "auxillary_boosted_fusion_casing_mk2"
+            "fusion_casing", "fusion_casing_mk2", "fusion_casing_mk3", "auxiliary_boosted_fusion_casing_mk1", "fusion_casing_mk4",
+            "auxiliary_boosted_fusion_casing_mk2"
         ]
         const CASINGDETAILS = {
             fusion_casing: {
@@ -18,13 +18,13 @@ global.not_hardmode(() => {
                 casing_tier: "zpm"
             },
             fusion_casing_mk3: {
-                name: "gtceu:fusion_casing_mk3",
+                name: "fusion_casing_mk3",
                 prefix: "gtceu:",
                 field_generator_tier: "zpm",
                 casing_tier: "uv"
             },
-            auxillary_boosted_fusion_casing_mk1: {
-                name: "auxillary_boosted_fusion_casing_mk1",
+            auxiliary_boosted_fusion_casing_mk1: {
+                name: "auxiliary_boosted_fusion_casing_mk1",
                 prefix: "start_core:",
                 field_generator_tier: "uv",
                 casing_tier: "uhv"
@@ -35,11 +35,11 @@ global.not_hardmode(() => {
                 field_generator_tier: "uhv",
                 casing_tier: "uev"
             },
-            auxillary_boosted_fusion_casing_mk2: {
-                name: "auxillary_boosted_fusion_casing_mk2",
+            auxiliary_boosted_fusion_casing_mk2: {
+                name: "auxiliary_boosted_fusion_casing_mk2",
                 prefix: "start_core:",
                 field_generator_tier: "uev",
-                casing_tier: "uhv"
+                casing_tier: "uiv"
             }
         }
 
@@ -150,6 +150,7 @@ global.not_hardmode(() => {
                 }
             }
 
+            console.log(`final outputs: ${finalOutputs}`);
             return finalOutputs;
         }
 
@@ -162,7 +163,7 @@ global.not_hardmode(() => {
             event.recipes.gtceu.arc_furnace(id(`arc_${name}`))
                 .itemInputs(`${prefix}${name}`)
                 .itemOutputs(outputs)
-                .calculateDuration(calculateDuration(outputs))
+                .duration(calculateDuration(outputs))
                 .EUt(GTValues.VA[GTValues.LV])
                 .category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
         }
@@ -177,7 +178,7 @@ global.not_hardmode(() => {
             event.recipes.gtceu.macerator(id(`macerate_${name}`))
                 .itemInputs(`${prefix}${name}`)
                 .itemOutputs(outputs)
-                .calculateDuration(calculateDuration(outputs))
+                .duration(calculateDuration(outputs))
                 .EUt(2 * calculateVoltageMultiplier(outputs))
                 .category(GTRecipeCategories.MACERATOR_RECYCLING)
         }
