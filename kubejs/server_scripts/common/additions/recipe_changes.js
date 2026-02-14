@@ -216,7 +216,4 @@ ServerEvents.recipes(event => {
             .EUt(2)
             .category(GTRecipeCategories.MACERATOR_RECYCLING);
     })
-
-    // REMOVING LARGE BOILERS BECAUSE ALL OUR FOOD KEEPS BLOWING UP
-    event.remove({ id: /gtceu:.*_large_boiler/});
 });

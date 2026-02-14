@@ -24,8 +24,6 @@ ServerEvents.recipes(event => {
         'createdieselgenerators:chemical_turret', 'create:andesite_alloy',
         // Following 2 to be removed for Zeta/Eta due to exploits and bugs
         'gtceu:me_pattern_buffer_proxy', 'gtceu:me_pattern_buffer',
-        // Boilers removed for Eta since they keep exploding on load
-        'gtceu:bronze_large_boiler','gtceu:steel_large_boiler','gtceu:titanium_large_boiler','gtceu:tungstensteel_large_boiler',
     ];
     const toRemoveId = ['thermal:slime_mushroom_spores', 'thermal_extra:sticky_ball_to_paper', 'farmersdelight:paper_from_tree_bark', 'create:pressing/sugar_cane',
         'exnihilo:fluid_item/ens_slime', 'gtceu:shaped/good_circuit_board', 'thermal:rubber_from_vine', 'thermal:rubber_from_dandelion', 'thermal:smelting/cured_rubber_from_smelting',
