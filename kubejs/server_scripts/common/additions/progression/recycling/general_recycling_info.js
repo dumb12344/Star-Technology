@@ -1,4 +1,4 @@
-global.componentRecycles = {
+global.componentRecycleMaterials = {
     luv: {
         primMaterial: "gtceu:hsss",
         cableMaterial: "gtceu:niobium_titanium",
@@ -34,6 +34,53 @@ global.componentRecycles = {
         cableMaterial: "gtceu:polonium_bismide",
         secMaterial: "gtceu:abyssal_alloy",
         tertMaterial: "gtceu:chaotixic_alloy"
+    }
+}
+
+global.energyRecycleMaterials = {
+    lv: {
+        casingMaterial: "steel",
+        cableMaterial: "tin"
+    },
+    mv: {
+        casingMaterial: "aluminium",
+        cableMaterial: "copper"
+    },
+    hv: {
+        casingMaterial: "stainless_steel",
+        cableMaterial: "gold"
+    },
+    ev: {
+        casingMaterial: "titanium",
+        cableMaterial: "aluminium"
+    },
+    iv: {
+        casingMaterial: "tungsten_steel",
+        cableMaterial: "tungsten"
+    },
+    luv: {
+        casingMaterial: "rhodium_plated_palladium",
+        cableMaterial: "niobium_titanium"
+    },
+    zpm: {
+        casingMaterial: "naquadah_alloy",
+        cableMaterial: "vanadium_gallium"
+    },
+    uv: {
+        casingMaterial: "darmstadtium",
+        cableMaterial: "yttrium_barium_cuprate"
+    },
+    uhv: {
+        casingMaterial: "neutronium",
+        cableMaterial: "europium"
+    },
+    uev: {
+        casingMaterial: "mythrolic_alloy",
+        cableMaterial: "cerium_tritelluride"
+    },
+    uiv: {
+        casingMaterial: "chaotixic_alloy",
+        cableMaterial: "polonium_bismide"
     }
 }
 
@@ -132,3 +179,53 @@ global.UHVPlusComponentRecycleCounts = {
         tertCount: 4
     }
 }
+
+// global.energyHatchRecycleCounts = {
+//     lvtohv: {
+//         a2: {
+//             casingCount: 8,
+//             cableCount: 2
+//         }
+//     },
+//     evtoiv: {
+//         a2: {
+//             casingCount: 8,
+//             cableCount: 2
+//         },
+//         a4: {
+//             casingCount: 10, //+2
+//             cableCount: 6 //+4
+//         },
+//         a16: {
+//             casingCount: 22, //+12
+//             cableCount: 17 //+11
+//         },
+//         a64: {
+//             casingCount: 36, //+14
+//             cableCount: 65 //+48
+//         }
+//     },
+//     luv: {
+//         a2: {
+//             casingCount: 8,
+//             cableCount: 3
+//         },
+//         a4: {
+//             casingCount: 10,
+//             cableCount: 7
+//         },
+//         a16: {
+//             casingCount: 22,
+//             cableCount: 18
+//         },
+//         a64: {
+//             casingCount: 36,
+//             cableCount: 66
+//         }
+//     },
+//     zpm,
+//     uv,
+//     uhv,
+//     uev,
+//     uiv
+// }

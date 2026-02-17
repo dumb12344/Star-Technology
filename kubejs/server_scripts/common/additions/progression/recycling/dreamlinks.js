@@ -32,7 +32,7 @@ global.not_hardmode(() => {
 
         const arcRecipe = (tier) => {
             const id = global.id;
-            const componentRecycles = global.componentRecycles;
+            const componentRecycles = global.componentRecycleMaterials;
             const calculateDuration = global.calculateRecyclingDuration;
             const getFinalOutputs = global.getFinalRecycleOutputs;
             const coverCounts = (tier == "uv") ? global.LUVToUVComponentRecycleCounts.dreamlink_cover : global.UHVPlusComponentRecycleCounts.dreamlink_cover;
@@ -99,7 +99,7 @@ global.not_hardmode(() => {
 
         const macRecipe = (tier) => {
             const id = global.id;
-            const componentRecycles = global.componentRecycles;
+            const componentRecycles = global.componentRecycleMaterials;
             const calculateDuration = global.calculateRecyclingDuration;
             const calculateVoltageMultiplier = global.calculateRecyclingVoltageMultiplier;
             const getFinalOutputs = global.getFinalRecycleOutputs;
@@ -114,7 +114,7 @@ global.not_hardmode(() => {
                       
             switch (tier) {
                 case "uv": {
-                    const CRuv = componentRecycles.uv;
+                    const CRuv = componentRecycleMaterials.uv;
                     materials.casing = "gtceu:darmstadtium";
                     materials.compPrim = CRuv.primMaterial;
                     materials.cable = CRuv.cableMaterial;

@@ -49,7 +49,7 @@ global.not_hardmode(() => {
 
         function getFusionCasingRecycleOutputs(field_generator_tier, casing_tier) {
             let finalOutputs = [];
-            const componentRecycles = global.componentRecycles;
+            const componentRecycles = global.componentRecycleMaterials;
             const materials = {
                 casing: "",
                 compPrim: "",

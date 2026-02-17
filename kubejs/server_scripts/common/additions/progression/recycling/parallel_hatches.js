@@ -8,7 +8,7 @@ global.not_hardmode(() => {
 
         function getParallelRecycleOutputs(tier, absoluteBool, LUVToUV, UHVPlus) {
             let finalOutputs = [];
-            const componentRecycles = global.componentRecycles;
+            const componentRecycles = global.componentRecycleMaterials;
             
             const materials = {
                 casing: "",

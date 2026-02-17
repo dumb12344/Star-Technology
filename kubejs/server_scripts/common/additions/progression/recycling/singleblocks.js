@@ -296,7 +296,7 @@ global.not_hardmode(() => {
 
         function getSingleblockRecycleOutputs(arcBool, singleblock, specialSingleBool, tier, components /*not read if special*/, extraCasings /*0 if special*/, extraCables /*0 if special*/) {
             const singleComponents = global.componentMaterials;
-            const componentRecycles = global.componentRecycles;
+            const componentRecycles = global.componentRecycleMaterials;
             const materials = {
                 casing: "",
                 compPrim: "",
