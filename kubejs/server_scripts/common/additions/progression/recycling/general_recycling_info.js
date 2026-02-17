@@ -109,6 +109,36 @@ global.LUVToUVComponentRecycleCounts = {
         wireCount: 16,
         foilCount: 48
     },
+    robot_arm: {
+        primCount: 37,
+        cableCount: 6,
+        wireCount: 24,
+        foilCount: 0
+    },
+    electric_piston: {
+        primCount: 16,
+        cableCount: 2,
+        wireCount: 8,
+        foilCount: 0
+    },
+    conveyor_module: {
+        primCount: 15,
+        cableCount: 3,
+        wireCount: 16,
+        foilCount: 0
+    },
+    fluid_regulator: {
+        primCount: 3,
+        cableCount: 3,
+        wireCount: 0,
+        foilCount: 0
+    },
+    electric_pump: {
+        primCount: 3,
+        cableCount: 3,
+        wireCount: 0,
+        foilCount: 0
+    },
     electric_motor: {
         primCount: 5,
         cableCount: 1,
