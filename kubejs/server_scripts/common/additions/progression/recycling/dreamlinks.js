@@ -114,7 +114,7 @@ global.not_hardmode(() => {
                       
             switch (tier) {
                 case "uv": {
-                    const CRuv = componentRecycleMaterials.uv;
+                    const CRuv = componentRecycles.uv;
                     materials.casing = "gtceu:darmstadtium";
                     materials.compPrim = CRuv.primMaterial;
                     materials.cable = CRuv.cableMaterial;
