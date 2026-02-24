@@ -587,6 +587,45 @@ global.coilRecycleDetails = {
     }
 }
 
+global.fusionCasingDetails = {
+    fusion_casing: {
+        name: "fusion_casing",
+        prefix: "gtceu:",
+        field_generator_tier: "iv",
+        casing_tier: "luv"
+    },
+    fusion_casing_mk2: {
+        name: "fusion_casing_mk2",
+        prefix: "gtceu:",
+        field_generator_tier: "luv",
+        casing_tier: "zpm"
+    },
+    fusion_casing_mk3: {
+        name: "fusion_casing_mk3",
+        prefix: "gtceu:",
+        field_generator_tier: "zpm",
+        casing_tier: "uv"
+    },
+    auxiliary_boosted_fusion_casing_mk1: {
+        name: "auxiliary_boosted_fusion_casing_mk1",
+        prefix: "start_core:",
+        field_generator_tier: "uv",
+        casing_tier: "uhv"
+    },
+    fusion_casing_mk4: {
+        name: "fusion_casing_mk4",
+        prefix: "start_core:",
+        field_generator_tier: "uhv",
+        casing_tier: "uev"
+    },
+    auxiliary_boosted_fusion_casing_mk2: {
+        name: "auxiliary_boosted_fusion_casing_mk2",
+        prefix: "start_core:",
+        field_generator_tier: "uev",
+        casing_tier: "uiv"
+    }
+}
+
 // global.energyHatchRecycleCounts = {
 //     lvtohv: {
 //         a2: {

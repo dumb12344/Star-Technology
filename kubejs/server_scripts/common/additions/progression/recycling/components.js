@@ -69,7 +69,6 @@ global.not_hardmode(() => {
             event.remove({ input: `gtceu:${tier}_${component}`, type: `gtceu:arc_furnace` });
 
             const outputs = getFinalOutputs(getComponentOutputs(tier, component), "singleblock", false, false);
-            console.log(`${tier}_${component} outputs: ${outputs}`);
             
             event.recipes.gtceu.arc_furnace(id(`arc_${tier}_${component}`))
                 .itemInputs(`gtceu:${tier}_${component}`)

@@ -168,6 +168,47 @@ global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool) =>
     finalOutputTypes = ["frame", "wire", "foil"];
     toBeSorted = [tempTotals.frameCount, tempTotals.wireCount, tempTotals.foilCount];
   }
+  else if (blockType == "fusion_casing_UHVPLUS") {
+    finalOutput = {
+      blockBools: {
+        casingBlock: false,
+        primBlock: false,
+        cableBlock: false,
+        hullCableBlock: false,
+        secBlock: false
+      },
+      totals: {
+        casingCount: 0,
+        primCount: 0,
+        cableCount: 0,
+        hullCableCount: 0,
+        secCount: 0
+      },
+      outputOrder: ["", "", "", "", ""]
+    }
+    finalOutputTypes = ["casing", "prim", "cable", "hullCable", "sec"];
+    toBeSorted = [tempTotals.casingCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.hullCableCount, tempTotals.secCount];
+  }
+  else if (blockType == "fusion_casing_LUVToUV") {
+    finalOutput = {
+      blockBools: {
+        primBlock: false,
+        cableBlock: false,
+        hullCableBlock: false,
+        wireBlock: false
+      },
+      totals: {
+        casingCount: 0,
+        primCount: 0,
+        cableCount: 0,
+        hullCableCount: 0,
+        wireCount: 0
+      },
+      outputOrder: ["", "", "", "", ""]
+    }
+    finalOutputTypes = ["casing", "prim", "cable", "hullCable", "wire"];
+    toBeSorted = [tempTotals.casingCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.hullCableCount, tempTotals.wireCount];
+  }
 
   // orders outputs by size
   let knownPositions = [];
@@ -237,7 +278,7 @@ global.getFinalRecycleOutputs = (outputs, blockType, macBool, specialBool) => {
   let len = outputs.length - 1;
 
   //gets the booleans out of the end of the outputs array
-  if (blockType == "singleblock") {
+  if (blockType == "singleblock" || blockType == "fusion_casing") {
     blockBoolStartPos = len - 3;
     blockBools = [outputs[len - 3], outputs[len - 2], outputs[len - 1], outputs[len]]; 
   }
