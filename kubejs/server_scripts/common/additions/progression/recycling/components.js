@@ -30,7 +30,7 @@ global.not_hardmode(() => {
             }
 
             // checks the final outputs
-            let tempObj = checkRecyclingCount(details.totals, `singleblock_${tierBracket}`, false, false);
+            let tempObj = checkRecyclingCount(details.totals, `singleblock_${tierBracket}`, false, false, false);
 
             // sorts the final outputs
             let checkCount = 0;

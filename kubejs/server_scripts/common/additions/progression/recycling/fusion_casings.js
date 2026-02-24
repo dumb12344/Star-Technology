@@ -24,7 +24,6 @@ global.not_hardmode(() => {
             }
             let tempTotals;
             let blockType;
-            console.log(`field gen tier: ${field_generator_tier} casing tier: ${casing_tier}`);
 
             if (field_generator_tier == "iv") { //iv
                 recycleOutputs = ["8x gtceu:rhodium_plated_palladium", "8x gtceu:samarium_iron_arsenic_oxide", "4x gtceu:tungsten_steel", 
@@ -76,7 +75,6 @@ global.not_hardmode(() => {
                     }
                 }
 
-                console.log(`materials.wireMaterial[${casing_tier}]: ${materials.wireMaterial}`);
             }
             else { //UHVPlus
                 const counts = global.UHVPlusComponentRecycleCounts.field_generator;
@@ -117,7 +115,7 @@ global.not_hardmode(() => {
             }
 
             // gets the final outputs
-            let tempObj = checkRecyclingCount(tempTotals, blockType, false, true);
+            let tempObj = checkRecyclingCount(tempTotals, blockType, false, true, true);
 
             // sorts the final outputs
             let checkCount = 0;
@@ -129,8 +127,6 @@ global.not_hardmode(() => {
                     flag = true;
                 }
                 if (tempObj.totals[tempObj.outputOrder[position] + "Count"] != 0) {
-                    console.log(`recycleOutputs[${position}]: ${tempObj.totals[tempObj.outputOrder[position] + "Count"]}x ${materials[tempObj.outputOrder[position] + "Material"]}`);
-                    console.log(`tempObj.outputOrder[${position}] + "Material": ${tempObj.outputOrder[position] + "Material"}`);
                     recycleOutputs[position] = `${tempObj.totals[tempObj.outputOrder[position] + "Count"]}x ${materials[tempObj.outputOrder[position] + "Material"]}`;
                     position++;
                 }
@@ -144,7 +140,6 @@ global.not_hardmode(() => {
             recycleOutputs[position] = (field_generator_tier == "uhv" || field_generator_tier == "uev" || field_generator_tier == "uiv") ? tempObj.blockBools.secBlock : tempObj.blockBools.wireBlock; 
             position++;
 
-            console.log(`recycleOutputs: ${recycleOutputs}`);
             return recycleOutputs;
         }
 
@@ -152,7 +147,6 @@ global.not_hardmode(() => {
             const id = global.id;
             const calculateDuration = global.calculateRecyclingDuration;
             const getFinalOutputs = global.getFinalRecycleOutputs;
-            console.log(`arc_${name}`);
             const outputs = getFinalOutputs(getFusionCasingRecycleOutputs(field_generator_tier, casing_tier), "fusion_casing", false, false);
 
             event.recipes.gtceu.arc_furnace(id(`arc_${name}`))
@@ -168,7 +162,6 @@ global.not_hardmode(() => {
             const calculateDuration = global.calculateRecyclingDuration;
             const calculateVoltageMultiplier = global.calculateRecyclingVoltageMultiplier;
             const getFinalOutputs = global.getFinalRecycleOutputs;
-            console.log(`mac_${name}`);
             const outputs = getFinalOutputs(getFusionCasingRecycleOutputs(field_generator_tier, casing_tier), "fusion_casing", true, false);
 
             event.recipes.gtceu.macerator(id(`macerate_${name}`))

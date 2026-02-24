@@ -12,7 +12,7 @@ global.not_hardmode(() => {
             let recycleOutputs = [" ", " ", " ", " ", " ", " "];
 
             // checks final outputs
-            let tempObj = checkRecyclingCount(counts, "coil", false, false);
+            let tempObj = checkRecyclingCount(counts, "coil", false, false, false);
 
             // sorts final outputs
             for (let n = 0; n < 6; n++) {

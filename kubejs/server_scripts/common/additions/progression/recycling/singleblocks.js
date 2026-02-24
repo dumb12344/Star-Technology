@@ -92,11 +92,11 @@ global.not_hardmode(() => {
 
                 if (tier == "uev" || tier == "uiv") { // if tertiary material is the same as casing material
                     tempTotals.tertCount += casingCount;
-                    tempObj = global.checkRecyclingCount(tempTotals, "singleblock_UHVPLUS", false, false);
+                    tempObj = global.checkRecyclingCount(tempTotals, "singleblock_UHVPLUS", false, false, false);
                 }
                 else if (tier == "uhv") {
                     tempTotals.casingCount = casingCount; 
-                    tempObj = global.checkRecyclingCount(tempTotals, "singleblock_UHVPLUS", false, true);
+                    tempObj = global.checkRecyclingCount(tempTotals, "singleblock_UHVPLUS", false, true, false);
                 }
                 
                 // sorts the final outputs

@@ -1,177 +1,126 @@
-// global.not_hardmode(() => {
-//     ServerEvents.recipes(event => {
-//         const FUSIONCOILS = [
-//             "fusion_coil", "auxiliary_fusion_coil_mk1", "advanced_fusion_coil" , "auxiliary_fusion_coil_mk2"
-//         ];
-//         const FUSIONCOILDETAILS = {
-//             fusion_coil: {
-//                 components: "ignored",
-//                 tierComponent: "iv",
-//                 plateMaterial: "gtceu:europium",
-//                 prefix: "gtceu:",
-//                 plateCount: 4
-//             },
-//             auxiliary_fusion_coil_mk1: {
-//                 components: [ "field_generator", "field_generator", "field_generator", "field_generator", "electric_pump", "electric_pump" ],
-//                 tierComponent: "zpm",
-//                 plateMaterial: "gtceu:zircalloy_4",
-//                 prefix: "start_core:",
-//                 plateCount: 8
-//             },
-//             advanced_fusion_coil: {
-//                 components: [ "field_generator", "field_generator", "field_generator", "field_generator", "electric_pump", "electric_pump" ],
-//                 tierComponent: "uv",
-//                 plateMaterial: "gtceu:magmada_alloy",
-//                 prefix: "start_core:",
-//                 plateCount: 4
-//             },
-//             auxiliary_fusion_coil_mk2: {
-//                 components: [ "field_generator", "field_generator", "field_generator", "field_generator", "electric_pump", "electric_pump" ],
-//                 tierComponent: "uhv",
-//                 plateMaterial: "gtceu:abyssal_alloy",
-//                 prefix: "start_core:",
-//                 plateCount: 8
-//             }
-//         };
+global.not_hardmode(() => {
+    ServerEvents.recipes(event => {
+        const FUSIONCOILS = [
+            "fusion_coil", "auxiliary_fusion_coil_mk1", "advanced_fusion_coil" , "auxiliary_fusion_coil_mk2"
+        ];
+        const FUSIONCOILDETAILS = global.fusionCoilRecycleDetails;
 
-//         event.remove({ input: "gtceu:fusion_coil", type: "gtceu:macerator" });
-//         event.remove({ input: "gtceu:fusion_coil", type: "gtceu:arc_furnace" });
+        event.remove({ input: "gtceu:fusion_coil", type: "gtceu:macerator" });
+        event.remove({ input: "gtceu:fusion_coil", type: "gtceu:arc_furnace" });
 
-//         function getFusionCoilRecycleOutputs(coil) {
-//             let finalOutputs = [];
-//             const checkRecyclingCount = global.checkRecyclingCount;
-//             const componentRecycleMaterials = global.componentRecycleMaterials;
-//             if (!FUSIONCOILDETAILS[coil]) return;
-//             const {
-//                 components,
-//                 tierComponent,
-//                 plateMaterial,
-//                 plateCount
-//             } = FUSIONCOILDETAILS[coil];
+        function getFusionCoilRecycleOutputs(coil) {
+            const checkRecyclingCount = global.checkRecyclingCount;
+            const componentRecycleMaterials = global.componentRecycleMaterials;
+            let getComponentTotal;
+            let materials = {};
+            let recycleOutputs = [];
+            let blockType;
+            let counts = {};
+            let materialTypes;
+            if (!FUSIONCOILDETAILS[coil]) return;
+            const {
+                components,
+                tierComponent,
+                plateMaterial,
+                plateCount
+            } = FUSIONCOILDETAILS[coil];
+            let auxCoilBool = (tierComponent == "zpm" || tierComponent == "uhv") ? true : false;
 
-//             finalOutputs[0] = `${plateCount}x ${plateMaterial}`
+            if (tierComponent == "uhv" || tierComponent == "uev" || tierComponent == "uiv") {    
+                getComponentTotal = global.getUHVPlusComponentTotal;
+                materialTypes = ["plate", "prim", "cable", "sec", "tert"];
+                blockType = "fusion_coil_UHVPLUS";
+            }
+            else if (tierComponent == "luv" || tierComponent == "zpm" || tierComponent == "uv") {
+                getComponentTotal = global.getLUVToUVComponentTotal;
+                materialTypes = ["plate", "prim", "cable", "wire", "foil"];
+                blockType = "fusion_coil_LUVToUV"; 
+            }
+            else {
+                recycleOutputs = [ "15x gtceu:tungsten_steel", "8x gtceu:samarium_iron_arsenic_oxide", `${plateCount}x ${plateMaterial}`,
+                    "3x gtceu:naquadah", false, false, false, false];
+                return recycleOutputs;
+            }
+            // gets final outputs
+            let tempTotals = getComponentTotal(components);
+            if (!componentRecycleMaterials[tierComponent]) return;
+            materialTypes.forEach(type => {
+                if (type == "plate") {
+                    materials[type + "Material"] = plateMaterial;
+                    counts[type + "Count"] = plateCount;
+                }
+                else {
+                    materials[type + "Material"] = componentRecycleMaterials[tierComponent][type + "Material"];
+                    counts[type + "Count"] = tempTotals[type + "Count"];
+                } 
+            });
 
-//             if (tierComponent == "uhv" || tierComponent == "uev" || tierComponent == "uiv") {    
-//                 const getUHVPlusComponentTotal = global.getUHVPlusComponentTotal;
+            // checks final outputs
+            let tempObj = checkRecyclingCount(counts, blockType, auxCoilBool, true, false);
 
-//                 if (!componentRecycleMaterials[tierComponent]) return;
-//                 const {
-//                     primMaterial,
-//                     cableMaterial,
-//                     secMaterial,
-//                     tertMaterial
-//                 } = componentRecycleMaterials[tierComponent];
+            // sorts the final outputs
+            let checkCount = 0;
+            let position = 0;
+            let flag = false;
 
-//                 const tempOutputs = checkRecyclingCount(getUHVPlusComponentTotal(components), true, true);
+            while (!flag) {
+                if (checkCount == 4) {
+                    flag = true;
+                }
+                console.log(`tempObj.totals[${tempObj.outputOrder[position] + "Count"}]: ${tempObj.totals[tempObj.outputOrder[position] + "Count"]}`);
+                if (tempObj.totals[tempObj.outputOrder[position] + "Count"] != 0) {
+                    recycleOutputs[position] = `${tempObj.totals[tempObj.outputOrder[position] + "Count"]}x ${materials[tempObj.outputOrder[position] + "Material"]}`;
+                    console.log(`recycleOutputs[${position}]: ${recycleOutputs[position]}`);
+                    position++;
+                }
+                
+                checkCount++;
+            }
+            for (let n = 0; n < 4; n++) {
+                recycleOutputs[n+5] = tempObj.blockBools[tempObj.outputOrder[n] + "Block"];
+            }
 
-//                 if (!tempOutputs) return;
-//                 const {
-//                     blockBools: {
-//                         primBlock,
-//                         cableBlock,
-//                         secBlock,
-//                         tertBlock
-//                     },
-//                     totals: {
-//                         primCount,
-//                         cableCount,
-//                         secCount,
-//                         tertCount
-//                     }
-//                 } = tempOutputs;
+            console.log(`recycleOutputs: ${recycleOutputs}`);
+            return recycleOutputs;
+        }
 
-//                 let position = 1;
-//                 if (primCount != 0) { finalOutputs[position] = `${primCount}x ${primMaterial}`; position++; }
-//                 if (cableCount != 0) { finalOutputs[position] = `${cableCount}x ${cableMaterial}`; position++; }
-//                 if (secCount != 0) { finalOutputs[position] = `${secCount}x ${secMaterial}`; position++; }
-//                 if (tertCount != 0) { finalOutputs[position] = `${tertCount}x ${tertMaterial}`; position++; }
-//                 finalOutputs[position] = primBlock; position++;
-//                 finalOutputs[position] = cableBlock; position++;
-//                 finalOutputs[position] = secBlock; position++;
-//                 finalOutputs[position] = tertBlock; position++;
-//             }
-//             else if (tierComponent == "luv" || tierComponent == "zpm" || tierComponent == "uv") {
-//                 const getLUVToUVComponentTotal = global.getLUVToUVComponentTotal;
+                        
+        const arcRecipe = (coil) => {
+            const id = global.id;
+            const calculateDuration = global.calculateRecyclingDuration;
+            const getFinalOutputs = global.getFinalRecycleOutputs;
+            const prefix = FUSIONCOILDETAILS[coil].prefix;
+            const outputs = getFinalOutputs(getFusionCoilRecycleOutputs(coil), "fusion_coil", false, false);
+            console.log(`final outputs arc_${coil}: ${outputs}`);
 
-//                 if (!componentRecycleMaterials[tierComponent]) return;
-//                 const {
-//                     primMaterial,
-//                     cableMaterial,
-//                     wireMaterial,
-//                     foilMaterial
-//                 } = componentRecycleMaterials[tierComponent]
+            event.recipes.gtceu.arc_furnace(id(`arc_${coil}`))
+                .itemInputs(`${ prefix + coil }`)
+                .itemOutputs(outputs)
+                .duration(calculateDuration(outputs))
+                .EUt(GTValues.VA[GTValues.LV])
+                .category(GTRecipeCategories.ARC_FURNACE_RECYCLING);
+        }
 
-//                 const tempOutputs = checkRecyclingCount(getLUVToUVComponentTotal(components), false, true, false);
-//                 if (!tempOutputs) return;
-//                 const {
-//                     blockBools: {
-//                         primBlock,
-//                         cableBlock,
-//                         wireBlock,
-//                         foilBlock
-//                     },
-//                     totals: {
-//                         primCount,
-//                         cableCount,
-//                         wireCount,
-//                         foilCount
-//                     }
-//                 } = tempOutputs;
+        const macRecipe = (coil) => {
+            const id = global.id;           
+            const calculateDuration = global.calculateRecyclingDuration;
+            const calculateVoltageMultiplier = global.calculateRecyclingVoltageMultiplier;
+            const getFinalOutputs = global.getFinalRecycleOutputs;
+            const prefix = FUSIONCOILDETAILS[coil].prefix;
+            const outputs = getFinalOutputs(getFusionCoilRecycleOutputs(coil), "fusion_coil", true, false);
+            console.log(`final outputs macerate_${coil}: ${outputs}`);
 
-//                 let position = 1;
-//                 if (primCount != 0) { finalOutputs[position] = `${primCount}x ${primMaterial}`; position++; }
-//                 if (cableCount != 0) { finalOutputs[position] = `${cableCount}x ${cableMaterial}`; position++; }
-//                 if (wireCount != 0) { finalOutputs[position] = `${wireCount}x ${wireMaterial}`; position++; }
-//                 if (foilCount != 0) { finalOutputs[position] = `${foilCount}x ${foilMaterial}`; position++; }
-//                 finalOutputs[position] = primBlock; position++;
-//                 finalOutputs[position] = cableBlock; position++;
-//                 finalOutputs[position] = wireBlock; position++;
-//                 finalOutputs[position] = foilBlock; position++;
-//             }
-//             else {
-//                 finalOutputs = [`${plateCount}x ${plateMaterial}`, "15x gtceu:tungsten_steel", "8x gtceu:samarium_iron_arsenic_oxide",
-//                      "3x gtceu:naquadah", false, false, false, false];
-//             }
+            event.recipes.gtceu.macerator(id(`macerate_${coil}`))
+                .itemInputs(`${prefix+coil}`)
+                .itemOutputs(outputs)
+                .duration(calculateDuration(outputs))
+                .EUt(2 * calculateVoltageMultiplier(outputs))
+                .category(GTRecipeCategories.MACERATOR_RECYCLING);
+        }
 
-//             return finalOutputs;
-//         }
-
-//         const arcRecipe = (coil) => {
-//             const id = global.id;
-//             const calculateDuration = global.calculateRecyclingDuration;
-//             const getFinalOutputs = global.getFinalRecycleOutputs;
-//             const prefix = FUSIONCOILDETAILS[coil].prefix;
-//             const outputs = getFinalOutputs(getFusionCoilRecycleOutputs(coil), "uhv" /*fake uhv tier so first slot isn't replaced via block bool*/,
-//                 false, false);
-
-//             event.recipes.gtceu.arc_furnace(id(`arc_${coil}`))
-//                 .itemInputs(`${ prefix + coil }`)
-//                 .itemOutputs(outputs)
-//                 .duration(calculateDuration(outputs))
-//                 .EUt(GTValues.VA[GTValues.LV])
-//                 .category(GTRecipeCategories.ARC_FURNACE_RECYCLING);
-//         }
-
-//         const macRecipe = (coil) => {
-//             const id = global.id;           
-//             const calculateDuration = global.calculateRecyclingDuration;
-//             const calculateVoltageMultiplier = global.calculateRecyclingVoltageMultiplier;
-//             const getFinalOutputs = global.getFinalRecycleOutputs;
-//             const prefix = FUSIONCOILDETAILS[coil].prefix;
-//             const outputs = getFinalOutputs(getFusionCoilRecycleOutputs(coil), "uhv" /*fake uhv tier so first slot isn't replaced via block bool*/,
-//                 true, false);
-
-//             event.recipes.gtceu.macerator(id(`macerate_${coil}`))
-//                 .itemInputs(`${prefix+coil}`)
-//                 .itemOutputs(outputs)
-//                 .duration(calculateDuration(outputs))
-//                 .EUt(2 * calculateVoltageMultiplier(outputs))
-//                 .category(GTRecipeCategories.MACERATOR_RECYCLING);
-//         }
-
-//         FUSIONCOILS.forEach(coil => {
-//             arcRecipe(coil);
-//             macRecipe(coil);
-//         })
-//     })
-// })
+        FUSIONCOILS.forEach(coil => {
+            arcRecipe(coil);
+            macRecipe(coil);
+        })
+    })
+})

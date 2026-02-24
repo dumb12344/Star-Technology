@@ -105,12 +105,13 @@ function compareNumbers(a,b) {
   return b - a;
 }
 // checks if input value is too big for one output slot, then breaks down into block form 
-global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool) => {
+global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool, fusionCasingBool) => {
   let finalOutput;
   let finalOutputTypes;
   let toBeSorted;
 
-  if (blockType == "singleblock_UHVPLUS") {
+  // TODO: simplify (check line 46 in fusion coils for reference)
+  if (blockType == "singleblock_UHVPLUS") { 
     finalOutput = {
       blockBools: {
         primBlock: false,
@@ -131,7 +132,7 @@ global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool) =>
     toBeSorted = (casingBool) ? [tempTotals.casingCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, `${tempTotals.tertCount}`] :
       [tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, tempTotals.tertCount];
   }
-  else if (blockType == "singleblock_LUVToUV"){
+  else if (blockType == "singleblock_LUVToUV") {
     finalOutput = {
       blockBools: {
         primBlock: false,
@@ -171,7 +172,6 @@ global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool) =>
   else if (blockType == "fusion_casing_UHVPLUS") {
     finalOutput = {
       blockBools: {
-        casingBlock: false,
         primBlock: false,
         cableBlock: false,
         hullCableBlock: false,
@@ -209,7 +209,47 @@ global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool) =>
     finalOutputTypes = ["casing", "prim", "cable", "hullCable", "wire"];
     toBeSorted = [tempTotals.casingCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.hullCableCount, tempTotals.wireCount];
   }
-
+  else if (blockType == "fusion_coil_UHVPLUS") {
+    finalOutput = {
+      blockBools: {
+        primBlock: false,
+        cableBlock: false,
+        secBlock: false,
+        tertBlock: false
+      },
+      totals: {
+        plateCount: 0,
+        primCount: 0,
+        cableCount: 0,
+        secCount: 0,
+        tertCount: 0
+      },
+      outputOrder: ["", "", "", "", ""]
+    }
+    finalOutputTypes = ["plate", "prim", "cable", "sec", "tert"];
+    toBeSorted = [tempTotals.plateCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.secCount, tempTotals.tertCount];
+  }
+  else if (blockType == "fusion_coil_LUVToUV") {
+    finalOutput = {
+      blockBools: {
+        primBlock: false,
+        cableBlock: false,
+        wireBlock: false,
+        foilBlock: false
+      },
+      totals: {
+        plateCount: 0,
+        primCount: 0,
+        cableCount: 0,
+        wireCount: 0,
+        foilCount: 0
+      },
+      outputOrder: ["", "", "", "", ""]
+    }
+    finalOutputTypes = ["plate", "prim", "cable", "wire", "foil"];
+    toBeSorted = [tempTotals.plateCount, tempTotals.primCount, tempTotals.cableCount, tempTotals.wireCount, tempTotals.foilCount];
+  }
+ 
   // orders outputs by size
   let knownPositions = [];
   let material;
@@ -244,15 +284,18 @@ global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool) =>
     }
   }
   
-  // sets final values 
+  // sets final values
   finalOutputTypes.forEach(type => {
-    // reduces fusion coil outputs to the actual value
+    // reduces fusion coil/casing outputs to the actual value
     if (type == "casing") {
       finalOutput.totals[type + "Count"] = tempTotals[type + "Count"];
     }
     else {
       if (auxCoilBool) {
         tempTotals[type + "Count"] = Math.floor(tempTotals[type + "Count"] / 3);
+      }
+      if (fusionCasingBool) {
+        tempTotals[type + "Count"] = Math.floor(tempTotals[type + "Count"] / 2);
       }
 
       // checks if item should be changed to block form
@@ -265,7 +308,6 @@ global.checkRecyclingCount = (tempTotals, blockType, auxCoilBool, casingBool) =>
       }
     }
   });
-
   return finalOutput;
 }
 
@@ -278,7 +320,7 @@ global.getFinalRecycleOutputs = (outputs, blockType, macBool, specialBool) => {
   let len = outputs.length - 1;
 
   //gets the booleans out of the end of the outputs array
-  if (blockType == "singleblock" || blockType == "fusion_casing") {
+  if (blockType == "singleblock" || blockType == "fusion_casing" || blockType == "fusion_coil") {
     blockBoolStartPos = len - 3;
     blockBools = [outputs[len - 3], outputs[len - 2], outputs[len - 1], outputs[len]]; 
   }

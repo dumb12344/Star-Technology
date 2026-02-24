@@ -626,6 +626,37 @@ global.fusionCasingDetails = {
     }
 }
 
+global.fusionCoilRecycleDetails = {
+    fusion_coil: {
+        components: "ignored",
+        tierComponent: "iv",
+        plateMaterial: "gtceu:europium",
+        prefix: "gtceu:",
+        plateCount: 4
+    },
+    auxiliary_fusion_coil_mk1: {
+        components: [ "field_generator", "field_generator", "field_generator", "field_generator", "electric_pump", "electric_pump" ],
+        tierComponent: "zpm",
+        plateMaterial: "gtceu:zircalloy_4",
+        prefix: "start_core:",
+        plateCount: 8
+    },
+    advanced_fusion_coil: {
+        components: [ "field_generator", "field_generator", "electric_pump"],
+        tierComponent: "uv",
+        plateMaterial: "gtceu:magmada_alloy",
+        prefix: "start_core:",
+        plateCount: 4
+    },
+    auxiliary_fusion_coil_mk2: {
+        components: [ "field_generator", "field_generator", "field_generator", "field_generator", "electric_pump", "electric_pump" ],
+        tierComponent: "uhv",
+        plateMaterial: "gtceu:abyssal_alloy",
+        prefix: "start_core:",
+        plateCount: 8
+    }
+};
+
 // global.energyHatchRecycleCounts = {
 //     lvtohv: {
 //         a2: {
