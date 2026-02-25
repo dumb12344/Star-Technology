@@ -77,3 +77,7 @@
 
     const $FluidHatchPartMachine = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.part.FluidHatchPartMachine')
         //Adding new fluid hatch types
+
+    //VCR Machine Loader
+    const $VacuumChemicalReactorMachine = Java.loadClass("com.startechnology.start_core.machine.vcrc.VacuumChemicalReactionChamberMachine");
+    const $StarTVacuumPumpPredicates = Java.loadClass("com.startechnology.start_core.machine.vacuum_pump.StarTVacuumPumpPredicates");
