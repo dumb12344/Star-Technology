@@ -32,59 +32,31 @@ global.not_hardmode(() => {
 
         const arcRecipe = (tier) => {
             const id = global.id;
-            const componentRecycles = global.componentRecycleMaterials;
             const calculateDuration = global.calculateRecyclingDuration;
             const getFinalOutputs = global.getFinalRecycleOutputs;
+            const componentRecycles = global.componentRecycleMaterials;
+            const casingMaterials = global.casingMaterials;
+            const materialTypes = (tier == "uev" || tier == "uiv") ? ["prim", "cable", "sec", "tert"] : (tier == "uhv") ? ["casing", "prim", "cable", "sec", "tert"] : 
+                ["casing", "prim", "cable", "wire", "foil"];
+            let materials = {};
+            
+            materialTypes.forEach(type => {
+                if (type == "casing") {
+                    materials[type + "Material"] = casingMaterials[tier];
+                }
+                else {
+                    materials[type + "Material"] = componentRecycles[tier][type + "Material"];
+                }
+            });
+            
             const coverCounts = (tier == "uv") ? global.LUVToUVComponentRecycleCounts.dreamlink_cover : global.UHVPlusComponentRecycleCounts.dreamlink_cover;
-            const materials = {
-                casingMaterial: "",
-                primMaterial: "",
-                cableMaterial: "",
-                secMaterial: "",
-                tertMaterial: "",
-            }
-                      
-            switch (tier) {
-                case "uv": {
-                    const CRuv = componentRecycles.uv;
-                    materials.casing = "gtceu:darmstadtium";
-                    materials.compPrim = componentRecycles.uv.primMaterial;
-                    materials.cable = componentRecycles.uv.cableMaterial;
-                    materials.compSec = componentRecycles.uv.wireMaterial;
-                    materials.compTert = componentRecycles.uv.foilMaterial;
-                    break;
-                }
-                case "uhv": {
-                    const CRuhv = componentRecycles.uhv;
-                    materials.casing = "gtceu:neutronium";
-                    materials.compPrim = componentRecycles.uhv.primMaterial;
-                    materials.cable = componentRecycles.uhv.cableMaterial;
-                    materials.compSec = componentRecycles.uhv.secMaterial;
-                    materials.compTert = componentRecycles.uhv.tertMaterial;
-                    break;
-                }
-                case "uev": {
-                    const CRuev = componentRecycles.uev;
-                    materials.compPrim = componentRecycles.uev.primMaterial;
-                    materials.cable = componentRecycles.uev.cableMaterial;
-                    materials.compSec = componentRecycles.uev.secMaterial;
-                    materials.compTert = componentRecycles.uev.tertMaterial;
-                    break;
-                }
-                case "uiv": {
-                    const CRuiv = componentRecycles.uiv;
-                    materials.compPrim = componentRecycles.uiv.primMaterial;
-                    materials.cable = componentRecycles.uiv.cableMaterial;
-                    materials.compSec = componentRecycles.uiv.secMaterial;
-                    materials.compTert = componentRecycles.uiv.tertMaterial;
-                    break;
-                }
-            }
-
+            const secMaterial = (tier == "uv") ? materials.wireMaterial : materials.secMaterial;
             const secCount = (tier == "uv") ? coverCounts.wireCount : coverCounts.secCount;
+            const tertMaterial = (tier == "uv") ? materials.foilMaterial : materials.tertMaterial;
             const tertCount = (tier == "uv") ? coverCounts.foilCount : coverCounts.tertCount;
-            const coverOutputs = getFinalOutputs([`${coverCounts.primCount}x ${materials.compPrim}`, `${coverCounts.cableCount}x ${materials.cable}`, 
-                `${tertCount}x ${materials.compTert}`, `${secCount}x ${materials.compSec}`, false, false, false, false], "singleblock", false, false);             
+            
+            const coverOutputs = getFinalOutputs([`${coverCounts.primCount}x ${materials.primMaterial}`, `${coverCounts.cableCount}x ${materials.cableMaterial}`, 
+                `${tertCount}x ${tertMaterial}`, `${secCount}x ${secMaterial}`, false, false, false, false], "singleblock", false, false);             
             
             event.recipes.gtceu.arc_furnace(id(`arc_${tier}_2a_dream_link_cover_item`))
                 .itemInputs(`start_core:${tier}_2a_dream_link_cover_item`)
@@ -92,61 +64,36 @@ global.not_hardmode(() => {
                 .duration(calculateDuration(coverOutputs))
                 .EUt(GTValues.VA[GTValues.LV])
                 .category(GTRecipeCategories.ARC_FURNACE_RECYCLING);
-
         }
 
         const macRecipe = (tier) => {
             const id = global.id;
-            const componentRecycles = global.componentRecycleMaterials;
             const calculateDuration = global.calculateRecyclingDuration;
             const calculateVoltageMultiplier = global.calculateRecyclingVoltageMultiplier;
             const getFinalOutputs = global.getFinalRecycleOutputs;
+            const componentRecycles = global.componentRecycleMaterials;
+            const casingMaterials = global.casingMaterials;
+            const materialTypes = (tier == "uev" || tier == "uiv") ? ["prim", "cable", "sec", "tert"] : (tier == "uhv") ? ["casing", "prim", "cable", "sec", "tert"] : 
+                ["casing", "prim", "cable", "wire", "foil"];
+            let materials = {};
+            
+            materialTypes.forEach(type => {
+                if (type == "casing") {
+                    materials[type + "Material"] = casingMaterials[tier];
+                }
+                else {
+                    materials[type + "Material"] = componentRecycles[tier][type + "Material"];
+                }
+            });
+            
             const coverCounts = (tier == "uv") ? global.LUVToUVComponentRecycleCounts.dreamlink_cover : global.UHVPlusComponentRecycleCounts.dreamlink_cover;
-            const materials = {
-                casing: "",
-                compPrim: "",
-                cable: "",
-                compSec: "",
-                compTert: "",
-            }
-                      
-            switch (tier) {
-                case "uv": {
-                    materials.casing = "gtceu:darmstadtium";
-                    materials.compPrim = componentRecycles.uv.primMaterial;
-                    materials.cable = componentRecycles.uv.cableMaterial;
-                    materials.compSec = componentRecycles.uv.wireMaterial;
-                    materials.compTert = componentRecycles.uv.foilMaterial;
-                    break;
-                }
-                case "uhv": {
-                    materials.casing = "gtceu:neutronium";
-                    materials.compPrim = componentRecycles.uhv.primMaterial;
-                    materials.cable = componentRecycles.uhv.cableMaterial;
-                    materials.compSec = componentRecycles.uhv.secMaterial;
-                    materials.compTert = componentRecycles.uhv.tertMaterial;
-                    break;
-                }
-                case "uev": {
-                    materials.compPrim = componentRecycles.uev.primMaterial;
-                    materials.cable = componentRecycles.uev.cableMaterial;
-                    materials.compSec = componentRecycles.uev.secMaterial;
-                    materials.compTert = componentRecycles.uev.tertMaterial;
-                    break;
-                }
-                case "uiv": {
-                    materials.compPrim = componentRecycles.uiv.primMaterial;
-                    materials.cable = componentRecycles.uiv.cableMaterial;
-                    materials.compSec = componentRecycles.uiv.secMaterial;
-                    materials.compTert = componentRecycles.uiv.tertMaterial;
-                    break;
-                }
-            }
-
+            const secMaterial = (tier == "uv") ? materials.wireMaterial : materials.secMaterial;
             const secCount = (tier == "uv") ? coverCounts.wireCount : coverCounts.secCount;
+            const tertMaterial = (tier == "uv") ? materials.foilMaterial : materials.tertMaterial;
             const tertCount = (tier == "uv") ? coverCounts.foilCount : coverCounts.tertCount;
-            const coverOutputs = getFinalOutputs([`${coverCounts.primCount}x ${materials.compPrim}`, `${coverCounts.cableCount}x ${materials.cable}`, 
-                `${tertCount}x ${materials.compTert}`, `${secCount}x ${materials.compSec}`, false, false, false, false], "singleblock", true, false);
+            
+            const coverOutputs = getFinalOutputs([`${coverCounts.primCount}x ${materials.primMaterial}`, `${coverCounts.cableCount}x ${materials.cableMaterial}`, 
+                `${tertCount}x ${tertMaterial}`, `${secCount}x ${secMaterial}`, false, false, false, false], "singleblock", true, false);
             
             event.recipes.gtceu.macerator(id(`macerate_${tier}_2a_dream_link_cover_item`))
                 .itemInputs(`start_core:${tier}_2a_dream_link_cover_item`)
