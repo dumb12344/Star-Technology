@@ -567,6 +567,8 @@
     "block.kubejs.fluix_steel_casing": "Fluix Steel Casing",
     "block.kubejs.superalloy_casing": "Superalloy Casing",
 
+    "block.kubejs.added_by_StarT.tooltip": "§eAdded by Star Technology",
+
     "block.kubejs.enriched_naquadah_machine_casing": "Enriched Naquadah Casing",
     "block.kubejs.enriched_naquadah_pipe_casing": "Enriched Naquadah Pipe Casing",
     "block.kubejs.enriched_naquadah_gearbox": "Enriched Naquadah Gearbox Casing",
