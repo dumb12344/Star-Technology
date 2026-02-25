@@ -3,32 +3,6 @@ global.not_hardmode(() => {
         const TIERS = [
             "uv", "uhv", "uev", "uiv"
         ]
-        const DREAMLINKDETAILS = {
-            A2: {
-                amperage: 2,
-                coverCount: 1,
-                cableCount: 2
-            },
-            A4: {
-                amperage: 4,
-                coverCount: 2,
-                cableCount: 4
-            },
-            A16: {
-                amperage: 16,
-                coverCount: 8,
-                cableCount: 8
-            },
-            A64: {
-                amperage: 64,
-                coverCount: 32,
-                cableCount: 16
-            }
-        }
-
-        function doDreamlinkRecycles(materials, amperage, coverCount, cableCount) {
-
-        }
 
         const arcRecipe = (tier) => {
             const id = global.id;
