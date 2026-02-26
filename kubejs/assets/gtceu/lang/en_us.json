@@ -772,6 +772,15 @@
     "material.gtceu.magnesium_nitride": "Magnesium Nitride",
     "material.gtceu.runic_convergence_infusion": "Runic Convergence Infusion",
 
+    "material.gtceu.linoleic_acid": "Linoleic Acid",
+    "material.gtceu.sodium_linoleate": "Sodium Linoleate",
+    "material.gtceu.aerogel_solvent_mixture": "Aerogel Solvent Mixture",
+    "material.gtceu.silicon_tetrachloride": "Silicon Tetrachloride",
+    "material.gtceu.tetraethyl_orthosilicate": "Tetraethyl Orthosilicate",
+    "material.gtceu.aerogel_precursor_solution": "Aerogel Precursor Solution",
+    "material.gtceu.wet_aerogel": "Wet Aerogel",
+    "material.gtceu.aerogel": "Aerogel",
+
     "material.gtceu.crude_infernal_concentrate": "Crude Infernal Concentrate",
     "material.gtceu.infernal_concentrate": "Infernal Concentrate",
     "material.gtceu.superheated_infernal_concentrate": "Superheated Infernal Concentrate",
