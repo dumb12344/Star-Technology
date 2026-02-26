@@ -42,6 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('gtceu:fusion_coil'))
             .where(' ', Predicates.any())
             .build())
+        ["partSorter(java.util.function.Function)"]((mc) => $AssemblyLineMulti.partSorter(mc))
         .workableCasingModel('kubejs:block/casings/naquadah/casing',
         'gtceu:block/multiblock/implosion_compressor');
 

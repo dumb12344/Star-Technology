@@ -39,6 +39,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('R', Predicates.blocks('kubejs:draco_assembly_grating'))
             .where(' ', Predicates.any())
             .build())
+        ["partSorter(java.util.function.Function)"]((mc) => $AssemblyLineMulti.partSorter(mc))
         .workableCasingModel('kubejs:block/casings/naquadah/casing',
             'gtceu:block/multiblock/assembly_line');
 
