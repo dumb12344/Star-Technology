@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
         .researchStack(Item.of('gtceu:zpm_gas_collector'))
         .EUt(GTValues.VHA[GTValues.ZPM])
-        .CWUt(2424))
+        .CWUt(24))
        .EUt(GTValues.VHA[GTValues.ZPM]);
         
 });
