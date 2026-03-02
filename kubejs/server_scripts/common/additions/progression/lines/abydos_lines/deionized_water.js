@@ -22,27 +22,27 @@ ServerEvents.recipes(event => {
     lcr(id(`divinylbenzene`))
         .inputFluids(`gtceu:benzene 1000`, `gtceu:ethylene 2000`)
         .outputFluids(`gtceu:divinylbenzene 1000`)
-        .duration(4*20)
+        .duration(80)
         .EUt(GTValues.VA[GTValues.LuV]);
 
     lcr(id(`dry_${beads}`))
         .inputFluids(`gtceu:styrene 10000`, `gtceu:oxygen 10000`, `gtceu:divinylbenzene 1000`)
         .itemOutputs(`40x kubejs:dry_${beads}`)
-        .duration(30*20)
+        .duration(600)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
     cb(id(beads))
         .inputFluids(`gtceu:distilled_water 1000`)
         .itemInputs(`5x kubejs:dry_${beads}`)
         .itemOutputs(`5x kubejs:${beads}`)
-        .duration(2.5*20)
+        .duration(50)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     sifter(id(`purified_water`))
         .chancedInput(`1x gtceu:carbon_fiber_mesh`, 5000, 0)
         .inputFluids(`gtceu:distilled_water 40000`)
         .outputFluids(`gtceu:purified_water 20000`)
-        .duration(60*20)
+        .duration(1200)
         .EUt(GTValues.VA[GTValues.UV]);
 
     vcr(id(`acidic_water`))
@@ -50,14 +50,14 @@ ServerEvents.recipes(event => {
         .itemInputs(`8x kubejs:${beads}`)
         .outputFluids(`gtceu:acidic_water 10000`)
         .itemOutputs(`5x kubejs:dirty_${beads}`)
-        .duration(10*20)
+        .duration(200)
         .EUt(GTValues.VHA[GTValues.UV])
         .vacuumLevel(85);
 
     dt(id(`deionized_water`))
         .inputFluids(`gtceu:acidic_water 10000`)
         .outputFluids(`minecraft:water 250`, `gtceu:distilled_water 500`, `gtceu:purified_water 1000`, `gtceu:deionized_water 8000`)
-        .duration(10*20)
+        .duration(200)
         .disableDistilleryRecipes(true)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .EUt(GTValues.VHA[GTValues.UV]);
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
         .inputFluids(`gtceu:sulfuric_acid 1000`)
         .itemInputs(`4x kubejs:dirty_${beads}`)
         .itemOutputs(`4x kubejs:dry_${beads}`)
-        .duration(5*20)
+        .duration(100)
         .EUt(GTValues.VHA[GTValues.LuV]);
     
 });
