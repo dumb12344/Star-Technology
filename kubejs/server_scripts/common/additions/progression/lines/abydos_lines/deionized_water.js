@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
 
     lcr(id(`divinylbenzene`))
         .inputFluids(`gtceu:benzene 1000`, `gtceu:ethylene 2000`)
-        .outputFluids(`gtceu:divinylbenzene 1000`)
+        .outputFluids(`gtceu:divinylbenzene 1000`, `gtceu:hydrogen 4000`)
         .duration(80)
         .EUt(GTValues.VA[GTValues.LuV]);
 
