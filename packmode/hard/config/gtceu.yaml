@@ -506,10 +506,10 @@ client:
 
   tankItemFluidPreview:
     # Set true to render the including fluid icons to GT Drums
-    drum: false
+    drum: true
 
     # Set true to render the including fluid icons to Super (Quantum) Tanks
-    quantumTank: false
+    quantumTank: true
 
 # Config options for Tools and Armor
 tools:
