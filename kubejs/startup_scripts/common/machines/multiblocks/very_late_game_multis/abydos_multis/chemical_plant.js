@@ -7,14 +7,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .setMaxIOSize(6, 6, 6, 6)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHEMICAL);
-    
-    event.create('advanced_chemistry')
-        .category('highly_advanced')
-        .setEUIO('in')
-        .setMaxTooltips(4)
-        .setMaxIOSize(6, 6, 6, 6)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.CHEMICAL);
 
 });
 
@@ -22,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('chemical_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeTypes(['chemical_skip', 'advanced_chemistry'])
+        .recipeTypes(['chemical_skip'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:peek_casing'))
         .pattern(definition => FactoryBlockPattern.start()

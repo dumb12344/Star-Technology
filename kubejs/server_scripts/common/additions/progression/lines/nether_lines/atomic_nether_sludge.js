@@ -322,4 +322,18 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(11500)
         .EUt(GTValues.VA[GTValues.UV]);
 
+    //  event.recipes.gtceu.test_layered(id('test'))
+    //     .layeredRecipe(layers => layers
+    //         .inputItems(ItemTags.PLANKS, 3)
+    //         .inputItems(Blocks.COBBLESTONE.asItem(), 4)
+    //         .next()
+    //         .inputItems(ingot, Iron)
+    //         .inputItems(dust, Redstone)
+    //         // last .next() is implicit
+    //     )
+    //     .inputFluids(Glue.getFluid(100)) // used by all layers
+    //     .outputItems(Blocks.PISTON.asItem())
+    //     .duration(100) // used by all layers
+    //     .EUt(20); // used by all layers
+
 });
