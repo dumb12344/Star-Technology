@@ -52,7 +52,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1)))
             .where('F', Predicates.blocks('gtceu:draconyallium_frame'))
             .where('C', Predicates.blocks('kubejs:nyanium_machine_casing'))
-            .where('E', Predicates.blocks('kubejs:nyanium_machine_engine_intake_casing'))
+            .where('E', Predicates.blocks('kubejs:nyanium_engine_intake_casing'))
             .where('X', Predicates.blocks('kubejs:nyanium_heat_escape_casing'))
             .where('G', Predicates.blocks('kubejs:nyanium_gearbox'))
             .where('L', Predicates.abilities(PartAbility.OUTPUT_LASER))

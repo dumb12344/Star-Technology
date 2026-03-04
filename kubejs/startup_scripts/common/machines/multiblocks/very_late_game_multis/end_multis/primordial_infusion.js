@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('M', Predicates.blocks('kubejs:aberration_casing'))
             .where('A', Predicates.blocks('kubejs:draco_assembly_grating'))
             .where('H', Predicates.blocks('kubejs:draco_ware_casing'))
-            .where('F', Predicates.blocks('kubejs:nyanium_machine_firebox_casing'))
+            .where('F', Predicates.blocks('kubejs:nyanium_firebox_casing'))
             .where('V', Predicates.blocks('gtceu:draco_abyssal_frame'))    
             .where('P', Predicates.blocks('kubejs:runic_pathway_casing'))
             .where('G', Predicates.blocks('kubejs:draco_resilient_fusion_glass'))

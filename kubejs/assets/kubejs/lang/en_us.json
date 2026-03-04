@@ -623,9 +623,10 @@
     "block.kubejs.tumbaga_casing": "Tumbaga Casing",
     "block.kubejs.silicone_rubber_casing": "Silicone Rubber Casing",
 
-    "block.kubejs.runic_stabilization_casing": "Stabilization Enscribed Runically Infused Casing",
-    "block.kubejs.runic_transportation_casing": "Transportation Enscribed Runically Infused Casing",
-    "block.kubejs.runic_pathway_casing": "Pathway Enscribed Runically Infused Casing",
+    "block.kubejs.runic_stabilization_casing": "Stabilization Enscribed Runically Inscribed Casing",
+    "block.kubejs.runic_transportation_casing": "Transportation Enscribed Runically Inscribed Casing",
+    "block.kubejs.runic_pathway_casing": "Pathway Enscribed Runically Inscribed Casing",
+    "block.kubejs.blank_runic_casing": "Blank Runic Capable Casing",
 
     "block.kubejs.signalum_casing": "Ultra High Pressure and Temperature Resistant Signalum Casing",
     "block.kubejs.enderium_casing": "Thermal Fluctuation Proof Enderium Casing",
@@ -648,7 +649,7 @@
     "block.kubejs.abyssal_drill_1": "Mythrolic Drill Casing",
     "block.kubejs.abyssal_drill_2": "Starium Drill Casing",
 
-    "block.kubejs.kanthal_casing": "Kanthal Casing",
+    "block.kubejs.black_steel_casing": "Black Steel Casing",
     "block.kubejs.manganin_casing": "Manganin Casing",
     "block.kubejs.galvanized_steel_casing": "Galvanized Steel Casing",
 

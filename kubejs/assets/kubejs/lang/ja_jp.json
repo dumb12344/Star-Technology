@@ -606,8 +606,8 @@
     "block.kubejs.nyanium_machine_casing": "ニャニウム製マシン外装",
     "block.kubejs.nyanium_pipe_casing": "ニャニウム製パイプ外装",
     "block.kubejs.nyanium_gearbox": "ニャニウム製ギアボックス外装",
-    "block.kubejs.nyanium_machine_firebox_casing": "ニャニウム製火室外装",
-    "block.kubejs.nyanium_machine_engine_intake_casing": "最上位エンジン吸気口",
+    "block.kubejs.nyanium_firebox_casing": "ニャニウム製火室外装",
+    "block.kubejs.nyanium_engine_intake_casing": "最上位エンジン吸気口",
 
     "block.kubejs.advanced_assembly_casing": "発展型組立用マシン外装",
     "block.kubejs.ionic_engraving_casing": "耐イオン刻印マシン外装",

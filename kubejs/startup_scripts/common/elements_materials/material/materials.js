@@ -325,7 +325,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('trinium', fine_wire);
     matmod('naquadah_alloy', round);
     matmod('ruridit', [small_gear, rotor]);
-    matmod("kanthal", [frame]);
+    matmod('iridium', rotor);
     matmod('iron', foil);
     matmod('wrought_iron', frame);
     matmod('red_alloy', spring);

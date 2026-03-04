@@ -18,7 +18,7 @@ StartupEvents.registry('block', event => {
     nyan_casing('nyanium_gearbox', 'gearbox');
     nyan_casing('nyanium_turbine_casing', 'turbine_casing');
 
-    event.create('nyanium_machine_firebox_casing', 'gtceu:active')
+    event.create('nyanium_firebox_casing', 'gtceu:active')
         .hardness(5)
         .resistance(10)
         .soundType('metal')
@@ -29,7 +29,7 @@ StartupEvents.registry('block', event => {
                 'kubejs:block/casings/nyanium/firebox_casing',
                 'kubejs:block/casings/nyanium/casing');
 
-    event.create('nyanium_machine_engine_intake_casing', 'gtceu:active')
+    event.create('nyanium_engine_intake_casing', 'gtceu:active')
         .displayName('Nyinsane Engine Intake Casing')
         .hardness(5)
         .resistance(10)
@@ -46,6 +46,6 @@ StartupEvents.registry('block', event => {
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .requiresTool(false)
-        .bloom('kubejs:block/casings/nyanium/firebox_casing');
+        .bloom('kubejs:block/casings/nyanium/heat_escape');
 
 });
