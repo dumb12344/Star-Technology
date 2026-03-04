@@ -33,7 +33,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('C', Predicates.blocks('gtceu:melastrium_mox_frame'))
             .where('D', Predicates.blocks('start_core:auxiliary_boosted_fusion_casing_mk2'))
-            .where('E', Predicates.blocks('kubejs:nyanium_machine_engine_intake_casing'))
+            .where('E', Predicates.blocks('kubejs:nyanium_engine_intake_casing'))
             .where('F', $StarTThreadingStatBlocks.threadingStatBlocks())
             .where('G', Predicates.blocks('kubejs:nyanium_pipe_casing'))
             .where('H', Predicates.blocks('kubejs:draco_resilient_fusion_glass'))

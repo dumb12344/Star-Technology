@@ -1,17 +1,3 @@
-// Deayed due to new Material Flags not being added to Theta (would only be used minimally in current state to avoid mass disruptions)
-
-// GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-
-//     event.create('titan_forge')
-//         .category('ultimate')
-//         .setEUIO('in')
-//         .setMaxTooltips(4)
-//         .setMaxIOSize(6, 1, 2, 0)
-//         .setSound(GTSoundEntries.FORGE_HAMMER)
-//         .setProgressBar(GuiTextures.PROGRESS_BAR_BENDING, FillDirection.LEFT_TO_RIGHT);
-
-// });
-
 // GTCEuStartupEvents.registry('gtceu:machine', event => {
 
 //     event.create('titan_forge', 'multiblock')

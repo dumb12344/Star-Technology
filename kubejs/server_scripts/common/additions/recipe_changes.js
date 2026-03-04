@@ -202,6 +202,18 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV]);
 
-    // REMOVING LARGE BOILERS BECAUSE ALL OUR FOOD KEEPS BLOWING UP
-    event.remove({ id: /gtceu:.*_large_boiler/});
+    //certus fixes
+   [ 
+    {name: `exquisite_certus_quartz_gem`, dustCount: 4},
+    {name: `flawless_certus_quartz_gem`, dustCount: 2}
+   ].forEach(item => {
+        event.remove({ input: `gtceu:${item.name}`, type: `gtceu:macerator` });
+
+        event.recipes.gtceu.macerator(id(`macerate_${item.name}`))
+            .itemInputs(`gtceu:${item.name}`)
+            .itemOutputs(`${item.dustCount}x gtceu:certus_quartz_dust`)
+            .duration(item.dustCount * 20)
+            .EUt(2)
+            .category(GTRecipeCategories.MACERATOR_RECYCLING);
+    })
 });

@@ -36,7 +36,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
-            .where('D', Predicates.blocks('kubejs:nyanium_machine_engine_intake_casing'))
+            .where('D', Predicates.blocks('kubejs:nyanium_engine_intake_casing'))
             .where('E', $StarTThreadingStatBlocks.threadingStatBlocks())
             .where('F', Predicates.blocks('start_core:advanced_fusion_coil'))
             .where('G', Predicates.blocks('kubejs:nyanium_pipe_casing'))

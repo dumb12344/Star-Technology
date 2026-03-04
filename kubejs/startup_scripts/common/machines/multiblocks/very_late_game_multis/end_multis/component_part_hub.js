@@ -25,7 +25,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.OPTICAL_DATA_RECEPTION).setMaxGlobalLimited(1).setPreviewCount(0))
                 .or(Predicates.blocks('gtceu:uhv_stabilization_module').setExactLimit(1)))
             .where(' ', Predicates.any())
-            .where('C', Predicates.blocks('kubejs:nyanium_machine_firebox_casing'))
+            .where('C', Predicates.blocks('kubejs:nyanium_firebox_casing'))
             .where('D', Predicates.blocks('kubejs:draco_assembly_grating'))
             .where('E', Predicates.blocks('kubejs:draco_ware_casing'))
             .where('F', Predicates.blocks('kubejs:draco_resilient_fusion_glass'))

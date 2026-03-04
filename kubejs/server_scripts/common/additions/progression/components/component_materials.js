@@ -1,6 +1,31 @@
 // priority: 1000
 
 global.componentMaterials = {
+    lv: {
+        materials: {
+            tierMaterial: `steel`
+        }
+    },
+    mv: {
+        materials: {
+            tierMaterial: `aluminium`
+        }
+    },
+    hv: {
+        materials: {
+            tierMaterial: `stainless_steel`
+        }
+    },
+    ev: {
+        materials: {
+            tierMaterial: `titanium`
+        }
+    },
+    iv: {
+        materials: {
+            tierMaterial: `tungsten_steel`
+        }
+    },
     luv: {
         tiers: { tier: 'luv', tier0: 'zpm', tier1: 'iv', tier2: 'ev' },
         materials: {
@@ -112,7 +137,7 @@ global.componentMaterials = {
             buzz: 'duranium',
             chip: 'gtceu:uhpic',
             fluidStorage: 'start_core:enriched_naquadah_drum',
-            itemStorage: 'gtceu:lv_super_chest' //to be ENaq Crate when added
+            itemStorage: 'start_core:enriched_naquadah_crate' //to be ENaq Crate when added
         },
         scaling: {
             scaler: 3,
@@ -148,12 +173,12 @@ global.componentMaterials = {
             supMagnet: 'samarium',
             pipeMaterial: 'zapolgium',
             miscMaterial: 'neutronium',
-            glass: 'gtceu:fusion_glass',
+            glass: 'kubejs:reinforced_fusion_glass',
             superconductor: 'ruthenium_trinium_americium_neutronate',
             buzz: 'neutronium',
             chip: 'gtceu:uhpic',
             fluidStorage: 'start_core:neutronium_drum',
-            itemStorage: 'gtceu:mv_super_chest' //to be Nt Crate when added
+            itemStorage: 'start_core:neutronium_crate'
         },
         scaling: {
             scaler: 4,
@@ -189,7 +214,7 @@ global.componentMaterials = {
             supMagnet: 'dysprosium',
             pipeMaterial: 'mythrolic_alloy',
             miscMaterial: 'mythrolic_alloy',
-            glass: 'gtceu:fusion_glass',
+            glass: 'kubejs:reinforced_fusion_glass',
             superconductor: 'seaborgium_palladium_enriched_estalt_flerovium_alloy',
             buzz: 'neutronium',
             chip: 'kubejs:uepic',

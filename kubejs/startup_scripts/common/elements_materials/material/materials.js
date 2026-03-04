@@ -325,7 +325,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('trinium', fine_wire);
     matmod('naquadah_alloy', round);
     matmod('ruridit', [small_gear, rotor]);
-    matmod("kanthal", [frame]);
+    matmod('iridium', rotor);
     matmod('iron', foil);
     matmod('wrought_iron', frame);
     matmod('red_alloy', spring);
@@ -1694,6 +1694,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('liquefied_nutrient_paste', [], 0x8A8E96, [no_decomp]);
     compLiquid('biostimulating_mixture', ['2x silicic_acid', '4x seaweed_oil', '5x liquefied_nutrient_paste', '1x mutagen', '3x glycerol'], 0x72A677, [no_decomp]);
 
+    //Bromine Line
     event.create('acidic_bromine_solution')
         .liquid()
         .color(0xc49b52)
@@ -1750,6 +1751,22 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .gas()
         .color(0x8f681e)
         .components('3x steam', '1x chlorine');
+    
+    //aerogel line
+    compLiquid(`linoleic_acid`, [`18x carbon`, `31x hydrogen`, `2x oxygen`], 0xDBDCDB, [no_decomp]);
+    compDust(`sodium_linoleate`, [`18x carbon`, `31x hydrogen`, `2x oxygen`, `sodium`], 0xFFFFFF, [no_decomp]);
+    noCompFluid(`aerogel_solvent_mixture`, 0x9DE4DB);
+    compLiquid(`silicon_tetrachloride`, [`silicon`, `4x chlorine`], 0xDCDBDB, [no_decomp]);
+    compLiquid(`tetraethyl_orthosilicate`, [`silicon`, `8x carbon`, `20x hydrogen`, `4x oxygen`], 0xDBDBDB, [no_decomp]);
+    noCompFluid(`aerogel_precursor_solution`, 0xAEBBBF);
+
+    event.create(`aerogel`)
+        .polymer()
+        .ingot()
+        .color(0x9fcad9)
+        .secondaryColor(0xe5f1ee)
+        .flags(foil, plates);
+
 
     //Polycarbonate Line
     /* Missing items/fluids
