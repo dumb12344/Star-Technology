@@ -1,0 +1,7 @@
+{
+  "parent": "gtceu:block/cube_2_layer/all",
+  "textures": {
+    "bot_all": "kubejs:block/casings/naquadah/firebox_casing",
+    "top_all": "kubejs:block/casings/naquadah/firebox_casing_bloom"
+  }
+}
