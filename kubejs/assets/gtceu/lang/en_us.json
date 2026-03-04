@@ -778,8 +778,12 @@
     "material.gtceu.silicon_tetrachloride": "Silicon Tetrachloride",
     "material.gtceu.tetraethyl_orthosilicate": "Tetraethyl Orthosilicate",
     "material.gtceu.aerogel_precursor_solution": "Aerogel Precursor Solution",
-    "material.gtceu.wet_aerogel": "Wet Aerogel",
     "material.gtceu.aerogel": "Aerogel",
+
+    "material.gtceu.purified_water": "Purified Water",
+    "material.gtceu.acidic_water": "Acidic Water",
+    "material.gtceu.divinylbenzene": "Divinylbenzene",
+    "material.gtceu.deionized_water": "De-ionized Water",
 
     "material.gtceu.crude_infernal_concentrate": "Crude Infernal Concentrate",
     "material.gtceu.infernal_concentrate": "Infernal Concentrate",
@@ -1422,5 +1426,8 @@
 
     "block.gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
     "block.gtceu.bacteria_synthesizer.tooltip.0": "Can use §3Parallel§r hatches",
-    "gtceu.bacteria_synthesizer": "Bacteria Synthesizer"
+    "gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
+    
+    "block.gtceu.palladium_substation": "Secure Pallaridium Machine Casing"
+
 }

@@ -45,7 +45,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where('B', Predicates.blocks('gtceu:heat_vent'))
-            .where('C', Predicates.blocks('kubejs:nyanium_machine_engine_intake_casing'))
+            .where('C', Predicates.blocks('kubejs:nyanium_engine_intake_casing'))
             .where(' ', Predicates.any())
             .where('D', Predicates.blocks('gtceu:draco_abyssal_frame'))
             .where('E', Predicates.blocks('gtceu:ptfe_pipe_casing'))

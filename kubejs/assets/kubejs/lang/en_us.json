@@ -401,6 +401,10 @@
     "item.kubejs.compass_of_the_flame": "§6Compass of the Flame",
     "item.kubejs.compass_of_the_flame.tooltip": "§7Right click to locate nearest nether shrine",
 
+    "item.kubejs.ion_exchange_resin_beads": "Ion Exchange Resin Beads",
+    "item.kubejs.dry_ion_exchange_resin_beads": "Dry Ion Exchange Resin Beads",
+    "item.kubejs.dirty_ion_exchange_resin_beads": "Dirty Ion Exchange Resin Beads",
+
     "item.kubejs.uhv_voltage_coil": "Ultra High Voltage Coil",
     "item.kubejs.uhv_voltage_coil.tooltip": "§l§4P§fe§4p§fp§4e§fr§4m§fi§4n§ft§r Coil",
     "item.kubejs.uev_voltage_coil": "Ultra Excessive Voltage Coil",
@@ -560,9 +564,28 @@
 
     "block.kubejs.added_by_StarT.tooltip": "§eAdded by Star Technology",
 
-    "block.kubejs.enriched_naquadah_machine_casing": "Enriched Naquadah Casing",
+    "block.kubejs.pallaridium_turbine_casing": "Pallaridium Turbine Casing",
+    "block.kubejs.pallaridium_pipe_casing": "Pallaridium Pipe Casing",
+    "block.kubejs.pallaridium_gearbox": "Pallaridium Gearbox Casing",
+    "block.kubejs.pallaridium_firebox_casing": "Pallaridium Firebox Casing",
+    "block.kubejs.pallaridium_engine_intake_casing": "Unreal Engine Intake Casing",
+    "block.kubejs.pallaridium_heat_escape_casing": "Pallaridium Heat Escape Casing",
+
+    "block.kubejs.enriched_naquadah_machine_casing": "Reinforced Enriched Naquadah Machine Casing",
+    "block.kubejs.enriched_naquadah_turbine_casing": "Enriched Naquadah Turbine Casing",
     "block.kubejs.enriched_naquadah_pipe_casing": "Enriched Naquadah Pipe Casing",
     "block.kubejs.enriched_naquadah_gearbox": "Enriched Naquadah Gearbox Casing",
+    "block.kubejs.enriched_naquadah_firebox_casing": "Enriched Naquadah Firebox Casing",
+    "block.kubejs.enriched_naquadah_engine_intake_casing": "Supreme Engine Intake Casing",
+    "block.kubejs.enriched_naquadah_heat_escape_casing": "Enriched Naquadah Heat Escape Casing",
+
+    "block.kubejs.nyanium_machine_casing": "Meowgnificent Nyanium Machine Casing",
+    "block.kubejs.nyanium_turbine_casing": "Nyanium Turbine Casing",
+    "block.kubejs.nyanium_pipe_casing": "Nyanium Pipe Casing",
+    "block.kubejs.nyanium_gearbox": "Nyanium Gearbox Casing",
+    "block.kubejs.nyanium_firebox_casing": "Nyanium Firebox Casing",
+    "block.kubejs.nyanium_engine_intake_casing": "Nyinsane Engine Intake Casing",
+    "block.kubejs.nyanium_heat_escape_casing": "Nyanium Heat Escape Casing",
 
     "block.kubejs.laser_casing": "Schrubblaser Beam Concentrator & Emmiter Capable Stellarium Casing",
     "block.kubejs.inscribe_casing": "Keelagraver Manipulator & Acuancentrator Capable Runicalium Casing",
@@ -595,9 +618,10 @@
     "block.kubejs.tumbaga_casing": "Tumbaga Casing",
     "block.kubejs.silicone_rubber_casing": "Silicone Rubber Casing",
 
-    "block.kubejs.runic_stabilization_casing": "Stabilization Enscribed Runically Infused Casing",
-    "block.kubejs.runic_transportation_casing": "Transportation Enscribed Runically Infused Casing",
-    "block.kubejs.runic_pathway_casing": "Pathway Enscribed Runically Infused Casing",
+    "block.kubejs.runic_stabilization_casing": "Stabilization Enscribed Runically Inscribed Casing",
+    "block.kubejs.runic_transportation_casing": "Transportation Enscribed Runically Inscribed Casing",
+    "block.kubejs.runic_pathway_casing": "Pathway Enscribed Runically Inscribed Casing",
+    "block.kubejs.blank_runic_casing": "Blank Runic Capable Casing",
 
     "block.kubejs.signalum_casing": "Ultra High Pressure and Temperature Resistant Signalum Casing",
     "block.kubejs.enderium_casing": "Thermal Fluctuation Proof Enderium Casing",
@@ -620,7 +644,7 @@
     "block.kubejs.abyssal_drill_1": "Mythrolic Drill Casing",
     "block.kubejs.abyssal_drill_2": "Starium Drill Casing",
 
-    "block.kubejs.kanthal_casing": "Kanthal Casing",
+    "block.kubejs.black_steel_casing": "Black Steel Casing",
     "block.kubejs.manganin_casing": "Manganin Casing",
     "block.kubejs.galvanized_steel_casing": "Galvanized Steel Casing",
 
@@ -637,7 +661,7 @@
     "item.kubejs.dragonic_neutron_reflector" : "Dragonic Neutron Reflector",
     "item.kubejs.dragonic_neutron_reflector.tooltip" : "§7Ultized for the most intense of plasmas.",
     "item.kubejs.prismalic_neutron_reflector" : "Prismalic Neutron Reflector",
-    "item.kubejs.prismalic_neutron_reflector.tooltip" : "§7Prismalic Assencion: Initiated",
+    "item.kubejs.prismalic_neutron_reflector.tooltip" : "§7Prismalic Ascension: Initiated",
 
     "block.kubejs.basic_reflector_casing": "Basic Neutron Reflector Casing",
     "block.kubejs.advanced_reflector_casing": "Advanced Neutron Reflector Casing",

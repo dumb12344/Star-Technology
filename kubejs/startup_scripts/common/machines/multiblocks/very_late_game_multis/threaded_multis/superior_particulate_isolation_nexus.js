@@ -33,7 +33,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('start_core:threading_controller'))
             .where('E', Predicates.blocks('kubejs:draco_assembly_grating'))
             .where('F', Predicates.blocks('kubejs:draco_resilient_fusion_glass'))
-            .where('G', Predicates.blocks('kubejs:nyanium_machine_engine_intake_casing'))
+            .where('G', Predicates.blocks('kubejs:nyanium_engine_intake_casing'))
             .where('H', Predicates.blocks('kubejs:nyanium_pipe_casing'))
             .where('I', $StarTThreadingStatBlocks.threadingStatBlocks())
             .where('J', Predicates.blocks('start_core:auxiliary_boosted_fusion_casing_mk2'))
