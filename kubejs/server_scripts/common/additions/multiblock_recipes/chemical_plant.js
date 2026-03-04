@@ -378,54 +378,54 @@ ServerEvents.recipes(event => {
         .duration(52)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    event.recipes.gtceu.absolute_reduction(id('flerovium_skip'))
-        .itemInputs('7x gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth_dust','8x gtceu:silver_oxide_dust')
-        .inputFluids('gtceu:distilled_water 100000','gtceu:hydrogen 64000')
-        .itemOutputs('4x gtceu:flerovium_dust','8x gtceu:silver_sulfate_dust','3x gtceu:rare_earth_dust')
-        .outputFluids('gtceu:enriched_uranium_hexafluoride 8000','gtceu:hydrofluoric_acid 64000')
-        .duration(712)
-        .EUt(GTValues.VHA[GTValues.UIV]);
+    // event.recipes.gtceu.absolute_reduction(id('flerovium_skip'))
+    //     .itemInputs('7x gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth_dust','8x gtceu:silver_oxide_dust')
+    //     .inputFluids('gtceu:distilled_water 100000','gtceu:hydrogen 64000')
+    //     .itemOutputs('4x gtceu:flerovium_dust','8x gtceu:silver_sulfate_dust','3x gtceu:rare_earth_dust')
+    //     .outputFluids('gtceu:enriched_uranium_hexafluoride 8000','gtceu:hydrofluoric_acid 64000')
+    //     .duration(712)
+    //     .EUt(GTValues.VHA[GTValues.UIV]);
 
-    event.recipes.gtceu.absolute_reduction(id('seaborgium_skip'))
-        .itemInputs('1x gtceu:seaborgium_cerium_tricarbon_tetrakis_orthosilicate_dust', '8x gtceu:chromium_trioxide_dust', '6x gtceu:sodium_hydroxide_dust')
-        .inputFluids('gtceu:sulfuric_acid 5000', 'gtceu:hydrochloric_acid 2000', 'gtceu:hydrogen 2000')
-        .itemOutputs('1x gtceu:seaborgium_dust', '4x gtceu:salt_dust', '1x gtceu:cerium_dioxide_dust', '1x gtceu:silicon_dioxide_dust', '5x gtceu:chromium_sulfate_dust')
-        .outputFluids('gtceu:carbon_dioxide 3000')
-        .duration(483)
-        .EUt(GTValues.VHA[GTValues.UIV]);
+    // event.recipes.gtceu.absolute_reduction(id('seaborgium_skip'))
+    //     .itemInputs('1x gtceu:seaborgium_cerium_tricarbon_tetrakis_orthosilicate_dust', '8x gtceu:chromium_trioxide_dust', '6x gtceu:sodium_hydroxide_dust')
+    //     .inputFluids('gtceu:sulfuric_acid 5000', 'gtceu:hydrochloric_acid 2000', 'gtceu:hydrogen 2000')
+    //     .itemOutputs('1x gtceu:seaborgium_dust', '4x gtceu:salt_dust', '1x gtceu:cerium_dioxide_dust', '1x gtceu:silicon_dioxide_dust', '5x gtceu:chromium_sulfate_dust')
+    //     .outputFluids('gtceu:carbon_dioxide 3000')
+    //     .duration(483)
+    //     .EUt(GTValues.VHA[GTValues.UIV]);
 
-    event.recipes.gtceu.absolute_reduction(id('polonium_skip'))
-        .itemInputs('1x gtceu:dipolonium_diplatinum_tris_pyrophosphate_dust', '4x gtceu:calcium_dust', '24x gtceu:sodium_hydroxide_dust')
-        .inputFluids('gtceu:hydrochloric_acid 12000', 'gtceu:carbon_monoxide 2000')
-        .itemOutputs('2x gtceu:polonium_dust','2x gtceu:platinum_dust','16x gtceu:salt_dust','12x gtceu:calcium_carbonate_dust')
-        .outputFluids('minecraft:water 4000', 'gtceu:pyrophosphoric_acid 3000')
-        .duration(2217)
-        .EUt(GTValues.VHA[GTValues.UIV]);
+    // event.recipes.gtceu.absolute_reduction(id('polonium_skip'))
+    //     .itemInputs('1x gtceu:dipolonium_diplatinum_tris_pyrophosphate_dust', '4x gtceu:calcium_dust', '24x gtceu:sodium_hydroxide_dust')
+    //     .inputFluids('gtceu:hydrochloric_acid 12000', 'gtceu:carbon_monoxide 2000')
+    //     .itemOutputs('2x gtceu:polonium_dust','2x gtceu:platinum_dust','16x gtceu:salt_dust','12x gtceu:calcium_carbonate_dust')
+    //     .outputFluids('minecraft:water 4000', 'gtceu:pyrophosphoric_acid 3000')
+    //     .duration(2217)
+    //     .EUt(GTValues.VHA[GTValues.UIV]);
 
-    event.recipes.gtceu.absolute_reduction(id('astatine_skip'))
-        .itemInputs('1x gtceu:iron_2_barium_diastatide_trisulfate_dust', '6x gtceu:sodium_hydroxide_dust')
-        .inputFluids('gtceu:hydrochloric_acid 6000', 'gtceu:nitrogen_dioxide 2000')
-        .itemOutputs('2x gtceu:astatine_dust', '8x gtceu:sodium_nitrite_dust', '1x gtceu:barium_hydroxide_dust')
-        .outputFluids('gtceu:iron_iii_chloride 2000', 'gtceu:sulfuric_acid 3000')
-        .duration(76)
-        .EUt(GTValues.VHA[GTValues.UIV]);
+    // event.recipes.gtceu.absolute_reduction(id('astatine_skip'))
+    //     .itemInputs('1x gtceu:iron_2_barium_diastatide_trisulfate_dust', '6x gtceu:sodium_hydroxide_dust')
+    //     .inputFluids('gtceu:hydrochloric_acid 6000', 'gtceu:nitrogen_dioxide 2000')
+    //     .itemOutputs('2x gtceu:astatine_dust', '8x gtceu:sodium_nitrite_dust', '1x gtceu:barium_hydroxide_dust')
+    //     .outputFluids('gtceu:iron_iii_chloride 2000', 'gtceu:sulfuric_acid 3000')
+    //     .duration(76)
+    //     .EUt(GTValues.VHA[GTValues.UIV]);
 
-    event.recipes.gtceu.absolute_reduction(id('hafnium_skip'))
-        .itemInputs('1x gtceu:hafnium_thorium_iron_magnesium_disilicate_monosulfate_dust', '2x gtceu:potassium_hydroxide_dust', '2x gtceu:carbon_dust', 
-            '2x gtceu:sodium_bicarbonate_dust', '3x gtceu:magnesium_dust')
-        .inputFluids('gtceu:hydrochloric_acid 12000', 'minecraft:water 4000')
-        .itemOutputs('1x gtceu:hafnium_dust', '1x gtceu:thorium_dust', '2x gtceu:silicon_dioxide_dust', '7x gtceu:potassium_sulfate_dust', 
-            '9x gtceu:magnesium_chloride_dust')
-        .outputFluids('gtceu:carbon_monoxide 2000', 'gtceu:brackish_water 4000', 'gtceu:carbon_dioxide 2000')
-        .duration(213)
-        .EUt(GTValues.VHA[GTValues.UIV]);
+    // event.recipes.gtceu.absolute_reduction(id('hafnium_skip'))
+    //     .itemInputs('1x gtceu:hafnium_thorium_iron_magnesium_disilicate_monosulfate_dust', '2x gtceu:potassium_hydroxide_dust', '2x gtceu:carbon_dust', 
+    //         '2x gtceu:sodium_bicarbonate_dust', '3x gtceu:magnesium_dust')
+    //     .inputFluids('gtceu:hydrochloric_acid 12000', 'minecraft:water 4000')
+    //     .itemOutputs('1x gtceu:hafnium_dust', '1x gtceu:thorium_dust', '2x gtceu:silicon_dioxide_dust', '7x gtceu:potassium_sulfate_dust', 
+    //         '9x gtceu:magnesium_chloride_dust')
+    //     .outputFluids('gtceu:carbon_monoxide 2000', 'gtceu:brackish_water 4000', 'gtceu:carbon_dioxide 2000')
+    //     .duration(213)
+    //     .EUt(GTValues.VHA[GTValues.UIV]);
 
-    event.recipes.gtceu.absolute_reduction(id('oganesson_skip'))
-        .inputFluids('gtceu:caesium_oganesson_hexanitrate_tetrafluorouranate 1000', 'minecraft:water 4000', 'gtceu:sulfuric_acid 2000')
-        .itemOutputs('6x gtceu:uraninite_dust', '10x gtceu:sulfate_dust')
-        .outputFluids('gtceu:oganesson 1000','gtceu:hydrofluoric_acid 8000','gtceu:nitric_acid 4000','gtceu:caesium_nitrate 2000')
-        .duration(224)
-        .EUt(GTValues.VHA[GTValues.UIV]);
+    // event.recipes.gtceu.absolute_reduction(id('oganesson_skip'))
+    //     .inputFluids('gtceu:caesium_oganesson_hexanitrate_tetrafluorouranate 1000', 'minecraft:water 4000', 'gtceu:sulfuric_acid 2000')
+    //     .itemOutputs('6x gtceu:uraninite_dust', '10x gtceu:sulfate_dust')
+    //     .outputFluids('gtceu:oganesson 1000','gtceu:hydrofluoric_acid 8000','gtceu:nitric_acid 4000','gtceu:caesium_nitrate 2000')
+    //     .duration(224)
+    //     .EUt(GTValues.VHA[GTValues.UIV]);
 
     // event.recipes.gtceu.absolute_reduction(id('pedot_pss_skip'))
     //     .itemInputs('36x minecraft:sugar', '9x gtceu:sodium_hydroxide_dust', '3x gtceu:sulfur_dust', '11x gtceu:sodium_bisulfate_dust', 
