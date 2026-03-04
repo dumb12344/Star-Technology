@@ -275,10 +275,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     element('hafnium', 'fluid');
 
     // Gasses
-    // periodicTableElement('iodine', 'gas');
-    element('oganesson', 'gas');
+    // element('oganesson', 'gas');
 
     // Plasmas
+    element('oganesson', 'plasma');
     
     // Materials used as placeholdeFrs
     [
@@ -507,6 +507,20 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('borosilicate_glas').components('1x boron','7x silicon_dioxide').color(0xFAFAFA).secondaryColor(0xfaf5c0).iconSet(SHINY).flags(no_decomp,not_alloy,foil);
 
     // Materials
+
+    elemDust('uranium_233',0x349534,[no_smelt]);
+
+    elemDust('plutonium_238',0xc13d3d,[no_smelt]);
+
+    elemDust('plutonium_244',0x951f1f,[no_smelt]);
+
+    elemDust('americium_241',0x3e8678,[no_smelt]);
+
+    elemDust('curium_244',0x6f4c46,[no_smelt]);
+
+    elemDust('californium_252',0xa38783,[no_smelt]);
+
+    elemDust('einsteinium_253',0xddbc4d,[no_smelt]);
 
     elemIngotFluid('xeproda', 0x1a0d00, DULL, [15499, 'highest', VA('uev'), 2700], [fine_wire]);
 
