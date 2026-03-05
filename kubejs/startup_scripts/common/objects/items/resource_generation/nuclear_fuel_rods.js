@@ -7,7 +7,8 @@ StartupEvents.registry('item', event => {
             .tooltip(composition)
             .textureJson({ 
                 layer0: `kubejs:item/resource_gen/nuclear_rods/${type}`,
-                layer1: `kubejs:item/resource_gen/nuclear_rods/${tier}`
+                layer1: `kubejs:item/resource_gen/nuclear_rods/overlay`,
+                layer1: `kubejs:item/resource_gen/nuclear_rods/enriched`
             });
 
         if(boolsumption){
@@ -19,57 +20,58 @@ StartupEvents.registry('item', event => {
             .tooltip(/*'§k' + */depeleted_composition) //uncomment after done
             .textureJson({ 
                 layer0: `kubejs:item/resource_gen/nuclear_rods/dep_${type}`,
-                layer1: `kubejs:item/resource_gen/nuclear_rods/${tier}`
+                layer1: `kubejs:item/resource_gen/nuclear_rods/overlay`,
+                layer1: `kubejs:item/resource_gen/nuclear_rods/depleted`
             });
 
     }
 
-    nuclearRod('thr','ev','96% Th₂₃₀','96% U₂₃₅',false,'');
+    nuclearRod('thr','ev','96% Th²³⁰','96% U²³⁵',false,'');
 
-    nuclearRod('leu238','ev','96% U₂₃₈','72% Pu₂₄₄ | 24% Np₂₃₇',false,'');
+    nuclearRod('leu238','ev','96% U²³⁸','72% Pu²⁴⁴ | 24% Np²³⁷',false,'');
 
-    nuclearRod('heu','iv','96% U₂₃₅','72% Pu₂₄₁ | 24% ?',false,'');
+    nuclearRod('heu','iv','96% U²³⁵','72% Pu²⁴¹ | 24% ?',false,'');
 
-    nuclearRod('plu','iv','96% Pu₂₄₄','48% Pu₂₃₉ | 24% Pu₂₄₁ | 24% Am₂₄₁',false,'');
+    nuclearRod('plu','iv','96% Pu²⁴⁴','48% Pu²³⁹ | 24% Pu²⁴¹ | 24% Am²⁴¹',false,'');
 
-    nuclearRod('mox239','iv','48% U₂₃₈ | 48% Pu₂₃₉','48% Am₂₄₁ | 24% Pu₂₄₁ | 24% ?',false,'');
+    nuclearRod('mox239','iv','48% U²³⁸ | 48% Pu²³⁹','48% Am²⁴¹ | 24% Pu²⁴¹ | 24% ?',false,'');
 
-    nuclearRod('amr','luv','96% Am₂₄₁','48% Cm₂₄₄ | 24% Pu₂₃₈ | 24% Np₂₃₇',false,'');
+    nuclearRod('amr','luv','96% Am²⁴¹','48% Cm²⁴⁴ | 24% Pu²³⁸ | 24% Np²³⁷',false,'');
 
-    nuclearRod('nep','luv','96% Np₂₃₇','48% Pu₂₃₈ | 24% Pu₂₃₉ | 24% ?',false,'');
+    nuclearRod('nep','luv','96% Np²³⁷','48% Pu²³⁸ | 24% Pu²³⁹ | 24% ?',false,'');
 
-    nuclearRod('crm','zpm','96% Cm₂₄₄','48% Cf₂₅₂ | 48% Pu₂₃₉',false,'');
+    nuclearRod('crm','zpm','96% Cm²⁴⁴','48% Cf²⁵² | 48% Pu²³⁹',false,'');
 
-    nuclearRod('mox241','zpm','48% U₂₃₈ | 48% Pu₂₄₁','72% Pu₂₃₉ | 24% Am₂₄₁',false,'');
+    nuclearRod('mox241','zpm','48% U²³⁸ | 48% Pu²⁴¹','72% Pu²³⁹ | 24% Am²⁴¹',false,'');
 
-    nuclearRod('tpu','zpm','48% Th₂₃₀ | 48% Pu₂₃₉','72% U₂₃₃ | 24% Am₂₄₁',false,'');
+    nuclearRod('tpu','zpm','48% Th²³⁰ | 48% Pu²³⁹','72% U²³³ | 24% Am²⁴¹',false,'');
 
-    nuclearRod('mox238','zpm','72% Pu₂₃₈ | 24% Cf₂₅₂','72% Cm₂₄₄ | 24% Pu₂₃₉',false,'');
+    nuclearRod('mox238','zpm','72% Pu²³⁸ | 24% Cf²⁵²','72% Cm²⁴⁴ | 24% Pu²³⁹',false,'');
 
-    nuclearRod('caf','uv','96% Cf₂₅₂','48% Fm₂₅₇ | 48% Pu₂₄₁',false,'');
+    nuclearRod('caf','uv','96% Cf²⁵²','48% Fm²⁵⁷ | 48% Pu²⁴¹',false,'');
 
-    nuclearRod('etu','uv','48% Cm₂₄₄ | 24% Cf₂₅₂ | 24% Am₂₄₁','48% Pu₂₃₈ | 48% Es₂₅₃',false,'');
+    nuclearRod('etu','uv','48% Cm²⁴⁴ | 24% Cf²⁵² | 24% Am²⁴¹','48% Pu²³⁸ | 48% Es²⁵³',false,'');
 
-    nuclearRod('leu233','uv','96% U₂₃₃','48% Pu₂₃₉ | 24% Cf₂₅₂ | 24% ?',false,'');
+    nuclearRod('leu233','uv','96% U²³³','48% Pu²³⁹ | 24% Cf²⁵² | 24% ?',false,'');
 
-    nuclearRod('nqe','uhv','72% Nq₄₀₄ | 24% Es₂₅₃','72% Ec₄₀₄ | 24% ?',false,'');
+    nuclearRod('nqe','uhv','72% Nq⁴⁰⁴ | 24% Es²⁵³','72% Ec⁴⁰⁴ | 24% ?',false,'');
     
-    //Th₂₃₀ - thorium
-    //U₂₃₃ - uranium_233
-    //U₂₃₅ - uranium_235
-    //U₂₃₈ - uranium
-    //Np₂₃₇ - neptunium
-    //Pu₂₃₈ - plutonium_238
-    //Pu₂₃₉ - plutonium
-    //Pu₂₄₁ - plutonium_241
-    //Pu₂₄₄ - plutonium_244
-    //Am₂₄₁ - americium_241
-    //Cm₂₄₄ - curium_244
-    //Cf₂₅₂ - californium_252
-    //Es₂₅₃ - einsteinium_253
-    //Fm₂₅₇ - fermium
-    //Nq₄₀₄ - purified_naquadah
-    //Ec₄₀₄ - echo   
+    //Th²³⁰ - thorium
+    //U²³³ - uranium_233
+    //U²³⁵ - uranium_235
+    //U²³⁸ - uranium
+    //Np²³⁷ - neptunium
+    //Pu²³⁸ - plutonium_238
+    //Pu²³⁹ - plutonium
+    //Pu²⁴¹ - plutonium_241
+    //Pu²⁴⁴ - plutonium_244
+    //Am²⁴¹ - americium_241
+    //Cm²⁴⁴ - curium_244
+    //Cf²⁵² - californium_252
+    //Es²⁵³ - einsteinium_253
+    //Fm²⁵⁷ - fermium
+    //Nq⁴⁰⁴ - purified_naquadah
+    //Ec⁴⁰⁴ - echo   
     
     // event.create('thorium_fuel_rod')
     //     .texture('kubejs:item/resource_gen/nuclear_rods/thorium_fuel_rod');

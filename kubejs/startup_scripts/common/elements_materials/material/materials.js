@@ -246,6 +246,10 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get('zavaritskite').setFormula('(BiO)F');
     GTMaterials.get(`acidic_water`).setFormula(`H2O*`);
 
+    GTMaterials.get(`thorium`).setFormula(`Th²³⁰`);
+    GTMaterials.get(`neptunium`).setFormula(`Np²³⁷`);
+    GTMaterials.get(`fermium`).setFormula(`Fm²⁵⁷`);
+
 });
 
 GTCEuStartupEvents.registry('gtceu:material', event => {
@@ -267,6 +271,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     element('selenium', 'dust');
     element('strontium', 'dust');
     element('thallium', 'dust');
+    element('neptunium', 'dust');
+    element('fermium', 'dust');
 
     // Liquids
     element('seaborgium', 'fluid');
@@ -276,10 +282,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     element('hafnium', 'fluid');
 
     // Gasses
-    // element('oganesson', 'gas');
+    element('oganesson', 'gas');
 
     // Plasmas
-    element('oganesson', 'plasma');
     
     // Materials used as placeholdeFrs
     [
