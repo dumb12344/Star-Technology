@@ -509,13 +509,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     // Materials
 
-    elemDust('uranium_233',0x349534,[no_smelt]);
+    elemDust('uranium_233',0x4fbb4f,[no_smelt]);
 
     elemDust('plutonium_238',0xc13d3d,[no_smelt]);
 
     elemDust('plutonium_244',0x951f1f,[no_smelt]);
 
-    elemDust('americium_241',0x3e8678,[no_smelt]);
+    elemDust('americium_241',0x1e492f,[no_smelt]);
 
     elemDust('curium_244',0x6f4c46,[no_smelt]);
 
