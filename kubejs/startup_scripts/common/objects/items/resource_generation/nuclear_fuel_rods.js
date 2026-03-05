@@ -11,9 +11,9 @@ StartupEvents.registry('item', event => {
             });
 
         if(boolsumption){
-            activeRod.food(f => {f
-                .effect('minecraft:speed', 600, 20, false)
-                // .effect('minecraft:speed', 600, 20, false) //add uranium_fever effect that has high chance to explode you
+            activeRod.tooltip(Text.translate('item.kubejs.consume.tooltip')).food(f => {f
+                .effect('kubejs:uranium_fever', 400, 0, 1)
+                .effect('kubejs:radiation_poisoning', 300, 0, 1)
                 .alwaysEdible()
             });
         }
@@ -28,35 +28,35 @@ StartupEvents.registry('item', event => {
 
     }
 
-    nuclearRod('thr','ev','96% Th²³⁰','96% U²³⁵',false);
+    nuclearRod('thr','ev','96% §eTh²³⁰','96% §eU²³⁵',false);
 
-    nuclearRod('leu238','ev','96% §eU²³⁸','72% Pu²⁴⁴ | 24% Np²³⁷',false);
+    nuclearRod('leu238','ev','96% §eU²³⁸','72% §ePu²⁴⁴ §7|§f 24% §eNp²³⁷',false);
 
-    nuclearRod('heu','iv','96% §eU²³⁵','72% Pu²⁴¹ | 24% ?',true);
+    nuclearRod('heu','iv','96% §eU²³⁵','72% §ePu²⁴¹ §7|§f 24% §e?',true);
 
-    nuclearRod('plu','iv','96% §ePu²⁴⁴','48% Pu²³⁹ | 24% Pu²⁴¹ | 24% Am²⁴¹',false);
+    nuclearRod('plu','iv','96% §ePu²⁴⁴','48% §ePu²³⁹ §7|§f 24% §ePu²⁴¹ §7|§f 24% §eAm²⁴¹',false);
 
-    nuclearRod('mox239','iv','48% §eU²³⁸ §7|§r §e48% Pu²³⁹','48% Am²⁴¹ | 24% Pu²⁴¹ | 24% ?',false);
+    nuclearRod('mox239','iv','48% §eU²³⁸ §7|§f 48% §ePu²³⁹','48% §eAm²⁴¹ §7|§f 24% §ePu²⁴¹ §7|§f 24% §e?',false);
 
-    nuclearRod('amr','luv','96% §eAm²⁴¹','48% Cm²⁴⁴ | 24% Pu²³⁸ | 24% Np²³⁷',false);
+    nuclearRod('amr','luv','96% §eAm²⁴¹','48% §eCm²⁴⁴ §7|§f 24% §ePu²³⁸ §7|§f 24% §eNp²³⁷',false);
 
-    nuclearRod('nep','luv','96% §eNp²³⁷','48% Pu²³⁸ | 24% Pu²³⁹ | 24% ?',false);
+    nuclearRod('nep','luv','96% §eNp²³⁷','48% §ePu²³⁸ §7|§f 24% §ePu²³⁹ §7|§f 24% §e?',false);
 
-    nuclearRod('crm','zpm','96% §eCm²⁴⁴','48% Cf²⁵² | 48% Pu²³⁹',false);
+    nuclearRod('crm','zpm','96% §eCm²⁴⁴','48% §eCf²⁵² §7|§f 48% §ePu²³⁹',false);
 
-    nuclearRod('mox241','zpm','48% §eU²³⁸ §7|§r48%  §ePu²⁴¹','72% Pu²³⁹ | 24% Am²⁴¹',false);
+    nuclearRod('mox241','zpm','48% §eU²³⁸ §7|§r48%  §ePu²⁴¹','72% §ePu²³⁹ §7|§f 24% §eAm²⁴¹',false);
 
-    nuclearRod('tpu','zpm','48% §eTh²³⁰ §7|§r 48% §ePu²³⁹','72% U²³³ | 24% Am²⁴¹',false);
+    nuclearRod('tpu','zpm','48% §eTh²³⁰ §7|§f 48% §ePu²³⁹','72% §eU²³³ §7|§f 24% §eAm²⁴¹',false);
 
-    nuclearRod('mox238','zpm','72% §ePu²³⁸ §7|§r 24% §eCf²⁵²','72% Cm²⁴⁴ | 24% Pu²³⁹',false);
+    nuclearRod('mox238','zpm','72% §ePu²³⁸ §7|§f 24% §eCf²⁵²','72% §eCm²⁴⁴ §7|§f 24% §ePu²³⁹',false);
 
-    nuclearRod('caf','uv','96% §eCf²⁵²','48% Fm²⁵⁷ | 48% Pu²⁴¹',false);
+    nuclearRod('caf','uv','96% §eCf²⁵²','48% §eFm²⁵⁷ §7|§f 48% §ePu²⁴¹',false);
 
-    nuclearRod('etu','uv','48% §eCm²⁴⁴ §7|§r 24% §eCf²⁵² §7|§r 24% §eAm²⁴¹','48% Pu²³⁸ | 48% Es²⁵³',false);
+    nuclearRod('etu','uv','48% §eCm²⁴⁴ §7|§f 24% §eCf²⁵² §7|§f 24% §eAm²⁴¹','48% §ePu²³⁸ §7|§f 48% §eEs²⁵³',false);
 
-    nuclearRod('leu233','uv','96% §eU²³³','48% Pu²³⁹ | 24% Cf²⁵² | 24% ?',false);
+    nuclearRod('leu233','uv','96% §eU²³³','48% Pu²³⁹ §7|§f 24% §eCf²⁵² §7|§f 24% §e?',false);
 
-    nuclearRod('nqe','uhv','72% §eNq⁴⁰⁴ §7|§r 24% §eEs²⁵³','72% Ec⁴⁰⁴ | 24% ?',false);
+    nuclearRod('nqe','uhv','72% §eNq⁴⁰⁴ §7|§f 24% §eEs²⁵³','72% §eEc⁴⁰⁴ §7|§f 24% §e?',false);
     
     //Th²³⁰ - thorium
     //U²³³ - uranium_233

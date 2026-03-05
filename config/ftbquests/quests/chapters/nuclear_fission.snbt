@@ -463,8 +463,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.5d
-			y: 2.0d
+			x: 17.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -482,7 +482,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5728078931762D8E"]
@@ -497,7 +497,7 @@
 				type: "item"
 			}]
 			x: 17.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [

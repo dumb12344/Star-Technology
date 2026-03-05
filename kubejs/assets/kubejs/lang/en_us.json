@@ -7,9 +7,11 @@
     "effect.kubejs.radiation_poisoning": "Radiation Poisoning",
     "effect.kubejs.toxic_atmosphere": "Toxic Atmosphere",
     "effect.kubejs.abyssal_drain": "Abyssal Drain",
+    "effect.kubejs.uranium_fever": "Uranium Fever",
 
     "effects.radiation.message": "§cYou feel sick from radiation...",
     "effects.sand_erosion.message": "§eThe sands of Abydos are eroding you...",
+    "effects.uranium_fever.message": "§aUranium Fever §fHas Done and Got You Down...",
 
     "effects.crystals.success.abydos": "As you consume the echoes of the coordinate crystal, you hear voices whispering, and strange numbers appear before your eyes, along with visions of sandy dunes and a lost world buried beneath sand and dust.",
     "effects.crystals.success.nether": "As you consume the echoes of the coordinate crystal, you hear voices whispering, and strange numbers appear before your eyes, along with visions of a hellish landscape of fire and destruction.",
@@ -671,6 +673,7 @@
     "block.kubejs.dragonic_reflector_casing": "Dragonic Neutron Reflector Casing",
     "block.kubejs.prismalic_reflector_casing": "Prismalic Neutron Reflector Casing",
 
+    "item.kubejs.consume.tooltip": "§8Nom Nom?",
     "item.kubejs.nuclear_rod_composition.tooltip": "§7Nuclear Rod Composition:",
 
     "item.kubejs.thr_fuel_rod": "THR Fuel Rod",
