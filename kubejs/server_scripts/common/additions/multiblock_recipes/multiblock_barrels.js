@@ -48,9 +48,10 @@ ServerEvents.recipes(event => {
         .duration(600)
         .itemInputs('minecraft:bone_meal', 'exnihilosequentia:mycelium_spores')
         .inputFluids(`minecraft:water 500`)
-        .itemOutputs('kubejs:mycelium_growth');
+        .itemOutputs('kubejs:mycelium_growth')
+        .circuit(1);
     
-        // Mycelium Duping
+    // Mycelium Duping
     event.recipes.gtceu.large_barrel(id('mycelium_spores'))
         .duration(300)
         .notConsumable('minecraft:red_mushroom')
