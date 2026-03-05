@@ -196,7 +196,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2A070F5D1D7CEAE1"]
+			dependencies: [
+				"2A070F5D1D7CEAE1"
+				"342969434CB3B5DE"
+			]
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
 			id: "775D74B68C7354E3"

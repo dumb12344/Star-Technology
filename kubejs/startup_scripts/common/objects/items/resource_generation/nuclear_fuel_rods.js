@@ -12,15 +12,9 @@ StartupEvents.registry('item', event => {
 
         if(boolsumption){
             activeRod.food(f => {f
-                .effect('minecraft:speed', 600, 0, 20)
+                .effect('minecraft:speed', 600, 20, false)
+                // .effect('minecraft:speed', 600, 20, false) //add uranium_fever effect that has high chance to explode you
                 .alwaysEdible()
-                // .eaten(ctx =>{
-                //     event.server.scheduleInTicks(10+Math.floor(Math.random()*300), ctx => {
-            //             event.server.runCommandSilent(`execute at ${event.player.username} run summon thermal:fire_tnt ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);
-            //             event.server.runCommandSilent(`execute at ${event.player.username} run summon minecraft:tnt ${Math.floor(event.player.x)} ${Math.floor(event.player.y)} ${Math.floor(event.player.z)}`);
-            //             event.player.potionEffects.add('minecraft:instant_damage', 1, 99);
-                //     });
-                // });
             });
         }
 
