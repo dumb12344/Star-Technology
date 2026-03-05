@@ -28,7 +28,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('greenhouse', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeTypes(['tree_greenhouse', 'wild_garden', 'crop_greenhouse'])
-        .recipeModifiers([GTRecipeModifiers.NON_PERFECT_OC, GTRecipeModifiers.BATCH_MODE])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('HHHHHHH', ' FGGGF ', ' FGGGF ', ' FGGGF ', '  FFF  ')
