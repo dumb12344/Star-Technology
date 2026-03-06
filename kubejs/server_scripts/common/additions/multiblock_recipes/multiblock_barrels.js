@@ -23,7 +23,8 @@ ServerEvents.recipes(event => {
         .notConsumable('exnihilosequentia:mycelium_spores')
         .inputFluids('minecraft:water 1000')
         .outputFluids('exnihilosequentia:witch_water 1000')
-        .duration(80);
+        .duration(80)
+        .circuit(1) ;
 
     event.recipes.gtceu.large_barrel(id('slimeshroom_dupe'))
         .notConsumable('thermal:slime_mushroom_spores')
@@ -48,8 +49,7 @@ ServerEvents.recipes(event => {
         .duration(600)
         .itemInputs('minecraft:bone_meal', 'exnihilosequentia:mycelium_spores')
         .inputFluids(`minecraft:water 500`)
-        .itemOutputs('kubejs:mycelium_growth')
-        .circuit(1);
+        .itemOutputs('kubejs:mycelium_growth');
     
     // Mycelium Duping
     event.recipes.gtceu.large_barrel(id('mycelium_spores'))
