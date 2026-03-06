@@ -1428,6 +1428,33 @@
     "block.gtceu.bacteria_synthesizer.tooltip.0": "Can use §3Parallel§r hatches",
     "gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
     
-    "block.gtceu.palladium_substation": "Secure Pallaridium Machine Casing"
+    "block.gtceu.palladium_substation": "Secure Pallaridium Machine Casing",
+
+    "block.gtceu.vacuum_chemical_reaction_chamber": "Vacuum Chemical Reaction Chamber",
+    "gtceu.vacuum_chemical_reaction_chamber": "Vacuum Chemical Reaction Chamber",
+    "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.0": "§c§lPressurized Chemical Reactor",
+    "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.1": "§7A chemical reactor that can operate under pressurized environments, increasing reaction rates and enabling certain pressure-dependent reactions.",
+    "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.2": "§7--------------------------------------------------",
+    "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.3": "§b§lPressurization Mechanic",
+    "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.4": "§7Pressure increases at a rate determined by installed vacuum pump, the tier also determines the cap of percent pressure that can be reached.",
+    "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.5": "§7No Vacuum: §f0% §7->§7 §f80%",
+    "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.6": "§7Partial Vacuum: §f80% §7->§7 §f100%",
+    "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.7": "§7Full Vacuum: §f100%",
+    "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.8": "§7--------------------------------------------------",
+    "block.gtceu.vacuum_chemical_reaction_chamber.tooltip.9": "§7Vacuum percentage is cut in half upon a recipe completion, and begins to increase again till its cap while running the next recipe.",
+
+    "material.gtceu.thorium": "Thorium 230",
+    "material.gtceu.uranium_233": "Uranium 233",
+    "material.gtceu.uranium": "Uranium 238",
+    "material.gtceu.neptunium": "Neptunium 237",
+    "material.gtceu.plutonium_238": "Plutonium 238",
+    "material.gtceu.plutonium": "Plutonium 239",
+    "material.gtceu.plutonium_244": "Plutonium 244",
+    "material.gtceu.americium_241": "Americium 241",
+    "material.gtceu.americium": "Americium 245",
+    "material.gtceu.curium_244": "Curium 244",
+    "material.gtceu.californium_252": "Californium 252",
+    "material.gtceu.einsteinium_253": "Einsteinium 253",
+    "material.gtceu.fermium": "Fermium 257"
 
 }
