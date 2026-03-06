@@ -87,24 +87,3 @@ global.addedByStarT = {
         "superior_particulate_isolation_nexus", "yielding_excression_advanced_seperation_transformator"
     ]
 };
-
-/*
-    "block.kubejs.added_by_StarT.tooltip": "§8§oAdded by Star Technology",
-    "block.kubejs.batch.tooltip": "Has §eBatching",
-    "block.kubejs.paraBatch.tooltip": "Can use §3Parallel§r hatches and has §eBatching",
-    "block.kubejs.subBatch.tooltip": "Has §cSubtick Parallels§r and §eBatching",
-    "block.kubejs.pocBatch.tooltip": "Has §6Perfect Overclock§r and §eBatching",
-    "block.kubejs.coilBatch.tooltip": "Has §bCoil Parallels§r and §eBatching",
-    "block.kubejs.paraSubBatch.tooltip": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r and §eBatching",
-    "block.kubejs.paraPocBatch.tooltip": "Can use §3Parallel§r hatches and has §6Perfect Overclock§r and §eBatching",
-    "block.kubejs.subThroughBatch.tooltip": "Has §cSubtick Parallels§r, §bThroughput Boosting§r and §eBatching",
-    "block.kubejs.threadSubBatch.tooltip": "Has §5Threading§r, §cSubtick Parallels§r and §eBatching",
-    "block.kubejs.paraSubBulkBatch.tooltip": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r, §2Bulking§r, and §8Batching",
-    "block.kubejs.paraSubAssBatch.tooltip": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r, §9Assembly Line Logic§r and §eBatching",
-    "block.kubejs.paraSubThroughBatch.tooltip": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r, §bThroughput Boosting§r and §eBatching",
-    "block.kubejs.paraThreadBulkBatch.tooltip": "Can use §3Parallel§r hatches and has §5Threading§r, §2Bulking§r, and §eBatching",
-    "block.kubejs.subAssThroughBatch.tooltip": "Has §cSubtick Parallels§r, §9Assembly Line Logic§r, §bThroughput Boosting§r and §eBatching"
-    "block.kubejs.paraSubBulkThroughBatch.tooltip": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r, §2Bulking§r, §bThroughput Boosting§r and §eBatching",
-    "block.kubejs.paraPocSubBulkThroughBatch.tooltip": "Can use §3Parallel§r hatches and has §6Perfect Overclock§r, §cSubtick Parallels§r, §2Bulking§r, §bThroughput Boosting§r and §eBatching",
-    "block.kubejs.paraThreadSubBulkBatch.tooltip": "Can use §3Parallel§r hatches and has §5Threading§r, §cSubtick Parallels§r, §2Bulking§r and §eBatching",
-*/
