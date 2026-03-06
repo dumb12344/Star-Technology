@@ -1428,6 +1428,35 @@
     "block.gtceu.bacteria_synthesizer.tooltip.0": "Can use §3Parallel§r hatches",
     "gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
     
-    "block.gtceu.palladium_substation": "Secure Pallaridium Machine Casing"
+    "block.gtceu.palladium_substation": "Secure Pallaridium Machine Casing",
+
+    "block.gtceu.dual_chambered_vacuum_complex": "Dual-Chambered Vacuum Complex",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.0": "§c§lAdvanced Pressurized Chemical Reactor",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.1": "§7A chemical reactor that can operate under pressurized environments, increasing reaction rates and enabling certain pressure-dependent reactions.",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.2": "§7--------------------------------------------------",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.3": "§b§lPressurization Mechanic",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.4": "§7Pressure increases at a rate determined by installed vacuum pump, the tier also determines the cap of percent pressure that can be reached.",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.5": "§7No Vacuum: §f0% §7->§7 §f80%",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.6": "§7Partial Vacuum: §f80% §7->§7 §f100%",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.7": "§7Full Vacuum: §f100%",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.8": "§7--------------------------------------------------",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.9": "§7Vacuum percentage is cut in half upon a recipe completion, and begins to increase again till its cap while running the next recipe.",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.10": "§7--------------------------------------------------",
+    "block.gtceu.dual_chambered_vacuum_complex.tooltip.11": "§7For machines that contain multipule pump blocks, they must all be the same tier or the machine will not form.§7",
+    
+  
+    "block.gtceu.auroric_vacuum_isolation_reactor": "Auroric Vacuum Isolation Reactor",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.0": "§c§lHyper-Advanced Pressurized Chemical Reactor",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.1": "§7A chemical reactor that can operate under pressurized environments, increasing reaction rates and enabling certain pressure-dependent reactions.",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.2": "§7--------------------------------------------------",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.3": "§b§lPressurization Mechanic",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.4": "§7Pressure increases at a rate determined by installed vacuum pump, the tier also determines the cap of percent pressure that can be reached.",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.5": "§7No Vacuum: §f0% §7->§7 §f80%",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.6": "§7Partial Vacuum: §f80% §7->§7 §f100%",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.7": "§7Full Vacuum: §f100%",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.8": "§7--------------------------------------------------",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.9": "§7Vacuum percentage is cut in half upon a recipe completion, and begins to increase again till its cap while running the next recipe.",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.10": "§7--------------------------------------------------",
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.11": "§7For machines that contain multipule pump blocks, they must all be the same tier or the machine will not form.§7"
 
 }
