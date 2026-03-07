@@ -54,7 +54,7 @@ global.not_hardmode(() => {
         nuclearReactor(`caf`,5,1.6,1.2);
         nuclearReactor(`etu`,5,0.9,12);
         nuclearReactor(`leu233`,5,1.2,1.1);
-        nuclearReactor(`nqe`,6,1.05,16);
+        nuclearReactor(`nqe`,6,0.3,32);
 
         });
 
