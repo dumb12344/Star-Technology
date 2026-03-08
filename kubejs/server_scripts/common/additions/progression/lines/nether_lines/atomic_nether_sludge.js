@@ -37,12 +37,12 @@ ServerEvents.recipes(event => {
     //     .duration(320)
     //     .EUt(GTValues.VA[GTValues.UEV]);
 
-    event.recipes.gtceu.large_chemical_reactor(id('oganesson_decomp'))
-        .inputFluids('gtceu:oganesson_tetranitrate 1000', 'gtceu:sulfuric_acid 2000')
-        .outputFluids('gtceu:nitric_acid 4000', 'gtceu:oganesson 1000')
-        .itemOutputs('10x gtceu:sulfate_dust')
-        .duration(160)
-        .EUt(GTValues.V[GTValues.UHV]);
+    // event.recipes.gtceu.large_chemical_reactor(id('oganesson_decomp'))
+    //     .inputFluids('gtceu:oganesson_tetranitrate 1000', 'gtceu:sulfuric_acid 2000')
+    //     .outputFluids('gtceu:nitric_acid 4000', 'gtceu:oganesson 1000')
+    //     .itemOutputs('10x gtceu:sulfate_dust')
+    //     .duration(160)
+    //     .EUt(GTValues.V[GTValues.UHV]);
 
     //Fl Lines
 

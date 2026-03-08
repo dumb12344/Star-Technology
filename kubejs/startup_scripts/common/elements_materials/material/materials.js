@@ -1027,7 +1027,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('hexafluorobromic_acid', ['1x hydrogen', '1x hexafluorobromine'], 0xA15E5E, [no_decomp]);
 
     //ANSD Line
-    compLiquid('oganesson_rich_sludge_concentrate', ['1x mystery','1x oganesson','1x mystery'], 0xFFFFFF, [no_decomp]);
+    // compLiquid('oganesson_rich_sludge_concentrate', ['1x mystery','1x oganesson','1x mystery'], 0xFFFFFF, [no_decomp]);
 
     compDust('hafnastide_rich_sludge', ['1x mystery','1x hafnium','1x astatine','1x mystery'], 0xFFFFFF, [no_decomp]);
 
@@ -1050,7 +1050,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // compLiquid('caesium_oganesson_trioxide', ['2x caesium', '1x oganesson', '3x oxygen'], 0x4E7577, [no_decomp]);
     // compLiquid('caesium_nitrate', ['1x caesium', '1x nitrogen', '3x oxygen'], 0x7C8A8B, []);
 
-    compLiquid('oganesson_tetranitrate', ['1x oganesson', '4x nitrate'], 0x948FAD, [no_decomp]);
+    // compLiquid('oganesson_tetranitrate', ['1x oganesson', '4x nitrate'], 0x948FAD, [no_decomp]);
 
     compDust('magnesium_hydroxide', ['1x magnesium', '2x hydroxide'], 0x766B73, [no_decomp]);
 
