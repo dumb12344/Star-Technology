@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('component_synthesis_forge')
         .category('extremely_advanced')
         .setEUIO('in')
-        .setMaxIOSize(15, 1, 5, 0) //Compacting Material Flags (fine wire, foil) delayed till theta
+        .setMaxIOSize(10, 1, 5, 0)
         .setHasResearchSlot(true)
         .setSound(GTSoundEntries.ASSEMBLER)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('component_part_synthesis_forge')
         .category('extremely_advanced')
         .setEUIO('in')
-        .setMaxIOSize(8, 1, 2, 0) //Compacting Material Flags (fine wire, foil) delayed till theta
+        .setMaxIOSize(6, 1, 2, 0)
         .setHasResearchSlot(true)
         .setSound(GTSoundEntries.ASSEMBLER)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
