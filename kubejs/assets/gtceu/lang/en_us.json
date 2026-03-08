@@ -1384,7 +1384,7 @@
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.8": "§7--------------------------------------------------",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.9": "§7Vacuum percentage is cut in half upon a recipe completion, and begins to increase again till its cap while running the next recipe.",
     "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.10": "§7--------------------------------------------------",
-    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.11": "§7For machines that contain multipule pump blocks, they must all be the same tier or the machine will not form.§7"
+    "block.gtceu.auroric_vacuum_isolation_reactor.tooltip.11": "§7For machines that contain multipule pump blocks, they must all be the same tier or the machine will not form.§7",
     
     "block.gtceu.vacuum_chemical_reaction_chamber": "Vacuum Chemical Reaction Chamber",
     "gtceu.vacuum_chemical_reaction_chamber": "Vacuum Chemical Reaction Chamber",
