@@ -1792,7 +1792,7 @@
 			id: "4E06642A3E4E4752"
 			tasks: [{
 				id: "03F82514275F5603"
-				item: "gtceu:hafnium_thorium_iron_magnesium_disilicate_monosulfate_bonded_iron_2_barium_diastatide_trisulfate_dust"
+				item: "gtceu:hafnastide_rich_sludge_dust"
 				type: "item"
 			}]
 			x: 1.5d
@@ -1803,7 +1803,7 @@
 			id: "305434660DA7E51D"
 			tasks: [{
 				id: "5FE900DF655AF0F5"
-				item: "gtceu:seaborgium_cerium_tricarbon_tetrakis_orthosilicate_linked_dipolonium_diplatinum_tris_pyrophosphate_dust"
+				item: "gtceu:pologium_rich_sludge_dust"
 				type: "item"
 			}]
 			x: 1.5d
@@ -1814,7 +1814,7 @@
 			id: "249B5146C5470ACB"
 			tasks: [{
 				id: "7E922C13210DFF68"
-				item: "gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth_dust"
+				item: "gtceu:flerovium_rich_re_sludge_dust"
 				type: "item"
 			}]
 			x: 0.5d

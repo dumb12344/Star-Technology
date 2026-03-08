@@ -1,16 +1,15 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    // event.recipes.gtceu.manifold_centrifuge(id('atomic_nether_sludge_decomp'))
-    //     .itemInputs('7x gtceu:atomic_nether_sludge_dust')
-    //     .inputFluids('gtceu:hexafluorobromic_acid 3000')
-    //     .outputFluids('gtceu:caesium_oganesson_hexanitrate_tetrafluorouranate 2000')
-    //     .itemOutputs(
-    //         '2x gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth_dust',
-    //         '3x gtceu:seaborgium_cerium_tricarbon_tetrakis_orthosilicate_linked_dipolonium_diplatinum_tris_pyrophosphate_dust',
-    //         '2x gtceu:hafnium_thorium_iron_magnesium_disilicate_monosulfate_bonded_iron_2_barium_diastatide_trisulfate_dust')
-    //     .duration(480)
-    //     .EUt(GTValues.VHA[GTValues.UEV]);
+    event.recipes.gtceu.manifold_centrifuge(id('atomic_nether_sludge_decomp'))
+        .itemInputs('7x gtceu:atomic_nether_sludge_dust')
+        .inputFluids('gtceu:hexafluorobromic_acid 3000')
+        .itemOutputs(
+            '2x gtceu:flerovium_rich_re_sludge_dust',
+            '2x gtceu:hafnastide_rich_sludge_dust',
+            '2x gtceu:pologium_rich_sludge_dust')
+        .duration(480)
+        .EUt(GTValues.VHA[GTValues.UEV]);
 
     //Og Lines
     // event.recipes.gtceu.electrolyzer(id('caesium_oganesson_hexanitrate_tetrafluorouranate_decomp'))
@@ -46,6 +45,25 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.UHV]);
 
     //Fl Lines
+
+    event.recipes.gtceu.ordered_chemistry(id('flerovium_tetrafluoride_dust'))
+            .layeredRecipe((layers) => layers
+                .itemInputs('7x gtceu:flerovium_rich_re_sludge_dust')
+                .inputFluids('gtceu:hydrochloric_acid 2500')
+                .next()
+                .fluidInputs('gtceu:distilled_water 30000')
+                .next()
+                .itemInputs('4x gtceu:silver_oxide_dust')
+                .fluidInputs('gtceu:nitric_acid 1500')
+                .next()
+                .fluidInputs('gtceu:hydrogen 10000')
+        )
+        .itemOutputs('4x gtceu:flerovium_tetrafluoride_dust', '3x gtceu:rich_rare_earth_dust')
+        .fluidOutputs('gtceu:enriched_uranium_hexafluoride 2000')
+        .duration(440)
+        .EUt(GTValues.VA[GTValues.UEV]);
+
+
     // event.recipes.gtceu.centrifuge(id('flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth_decomp'))
     //     .itemInputs('7x gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_enriched_rare_earth_dust')
     //     .itemOutputs('4x gtceu:flerovium_hexaoxide_octafluorosulfatoplutonate_dust', '2x gtceu:rich_rare_earth_dust', '1x gtceu:rare_earth_dust')
@@ -84,7 +102,29 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(12200)
         .EUt(GTValues.V[GTValues.UHV]);
 
-    //Sg Po Lines
+    //Sg & Po Lines
+
+    event.recipes.gtceu.ordered_chemistry(id('seaborgium_dioxide_and_polonium_carbonate'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('2x gtceu:pologium_rich_sludge_dust')
+            .inputFluids('gtceu:sulfuric_acid 12000')
+            .next()
+            .itemInputs('10x gtceu:chromium_trioxide_dust')
+            .fluidInputs('gtceu:hydrochloric_acid 4000')
+            .next()
+            .fluidInputs('gtceu:distilled_water 10000')
+            .itemInputs('6x gtceu:sodium_hydroxide_dust')
+            .next()
+            .inputFluids('gtceu:carbon_monoxide 2000')
+            .itemInputs('4x gtceu:sulfur_dust')
+            .next()
+            .inputFluids('minecraft:water 30000')
+    )
+        .itemOutputs('1x gtceu:seaborgium_dioxide_dust', '2x gtceu:polonium_carbonate_dust', '3x gtceu:calcium_carbonate_dust')
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.UEV]);
+
+
     // event.recipes.gtceu.electrolyzer(id('seaborgium_cerium_tricarbon_tetrakis_orthosilicate_linked_dipolonium_diplatinum_tris_pyrophosphate_decomp'))
     //     .itemInputs('2x gtceu:seaborgium_cerium_tricarbon_tetrakis_orthosilicate_linked_dipolonium_diplatinum_tris_pyrophosphate_dust')
     //     .itemOutputs('1x gtceu:seaborgium_cerium_tricarbon_tetrakis_orthosilicate_dust', '1x gtceu:dipolonium_diplatinum_tris_pyrophosphate_dust')
@@ -207,6 +247,25 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VH[GTValues.IV]);
 
     //At and Hf lines
+
+    event.recipes.gtceu.ordered_chemistry(id('sodium_astatide_and_hafnium_hexachloride'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('2x gtceu:hafnastide_rich_sludge_dust', '2x gtceu:sodium_hydroxide_dust')
+            .fluidInputs('gtceu:hydrochloric_acid 8000')
+            .next()
+            .itemInputs('8x gtceu:potassium_hydroxide_dust')
+            .fluidInputs('gtceu:hydrochloric_acid 2000')
+            .next()
+            .itemInputs('5x gtceu:carbon_dust')
+            .fluidInputs('gtceu:distilled_water 4000')
+            .next()
+            .itemInputs('2x gtceu:sodium_bicarbonate_dust')
+            .fluidInputs('gtceu:nitrogen 3250')
+    )
+    .itemOutputs('2x gtceu:sodium_astatide_dust', '2x gtceu:hafnium_hexachloride_dust')
+    .duration(420)
+    .EUt(GTValues.VA[GTValues.UEV]);
+        
     // event.recipes.gtceu.electrolyzer(id('hafnium_thorium_iron_magnesium_disilicate_monosulfate_bonded_iron_2_barium_diastatide_trisulfate_decomp'))
     //     .itemInputs('2x gtceu:hafnium_thorium_iron_magnesium_disilicate_monosulfate_bonded_iron_2_barium_diastatide_trisulfate_dust')
     //     .itemOutputs('1x gtceu:hafnium_thorium_iron_magnesium_disilicate_monosulfate_dust', '1x gtceu:iron_2_barium_diastatide_trisulfate_dust')
