@@ -1,25 +1,32 @@
 StartupEvents.registry('item', event => {
     
-    // Quantum Core (csg)
-    // ---
-    // Inferno Fragment (asg)
-    // Infernal Core (asg)
-    // -
-    // Abyss Fragment (asg)
-    // Abyssal Core (asg)
-    // -
-    // Draconic Core (asg)
-    // ---
-    // Prismalic Fragment (dsg)
-    // Prismafae Illuminatus Core (dsg)
-    // -
-    // Riftic Fragment (dsg)
-    // Spatium Ruptura Core (dsg)
-    // -
-    // Primordial Fragment (dsg)
-    // Primus Tempus Core (dsg)
-    // -
-    // Ascension Core
+    // === Fragments ===
+
+    ['inferno','abyss','prismalic','riftic','primordial'].forEach(fragment => {
+        //2x ASG, 3x DSG
+    event.create(`proto_${fragment}_rune`)
+        .tooltip(Text.translate(`item.kubejs.proto_${fragment}_rune.tooltip`))
+        // .texture(`kubejs:item/stargate/runes/proto/proto_${rune}_rune`)
+        .textureJson({ //temp
+                layer0: `kubejs:item/stargate/gate_items/materials/fragment`,
+                layer1: `kubejs:item/stargate/gate_items/materials/${fragment}`
+            })
+
+    });
+
+    // === Core ===
+
+    ['quantum','infernal','abyssal','draconic','prismafae','spatium','primus','ascension'].forEach(core => {
+        //1x CSG, 3x ASG, 4x DSG
+    event.create(`proto_${core}_rune`)
+        .tooltip(Text.translate(`item.kubejs.${core}_core.tooltip`))
+        // .texture(`kubejs:item/stargate/runes/proto/proto_${rune}_rune`)
+        .textureJson({ //temp
+                layer0: `kubejs:item/stargate/gate_items/materials/core`,
+                layer1: `kubejs:item/stargate/gate_items/materials/${core}`
+            })
+
+    });
 
 //OLD
     // === Cores and Fragments

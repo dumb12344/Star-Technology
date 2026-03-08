@@ -1,23 +1,24 @@
 StartupEvents.registry('item', event => {
 
     // === Gate Rods ===
-    // Stargate Rod
-    // Activated Stargate Rod
-    // ---
-    // Infernally Reforged Stargate Rod
-    // Awakened Inferno Rod
-    // -
-    // Abyssally Reforged Stargate Rod
-    // Awakened Abyss Rod
-    // ---
-    // Prismaticly Infused Stargate Rod
-    // Faetic Stargate Rod
-    // -
-    // Kaleidoscopicly Infused Stargate Rod
-    // Riftic Stargate Rod
-    // -
-    // Primordicly Infused Stargate Rod
-    // Temporic Stargate Rod
+
+    [
+        'raw','activated','infernally_reforged','awakened_inferno','abyssally_reforged','awakened_abyss',
+        'prismaticly_infused','faetic','kaleidoscopicly_infused','riftic','primordicly_infused','temporic'
+    ].forEach(rod => {
+
+        event.create(`${rod}_stargate_rod`)
+            .tooltip(Text.translate(`item.kubejs.${rod}_stargate_rod.tooltip`))
+            // .texture(`kubejs:item/stargate/gate_items/components/${rod}_stargate_rod`);
+            .textureJson({ //temp
+                layer0: `kubejs:item/stargate/gate_items/components/rods/rod`,
+                layer1: `kubejs:item/stargate/gate_items/components/rods/${tier}`
+            })
+
+
+    })
+
+    // === Tiered Components ===
 
     ['csg','asg','dsg'].forEach(tier => {
 
@@ -84,6 +85,14 @@ StartupEvents.registry('item', event => {
                 layer0: `kubejs:item/stargate/gate_items/components/dimensional_supercomputer`,
                 layer1: `kubejs:item/stargate/gate_items/components/${tier}`
             })
+
+        event.create(`${tier}_reinforced_plating`)
+            .tooltip(Text.translate(`item.kubejs.${tier}_reinforced_plating.tooltip`))
+            // .texture(`kubejs:item/stargate/gate_items/components/${tier}_dimensional_supercomputer`);
+            .textureJson({ //temp
+                layer0: `kubejs:item/stargate/gate_items/components/reinforced_plating`,
+                layer1: `kubejs:item/stargate/gate_items/components/${tier}`
+            })
             
     });
 
@@ -94,10 +103,10 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/stargate/gate_items/crude_stargate_rod')
         .rarity('rare');
 
-    event.create('stargate_rod')
-        .tooltip(Text.translate('item.kubejs.stargate_rod.tooltip'))
-        .texture('kubejs:item/stargate/gate_items/stargate_rod')
-        .rarity('epic');
+    // event.create('stargate_rod')
+    //     .tooltip(Text.translate('item.kubejs.stargate_rod.tooltip'))
+    //     .texture('kubejs:item/stargate/gate_items/stargate_rod')
+    //     .rarity('epic');
 
     event.create('computational_super_matrix')
         .texture('kubejs:item/stargate/gate_items/computation_super_matrix')
