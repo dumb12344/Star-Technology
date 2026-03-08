@@ -63,39 +63,41 @@ ServerEvents.recipes(event => {
         let dataItem = getDataItem(cwuT);
 
         let chemRecipe = event.recipes.gtceu.chemical_skip(id(recId))
-            .duration(duration)
-            .circuit(circuit)
-            .EUt(GTValues.VHA[GTValues[voltage]]);
-        if (notConsumable != " ") {
+            
+        if (notConsumable) {
             chemRecipe.notConsumable(notConsumable);
         }
-        if (inputsI != " ") {
+        if (inputsI) {
             chemRecipe.itemInputs(inputsI);
         }
-        if (inputsF != " ") {
+        if (inputsF) {
             chemRecipe.inputFluids(inputsF);
         }
-        if (outputsI != " ") {
+        if (outputsI) {
             chemRecipe.itemOutputs(outputsI);
         }
-        if (outputsF != " ") {
+        if (outputsF) {
             chemRecipe.outputFluids(outputsF);
         }
 
-        chemRecipe.stationResearch(
-            reserachRecipeBuilder => reserachRecipeBuilder
-                .researchStack(Item.of(researched))
-                .EUt(GTValues.VHA[GTValues[voltage]] / 2)
-                .CWUt(cwuT)
-        );
+        chemRecipe
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of(researched))
+                    .EUt(GTValues.VHA[GTValues[voltage]] / 2)
+                    .CWUt(cwuT)
+            )    
+            .duration(duration)
+            .circuit(circuit)
+            .EUt(GTValues.VHA[GTValues[voltage]]);
 
-        event.recipes.gtceu.research_station(`1_x_${researched.replace(':','_')}_chemical_skip`)
+        event.recipes.gtceu.research_station(`1_x_${researched.replace(':','_')}`)
             .itemInputs(dataItem)
             .itemInputs(researched)
             .itemOutputs(
                 Item.of(
                     `${dataItem}`,
-                    `{assembly_line_research:{research_id:"1_x_${researched.replace(':','_')}", research_type:"gtceu:chemical_skip"}}`
+                    `{assembly_line_research:{research_id:"1x_${researched.replace(':','_')}", research_type:"gtceu:chemical_skip"}}`
                 )
             )
             .CWUt(cwuT)
@@ -103,11 +105,11 @@ ServerEvents.recipes(event => {
             .EUt(GTValues.VHA[GTValues[voltage]] / 2);
     }
 
-    chemicalSkip('fluoroantimonic_acid_skip', " ", [
+    chemicalSkip('fluoroantimonic_acid_skip', '', [
         'gtceu:antimony_dust'
     ], [
         'gtceu:hydrogen 2000', 'gtceu:fluorine 7000'
-    ], " ", [
+    ], '', [
         'gtceu:fluoroantimonic_acid 1000'
     ], 0, 150, 24, 'IV', 'gtceu:fluoroantimonic_acid_bucket');
 
@@ -125,7 +127,7 @@ ServerEvents.recipes(event => {
     //     .duration(315)
     //     .EUt(GTValues.VHA[GTValues.ZPM]);
 
-    chemicalSkip('plat_line_skip', " ", [
+    chemicalSkip('plat_line_skip', '', [
         '12x gtceu:platinum_group_sludge_dust'
     ], [
         'gtceu:aqua_regia 1500'
@@ -135,11 +137,11 @@ ServerEvents.recipes(event => {
         'gtceu:nitric_acid 500', 'gtceu:hydrochloric_acid 1000'
     ], 0, 370, 40, 'ZPM', 'gtceu:platinum_dust');
 
-    chemicalSkip('tfe_skip', " ", [
+    chemicalSkip('tfe_skip', '', [
         '2x gtceu:carbon_dust'
     ], [
         'gtceu:fluorine 4000'
-    ], " ", [
+    ], '', [
         'gtceu:tetrafluoroethylene 1000'
     ], 1, 480, 32, 'LuV', 'gtceu:tetrafluoroethylene_bucket');
 
@@ -150,7 +152,7 @@ ServerEvents.recipes(event => {
     //     .circuit(12)
     //     .EUt(GTValues.VHA[GTValues.LuV]);
 
-    chemicalSkip('naquadah_line_skip', " ", [
+    chemicalSkip('naquadah_line_skip', '', [
         '5x gtceu:naquadah_dust'
     ], [
         'gtceu:fluoroantimonic_acid 1000'
@@ -160,7 +162,7 @@ ServerEvents.recipes(event => {
         'gtceu:hydrogen 2000', 'gtceu:fluorine 7000'
     ], 0, 845, 72, 'ZPM', 'gtceu:naquadria_dust');
 
-    chemicalSkip('uranite_line_skip', " ", [
+    chemicalSkip('uranite_line_skip', '', [
         '20x gtceu:uraninite_dust'
     ], [
         'gtceu:hydrofluoric_acid 40000'
@@ -170,31 +172,31 @@ ServerEvents.recipes(event => {
         'gtceu:fluorine 40000', 'gtceu:hydrogen 40000', 'gtceu:oxygen 10000'
     ], 0, 240, 32, 'LuV', 'gtceu:uranium_235_dust');
 
-    chemicalSkip('sodium_persulfate_skip', " ", [
+    chemicalSkip('sodium_persulfate_skip', '', [
         '1x gtceu:sodium_dust', '1x gtceu:sulfur_dust'
     ], [
         'gtceu:oxygen 4000'
-    ], " ", [
+    ], '', [
         'gtceu:sodium_persulfate 500'
     ], 0, 30, 12, 'EV', 'gtceu:sodium_persulfate_bucket');
 
-    chemicalSkip('iron_iii_chloride_skip', " ", [
+    chemicalSkip('iron_iii_chloride_skip', '', [
         '1x gtceu:iron_dust'
     ], [
         'gtceu:chlorine 3000'
-    ], " ", [
+    ], '', [
         'gtceu:iron_iii_chloride 1000'
     ], 0, 30, 12, 'EV', 'gtceu:iron_iii_chloride_bucket');
 
-    chemicalSkip('cupric_chloride_solution_skip', " ", [
+    chemicalSkip('cupric_chloride_solution_skip', '', [
         '1x gtceu:copper_dust'
     ], [
         'gtceu:hydrogen 2000','gtceu:chlorine 3000'
-    ], " ", [
+    ], '', [
         'gtceu:cupric_chloride_solution 2000'
     ], 0, 30, 20, 'IV', 'gtceu:cupric_chloride_solution_bucket');
 
-    chemicalSkip('borax_skip', " ", [
+    chemicalSkip('borax_skip', '', [
         '4x gtceu:boron_dust', '14x gtceu:sodium_bisulfate_dust'
     ], [
         'minecraft:water 12000'
@@ -213,13 +215,13 @@ ServerEvents.recipes(event => {
 
     chemicalSkip('14_butanediol_skip', [
         'gtceu:palladium_on_carbon_dust'
-    ], " ", [
+    ], '', [
         'gtceu:benzene 1500','gtceu:oxygen 6000','gtceu:hydrogen 18000'
-    ], " ", [
+    ], '', [
         'gtceu:14_butanediol 3000','gtceu:methanol 3000'
     ], 8, 420, 160, 'UHV', 'gtceu:14_butanediol_bucket');
 
-    chemicalSkip('benzophenone_3344_tetracarboxylic_dianhydride_skip', " ", " ", [
+    chemicalSkip('benzophenone_3344_tetracarboxylic_dianhydride_skip', '', '', [
         'gtceu:toluene 1000','gtceu:benzene 1375','gtceu:oxygen 9875','gtceu:acetic_acid 1000','gtceu:chlorine 3000'
     ], [
         '30x gtceu:benzophenone_3344_tetracarboxylic_dianhydride_dust'
@@ -227,7 +229,7 @@ ServerEvents.recipes(event => {
         'gtceu:hydrogen_chloride 3000','gtceu:carbon_dioxide 250','minecraft:water 4125','gtceu:hydrogen 3000'
     ], 6, 480, 128, 'UV', 'gtceu:benzophenone_3344_tetracarboxylic_dianhydride_dust');
 
-    chemicalSkip('tungstate_line', " ", [
+    chemicalSkip('tungstate_line', '', [
         '1x gtceu:tungstate_dust'
     ], [
         'gtceu:hydrochloric_acid 2000'
@@ -237,7 +239,7 @@ ServerEvents.recipes(event => {
         'gtceu:chlorine 2000','gtceu:hydrogen 2000'
     ], 0, 175, 72, 'ZPM', 'gtceu:tungsten_disulfide_dust');
 
-    chemicalSkip('scheelite_line', " ", [
+    chemicalSkip('scheelite_line', '', [
         '1x gtceu:scheelite_dust'
     ], [
         'gtceu:hydrochloric_acid 2000'
@@ -247,15 +249,15 @@ ServerEvents.recipes(event => {
         'gtceu:chlorine 2000','gtceu:hydrogen 2000'
     ], 0, 175, 72, 'ZPM', 'gtceu:tungsten_trioxide_dust');
 
-    chemicalSkip('mutagen_skip', " ", [
+    chemicalSkip('mutagen_skip', '', [
         '64x gtceu:bio_chaff','64x gtceu:bio_chaff','64x gtceu:bio_chaff','24x gtceu:bio_chaff','5x gtceu:naquadria_dust'
     ], [
         'gtceu:distilled_water 77250'
-    ], " ", [
+    ], '', [
         'gtceu:mutagen 9000'
     ], 0, 558, 192, 'UEV', 'gtceu:mutagen_bucket');
 
-    chemicalSkip('silicon_carbide_skip', " ", [
+    chemicalSkip('silicon_carbide_skip', '', [
         '3x gtceu:silicon_dioxide_dust','2x gtceu:carbon_dust'
     ], [
         'gtceu:nitrogen 1000'
@@ -265,17 +267,17 @@ ServerEvents.recipes(event => {
         'gtceu:carbon_dioxide 1000'
     ], 0, 20, 20, 'LuV', 'gtceu:silicon_carbide_dust');
 
-    chemicalSkip('glycerol_skip', " ", [
+    chemicalSkip('glycerol_skip', '', [
         '3x gtceu:carbon_dust'
     ], [
         'gtceu:hydrogen 8000', 'gtceu:oxygen 3000'
-    ], " ", [
+    ], '', [
         'gtceu:glycerol 1000'
     ], 3, 160, 8, 'HV', 'gtceu:glycerol_bucket');
 
-    chemicalSkip('bromine_skip', " ", " ", [
+    chemicalSkip('bromine_skip', '', '', [
         'gtceu:salt_water 100000', 'gtceu:chlorine 3000'
-    ], " ", [
+    ], '', [
         'gtceu:bromine 2500', 'gtceu:chlorine 1000'
     ], 0, 355, 160, 'LuV', 'gtceu:bromine_bucket');
 
@@ -294,17 +296,17 @@ ServerEvents.recipes(event => {
     //     .circuit(2)
     //     .EUt(GTValues.VHA[GTValues.IV]);
 
-    chemicalSkip('polyphenylene_sulfide_skip', " ", [
+    chemicalSkip('polyphenylene_sulfide_skip', '', [
         '1x gtceu:sulfur_dust'
     ], [
         'gtceu:oxygen 8000', 'gtceu:benzene 1000', 'gtceu:chlorine 2000'
-    ], " ", [
+    ], '', [
         'gtceu:polyphenylene_sulfide 1500', 'gtceu:hydrochloric_acid 2000'
     ], 11, 48, 20, 'IV', 'gtceu:polyphenylene_sulfide_bucket');
 
     chemicalSkip('caprolactam_skip', [
         'gtceu:nickel_dust'
-    ], " ", [
+    ], '', [
         'gtceu:hydrogen 6000', 'gtceu:benzene 1000', 'gtceu:chlorine 1000', 'gtceu:nitric_oxide 1000'
     ], [
         '19x gtceu:caprolactam_dust'
@@ -312,13 +314,13 @@ ServerEvents.recipes(event => {
         'gtceu:hydrochloric_acid 1000'
     ], 14, 42, 20, 'IV', 'gtceu:caprolactam_dust');
 
-    chemicalSkip('pcb_skip', " ", " ", [
+    chemicalSkip('pcb_skip', '', '', [
         'gtceu:oxygen 3000', 'gtceu:benzene 6000', 'gtceu:chlorine 12000', 'gtceu:distilled_water 1000'
-    ], " ", [
+    ], '', [
         'gtceu:pcb_coolant 4000', 'gtceu:hydrochloric_acid 6000'
     ], 0, 96, 32, 'LuV', 'gtceu:pcb_coolant_bucket');
 
-    chemicalSkip('pure_netherite_skip', " ", [
+    chemicalSkip('pure_netherite_skip', '', [
         '7x gtceu:debris_dust'
     ], [
         'gtceu:chlorine 4000', 'gtceu:hydrogen 7000', 'gtceu:fluorine 3000'
@@ -328,9 +330,9 @@ ServerEvents.recipes(event => {
         'gtceu:hydrochloric_acid 8000', 'gtceu:fluorine 3000'
     ], 0, 385, 72, 'ZPM', 'gtceu:pure_netherite_dust');
 
-    chemicalSkip('perchloric_acid', " ", " ", [
+    chemicalSkip('perchloric_acid', '', '', [
         'gtceu:chlorine 1000', 'gtceu:hydrogen 1000', 'gtceu:oxygen 4000'
-    ], " ", [
+    ], '', [
         'gtceu:perchloric_acid 1000'
     ], 0, 100, 8, 'HV', 'gtceu:perchloric_acid_bucket');
 
