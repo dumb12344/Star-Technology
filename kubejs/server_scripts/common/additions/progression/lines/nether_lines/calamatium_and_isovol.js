@@ -9,13 +9,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.ZPM])
         .vacuumLevel(90);
 
-    // event.recipes.gtceu.advanced_chemistry(id('estalt_dissolving'))
-    //     .itemInputs('6x gtceu:estalt_dust')
-    //     .inputFluids('gtceu:fluoroantimonic_acid 2000')
-    //     .outputFluids('gtceu:impure_calamatium_solution 1000', 'gtceu:impure_isovol_solution 1000', 'gtceu:fluorine 4000')
-    //     .duration(1200)
-    //     .EUt(100000);
-
     event.recipes.gtceu.centrifuge(id('impure_calamatium_solution'))
         .inputFluids('gtceu:impure_calamatium_solution 1000')
         .itemOutputs('4x gtceu:antimony_trifluoride_dust')

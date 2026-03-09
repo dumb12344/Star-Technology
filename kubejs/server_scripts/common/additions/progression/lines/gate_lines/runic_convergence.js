@@ -73,12 +73,6 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:runic_convergence_infusion 1000')
         .duration(200)
         .EUt(GTValues.VHA[GTValues.ZPM])
-        .vacuumLevel(80);    
-    
-    // event.recipes.gtceu.advanced_chemistry(id('runic_convergence_infusion'))
-    //     .inputFluids('gtceu:primordial_nitrosilicate 1000', 'gtceu:magnesium_nitride 1000')
-    //     .outputFluids('gtceu:runic_convergence_infusion 1000')
-    //     .duration(200)
-    //     .EUt(GTValues.VHA[GTValues.ZPM]);
+        .vacuumLevel(80);
 
 });

@@ -43,14 +43,6 @@ ServerEvents.recipes(event => {
         .duration(540)
         .EUt(GTValues.VHA[GTValues.UV]);
 
-    // event.recipes.gtceu.advanced_chemistry(id('adamantine'))
-    //     .itemInputs('gtceu:adamantine_hydroxide_dust')
-    //     .itemInputs('3x gtceu:sodium_dust')
-    //     .itemOutputs('gtceu:adamantine_dust')
-    //     .itemOutputs('9x gtceu:sodium_hydroxide_dust')
-    //     .duration(540)
-    //     .EUt(GTValues.VHA[GTValues.UV]);
-
     event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_adamantine_gas'},
         Fluid.of('gtceu:krypton 10'),
         Fluid.of('gtceu:xenon 10')
