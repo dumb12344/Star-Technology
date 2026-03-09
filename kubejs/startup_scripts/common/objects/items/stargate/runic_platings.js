@@ -20,7 +20,7 @@ StartupEvents.registry('item', event => {
 
     ['reinforced','pathway','stabilization','transporation'].forEach(rune => {
 
-    event.create(`runic${rune}_plating`)
+    event.create(`runic_${rune}_plating`)
         .tooltip(Text.translate(`item.kubejs.runic_plating.tooltip`))
         .tooltip(Text.translate(`item.kubejs.runic_${rune}_plating.tooltip`))
         // .texture(`kubejs:item/stargate/runes/runic/runic_${rune}_plating`)
@@ -48,10 +48,10 @@ StartupEvents.registry('item', event => {
     });
 
 //Adjusted
-    // event.create('runic_engraved_plating')
-    //     .tooltip(Text.translate('item.kubejs.runic_engraved_plating.tooltip'))
-    //     .texture('kubejs:item/stargate/runic_plating/rune_engraved_plating')
-    //     .rarity('epic');
+    event.create('runic_engraved_plating')
+        .tooltip(Text.translate('item.kubejs.runic_engraved_plating.tooltip'))
+        .texture('kubejs:item/stargate/runic_plating/rune_engraved_plating')
+        .rarity('epic');
 
     // event.create('runic_pathway_engraved_plating')
     //     .texture('kubejs:item/stargate/runic_plating/runic_pathway_engraved_plating')

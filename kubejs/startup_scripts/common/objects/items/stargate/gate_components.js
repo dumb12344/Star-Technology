@@ -2,21 +2,22 @@ StartupEvents.registry('item', event => {
 
     // === Gate Rods ===
 
-    [
+    let stargateRod = [
         'raw','activated','infernally_reforged','awakened_inferno','abyssally_reforged','awakened_abyss',
         'prismaticly_infused','faetic','kaleidoscopicly_infused','riftic','primordicly_infused','temporic'
-    ].forEach(rod => {
+    ]
+    
+    stargateRod.forEach(rod => {
 
         event.create(`${rod}_stargate_rod`)
             .tooltip(Text.translate(`item.kubejs.${rod}_stargate_rod.tooltip`))
             // .texture(`kubejs:item/stargate/gate_items/components/${rod}_stargate_rod`);
             .textureJson({ //temp
                 layer0: `kubejs:item/stargate/gate_items/components/rods/rod`,
-                layer1: `kubejs:item/stargate/gate_items/components/rods/${tier}`
+                layer1: `kubejs:item/stargate/gate_items/components/rods/${rod}`
             })
 
-
-    })
+    });
 
     // === Tiered Components ===
 
