@@ -49,11 +49,10 @@ StartupEvents.registry('item', event => {
             
         event.create(`${tier}_dpu`)
             .tooltip(Text.translate(`item.kubejs.${tier}_dpu.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/${tier}_dpu`);
-            .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/components/dpu`,
-                layer1: `kubejs:item/stargate/gate_items/components/${tier}`
-            })
+            .textureJson({
+                layer0: `kubejs:item/stargate/gate_items/components/${tier}/dpu_backing`,
+                layer1: `kubejs:item/stargate/gate_items/components/${tier}/dpu_overlay`
+            });
             
         event.create(`${tier}_computational_matrix`)
             .tooltip(Text.translate(`item.kubejs.${tier}_computational_matrix.tooltip`))
@@ -105,11 +104,11 @@ StartupEvents.registry('item', event => {
 
         event.create(`${tier}_enscription_plate`)
             .tooltip(Text.translate(`item.kubejs.${tier}_enscription_plate.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/${tier}_enscription_plate`);
-            .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/components/enscription_plate`,
-                layer1: `kubejs:item/stargate/gate_items/components/${tier}`
-            })
+            .texture(`kubejs:item/stargate/gate_items/components/${tier}/enscription_plate`);
+
+        event.create(`${tier}_enscription_chip`)
+            .tooltip(Text.translate(`item.kubejs.${tier}_enscription_chip.tooltip`))
+            .texture(`kubejs:item/stargate/gate_items/components/${tier}/dpu_backing`);
             
     });
 
