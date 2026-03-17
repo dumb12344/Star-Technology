@@ -1,4 +1,12 @@
 const $GTUtil = Java.loadClass("com.gregtechceu.gtceu.utils.GTUtil");
+const $GTRecipe = Java.loadClass("com.gregtechceu.gtceu.api.recipe.GTRecipe");
+const $RecipeHelper = Java.loadClass(
+  "com.gregtechceu.gtceu.api.recipe.RecipeHelper",
+);
+const $KubeJSReloadListener = Java.loadClass(
+  "dev.latvian.mods.kubejs.server.KubeJSReloadListener",
+);
+
 const GTV = GTValues.VEX;
 
 PlayerEvents.chat((event) => {
@@ -268,9 +276,31 @@ let calculatorExec = (() => {
     formatTier: {
       arguments: ["number"],
       fn: (tier) => {
-        if (!(0 <= tier.v && tier.v < GTVNF.length))
+        if (!(0 <= tier.v && tier.v < GTValues.VNF.length))
           throw new Error("invalid tier");
-        return { t: "string", v: GTVNF[tier.v] + "§r" };
+        return { t: "string", v: GTValues.VNF[tier.v] + "§r" };
+      },
+    },
+    formatEUt: {
+      arguments: ["number"],
+      fn: (eut) => {
+        let tierIndex = $GTUtil.getFloorTierByVoltage(eut.v) + 1;
+        let perc = eut.v / GTV[tierIndex];
+        return {
+          t: "string",
+          v: numberToString(perc) + "A of " + GTValues.VNF[tierIndex] + "§r",
+        };
+      },
+    },
+    formatAmps: {
+      arguments: ["number"],
+      fn: (eut) => {
+        let tierIndex = $GTUtil.getFloorTierByVoltage(eut.v);
+        let perc = eut.v / GTV[tierIndex];
+        return {
+          t: "string",
+          v: numberToString(perc) + "A of " + GTValues.VNF[tierIndex] + "§r",
+        };
       },
     },
     voltage: {
@@ -287,18 +317,63 @@ let calculatorExec = (() => {
         return { t: "number", v: $GTUtil.getFloorTierByVoltage(eut.v) + 1 };
       },
     },
-    parallels: {
-      arguments: ["number", "number"],
-      fn: (eut, ocTier) => {
-        let recipeTier = $GTUtil.getFloorTierByVoltage(eut.v) + 1;
-        let numOfOc = ocTier.v - recipeTier;
-        if (numOfOc <= 0)
-          throw new Error("wrong arguments 'parallels': ocTier 2 smol");
+    parallels: [
+      {
+        arguments: ["number", "number"],
+        fn: (eut, ocTier) => {
+          let recipeTier = $GTUtil.getFloorTierByVoltage(eut.v) + 1;
+          let numOfOc = ocTier.v - recipeTier;
+          if (numOfOc <= 0)
+            throw new Error(
+              "wrong arguments for function 'parallels': ocTier 2 smol",
+            );
 
-        let cap = Math.floor(
-          (GTVEX[recipeTier] / eut.v) * Math.pow(4, numOfOc),
-        );
-        return { t: "number", v: cap };
+          let cap = Math.floor(
+            (GTV[recipeTier] / eut.v) * Math.pow(4, numOfOc),
+          );
+          return { t: "number", v: cap };
+        },
+      },
+      {
+        arguments: ["vec2", "number"],
+        fn: (recipeInfo, ocTier) => {
+          let recipeTier = $GTUtil.getFloorTierByVoltage(recipeInfo.v[0]) + 1;
+          let numOfOc = ocTier.v - recipeTier;
+          if (numOfOc <= 0)
+            throw new Error(
+              "wrong arguments for function 'parallels': ocTier 2 smol",
+            );
+
+          let cap = Math.floor(
+            (GTV[recipeTier] / recipeInfo.v[0]) * Math.pow(4, numOfOc),
+          );
+          let ocDuration = Math.max(
+            Math.floor(recipeInfo.v[1] / (2 << (numOfOc - 1))),
+            1,
+          );
+          let duration = ocDuration * Math.pow(2, numOfOc);
+          return { t: "vec2", v: [cap, duration] };
+        },
+      },
+    ],
+    recipe: {
+      arguments: ["string"],
+      fn: (recipeId) => {
+        let recipeManager = $KubeJSReloadListener.resources.getRecipeManager();
+        let recipeOptional = recipeManager.byKey(recipeId.v);
+        if (!recipeOptional.isPresent())
+          throw new Error(
+            "wrong arguments for function 'recipe': no recipe found",
+          );
+        let recipe = recipeOptional.get();
+        if (!(recipe instanceof $GTRecipe))
+          throw new Error(
+            "wrong arguments for function 'recipe': not a GTRecipe",
+          );
+        return {
+          t: "vec2",
+          v: [$RecipeHelper.getRealEUt(recipe), recipe.duration],
+        };
       },
     },
   };
@@ -457,11 +532,14 @@ let calculatorExec = (() => {
         let fnName = node.value.identifier;
         let fn = functions[fnName];
         if (!fn) {
-          throw new Error("unknown identifier " + node.identifier);
+          throw new Error("unknown identifier '" + fnName + "'");
         }
         let args = node.arguments.map((arg) => calculate(arg));
-
-        return execOverloaded(Array.isArray(fn) ? fn : [fn], args, fnName);
+        return execOverloaded(
+          Array.isArray(fn) ? fn : [fn],
+          args,
+          "function '" + fnName + "'",
+        );
       }
       case "member": {
         let value = calculate(node.value);
@@ -487,6 +565,9 @@ let calculatorExec = (() => {
       }
       case "number": {
         return { t: "number", v: node.value };
+      }
+      case "string": {
+        return { t: "string", v: node.value };
       }
       case "identifier": {
         let constant = constants[node.identifier];
@@ -519,7 +600,8 @@ let calculatorExec = (() => {
  * @typedef {{ t: "^", v: "^" | "**" }} TokenExp
  * @typedef {{ t: "ident", v: string }} TokenIdent
  * @typedef {{ t: "number", v: number, s?: string }} TokenNumber
- * @typedef {TokenLParen | TokenRParen | TokenTimes | TokenSlash | TokenDSlash | TokenMod | TokenPlus | TokenDash | TokenComma | TokenDot | TokenEof | TokenExp | TokenIdent | TokenNumber} Token
+ * @typedef {{ t: "string", v: string }} TokenString
+ * @typedef {TokenLParen | TokenRParen | TokenTimes | TokenSlash | TokenDSlash | TokenMod | TokenPlus | TokenDash | TokenComma | TokenDot | TokenEof | TokenExp | TokenIdent | TokenNumber | TokenString} Token
  */
 
 /**
@@ -600,6 +682,9 @@ function calculatorLex(input) {
         return { t: "," };
       case ".":
         return { t: "." };
+      case '"':
+      case "'":
+        return lexString(ch === "'");
       default:
         throw new Error("unexpected token: '" + ch + "'");
     }
@@ -640,6 +725,19 @@ function calculatorLex(input) {
     }
     return { t: "number", v: parseFloat(text) };
   }
+
+  /**
+   * @param {boolean} single
+   * @returns {Token | null}
+   */
+  function lexString(single) {
+    let endCh = single ? "'" : '"';
+    let pos = index;
+    let ch;
+    while ((ch = next()) && ch != endCh);
+    let string = input.substring(pos, index - 1);
+    return { t: "string", v: string };
+  }
 }
 
 /**
@@ -650,8 +748,9 @@ function calculatorLex(input) {
  * @typedef {{ type: "call", value: NodeExpr, arguments: NodeExpr[] }} NodeExprCall
  * @typedef {{ type: "member", value: NodeExpr, identifier: string }} NodeMember
  * @typedef {{ type: "identifier", identifier: string }} NodeIdentifier
+ * @typedef {{ type: "string", value: string }} NodeLiteralString
  * @typedef {{ type: "number", value: number }} NodeLiteralNumber
- * @typedef {NodeExprBinary | NodeExprUnary | NodeExprCall | NodeMember | NodeIdentifier | NodeLiteralNumber} NodeExpr
+ * @typedef {NodeExprBinary | NodeExprUnary | NodeExprCall | NodeMember | NodeIdentifier | NodeLiteralString | NodeLiteralNumber} NodeExpr
  */
 
 /**
@@ -857,6 +956,12 @@ function calculatorParse(tokens) {
       // prettier-ignore
       let ident = (/** @type {TokenIdent} */ (current())).v;
       return { type: "identifier", identifier: ident };
+    }
+
+    if (accept("string")) {
+      // prettier-ignore
+      let value = (/** @type {TokenString} */ (current())).v;
+      return { type: "string", value: value };
     }
 
     if (accept("number")) {
