@@ -466,6 +466,7 @@ ServerEvents.recipes(event => {
     let pipeMaterial;
     let circuit;
     let recId;
+    let fluidMulti;
 
     ['luv', 'zpm'].forEach(tier => {
         casingMaterial = global.casingMaterials[tier];
@@ -479,23 +480,24 @@ ServerEvents.recipes(event => {
         });
     });
     
-    ['zpm'].forEach(tier => { //to allow for dual stockings to be thrown into this when done
+    ['luv'].forEach(tier => { //to allow for dual stockings to be thrown into this when done
         casingMaterial = global.casingMaterials[tier];
-        pipeMaterial = (tier == 'zpm') ? 'gtceu:polybenzimidazole' : 'gtceu:naquadah';
-        consTier = (tier == 'zpm') ? 'UV' : 'UHV';
+        pipeMaterial = (tier == 'luv') ? 'gtceu:niobium_titanium' : 'gtceu:polybenzimidazole';
+        fluidMulti = (tier == 'luv') ? 7 : 8;
+        consTier = (tier == 'luv') ? 'ZPM' : 'UV';
 
         ['input', 'output'].forEach(io => {
-            recId = (io == 'input' && tier == 'zpm') ? 'input' : (io == 'input' && tier == 'uv') ? 'stocking_input' : 'output';
-            input = (tier == 'zpm') ? 'input' : 'stocking_input';
+            recId = (io == 'input' && tier == 'luv') ? 'input' : (io == 'input' && tier == 'luv') ? 'stocking_input' : 'output';
+            input = (tier == 'luv') ? 'input' : 'stocking_input';
             circuit = (io == 'input') ? 1 : 2;
             
-            if (io == 'output' && tier == 'uv') {
+            if (io == 'output' && tier == 'zpm') {
                 return;
             }
 
-            assembler(`dual_me_${recId}_hatch`, `expandedgt:dual_me_${recId}_hatch`, [
+            assemblerFluid(`dual_me_${recId}_hatch`, `expandedgt:dual_me_${recId}_hatch`, [
                 `expandedgt:expanded_me_${input}_hatch`, `expandedgt:expanded_me_${input}_bus`, `${pipeMaterial}_nonuple_fluid_pipe`, `3x ${casingMaterial}_frame` 
-            ], GTValues.V[GTValues[consTier]], circuit);
+            ], `gtceu:polybenzimidazole ${144 * fluidMulti}`, GTValues.V[GTValues[consTier]], circuit);
         });
     });
 
