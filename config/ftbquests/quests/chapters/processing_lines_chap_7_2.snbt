@@ -1075,6 +1075,7 @@
 				{
 					id: "3A3BE8EE01FECC6A"
 					item: "gtceu:high_saturation_voidic_excression_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1093,6 +1094,7 @@
 				{
 					id: "5B6E9AA16E0E28C3"
 					item: "gtceu:moderate_saturation_voidic_excression_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1111,6 +1113,7 @@
 				{
 					id: "0346D4437EAB3CBC"
 					item: "gtceu:low_saturation_voidic_excression_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1132,6 +1135,7 @@
 				{
 					id: "3833D284EC6AEB24"
 					item: "gtceu:vibrant_voidic_slurry_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1153,6 +1157,7 @@
 				{
 					id: "0E660AC60A80AC74"
 					item: "gtceu:tempered_voidic_slurry_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1174,6 +1179,7 @@
 				{
 					id: "6E8ADB84100D1556"
 					item: "gtceu:lethargic_voidic_slurry_bucket"
+					optional_task: true
 					type: "item"
 				}
 				{
