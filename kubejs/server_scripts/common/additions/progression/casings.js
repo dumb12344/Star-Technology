@@ -381,4 +381,20 @@ ServerEvents.recipes(event => {
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
         }).id(`start:shaped/palladium_substation`);
+
+    const hermeticCasing = (tier, prefix) => {
+        const casingMaterial = global.componentMaterials[tier].materials.tierMaterial;
+        const pipeMaterial = global.componentMaterials[tier].materials.pipeMaterial;
+
+        event.shaped(`${prefix + tier}_hermetic_casing`, [
+            'PPP',
+            'PHP',
+            'PPP'
+        ], {
+            P: `gtceu:${casingMaterial}_plate`,
+            H: `gtceu:${pipeMaterial}_large_fluid_pipe`
+        }).id(id(`${tier}_hermetic_casing`));
+    }
+
+    hermeticCasing('uhv', 'gtceu:');
 });
