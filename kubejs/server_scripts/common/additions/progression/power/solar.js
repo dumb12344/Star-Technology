@@ -1,14 +1,10 @@
 ServerEvents.recipes(event => {
     const id = global.id;
+    const getRecipeTier = global.getRecipeTier;
+
     const assembler = event.recipes.gtceu.assembler;
     const polarizer = event.recipes.gtceu.polarizer;
     const assline = event.recipes.gtceu.assembly_line;
-
-    const log = (text) => {
-        console.log("-------------------------------");
-        console.log(text);
-        console.log("-------------------------------");
-    };
 
     const getSmdDetails = (smdType) => {
         const count = (smdType == 'living_smd') ? 16 : (smdType == 'advanced_smd') ? 4 : 1;
@@ -38,9 +34,8 @@ ServerEvents.recipes(event => {
 
     //Photovoltaic Cells and Panels
     let recipe;
-    let recipeTier;
     ['ev', 'iv', 'luv', 'zpm', 'uv', 'uhv'].forEach((tier, index, tiers) => {
-        recipeTier = (tier == 'luv') ? 'LuV' : tier.toUpperCase();
+        
         if (tier == 'ev') {
             //Basic Cores
             ['smd', 'advanced_smd', 'living_smd'].forEach(smdType => {
@@ -64,8 +59,8 @@ ServerEvents.recipes(event => {
             polarizer(id(`${tier}_energy_core`))
                 .itemInputs(`kubejs:${tiers[index - 1]}_energy_core`)
                 .itemOutputs(`kubejs:${tier}_energy_core`)
-                .duration(600)
-                .EUt(GTValues.VA[GTValues[recipeTier]]);
+                .duration(1200)
+                .EUt(GTValues.VHA[GTValues[getRecipeTier(tiers[index - 1])]]);
 
         }
 
@@ -85,13 +80,13 @@ ServerEvents.recipes(event => {
 
         recipe
             .itemInputs(
-                `gtceu:double_${tierMaterial}_plate`, `kubejs:${tier}_energy_core`, `16x gtceu:fine_${superconductor}_wire`, 
-                `2x #gtceu:circuits/${tier}` 
+                `gtceu:double_${tierMaterial}_plate`, `kubejs:${tier}_energy_core`, `4x gtceu:fine_${superconductor}_wire`, 
+                `#gtceu:circuits/${tier}` 
             )
             .inputFluids(`gtceu:${solder} 576`)
             .itemOutputs(`kubejs:${tier}_photovoltaic_cell`)
             .duration(400)
-            .EUt(GTValues.VHA[GTValues[recipeTier]]);
+            .EUt(GTValues.VHA[GTValues[getRecipeTier(tier)]]);
 
         //Solar Cells
         assembler(id(`${tier}_solar_cell`))
@@ -102,7 +97,7 @@ ServerEvents.recipes(event => {
             .inputFluids(`gtceu:epoxy ${288 * getEpoxyMultiplier(tier)}`)
             .itemOutputs(Item.of(`2x start_core:${tier}_solar_cell`))
             .duration(600)
-            .EUt(GTValues.VHA[GTValues[recipeTier]]);
+            .EUt(GTValues.VHA[GTValues[getRecipeTier(tier)]]);
             
     });
 
@@ -129,8 +124,7 @@ ServerEvents.recipes(event => {
     //Solar Panels and Arrays
     ['ev', 'iv', 'luv', 'uv', 'uhv', 'uev'].forEach((tier, index, tiers) => {
         if (tier == 'uev') return; //in list purely for circuit tier
-        
-        recipeTier = (tier == 'luv') ? 'LuV' : tier.toUpperCase();
+
         const {
             tierMaterial,
             wireMechanical,
@@ -159,7 +153,7 @@ ServerEvents.recipes(event => {
                 .inputFluids(`gtceu:${lubricant} ${2000 * lubeMultiplier}`)
                 .itemOutputs(`start_core:${tier}_solar_panel`)
                 .duration(600)
-                .EUt(GTValues.VHA[GTValues[recipeTier]]);
+                .EUt(GTValues.VHA[GTValues[getRecipeTier(tier)]]);
 
         }
         //Solar Arrays
@@ -178,10 +172,10 @@ ServerEvents.recipes(event => {
                 .stationResearch(
                     researchRecipeBuilder => researchRecipeBuilder
                         .researchStack(Item.of(researchItem))
-                        .EUt(GTValues.VHA[GTValues[recipeTier]])
+                        .EUt(GTValues.VHA[GTValues[getRecipeTier(tier)]])
                         .CWUt(cwuT)
                 )
-                .EUt(GTValues.VHA[GTValues[recipeTier]]);
+                .EUt(GTValues.VHA[GTValues[getRecipeTier(tier)]]);
 
         }
     });
