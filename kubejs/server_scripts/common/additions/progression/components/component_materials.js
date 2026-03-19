@@ -23,6 +23,7 @@ global.componentMaterials = {
         materials: {
             tierMaterial: 'titanium',
             cable: 'aluminium',
+            solder: 'soldering_alloy',
             superconductor: 'uranium_triplatinum'
         }
     },
@@ -30,6 +31,7 @@ global.componentMaterials = {
         materials: {
             tierMaterial: 'tungsten_steel',
             cable: 'platinum',
+            solder: 'soldering_alloy',
             superconductor: 'samarium_iron_arsenic_oxide'
         }
     },
