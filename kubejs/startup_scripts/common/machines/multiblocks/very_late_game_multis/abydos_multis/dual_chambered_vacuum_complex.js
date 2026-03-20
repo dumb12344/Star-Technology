@@ -1,9 +1,10 @@
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('dual_chambered_vacuum_complex', 'multiblock')
+        .machine((holder) => new $VacuumChemicalReactorMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('vacuum_chemical_reaction_chamber')
-        .recipeModifiers([$StarTRecipeModifiers.THOUGHPUT_BOOSTING, GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.VACUUM_CHEMICAL_REACTION_CHAMBER, $StarTRecipeModifiers.THOUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle("aabaa ddddd ", "a   a  bbbb ", "b   b  bbb  ", "b   a       ", "aabaa       ", "            ", "            ", "            ", "            ", "            ", "            ")
