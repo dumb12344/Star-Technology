@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
     industrialBarrelItemAqueous('exnihilosequentia:mycelium_spores', 'exnihilosequentia:witch_water', 10, 'minecraft', 'brown_mushroom_block');
     
     event.recipes.gtceu.industrial_barrel_aqueous(id(`crimson_nylium_spores`))
-        .itemInputs('exnihilosequentia:mycelium_spores', 'gtceu:netherrack_dust')
+        .itemInputs('exnihilosequentia:mycelium_spores', 'mysticalagriculture:nether_agglomeratio')
         .inputFluids(`gtceu:nether_air 500`)
         .itemOutputs(`exnihilosequentia:crimson_nylium_spores`)
         .duration(200)

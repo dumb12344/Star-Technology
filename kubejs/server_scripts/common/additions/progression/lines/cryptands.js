@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:lithium_dust')
         .inputFluids('gtceu:chlorine 1000')
         .itemOutputs('gtceu:lithium_chloride_dust')
-        .duration(100)
+        .duration(1200)
         .EUt(120)
 
     event.recipes.gtceu.chemical_reactor(id('silver_oxide'))
