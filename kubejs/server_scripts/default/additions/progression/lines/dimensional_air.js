@@ -19,31 +19,31 @@ global.not_hardmode(() => {
             .EUt(20)
             .circuit(0);
 
-        event.recipes.gtceu.extractor(id('nether_agglomeration'))
-            .itemInputs('gtceu:netherrack_dust')
-            .itemOutputs('mysticalagriculture:nether_agglomeratio')
-            .duration(120)
-            .EUt(80);
+        // event.recipes.gtceu.extractor(id('nether_agglomeration'))
+        //     .itemInputs('gtceu:netherrack_dust')
+        //     .itemOutputs('mysticalagriculture:nether_agglomeratio')
+        //     .duration(120)
+        //     .EUt(80);
 
-        event.recipes.gtceu.extractor(id('end_agglomeration'))
-            .itemInputs('gtceu:endstone_dust')
-            .itemOutputs('mysticalagriculture:end_agglomeratio')
-            .duration(120)
-            .EUt(80);
+        // event.recipes.gtceu.extractor(id('end_agglomeration'))
+        //     .itemInputs('gtceu:endstone_dust')
+        //     .itemOutputs('mysticalagriculture:end_agglomeratio')
+        //     .duration(120)
+        //     .EUt(80);
 
         event.recipes.gtceu.mixer(id('nether_air_mix'))
-            .itemInputs('mysticalagriculture:nether_agglomeratio')
-            .inputFluids('gtceu:air 12000')
-            .outputFluids('gtceu:nether_air 12000')
+            .itemInputs('4x gtceu:netherrack_dust')
+            .inputFluids('gtceu:air 32000')
+            .outputFluids('gtceu:nether_air 24000')
             .duration(1200)
-            .EUt(256);
+            .EUt(GTValues.VHA[GTValues.HV]);
 
         event.recipes.gtceu.mixer(id('ender_air_mix'))
-            .itemInputs('mysticalagriculture:end_agglomeratio')
-            .inputFluids('gtceu:nether_air 6000')
-            .outputFluids('gtceu:ender_air 6000')
+            .itemInputs('4x gtceu:endstone_dust')
+            .inputFluids('gtceu:nether_air 32000')
+            .outputFluids('gtceu:ender_air 24000')
             .duration(1200)
-            .EUt(256);
+            .EUt(GTValues.VHA[GTValues.HV]);
 
     });
 });

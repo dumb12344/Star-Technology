@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
         .EUt(1890);
 
     event.recipes.gtceu.centrifuge(id('debris_dust'))
-        .itemInputs('mysticalagriculture:nether_agglomeratio')
+        .itemInputs('gtceu:netherrack_dust')
         .chancedOutput('gtceu:tiny_debris_dust', 200, 500)
         .duration(20)
         .EUt(6500)
