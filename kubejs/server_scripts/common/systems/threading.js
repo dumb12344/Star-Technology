@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
                     )
                 .EUt(GTValues.VHA[GTValues.UEV]);
 
-            event.recipes.gtceu.assembly_line(id('pisma_helical_nucleus'))
+            event.recipes.gtceu.assembly_line(id('prisma_helical_nucleus'))
                 .itemInputs('gtceu:nyanium_frame', '3x kubejs:prismalic_helix_core', '2x gtceu:dense_hvga_steel_plate', '2x gtceu:soul_ascendant_cuperite_rod',
                     '2x gtceu:uiv_sensor', '32x kubejs:uipic_chip')
                 .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 5472','gtceu:naquadated_soldering_alloy 4384','gtceu:dragon_breath 2500')
@@ -140,19 +140,19 @@ ServerEvents.recipes(event => {
         // Special 3 = Gen 3 + Core + Tier Stuff + Specializer
         // Gen 4 = Betterest Frame + All Special 3 + Core + Tier Stuff
 
-        event.recipes.gtceu.assembler(id('uv_supreme_thread_helix'))
-            .itemInputs('gtceu:void_frame', '3x #gtceu:circuits/uhv', '2x kubejs:prismalic_helix_core', 
-                '1x gtceu:uv_field_generator', '32x gtceu:uhpic_chip')
-            .inputFluids('gtceu:naquadria 6912')
-            .itemOutputs(`start_core:uv_supreme_thread_helix`)
-            .duration(800)
-            .EUt(GTValues.VA[GTValues.UHV]);
+        // event.recipes.gtceu.assembler(id('uv_supreme_thread_helix'))
+        //     .itemInputs('gtceu:void_frame', '3x #gtceu:circuits/uhv', '2x kubejs:prismalic_helix_core', 
+        //         '1x gtceu:uv_field_generator', '32x gtceu:uhpic_chip')
+        //     .inputFluids('gtceu:naquadria 6912')
+        //     .itemOutputs(`start_core:uv_supreme_thread_helix`)
+        //     .duration(800)
+        //     .EUt(GTValues.VA[GTValues.UHV]);
 
         const SpecialAssemblyHelix = (type,specializer) => {
 
             event.recipes.gtceu.assembly_line(id(`uhv_${type}_thread_helix`))
-                .itemInputs('start_core:uv_supreme_thread_helix', '3x #gtceu:circuits/uev', 'kubejs:prismalic_helix_core', 
-                    '1x gtceu:uhv_field_generator', `kubejs:uhv_${specializer}`, '2x kubejs:uhv_high_strength_panel')
+                .itemInputs('gtceu:enriched_pallarovium_alloy_frame', '3x #gtceu:circuits/uev', 'kubejs:prismalic_helix_core', 
+                    '4x gtceu:uhv_field_generator', `kubejs:uhv_${specializer}`, '2x kubejs:uhv_high_strength_panel')
                 .inputFluids('gtceu:naquadria 13824', 'gtceu:polyether_ether_ketone 4608')
                 .itemOutputs(`start_core:uhv_${type}_thread_helix`)
                 .stationResearch(

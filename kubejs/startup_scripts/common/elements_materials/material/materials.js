@@ -1550,7 +1550,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compIngotPlasma('starium_alloy', ['4x nether_star_concentrate', '2x trinaquadalloy', '2x estalt'], 0x2253d2, SHINY, [18200, 'highest', VA('uev'), 600], [plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, no_decomp, no_abs_recipe, foil, dense_plate]);
 
-    conductorPlasma('seaborgium_palladium_enriched_estalt_flerovium_alloy', ['2x seaborgium', '8x palladium', '3x enriched_estalt', '4x flerovium'], 0x73022b, DULL, [17950, 'highest', VA('uev'), 600], [V('uev'), 32, 0, true], [no_decomp, no_abs_recipe, fine_wire]);
+    conductorPlasma('enriched_pallarovium_alloy', ['2x seaborgium', '8x palladium', '3x enriched_estalt', '4x flerovium'], 0x73022b, DULL, [17950, 'highest', VA('uev'), 600], [V('uev'), 32, 0, true], [no_decomp, no_abs_recipe, fine_wire, frame]);
 
     compDust('iron_titanium_oxide', ['3x iron', '2x titanium', '7x oxygen'], 0x82229b, [no_decomp]);
 
