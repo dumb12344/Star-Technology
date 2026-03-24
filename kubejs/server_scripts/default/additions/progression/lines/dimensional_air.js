@@ -32,14 +32,14 @@ global.not_hardmode(() => {
             .EUt(80);
 
         event.recipes.gtceu.mixer(id('nether_air_mix'))
-            .itemInputs('4x gtceu:netherrack_dust')
+            .itemInputs('3x gtceu:netherrack_dust')
             .inputFluids('gtceu:air 32000')
             .outputFluids('gtceu:nether_air 24000')
             .duration(1200)
             .EUt(GTValues.VHA[GTValues.HV]);
 
         event.recipes.gtceu.mixer(id('ender_air_mix'))
-            .itemInputs('4x gtceu:endstone_dust')
+            .itemInputs('3x gtceu:endstone_dust')
             .inputFluids('gtceu:nether_air 32000')
             .outputFluids('gtceu:ender_air 24000')
             .duration(1200)
