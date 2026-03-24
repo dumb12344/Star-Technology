@@ -25,7 +25,7 @@
 			linked_quest: "2DB216B224F2E8EF"
 			shape: "gear"
 			size: 1.5d
-			x: 20.0d
+			x: 19.5d
 			y: 19.5d
 		}
 		{
@@ -2792,7 +2792,7 @@
 		{
 			dependencies: [
 				"78F4EA1E69DE1AF1"
-				"61F1B4C2D9F9AEE4"
+				"1FC8A365A31198C5"
 			]
 			icon: "gtceu:ender_air_bucket"
 			id: "3C099AFD41C38BC3"
@@ -2808,11 +2808,11 @@
 					type: "checkmark"
 				}
 			]
-			x: 19.0d
+			x: 18.5d
 			y: 21.0d
 		}
 		{
-			dependencies: ["47F8D1018B9C170E"]
+			dependencies: ["04B702C5B2D3F1E9"]
 			icon: "gtceu:nether_air_bucket"
 			id: "78F4EA1E69DE1AF1"
 			tasks: [
@@ -2827,19 +2827,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 18.0d
-			y: 19.5d
-		}
-		{
-			dependencies: ["1FC8A365A31198C5"]
-			id: "61F1B4C2D9F9AEE4"
-			tasks: [{
-				id: "65CA7B3330028BA3"
-				item: "mysticalagriculture:end_agglomeratio"
-				type: "item"
-			}]
 			x: 17.5d
-			y: 21.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["74CEC1F2ABC2E6D5"]
@@ -2849,7 +2838,7 @@
 				item: "gtceu:endstone_dust"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 17.0d
 			y: 21.0d
 		}
 		{
@@ -2860,22 +2849,8 @@
 				item: "minecraft:end_stone"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 15.5d
 			y: 21.0d
-		}
-		{
-			dependencies: [
-				"04B702C5B2D3F1E9"
-				"1D3F29ED5112617E"
-			]
-			id: "47F8D1018B9C170E"
-			tasks: [{
-				id: "64ADA302E266C277"
-				item: "mysticalagriculture:nether_agglomeratio"
-				type: "item"
-			}]
-			x: 16.5d
-			y: 19.5d
 		}
 		{
 			dependencies: ["1D3F29ED5112617E"]
@@ -2885,7 +2860,7 @@
 				item: "gtceu:netherrack_dust"
 				type: "item"
 			}]
-			x: 15.0d
+			x: 16.0d
 			y: 19.5d
 		}
 		{
@@ -2896,7 +2871,7 @@
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.5d
 			y: 19.5d
 		}
 		{
