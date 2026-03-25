@@ -92,18 +92,18 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line(id('runic_engraver'))
             .itemInputs('gtceu:lumium_frame', '4x #gtceu:circuits/uv', 'gtceu:double_tantalum_carbide_plate', 
-                    'gtceu:double_titanium_carbide_plate', '2x gtceu:uv_field_generator', '4x gtceu:uv_emitter', '64x gtceu:uhpic_chip', 
+                    'gtceu:double_titanium_carbide_plate', '2x gtceu:zpm_field_generator', '4x gtceu:zpm_emitter', '64x gtceu:uhpic_chip', 
                     '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '64x gtceu:uhpic_chip', '48x gtceu:blue_alloy_screw', 'gtceu:gravi_star')
             .inputFluids('gtceu:hsse 5184', 'gtceu:hssg 5184', 'gtceu:hsss 5184')
             .itemOutputs('gtceu:runic_circuitry_assembling_station')
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('kubejs:runic_wave_generator'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(128)
+                .EUt(GTValues.VHA[GTValues.ZPM])
+                .CWUt(16)
             )
             .duration(6000)
-            .EUt(GTValues.VHA[GTValues.UV]);
+            .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.assembly_line(id('quantum_compressor'))
             .itemInputs('gtceu:melodium_frame', '3x #gtceu:circuits/uv', '2x gtceu:double_trinaquadalloy_plate',
