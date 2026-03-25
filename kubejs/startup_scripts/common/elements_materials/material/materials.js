@@ -794,6 +794,10 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
         compDustOre('zavaritskite',['1x bismuth', '1x oxygen', '1x fluorine'], 0xE7D795, []);
 
+        compDustOre('naquadite', ['2x naquadah', '1x magnesia', '1x magnetite'], 0x272424, [no_decomp]); //sec of 0x4d4545 whenever array for this is possible
+
+        compLiquidTemp('naquadite_magma', 5120, ['1x mystery', '1x naquadite', '1x mystery'], 0x272424, []); //same here
+
         compLiquidTemp('abydos_refractory_dense_magma', 4520, ['1x mystery', '1x titanite', '1x xenotime', '1x monazite', '1x scheelite', '1x mystery'], 0xe65c00, [no_decomp]);
 
         compLiquidTemp('abydos_reactive_dense_magma', 4980, ['1x mystery', '1x zapolite', '1x crookesite', '1x kitkaite', '1x lautarite', '1x mystery'], 0xff471a, [no_decomp]);
