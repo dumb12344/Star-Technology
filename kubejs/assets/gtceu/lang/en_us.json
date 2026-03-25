@@ -384,6 +384,7 @@
     "gtceu.jei.ore_vein.abydos_activation_metals_vein": "Abydos Activation Metal Vein",
     "gtceu.jei.ore_vein.abydos_alkaline_sediment_vein": "Abydos Alkaline Sediment Vein",
     "gtceu.jei.ore_vein.abydos_refractory_metals_vein": "Abydos Refractory Metal Vein",
+    "gtceu.jei.ore_vein.naquadite_vein": "Naquadite Vein",
     "gtceu.jei.ore_vein.brimstone_patch": "Nether Brimstone Patch",
     "gtceu.jei.ore_vein.cryostone_patch": "Nether Cryostone Patch",
     "material.gtceu.gritty_akreyrium": "Gritty Akreyrium",
@@ -774,6 +775,8 @@
 
     "material.gtceu.abydos_refractory_dense_magma": "Abydos-Refractory Dense Magma",
     "material.gtceu.abydos_reactive_dense_magma": "Abydos-Reactivity Dense Magma",
+    "material.gtceu.naquadite_magma": "Naquadite Magma",
+    "material.gtceu.naquadite": "Naquadite",
     "material.gtceu.refractory_dense_residue": "Refractory Dense Residue",
     "material.gtceu.reactive_dense_residue": "Reactivity Dense Residue",
     "material.gtceu.rare_earth_sulfate_solution": "Rare Earth Sulfate Solution",
@@ -1113,6 +1116,7 @@
     "gtceu.jei.bedrock_fluid.highly_unstable_nether_magma_deposit": "Highly Unstable Nether Magma Deposit",
     "gtceu.jei.bedrock_fluid.crude_infernal_concentrate": "Crude Infernal Concentrate Deposit",
     "gtceu.jei.bedrock_fluid.lava_dense": "Lava Deposit",
+    "gtceu.jei.bedrock_fluid.naquadite_magma": "Naquadite Magma",
 
     "block.gtceu.tree_synthesizer": "Tree Synthesizer",
     "block.gtceu.tree_synthesizer.tooltip.0": "§7A larger greenhouse that provides ample space for gigantic trees to be grown, and felled.",
