@@ -50,9 +50,9 @@ GTCEuServerEvents.fluidVeins(event => {
     vein.depletedYield(320)
   });
 
-  event.add('start:naquadite_magma', vein => {
+  event.add('start:abydos_naquadite_dense_magma', vein => {
     vein.dimensions('sgjourney:abydos')
-    vein.fluid(() => Fluid.of('gtceu:naquadite_magma').fluid)
+    vein.fluid(() => Fluid.of('gtceu:abydos_naquadite_dense_magma').fluid)
     vein.weight(28)
     vein.minimumYield(400)
     vein.maximumYield(540)

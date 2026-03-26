@@ -943,7 +943,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         compDust('rich_rare_earth', ['1x mystery'], 0xb5ac90, [no_decomp]);
 
         // Naquadite Line
-        compLiquid('hydroiodic_acid', ['1x hydrogen', '1x iodine'], 0x906ad6, []);
+        compLiquid('hydroiodic_acid', ['1x hydrogen', '1x iodine'], 0x906ad6, [no_decomp]);
 
         compDust('naquadite_solution', ['1x naquadite', '1x mystery'], 0x524848, [no_decomp]);
 
