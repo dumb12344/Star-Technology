@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.molten_destabilizing(id('naquadite_dense_residue'))
         .inputFluids('gtceu:naquadite_dense_residue 60000')
         .outputFluids('gtceu:molten_ore_mixture 50000')
-        .itemOutputs('8x gtceu:raw_naquadite','6x gtceu:raw_magnesite','5x gtceu:raw_chromite', '3x gtceu:magnetite')
+        .itemOutputs('8x gtceu:raw_naquadite','6x gtceu:raw_magnesite','5x gtceu:raw_chromite', '3x gtceu:raw_magnetite')
         .duration(840)
         .EUt(GTValues.VHA[GTValues.UV]);
 

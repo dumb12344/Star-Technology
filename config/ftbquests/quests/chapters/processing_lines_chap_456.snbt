@@ -744,7 +744,7 @@
 				type: "item"
 			}]
 			x: 31.0d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -815,7 +815,7 @@
 				type: "item"
 			}]
 			x: 29.0d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["78841B022F71E005"]
@@ -843,7 +843,7 @@
 			]
 			title: "{ftbquests.processing_lines_chap.titanium_tetrachloride_mixture.title}"
 			x: 27.5d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["330EAF566B740869"]
@@ -871,7 +871,7 @@
 			]
 			title: "{ftbquests.processing_lines_chap.titanite_residue.title}"
 			x: 26.0d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -902,7 +902,7 @@
 			]
 			title: "{ftbquests.processing_lines_chap.hydroxo_dioxo_titanite_mixture.title}"
 			x: 24.5d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -933,7 +933,7 @@
 			]
 			title: "{ftbquests.processing_lines_chap.titanite_slurry.title}"
 			x: 21.5d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["7557E3B3E5F86BAD"]
@@ -961,7 +961,7 @@
 			]
 			title: "{ftbquests.processing_lines_chap.titanite_slurry_residue.title}"
 			x: 23.0d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -979,7 +979,7 @@
 				type: "item"
 			}]
 			x: 20.0d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
@@ -1007,7 +1007,7 @@
 			]
 			title: "{ftbquests.processing_lines_chap.perchloric_acid.title}"
 			x: 21.0d
-			y: -6.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["7557E3B3E5F86BAD"]
@@ -1022,7 +1022,7 @@
 				type: "item"
 			}]
 			x: 22.0d
-			y: -6.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["7557E3B3E5F86BAD"]
@@ -1050,7 +1050,7 @@
 			]
 			title: "{ftbquests.processing_lines_chap.silica_gel.title}"
 			x: 22.0d
-			y: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["3A15777DD813EE71"]
@@ -1065,7 +1065,7 @@
 				type: "item"
 			}]
 			x: 24.0d
-			y: -6.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["330EAF566B740869"]
@@ -1080,7 +1080,7 @@
 				type: "item"
 			}]
 			x: 25.0d
-			y: -4.5d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1781,8 +1781,8 @@
 				}
 			]
 			title: "{ftbquests.processing_lines_chap.strontium_ores.title}"
-			x: 20.0d
-			y: 1.0d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4BA35C4DAC5BC054"]
@@ -1793,8 +1793,8 @@
 				item: "gtceu:strontium_dust"
 				type: "item"
 			}]
-			x: 21.5d
-			y: 1.0d
+			x: 13.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["54DA03D41AF36EF2"]
@@ -3227,16 +3227,18 @@
 			dependencies: [
 				"78644D6D1CEC15C6"
 				"53D32686A5778F2F"
+				"3C131D620259A690"
 			]
 			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "14FF003993ADD03E"
 			tasks: [{
 				id: "50B59EA1D1140ACA"
 				item: "gtceu:abydos_magma_slag_dust"
 				type: "item"
 			}]
-			x: 18.5d
-			y: 1.0d
+			x: 16.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -3259,7 +3261,7 @@
 				}
 			]
 			x: 18.5d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -3293,7 +3295,7 @@
 				type: "item"
 			}]
 			x: 18.5d
-			y: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["02D8D2CC068C36B5"]
@@ -3325,8 +3327,8 @@
 				item: "gtceu:metal_mixture_dust"
 				type: "item"
 			}]
-			x: 19.5d
-			y: 2.0d
+			x: 16.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["14FF003993ADD03E"]
@@ -3336,8 +3338,8 @@
 				item: "gtceu:gypsum_dust"
 				type: "item"
 			}]
-			x: 19.5d
-			y: 0.0d
+			x: 16.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["172A010B8001FE83"]
@@ -3348,7 +3350,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1BF2438812DE03A3"]
@@ -3359,7 +3361,7 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -3381,7 +3383,7 @@
 				}
 			]
 			x: 22.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -3403,7 +3405,7 @@
 				}
 			]
 			x: 24.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["15296632D73B60FA"]
@@ -3422,7 +3424,7 @@
 				}
 			]
 			x: 25.5d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -3436,7 +3438,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4DD388D3F5455C37"]
@@ -3448,7 +3450,7 @@
 				type: "item"
 			}]
 			x: 28.5d
-			y: -3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["4DD388D3F5455C37"]
@@ -3460,7 +3462,7 @@
 				type: "item"
 			}]
 			x: 29.0d
-			y: -2.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4DD388D3F5455C37"]
@@ -3472,7 +3474,7 @@
 				type: "item"
 			}]
 			x: 29.0d
-			y: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4DD388D3F5455C37"]
@@ -3484,7 +3486,7 @@
 				type: "item"
 			}]
 			x: 28.5d
-			y: -0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -3498,7 +3500,7 @@
 				type: "item"
 			}]
 			x: 18.5d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -3523,7 +3525,7 @@
 				type: "item"
 			}]
 			x: 20.5d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["172A010B8001FE83"]
@@ -3534,7 +3536,7 @@
 				type: "item"
 			}]
 			x: 19.5d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["02D8D2CC068C36B5"]
@@ -3579,7 +3581,7 @@
 				type: "item"
 			}]
 			x: 24.5d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
@@ -3598,7 +3600,7 @@
 				}
 			]
 			x: 22.0d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6DB9F175F04569EF"]
@@ -3617,7 +3619,7 @@
 				}
 			]
 			x: 23.0d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["4597B95C2F5EE106"]
@@ -3628,7 +3630,7 @@
 				type: "item"
 			}]
 			x: 23.5d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -3641,8 +3643,8 @@
 				title: "Abydos Drilling"
 				type: "checkmark"
 			}]
-			x: 16.5d
-			y: 1.0d
+			x: 18.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
@@ -3653,7 +3655,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["4DD388D3F5455C37"]
@@ -3664,7 +3666,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			icon: "gtceu:benzene_bucket"
@@ -4285,6 +4287,170 @@
 			]
 			x: 13.5d
 			y: 8.5d
+		}
+		{
+			dependencies: ["66E5020B15598CCD"]
+			icon: "gtceu:abydos_naquadite_dense_magma_bucket"
+			id: "3C131D620259A690"
+			tasks: [
+				{
+					id: "00A2A5BF71FE40C9"
+					item: "gtceu:abydos_naquadite_dense_magma_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5C5D9DBA166BDB82"
+					type: "checkmark"
+				}
+			]
+			x: 20.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C131D620259A690"]
+			icon: "gtceu:naquadite_dense_residue_bucket"
+			id: "067EB2EC812FA4CC"
+			tasks: [
+				{
+					id: "03C6DE8AB4169B91"
+					item: "gtceu:naquadite_dense_residue_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3CD2E54D86B98110"
+					type: "checkmark"
+				}
+			]
+			x: 22.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["067EB2EC812FA4CC"]
+			id: "4D058FC400C0A468"
+			tasks: [
+				{
+					id: "0C551CEB7733A51A"
+					item: "gtceu:raw_magnesite"
+					type: "item"
+				}
+				{
+					id: "3C003B2A440BC92B"
+					item: "gtceu:raw_chromite"
+					type: "item"
+				}
+				{
+					id: "16B81FE06200BDED"
+					item: "gtceu:raw_magnetite"
+					type: "item"
+				}
+			]
+			x: 23.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["067EB2EC812FA4CC"]
+			id: "2587A1C4A6CDFD6B"
+			tasks: [{
+				id: "25E77B5AA4E578A4"
+				item: "gtceu:raw_naquadite"
+				type: "item"
+			}]
+			x: 24.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2587A1C4A6CDFD6B"]
+			id: "514820A534A03D55"
+			tasks: [{
+				id: "598EDDC2B0E07280"
+				item: "gtceu:naquadite_dust"
+				type: "item"
+			}]
+			x: 26.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51BDC41DEAABE3DC"]
+			hide_dependency_lines: true
+			icon: "gtceu:hydrogen_iodide_bucket"
+			id: "5295978BEBB9AB1E"
+			tasks: [
+				{
+					id: "4F5693E8668E5755"
+					item: "gtceu:hydrogen_iodide_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5DBA046EE89F0F52"
+					type: "checkmark"
+				}
+			]
+			x: 24.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5295978BEBB9AB1E"]
+			icon: "gtceu:hydroiodic_acid_bucket"
+			id: "150C05FADA9CCDBC"
+			tasks: [
+				{
+					id: "70CAB58B6CE7809B"
+					item: "gtceu:hydroiodic_acid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "40FB335CA3A6EC4C"
+					type: "checkmark"
+				}
+			]
+			x: 26.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"150C05FADA9CCDBC"
+				"514820A534A03D55"
+			]
+			id: "7105D59889790CAE"
+			tasks: [{
+				id: "33EC53C8FA847389"
+				item: "gtceu:naquadite_solution_dust"
+				type: "item"
+			}]
+			x: 28.5d
+			y: 0.0d
+		}
+		{
+			id: "7D61572103E633FE"
+			tasks: [{
+				id: "0E91E075A5F3E0C6"
+				item: "gtceu:magnesia_dust"
+				type: "item"
+			}]
+			x: 29.5d
+			y: -1.0d
+		}
+		{
+			id: "5802EB0FB8414902"
+			rewards: [{
+				count: 3
+				id: "3410396C923C7736"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "53409C91FA618123"
+				item: "gtceu:naquadah_dust"
+				type: "item"
+			}]
+			x: 30.5d
+			y: 0.0d
 		}
 	]
 	title: "{ftbquests.processing_lines_chap_456.title}"
