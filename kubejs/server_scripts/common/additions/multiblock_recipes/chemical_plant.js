@@ -549,6 +549,7 @@ ServerEvents.recipes(event => {
             .itemInputs('gtceu:nether_star_dust')
         )
         .itemOutputs('16x kubejs:draconic_stem_cells')
+        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
         .duration(53)
         .EUt(GTValues.VHA[GTValues.UIV]);
 
@@ -561,6 +562,7 @@ ServerEvents.recipes(event => {
             .inputFluids('thermal:ender 12500')
         )
         .itemOutputs('32x kubejs:draconic_brain_matter_cells')
+        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
         .duration(93)
         .EUt(GTValues.VHA[GTValues.UIV]);
 });
