@@ -231,7 +231,7 @@ global.componentMaterials = {
             pipeMaterial: 'mythrolic_alloy',
             miscMaterial: 'mythrolic_alloy',
             glass: 'kubejs:reinforced_fusion_glass',
-            superconductor: 'seaborgium_palladium_enriched_estalt_flerovium_alloy',
+            superconductor: 'enriched_pallarovium_alloy',
             buzz: 'neutronium',
             chip: 'kubejs:uepic',
             fluidStorage: '', //none exist
