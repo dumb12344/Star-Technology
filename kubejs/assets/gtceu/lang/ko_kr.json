@@ -115,9 +115,6 @@
 
     "block.gtceu.molten_destabilizer.tooltip.0": "§7복잡한 용융된 상태의 화학 물질들을 가공하기 위해 더 작은 덩어리로 분할 해주는 강력한 기계",
 
-    "block.gtceu.vibration_laser_engraver.tooltip.0": "§7정확한 레이저와 진동을 이용한 멀티블록으로, 보석과 팁, 수정을 원하는대로 변환시킵니다.",
-    "block.gtceu.vibration_laser_engraver.tooltip.1": "§3병렬 처리§r 해치를 사용 가능하며, §b처리 부스팅§r과 §c서브틱 병렬 처리§r, 그리고 §2대량 처리§r를 가지고 있습니다",
-
     "block.gtceu.cyclonic_sifter.tooltip.0": "§7쉬프터의 다음 단계로, 기존보다 강하고 정확한 성능을 통해 더 나은 정제가 가능합니다",
 
     "block.gtceu.injection_mixer.tooltip.0": "§7일반 믹서보다 정확한 성능으로 혼합물을 섞는 고급 등급의 믹서로, 더 나은 제작법을 제공합니다.",
@@ -387,6 +384,7 @@
     "gtceu.jei.ore_vein.abydos_activation_metals_vein": "아비도스 활성 금속 광맥",
     "gtceu.jei.ore_vein.abydos_alkaline_sediment_vein": "아비도스 알칼리성 퇴적 광맥",
     "gtceu.jei.ore_vein.abydos_refractory_metals_vein": "아비도스 비활성 금속 광맥",
+    "gtceu.jei.ore_vein.naquadite_vein": "나콰다이트 광맥",
     "gtceu.jei.ore_vein.brimstone_patch": "네더 브림스톤 지대",
     "gtceu.jei.ore_vein.cryostone_patch": "네더 크라이오스톤 지대",
     "material.gtceu.gritty_akreyrium": "모래가 섞인 아크레이륨",
@@ -492,9 +490,6 @@
     "gtceu.dimensional_destabiliser": "차원 불안정화",
     "block.gtceu.dimensional_destabiliser": "차원 불안정화 장치",
 
-    "gtceu.vibration_laser_engraver": "진동 레이저 각인기",
-    "block.gtceu.vibration_laser_engraver": "진동 레이저 각인기",
-
     "gtceu.large_greens_extractor": "대형 초록 추출",
     "block.gtceu.large_greens_extractor": "대형 초록 추출기",
 
@@ -599,7 +594,7 @@
     "material.gtceu.magmada_alloy": "마그마다 합금",
     "material.gtceu.mythrolic_alloy": "미스로릭 합금",
     "material.gtceu.starium_alloy": "스타리움 합금",
-    "material.gtceu.seaborgium_palladium_enriched_estalt_flerovium_alloy": "농축 팔라로븀 합금",
+    "material.gtceu.enriched_pallarovium_alloy": "농축된 팔라로븀 합금",
     "material.gtceu.astatium_bioselex_carbonite": "탄산 아스타티움 바이오셀렉스",
     "material.gtceu.brackish_water": "담함수",
     "material.gtceu.nether_star_concentrate": "네더의 별 농축물",
@@ -780,6 +775,11 @@
 
     "material.gtceu.abydos_refractory_dense_magma": "아비도스 고밀도 비활성 마그마",
     "material.gtceu.abydos_reactive_dense_magma": "아비도스 고밀도 반응성 마그마",
+    "material.gtceu.abydos_naquadite_dense_magma": "아비도스 고밀도 나콰다이트 마그마",
+    "material.gtceu.naquadite_dense_residue": "고밀도 나콰다이트 잔류물",
+    "material.gtceu.naquadite": "나콰다이트",
+    "material.gtceu.hydroiodic_acid": "아이오딘화 수소산",
+    "material.gtceu.naquadite_solution": "나콰다이트 용액",
     "material.gtceu.refractory_dense_residue": "고밀도 비활성 잔류물",
     "material.gtceu.reactive_dense_residue": "고밀도 반응성 잔류물",
     "material.gtceu.rare_earth_sulfate_solution": "희토류 황산 용액",
@@ -858,11 +858,7 @@
     "block.gtceu.cryostate_quantum_chiller": "양자 냉동 장치",
     "block.gtceu.cryostate_quantum_chiller.tooltip.0": "§7절대 영도 수준의 초저온 냉각제가 처리할 수 있는 정밀한 양자 냉각 시스템으로, 고급 물질의 상태 조작이나 대량 진공 냉각에 사용됩니다.",
 
-    "block.gtceu.ancient_refinement_center": "고대 정제 센터",
-    "block.gtceu.ancient_refinement_center.tooltip.0": "§7고대 기술로 필요한 자원 생산기들을 합쳤습니다.",
     "gtceu.aqueous_void_excavation": "수성 공허 채굴",
-    "gtceu.bulk_void_excavation": "대량 공허 채굴",
-    "gtceu.bulk_rock_filtrator": "대량 돌 필터링",
 
     "gtceu.draco_infusion": "§d드라코닉 융합",
     "block.gtceu.draco_infusion": "§d드라코닉 융합 배열",
@@ -1123,6 +1119,7 @@
     "gtceu.jei.bedrock_fluid.highly_unstable_nether_magma_deposit": "고도로 불안정한 네더 마그마 광맥",
     "gtceu.jei.bedrock_fluid.crude_infernal_concentrate": "생 인페르날 농축물 광맥",
     "gtceu.jei.bedrock_fluid.lava_dense": "용암 광맥",
+    "gtceu.jei.bedrock_fluid.abydos_naquadite_dense_magma": "아비도스 고밀도 나콰다이트 마그마",
 
     "block.gtceu.tree_synthesizer": "나무 합성기",
     "block.gtceu.tree_synthesizer.tooltip.0": "§7큰 나무를 키우고 획득하는 더 큰 온실을 제공합니다.",
@@ -1335,7 +1332,7 @@
     "block.gtceu.t_large_electromagnetic_separator.tooltip.1": "오직 §b하나§r의 전력 해치만 사용 가능합니다",
     "material.gtceu.acidic_bromine_solution": "산성 브로민 용액",
     "material.gtceu.concentrated_bromine_solution": "농축된 브로민 용액",
-    "material.gtceu.hydrogen_iodid": "옥소화 수소",
+    "material.gtceu.hydrogen_iodide": "옥소화 수소",
     "material.gtceu.hot_brine": "고온 염수",
     "material.gtceu.hot_chlorinated_brominated_brine": "고온 염화 브로민화 염수",
     "material.gtceu.hot_debrominated_brine": "고온 탈브로민화 염수",
