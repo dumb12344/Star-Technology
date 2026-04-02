@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`start_core:uev_supreme_thread_helix`)
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of('start_core:uv_supreme_thread_helix'))
+                    .researchStack(Item.of('gtceu:draconyallium_frame'))
                     .EUt(GTValues.VA[GTValues.UEV])
                     .CWUt(160)
                 )

@@ -224,7 +224,11 @@
 		}
 		{
 			dependencies: ["13118B7518370623"]
-			description: ["{ftbquests.mechanics.bulking.description}"]
+			description: [
+				"{ftbquests.mechanics.bulking.description.1}"
+				"{@pagebreak}"
+				"{ftbquests.mechanics.bulking.description.2}"
+			]
 			icon: "megacells:bulk_cell_component"
 			id: "33FE3C68B0BD21B1"
 			tasks: [{
