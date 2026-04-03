@@ -15,7 +15,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle("abbba abbba abbba abbba bdbbbbbdb", "b   b b   b b   b b   b bddbbbddb", "b   b b   b b   b b   b bbdddddbb", "b   b b   b b   b b   b  ddddddd ", "abbba abbba abbba abbba  dddlddd ", "a   a a   a a   a a   a  ddddddd ", "a   a a   a a   a a   a bdddddddb", "a   a a   a a   a a   a  bdeeedb ", "a   a a   a a   a a   a  bdeeedb ", "a   a a   a a   a a   a  bdeeedb ", "bbbbb bbbbb bbbbb bbbbb  bdddddb ", "                         bdddddb ", "                         bbdfdbb ", " bbb   bbb   bbb   bbb   bbdddbb ", "                         bgggggb ")
             .aisle("abbba abbba abbba abbba b bbbbb b", "b   b b   b b   b b   b b bbbbb b", "b   b b   b b   b b   b bbbbbbbbb", "b   b b   b b   b b   b a b   b a", "abbba abbba abbba abbba a b   b a", "                        a b   b a", "                        bbbbbbbbb", "                          b   b  ", "                          b   b  ", "                          b   b  ", "                          bbbbb  ", "                          b   b  ", "                          b   b  ", "                          b   b  ", "                         bbbbbbb ")
             .where("a", Predicates.blocks("gtceu:draco_abyssal_frame"))
-            .where("b", Predicates.blocks("kubejs:inoculated_nuclei_seperation_casing"))
+            .where("b", Predicates.blocks("kubejs:aberration_casing"))
             .where("c", Predicates.any())
             .where("d", Predicates.blocks("kubejs:absolute_annihilation_casing")
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(8).setPreviewCount(0))
