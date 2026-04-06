@@ -1149,6 +1149,13 @@
     "block.gtceu.subtick.tooltip.1": "Has §cSubtick Parallels",
     "block.gtceu.subtick_coil_parallel.tooltip.1": "Has §cSubtick Parallels§r and §bCoil Parallels§r",
     "block.gtceu.coil_boosting_subtick.tooltip.1": "Has §cSubtick Parallels§r and §bCoil Boosting§r",
+    
+    "block.gtceu.lcr_coil_mechanic.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.lcr_coil_mechanic.tooltip.3": "§6§lCoil Mechanics:",
+    "block.gtceu.lcr_coil_mechanic.tooltip.4": "§7Starting at §6Cupronickel, §7every coil after increases speed by §f25%.",
+    "block.gtceu.lcr_coil_mechanic.tooltip.5": "§7Energy usage is also decreased by §f5% §7per tier.",
+    "block.gtceu.lcr_coil_mechanic.tooltip.6": "§8-----------------------------------",
+
     "block.gtceu.coil_boosting_parallel_subtick.tooltip.1": "Can use §3Parallel§r hatches and has §cSubtick Parallels§r and §bCoil Boosting§r",
 
     "block.gtceu.macerators.tooltip.1": "§7Macerators only produce byproducts shown in JEI at HV or higher",
@@ -1435,6 +1442,8 @@
     "block.gtceu.super_cracker": "Fractional Disruption Furnace",
     "block.gtceu.super_pyrolyse": "Thermal Decomposition Array",
     "block.gtceu.super_barrel": "Industrial Accumulation Vessel"
+
+    
 
     
 }
