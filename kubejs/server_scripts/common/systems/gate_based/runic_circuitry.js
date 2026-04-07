@@ -1,6 +1,51 @@
-// ServerEvents.recipes(event => {
+ServerEvents.recipes(event => {
 
-//     const id = global.id;
+    const id = global.id;
+
+        let rcasRecipe = (output,lens,plate,catalyst,fluid,EU,duration) => {
+
+            let rcas = event.recipes.gtceu
+                .runic_circuitry_assembling_station(id(output))
+                .notConsumable(lens)
+                .itemInputs('kubejs:' + plate, catalyst)
+                .itemOutputs('kubejs:' + output)
+                .duration(duration)
+                .EUt(EU);
+
+            if(fluid){
+                rcas.inputFluids(fluid);
+            }
+
+        }
+
+        rcasRecipe('proto_solarus_rune','gtceu:yellow_glass_lens','csg_enscription_plate',
+            '64x gtceu:indium_gallium_phosphide_dust','gtceu:nether_star_concentrate 1000',
+            GTValues.VHA[GTValues.ZPM],600)
+        rcasRecipe('proto_energized_rune','gtceu:ruby_lens','csg_enscription_plate',
+            '64x gtceu:indium_gallium_phosphide_dust','gtceu:nether_star_concentrate 1000',
+            GTValues.VHA[GTValues.ZPM],600)
+        rcasRecipe('proto_lunarus_rune','gtceu:sapphire_lens','csg_enscription_plate',
+            '64x gtceu:indium_gallium_phosphide_dust','gtceu:nether_star_concentrate 1000',
+            GTValues.VHA[GTValues.ZPM],600)
+        rcasRecipe('csg_dpu','gtceu:nether_star_lens','csg_enscription_chip',
+            '8x gtceu:indium_gallium_phosphide_dust','',
+            GTValues.VHA[GTValues.ZPM],600)
+
+        rcasRecipe('runic_reinforced_plating','gtceu:brown_glass_lens','asg_enscription_plate',
+            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 1000',
+            GTValues.VHA[GTValues.ZPM],600)
+        rcasRecipe('runic_pathway_plating','gtceu:amethyst_lens','asg_enscription_plate',
+            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 1000',
+            GTValues.VHA[GTValues.ZPM],600)
+        rcasRecipe('runic_stabilization_plating','gtceu:emerald_lens','asg_enscription_plate',
+            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 1000',
+            GTValues.VHA[GTValues.ZPM],600)
+        rcasRecipe('runic_transporation_plating','gtceu:certus_quartz_lens','asg_enscription_plate',
+            '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 1000',
+            GTValues.VHA[GTValues.ZPM],600)
+        rcasRecipe('asg_dpu','gtceu:orange_glass_lens','asg_enscription_chip',
+            '8x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','',
+            GTValues.VHA[GTValues.ZPM],600)
 
 //     /*
 //     ** Runic Plating Engraving
@@ -50,25 +95,25 @@
 //         .duration(12000)
 //         .EUt(GTValues.VHA[GTValues.UV]);
 
-//     // === Runic Tablet ===
+    // === Runic Tablet ===
 
-//     event.recipes.gtceu.assembler(id('runic_tablet'))
-//         .itemInputs('kubejs:runic_tablet_1','kubejs:runic_tablet_2','kubejs:runic_tablet_3','kubejs:runic_tablet_4','kubejs:runic_tablet_5','kubejs:runic_tablet_6')
-//         .inputFluids('gtceu:naquadria 21600')
-//         .itemOutputs('kubejs:runic_tablet_complete')
-//         .duration(400)
-//         .EUt(GTValues.VHA[GTValues.UHV])
-//         .cleanroom(CleanroomType.STERILE_CLEANROOM);
+    event.recipes.gtceu.assembler(id('runic_tablet'))
+        .itemInputs('kubejs:runic_tablet_1','kubejs:runic_tablet_2','kubejs:runic_tablet_3','kubejs:runic_tablet_4','kubejs:runic_tablet_5','kubejs:runic_tablet_6')
+        .inputFluids('gtceu:naquadria 21600')
+        .itemOutputs('kubejs:runic_tablet_complete')
+        .duration(400)
+        .EUt(GTValues.VHA[GTValues.UHV])
+        .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
-//     for (let i = 1; i <= 6; i++) {
-//         let o = (i === 6) ? 1 : i + 1;
-//     event.recipes.gtceu.scanner(`runic_tablet_${i}_to_${o}`)
-//         .itemInputs(`16x gtceu:ancient_runicalium_foil`,`1x kubejs:runic_tablet_${i}`) //Gives more control over tablet type (reduced exploration rng)
-//         .inputFluids('gtceu:naquadria 1080')        
-//         .itemOutputs(`kubejs:runic_tablet_${o}`)
-//         .duration(600)
-//         .EUt(GTValues.VHA[GTValues.UV]);
-//     };
+    for (let i = 1; i <= 6; i++) {
+        let o = (i === 6) ? 1 : i + 1;
+    event.recipes.gtceu.scanner(`runic_tablet_${i}_to_${o}`)
+        .itemInputs(`16x gtceu:ancient_runicalium_foil`,`1x kubejs:runic_tablet_${i}`) //Gives more control over tablet type (reduced exploration rng)
+        .inputFluids('gtceu:naquadria 1080')        
+        .itemOutputs(`kubejs:runic_tablet_${o}`)
+        .duration(600)
+        .EUt(GTValues.VHA[GTValues.UV]);
+    };
 
 //     // === Rune Infusion ===
     
@@ -122,4 +167,4 @@
 //             )
 //         .EUt(GTValues.VHA[GTValues.UHV]);
 
-// });
+});

@@ -3,9 +3,10 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('stargate_component_assembly')
         .category('gate_construction')
         .setEUIO('in')
-        .setMaxIOSize(12, 1, 6, 0)
+        .setMaxIOSize(4, 1, 2, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_MASS_FAB , FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.ASSEMBLER);
+        .setSound(GTSoundEntries.ASSEMBLER)
+        .setLayered();
 
 });
 
@@ -13,6 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     
     event.create('stargate_component_assembly', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .machine((holder) => new $LayeredWorkableElectricMultiblockMachine(holder))
         .recipeType('stargate_component_assembly')
         .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:prismalium_casing'))
