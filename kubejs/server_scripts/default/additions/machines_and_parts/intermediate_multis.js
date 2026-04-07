@@ -87,7 +87,7 @@ global.not_hardmode(() => {
             P: 'gtceu:iv_electric_pump',
             C: '#gtceu:circuits/luv',
             W: 'gtceu:graphene_octal_cable',
-            R: 'gtceu:super_cracker',
+            R: 'gtceu:cracker',
             H: 'gtceu:hssg_coil_block',
         });
 
