@@ -6,26 +6,65 @@
 	group: "1E0FC4EA21F735F7"
 	icon: "minecraft:sand"
 	id: "459D60183D34C29E"
-	order_index: 5
+	images: [{
+		height: 10.0d
+		image: "ae2:block/cell_workbench_side"
+		rotation: 0.0d
+		width: 10.0d
+		x: 6.5d
+		y: -1.0d
+	}]
+	order_index: 4
 	progression_mode: "linear"
 	quest_links: [
 		{
 			id: "727DEC5336F4793D"
 			linked_quest: "37E3EF96EDE85C86"
-			x: -6.5d
-			y: -1.0d
+			x: -12.5d
+			y: -6.5d
 		}
 		{
 			id: "220DBF269EDBAC7A"
 			linked_quest: "22B85F7F13C66730"
-			x: -6.5d
-			y: 3.0d
+			x: -12.5d
+			y: 5.5d
 		}
 		{
 			id: "23C36BA08644EF38"
 			linked_quest: "33FE3C68B0BD21B1"
-			x: 0.5d
-			y: 4.0d
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			id: "114E2ED3560BE835"
+			linked_quest: "01AF9486EA6DA792"
+			shape: "gear"
+			x: -20.5d
+			y: 3.5d
+		}
+		{
+			id: "6AA4625E98ED37B8"
+			linked_quest: "2F87FC1D5BB43220"
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			id: "0A5474BE35062610"
+			linked_quest: "2F63F0E239737E38"
+			x: -19.5d
+			y: -11.0d
+		}
+		{
+			id: "112C653450CC39A2"
+			linked_quest: "2F87FC1D5BB43220"
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			id: "147C45D5866D311C"
+			linked_quest: "24AE98EABF69F2D1"
+			x: -22.5d
+			y: 3.5d
 		}
 	]
 	quests: [
@@ -46,190 +85,15 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 1.5d
+			size: 1.0d
 			subtitle: "{ftbquests.abydos.world.subtitle}"
 			tasks: [{
 				id: "015668E3D80CF755"
 				title: "{ftbquests.abydos.world.title}"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"6110BA7B3E84F06F"
-				"73D0DC357821B395"
-				"588B98BE82BB689C"
-				"3DF4C45A9424D4D1"
-			]
-			description: ["{ftbquests.abydos.uhv_computational_matrix.description}"]
-			id: "4DD3C38FCD8D704D"
-			rewards: [{
-				id: "0FA7D7BA54BC6792"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "48142FD089D95D9C"
-				item: "kubejs:uhv_computational_matrix"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"6110BA7B3E84F06F"
-				"73D0DC357821B395"
-				"4E761937069F4A8D"
-			]
-			description: ["{ftbquests.abydos.uhv_transmission_assembly.description}"]
-			id: "06F8BF8FB54B3BEE"
-			rewards: [{
-				id: "6F4F9E0DD0FF5BD4"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3ED3B6A0B7CAFCED"
-				item: "kubejs:uhv_transmission_assembly"
-				type: "item"
-			}]
-			x: -11.0d
+			x: -26.5d
 			y: -0.5d
-		}
-		{
-			dependencies: [
-				"6110BA7B3E84F06F"
-				"73D0DC357821B395"
-				"5C92E3705080A08C"
-				"120E7C97781B59E9"
-				"19834448E1EA758C"
-			]
-			description: ["{ftbquests.abydos.uhv_precision_drive_mechanism.description}"]
-			id: "0A321FE2FB18EA8B"
-			rewards: [{
-				id: "3F1880871D2A1F70"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "33532049510E7C12"
-				item: "kubejs:uhv_precision_drive_mechanism"
-				type: "item"
-			}]
-			x: -7.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"6110BA7B3E84F06F"
-				"73D0DC357821B395"
-				"05B9D0B5977E3F05"
-			]
-			description: ["{ftbquests.abydos.uhv_microfluidic_flow_valve.description}"]
-			id: "05EEBCD256194C78"
-			rewards: [{
-				id: "15E0AA677E224833"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5F95B990BC3D4EF8"
-				item: "kubejs:uhv_microfluidic_flow_valve"
-				type: "item"
-			}]
-			x: -6.5d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"6110BA7B3E84F06F"
-				"182D948925141764"
-				"73D0DC357821B395"
-				"0D4EFA300817A74D"
-			]
-			description: ["{ftbquests.abydos.uhv_super_magnetic_core.description}"]
-			id: "6D7188F8CA92DAAF"
-			rewards: [{
-				id: "0F419A2561844A0E"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4842A0A654FA99F9"
-				item: "kubejs:uhv_super_magnetic_core"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"6110BA7B3E84F06F"
-				"73D0DC357821B395"
-				"00B6B1AFD9AB29C3"
-				"120E7C97781B59E9"
-			]
-			description: ["{ftbquests.abydos.uhv_catalyst_core.description}"]
-			id: "77E6700262CDB4E0"
-			rewards: [{
-				id: "577AB092403F0B3D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3C8D975B58958CB9"
-				item: "kubejs:uhv_catalyst_core"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"6110BA7B3E84F06F"
-				"73D0DC357821B395"
-				"1D259520871C3A28"
-				"120E7C97781B59E9"
-			]
-			description: ["{ftbquests.abydos.uhv_high_strength_panel.description}"]
-			id: "433B94A266536D86"
-			rewards: [{
-				id: "2C0891BA24962E56"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "580EEF4B96514577"
-				item: "kubejs:uhv_high_strength_panel"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"6110BA7B3E84F06F"
-				"73D0DC357821B395"
-				"05B9D0B5977E3F05"
-				"7F8ADE8B1AFE2807"
-			]
-			description: ["{ftbquests.abydos.uhv_micropower_router.description}"]
-			id: "7BBEB3C2DADBAD8B"
-			rewards: [{
-				id: "43BD55C54E2A6076"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "14EB9445EFF715A5"
-				item: "kubejs:uhv_micropower_router"
-				type: "item"
-			}]
-			x: -10.0d
-			y: -1.0d
 		}
 		{
 			dependencies: ["37E3EF96EDE85C86"]
@@ -245,163 +109,11 @@
 				item: "gtceu:zalloy_ingot"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -1.0d
+			x: -12.5d
+			y: -4.5d
 		}
 		{
-			dependencies: [
-				"6D7188F8CA92DAAF"
-				"7BBEB3C2DADBAD8B"
-				"06F8BF8FB54B3BEE"
-			]
-			id: "7250D18797615B16"
-			rewards: [{
-				id: "67403C17939EDD01"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1CF72292DC78F86E"
-				item: "gtceu:uhv_electric_motor"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["05EEBCD256194C78"]
-			hide_dependent_lines: true
-			id: "78777C3EE2DA5D0F"
-			rewards: [{
-				id: "2C20A0EE0D59D513"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "7BF2B97D2F99B5D3"
-				item: "gtceu:uhv_electric_pump"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"0A321FE2FB18EA8B"
-				"433B94A266536D86"
-			]
-			id: "7FFEBA9D0BA28CF0"
-			rewards: [{
-				id: "511E3C9F19B93243"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "65D8A7C059A656F0"
-				item: "gtceu:uhv_conveyor_module"
-				type: "item"
-			}]
-			x: -7.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["433B94A266536D86"]
-			id: "64EA75A8EC94CEEF"
-			rewards: [{
-				id: "7D02D70618DA256F"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "335F697381C5F5BC"
-				item: "gtceu:uhv_electric_piston"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"0A321FE2FB18EA8B"
-				"64EA75A8EC94CEEF"
-				"4DD3C38FCD8D704D"
-			]
-			hide_dependent_lines: true
-			id: "4487EDBDEEA92303"
-			rewards: [{
-				id: "0DD3A87454B89D7D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4CB7A06102978E3A"
-				item: "gtceu:uhv_robot_arm"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["5F65FECD29B8A341"]
-			hide_dependent_lines: true
-			id: "3212A3351DAD4492"
-			rewards: [{
-				id: "362A5565FFD8E89D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "769BEF16C47F1FCA"
-				item: "gtceu:uhv_field_generator"
-				type: "item"
-			}]
-			x: -11.5d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"77E6700262CDB4E0"
-				"4DD3C38FCD8D704D"
-			]
-			id: "5F65FECD29B8A341"
-			rewards: [{
-				id: "0565A0A0BFCECF56"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "6D98FFF31BCA6859"
-				item: "gtceu:uhv_emitter"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"77E6700262CDB4E0"
-				"4DD3C38FCD8D704D"
-			]
-			hide_dependent_lines: true
-			id: "2D064F759D13FE4B"
-			rewards: [{
-				id: "676FF576AA972E2D"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "60409CEBBF3D4B08"
-				item: "gtceu:uhv_sensor"
-				type: "item"
-			}]
-			x: -11.0d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"179A15014A5716B5"
-				"7AC55BA8BDD0F3D2"
-			]
+			dependencies: ["179A15014A5716B5"]
 			description: ["{ftbquests.abydos.cyclonic_sifter.description}"]
 			id: "1A8F645AC1B30411"
 			rewards: [{
@@ -411,18 +123,21 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "33205A9306859820"
 				item: "gtceu:cyclonic_sifter"
 				type: "item"
 			}]
 			title: "{ftbquests.abydos.cyclonic_sifter.title}"
-			x: -4.5d
-			y: 3.0d
+			x: -25.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["7AC55BA8BDD0F3D2"]
+			dependencies: [
+				"7AC55BA8BDD0F3D2"
+				"25583D0BF59E1BC8"
+			]
 			description: ["{ftbquests.abydos.folding_akreyrium_stabiliser.description}"]
 			id: "5368269646BC0F27"
 			rewards: [{
@@ -435,8 +150,8 @@
 				item: "gtceu:folding_akreyrium_stabiliser"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.0d
+			x: -6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -462,8 +177,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.more_ultimate_multiblocks.title}"
-			x: -0.5d
-			y: 1.0d
+			x: -4.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5368269646BC0F27"]
@@ -481,7 +196,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [
 				{
 					id: "5A05B918B174851B"
@@ -495,8 +210,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.utopian_akreyrium.title}"
-			x: -0.5d
-			y: 3.0d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -516,8 +231,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: -3.0d
+			x: -24.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -537,8 +252,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.0d
+			x: -22.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6F05FAE3F5AAC357"]
@@ -551,7 +266,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "4109922C155C43A3"
 				item: {
@@ -561,8 +276,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: -24.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -580,8 +295,8 @@
 				title: "{ftbquests.abydos.temples.title}"
 				type: "structure"
 			}]
-			x: -0.5d
-			y: -1.0d
+			x: -26.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -602,8 +317,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.abydos.bacteria_dormant.title}"
-			x: -0.5d
-			y: -3.0d
+			x: -24.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7F72F9E28713D965"]
@@ -647,8 +362,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.bacteria.title}"
-			x: 3.5d
-			y: -5.0d
+			x: -24.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -692,12 +407,13 @@
 				}
 			]
 			title: "{ftbquests.abydos.runic_tablet_fragments.title}"
-			x: 1.5d
-			y: -1.0d
+			x: -26.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5744150A5658FE4D"]
 			description: ["{ftbquests.abydos.runic_tablet_complete.description}"]
+			hide_dependent_lines: true
 			id: "146F88E5C1119649"
 			rewards: [{
 				id: "2DDF7ACB3920B1DA"
@@ -709,8 +425,8 @@
 				item: "kubejs:runic_tablet_complete"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.0d
+			x: -26.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -730,7 +446,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["30C974448C57F0EC"]
@@ -747,7 +463,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: 5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -764,7 +480,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "70C8CC3BD58DC9B4"
 				item: {
@@ -774,8 +490,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: 7.0d
+			x: -8.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7AC55BA8BDD0F3D2"]
@@ -791,8 +507,8 @@
 				item: "gtceu:exotic_gas_siphon"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 7.0d
+			x: -12.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3540AE6C940F985B"]
@@ -811,8 +527,8 @@
 				item: "kubejs:ancient_stargate_computer_core"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.0d
+			x: 8.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -837,8 +553,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: 1.0d
+			x: 10.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -864,8 +580,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: -1.0d
+			x: 10.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -890,8 +606,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: 3.0d
+			x: 10.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -913,8 +629,8 @@
 				item: "kubejs:ancient_chevron_disk"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 5.0d
+			x: 10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["379D69A44FC5B2F2"]
@@ -938,8 +654,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -5.0d
+			x: 8.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -958,11 +674,10 @@
 				item: "kubejs:draconic_coordinate_core"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 2.0d
+			x: 7.5d
+			y: 1.5d
 		}
 		{
-			dependencies: ["2D064F759D13FE4B"]
 			description: ["{ftbquests.abydos.nether_coordinate_crystal.description}"]
 			id: "29DAE5F27A1D4115"
 			rewards: [{
@@ -975,11 +690,10 @@
 				item: "kubejs:nether_coordinate_crystal"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 6.0d
+			x: 5.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["2D064F759D13FE4B"]
 			description: ["{ftbquests.abydos.end_coordinate_crystal.description}"]
 			id: "14479FB9FCF478D6"
 			rewards: [{
@@ -992,8 +706,8 @@
 				item: "kubejs:end_coordinate_crystal"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 4.0d
+			x: 3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1096,8 +810,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.milky_way_stargate.title}"
-			x: 11.5d
-			y: 1.0d
+			x: 12.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["47DF7968E9B98C65"]
@@ -1110,8 +824,8 @@
 				title: "{ftbquests.abydos.ethylbenzene.title}"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: -5.0d
+			x: -22.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1131,8 +845,8 @@
 				item: "kubejs:void_core"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 1.0d
+			x: 6.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1152,13 +866,14 @@
 				item: "kubejs:hell_core"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			x: 8.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"5022ABEA367576E7"
 				"3DF4C45A9424D4D1"
+				"75B8FD74E5FB5684"
 			]
 			description: ["{ftbquests.abydos.data_dna_disk.description}"]
 			hide_dependent_lines: true
@@ -1177,15 +892,14 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
-			y: 5.0d
+			x: -10.5d
+			y: -6.5d
 		}
 		{
 			dependencies: [
 				"6110BA7B3E84F06F"
 				"06BE744AEAA6C217"
 				"3ECCE739DE8F5F2C"
-				"3C99D83398AFC31C"
 			]
 			description: ["{ftbquests.abydos.zalloy_coil.description}"]
 			id: "4D04123F036F181E"
@@ -1196,18 +910,22 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "7F60C8447F583DD0"
 				item: "kubejs:zalloy_coil_block"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 1.0d
+			x: -12.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["22B85F7F13C66730"]
+			dependencies: [
+				"3DF4C45A9424D4D1"
+				"5BDA17962F4630EB"
+			]
 			description: ["{ftbquests.abydos.uepic_chip.description}"]
+			hide_dependent_lines: true
 			id: "7AC55BA8BDD0F3D2"
 			rewards: [{
 				id: "7B8476986ACF57ED"
@@ -1227,8 +945,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.uepic_chip.title}"
-			x: -4.5d
-			y: 5.0d
+			x: -14.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -1260,8 +978,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.runic_casings.title}"
-			x: 7.5d
-			y: -3.0d
+			x: 8.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1292,8 +1010,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.multi_runic_plating.title}"
-			x: 7.5d
-			y: -1.0d
+			x: 8.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1319,8 +1037,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.0d
+			x: 6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1353,14 +1071,11 @@
 				}
 			]
 			title: "{ftbquests.abydos.runic_plating.title}"
-			x: 9.5d
-			y: -3.0d
+			x: 10.5d
+			y: -3.5d
 		}
 		{
-			dependencies: [
-				"1E47910C2F2112E1"
-				"3212A3351DAD4492"
-			]
+			dependencies: ["1E47910C2F2112E1"]
 			description: ["{ftbquests.abydos.classic_chevron_assembly.description}"]
 			hide_dependency_lines: true
 			id: "442233119AED645F"
@@ -1378,11 +1093,10 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: 7.0d
+			x: 10.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["493DD013C818BB7B"]
 			description: ["{ftbquests.abydos.gritty_akreyrium.description}"]
 			icon: {
 				Count: 1
@@ -1412,8 +1126,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.gritty_akreyrium.title}"
-			x: -2.5d
-			y: 1.0d
+			x: -25.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -1431,8 +1145,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.abydos.nanofluidic_heat_sink.title}"
-			x: 0.5d
-			y: 2.0d
+			x: -3.5d
+			y: 0.5d
 		}
 		{
 			id: "39E723ECCBEE0A0A"
@@ -1443,14 +1157,13 @@
 				title: "{ftbquests.abydos.positioner.title}"
 				type: "checkmark"
 			}]
-			x: 1.0d
+			x: -8.5d
 			y: 0.5d
 		}
 		{
 			dependencies: [
 				"75F0388FAB52E0B3"
 				"30C974448C57F0EC"
-				"3212A3351DAD4492"
 			]
 			description: ["{ftbquests.abydos.inscribe_casing.description}"]
 			hide_dependency_lines: true
@@ -1465,13 +1178,12 @@
 				item: "kubejs:inscribe_casing"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -3.0d
+			x: 6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["25583D0BF59E1BC8"]
 			description: ["{ftbquests.abydos.uhv_parallel_hatch.description}"]
-			hide_dependency_lines: true
 			id: "320ADA7E07856560"
 			rewards: [{
 				id: "1D899BA83FEBF385"
@@ -1484,8 +1196,8 @@
 				item: "start_core:uhv_parallel_hatch"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 5.0d
+			x: -10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1505,8 +1217,8 @@
 				item: "start_core:uhv_absolute_parallel_hatch"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 5.0d
+			x: -10.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2659B3AA9108BC43"]
@@ -1519,8 +1231,8 @@
 				title: "{ftbquests.abydos.radon.title}"
 				type: "checkmark"
 			}]
-			x: -8.5d
-			y: 7.0d
+			x: -12.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1582,14 +1294,11 @@
 				}
 			]
 			title: "{ftbquests.abydos.nether_armor.title}"
-			x: 10.5d
-			y: -2.0d
+			x: 11.5d
+			y: -2.5d
 		}
 		{
-			dependencies: [
-				"05E824087CE7825D"
-				"493DD013C818BB7B"
-			]
+			dependencies: ["493DD013C818BB7B"]
 			description: ["{ftbquests.abydos.magma_processing.description}"]
 			icon: "gtceu:abydos_reactive_dense_magma_bucket"
 			id: "5BD0047E69D79476"
@@ -1598,25 +1307,21 @@
 				title: "{ftbquests.abydos.magma_processing.title}"
 				type: "checkmark"
 			}]
-			x: -4.5d
-			y: -1.0d
+			x: -24.5d
+			y: -0.5d
 		}
 		{
-			dependencies: [
-				"707C2E9BA62A60C5"
-				"5C39B74171CC21F9"
-			]
 			description: ["{ftbquests.abydos.molten_destabilizer.description}"]
 			id: "05E824087CE7825D"
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "3FCFCFF6D0A94AE9"
 				item: "gtceu:molten_destabilizer"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 1.0d
+			x: -23.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1637,8 +1342,8 @@
 				item: "kubejs:abyss_fragment"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 3.0d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1659,8 +1364,8 @@
 				item: "kubejs:inferno_fragment"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 5.0d
+			x: 6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1680,8 +1385,8 @@
 				item: "kubejs:empty_coordinate_core"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 3.0d
+			x: 6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["509F0DE97411C0CD"]
@@ -1698,8 +1403,8 @@
 				item: "kubejs:abyssal_stargate_rod"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 1.0d
+			x: 4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5829828FB6290587"]
@@ -1716,8 +1421,8 @@
 				item: "kubejs:infernal_stargate_rod"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.0d
+			x: 8.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["63AD0F905F2A262B"]
@@ -1733,8 +1438,8 @@
 				item: "kubejs:untreated_abyssal_stargate_rod"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.0d
+			x: 2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5BA6FB8F852C2629"]
@@ -1750,8 +1455,8 @@
 				item: "kubejs:untreated_infernal_stargate_rod"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.0d
+			x: 8.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -1767,8 +1472,8 @@
 				item: "gtceu:bulk_ore_processing_array"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: -2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["630F50E03EC3D144"]
@@ -1797,8 +1502,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.singularities.title}"
-			x: 9.5d
-			y: -5.0d
+			x: 10.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["652809D17FCE8B11"]
@@ -1847,8 +1552,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.ruined_components.title}"
-			x: -3.5d
-			y: -4.0d
+			x: -27.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["652809D17FCE8B11"]
@@ -1859,8 +1564,8 @@
 				item: "kubejs:abydos_talisman"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.0d
+			x: -25.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -1878,8 +1583,8 @@
 				title: "{ftbquests.abydos.cartouche.title}"
 				type: "structure"
 			}]
-			x: -2.5d
-			y: -3.0d
+			x: -26.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -1938,13 +1643,12 @@
 				}
 			]
 			title: "{ftbquests.abydos.naquadah_armor.title}"
-			x: 10.5d
-			y: -4.0d
+			x: 11.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["5BD0047E69D79476"]
+			dependencies: ["678B90BF2ACE2BBA"]
 			description: ["{ftbquests.abydos.abydos_alloys.description}"]
-			hide_dependent_lines: true
 			id: "3BFB8DA58BED12D1"
 			tasks: [
 				{
@@ -1959,8 +1663,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.abydos_alloys.title}"
-			x: -4.5d
-			y: -3.0d
+			x: -18.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1975,8 +1679,8 @@
 				item: "kubejs:runic_processor_mainframe"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.0d
+			x: -8.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4F994F04EF1710B9"]
@@ -1987,14 +1691,15 @@
 				item: "kubejs:runic_processor_computer"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 7.0d
+			x: -8.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
 				"5022ABEA367576E7"
 				"5DC3B85B63641F6C"
 				"1341EFC24A45EFF8"
+				"30C974448C57F0EC"
 			]
 			id: "4F994F04EF1710B9"
 			subtitle: "{ftbquests.abydos.runic_processor_assembly.subtitle}"
@@ -2003,8 +1708,8 @@
 				item: "kubejs:runic_processor_assembly"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 9.0d
+			x: -8.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0508AE03C730BE6C"]
@@ -2022,8 +1727,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 7.0d
+			x: -8.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
@@ -2034,17 +1739,19 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			shape: "circle"
 			tasks: [{
 				id: "65ADF26AC53A059B"
 				item: "gtceu:neutronium_silicon_carbide_ingot"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 1.0d
+			x: -14.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["1BE69DB2DFDC35C8"]
+			dependencies: [
+				"1BE69DB2DFDC35C8"
+				"5BD0047E69D79476"
+			]
 			description: ["{ftbquests.abydos.zirconium_ingot.description}"]
 			id: "3C99D83398AFC31C"
 			rewards: [{
@@ -2057,42 +1764,37 @@
 				item: "gtceu:zirconium_ingot"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 3.0d
+			x: -24.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
-				"25583D0BF59E1BC8"
 				"6CB6343BFD09B5C0"
 				"07AD6651D0B40E22"
 			]
 			id: "5DF4501BD2593465"
 			shape: "gear"
-			size: 1.5d
+			size: 1.0d
 			tasks: [{
 				id: "19FB82BBC41F8724"
 				item: "gtceu:component_nexus"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 5.0d
+			x: -4.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["4487EDBDEEA92303"]
 			id: "6CB6343BFD09B5C0"
 			tasks: [{
 				id: "4E67D31B875E1C4F"
 				item: "gtceu:uhv_stabilization_module"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 5.0d
+			x: -6.5d
+			y: 3.5d
 		}
 		{
-			dependencies: [
-				"25583D0BF59E1BC8"
-				"7AC55BA8BDD0F3D2"
-			]
+			dependencies: ["141911C5DD68CD2A"]
 			description: ["{ftbquests.abydos.oneiric_relay.description}"]
 			id: "0DFAD40205E5D899"
 			rewards: [{
@@ -2105,8 +1807,8 @@
 				item: "start_core:oneiric_relay"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: -17.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["22B85F7F13C66730"]
@@ -2122,8 +1824,8 @@
 				item: "start_core:lucinducer"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 1.0d
+			x: -12.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5ED2EA63EE112E24"]
@@ -2134,8 +1836,8 @@
 				item: "kubejs:runic_processor"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 9.0d
+			x: -6.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5022ABEA367576E7"]
@@ -2145,8 +1847,1018 @@
 				item: "kubejs:runic_convergence_processing_unit"
 				type: "item"
 			}]
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["01AF9486EA6DA792"]
+			description: ["{ftbquests.futuristic_mechanisms.wetware_circuit_board.description}"]
+			id: "68F878EC21CA1749"
+			rewards: [{
+				id: "04BE1D70705BBCD1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [
+				{
+					id: "3E04DF96C447E29C"
+					item: "gtceu:wetware_printed_circuit_board"
+					type: "item"
+				}
+				{
+					id: "5BC1EE5BEEF1E66E"
+					item: {
+						Count: 1
+						id: "gtceu:wetware_circuit_board"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: -20.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"68F878EC21CA1749"
+				"3EEEC61CEE1B6BB2"
+			]
+			description: ["{ftbquests.futuristic_mechanisms.neuro_processing_unit.description}"]
+			id: "18D5591BF53AD07F"
+			rewards: [{
+				id: "5B036F742F1DFE1B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "{ftbquests.futuristic_mechanisms.neuro_processing_unit.subtitle}"
+			tasks: [{
+				id: "5993D645BF787D73"
+				item: "gtceu:neuro_processing_unit"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["18D5591BF53AD07F"]
+			id: "0962C36622E385B8"
+			rewards: [{
+				id: "66EF264D559B0F0C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "{ftbquests.futuristic_mechanisms.wetware_processor.subtitle}"
+			tasks: [{
+				id: "3EE0849FE28BA5A7"
+				item: "gtceu:wetware_processor"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["01AF9486EA6DA792"]
+			description: ["{ftbquests.futuristic_mechanisms.stem_cells.description}"]
+			id: "3EEEC61CEE1B6BB2"
+			rewards: [{
+				id: "5F2F729A716E6C0C"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "16B0E8905C58CC4C"
+				item: "gtceu:stem_cells"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"1F79E45EF7810DFF"
+				"675054125531A098"
+			]
+			id: "4C5DBB94345FF33B"
+			rewards: [{
+				count: 2
+				id: "00D79CF33F2FE5BC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "{ftbquests.futuristic_mechanisms.wetware_processor_computer.subtitle}"
+			tasks: [{
+				id: "52C4CAEB98BC9833"
+				item: "gtceu:wetware_processor_computer"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0962C36622E385B8"]
+			id: "1F79E45EF7810DFF"
+			rewards: [{
+				id: "070FCC1D05DF6950"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "{ftbquests.futuristic_mechanisms.wetware_processor_assembly.subtitle}"
+			tasks: [{
+				id: "26A0FC39A8C48BC1"
+				item: "gtceu:wetware_processor_assembly"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"2911EC7333E0E9C5"
+				"17946D19C10BFC9E"
+			]
+			description: ["{ftbquests.futuristic_mechanisms.darmstadtium_ingot.description}"]
+			hide_dependent_lines: true
+			id: "27C0ED4305E84D21"
+			rewards: [{
+				id: "2CB2FD24D7187D27"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "68CB622EF69BE297"
+				item: "gtceu:darmstadtium_ingot"
+				type: "item"
+			}]
+			x: -22.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["27C0ED4305E84D21"]
+			description: ["{ftbquests.futuristic_mechanisms.uv_machine_hull.description}"]
+			id: "3F4C068368F97580"
+			rewards: [{
+				id: "16A9EF2CDC5E6B40"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "2577C7EC42AF00C9"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			x: -22.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"2911EC7333E0E9C5"
+				"3B69844600AD5430"
+			]
+			description: ["{ftbquests.futuristic_mechanisms.tritanium_ingot.description}"]
+			id: "6131A76D203DE6AB"
+			rewards: [{
+				id: "5DE37EDA23E177D0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "2BBE74D890CCE073"
+				item: "gtceu:tritanium_ingot"
+				type: "item"
+			}]
+			x: -22.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2911EC7333E0E9C5"
+				"17946D19C10BFC9E"
+			]
+			description: ["{ftbquests.futuristic_mechanisms.americium_ingot.description}"]
+			hide_dependent_lines: true
+			id: "70AA84848FB2A9BB"
+			rewards: [{
+				id: "0ECD4E21E5FD1EDA"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "17298D2E3FB3047D"
+				item: "gtceu:americium_ingot"
+				type: "item"
+			}]
+			x: -22.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"3F4C068368F97580"
+				"7C182C34888AF189"
+			]
+			description: ["{ftbquests.futuristic_mechanisms.uv_energy_input_hatch.description}"]
+			id: "0B7A0924AFE58559"
+			rewards: [{
+				id: "6B95CCF09AF3CE9A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "665B54DC59BD0C0A"
+				item: "gtceu:uv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -20.5d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"6131A76D203DE6AB"
+				"5DD60CB0D67AD39C"
+			]
+			description: ["{ftbquests.futuristic_mechanisms.tritanium_coil.description}"]
+			id: "678B90BF2ACE2BBA"
+			rewards: [{
+				count: 2
+				id: "21006EDC281083B3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "7E9779497F7473C0"
+				item: "gtceu:tritanium_coil_block"
+				type: "item"
+			}]
+			x: -20.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0B7A0924AFE58559"]
+			description: ["{ftbquests.futuristic_mechanisms.uv_energy_input_hatch_4a.description}"]
+			id: "155947C2913FFA42"
+			rewards: [{
+				id: "6C1602A5958BA368"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "453615A4AC786A1B"
+				item: "gtceu:uv_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["155947C2913FFA42"]
+			description: ["{ftbquests.futuristic_mechanisms.uv_energy_input_hatch_16a.description}"]
+			id: "1B4B0A67B86B7D58"
+			rewards: [{
+				id: "676897D5A44043C4"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "6E19C77A6DF82D47"
+				item: "gtceu:uv_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["678B90BF2ACE2BBA"]
+			description: ["{ftbquests.futuristic_mechanisms.enriched_naquadah_trinium_europium_duranide_ingot.description}"]
+			hide_dependent_lines: true
+			id: "02606EBF230281A3"
+			rewards: [{
+				id: "6C2453AE007BCC77"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "381449DAB65244AF"
+				item: "gtceu:enriched_naquadah_trinium_europium_duranide_ingot"
+				type: "item"
+			}]
+			x: -20.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6131A76D203DE6AB"]
+			description: ["{ftbquests.futuristic_mechanisms.sterilizing_filter_casing.description}"]
+			id: "6CC13BE9AD447218"
+			rewards: [{
+				id: "2850DA80D961611B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "{ftbquests.futuristic_mechanisms.sterilizing_filter_casing.subtitle}"
+			tasks: [{
+				id: "1B9835C2886C3C1D"
+				item: "gtceu:sterilizing_filter_casing"
+				type: "item"
+			}]
+			title: "{ftbquests.futuristic_mechanisms.sterilizing_filter_casing.title}"
+			x: -22.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["68F878EC21CA1749"]
+			description: ["{ftbquests.futuristic_mechanisms.data_module.description}"]
+			id: "7C182C34888AF189"
+			rewards: [{
+				id: "06C89564F1B6E33A"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F22A117CE6F6A88"
+				item: {
+					Count: 1
+					id: "gtceu:data_module"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -20.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["67ABB3BF6D0C183B"]
+			description: ["{ftbquests.futuristic_mechanisms.duranium_ingot.description}"]
+			hide_dependency_lines: true
+			id: "3B69844600AD5430"
+			rewards: [{
+				id: "569598332DDB8A9E"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "7C8488F1A6D476E9"
+				item: "gtceu:duranium_ingot"
+				type: "item"
+			}]
+			x: -23.5d
+			y: 0.5d
+		}
+		{
+			id: "53B8A2EFCF2D4371"
+			tasks: [{
+				id: "6A01A251A9C02550"
+				item: "gtceu:advanced_synthesis_plant"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["60ECE277341A9408"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.super_pressure_heat_chamber.description}"]
+			id: "59711F987DE95924"
+			rewards: [{
+				id: "1B33E52F7FEAD5E8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "175B360D69C79895"
+				item: "gtceu:super_pressure_heat_chamber"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4C5DBB94345FF33B"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.wetware_processor_mainframe.description}"]
+			id: "707C2E9BA62A60C5"
+			rewards: [{
+				count: 2
+				id: "6B546AB752B83ABC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "{ftbquests.preparing_for_dimensional_travel.wetware_processor_mainframe.subtitle}"
+			tasks: [{
+				id: "7D57266E37ABED15"
+				item: "gtceu:wetware_processor_mainframe"
+				type: "item"
+			}]
+			x: -16.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"707C2E9BA62A60C5"
+				"02606EBF230281A3"
+			]
+			description: ["{ftbquests.preparing_for_dimensional_travel.uv_fusion_reactor.description}"]
+			id: "314B6ABE72E4A438"
+			rewards: [{
+				count: 2
+				id: "6B0A97854CBB59A1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "63A31B4C5E81DA04"
+				item: "start_core:uv_fusion_reactor"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"314B6ABE72E4A438"
+				"49F5F88C69586F13"
+			]
+			description: ["{ftbquests.preparing_for_dimensional_travel.neutronium.description}"]
+			id: "5BDA17962F4630EB"
+			rewards: [{
+				count: 2
+				id: "1E040F3B6F4948C9"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "7451A866F7DF568E"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.ruthenium_trinium_americium_neutronate_ingot.description}"]
+			id: "3ECCE739DE8F5F2C"
+			rewards: [{
+				id: "3DA5E57A968DB4AE"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FE5F219B493E573"
+				item: "gtceu:ruthenium_trinium_americium_neutronate_ingot"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_machine_hull.description}"]
+			id: "5C39B74171CC21F9"
+			rewards: [{
+				id: "0183789A1E5AA702"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "488237F46BD12A0D"
+				item: "gtceu:uhv_machine_hull"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"5C39B74171CC21F9"
+				"73D0DC357821B395"
+				"4F6B1F4261874B65"
+				"783865A56909D3C7"
+			]
+			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch.description}"]
+			id: "11D51899B980082B"
+			rewards: [{
+				id: "2E474FF058F620B3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F1FA7FAE4CDE99A"
+				item: "gtceu:uhv_energy_input_hatch"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["11D51899B980082B"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch_4a.description}"]
+			id: "44B43694312BAAC8"
+			rewards: [{
+				id: "439C3636390FF949"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "191E9C431286F067"
+				item: "gtceu:uhv_energy_input_hatch_4a"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"44B43694312BAAC8"
+				"7E33A485E30B47EA"
+			]
+			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch_16a.description}"]
+			id: "581B9922CC4B457F"
+			rewards: [{
+				id: "354EE1013EA404DB"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D302EA0D6EC6870"
+				item: "gtceu:uhv_energy_input_hatch_16a"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7FFCAD92772A175F"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.uv_parallel_hatch.description}"]
+			id: "27E656FA93E2A1F4"
+			rewards: [{
+				id: "2FC0A2A1510D510B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.preparing_for_dimensional_travel.uv_parallel_hatch.subtitle}"
+			tasks: [{
+				id: "24F1943A992D624E"
+				item: "gtceu:uv_parallel_hatch"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1AC8CBF01196D1F3"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.highly_advanced_soc_wafer.description}"]
+			id: "3FE0B664F2D15942"
+			rewards: [{
+				id: "01E1C3C603E976E8"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A3F83FB2817AD19"
+				item: "gtceu:highly_advanced_soc_wafer"
+				type: "item"
+			}]
+			x: -20.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0F7A1EA1AB52F795"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.neutronium_wafer.description}"]
+			id: "1AC8CBF01196D1F3"
+			rewards: [{
+				count: 2
+				id: "7E64A0FD0377ABAC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "72F5DF7EB10A1938"
+				item: "gtceu:neutronium_wafer"
+				type: "item"
+			}]
+			x: -18.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.neutronium_boule.description}"]
+			id: "0F7A1EA1AB52F795"
+			rewards: [{
+				id: "42D6FB3B7E75DE20"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B33D272E549765B"
+				item: "gtceu:neutronium_boule"
+				type: "item"
+			}]
+			x: -18.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["239A0034C8425661"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.raw_void_ingot.description}"]
+			id: "0889A97E22C484CC"
+			rewards: [{
+				id: "515734ACECDB08A0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4889E04488AC39F2"
+				item: "gtceu:raw_void_ingot"
+				type: "item"
+			}]
 			x: 3.5d
-			y: 7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"60ECE277341A9408"
+				"0889A97E22C484CC"
+				"59711F987DE95924"
+			]
+			description: ["{ftbquests.preparing_for_dimensional_travel.void_ingot.description}"]
+			id: "7A5734E3CF682EBA"
+			rewards: [{
+				count: 2
+				id: "45A0DE263D7BBCA1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "1FE87B4D652A171F"
+				item: "gtceu:void_ingot"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2F87FC1D5BB43220"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.echo_r.description}"]
+			icon: {
+				Count: 1
+				id: "gtceu:echo_r_bucket"
+				tag: { }
+			}
+			id: "239A0034C8425661"
+			rewards: [{
+				id: "3F68400BC1C19CFF"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7D6A01CC1134C595"
+					type: "checkmark"
+				}
+				{
+					id: "12B0841890A15CB8"
+					item: "gtceu:echo_r_bucket"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.preparing_for_dimensional_travel.echo_r.title}"
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["52B553FDB34B1475"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.melodium_wire.description}"]
+			id: "622066696CCF9754"
+			rewards: [{
+				id: "17C57D476BB71F90"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "56BFA0DDAB4186C6"
+				item: "gtceu:melodium_single_wire"
+				type: "item"
+			}]
+			x: -22.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["678B90BF2ACE2BBA"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.melodium_ingot.description}"]
+			id: "52B553FDB34B1475"
+			rewards: [{
+				id: "0A7609C4179CF5A2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6DCB4B5D70F0A053"
+				item: "gtceu:melodium_ingot"
+				type: "item"
+			}]
+			x: -20.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"52B553FDB34B1475"
+				"5BDA17962F4630EB"
+			]
+			description: ["{ftbquests.preparing_for_dimensional_travel.stellarium_ingot.description}"]
+			id: "253AECE450920D99"
+			rewards: [{
+				id: "70C887ECBA6B4542"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C144C6A0C57FED2"
+				item: "gtceu:stellarium_ingot"
+				type: "item"
+			}]
+			x: -18.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["253AECE450920D99"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.stellarium_wire.description}"]
+			id: "55102B0E5D0238E1"
+			rewards: [{
+				id: "664E3AF7B9872F12"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "204C763B962F836E"
+				item: "gtceu:stellarium_single_wire"
+				type: "item"
+			}]
+			x: -20.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5BDA17962F4630EB"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.gravi_star.description}"]
+			id: "7FFCAD92772A175F"
+			rewards: [{
+				id: "41645C4A24DF3CD2"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7ED8708DCDB4BEEA"
+				item: "gtceu:gravi_star"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["707C2E9BA62A60C5"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.mega_blast_furnace.description}"]
+			id: "2EE4C6540FE3D4CF"
+			optional: true
+			rewards: [{
+				id: "173AE84D06BE0BF0"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "5D2487028586DCD8"
+				item: "gtceu:mega_blast_furnace"
+				type: "item"
+			}]
+			x: -17.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7F4D5331B59AA5F0"
+				"783BDF78D6C56815"
+			]
+			description: ["{ftbquests.preparing_for_dimensional_travel.thorium_plut_duranide_241_ingot.description}"]
+			id: "4F6B1F4261874B65"
+			rewards: [{
+				id: "4CF383A332D3E16B"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "32F09CC44B2A4DA7"
+				item: {
+					Count: 1
+					id: "gtceu:thorium_plut_duranide_241_ingot"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -15.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["141911C5DD68CD2A"]
+			description: ["{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.description}"]
+			id: "659690E81B3E3AE7"
+			rewards: [{
+				count: 2
+				id: "00C995FE80302AE3"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "55F419E4EF98D96F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "start_core:uv_2a_dream_link_cover_item"
+							}
+							{
+								Count: 1b
+								id: "start_core:uv_2a_dream_link_energy_hatch"
+							}
+							{
+								Count: 1b
+								id: "start_core:uv_4a_dream_link_energy_hatch"
+							}
+							{
+								Count: 1b
+								id: "start_core:uv_16a_dream_link_energy_hatch"
+							}
+							{
+								Count: 1b
+								id: "start_core:uv_64a_dream_link_energy_hatch"
+							}
+						]
+					}
+				}
+				optional_task: true
+				title: "{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.item_title}"
+				type: "item"
+			}]
+			title: "{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.title}"
+			x: -21.5d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"7FFCAD92772A175F"
+				"52B553FDB34B1475"
+				"707C2E9BA62A60C5"
+			]
+			description: ["{ftbquests.preparing_for_dimensional_travel.wireless_energy.description}"]
+			hide_dependency_lines: true
+			id: "141911C5DD68CD2A"
+			rewards: [{
+				id: "73B232401A84DDAC"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66552A0737028183"
+				item: "start_core:dream_link_node"
+				type: "item"
+			}]
+			x: -19.5d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"3FC351F05F2AC743"
+				"464BB867FCF25A94"
+				"7C182C34888AF189"
+			]
+			description: ["{ftbquests.futuristic_mechanisms.chemical_plant.description}"]
+			id: "3E1CA9FFB9953F42"
+			rewards: [{
+				count: 2
+				id: "73B25BCF5A2F61C1"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "4538BE544847BA96"
+				item: "gtceu:chemical_plant"
+				type: "item"
+			}]
+			x: -18.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3F4C068368F97580"]
+			description: ["{ftbquests.futuristic_mechanisms.cleaning_maintenance_hatch.description}"]
+			id: "3391903EBBB3F308"
+			rewards: [{
+				id: "5CAB5DD7B5EE938D"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "1A13CC613F192AAC"
+				item: "gtceu:cleaning_maintenance_hatch"
+				type: "item"
+			}]
+			x: -24.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3C99D83398AFC31C"]
+			id: "17946D19C10BFC9E"
+			tasks: [{
+				id: "2C684CE4A875B86F"
+				item: "kubejs:complex_reflector_casing"
+				type: "item"
+			}]
+			x: -24.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6110BA7B3E84F06F"]
+			id: "57E4168A83E31D62"
+			tasks: [{
+				id: "5F12190454CE37FD"
+				item: "gtceu:compact_assembly_line"
+				type: "item"
+			}]
+			x: -10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3BFB8DA58BED12D1"]
+			id: "49F5F88C69586F13"
+			tasks: [{
+				id: "03C541ABB9EC8ED5"
+				item: "kubejs:reinforced_reflector_casing"
+				type: "item"
+			}]
+			x: -18.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["31EADD276ECB7B25"]
+			id: "675054125531A098"
+			tasks: [
+				{
+					id: "4CF7493CA8AE5F9E"
+					item: "kubejs:living_smd_transistor"
+					type: "item"
+				}
+				{
+					id: "2B52B5C2D8ED97E7"
+					item: "kubejs:living_smd_resistor"
+					type: "item"
+				}
+				{
+					id: "5A9DCB41BD95D102"
+					item: "kubejs:living_smd_capacitor"
+					type: "item"
+				}
+				{
+					id: "19FCCF59D58B2591"
+					item: "kubejs:living_smd_diode"
+					type: "item"
+				}
+				{
+					id: "4035719569272325"
+					item: "kubejs:living_smd_inductor"
+					type: "item"
+				}
+			]
+			x: -15.5d
+			y: 4.5d
 		}
 	]
 	title: "{ftbquests.abydos.title}"

@@ -14,7 +14,7 @@
 		x: 13.560000000000002d
 		y: 0.21500000000000075d
 	}]
-	order_index: 6
+	order_index: 5
 	progression_mode: "linear"
 	quest_links: [
 		{
@@ -44,8 +44,8 @@
 		{
 			id: "7F751F6B23BCF63D"
 			linked_quest: "1B6159E114BA50ED"
-			x: -5.0d
-			y: -1.0d
+			x: -1.0d
+			y: -5.0d
 		}
 		{
 			id: "79C75C36CC2FA699"
@@ -1595,10 +1595,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"78777C3EE2DA5D0F"
-				"2D064F759D13FE4B"
-			]
+			dependencies: ["1F896C346CD4D346"]
 			description: ["{ftbquests.draconic_age.draconic_circuit_board.description}"]
 			id: "1C9396E2587051F7"
 			rewards: [{
@@ -1606,7 +1603,6 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			shape: "circle"
 			tasks: [
 				{
 					id: "3DA83C02A0B67056"

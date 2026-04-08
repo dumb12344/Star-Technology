@@ -547,7 +547,6 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["6CC13BE9AD447218"]
 			description: ["{ftbquests.processing_lines_chap.bacteria.description}"]
 			icon: "gtceu:bacteria_bucket"
 			id: "24AE98EABF69F2D1"
@@ -747,10 +746,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: [
-				"7658E16BA79A7632"
-				"5BD0047E69D79476"
-			]
+			dependencies: ["7658E16BA79A7632"]
 			description: ["{ftbquests.processing_lines_chap.zapolgium.description}"]
 			id: "37E3EF96EDE85C86"
 			rewards: [{
@@ -779,6 +775,7 @@
 				"40A015DBF6603208"
 				"7E33A485E30B47EA"
 				"271587AB365AB803"
+				"53B8A2EFCF2D4371"
 			]
 			description: ["{ftbquests.processing_lines_chap.silicon_carbide_over_bismuth_tritelluride_dust.description}"]
 			id: "22B85F7F13C66730"
@@ -1086,6 +1083,7 @@
 			dependencies: [
 				"7214D86C55033EAD"
 				"2746D19331452ACC"
+				"678B90BF2ACE2BBA"
 			]
 			icon: {
 				Count: 1
@@ -1460,7 +1458,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["7E99889B3427A842"]
+			dependencies: [
+				"7E99889B3427A842"
+				"6CC13BE9AD447218"
+				"24AE98EABF69F2D1"
+			]
 			description: ["{ftbquests.processing_lines_chap.sterilized_growth_medium.description}"]
 			id: "01AF9486EA6DA792"
 			rewards: [{
@@ -2125,10 +2127,6 @@
 			y: 14.0d
 		}
 		{
-			dependencies: [
-				"433B94A266536D86"
-				"05EEBCD256194C78"
-			]
 			hide_dependent_lines: true
 			id: "2C9FFC93C52399F3"
 			tasks: [{
@@ -4220,7 +4218,10 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["3336D618E129F764"]
+			dependencies: [
+				"3336D618E129F764"
+				"4974D7E690B02ECA"
+			]
 			id: "12B23627DD0026B5"
 			rewards: [{
 				count: 3
@@ -4425,6 +4426,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["7105D59889790CAE"]
 			id: "7D61572103E633FE"
 			tasks: [{
 				id: "0E91E075A5F3E0C6"
@@ -4435,6 +4437,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["7105D59889790CAE"]
 			id: "5802EB0FB8414902"
 			rewards: [{
 				count: 3
@@ -4451,6 +4454,17 @@
 			}]
 			x: 30.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7105D59889790CAE"]
+			id: "74A1AF8F77A0B8C0"
+			tasks: [{
+				id: "476BB71BE685EAA1"
+				item: "gtceu:magnesite_dust"
+				type: "item"
+			}]
+			x: 29.5d
+			y: 1.0d
 		}
 	]
 	title: "{ftbquests.processing_lines_chap_456.title}"
