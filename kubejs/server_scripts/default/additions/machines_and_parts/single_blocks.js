@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
                 'CPC'
             ], {
                 C: `#gtceu:circuits/${voltage}`,
-                R: `gtceu:${tierComponents.tierMaterial}_rotor`,
+                R: `gtceu:${tierComponents.rotorMaterial}_rotor`,
                 G: tierComponents.glass,
                 E: `gtceu:${voltage}_emitter`,
                 H: `gtceu:${voltage}_machine_hull`,

@@ -7,6 +7,7 @@ global.componentMaterials = {
             wire: 'copper',
             cable: 'tin',
             glass: '#forge:glass',
+            rotorMaterial: 'tin',
             grind: 'minecraft:diamond'
         }
     },
@@ -16,6 +17,7 @@ global.componentMaterials = {
             wire: 'cupronickel',
             cable: 'copper',
             glass: '#forge:glass',
+            rotorMaterial: 'bronze',
             grind: 'minecraft:diamond'
         }
     },
@@ -25,6 +27,7 @@ global.componentMaterials = {
             wire: 'kanthal',
             cable: 'gold',
             glass: 'gtceu:tempered_glass',
+            rotorMaterial: 'steel',
             grind: 'gtceu:diamond_grinding_head'
         }
     },
@@ -38,6 +41,7 @@ global.componentMaterials = {
             glass: 'gtceu:tempered_glass',
             superconductor: 'uranium_triplatinum',
             battery: 'lapotron_crystal',
+            rotorMaterial: 'stainless_steel',
             grind: 'gtceu:diamond_grinding_head'
         }
     },
@@ -51,6 +55,7 @@ global.componentMaterials = {
             glass: 'gtceu:laminated_glass',
             superconductor: 'samarium_iron_arsenic_oxide',
             battery: 'lapotronic_energy_orb',
+            rotorMaterial: 'tungsten_steel',
             grind: 'gtceu:tungsten_grinding_head'
         }
     },
@@ -85,6 +90,7 @@ global.componentMaterials = {
             fluidStorage: 'gtceu:titanium_drum',
             itemStorage: 'gtceu:titanium_crate',
             battery: 'lapotronic_energy_orb_cluster',
+            rotorMaterial: 'rhodium_plated_palladium',
             grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
@@ -127,6 +133,7 @@ global.componentMaterials = {
             chip: 'gtceu:uhpic',
             fluidStorage: 'gtceu:tungsten_steel_drum',
             itemStorage: 'gtceu:tungsten_steel_crate',
+            rotorMaterial: 'naquadah_alloy',
             grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
@@ -170,6 +177,7 @@ global.componentMaterials = {
             fluidStorage: 'start_core:enriched_naquadah_drum',
             itemStorage: 'start_core:enriched_naquadah_crate',
             battery: 'energy_cluster',
+            rotorMaterial: 'darmstadtium',
             grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
@@ -213,6 +221,7 @@ global.componentMaterials = {
             fluidStorage: 'start_core:neutronium_drum',
             itemStorage: 'start_core:neutronium_crate',
             battery: 'max_battery',
+            rotorMaterial: 'neutronium',
             grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
@@ -255,6 +264,7 @@ global.componentMaterials = {
             chip: 'kubejs:uepic',
             fluidStorage: '', //none exist
             itemStorage: '', //none exist
+            rotorMaterial: 'mythrolic_alloy',
             grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
@@ -297,6 +307,7 @@ global.componentMaterials = {
             chip: 'kubejs:uepic',
             fluidStorage: '', //none exist
             itemStorage: '', //none exist
+            rotorMaterial: 'chaotixic_alloy',
             grind: 'gtceu:tungsten_grinding_head'
         },
         scaling: {
