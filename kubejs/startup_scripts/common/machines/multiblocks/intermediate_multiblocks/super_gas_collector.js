@@ -13,7 +13,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle('  PPP  ', '  C@C  ', '  CGC  ', '  CGC  ', '  CGC  ', '  CCC  ', ' FMMMF ')
             .aisle('       ', '       ', '       ', '       ', '       ', '       ', '  FFF  ')
             .where('C', Predicates.blocks('gtceu:clean_machine_casing').setMinGlobalLimited(10)
-                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1)))
             .where('P', Predicates.blocks('kubejs:pallaridium_pipe_casing'))
@@ -23,7 +24,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('I', Predicates.blocks('gtceu:inert_machine_casing'))
             .where('E', Predicates.blocks('kubejs:pallaridium_engine_intake_casing'))
             .where('H', Predicates.blocks('gtceu:high_power_casing'))
-            .where(' ', Predicates.air())
+            .where(' ', Predicates.any())
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel', 'gtceu:block/machines/gas_collector');
