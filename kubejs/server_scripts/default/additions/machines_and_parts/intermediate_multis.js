@@ -143,7 +143,7 @@ global.not_hardmode(() => {
             .itemOutputs('gtceu:super_gas_collector')
             ["scannerResearch(java.util.function.UnaryOperator)"](
                 researchRecipeBuilder => researchRecipeBuilder
-                    .researchStack(Item.of('gtceu:luv_gas_collector'))
+                    .researchStack(Item.of('gtceu:iv_gas_collector'))
                     .duration(1800)
                     .EUt(GTValues.VHA[GTValues.LuV])
             )
