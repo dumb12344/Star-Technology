@@ -270,9 +270,11 @@ global.getRecipeTier = (tier) => {
     return recipeTier;
 }
 
+const getDataItem = (cwu) => (cwu >= 160) ? 'start_core:data_dna_disk' : (cwu >=32) ? 'gtceu:data_module' : 'gtceu:data_orb' ;
+
 ServerEvents.recipes(event => {
+
   global.researchBuilder = (machineType, recId, inputsI, inputsF, outputsI, duration, cwuT, totalCWU, euT, researched) => {
-      const getDataItem = (cwu) => (cwu >= 160) ? 'start_core:data_dna_disk' : (cwu >=32) ? 'gtceu:data_module' : 'gtceu:data_orb' ;
       const dataItem = getDataItem(cwuT);
       const id = global.id;
       
@@ -310,5 +312,7 @@ ServerEvents.recipes(event => {
           .CWUt(cwuT)
           .totalCWU(totalCWU)
           .EUt(euT);
+
   }
+  
 });
