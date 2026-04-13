@@ -42,25 +42,25 @@
 			id: "0241D0DF0F320CDB"
 			linked_quest: "0D18B33E2C26A942"
 			x: 13.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			id: "0D7818B3AC85F334"
 			linked_quest: "44B18C095DB4DF17"
 			x: 12.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			id: "04110658590E1F01"
 			linked_quest: "5D3B5DEE3B2D30C0"
 			x: 11.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			id: "082C386CBBA0DD86"
 			linked_quest: "1C5C32E5A47F2D2D"
 			x: 14.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			id: "37CD8F0805CCF0EA"
@@ -80,7 +80,7 @@
 			shape: "gear"
 			size: 1.5d
 			x: 17.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			id: "6619BD72D7AC92AB"
@@ -97,6 +97,14 @@
 			size: 1.5d
 			x: 17.5d
 			y: -4.0d
+		}
+		{
+			id: "58D06D40AD3DDD53"
+			linked_quest: "64DC78AF9E2FAB32"
+			shape: "circle"
+			size: 1.5d
+			x: 4.5d
+			y: 4.75d
 		}
 	]
 	quests: [
@@ -209,7 +217,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.0d
+			x: -6.0d
 			y: -1.0d
 		}
 		{
@@ -291,7 +299,7 @@
 				item: "gtceu:thiophene_dust"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -7.5d
 			y: -2.0d
 		}
 		{
@@ -313,7 +321,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.5d
+			x: -7.5d
 			y: 0.0d
 		}
 		{
@@ -335,7 +343,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.0d
+			x: -6.0d
 			y: 0.5d
 		}
 		{
@@ -354,7 +362,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -10.0d
+			x: -9.0d
 			y: -2.0d
 		}
 		{
@@ -373,7 +381,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -8.5d
+			x: -7.5d
 			y: -3.5d
 		}
 		{
@@ -392,7 +400,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -9.5d
+			x: -8.5d
 			y: -3.0d
 		}
 		{
@@ -411,7 +419,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -9.5d
+			x: -8.5d
 			y: -0.5d
 		}
 		{
@@ -430,7 +438,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -9.5d
+			x: -8.5d
 			y: 0.5d
 		}
 		{
@@ -449,7 +457,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.5d
+			x: -6.5d
 			y: 1.5d
 		}
 		{
@@ -468,7 +476,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.5d
+			x: -5.5d
 			y: 1.5d
 		}
 		{
@@ -578,15 +586,15 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "7F8D144334941F9D"
 				item: "gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_bucket"
 				type: "item"
 			}]
 			title: "{ftbquests.processing_lines_chap.pedot_pss.title}"
-			x: 2.0d
-			y: -4.5d
+			x: -1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -607,8 +615,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: -3.0d
+			x: -3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["688977CED4B771BA"]
@@ -619,7 +627,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -641,8 +649,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.5d
-			y: -2.0d
+			x: -5.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -660,8 +668,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: -4.5d
+			x: -4.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1F25423C8624C180"]
@@ -679,8 +687,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.5d
-			y: -0.5d
+			x: -7.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -698,8 +706,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 7.5d
-			y: 0.5d
+			x: -8.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7844913D9059D182"]
@@ -717,8 +725,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.5d
-			y: -3.0d
+			x: -6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
@@ -736,8 +744,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 7.5d
-			y: -2.5d
+			x: -6.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -781,27 +789,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["6535CEFABDCDB31E"]
-			icon: "gtceu:diluted_sulfuric_acid_bucket"
-			id: "076FBE64DAFE824E"
-			tasks: [
-				{
-					id: "5F62C2BBE3297F57"
-					item: "gtceu:diluted_sulfuric_acid_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4F10790E5A12C782"
-					type: "checkmark"
-				}
-			]
-			x: 7.5d
-			y: -1.5d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -814,8 +803,8 @@
 				item: "gtceu:benzoyl_peroxide_dust"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -1.0d
+			x: 2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -836,8 +825,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.5d
-			y: 0.5d
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7CACFC7C9101EA59"]
@@ -855,8 +844,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
-			y: -1.5d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -866,8 +855,8 @@
 				item: "gtceu:calcium_hydroxide_dust"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -0.5d
+			x: 3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -885,8 +874,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.0d
-			y: 1.5d
+			x: 0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["1AAB9C20E833029A"]
@@ -904,8 +893,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.0d
-			y: 1.5d
+			x: 1.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["18FD654260DFF1D6"]
@@ -1299,7 +1288,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.5d
+			x: -3.0d
 			y: 9.0d
 		}
 		{
@@ -1329,7 +1318,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.5d
+			x: -3.0d
 			y: 4.0d
 		}
 		{
@@ -1357,7 +1346,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.5d
+			x: 0.5d
 			y: 6.5d
 		}
 		{
@@ -1376,7 +1365,7 @@
 				item: "gtceu:chalyblux_ingot"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 0.5d
 			y: 9.0d
 		}
 		{
@@ -1395,8 +1384,8 @@
 				item: "gtceu:rhexis_ingot"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 5.0d
+			x: -1.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["35BC1333425C61AD"]
@@ -1413,26 +1402,7 @@
 				item: "gtceu:rhenium_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["35BC1333425C61AD"]
-			icon: "gtceu:naquadria_waste_bucket"
-			id: "6614B51E815DAEEC"
-			tasks: [
-				{
-					id: "1F0E3D39638A7619"
-					item: "gtceu:naquadria_waste_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4CF1710BE199DEA5"
-					type: "checkmark"
-				}
-			]
-			x: -2.0d
+			x: 1.0d
 			y: 7.5d
 		}
 		{
@@ -1443,8 +1413,8 @@
 				item: "gtceu:rhexis_dust"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 5.0d
+			x: -3.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5080743917931298"]
@@ -1454,7 +1424,7 @@
 				item: "gtceu:chalyblux_dust"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.5d
 			y: 9.0d
 		}
 		{
@@ -1465,26 +1435,7 @@
 				item: "gtceu:tiny_echo_shard_dust"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["35BC1333425C61AD"]
-			icon: "gtceu:molten_ore_mixture_bucket"
-			id: "26B3C85391987ECD"
-			tasks: [
-				{
-					id: "1C843F6A86A04126"
-					item: "gtceu:molten_ore_mixture_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "63C89689A58DECE5"
-					type: "checkmark"
-				}
-			]
-			x: -2.0d
+			x: 1.0d
 			y: 5.5d
 		}
 		{
@@ -1516,8 +1467,8 @@
 				item: "gtceu:xeproda_ingot"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: 0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2F6115002741F26F"]
@@ -1527,11 +1478,14 @@
 				item: "gtceu:xeproda_dust"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.0d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["253FE2C976FBCA5D"]
+			dependencies: [
+				"09B55AFE7C06EC82"
+				"64DC78AF9E2FAB32"
+			]
 			id: "09996867BC3E5819"
 			tasks: [{
 				id: "7FA4661139DC8B30"
@@ -1542,7 +1496,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["262BD3D9D1DF7F13"]
 			icon: "gtceu:dragon_breath_bucket"
 			id: "749AB3A73D3744EA"
 			tasks: [
@@ -1558,7 +1511,7 @@
 				}
 			]
 			x: 16.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1690,7 +1643,7 @@
 				}
 			]
 			x: 14.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1712,7 +1665,7 @@
 				}
 			]
 			x: 13.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1734,7 +1687,7 @@
 				}
 			]
 			x: 12.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1757,7 +1710,7 @@
 				}
 			]
 			x: 10.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1779,7 +1732,7 @@
 				}
 			]
 			x: 11.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1804,7 +1757,7 @@
 				}
 			]
 			x: 15.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1960,7 +1913,7 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["56BA79287C4DBE52"]
@@ -2060,7 +2013,7 @@
 				}
 			]
 			x: 9.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["68DA57B7791A76E1"]
@@ -2079,7 +2032,7 @@
 				}
 			]
 			x: 10.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -2166,7 +2119,7 @@
 			]
 			title: "{ftbquests.processing_lines_chap.echo.title}"
 			x: 10.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0F29276290B9D9D1"]
@@ -2188,20 +2141,10 @@
 			y: 8.0d
 		}
 		{
-			dependencies: ["37F9C85CFCFFDA5F"]
-			id: "253FE2C976FBCA5D"
-			shape: "circle"
-			size: 1.5d
-			tasks: [{
-				id: "708F6D013BD2DAFC"
-				item: "minecraft:dragon_egg"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 4.75d
-		}
-		{
-			dependencies: ["253FE2C976FBCA5D"]
+			dependencies: [
+				"09B55AFE7C06EC82"
+				"64DC78AF9E2FAB32"
+			]
 			id: "0CD4A2A7CDC7A06E"
 			tasks: [{
 				id: "136C2FBCEF223E99"
@@ -2235,7 +2178,7 @@
 			}]
 			title: "{ftbquests.processing_lines_chap.cheaper_dragon_breath.title}"
 			x: 16.5d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1799430093ABCC64"]
@@ -2315,7 +2258,7 @@
 					type: "checkmark"
 				}
 			]
-			x: -7.0d
+			x: -6.0d
 			y: -2.5d
 		}
 		{
@@ -2352,8 +2295,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.5d
-			y: -2.5d
+			x: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1799430093ABCC64"]

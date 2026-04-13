@@ -604,6 +604,11 @@
 					}
 					type: "item"
 				}
+				{
+					id: "52E04BF0DE109AB6"
+					item: "kubejs:stellar_ram_chip"
+					type: "item"
+				}
 			]
 			title: "{ftbquests.line_of_progression.enhanced.title}"
 			x: -6.5d

@@ -12,45 +12,51 @@
 		{
 			id: "727DEC5336F4793D"
 			linked_quest: "37E3EF96EDE85C86"
-			x: -14.5d
-			y: -6.5d
+			x: 5.5d
+			y: -5.5d
 		}
 		{
 			id: "220DBF269EDBAC7A"
 			linked_quest: "22B85F7F13C66730"
-			x: -12.5d
-			y: 5.5d
+			x: -0.5d
+			y: 4.5d
 		}
 		{
 			id: "23C36BA08644EF38"
 			linked_quest: "33FE3C68B0BD21B1"
-			x: -3.5d
-			y: 2.5d
+			x: 11.5d
+			y: 6.5d
 		}
 		{
 			id: "114E2ED3560BE835"
 			linked_quest: "01AF9486EA6DA792"
 			shape: "gear"
-			x: -20.5d
-			y: 3.5d
+			x: -6.5d
+			y: 0.5d
 		}
 		{
 			id: "0A5474BE35062610"
 			linked_quest: "2F63F0E239737E38"
-			x: -19.5d
-			y: -11.0d
+			x: -8.5d
+			y: 4.5d
 		}
 		{
 			id: "147C45D5866D311C"
 			linked_quest: "24AE98EABF69F2D1"
-			x: -22.5d
-			y: 3.5d
+			x: -8.5d
+			y: 0.5d
 		}
 		{
 			id: "2896C9473F6FC7A7"
 			linked_quest: "6D573ACD05D0EF96"
-			x: -8.5d
-			y: -6.5d
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			id: "15BD5419D917BE19"
+			linked_quest: "31EADD276ECB7B25"
+			x: -0.5d
+			y: 2.5d
 		}
 	]
 	quests: [
@@ -71,15 +77,15 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 1.0d
+			size: 1.5d
 			subtitle: "{ftbquests.abydos.world.subtitle}"
 			tasks: [{
 				id: "015668E3D80CF755"
 				title: "{ftbquests.abydos.world.title}"
 				type: "checkmark"
 			}]
-			x: -26.5d
-			y: -0.5d
+			x: -12.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["37E3EF96EDE85C86"]
@@ -95,8 +101,8 @@
 				item: "gtceu:zalloy_ingot"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -4.5d
+			x: 7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["179A15014A5716B5"]
@@ -109,15 +115,22 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
-			tasks: [{
-				id: "33205A9306859820"
-				item: "gtceu:cyclonic_sifter"
-				type: "item"
-			}]
+			size: 1.25d
+			tasks: [
+				{
+					id: "33205A9306859820"
+					item: "gtceu:cyclonic_sifter"
+					type: "item"
+				}
+				{
+					id: "792CE68F63D17CD4"
+					item: "gtceu:molten_destabilizer"
+					type: "item"
+				}
+			]
 			title: "{ftbquests.abydos.cyclonic_sifter.title}"
-			x: -25.5d
-			y: -1.5d
+			x: -10.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -136,8 +149,8 @@
 				item: "gtceu:folding_akreyrium_stabiliser"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 1.5d
+			x: 7.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -163,8 +176,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.more_ultimate_multiblocks.title}"
-			x: -4.5d
-			y: -0.5d
+			x: 7.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5368269646BC0F27"]
@@ -182,7 +195,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.25d
 			tasks: [
 				{
 					id: "5A05B918B174851B"
@@ -196,8 +209,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.utopian_akreyrium.title}"
-			x: -4.5d
-			y: 1.5d
+			x: 9.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -217,8 +230,8 @@
 				}
 				type: "item"
 			}]
-			x: -24.5d
-			y: 7.5d
+			x: -10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["305974D431F17AF0"]
@@ -238,11 +251,15 @@
 				}
 				type: "item"
 			}]
-			x: -22.5d
-			y: 5.5d
+			x: -8.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["6F05FAE3F5AAC357"]
+			dependencies: [
+				"6F05FAE3F5AAC357"
+				"3F3553DE7A3D87C6"
+				"70AA84848FB2A9BB"
+			]
 			description: ["{ftbquests.abydos.bacterial_runic_mutator.description}"]
 			id: "7F72F9E28713D965"
 			rewards: [{
@@ -252,7 +269,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "4109922C155C43A3"
 				item: {
@@ -262,8 +279,8 @@
 				}
 				type: "item"
 			}]
-			x: -24.5d
-			y: 3.5d
+			x: -10.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -281,8 +298,8 @@
 				title: "{ftbquests.abydos.temples.title}"
 				type: "structure"
 			}]
-			x: -26.5d
-			y: 1.5d
+			x: -12.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -303,8 +320,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.abydos.bacteria_dormant.title}"
-			x: -24.5d
-			y: 1.5d
+			x: -10.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7F72F9E28713D965"]
@@ -348,8 +365,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.bacteria.title}"
-			x: -24.5d
-			y: 5.5d
+			x: -10.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -393,8 +410,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.runic_tablet_fragments.title}"
-			x: -26.5d
-			y: 3.5d
+			x: -12.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5744150A5658FE4D"]
@@ -411,8 +428,8 @@
 				item: "kubejs:runic_tablet_complete"
 				type: "item"
 			}]
-			x: -26.5d
-			y: 5.5d
+			x: -12.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -431,8 +448,8 @@
 				item: "gtceu:ancient_runicalium_ingot"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -2.5d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["30C974448C57F0EC"]
@@ -448,7 +465,7 @@
 				item: "gtceu:ancient_runicalium_single_wire"
 				type: "item"
 			}]
-			x: -10.5d
+			x: 4.5d
 			y: -0.5d
 		}
 		{
@@ -466,7 +483,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "70C8CC3BD58DC9B4"
 				item: {
@@ -476,11 +493,14 @@
 				}
 				type: "item"
 			}]
-			x: -8.5d
-			y: 3.5d
+			x: 5.5d
+			y: 6.5d
 		}
 		{
-			dependencies: ["7AC55BA8BDD0F3D2"]
+			dependencies: [
+				"7AC55BA8BDD0F3D2"
+				"6110BA7B3E84F06F"
+			]
 			description: ["{ftbquests.abydos.exotic_gas_siphon.description}"]
 			id: "2659B3AA9108BC43"
 			rewards: [{
@@ -493,8 +513,8 @@
 				item: "gtceu:exotic_gas_siphon"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -0.5d
+			x: 9.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["47DF7968E9B98C65"]
@@ -507,8 +527,8 @@
 				title: "{ftbquests.abydos.ethylbenzene.title}"
 				type: "checkmark"
 			}]
-			x: -22.5d
-			y: 7.5d
+			x: -7.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -533,8 +553,8 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
-			y: -6.5d
+			x: 9.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -551,19 +571,20 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "7F60C8447F583DD0"
 				item: "kubejs:zalloy_coil_block"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -2.5d
+			x: 5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
 				"3DF4C45A9424D4D1"
 				"5BDA17962F4630EB"
+				"22B85F7F13C66730"
 			]
 			description: ["{ftbquests.abydos.uepic_chip.description}"]
 			hide_dependent_lines: true
@@ -586,10 +607,11 @@
 				}
 			]
 			title: "{ftbquests.abydos.uepic_chip.title}"
-			x: -14.5d
-			y: -4.5d
+			x: 1.5d
+			y: -7.5d
 		}
 		{
+			dependencies: ["493DD013C818BB7B"]
 			description: ["{ftbquests.abydos.gritty_akreyrium.description}"]
 			icon: {
 				Count: 1
@@ -619,8 +641,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.gritty_akreyrium.title}"
-			x: -25.5d
-			y: 0.5d
+			x: -10.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -638,8 +660,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.abydos.nanofluidic_heat_sink.title}"
-			x: -3.5d
-			y: 0.5d
+			x: 9.5d
+			y: 2.5d
 		}
 		{
 			id: "39E723ECCBEE0A0A"
@@ -650,8 +672,8 @@
 				title: "{ftbquests.abydos.positioner.title}"
 				type: "checkmark"
 			}]
-			x: -14.5d
-			y: 0.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["25583D0BF59E1BC8"]
@@ -668,8 +690,8 @@
 				item: "start_core:uhv_parallel_hatch"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 1.5d
+			x: 3.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -689,8 +711,8 @@
 				item: "start_core:uhv_absolute_parallel_hatch"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 3.5d
+			x: 3.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2659B3AA9108BC43"]
@@ -703,11 +725,11 @@
 				title: "{ftbquests.abydos.radon.title}"
 				type: "checkmark"
 			}]
-			x: -12.5d
-			y: 1.5d
+			x: 11.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["493DD013C818BB7B"]
+			dependencies: ["1A8F645AC1B30411"]
 			description: ["{ftbquests.abydos.magma_processing.description}"]
 			icon: "gtceu:abydos_reactive_dense_magma_bucket"
 			id: "5BD0047E69D79476"
@@ -716,21 +738,8 @@
 				title: "{ftbquests.abydos.magma_processing.title}"
 				type: "checkmark"
 			}]
-			x: -24.5d
-			y: -0.5d
-		}
-		{
-			description: ["{ftbquests.abydos.molten_destabilizer.description}"]
-			id: "05E824087CE7825D"
-			shape: "gear"
-			size: 1.0d
-			tasks: [{
-				id: "3FCFCFF6D0A94AE9"
-				item: "gtceu:molten_destabilizer"
-				type: "item"
-			}]
-			x: -23.5d
-			y: -1.5d
+			x: -8.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -746,8 +755,8 @@
 				item: "gtceu:bulk_ore_processing_array"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 1.5d
+			x: 9.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["652809D17FCE8B11"]
@@ -796,8 +805,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.ruined_components.title}"
-			x: -27.5d
-			y: -3.5d
+			x: -13.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["652809D17FCE8B11"]
@@ -808,8 +817,8 @@
 				item: "kubejs:abydos_talisman"
 				type: "item"
 			}]
-			x: -25.5d
-			y: -3.5d
+			x: -12.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]
@@ -827,8 +836,8 @@
 				title: "{ftbquests.abydos.cartouche.title}"
 				type: "structure"
 			}]
-			x: -26.5d
-			y: -2.5d
+			x: -12.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["678B90BF2ACE2BBA"]
@@ -847,24 +856,25 @@
 				}
 			]
 			title: "{ftbquests.abydos.abydos_alloys.title}"
-			x: -18.5d
-			y: 1.5d
+			x: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
 				"67E52B5738FC7398"
-				"5A91EE93457C617E"
 				"43DAD4B63603BFC3"
 			]
 			id: "25583D0BF59E1BC8"
+			shape: "gear"
+			size: 1.25d
 			subtitle: "{ftbquests.abydos.runic_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "0F71C952D6EC490A"
 				item: "kubejs:runic_processor_mainframe"
 				type: "item"
 			}]
-			x: -8.5d
-			y: 1.5d
+			x: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4F994F04EF1710B9"]
@@ -875,15 +885,13 @@
 				item: "kubejs:runic_processor_computer"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -0.5d
+			x: 5.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
-				"5022ABEA367576E7"
 				"5DC3B85B63641F6C"
 				"1341EFC24A45EFF8"
-				"30C974448C57F0EC"
 			]
 			id: "4F994F04EF1710B9"
 			subtitle: "{ftbquests.abydos.runic_processor_assembly.subtitle}"
@@ -892,13 +900,12 @@
 				item: "kubejs:runic_processor_assembly"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -2.5d
+			x: 5.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6D573ACD05D0EF96"]
 			id: "5022ABEA367576E7"
-			shape: "circle"
 			tasks: [
 				{
 					id: "507020635FBF83C5"
@@ -911,12 +918,13 @@
 					type: "item"
 				}
 			]
-			x: -8.5d
-			y: -4.5d
+			x: 9.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
 			description: ["{ftbquests.abydos.neutronium_silicon_carbide_ingot.description}"]
+			hide_dependency_lines: true
 			id: "06BE744AEAA6C217"
 			rewards: [{
 				id: "21070641AEDDEF98"
@@ -928,8 +936,8 @@
 				item: "gtceu:neutronium_silicon_carbide_ingot"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -2.0d
+			x: 4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -948,8 +956,8 @@
 				item: "gtceu:zirconium_ingot"
 				type: "item"
 			}]
-			x: -24.5d
-			y: -2.5d
+			x: -8.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -959,14 +967,14 @@
 			]
 			id: "5DF4501BD2593465"
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "19FB82BBC41F8724"
 				item: "gtceu:component_nexus"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 3.5d
+			x: 11.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
@@ -977,11 +985,11 @@
 				item: "gtceu:uhv_stabilization_module"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -6.5d
+			x: 9.5d
+			y: -7.5d
 		}
 		{
-			dependencies: ["141911C5DD68CD2A"]
+			dependencies: ["07AD6651D0B40E22"]
 			description: ["{ftbquests.abydos.oneiric_relay.description}"]
 			id: "0DFAD40205E5D899"
 			rewards: [{
@@ -994,25 +1002,8 @@
 				item: "start_core:oneiric_relay"
 				type: "item"
 			}]
-			x: -17.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["22B85F7F13C66730"]
-			description: ["{ftbquests.abydos.lucinducer.description}"]
-			id: "7E9A5A626648A859"
-			rewards: [{
-				id: "4A257F294C4D4C76"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "04E9B2997427EC44"
-				item: "start_core:lucinducer"
-				type: "item"
-			}]
-			x: -12.5d
-			y: 3.5d
+			x: 11.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5ED2EA63EE112E24"]
@@ -1023,8 +1014,8 @@
 				item: "kubejs:runic_processor"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -2.5d
+			x: 7.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5022ABEA367576E7"]
@@ -1034,8 +1025,8 @@
 				item: "kubejs:runic_convergence_processing_unit"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -4.5d
+			x: 9.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["01AF9486EA6DA792"]
@@ -1063,8 +1054,8 @@
 					type: "item"
 				}
 			]
-			x: -20.5d
-			y: 5.5d
+			x: -6.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1085,8 +1076,8 @@
 				item: "gtceu:neuro_processing_unit"
 				type: "item"
 			}]
-			x: -18.5d
-			y: 5.5d
+			x: -4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["18D5591BF53AD07F"]
@@ -1103,8 +1094,8 @@
 				item: "gtceu:wetware_processor"
 				type: "item"
 			}]
-			x: -16.5d
-			y: 7.5d
+			x: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["01AF9486EA6DA792"]
@@ -1121,8 +1112,8 @@
 				item: "gtceu:stem_cells"
 				type: "item"
 			}]
-			x: -18.5d
-			y: 3.5d
+			x: -4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1143,8 +1134,8 @@
 				item: "gtceu:wetware_processor_computer"
 				type: "item"
 			}]
-			x: -16.5d
-			y: 3.5d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["0962C36622E385B8"]
@@ -1161,8 +1152,8 @@
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			x: -16.5d
-			y: 5.5d
+			x: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1183,8 +1174,8 @@
 				item: "gtceu:darmstadtium_ingot"
 				type: "item"
 			}]
-			x: -24.5d
-			y: -4.5d
+			x: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["27C0ED4305E84D21"]
@@ -1201,8 +1192,8 @@
 				item: "gtceu:uv_machine_hull"
 				type: "item"
 			}]
-			x: -22.5d
-			y: 9.5d
+			x: -6.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1223,8 +1214,8 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			x: -22.5d
-			y: -0.5d
+			x: -6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1245,8 +1236,8 @@
 				item: "gtceu:americium_ingot"
 				type: "item"
 			}]
-			x: -22.5d
-			y: -4.5d
+			x: -6.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1266,8 +1257,8 @@
 				item: "gtceu:uv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -20.5d
-			y: 9.5d
+			x: -4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1283,14 +1274,14 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "7E9779497F7473C0"
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			x: -20.5d
-			y: -0.5d
+			x: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0B7A0924AFE58559"]
@@ -1307,8 +1298,8 @@
 				item: "gtceu:uv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: -18.5d
-			y: 9.5d
+			x: -2.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["155947C2913FFA42"]
@@ -1325,8 +1316,8 @@
 				item: "gtceu:uv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -16.5d
-			y: 9.5d
+			x: -0.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["678B90BF2ACE2BBA"]
@@ -1344,8 +1335,8 @@
 				item: "gtceu:enriched_naquadah_trinium_europium_duranide_ingot"
 				type: "item"
 			}]
-			x: -20.5d
-			y: 1.5d
+			x: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6131A76D203DE6AB"]
@@ -1364,8 +1355,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.futuristic_mechanisms.sterilizing_filter_casing.title}"
-			x: -22.5d
-			y: 1.5d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1388,18 +1379,19 @@
 				}
 				type: "item"
 			}]
-			x: -20.5d
-			y: 7.5d
+			x: -4.5d
+			y: 4.5d
 		}
 		{
+			dependencies: ["7C182C34888AF189"]
 			id: "53B8A2EFCF2D4371"
 			tasks: [{
 				id: "6A01A251A9C02550"
 				item: "gtceu:advanced_synthesis_plant"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 7.5d
+			x: -2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["4C5DBB94345FF33B"]
@@ -1412,15 +1404,15 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "{ftbquests.preparing_for_dimensional_travel.wetware_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "7D57266E37ABED15"
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			x: -16.5d
-			y: 1.5d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1436,14 +1428,14 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "63A31B4C5E81DA04"
 				item: "start_core:uv_fusion_reactor"
 				type: "item"
 			}]
-			x: -16.5d
-			y: -0.5d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1459,14 +1451,14 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "7451A866F7DF568E"
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			x: -16.5d
-			y: -2.5d
+			x: 1.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
@@ -1482,8 +1474,8 @@
 				item: "gtceu:ruthenium_trinium_americium_neutronate_ingot"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -3.0d
+			x: 3.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
@@ -1499,14 +1491,13 @@
 				item: "gtceu:uhv_machine_hull"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -0.5d
+			x: 3.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
 				"5C39B74171CC21F9"
 				"73D0DC357821B395"
-				"4F6B1F4261874B65"
 			]
 			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch.description}"]
 			id: "11D51899B980082B"
@@ -1520,8 +1511,8 @@
 				item: "gtceu:uhv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -14.5d
-			y: 1.5d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["11D51899B980082B"]
@@ -1537,8 +1528,8 @@
 				item: "gtceu:uhv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: -14.5d
-			y: 3.5d
+			x: 3.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1557,8 +1548,8 @@
 				item: "gtceu:uhv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -14.5d
-			y: 5.5d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7FFCAD92772A175F"]
@@ -1575,8 +1566,8 @@
 				item: "gtceu:uv_parallel_hatch"
 				type: "item"
 			}]
-			x: -16.5d
-			y: -6.5d
+			x: -2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1AC8CBF01196D1F3"]
@@ -1592,8 +1583,8 @@
 				item: "gtceu:highly_advanced_soc_wafer"
 				type: "item"
 			}]
-			x: -20.5d
-			y: -6.5d
+			x: 7.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
@@ -1606,14 +1597,14 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "72F5DF7EB10A1938"
 				item: "gtceu:neutronium_wafer"
 				type: "item"
 			}]
-			x: -18.5d
-			y: -6.5d
+			x: 5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
@@ -1629,8 +1620,8 @@
 				item: "gtceu:neutronium_boule"
 				type: "item"
 			}]
-			x: -18.5d
-			y: -4.5d
+			x: 3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["52B553FDB34B1475"]
@@ -1646,8 +1637,8 @@
 				item: "gtceu:melodium_single_wire"
 				type: "item"
 			}]
-			x: -21.5d
-			y: -3.5d
+			x: -3.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["678B90BF2ACE2BBA"]
@@ -1663,8 +1654,8 @@
 				item: "gtceu:melodium_ingot"
 				type: "item"
 			}]
-			x: -20.5d
-			y: -2.5d
+			x: -2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1683,8 +1674,8 @@
 				item: "gtceu:stellarium_ingot"
 				type: "item"
 			}]
-			x: -18.5d
-			y: -2.5d
+			x: -0.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["253AECE450920D99"]
@@ -1700,8 +1691,8 @@
 				item: "gtceu:stellarium_single_wire"
 				type: "item"
 			}]
-			x: -19.5d
-			y: -3.5d
+			x: -1.5d
+			y: -6.5d
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
@@ -1717,8 +1708,8 @@
 				item: "gtceu:gravi_star"
 				type: "item"
 			}]
-			x: -16.5d
-			y: -4.5d
+			x: -0.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
@@ -1736,33 +1727,8 @@
 				item: "gtceu:mega_blast_furnace"
 				type: "item"
 			}]
-			x: -17.5d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"7F4D5331B59AA5F0"
-				"783BDF78D6C56815"
-			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.thorium_plut_duranide_241_ingot.description}"]
-			id: "4F6B1F4261874B65"
-			rewards: [{
-				id: "4CF383A332D3E16B"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "circle"
-			tasks: [{
-				id: "32F09CC44B2A4DA7"
-				item: {
-					Count: 1
-					id: "gtceu:thorium_plut_duranide_241_ingot"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -15.5d
-			y: 0.5d
+			x: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["141911C5DD68CD2A"]
@@ -1775,7 +1741,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "55F419E4EF98D96F"
 				item: {
@@ -1811,17 +1777,16 @@
 				type: "item"
 			}]
 			title: "{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.title}"
-			x: -21.5d
-			y: -11.0d
+			x: -10.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
-				"7FFCAD92772A175F"
-				"52B553FDB34B1475"
-				"707C2E9BA62A60C5"
+				"3F4C068368F97580"
+				"3F3553DE7A3D87C6"
+				"70AA84848FB2A9BB"
 			]
 			description: ["{ftbquests.preparing_for_dimensional_travel.wireless_energy.description}"]
-			hide_dependency_lines: true
 			id: "141911C5DD68CD2A"
 			rewards: [{
 				id: "73B232401A84DDAC"
@@ -1833,8 +1798,8 @@
 				item: "start_core:dream_link_node"
 				type: "item"
 			}]
-			x: -19.5d
-			y: -9.0d
+			x: -8.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1851,17 +1816,21 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "4538BE544847BA96"
 				item: "gtceu:chemical_plant"
 				type: "item"
 			}]
-			x: -18.5d
-			y: 7.5d
+			x: -2.5d
+			y: 2.5d
 		}
 		{
-			dependencies: ["3F4C068368F97580"]
+			dependencies: [
+				"3F4C068368F97580"
+				"3F3553DE7A3D87C6"
+				"70AA84848FB2A9BB"
+			]
 			description: ["{ftbquests.futuristic_mechanisms.cleaning_maintenance_hatch.description}"]
 			id: "3391903EBBB3F308"
 			rewards: [{
@@ -1875,8 +1844,8 @@
 				item: "gtceu:cleaning_maintenance_hatch"
 				type: "item"
 			}]
-			x: -24.5d
-			y: 9.5d
+			x: -7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["3C99D83398AFC31C"]
@@ -1886,8 +1855,8 @@
 				item: "kubejs:complex_reflector_casing"
 				type: "item"
 			}]
-			x: -22.5d
-			y: -2.5d
+			x: -6.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
@@ -1898,8 +1867,8 @@
 				item: "gtceu:compact_assembly_line"
 				type: "item"
 			}]
-			x: -10.5d
-			y: -4.5d
+			x: 7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3BFB8DA58BED12D1"]
@@ -1909,8 +1878,8 @@
 				item: "kubejs:reinforced_reflector_casing"
 				type: "item"
 			}]
-			x: -18.5d
-			y: -0.5d
+			x: -0.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["31EADD276ECB7B25"]
@@ -1942,8 +1911,8 @@
 					type: "item"
 				}
 			]
-			x: -15.5d
-			y: 4.5d
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1963,8 +1932,20 @@
 				item: "gtceu:network_switch"
 				type: "item"
 			}]
-			x: -21.5d
-			y: 6.5d
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6131A76D203DE6AB"]
+			hide_dependent_lines: true
+			id: "3F3553DE7A3D87C6"
+			tasks: [{
+				id: "13519271FAA54271"
+				item: "gtceu:titan_steel_ingot"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.5d
 		}
 	]
 	title: "{ftbquests.abydos.title}"

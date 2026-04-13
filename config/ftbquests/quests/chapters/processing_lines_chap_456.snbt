@@ -779,6 +779,7 @@
 				"53B8A2EFCF2D4371"
 			]
 			description: ["{ftbquests.processing_lines_chap.silicon_carbide_over_bismuth_tritelluride_dust.description}"]
+			hide_dependent_lines: true
 			id: "22B85F7F13C66730"
 			rewards: [{
 				count: 3
@@ -2128,6 +2129,10 @@
 			y: 14.0d
 		}
 		{
+			dependencies: [
+				"6110BA7B3E84F06F"
+				"5BDA17962F4630EB"
+			]
 			hide_dependent_lines: true
 			id: "2C9FFC93C52399F3"
 			tasks: [{
@@ -2676,7 +2681,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 10.5d
+			x: 11.0d
 			y: 15.5d
 		}
 		{
@@ -2695,7 +2700,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 11.5d
+			x: 12.0d
 			y: 16.0d
 		}
 		{
@@ -2714,7 +2719,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 9.5d
+			x: 10.0d
 			y: 16.0d
 		}
 		{
@@ -3138,6 +3143,7 @@
 			dependencies: [
 				"4DDA332F7E9B545E"
 				"02720C1A85346FB6"
+				"30C974448C57F0EC"
 			]
 			id: "6D573ACD05D0EF96"
 			rewards: [{
@@ -3197,7 +3203,6 @@
 		}
 		{
 			dependencies: ["5CC733B0DA775351"]
-			hide_dependent_lines: true
 			id: "266F486F2425C35E"
 			shape: "gear"
 			tasks: [{
@@ -3668,6 +3673,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["493DD013C818BB7B"]
 			icon: "gtceu:benzene_bucket"
 			id: "369889B9DEEBC7FB"
 			tasks: [
@@ -3707,6 +3713,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["493DD013C818BB7B"]
 			icon: "gtceu:ethylene_bucket"
 			id: "5BF4D99601D5A22E"
 			tasks: [
@@ -3725,6 +3732,7 @@
 			y: -3.25d
 		}
 		{
+			dependencies: ["493DD013C818BB7B"]
 			icon: "gtceu:styrene_bucket"
 			id: "42F226BB73C1A1F4"
 			tasks: [
@@ -3743,6 +3751,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["493DD013C818BB7B"]
 			icon: "gtceu:oxygen_bucket"
 			id: "145393F03845BB83"
 			tasks: [
@@ -3776,6 +3785,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["493DD013C818BB7B"]
 			icon: "gtceu:distilled_water_bucket"
 			id: "5820F5579594EB8E"
 			tasks: [
@@ -3808,6 +3818,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["33205A9306859820"]
 			icon: "gtceu:purified_water_bucket"
 			id: "61A61C7128E432C7"
 			tasks: [
@@ -3898,6 +3909,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["4974D7E690B02ECA"]
 			icon: "gtceu:seed_oil_bucket"
 			id: "191B7E204DDD439B"
 			tasks: [
@@ -3916,6 +3928,7 @@
 			y: -7.25d
 		}
 		{
+			dependencies: ["4974D7E690B02ECA"]
 			icon: "gtceu:steam_bucket"
 			id: "16E4A6BB603C92AC"
 			tasks: [
@@ -3975,6 +3988,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["4974D7E690B02ECA"]
 			id: "621863761E960D68"
 			tasks: [{
 				id: "2FA82B2C58395B36"
@@ -3999,6 +4013,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["4974D7E690B02ECA"]
 			icon: "gtceu:ethanol_bucket"
 			id: "4D88C910D02A1C63"
 			tasks: [
@@ -4017,6 +4032,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["4974D7E690B02ECA"]
 			icon: "minecraft:water_bucket"
 			id: "2776A223A6988D10"
 			tasks: [
@@ -4058,6 +4074,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["4974D7E690B02ECA"]
 			id: "2E5B54A70C3AFD1B"
 			tasks: [{
 				id: "2352E001FEBF6DF0"
@@ -4068,6 +4085,7 @@
 			y: -1.75d
 		}
 		{
+			dependencies: ["4974D7E690B02ECA"]
 			icon: "gtceu:chlorine_bucket"
 			id: "31DD39F357886221"
 			tasks: [
@@ -4108,6 +4126,7 @@
 			y: -3.25d
 		}
 		{
+			dependencies: ["4974D7E690B02ECA"]
 			icon: "gtceu:ethanol_bucket"
 			id: "5399B440912FAE80"
 			tasks: [
@@ -4148,6 +4167,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["4974D7E690B02ECA"]
 			icon: "gtceu:hydrochloric_acid_bucket"
 			id: "229CAA73A71DED07"
 			tasks: [

@@ -46,6 +46,12 @@
 			x: 1.0d
 			y: 23.0d
 		}
+		{
+			id: "748DA87BBBFC0D45"
+			linked_quest: "6B1E88A09583F979"
+			x: 12.0d
+			y: 25.0d
+		}
 	]
 	quests: [
 		{
@@ -744,10 +750,11 @@
 				item: "gtceu:clay_dust"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.0d
 			y: 13.5d
 		}
 		{
+			dependencies: ["18540F033A0DC299"]
 			id: "12EBA56BB84D5973"
 			size: 1.0d
 			tasks: [{
@@ -755,7 +762,7 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.0d
 			y: 15.5d
 		}
 		{
@@ -767,7 +774,7 @@
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 1.5d
 			y: 15.5d
 		}
 		{
@@ -779,7 +786,7 @@
 				item: "minecraft:flint"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 3.0d
 			y: 15.5d
 		}
 		{
@@ -791,7 +798,7 @@
 				item: "gtceu:flint_dust"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 15.5d
 		}
 		{
@@ -803,7 +810,7 @@
 				item: "gtceu:silicon_dioxide_dust"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: 15.5d
 		}
 		{
@@ -816,7 +823,7 @@
 				item: "gtceu:oxygen_bucket"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 7.5d
 			y: 15.5d
 		}
 		{
@@ -866,7 +873,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 12.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["74E43E78D07AE3B6"]
@@ -883,7 +890,7 @@
 				item: "gtceu:lithium_dust"
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.0d
 			y: 14.5d
 		}
 		{
@@ -2110,7 +2117,7 @@
 			]
 			title: "{ftbquests.processing_lines_chap.sapphires.title}"
 			x: 0.0d
-			y: 12.5d
+			y: 11.5d
 		}
 		{
 			id: "02ED5054DF2DCDBE"
@@ -2690,7 +2697,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 12.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["13C1904CBEB09726"]
@@ -2774,7 +2781,7 @@
 				item: "gtceu:sodalite_dust"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: 11.5d
 		}
 		{
@@ -2786,7 +2793,7 @@
 				item: "gtceu:chlorine_bucket"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.0d
 			y: 12.5d
 		}
 		{
@@ -2884,6 +2891,267 @@
 			}]
 			x: 30.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["1207F7CCCB8335A5"]
+			id: "2322B5C57E863AFD"
+			rewards: [{
+				id: "34E8D2C5650E167F"
+				item: "kubejs:coin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4AFDC43A4DF95804"
+				item: "gtceu:bromine_bucket"
+				type: "item"
+			}]
+			x: 18.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["18CD53F83B5CA6C0"]
+			icon: "gtceu:concentrated_bromine_solution_bucket"
+			id: "1207F7CCCB8335A5"
+			tasks: [
+				{
+					id: "489666661C80FAC5"
+					item: "gtceu:concentrated_bromine_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4FEC77C9901A2916"
+					title: "{ftbquests.processing_lines_chap.concentrated_bromine_solution.title}"
+					type: "checkmark"
+				}
+			]
+			x: 17.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["207D97AC4EFA9011"]
+			icon: "gtceu:acidic_bromine_solution_bucket"
+			id: "18CD53F83B5CA6C0"
+			tasks: [
+				{
+					id: "3E6C16B276044098"
+					item: "gtceu:acidic_bromine_solution_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6AB51AF8AAF32F05"
+					title: "{ftbquests.processing_lines_chap.acidic_bromine_solution.title}"
+					type: "checkmark"
+				}
+			]
+			x: 16.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["6A3F86F68FC25141"]
+			icon: "gtceu:brominated_chlorine_vapor_bucket"
+			id: "207D97AC4EFA9011"
+			tasks: [
+				{
+					id: "10FE6B082176F0FF"
+					item: "gtceu:brominated_chlorine_vapor_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7AA4976128855159"
+					title: "{ftbquests.processing_lines_chap.brominated_chlorine_vapor.title}"
+					type: "checkmark"
+				}
+			]
+			x: 15.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["70DF71EEDB0AEA7C"]
+			icon: "gtceu:hot_chlorinated_brominated_brine_bucket"
+			id: "6A3F86F68FC25141"
+			tasks: [
+				{
+					id: "1BC1D05D54DAE0CB"
+					item: "gtceu:hot_chlorinated_brominated_brine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1E17F518616149E2"
+					title: "{ftbquests.processing_lines_chap.hot_chlorinated_brominated_brine.title}"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: 25.0d
+		}
+		{
+			dependencies: [
+				"7922FA333384E7CA"
+				"6B1E88A09583F979"
+			]
+			icon: "gtceu:hot_brine_bucket"
+			id: "70DF71EEDB0AEA7C"
+			tasks: [
+				{
+					id: "3B49F21272614643"
+					item: "gtceu:hot_brine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6B41042C6EA92503"
+					title: "{ftbquests.processing_lines_chap.hot_brine.title}"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["6B1E88A09583F979"]
+			icon: "gtceu:raw_brine_bucket"
+			id: "7922FA333384E7CA"
+			tasks: [
+				{
+					id: "6A83DB74B6319591"
+					item: "gtceu:raw_brine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2B604113D4EFF74C"
+					title: "{ftbquests.processing_lines_chap.raw_brine.title}"
+					type: "checkmark"
+				}
+			]
+			x: 13.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["6A3F86F68FC25141"]
+			icon: "gtceu:hot_alkaline_debrominated_brine_bucket"
+			id: "5E20303EBDE186BE"
+			tasks: [
+				{
+					id: "4FEB563680D33A0F"
+					item: "gtceu:hot_alkaline_debrominated_brine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "51043E6430D95FB7"
+					title: "{ftbquests.processing_lines_chap.hot_alkaline_debrominated_brine.title}"
+					type: "checkmark"
+				}
+			]
+			x: 14.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["5E20303EBDE186BE"]
+			icon: "gtceu:hot_debrominated_brine_bucket"
+			id: "466D567536DD2B09"
+			tasks: [
+				{
+					id: "6943BB0F50F0658E"
+					item: "gtceu:hot_debrominated_brine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2CF9A32E88ED095F"
+					title: "{ftbquests.processing_lines_chap.hot_debrominated_brine.title}"
+					type: "checkmark"
+				}
+			]
+			x: 15.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["466D567536DD2B09"]
+			icon: "gtceu:debrominated_brine_bucket"
+			id: "3DAE5FC862CFB0B3"
+			tasks: [
+				{
+					id: "09BEAA62A2D347E0"
+					item: "gtceu:debrominated_brine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0CC2251D32527FF6"
+					title: "{ftbquests.processing_lines_chap.debrominated_brine.title}"
+					type: "checkmark"
+				}
+			]
+			x: 16.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["3DAE5FC862CFB0B3"]
+			icon: "gtceu:hot_brine_bucket"
+			id: "7122AAF05EA6C169"
+			tasks: [
+				{
+					id: "0FFC26ED7248A036"
+					item: "gtceu:hot_brine_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "32E722FFBBEABECA"
+					title: "{ftbquests.processing_lines_chap.hot_brine.title}"
+					type: "checkmark"
+				}
+			]
+			x: 17.5d
+			y: 26.0d
+		}
+		{
+			dependencies: ["3DAE5FC862CFB0B3"]
+			icon: "gtceu:salt_water_bucket"
+			id: "2D945812A0348DC4"
+			tasks: [
+				{
+					id: "63A8FEBF511C0BD4"
+					item: "gtceu:salt_water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2244321FCC5D2FB3"
+					title: "{ftbquests.processing_lines_chap.salt_water.title}"
+					type: "checkmark"
+				}
+			]
+			x: 17.0d
+			y: 27.0d
+		}
+		{
+			dependencies: ["18CD53F83B5CA6C0"]
+			icon: "gtceu:acidic_bromine_exhaust_bucket"
+			id: "3B84ADA552DD6FF6"
+			tasks: [
+				{
+					id: "0153BF78C681F3FC"
+					item: "gtceu:acidic_bromine_exhaust_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "686AD61F8E1B0D36"
+					title: "{ftbquests.processing_lines_chap.acidic_bromine_exhaust.title}"
+					type: "checkmark"
+				}
+			]
+			x: 16.5d
+			y: 24.0d
 		}
 	]
 	title: "{ftbquests.processing_lines_chap_123.title}"

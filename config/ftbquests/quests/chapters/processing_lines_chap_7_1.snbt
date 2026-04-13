@@ -8,14 +8,16 @@
 	order_index: 4
 	progression_mode: "flexible"
 	quest_links: [{
-		id: "748DA87BBBFC0D45"
-		linked_quest: "6B1E88A09583F979"
-		x: -14.0d
-		y: 10.0d
+		id: "56299A793253A776"
+		linked_quest: "4DF07CB3D60C901C"
+		shape: "rsquare"
+		size: 1.5d
+		x: -12.0d
+		y: -3.0d
 	}]
 	quests: [
 		{
-			dependencies: ["3EA66E80E1F54265"]
+			dependencies: ["4DF07CB3D60C901C"]
 			icon: "gtceu:highly_unstable_nether_magma_bucket"
 			id: "27D7C1B5750ADFEE"
 			tasks: [
@@ -113,7 +115,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3EA66E80E1F54265"]
+			dependencies: ["4DF07CB3D60C901C"]
 			icon: "gtceu:debris_rich_nether_magma_bucket"
 			id: "7451A2DF93606CDC"
 			tasks: [
@@ -207,7 +209,6 @@
 				"273E965C174936E0"
 				"1AEBAE3050B72906"
 			]
-			hide_dependent_lines: true
 			id: "07A6B3DF67E267A0"
 			tasks: [{
 				id: "79B4338B34520EFA"
@@ -219,6 +220,7 @@
 		}
 		{
 			dependencies: ["07A6B3DF67E267A0"]
+			hide_dependency_lines: true
 			id: "59015C06412CC8D3"
 			tasks: [{
 				id: "5386F6501BC37B0F"
@@ -547,20 +549,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["4DF07CB3D60C901C"]
-			icon: "minecraft:netherrack"
-			id: "3EA66E80E1F54265"
-			shape: "circle"
-			size: 1.5d
-			tasks: [{
-				id: "55FB41FCEAAE689F"
-				title: "{ftbquests.processing_lines_chap.nether_drilling.title}"
-				type: "checkmark"
-			}]
-			x: -12.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["1DD1F042C58A825D"]
 			icon: "gtceu:molten_estaltadyne_mixture_bucket"
 			id: "480D10972B534D61"
@@ -596,7 +584,7 @@
 				}
 			]
 			x: -8.5d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["168D07A4A8CDB0F8"]
@@ -615,7 +603,7 @@
 				}
 			]
 			x: -7.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1EC1C7B70E558D3D"]
@@ -634,7 +622,7 @@
 				}
 			]
 			x: -6.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1EC1C7B70E558D3D"]
@@ -645,7 +633,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["03323B1482966A1C"]
@@ -664,7 +652,7 @@
 				}
 			]
 			x: -4.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1009C2A64244C8CA"]
@@ -683,7 +671,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["78CA9E89A164CC63"]
@@ -702,7 +690,7 @@
 				}
 			]
 			x: -5.0d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["78CA9E89A164CC63"]
@@ -721,7 +709,7 @@
 				}
 			]
 			x: -4.5d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["78CA9E89A164CC63"]
@@ -740,7 +728,7 @@
 				}
 			]
 			x: -6.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["480D10972B534D61"]
@@ -879,8 +867,8 @@
 				item: "gtceu:estalt_dust"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -898,8 +886,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
-			y: 3.0d
+			x: -0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4619D7E9C71980AC"]
@@ -917,8 +905,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.5d
-			y: 2.0d
+			x: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4619D7E9C71980AC"]
@@ -936,8 +924,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.5d
-			y: 4.0d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4619D7E9C71980AC"]
@@ -955,8 +943,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.5d
-			y: 3.0d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["392EB968F2A026AF"]
@@ -974,8 +962,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
-			y: 2.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7336292242C66D47"]
@@ -993,8 +981,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
-			y: 4.0d
+			x: 3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1007,8 +995,8 @@
 				item: "gtceu:antimony_trifluoride_dust"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 3.0d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1029,8 +1017,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: 3.0d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["51DB0B7401FD87EA"]
@@ -1040,8 +1028,8 @@
 				item: "gtceu:calamatium_fluoride_dust"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 4.0d
+			x: 5.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["03F1BFA0968D4763"]
@@ -1051,8 +1039,8 @@
 				item: "gtceu:isovol_fluoride_dust"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 2.0d
+			x: 5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["02CE7EA4609EEB0D"]
@@ -1062,8 +1050,8 @@
 				item: "gtceu:isovol_dust"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 2.0d
+			x: 6.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0C874F884F1A49AC"]
@@ -1073,8 +1061,8 @@
 				item: "gtceu:calamatium_dust"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 4.0d
+			x: 6.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1095,8 +1083,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 7.5d
-			y: 3.0d
+			x: 7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1117,8 +1105,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 6.5d
-			y: 3.0d
+			x: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["07F32171286545A5"]
@@ -1136,8 +1124,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 8.5d
-			y: 2.0d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["62ABA5F6CAA8339B"]
@@ -1155,8 +1143,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 8.5d
-			y: 4.0d
+			x: 8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["45A7CB586A63E2D8"]
@@ -1174,8 +1162,8 @@
 				item: "gtceu:isovol_ingot"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 2.0d
+			x: 10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["74A13511E58B0CA3"]
@@ -1193,8 +1181,8 @@
 				item: "gtceu:calamatium_ingot"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 4.0d
+			x: 10.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1209,8 +1197,8 @@
 				item: "gtceu:atomic_nether_sludge_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 10.0d
+			x: 12.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["24288AB05FC9DB33"]
@@ -1220,8 +1208,8 @@
 				item: "gtceu:hafnastide_rich_sludge_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 12.5d
+			x: 12.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["24288AB05FC9DB33"]
@@ -1231,8 +1219,8 @@
 				item: "gtceu:pologium_rich_sludge_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 7.5d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["24288AB05FC9DB33"]
@@ -1242,8 +1230,8 @@
 				item: "gtceu:flerovium_rich_re_sludge_dust"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 10.0d
+			x: 14.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1268,8 +1256,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 10.0d
+			x: 15.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3A15777DD813EE71"]
@@ -1287,8 +1275,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.5d
-			y: 11.0d
+			x: 16.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7CC060CF914B6D2D"]
@@ -1306,8 +1294,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.5d
-			y: 9.0d
+			x: 17.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1328,8 +1316,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 4.0d
-			y: 10.0d
+			x: 17.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7CC060CF914B6D2D"]
@@ -1347,8 +1335,8 @@
 				item: "gtceu:flerovium_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 10.0d
+			x: 19.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1369,8 +1357,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -2.5d
-			y: 10.0d
+			x: 10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1383,8 +1371,8 @@
 				item: "gtceu:seaborgium_dioxide_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.5d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3A15777DD813EE71"]
@@ -1402,8 +1390,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.5d
-			y: 4.5d
+			x: 13.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1424,8 +1412,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.0d
-			y: 5.5d
+			x: 14.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3C7E223BC46DD434"]
@@ -1443,8 +1431,8 @@
 				item: "gtceu:seaborgium_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.5d
+			x: 16.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1457,8 +1445,8 @@
 				item: "gtceu:polonium_carbonate_dust"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 7.5d
+			x: 14.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3A15777DD813EE71"]
@@ -1468,8 +1456,8 @@
 				item: "gtceu:calcium_dust"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 6.5d
+			x: 15.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6290F2A582039B7F"]
@@ -1479,8 +1467,8 @@
 				item: "gtceu:calcium_carbonate_dust"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 8.5d
+			x: 16.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1502,8 +1490,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 3.0d
-			y: 7.5d
+			x: 16.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["6290F2A582039B7F"]
@@ -1521,8 +1509,8 @@
 				item: "gtceu:polonium_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 7.5d
+			x: 18.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1535,8 +1523,8 @@
 				item: "gtceu:hafnium_hexachloride_dust"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 14.5d
+			x: 12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3A15777DD813EE71"]
@@ -1546,8 +1534,8 @@
 				item: "gtceu:magnesium_dust"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 15.5d
+			x: 13.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["68ECE77B31058268"]
@@ -1557,8 +1545,8 @@
 				item: "gtceu:magnesium_chloride_dust"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 13.5d
+			x: 14.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1579,8 +1567,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 1.0d
-			y: 14.5d
+			x: 14.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["68ECE77B31058268"]
@@ -1598,8 +1586,8 @@
 				item: "gtceu:hafnium_ingot"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 14.5d
+			x: 16.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1612,8 +1600,8 @@
 				item: "gtceu:sodium_astatide_dust"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 12.5d
+			x: 14.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["05D86EF996691BA4"]
@@ -1631,8 +1619,8 @@
 				item: "gtceu:astatine_dust"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 12.5d
+			x: 16.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1653,8 +1641,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.0d
-			y: 10.0d
+			x: 8.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3A15777DD813EE71"]
@@ -1672,8 +1660,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -3.0d
-			y: 11.0d
+			x: 9.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0C8EB843161B4D3E"]
@@ -1683,8 +1671,8 @@
 				item: "gtceu:caesium_fluoride_dust"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 9.0d
+			x: 10.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1706,8 +1694,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -5.5d
-			y: 10.0d
+			x: 7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7CACFC7C9101EA59"]
@@ -1717,8 +1705,8 @@
 				item: "gtceu:caesium_fluoride_dust"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 11.0d
+			x: 8.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3A15777DD813EE71"]
@@ -1736,8 +1724,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -6.0d
-			y: 11.0d
+			x: 6.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1820787D031EAB15"]
@@ -1747,8 +1735,8 @@
 				item: "gtceu:nickel_fluoride_dust"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 9.0d
+			x: 6.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4C4E700B3DE67CDD"]
@@ -1849,7 +1837,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["3EA66E80E1F54265"]
+			dependencies: ["4DF07CB3D60C901C"]
 			icon: "gtceu:crude_infernal_concentrate_bucket"
 			id: "4247187736CE6FCF"
 			tasks: [
@@ -2052,267 +2040,6 @@
 			}]
 			x: -14.0d
 			y: 6.5d
-		}
-		{
-			dependencies: ["1207F7CCCB8335A5"]
-			id: "2322B5C57E863AFD"
-			rewards: [{
-				id: "34E8D2C5650E167F"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "4AFDC43A4DF95804"
-				item: "gtceu:bromine_bucket"
-				type: "item"
-			}]
-			x: -7.5d
-			y: 10.0d
-		}
-		{
-			dependencies: ["18CD53F83B5CA6C0"]
-			icon: "gtceu:concentrated_bromine_solution_bucket"
-			id: "1207F7CCCB8335A5"
-			tasks: [
-				{
-					id: "489666661C80FAC5"
-					item: "gtceu:concentrated_bromine_solution_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4FEC77C9901A2916"
-					title: "{ftbquests.processing_lines_chap.concentrated_bromine_solution.title}"
-					type: "checkmark"
-				}
-			]
-			x: -9.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["207D97AC4EFA9011"]
-			icon: "gtceu:acidic_bromine_solution_bucket"
-			id: "18CD53F83B5CA6C0"
-			tasks: [
-				{
-					id: "3E6C16B276044098"
-					item: "gtceu:acidic_bromine_solution_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6AB51AF8AAF32F05"
-					title: "{ftbquests.processing_lines_chap.acidic_bromine_solution.title}"
-					type: "checkmark"
-				}
-			]
-			x: -10.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["6A3F86F68FC25141"]
-			icon: "gtceu:brominated_chlorine_vapor_bucket"
-			id: "207D97AC4EFA9011"
-			tasks: [
-				{
-					id: "10FE6B082176F0FF"
-					item: "gtceu:brominated_chlorine_vapor_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "7AA4976128855159"
-					title: "{ftbquests.processing_lines_chap.brominated_chlorine_vapor.title}"
-					type: "checkmark"
-				}
-			]
-			x: -11.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["70DF71EEDB0AEA7C"]
-			icon: "gtceu:hot_chlorinated_brominated_brine_bucket"
-			id: "6A3F86F68FC25141"
-			tasks: [
-				{
-					id: "1BC1D05D54DAE0CB"
-					item: "gtceu:hot_chlorinated_brominated_brine_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "1E17F518616149E2"
-					title: "{ftbquests.processing_lines_chap.hot_chlorinated_brominated_brine.title}"
-					type: "checkmark"
-				}
-			]
-			x: -12.0d
-			y: 10.0d
-		}
-		{
-			dependencies: [
-				"7922FA333384E7CA"
-				"6B1E88A09583F979"
-			]
-			icon: "gtceu:hot_brine_bucket"
-			id: "70DF71EEDB0AEA7C"
-			tasks: [
-				{
-					id: "3B49F21272614643"
-					item: "gtceu:hot_brine_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6B41042C6EA92503"
-					title: "{ftbquests.processing_lines_chap.hot_brine.title}"
-					type: "checkmark"
-				}
-			]
-			x: -13.0d
-			y: 9.0d
-		}
-		{
-			dependencies: ["6B1E88A09583F979"]
-			icon: "gtceu:raw_brine_bucket"
-			id: "7922FA333384E7CA"
-			tasks: [
-				{
-					id: "6A83DB74B6319591"
-					item: "gtceu:raw_brine_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2B604113D4EFF74C"
-					title: "{ftbquests.processing_lines_chap.raw_brine.title}"
-					type: "checkmark"
-				}
-			]
-			x: -13.0d
-			y: 11.0d
-		}
-		{
-			dependencies: ["6A3F86F68FC25141"]
-			icon: "gtceu:hot_alkaline_debrominated_brine_bucket"
-			id: "5E20303EBDE186BE"
-			tasks: [
-				{
-					id: "4FEB563680D33A0F"
-					item: "gtceu:hot_alkaline_debrominated_brine_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "51043E6430D95FB7"
-					title: "{ftbquests.processing_lines_chap.hot_alkaline_debrominated_brine.title}"
-					type: "checkmark"
-				}
-			]
-			x: -11.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["5E20303EBDE186BE"]
-			icon: "gtceu:hot_debrominated_brine_bucket"
-			id: "466D567536DD2B09"
-			tasks: [
-				{
-					id: "6943BB0F50F0658E"
-					item: "gtceu:hot_debrominated_brine_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2CF9A32E88ED095F"
-					title: "{ftbquests.processing_lines_chap.hot_debrominated_brine.title}"
-					type: "checkmark"
-				}
-			]
-			x: -10.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["466D567536DD2B09"]
-			icon: "gtceu:debrominated_brine_bucket"
-			id: "3DAE5FC862CFB0B3"
-			tasks: [
-				{
-					id: "09BEAA62A2D347E0"
-					item: "gtceu:debrominated_brine_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0CC2251D32527FF6"
-					title: "{ftbquests.processing_lines_chap.debrominated_brine.title}"
-					type: "checkmark"
-				}
-			]
-			x: -9.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["3DAE5FC862CFB0B3"]
-			icon: "gtceu:hot_brine_bucket"
-			id: "7122AAF05EA6C169"
-			tasks: [
-				{
-					id: "0FFC26ED7248A036"
-					item: "gtceu:hot_brine_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "32E722FFBBEABECA"
-					title: "{ftbquests.processing_lines_chap.hot_brine.title}"
-					type: "checkmark"
-				}
-			]
-			x: -8.5d
-			y: 11.0d
-		}
-		{
-			dependencies: ["3DAE5FC862CFB0B3"]
-			icon: "gtceu:salt_water_bucket"
-			id: "2D945812A0348DC4"
-			tasks: [
-				{
-					id: "63A8FEBF511C0BD4"
-					item: "gtceu:salt_water_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "2244321FCC5D2FB3"
-					title: "{ftbquests.processing_lines_chap.salt_water.title}"
-					type: "checkmark"
-				}
-			]
-			x: -9.0d
-			y: 12.0d
-		}
-		{
-			dependencies: ["18CD53F83B5CA6C0"]
-			icon: "gtceu:acidic_bromine_exhaust_bucket"
-			id: "3B84ADA552DD6FF6"
-			tasks: [
-				{
-					id: "0153BF78C681F3FC"
-					item: "gtceu:acidic_bromine_exhaust_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "686AD61F8E1B0D36"
-					title: "{ftbquests.processing_lines_chap.acidic_bromine_exhaust.title}"
-					type: "checkmark"
-				}
-			]
-			x: -9.5d
-			y: 9.0d
 		}
 		{
 			dependencies: ["06684A8C80104B88"]
@@ -2536,8 +2263,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 2.0d
-			y: 9.0d
+			x: 15.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["53B8A2EFCF2D4371"]
@@ -2597,8 +2324,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
-			y: 6.5d
+			x: 13.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["53B8A2EFCF2D4371"]
@@ -2652,8 +2379,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.0d
-			y: 13.5d
+			x: 13.0d
+			y: 2.0d
 		}
 	]
 	title: "{ftbquests.processing_lines_chap_7-1.title}"
