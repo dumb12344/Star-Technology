@@ -80,12 +80,14 @@
 			size: 1.5d
 			subtitle: "{ftbquests.abydos.world.subtitle}"
 			tasks: [{
-				id: "015668E3D80CF755"
-				title: "{ftbquests.abydos.world.title}"
-				type: "checkmark"
+				dimension: "sgjourney:abydos"
+				icon: "minecraft:suspicious_sand"
+				id: "0087D8D411DBF77E"
+				title: "The Sands Await"
+				type: "dimension"
 			}]
-			x: -12.5d
-			y: -3.5d
+			x: -10.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["37E3EF96EDE85C86"]
@@ -129,8 +131,8 @@
 				}
 			]
 			title: "{ftbquests.abydos.cyclonic_sifter.title}"
-			x: -10.5d
-			y: -5.5d
+			x: -8.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -298,8 +300,8 @@
 				title: "{ftbquests.abydos.temples.title}"
 				type: "structure"
 			}]
-			x: -12.5d
-			y: -1.5d
+			x: -10.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
@@ -366,69 +368,6 @@
 			]
 			title: "{ftbquests.abydos.bacteria.title}"
 			x: -10.5d
-			y: 2.5d
-		}
-		{
-			dependencies: ["3479CEBD73550718"]
-			description: ["{ftbquests.abydos.runic_tablet_fragments.description}"]
-			id: "5744150A5658FE4D"
-			rewards: [{
-				id: "615C650D39461500"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "4A3AF474374EF0A2"
-					item: "kubejs:runic_tablet_1"
-					type: "item"
-				}
-				{
-					id: "4BF3E9FE38DBB62D"
-					item: "kubejs:runic_tablet_2"
-					type: "item"
-				}
-				{
-					id: "008319845A3C72D8"
-					item: "kubejs:runic_tablet_3"
-					type: "item"
-				}
-				{
-					id: "311632C46C1A9166"
-					item: "kubejs:runic_tablet_4"
-					type: "item"
-				}
-				{
-					id: "6F5F5658E9926178"
-					item: "kubejs:runic_tablet_5"
-					type: "item"
-				}
-				{
-					id: "76B9C4AB8664AD51"
-					item: "kubejs:runic_tablet_6"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.abydos.runic_tablet_fragments.title}"
-			x: -12.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["5744150A5658FE4D"]
-			description: ["{ftbquests.abydos.runic_tablet_complete.description}"]
-			hide_dependent_lines: true
-			id: "146F88E5C1119649"
-			rewards: [{
-				id: "2DDF7ACB3920B1DA"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			tasks: [{
-				id: "70D8D8D888FABD9D"
-				item: "kubejs:runic_tablet_complete"
-				type: "item"
-			}]
-			x: -12.5d
 			y: 2.5d
 		}
 		{
@@ -642,7 +581,7 @@
 			]
 			title: "{ftbquests.abydos.gritty_akreyrium.title}"
 			x: -10.5d
-			y: -3.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["07AD6651D0B40E22"]
@@ -817,8 +756,8 @@
 				item: "kubejs:abydos_talisman"
 				type: "item"
 			}]
-			x: -12.0d
-			y: -6.5d
+			x: -13.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["493DD013C818BB7B"]

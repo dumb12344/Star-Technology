@@ -62,22 +62,6 @@ ServerEvents.recipes(event => {
             .CWUt(48)
         )
         .EUt(GTValues.VHA[GTValues.ZPM]);
-
-//     event.recipes.gtceu.assembly_line(id('gate_assembly'))
-//             .itemInputs('gtceu:ancient_runicalium_frame', '32x #gtceu:circuits/uhv', '8x gtceu:uhv_field_generator', '8x kubejs:uhv_catalyst_core', 
-//                     '16x gtceu:uhv_robot_arm', '16x gtceu:uhv_robot_arm', '16x gtceu:uhv_robot_arm', '16x gtceu:uhv_robot_arm', 
-//                     '64x kubejs:uepic_chip', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip', '64x kubejs:uepic_chip', 
-//                     '56x gtceu:ancient_runicalium_screw', '32x gtceu:stellarium_single_wire')
-//             .inputFluids('gtceu:stellarium 36864', 'gtceu:akreyrium_pcb_graphite_nanoparticle_coolant 64000', 'gtceu:tritanium 73728')
-//             .itemOutputs('gtceu:gate_assembly')
-//             .duration(9600)
-//             .stationResearch(
-//         researchRecipeBuilder => researchRecipeBuilder
-//                 .researchStack(Item.of('gtceu:stargate_component_assembly'))
-//                 .EUt(GTValues.VHA[GTValues.UHV])
-//                 .CWUt(144)
-//             )
-//             .EUt(GTValues.VHA[GTValues.UEV]);
                 
     event.recipes.gtceu.assembly_line(id('runic_wave_generator'))
             .itemInputs('gtceu:dragonsteel_frame','gtceu:exquisite_runic_laser_source_base_gem','64x gtceu:energy_module','32x gtceu:energy_module', 

@@ -28,6 +28,13 @@ ServerEvents.recipes(event => {
         .duration(12000)
         .EUt(GTValues.VHA[GTValues.UV]);
 
+    event.recipes.gtceu.mixer(id('akreyriadic_runixium_dust'))
+        .itemInputs('7x gtceu:runic_laser_source_base_dust', '4x gtceu:ancient_runicalium_dust', '2x gtceu:strontium_titanium_oxide_dust')
+        .inputFluids('gtceu:utopian_akreyrium 5000')
+        .itemOutputs('18x gtceu:akreyriadic_runixium_dust')
+        .duration(9600)
+        .EUt(GTValues.VHA[GTValues.UEV]);
+
     event.remove({type: 'gtceu:implosion_compressor', input: 'gtceu:naquadic_netherite_dust'});
 
     event.recipes.gtceu.implosion_compressor(id(`naquadic_netherite_dynamite`))
@@ -46,7 +53,16 @@ ServerEvents.recipes(event => {
         .duration(320)
         .EUt(GTValues.VHA[GTValues.IV]);
 
-event.recipes.gtceu.laser_engraver(id('coordinate_crystal'))
+    event.remove({type: 'gtceu:implosion_compressor', input: 'gtceu:akreyriadic_runixium_dust'});
+
+    event.recipes.gtceu.implosion_compressor(id(`akreyriadic_runixium_industrial_tnt`))
+        .itemInputs('gtceu:akreyriadic_runixium_dust', '16x gtceu:industrial_tnt')
+        .itemOutputs('gtceu:akreyriadic_runixium_gem')
+        .chancedOutput('gtceu:dark_ash_dust', 2500, 0)
+        .duration(800)
+        .EUt(GTValues.VHA[GTValues.LuV]);
+
+    event.recipes.gtceu.laser_engraver(id('coordinate_crystal'))
         .itemInputs('gtceu:exquisite_purified_naquadah_gem')
         .notConsumable('gtceu:nether_star_lens')
         .itemOutputs('kubejs:coordinate_crystal')
@@ -81,6 +97,11 @@ event.recipes.gtceu.laser_engraver(id('coordinate_crystal'))
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_weapon_grade_naquadah_gas'},
+        Fluid.of('gtceu:krypton 10'),
+        Fluid.of('gtceu:xenon 10')
+    );
+
+    event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_weapon_grade_stellarized_naquadah_gas'},
         Fluid.of('gtceu:krypton 10'),
         Fluid.of('gtceu:xenon 10')
     );

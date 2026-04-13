@@ -1256,7 +1256,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Akreyium Line
     elemFluid('utopian_akreyrium', 'akreyrium', 0xffffff, []);
 
-    compIngotLiquid('lepton_coalescing_superalloy', ['4x thallium_tungstate', '2x nickel', '4x graphene', '3x niobium', '4x bismuth'], 0x5fadff, DULL ,[5300, 'high', VA('luv'), 1400], [plates, rod, frame, foil]);
+    compIngotLiquid('lepton_coalescing_superalloy', ['4x thallium_tungstate', '2x nickel', '4x graphene', '3x niobium', '4x bismuth'], 0x80d1c8, DULL ,[5300, 'high', VA('luv'), 1400], [plates, rod, frame, foil]);
 
     compLiquid('lepton_sparse_akreyrium', ['1x utopian_akreyrium', '1x mystery'], 0x6E6E87, [no_decomp]);
 
@@ -1432,6 +1432,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('runic_convergence_infusion', ['3x pure_netherite', '6x magnesium', '7x nitrogen', '2x silicon', '8x oxygen', '1x fluorine'], 0xcc0099, [no_decomp]);
 
     compIngot('neutronium_silicon_carbide', ['2x neutronium','7x silicon_carbide','3x niobium_nitride','3x graphene'],0xCFCAB8,DULL,[5000, 'highest', VA('uhv'), 1800], [foil, no_decomp, no_abs_recipe])
+
+    compGem('akreyriadic_runixium', ['7x runic_laser_source_base', '4x ancient_runicalium', '2x strontium_titanium_oxide','5x akreyrium'], 0xffba75, OPAL, []);    
 
     //Abyss Harvesting
     compLiquidTemp('low_saturation_voidic_excression', 19999, '1x mystery', 0x0A0A0A, [no_decomp]);

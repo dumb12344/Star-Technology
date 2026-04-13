@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	filename: "pl2"
 	group: "03EF8417F6D21A2E"
 	icon: "gtceu:large_chemical_reactor"
@@ -1105,8 +1105,8 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
-			y: 1.0d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["050206AAE7043982"]
@@ -1168,11 +1168,14 @@
 				item: "gtceu:naquadah_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.0d
+			x: 6.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["66C746E820671861"]
+			dependencies: [
+				"66C746E820671861"
+				"037DBFBF652DB857"
+			]
 			id: "09F19610F86D2775"
 			size: 1.0d
 			tasks: [{
@@ -1181,7 +1184,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["66C746E820671861"]
@@ -1292,7 +1295,7 @@
 				}
 			]
 			x: 8.5d
-			y: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4ACEA9551BC73631"]
@@ -1311,7 +1314,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["037DBFBF652DB857"]
@@ -1413,8 +1416,8 @@
 				item: "gtceu:biphenyl_dust"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 1.0d
+			x: 9.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["073FA13EEEA78C5F"]
@@ -1433,8 +1436,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 11.0d
-			y: 1.0d
+			x: 10.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["721A2D614DBBAECC"]
@@ -1452,8 +1455,8 @@
 				item: "gtceu:pcb_coolant_bucket"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 1.0d
+			x: 12.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [

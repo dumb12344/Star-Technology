@@ -3,38 +3,96 @@ ServerEvents.recipes(event => {
 
     const cpa = 'component_part_assembly';
     const assline = 'assembly_line';
-    const lcr = event.recipes.gtceu.large_chemical_reactor;
     const vcr = event.recipes.gtceu.vacuum_chemical_reaction_chamber;
     const cut = event.recipes.gtceu.cutter;
     const injectMix = event.recipes.gtceu.injection_mixer;
-    const assembler = event.recipes.gtceu.assembler;
-    const circAss = event.recipes.gtceu.circuit_assembler;
     const rotor = event.recipes.gtceu.large_rotor_machine;
-    const heat = event.recipes.gtceu.heat_chamber;
     const pressureHeat = event.recipes.gtceu.pressure_heat_chamber;
     const stargateComponent = event.recipes.gtceu.stargate_component_assembly;
 
     // Classic Gate Components
     const researchBuilder = global.researchBuilder;
     // global.researchBuilder = (machineType, recId, inputsI, inputsF, outputsI, duration, cwuT, totalCWU, euT, researched)
-    
-    researchBuilder(cpa, 'abyss_fragment', [
-        'gtceu:neutronium_frame', '16x gtceu:gravi_star', '12x gtceu:polyether_ether_ketone_foil', 
-        '6x gtceu:neutronium_tiny_fluid_pipe', '16x minecraft:echo_shard'
-    ], [
-        'gtceu:naquadated_soldering_alloy 1000', 'gtceu:utopian_akreyrium 1000'
-    ], [
-        'kubejs:abyss_fragment'
-    ], 6000, 192, 192 * 1200, GTValues.VHA[GTValues.UHV], 'minecraft:echo_shard');
 
-    researchBuilder(cpa, 'inferno_fragment', [
-        'gtceu:neutronium_frame', '16x gtceu:gravi_star', '12x gtceu:polyether_ether_ketone_foil', 
-        '6x gtceu:neutronium_tiny_fluid_pipe', '16x minecraft:blaze_rod'
-    ], [
-        'gtceu:naquadated_soldering_alloy 1000', 'gtceu:utopian_akreyrium 1000'
-    ], [
-        'kubejs:inferno_fragment'
-    ], 6000, 96, 192 * 1200, GTValues.VHA[GTValues.UHV], 'minecraft:blaze_rod');
+    researchBuilder(assline, 'asg_field_stabilizer', 
+        ['gtceu:weapon_grade_stellarized_naquadah_frame', '8x gtceu:uhv_field_generator', 'kubejs:asg_energy_modulator',
+            '2x gtceu:neutronium_ultradense_plate','32x gtceu:fine_stellarium_wire','32x gtceu:fine_melodium_wire'
+            ,'32x gtceu:fine_enderium_wire', '12x gtceu:zalloy_screw'], 
+        ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:utopian_akreyrium 1000'], 
+        ['kubejs:asg_field_stabilizer'], 
+        6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:csg_field_stabilizer');
+
+    researchBuilder(cpa, 'asg_stellar_dialer', 
+        ['gtceu:neutronium_ultradense_plate', 'gtceu:monitor', 'kubejs:asg_computational_matrix', 
+            '2x #gtceu:circuits/uev', '4x gtceu:stellarium_bolt'], 
+        ['gtceu:naquadated_soldering_alloy 1000'], 
+        ['kubejs:asg_stellar_dialer'], 
+        6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:csg_stellar_dialer');
+
+    researchBuilder(cpa, 'asg_computational_matrix', 
+        ['3x kubejs:runic_printed_circuit_board','32x gtceu:fine_stellarium_wire','24x kubejs:asg_dpu',
+            '8x gtceu:highly_advanced_soc','18x gtceu:ancient_runicalium_bolt','64x kubejs:uepic_chip'], 
+        ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:sterilized_growth_medium 1000'], 
+        ['kubejs:asg_computational_matrix'], 
+        6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:csg_computational_matrix');
+
+    researchBuilder(assline, 'asg_dimensional_supercomputer', 
+        ['3x gtceu:void_frame', '10x kubejs:asg_computational_matrix', 'kubejs:draconic_core', '4x kubejs:asg_energy_modulator', 
+            '6x gtceu:stellarium_foil_ream', '4x gtceu:ancient_runicalium_foil_ream','64x #gtceu:circuits/uev','32x #gtceu:circuits/uev',
+            '8x gtceu:uhv_fluid_regulator', '4x gtceu:zapolgium_large_fluid_pipe', '56x gtceu:perfluoroelastomer_rubber_ring',
+            '64x gtceu:polyether_ether_ketone_tiny_fluid_pipe'], 
+        ['gtceu:polyether_ether_ketone 1000', 'gtceu:naquadated_soldering_alloy 1000', 'gtceu:utopian_akreyrium 1000'], 
+        ['kubejs:asg_dimensional_supercomputer'], 
+        6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:runic_processor_mainframe');
+
+    researchBuilder(cpa, 'asg_dhd', 
+        ['sgjourney:classic_dhd', 'kubejs:asg_stellar_dialer', '18x kubejs:runic_reinforced_plating', 
+            '10x kubejs:runic_stabilization_plating', '18x kubejs:runic_pathway_plating', '18x kubejs:runic_transportation_plating'], 
+        ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:runic_convergence_infusion 1000'], 
+        ['sgjourney:milky_way_dhd'], 
+        6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'sgjourney:classic_dhd');
+
+    researchBuilder(assline, 'asg_energy_modulator', 
+        ['gtceu:void_frame', '2x gtceu:uhv_emitter', '6x gtceu:ancient_runicalium_foil', '6x gtceu:stellarium_foil',
+            '2x gtceu:energy_cluster', '8x kubejs:reinforced_neutron_reflector', '4x gtceu:uv_voltage_coil', '12x gtceu:zalloy_foil'], 
+        ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:akreyrium_pcb_graphite_nanoparticle_coolant 1000'], 
+        ['kubejs:asg_energy_modulator'], 
+        6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:csg_energy_modulator');
+
+    researchBuilder(cpa, 'asg_chevron', 
+        ['gtceu:ancient_runicalium_frame', 'gtceu:exquisite_akreyriadic_runixium_gem', '2x kubejs:asg_field_stabilizer','2x kubejs:asg_computational_matrix',
+            '8x gtceu:uhv_sensor', '48x kubejs:naquadic_netherite_fibers', '2x gtceu:uhv_electric_motor', '2x gtceu:long_ancient_runicalium_rod'], 
+        ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:utopian_akreyrium 1000'], 
+        ['kubejs:asg_chevron'], 
+        6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:csg_chevron');
+
+    researchBuilder(assline, 'asg_reinforced_plating', 
+        ['gtceu:neutronium_ultradense_plate', 'gtceu:titan_steel_ultradense_plate', 'gtceu:zalloy_ultradense_plate', 'gtceu:naquadria_ultradense_plate', 
+            '2x kubejs:runic_reinforced_plating', '2x gtceu:uhv_electric_piston', '2x #gtceu:circuits/uev', '18x gtceu:cerium_tritelluride_single_cable'], 
+        ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:runic_convergence_infusion 1000', 'gtceu:utopian_akreyrium 1000'], 
+        ['kubejs:asg_reinforced_plating'], 
+        6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:csg_reinforced_plating');
+
+    researchBuilder(assline, 'asg_stellar_access_point', 
+        ['gtceu:stellarium_frame','2x kubejs:asg_computational_matrix','2x gtceu:uhv_sensor', 'gtceu:ancient_runicalium_double_wire', 
+            'gtceu:polyimide_foil_ream','gtceu:aerogel_foil_ream','gtceu:neutronium_silicon_carbide_foil_ream','2x gtceu:dense_neutronium_plate'], 
+        ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:polyether_ether_ketone 1000'], 
+        ['kubejs:asg_stellar_access_point'], 
+        6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:csg_stellar_access_point');
+
+    researchBuilder(cpa, 'abyss_fragment', 
+        ['gtceu:neutronium_frame', '16x gtceu:gravi_star', '12x gtceu:polyether_ether_ketone_foil', 
+            '6x gtceu:neutronium_tiny_fluid_pipe', '16x minecraft:echo_shard'], 
+        ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:utopian_akreyrium 1000'], 
+        ['kubejs:abyss_fragment'], 
+        6000, 192, 192 * 1200, GTValues.VHA[GTValues.UHV], 'minecraft:echo_shard');
+
+    researchBuilder(cpa, 'inferno_fragment', 
+        ['gtceu:neutronium_frame', '16x gtceu:gravi_star', '12x gtceu:polyether_ether_ketone_foil', 
+            '6x gtceu:neutronium_tiny_fluid_pipe', '16x minecraft:blaze_rod'], 
+        ['gtceu:naquadated_soldering_alloy 1000', 'gtceu:utopian_akreyrium 1000'], 
+        ['kubejs:inferno_fragment'], 
+        6000, 96, 192 * 1200, GTValues.VHA[GTValues.UHV], 'minecraft:blaze_rod');
 
     injectMix(id('voidic_core'))
         .itemInputs('kubejs:quantum_core','8x kubejs:abyss_fragment')

@@ -1,7 +1,7 @@
 {
 	autofocus_id: "4B7A21F072563C7E"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	filename: "pl1"
 	group: "03EF8417F6D21A2E"
 	icon: "gtceu:lv_chemical_reactor"
