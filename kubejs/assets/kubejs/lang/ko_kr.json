@@ -23,16 +23,16 @@
 
     "effect.kubejs.reach": "범위 증가",
 
-    "item.kubejs.sweetcord_beer": "옥수수 맥주",
-    "item.kubejs.sweetcord_beer.tooltip": "§6성급함§7을 주는 단 맥주",
-    "item.kubejs.apple_cidar": "사과주",
-    "item.kubejs.apple_cidar.tooltip": "§6느린 낙하§7를 주는 한 잔하기 딱 좋은 음료",
+    "item.kubejs.sweetcorn_beer": "옥수수 맥주",
+    "item.kubejs.sweetcorn_beer.tooltip": "§6성급함§7을 주는 단 맥주",
+    "item.kubejs.apple_cider": "사과주",
+    "item.kubejs.apple_cider.tooltip": "§6느린 낙하§7를 주는 한 잔하기 딱 좋은 음료",
     "item.kubejs.carrot_ale": "당근 에일",
     "item.kubejs.carrot_ale.tooltip": "§6야간 투시§7룰 주는 약간 쓴 에일",
     "item.kubejs.berry_wine": "베리 와인",
     "item.kubejs.berry_wine.tooltip": "§6신속§7을 주는 클래식한 와인",
-    "item.kubejs.wheat_kvas": "밀 크바스",
-    "item.kubejs.wheat_kvas.tooltip": "§6점프 강화§7를 주는 달고 신 크바스",
+    "item.kubejs.wheat_kvass": "밀 크바스",
+    "item.kubejs.wheat_kvass.tooltip": "§6점프 강화§7를 주는 달고 신 크바스",
     "item.kubejs.sake": "사케",
     "item.kubejs.sake.tooltip": "§6범위 증가§7를 주는 비싼 사케",
 
