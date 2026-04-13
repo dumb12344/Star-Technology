@@ -46,7 +46,7 @@ global.not_hardmode(() => {
         }
 
         ['input_bus', 'output_bus', 'input_hatch', 'output_hatch'].forEach(type => {
-            assembler(`me_${type}`, `gtceu:me_${type}`, [`gtceu:ev_${type}`, '#gtceu:circuits/ev', 'ae2:fluix_smart_cable'], 8192);
+            assembler(`me_${type}`, `gtceu:me_${type}`, [`gtceu:ev_${type}`, '#gtceu:circuits/iv', 'ae2:fluix_smart_cable'], 2048);
         });
 
         // === MA ===

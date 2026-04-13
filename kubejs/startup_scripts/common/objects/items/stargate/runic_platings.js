@@ -18,7 +18,7 @@ StartupEvents.registry('item', event => {
 
 // === Runic Plating ===
 
-    ['reinforced','pathway','stabilization','transporation'].forEach(rune => {
+    ['reinforced','pathway','stabilization','transportation'].forEach(rune => {
 
     event.create(`runic_${rune}_plating`)
         .tooltip(Text.translate(`item.kubejs.runic_plating.tooltip`))

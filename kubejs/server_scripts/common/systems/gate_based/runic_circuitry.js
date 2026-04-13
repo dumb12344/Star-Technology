@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
         rcasRecipe('runic_stabilization_plating','gtceu:emerald_lens','asg_enscription_plate',
             '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 1000',
             GTValues.VHA[GTValues.ZPM],600)
-        rcasRecipe('runic_transporation_plating','gtceu:certus_quartz_lens','asg_enscription_plate',
+        rcasRecipe('runic_transportation_plating','gtceu:certus_quartz_lens','asg_enscription_plate',
             '64x gtceu:silicon_carbide_over_bismuth_tritelluride_dust','gtceu:runic_convergence_infusion 1000',
             GTValues.VHA[GTValues.ZPM],600)
         rcasRecipe('asg_dpu','gtceu:orange_glass_lens','asg_enscription_chip',

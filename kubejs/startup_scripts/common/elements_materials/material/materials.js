@@ -750,7 +750,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     compGem('naquadic_netherite', ['3x naquadah', '5x pure_netherite', '2x caesium', '5x cerium', '12x fluorine', '32x oxygen'], 0xffd966, DIAMOND, []);
 
-    compIngotLiquid('weapon_grade_naquadah', ['7x naquadria', '4x pure_netherite', '6x trinaquadalloy', '12x fluorine'], 0xccff33, DULL, [9001, 'highest', VA('zpm'), 3000], [foil, gear, long_rod, plates, rod, rotor, small_gear, ring, frame]);
+    compIngotLiquid('weapon_grade_naquadah', ['7x naquadria', '4x pure_netherite', '6x trinaquadalloy', '12x fluorine'], 0xccff33, DULL, [9001, 'highest', VA('zpm'), 3000], [foil, plates, rod, frame]);
+
+    compIngotLiquid('weapon_grade_stellarized_naquadah', ['1x void', '8x weapon_grade_naquadah', '4x stellarium'], 0x57ab6b, SHINY, [12049, 'highest', VA('uhv'), 3600], [foil, plates, rod, frame]);
 
     compGem('runic_laser_source_base', ['6x naquadic_netherite', '6x neptunium', '5x trinium'], 0x00ff00, OPAL, []);    
     

@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('kubejs:coordinate_crystal'))
                 .EUt(GTValues.VHA[GTValues.ZPM])
-                .CWUt(16)
+                .CWUt(40)
             )
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
@@ -29,8 +29,8 @@ ServerEvents.recipes(event => {
         .itemInputs('kubejs:coordinate_crystal', '64x minecraft:sand', '16x gtceu:zpm_sensor')
         .inputFluids('gtceu:naquadria 7200')
         .itemOutputs('kubejs:abydos_coordinate_crystal')
-        .CWUt(32)
-        .totalCWU(384000)
+        .CWUt(48)
+        .totalCWU(576000)
         .EUt(GTValues.VHA[GTValues.UV]);
 
     if (global.packmode == 'abydos'){
