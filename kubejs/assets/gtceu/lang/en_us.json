@@ -1443,7 +1443,7 @@
     "block.gtceu.super_pyrolyse": "Thermal Decomposition Array",
     "block.gtceu.super_barrel": "Industrial Accumulation Vessel",
 
-    "block.gtceu.super_gas_collector": "Compression Gas Siphon",
-    "block.gtceu.super_gas_collector.tooltip.0": "§7Collects gas just a bit faster.",
-    "block.gtceu.super_gas_collector.tooltip.1": "Can only have §bone§r Energy Hatch"
+    "material.gtceu.akreyriadic_runixium": "Akreyriadic-Runixium",
+    "material.gtceu.weapon_grade_stellarized_naquadah": "Weapon Grade §bStellarized§f Naquadah"
+  
 }

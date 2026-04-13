@@ -1,13 +1,6 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    event.recipes.gtceu.heat_chamber(id('nether_star_concentrate'))
-        .itemInputs('4x kubejs:energized_nether_star_shard', '2x gtceu:nether_star_dust')
-        .inputFluids('gtceu:energized_blitz 720','gtceu:energized_blizz 720','gtceu:energized_basalz 720','gtceu:energized_blaze 720')
-        .outputFluids('gtceu:nether_star_concentrate 576')
-        .duration(240)
-        .EUt(GTValues.VHA[GTValues.UEV]);
-
     event.recipes.gtceu.injection_mixer(id('dissipated_helish_concentrate'))
         .itemInputs('2x gtceu:plutonium_dust', '173x gtceu:warped_dust', '1x gtceu:astatine_dust', 
             '5x gtceu:netherite_dust', '3x thermal_extra:soul_sand_dust')
