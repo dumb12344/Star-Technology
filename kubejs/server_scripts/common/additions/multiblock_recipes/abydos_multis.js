@@ -121,8 +121,6 @@ ServerEvents.recipes(event => {
         .duration(3200)
         .EUt(GTValues.VHA[GTValues.UV]);
 
-        ServerEvents.recipes(event => {
-
     event.recipes.gtceu.assembly_line(id('exotic_rock_crusher'))
         .itemInputs('gtceu:large_material_press', '8x gtceu:uv_electric_piston', '4x gtceu:heat_vent', '4x gtceu:silicon_bronze_frame', '4x #gtceu:circuits/uv',
          '2x gtceu:titan_steel_ultradense_plate', '8x gtceu:titanium_carbide_plate', '4x gtceu:hsla_steel_plate' )
@@ -136,5 +134,5 @@ ServerEvents.recipes(event => {
                 .CWUt(24)
             )
         .EUt(GTValues.VHA[GTValues.UV]);
-        });
+        
 });
