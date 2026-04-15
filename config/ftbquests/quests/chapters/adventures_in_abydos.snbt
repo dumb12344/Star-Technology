@@ -1895,6 +1895,17 @@
 			x: -8.5d
 			y: -1.5d
 		}
+		{
+			dependencies: ["4D04123F036F181E"]
+			id: "139F1EF64FA349B1"
+			tasks: [{
+				id: "0BD9F34CD9894B76"
+				item: "gtceu:cerium_tritelluride_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
 	]
 	title: "{ftbquests.abydos.title}"
 }

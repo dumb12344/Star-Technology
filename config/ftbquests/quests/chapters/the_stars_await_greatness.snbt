@@ -6,6 +6,7 @@
 	icon: "sgjourney:pegasus_stargate"
 	id: "6E4FD72B8C507106"
 	order_index: 8
+	progression_mode: "linear"
 	quest_links: [ ]
 	quests: [
 		{
@@ -34,8 +35,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: -0.5d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["20ABDF48307586F2"]
@@ -68,6 +69,7 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["31F87896FF834E63"]
 			description: [
 				"{ftbquests.draconic_age.maxwell.description.1}"
 				"{@pagebreak}"
@@ -108,7 +110,7 @@
 			y: 4.375d
 		}
 		{
-			dependencies: ["2DACE6EF41A118D9"]
+			dependencies: ["7FFCAD92772A175F"]
 			description: ["{ftbquests.draconic_age.vasilisa.description}"]
 			hide_dependency_lines: true
 			id: "0B475E2385B478C0"
@@ -125,11 +127,11 @@
 				item: "placeablemaxwell:vasilisa"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 5.5d
+			x: 8.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["2DACE6EF41A118D9"]
+			dependencies: ["139F1EF64FA349B1"]
 			description: ["{ftbquests.draconic_age.valenok.description}"]
 			hide_dependency_lines: true
 			id: "53E595EAB1C90884"
@@ -146,11 +148,11 @@
 				item: "placeablemaxwell:valenok"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 5.5d
+			x: 11.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["2DACE6EF41A118D9"]
+			dependencies: ["576C0430D0CDE409"]
 			dependency_requirement: "one_started"
 			description: ["{ftbquests.draconic_age.mars.description}"]
 			hide_dependency_lines: true
@@ -178,7 +180,6 @@
 				"53E595EAB1C90884"
 				"61C534992FB17066"
 				"208863E121666BF4"
-				"4A13D4F1B22DBCAF"
 				"44A1A4ABAD13871E"
 			]
 			id: "20ABDF48307586F2"
@@ -192,7 +193,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["2DACE6EF41A118D9"]
+			dependencies: ["00333140377A33F5"]
 			description: ["{ftbquests.draconic_age.poomba.description}"]
 			hide_dependency_lines: true
 			id: "208863E121666BF4"
@@ -203,8 +204,8 @@
 				item: "placeablemaxwell:poomba"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 6.5d
+			x: 9.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["20ABDF48307586F2"]
@@ -253,6 +254,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["4A13D4F1B22DBCAF"]
 			id: "44A1A4ABAD13871E"
 			tasks: [
 				{
@@ -271,8 +273,8 @@
 					type: "item"
 				}
 			]
-			x: 11.0d
-			y: 8.0d
+			x: 10.0d
+			y: 7.5d
 		}
 	]
 	title: "The Stars Await Greatness"

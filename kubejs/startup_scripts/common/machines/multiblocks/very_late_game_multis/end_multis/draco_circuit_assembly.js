@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('draco_bulk_circuiter')
         .category('extremely_advanced')
         .setEUIO('in')
-        .setMaxIOSize(4, 1, 2, 0)        
+        .setMaxIOSize(4, 1, 1, 0)        
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ASSEMBLER)
         .setMaxTooltips(4)

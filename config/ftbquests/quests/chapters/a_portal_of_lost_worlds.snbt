@@ -7,6 +7,7 @@
 	icon: "sgjourney:milky_way_stargate"
 	id: "6D8A641A10A0756F"
 	order_index: 6
+	progression_mode: "linear"
 	quest_links: [
 		{
 			id: "6AA4625E98ED37B8"
