@@ -134,5 +134,5 @@ ServerEvents.recipes(event => {
                 .CWUt(24)
             )
         .EUt(GTValues.VHA[GTValues.UV]);
-        });
+        
 });
