@@ -198,7 +198,7 @@
 				title: "{ftbquests.mechanics.wireless_power.title}"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: 0.0d
 			y: 4.0d
 		}
 		{
@@ -236,7 +236,7 @@
 				title: "{ftbquests.mechanics.bulking.title}"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 4.0d
 		}
 		{
@@ -262,8 +262,8 @@
 				title: "{ftbquests.mechanics.threading.title}"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: 4.0d
+			x: -1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -283,6 +283,19 @@
 			}]
 			x: 1.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["027C5CE3CFCB5649"]
+			description: ["\"{ftbquests.mechanics.layered_inputs.description}\""]
+			id: "6AEB17C2D2AF5344"
+			tasks: [{
+				id: "4463F39E5E37E799"
+				item: "gtceu:advanced_synthesis_plant"
+				type: "item"
+			}]
+			title: "{ftbquests.mechanics.layered_inputs.title}"
+			x: -1.5d
+			y: 4.0d
 		}
 	]
 	title: "{ftbquests.mechanics.title}"

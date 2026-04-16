@@ -30,7 +30,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "1B20B3B25785E3AF"
-				title: "{ftbquests.preparing_for_dimensional_travel.positioner.title}"
+				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
 			x: -11.5d
@@ -42,7 +42,7 @@
 				"56803575B2364F6A"
 				"13CC2A2C63F4FE8C"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.stargate_component_assembly.description}"]
+			description: ["{ftbquests.csg.stargate_component_assembly.description}"]
 			hide_dependency_lines: true
 			id: "1004D6D7636E0321"
 			rewards: [{
@@ -69,7 +69,7 @@
 				"23C3936FC737EB3A"
 				"1DB72103FACE9FAD"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate.description}"]
+			description: ["{ftbquests.csg.classic_stargate.description}"]
 			icon: "sgjourney:classic_stargate"
 			id: "2EDE996312B1C69E"
 			rewards: [{
@@ -80,7 +80,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.preparing_for_dimensional_travel.classic_stargate.subtitle}"
+			subtitle: "{ftbquests.csg.classic_stargate.subtitle}"
 			tasks: [
 				{
 					id: "33B632BAD77BD438"
@@ -100,7 +100,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.preparing_for_dimensional_travel.classic_stargate.title}"
+			title: "{ftbquests.csg.classic_stargate.title}"
 			x: -12.0d
 			y: -9.0d
 		}
@@ -109,7 +109,7 @@
 				"2EDE996312B1C69E"
 				"5FB0649F878A32D5"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.abydos.description}"]
+			description: ["{ftbquests.csg.abydos.description}"]
 			icon: "minecraft:sand"
 			id: "1FB502D770A4A59B"
 			rewards: [{
@@ -123,10 +123,10 @@
 				dimension: "sgjourney:abydos"
 				icon: "minecraft:suspicious_sand"
 				id: "57F00393CAEA3780"
-				title: "{ftbquests.preparing_for_dimensional_travel.abydos.item_title}"
+				title: "{ftbquests.csg.abydos.item_title}"
 				type: "dimension"
 			}]
-			title: "{ftbquests.preparing_for_dimensional_travel.abydos.title}"
+			title: "{ftbquests.csg.abydos.title}"
 			x: -12.0d
 			y: -11.0d
 		}
@@ -137,7 +137,7 @@
 				"13CC2A2C63F4FE8C"
 				"7820DBEBCAF2502A"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate_ring_block.description}"]
+			description: ["{ftbquests.csg.classic_stargate_ring_block.description}"]
 			id: "70D35B4C1D6A143D"
 			rewards: [{
 				id: "3B90C26F72F5A63B"
@@ -159,7 +159,7 @@
 				"70D35B4C1D6A143D"
 				"38FFAFA0D097BD5F"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate_chevron_block.description}"]
+			description: ["{ftbquests.csg.classic_stargate_chevron_block.description}"]
 			id: "433E2BCC63E779AF"
 			rewards: [{
 				id: "3D4753FAE4D98706"
@@ -182,7 +182,7 @@
 				"2BED524C6AA13D88"
 				"7206FC928A9886DB"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate_base_block.description}"]
+			description: ["{ftbquests.csg.classic_stargate_base_block.description}"]
 			id: "5C7A92625D07C55D"
 			rewards: [{
 				id: "398ACC54F4F42715"
@@ -201,7 +201,7 @@
 		}
 		{
 			dependencies: ["2EDE996312B1C69E"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.classic_stargate_display.description}"]
+			description: ["{ftbquests.csg.classic_stargate_display.description}"]
 			hide_dependency_lines: true
 			id: "653AD979AE4D0581"
 			optional: true
@@ -212,14 +212,14 @@
 				optional_task: true
 				type: "item"
 			}]
-			title: "{ftbquests.preparing_for_dimensional_travel.classic_stargate_display.title}"
+			title: "{ftbquests.csg.classic_stargate_display.title}"
 			x: -13.5d
 			y: -11.0d
 		}
 		{
 			can_repeat: true
 			dependencies: ["2EDE996312B1C69E"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.emergency_rescue.description}"]
+			description: ["{ftbquests.csg.emergency_rescue.description}"]
 			hide_dependency_lines: true
 			icon: "minecraft:red_bed"
 			id: "481D42E3473FDCED"
@@ -231,13 +231,13 @@
 				icon: "minecraft:grass_block"
 				id: "21A225E597A188CD"
 				silent: true
-				title: "{ftbquests.preparing_for_dimensional_travel.emergency_rescue.item_title}"
+				title: "{ftbquests.csg.emergency_rescue.item_title}"
 				type: "command"
 			}]
 			size: 1.0d
 			tasks: [{
 				id: "10FD7D062F28C45C"
-				title: "{ftbquests.preparing_for_dimensional_travel.emergency_rescue.title}"
+				title: "{ftbquests.csg.emergency_rescue.title}"
 				type: "checkmark"
 			}]
 			x: -10.5d
@@ -245,7 +245,7 @@
 		}
 		{
 			dependencies: ["2EDE996312B1C69E"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.power_failure.description}"]
+			description: ["{ftbquests.csg.power_failure.description}"]
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -259,7 +259,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "205A758A70420DB8"
-				title: "{ftbquests.preparing_for_dimensional_travel.power_failure.title}"
+				title: "{ftbquests.csg.power_failure.title}"
 				type: "checkmark"
 			}]
 			x: -15.0d
@@ -271,7 +271,7 @@
 				"182D948925141764"
 				"5DD60CB0D67AD39C"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.weapon_grade_naquadah_ingot.description}"]
+			description: ["{ftbquests.csg.weapon_grade_naquadah_ingot.description}"]
 			hide_dependency_lines: false
 			id: "4DE40B37D609B921"
 			rewards: [{
@@ -294,7 +294,7 @@
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.large_rotor_machine.description}"]
+			description: ["{ftbquests.csg.large_rotor_machine.description}"]
 			id: "027C5CE3CFCB5649"
 			rewards: [{
 				id: "32443F1B809654D6"
@@ -313,7 +313,7 @@
 		}
 		{
 			dependencies: ["1C515302A357B1B8"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.exquisite_naquadic_netherite_gem.description}"]
+			description: ["{ftbquests.csg.exquisite_naquadic_netherite_gem.description}"]
 			hide_dependent_lines: true
 			id: "2D713622FA2D6FCA"
 			rewards: [{
@@ -332,7 +332,7 @@
 		}
 		{
 			dependencies: ["5C3AF136913CF8BE"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.exquisite_runic_laser_source_base_gem.description}"]
+			description: ["{ftbquests.csg.exquisite_runic_laser_source_base_gem.description}"]
 			id: "3B85A08B2E08C6FC"
 			rewards: [{
 				id: "31146EC2D33D4B75"
@@ -353,7 +353,7 @@
 				"1C515302A357B1B8"
 				"342969434CB3B5DE"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.runic_laser_source_base_dust.description}"]
+			description: ["{ftbquests.csg.runic_laser_source_base_dust.description}"]
 			id: "5C3AF136913CF8BE"
 			rewards: [{
 				id: "4AC09D2CB06E6B4B"
@@ -375,7 +375,7 @@
 				"3FC351F05F2AC743"
 				"12B23627DD0026B5"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.runic_wave_generator.description}"]
+			description: ["{ftbquests.csg.runic_wave_generator.description}"]
 			id: "75F0388FAB52E0B3"
 			rewards: [{
 				count: 2
@@ -395,7 +395,7 @@
 		}
 		{
 			dependencies: ["75F0388FAB52E0B3"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.laser_casing.description}"]
+			description: ["{ftbquests.csg.laser_casing.description}"]
 			id: "10D78E10735CD210"
 			rewards: [{
 				id: "3A14DEA6D1AA0502"
@@ -413,7 +413,7 @@
 		}
 		{
 			dependencies: ["182D948925141764"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.naquadic_netherite_dust.description}"]
+			description: ["{ftbquests.csg.naquadic_netherite_dust.description}"]
 			id: "1C515302A357B1B8"
 			rewards: [{
 				id: "7DDE8773170387CB"
@@ -432,7 +432,7 @@
 		}
 		{
 			dependencies: ["3B69844600AD5430"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.runic_circuitry_assembling_station.description}"]
+			description: ["{ftbquests.csg.runic_circuitry_assembling_station.description}"]
 			hide_dependency_lines: false
 			id: "6D169C5E35C9EF6C"
 			rewards: [{
@@ -458,7 +458,7 @@
 				"3325914DB92AEF1B"
 				"464BB867FCF25A94"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.dimensional_finder.description}"]
+			description: ["{ftbquests.csg.dimensional_finder.description}"]
 			id: "56D5872D2C33A9CC"
 			rewards: [{
 				count: 2
@@ -478,7 +478,7 @@
 		}
 		{
 			dependencies: ["56D5872D2C33A9CC"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.abydos_coordinate_crystal.description}"]
+			description: ["{ftbquests.csg.abydos_coordinate_crystal.description}"]
 			id: "66D2FB63E81E03AB"
 			rewards: [{
 				id: "37AFE192D0BE0925"
@@ -496,7 +496,7 @@
 		}
 		{
 			dependencies: ["09E7AA7D98045727"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.coordinate_crystal.description}"]
+			description: ["{ftbquests.csg.coordinate_crystal.description}"]
 			hide_dependency_lines: true
 			id: "7A38469EAAABEAAE"
 			rewards: [{
@@ -515,7 +515,7 @@
 		}
 		{
 			dependencies: ["66D2FB63E81E03AB"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.coordinate_crystal_usage.description}"]
+			description: ["{ftbquests.csg.coordinate_crystal_usage.description}"]
 			hide_dependent_lines: true
 			icon: {
 				Count: 1
@@ -528,10 +528,10 @@
 			size: 1.0d
 			tasks: [{
 				id: "154528EA5CC03F6C"
-				title: "{ftbquests.preparing_for_dimensional_travel.coordinate_crystal_usage.item_title}"
+				title: "{ftbquests.csg.coordinate_crystal_usage.item_title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.preparing_for_dimensional_travel.coordinate_crystal_usage.title}"
+			title: "{ftbquests.csg.coordinate_crystal_usage.title}"
 			x: -6.0d
 			y: -9.0d
 		}
@@ -811,7 +811,7 @@
 				"3A603E70EB4B856F"
 				"3FC351F05F2AC743"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.heat_chamber.description}"]
+			description: ["{ftbquests.csg.heat_chamber.description}"]
 			id: "60ECE277341A9408"
 			rewards: [{
 				id: "23F129E3F9D9FFE1"
@@ -830,7 +830,7 @@
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.component_part_assembly.description}"]
+			description: ["{ftbquests.csg.component_part_assembly.description}"]
 			id: "73D0DC357821B395"
 			rewards: [{
 				count: 2
@@ -850,7 +850,7 @@
 		}
 		{
 			dependencies: ["60ECE277341A9408"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.nether_star_concentrate.description}"]
+			description: ["{ftbquests.csg.nether_star_concentrate.description}"]
 			hide_dependency_lines: false
 			icon: "gtceu:nether_star_concentrate_bucket"
 			id: "7FB86A5B9F6F6F35"
@@ -872,7 +872,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.preparing_for_dimensional_travel.nether_star_concentrate.title}"
+			title: "{ftbquests.csg.nether_star_concentrate.title}"
 			x: -12.0d
 			y: -3.0d
 		}
@@ -910,12 +910,12 @@
 			id: "2D7B099B96BD2A3D"
 			tasks: [{
 				id: "5D5086A6D1DCDE59"
-				title: "Layered Inputs"
+				title: "{ftbquests.csg.layered_inputs.title}"
 				type: "checkmark"
 			}]
 			x: -17.0d
 			y: -2.0d
 		}
 	]
-	title: "{ftbquests.preparing_for_dimensional_travel.title}"
+	title: "{ftbquests.csg.title}"
 }

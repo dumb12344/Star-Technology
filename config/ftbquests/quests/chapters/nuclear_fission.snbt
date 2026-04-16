@@ -501,7 +501,7 @@
 				"60ECE277341A9408"
 				"7C9719417055D0A0"
 			]
-			description: ["{ftbquests.processing_lines_chap.echo_shard.description}"]
+			description: ["{ftbquests.pl_nuc.echo_shard.description}"]
 			id: "2F87FC1D5BB43220"
 			rewards: [{
 				count: 3
@@ -746,5 +746,5 @@
 			y: 2.5d
 		}
 	]
-	title: "Nuclear Fission"
+	title: "{ftbquests.pl_nuc.title}Nuclear Fission"
 }

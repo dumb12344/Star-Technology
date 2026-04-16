@@ -2023,9 +2023,7 @@
 		}
 		{
 			dependencies: ["4450509C08F416EC"]
-			description: [
-				"{ftbquests.draconic_age.specialized_t1.description}"
-			]
+			description: ["{ftbquests.draconic_age.specialized_t1.description}"]
 			id: "11EA350764763463"
 			size: 1.0d
 			tasks: [
