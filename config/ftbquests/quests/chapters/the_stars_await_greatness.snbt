@@ -18,11 +18,7 @@
 	quests: [
 		{
 			dependencies: ["13508A2A55EAA6E1"]
-			description: [
-				"- to format to lang"
-				""
-				"\"Tier 2 Specialized Helixes\""
-			]
+			description: ["{ftbquests.dsg.specialized_helix_t2.description}"]
 			id: "48E30750B355F98F"
 			tasks: [
 				{
