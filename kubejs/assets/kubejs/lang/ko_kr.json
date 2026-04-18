@@ -565,7 +565,7 @@
 
     "block.kubejs.austenitic_stainless_steel_304_casing": "오스테나이트 스테인리스 강철 304 핵 케이싱",
     "block.kubejs.inconel_625_casing": "열 변동 제한 인코넬 625 케이싱",
-    "block.kubejs.wood_casing": "보강된 처리된 나무 케이싱",
+    "block.kubejs.treatedwood_casing": "보강된 처리된 나무 케이싱",
     "block.kubejs.peek_casing": "PEEK 케이싱",
     "block.kubejs.fluix_steel_casing": "플럭스 강철 케이싱",
     "block.kubejs.superalloy_casing": "초합금 케이싱",

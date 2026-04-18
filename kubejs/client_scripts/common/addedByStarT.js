@@ -21,12 +21,12 @@ global.addedByStarT = {
         'yielding_excression_advanced_seperation_transformator', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 
         'uiv_fusion_reactor', 'exotic_gas_siphon', 'ultimate_ebf', 'compact_assembly_line', 'supreme_plasma_turbine', 'vacuum_chemical_reaction_chamber', 
         'dual_chambered_vacuum_complex', 'auroric_vacuum_isolation_reactor', 'advanced_synthesis_plant', 'nyinsane_plasma_turbine', 'ulv_barrel', 'ulv_stone_barrel', 
-        'ulv_advanced_composter', 'exotic_tectonic_formation_apparatus'
+        'ulv_advanced_composter', 'exotic_tectonic_formation_apparatus', 'primordial_infusion'
     ],
     isCore: [
-        'hellforge', 'fornaxs_infernal_rotary_engine', 'abyssal_harvester', 'abyssal_containment_room', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 'uiv_fusion_reactor',
-        'ev_solar_cell', 'iv_solar_cell', 'luv_solar_cell', 'zpm_solar_cell', 'uv_solar_cell', 'uhv_solar_cell',
-        'ev_solar_panel', 'iv_solar_panel', 'luv_solar_panel', 'uv_solar_array', 'uhv_solar_array'
+        'hellforge', 'fornaxs_infernal_rotary_engine', 'abyssal_harvester', 'abyssal_containment_room', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor',
+        'uev_fusion_reactor', 'uiv_fusion_reactor', 'ev_solar_cell', 'iv_solar_cell', 'luv_solar_cell', 'zpm_solar_cell', 'uv_solar_cell', 'uhv_solar_cell', 'ev_solar_panel', 'iv_solar_panel',
+        'luv_solar_panel', 'uv_solar_array', 'uhv_solar_array'
     ],
     modifiers: [
         'batch', 'paraBatch', 'subBatch', 'pocBatch', 'throughBatch', 'coilBatch', 'paraLayered', 'paraSubBatch', 'paraPocBatch', 'subThroughBatch', 'threadSubBatch', 'paraSubAssBatch',
@@ -64,7 +64,7 @@ global.addedByStarT = {
         'chemical_plant'
     ],
     subThroughBatch: [
-        'component_nexus', 'component_part_hub', 'super_abs', 'super_ebf', 'super_vacuum_freezer', 'super_barrel', 'super_cracker', 'super_pyrolyse', 'super_gas_collector'
+        'component_nexus', 'component_part_hub', 'super_abs', 'super_ebf', 'super_vacuum_freezer', 'super_barrel', 'super_cracker', 'super_pyrolyse', 'super_gas_collector', 'primordial_infusion'
     ],
     threadSubBatch: [
         'multithreaded_component_synthesis_forge'
