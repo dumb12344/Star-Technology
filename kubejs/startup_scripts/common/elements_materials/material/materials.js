@@ -1721,8 +1721,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     noCompFluid('growth_hormone_complex',0x756B7D);
 
     //UXV Materials
-    compLiquid('maxwellium','1x mystery',0x37374C,[no_decomp]);
-
     compDust('thallium_antimonide',['1x thallium','1x antimony'],0xADC5E3,[])
     
     compLiquidStill('lepton_dense_akreyrium', ['1x utopian_akreyrium', '1x mystery'], [no_decomp]);
@@ -1829,4 +1827,22 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid(`acidic_water`, [`2x hydrogen`, `oxygen`], 0x2E85FF, [no_decomp]);
     compLiquid(`divinylbenzene`, [`10x carbon`, `10x hydrogen`], 0x9fb1b8, [no_decomp]);
     compLiquid(`deionized_water`, [`2x hydrogen`, `oxygen`], 0x006AFF, [no_decomp]);
+
+    //Riftions + Rift Line
+    compLiquid('riftion_extract', ['999x mystery'], 0x8f5d8c, [no_decomp]);
+    compPlasma('riftion', 999989999, ['1x riftion_extract','1x neutronium'], 0xf0fbff, no_decomp);
+    compLiquid('highly_unstable_rift_source', ['1x mystery'], 0x5e1c5b, [no_decomp]);
+    compLiquid('destabilized_rift_source', ['1x mystery'], 0x854181, [no_decomp]);
+    compLiquid('accension_rift_slurry', ['1x mystery'], 0xedb2ea, [no_decomp]);
+    compLiquid('abyssal_rift_slurry', ['1x mystery'], 0x3c265c, [no_decomp]);
+    compLiquid('rimula_t_foundation', ['1x mystery'], 0xe5d1eb, [no_decomp]);
+    compLiquid('rimula_s_foundation', ['1x mystery'], 0x230145, [no_decomp]);
+    compLiquid('true_rimula_foundation', ['1x mystery'], 0x9e22bd, [no_decomp]);
+    compLiquid('primordial_extract', ['1x mystery'], 0xffffff, [no_decomp]);
+    compLiquid('primordial_residue', ['1x mystery'], 0xffffff, [no_decomp]);
+    compLiquid('condensed_rimula', ['1x mystery'], 0xffffff, [no_decomp]);
+    compLiquid('riftic_concentrate', ['1x mystery'], 0xffffff, [no_decomp]);
+    compLiquid('faetic_extract', ['1x mystery'], 0xffffff, [no_decomp]);
+    compLiquid('prismatic_hypergurmalium', ['1x mystery'], 0xffffff, [no_decomp]);
+
 });

@@ -35,6 +35,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('k', Predicates.blocks('kubejs:nyanium_engine_intake_casing'))
             .where('l', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-       .workableCasingModel('kubejs:block/casings/threading/absolute_annihilation_casing',  'gtceu:block/machines/chemical_reactor');
+       .workableCasingModel('kubejs:block/casings/threading/absolute_annihilation_casing',  
+        'gtceu:block/machines/chemical_reactor');
         
 });

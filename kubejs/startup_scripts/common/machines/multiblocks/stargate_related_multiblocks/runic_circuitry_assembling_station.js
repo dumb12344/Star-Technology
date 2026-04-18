@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle(' CDDDGDDDC ', '  DDHHHDD  ', '  DDIIIDD  ', '  C III C  ', '    III    ', '  C III C  ', '  DDIIIDD  ', '  DDHHHDD  ', ' CDDDDDDDC ', ' BBFJEJFBB ', '    C C    ') 
             .aisle('BBDDDGDDDBB', 'B DHKKKHD B', 'C DI   ID C', '   D   D   ', '   I   I   ', '   D   D   ', '  DI   ID C', 'B DHKKKHD B', 'BBDDDGDDDBB', ' BFEBBBEFB ', '    BBB    ') 
             .aisle('BDDDGGGDDDB', ' DHKKKKKHD ', ' DI     ID ', ' CI     IC ', '  I     I  ', ' CI     IC ', 'CDI     ID ', ' DHKKKKKHD ', 'BDDDGGGDDDB', 'BBJBBLBBJBB', '  CBMJMBC  ') 
-            .aisle('CDGGGLGGGDC', ' DHKKLKKHD ', ' EI     IE ', '  I  N  I  ', '  I     I  ', '  I  N  I  ', ' EI     IE ', ' DHKKLKKHD ', 'CDDGGLGGDDC', 'BFEBLLLBEFB', '   BJJJB   ') 
+            .aisle('CDGGGLGGGDC', ' DHKKLKKHD ', ' EI     IE ', '  I  N  I  ', '  I  O  I  ', '  I  N  I  ', ' EI     IE ', ' DHKKLKKHD ', 'CDDGGLGGDDC', 'BFEBLLLBEFB', '   BJJJB   ') 
             .aisle('BDDDGGGDDDB', ' DHKKKKKHD ', ' DI     ID ', ' CI     IC ', '  I     I  ', ' CI     IC ', ' DI     ID ', ' DHKKKKKHD ', 'BDDDGGGDDDB', 'BBJBBLBBJBB', '  CBMJMBC  ') 
             .aisle('BBDDDGDDDBB', 'B DHKKKHD B', 'C DI   ID C', '   D   D   ', '   I   I   ', '   D   D   ', 'C DI   ID C', 'B DHKKKHD B', 'BBDDDGDDDBB', ' BFEBBBEFB ', '    BBB    ') 
             .aisle(' CDDDGDDDC ', '  DDHHHDD  ', '  DDIIIDD  ', '  C III C  ', '    III    ', '  C III C  ', '  DDIIIDD  ', '  DDHHHDD  ', ' CDDDDDDDC ', ' BBFJEJFBB ', '    C C    ') 
@@ -48,6 +48,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('L', Predicates.blocks('gtceu:high_power_casing'))
             .where('M', Predicates.blocks('kubejs:enriched_naquadah_pipe_casing'))
             .where('N', Predicates.blocks('thermal_extra:dragonsteel_glass'))
+            .where('O', Predicates.blocks('kubejs:laser_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/superconductors/casing_lumium',

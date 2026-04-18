@@ -1,9 +1,37 @@
+GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
+
+    event.create('magmatic_drill')
+        .category('komaru')
+        .setEUIO('in')
+        .setMaxIOSize(2, 2, 12, 12)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT);
+
+    event.create('voidic_refinement')
+        .category('komaru')
+        .setEUIO('in')
+        .setMaxIOSize(2, 2, 18, 6)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT);
+
+    event.create('riftic_infusion_assembly')
+        .category('komaru')
+        .setEUIO('in')
+        .setMaxIOSize(16, 6, 1, 0)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT);
+
+    event.create('rimula_extraction')
+        .category('komaru')
+        .setEUIO('in')
+        .setMaxIOSize(2, 2, 0, 2)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE , FillDirection.LEFT_TO_RIGHT);
+
+});
+
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create(`basic_test_module`, 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         // .machine((holder) => new $KomaruModule(holder, basic)) //add a machine type for komaru modules
-        .recipeTypes('dummy')
+        .recipeTypes(['magmatic_drill','voidic_refinement','assembly_line'])
         // .recipeModifiers([$StarTRecipeModifiers.KOMARU_MODULE]) //add recipe modifier that adapts to the frame
         .appearanceBlock(() => Block.getBlock('kubejs:draco_ware_casing'))
         .pattern(definition => FactoryBlockPattern.start()
@@ -25,7 +53,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create(`advanced_test_module`, 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         // .machine((holder) => new $KomaruModule(holder, advanced)) //add a machine type for komaru modules
-        .recipeTypes('dummy')
+        .recipeTypes(['riftic_infusion_assembly','rimula_extraction'])
         // .recipeModifiers([$StarTRecipeModifiers.KOMARU_MODULE]) //add recipe modifier that adapts to the frame
         .appearanceBlock(() => Block.getBlock('kubejs:draco_ware_casing'))
         .pattern(definition => FactoryBlockPattern.start()
