@@ -1536,6 +1536,7 @@
 		}
 		{
 			dependencies: ["09E7AA7D98045727"]
+			description: ["{ftbquests.futuristic_mechanisms.neutron_reflector.description}"]
 			hide_dependent_lines: true
 			id: "2D7591517097D802"
 			tasks: [{

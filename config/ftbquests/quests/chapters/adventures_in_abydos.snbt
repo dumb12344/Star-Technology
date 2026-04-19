@@ -31,6 +31,7 @@
 			id: "114E2ED3560BE835"
 			linked_quest: "01AF9486EA6DA792"
 			shape: "gear"
+			size: 1.5d
 			x: -6.5d
 			y: 0.5d
 		}
@@ -913,6 +914,7 @@
 				"07AD6651D0B40E22"
 				"57E4168A83E31D62"
 			]
+			description: ["{ftbquests.abydos.component_nexus.description}"]
 			id: "5DF4501BD2593465"
 			shape: "gear"
 			size: 1.5d
@@ -926,6 +928,7 @@
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
+			description: ["{ftbquests.abydos.uhv_stabilization_module.description}"]
 			hide_dependent_lines: true
 			id: "6CB6343BFD09B5C0"
 			tasks: [{
@@ -1332,6 +1335,7 @@
 		}
 		{
 			dependencies: ["7C182C34888AF189"]
+			description: ["{ftbquests.abydos.advanced_synthesis_plant.description}"]
 			id: "53B8A2EFCF2D4371"
 			tasks: [{
 				id: "6A01A251A9C02550"
@@ -1808,6 +1812,7 @@
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
+			description: ["{ftbquests.abydos.compact_assembly_line.description}"]
 			hide_dependent_lines: true
 			id: "57E4168A83E31D62"
 			tasks: [{
