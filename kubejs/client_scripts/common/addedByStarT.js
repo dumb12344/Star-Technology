@@ -18,7 +18,7 @@ global.addedByStarT = {
         'subatomic_particle_lattice_isolation_terminal', 'superior_particulate_isolation_nexus', 'yielding_excression_advanced_seperation_transformator', 
         'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 'uiv_fusion_reactor', 'exotic_gas_siphon',
         'ultimate_ebf', 'compact_assembly_line', 'supreme_plasma_turbine', 'vacuum_chemical_reaction_chamber', 'dual_chambered_vacuum_complex', 'auroric_vacuum_isolation_reactor',
-        'advanced_synthesis_plant', 'nyinsane_plasma_turbine',, 'component_part_assembly', 'ulv_barrel', 'ulv_stone_barrel', 'ulv_advanced_composter'
+        'advanced_synthesis_plant', 'nyinsane_plasma_turbine', 'component_part_assembly', 'ulv_barrel', 'ulv_stone_barrel', 'ulv_advanced_composter'
     ],
     isCore: [
         'hellforge', 'abyssal_harvester', 'abyssal_containment_room', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 'uiv_fusion_reactor'
