@@ -8,6 +8,6 @@ GTCEuStartupEvents.registry('gtceu:element', event => {
     elem('chalyblux', 148, 249, 'Cx');
     elem('voidic', -1, 540, '∅');
     elem('dragon', -1, 500, '🜍');
-    elem('riftic', -1, 800, '🌀')    .
-    elem('faetic', -1, 400, '𐦍')
+    elem('riftic', -1, 800, '🌀');
+    elem('faetic', -1, 400, '𐦍');
 });
