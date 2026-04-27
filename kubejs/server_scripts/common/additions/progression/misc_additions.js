@@ -67,6 +67,13 @@ ServerEvents.recipes (event => {
     cat('poomba','uev','brown','white','polonium_bismide',4)
     cat('maxwell','uiv','black','white','lepton_resonant_thallium_antimonide',5)
 
+    event.recipes.gtceu.mixer(id('osthendah_dust'))
+        .itemInputs('1x gtceu:osmium_dust','1x gtceu:ruthenium_dust','2x gtceu:naquadah_dust')
+        .itemOutputs('4x gtceu:osthendah_dust')
+        .circuit(3)
+        .duration(360)
+        .EUt(GTValues.VHA[GTValues.LuV])
+
 });
 
 ItemEvents.rightClicked('kubejs:compass_of_the_flame', event => {

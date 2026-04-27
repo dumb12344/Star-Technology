@@ -34,7 +34,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1)))
-            .where("d", Predicates.blocks("kubejs:titanic_blasting_casing"))
+            .where("d", Predicates.blocks("kubejs:tritanic_blasting_casing"))
             .where("e", Predicates.blocks("gtceu:silicon_bronze_frame"))
             .where("h", Predicates.blocks("gtceu:naquadah_coil_block"))
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))

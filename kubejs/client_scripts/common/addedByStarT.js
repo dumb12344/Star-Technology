@@ -8,7 +8,7 @@ global.addedByStarT = {
         't_large_forming_press', 't_large_lathe', 't_large_macerator', 't_large_mixer', 't_large_ore_washer', 't_large_sifter',
         't_large_thermal_centrifuge', 't_large_wiremill', 't_large_autoclave', 't_large_rock_crusher', 'bulk_ore_processing_array',
         'folding_akreyrium_stabiliser', 'molten_destabiliser', 'component_nexus', 'cyclonic_sifter', 'injection_mixer',
-        'manifold_centrifuge', 'atomic_synthesis_plant', 'component_part_hub', 'draco_circuit_assembler', 'draco_infusion', 'cryostate_quantum_chiller',
+        'manifold_centrifuge', 'atomic_materialization_plant', 'component_part_hub', 'draco_circuit_assembler', 'draco_infusion', 'cryostate_quantum_chiller',
         'hellforge', 'fornaxs_infernal_rotary_engine', 'abyssal_harvester', 'abyssal_containment_room', 'dimensional_finder', 'gate_assembly', 'large_rotor_machine',
         'ev_solar_cell', 'iv_solar_cell', 'luv_solar_cell', 'zpm_solar_cell', 'uv_solar_cell', 'uhv_solar_cell',
         'ev_solar_panel', 'iv_solar_panel', 'luv_solar_panel', 'uv_solar_array', 'uhv_solar_array',
@@ -85,7 +85,7 @@ global.addedByStarT = {
         'bulk_ore_processing_array', 'cryostate_quantum_chiller'
     ],
     paraPocSubBulkThroughBatch: [
-        'atomic_synthesis_plant'
+        'atomic_materialization_plant'
     ],
     paraThreadSubBulkBatch: [
         'ascendant_engraving_matrix', 'byteforce_unified_incomparable_logistics_depot', 'electro_magnetic_material_ripper', 'fermenting_arboreal_rejuvination_monstronsity',

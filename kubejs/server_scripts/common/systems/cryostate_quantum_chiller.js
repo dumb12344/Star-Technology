@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
     Material15000PlusAlloy('draco_abyssal', 76.8);
     Material15000PlusAlloy('expetidalloy_d_17', 12);
     Material15000PlusAlloy('rhenate_w', 28.8);
-    Material15000PlusAlloy('borealic_steel', 56.25);
+    Material15000PlusAlloy('borealic_steel', 54.3);
     Material15000PlusAlloy('ultispestalloy_cmsh', 13.35);
     Material15000PlusAlloy('trikoductive_neutro_steel', 38.25);
     Material15000PlusAlloy('melastrium_mox', 23.85);

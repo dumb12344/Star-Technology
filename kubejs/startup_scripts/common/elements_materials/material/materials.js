@@ -721,7 +721,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     // Extras
     compDust('sulfate', ['1x sulfur', '4x oxygen'], 0xD5BA23, []);
 
-    compIngotLiquid('trinaquadalloy', ['6x trinium', '2x naquadah', '1x carbon'], 0x281832, BRIGHT, [8747, 'higher', VA('zpm'), 1200], [plates, rod, frame, fine_wire, foil, dense_plate]);
+    compIngotLiquid('osthendah', ['1x osmium','1x ruthenium','2x naquadah'], 0x9279a3, BRIGHT, [7050, 'higher', VA('luv'), 1200], [plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, foil, dense_plate]);
+
+    compIngotLiquid('trinaquadalloy', ['5x trinium', '3x naquadah', '2x carbon'], 0x281832, BRIGHT, [8750, 'higher', VA('zpm'), 1200], [plates, rod, frame, fine_wire, foil, dense_plate]);
 
     compLiquid('perchloric_acid', ['1x hydrogen', '1x chlorine', '4x oxygen'], 0xffe6e6, []);
 
@@ -1251,7 +1253,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     
     compIngotLiquid('thacoloy_nq_42x', ['6x incoloy_ma_956', '4x enriched_naquadah', '2x niobium_titanium', '4x osmiridium', '4x thallium_tungstate'], 0x467624, SHINY, [9190, 'highest', VA('zpm'), 3400], [plates, rod, frame]);
 
-    compIngotLiquidSecColor('titan_steel', ['7x tritanium', '3x maraging_steel_300', '2x enriched_naquadah', '3x titanium_tungsten_carbide', '1x boron_nitride'], 0x9a445d, 0x2d095a, METALLIC, [8990, 'highest', VHA('uv'), 2400], [plates, rod, frame, small_gear, gear, round, ring, bolt_and_screw, long_rod, foil, dense_plate]);
+    compIngotLiquidSecColor('tritan_steel', ['7x tritanium', '3x maraging_steel_300', '2x enriched_naquadah', '3x titanium_tungsten_carbide', '1x boron_nitride'], 0x9a445d, 0x2d095a, METALLIC, [8990, 'highest', VHA('uv'), 2400], [plates, rod, frame, small_gear, gear, round, ring, bolt_and_screw, long_rod, foil, dense_plate]);
 
     // Akreyium Line
     elemFluid('utopian_akreyrium', 'akreyrium', 0xffffff, []);
@@ -1655,13 +1657,13 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     
     conductorPlasma('rhenate_w',['2x rhenium', '5x tungsten', '1x neutronium', '18x rose_gold', '7x neodymium'],0x87bcd0,SHINY,[18880, 'highest', VA('uxv'), 600], [V('uiv'), 1, 192, false],[no_decomp, no_abs_recipe]);
 
-    compIngotPlasmaSecColor('borealic_steel',['2x prismalium', '4x rose_gold', '18x aurourium', '2x titan_steel', '1x ancient_netherite','3x borealic_concentrate'],0x8f7090,0x70907c,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
+    compIngotPlasmaSecColor('borealic_steel',['2x prismalium', '4x rose_gold', '8x aurourium', '2x tritan_steel', '1x ancient_netherite','3x borealic_concentrate'],0x8f7090,0x70907c,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
 
-    compIngotPlasmaSecColor('hvga_steel',['1x signalum','3x hssg','1x draco_abyssal','8x hsla_steel','3x titan_steel'],0x280c6c,0x2561b7,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe, foil]);
+    compIngotPlasmaSecColor('hvga_steel',['1x signalum','3x hssg','1x draco_abyssal','8x hsla_steel','3x tritan_steel'],0x280c6c,0x2561b7,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe, foil]);
 
     compIngotPlasmaSecColor('melastrium_mox',['2x osmiridium','7x astrenalloy_nx','3x melodium','1x potin'],0x7d486d,0x4c487d,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
 
-    compIngotPlasmaSecColor('trikoductive_neutro_steel',['6x isovol','5x titan_steel','1x estalt','3x ruthenium_trinium_americium_neutronate','2x twinite'],0x908080,0x6a3f3f,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
+    compIngotPlasmaSecColor('trikoductive_neutro_steel',['6x isovol','5x tritan_steel','1x estalt','3x ruthenium_trinium_americium_neutronate','2x twinite'],0x908080,0x6a3f3f,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
 
     compIngotPlasmaSecColor('soul_ascendant_cuperite',['12x soul_infused','3x nickel_zinc_ferrite','6x magnalium','5x niobium_nitride','1x mercury_barium_calcium_cuprate'],0x9ca58b,0x83805a,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
 
@@ -1673,7 +1675,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     
     compIngotPlasmaSecColor('ultispestalloy_cmsh',['2x magmada_alloy','3x shellite','15x ultimet','6x hastelloy_c_276','1x hafnium'],0x684e6f,0x4b1146,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
     
-    compIngotPlasmaSecColor('zeroidic_trinate_steel',['3x enriched_naquadah_trinium_europium_duranide','7x zeron_100','1x xeproda','2x titan_steel','4x calamatium'],0x77686f,0x3d075c,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
+    compIngotPlasmaSecColor('zeroidic_trinate_steel',['3x enriched_naquadah_trinium_europium_duranide','7x zeron_100','1x xeproda','2x tritan_steel','4x calamatium'],0x77686f,0x3d075c,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
 
     //DES + PBD Line
     noCompFluid('draconic_hormone_residue',0x6C4D6E);

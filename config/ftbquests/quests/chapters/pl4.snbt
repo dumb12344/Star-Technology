@@ -4,7 +4,7 @@
 	default_quest_shape: "hexagon"
 	filename: "pl4"
 	group: "03EF8417F6D21A2E"
-	icon: "gtceu:atomic_synthesis_plant"
+	icon: "gtceu:atomic_materialization_plant"
 	id: "088AFC4A268B68C3"
 	order_index: 5
 	quest_links: [
@@ -3212,7 +3212,7 @@
 		}
 		{
 			dependencies: ["18FD654260DFF1D6"]
-			icon: "kubejs:void_core"
+			icon: "kubejs:void_saturation_sponge"
 			id: "1D3052F94EE128F4"
 			shape: "circle"
 			size: 1.5d

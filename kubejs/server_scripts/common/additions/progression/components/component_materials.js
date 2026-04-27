@@ -117,7 +117,7 @@ global.componentMaterials = {
         tiers: { tier: 'zpm', tier0: 'uv', tier1: 'luv', tier2: 'iv' },
         materials: {
             tierMaterial: 'naquadah_alloy',
-            primMaterial: 'naquadah_alloy',
+            primMaterial: 'osthendah',
             supMaterial: 'osmiridium',
             wire: 'naquadah',
             wireMechanical: 'europium',
@@ -160,7 +160,7 @@ global.componentMaterials = {
         tiers: { tier: 'uv', tier0: 'uhv', tier1: 'zpm', tier2: 'luv' },
         materials: {
             tierMaterial: 'darmstadtium',
-            primMaterial: 'titan_steel',
+            primMaterial: 'tritan_steel',
             supMaterial: 'pure_netherite',
             wire: 'naquadah_alloy',
             wireMechanical: 'americium',

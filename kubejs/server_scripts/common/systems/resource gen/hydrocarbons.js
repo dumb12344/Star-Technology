@@ -68,6 +68,7 @@ ServerEvents.recipes(event => {
     [
         {output: 'polyimide 3024', fluidInput: [`${PS} 4125`, `${FS} 850`, `${BC} 825`, 'gtceu:nitric_acid 975', 'minecraft:water 9250'], inputItem: false, voltage: GTValues.VHA[GTValues.UIV], duration: 274},
         {output: 'polyvinyl_chloride 1512', fluidInput: [`${CV} 950`, 'gtceu:hydrochloric_acid 875', 'gtceu:oxygen 6250'], inputItem: false, voltage: GTValues.VHA[GTValues.EV], duration: 96},
+        {output: 'polyphenylene_sulfide 1000', fluidInput: [`${PS} 1425`, 'gtceu:oxygen 6500'], inputItem: '1x gtceu:sulfur_dust', voltage: GTValues.VHA[GTValues.EV], duration: 216},
         {output: 'epoxy 1000', fluidInput: [`${BC} 1875`, `${PS} 1625`, 'gtceu:perchloric_acid 750'], inputItem: false, voltage: GTValues.VHA[GTValues.LuV], duration: 150},
         {output: 'polyvinyl_butyral 720', fluidInput: [`${BC} 875`, `${CV} 500`, `${FS} 500`, 'gtceu:oxygen 2500'], inputItem: 'gtceu:carbon_dust', voltage: GTValues.VHA[GTValues.LuV], duration: 75},
         {output: 'perfluoroelastomer_rubber 9072', fluidInput: [`${CV} 9625`, `${BC} 1375`, `${FS} 250`, 'gtceu:fluorine 18500'], inputItem: '7x gtceu:sulfur_dust', voltage: GTValues.VHA[GTValues.UHV], duration: 83},

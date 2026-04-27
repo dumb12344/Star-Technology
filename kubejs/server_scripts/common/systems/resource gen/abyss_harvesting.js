@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
         );
     }
 
-    VoidicMetal('rhexis', ['gtceu:red_alloy_ingot','gtceu:pure_netherite_ingot','gtceu:titanium_tungsten_carbide_ingot','gtceu:nickel_zinc_ferrite_ingot','gtceu:ancient_netherite_ingot','gtceu:titan_steel_ingot','minecraft:netherite_ingot'], 'chaos', 9.45);
+    VoidicMetal('rhexis', ['gtceu:red_alloy_ingot','gtceu:pure_netherite_ingot','gtceu:titanium_tungsten_carbide_ingot','gtceu:nickel_zinc_ferrite_ingot','gtceu:ancient_netherite_ingot','gtceu:tritan_steel_ingot','minecraft:netherite_ingot'], 'chaos', 9.45);
     VoidicMetal('xeproda', ['gtceu:void_ingot','gtceu:black_steel_ingot','gtceu:enriched_naquadah_ingot','gtceu:indium_tin_barium_titanium_cuprate_ingot','gtceu:black_bronze_ingot','gtceu:naquadah_alloy_ingot','gtceu:yttrium_barium_cuprate_ingot'], 'chaos', 11.35);
     VoidicMetal('chalyblux', ['gtceu:hafnium_ingot','gtceu:rose_gold_ingot','gtceu:lumium_ingot','gtceu:electrum_ingot','gtceu:rhodium_plated_palladium_ingot','gtceu:stainless_steel_ingot','gtceu:platinum_ingot'], 'order', 8.65);
 

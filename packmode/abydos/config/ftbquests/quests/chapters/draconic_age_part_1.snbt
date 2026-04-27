@@ -2051,7 +2051,7 @@
 			}]
 			tasks: [{
 				id: "2B0B4B5EEA540F04"
-				item: "gtceu:atomic_synthesis_plant"
+				item: "gtceu:atomic_materialization_plant"
 				type: "item"
 			}]
 			x: 4.0d

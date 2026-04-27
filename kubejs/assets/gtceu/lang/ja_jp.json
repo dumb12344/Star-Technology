@@ -1187,7 +1187,7 @@
     "block.gtceu.ulv_fluid_input.tooltip.2": "§9液体容量:§r 2,000 mB",
 
     "material.gtceu.expetidalloy_d_17": "エクスペティダロイD-17",
-    "material.gtceu.titan_steel": "タイタンスチール",
+    "material.gtceu.tritan_steel": "タイタンスチール",
 
     "block.gtceu.multithreaded_component_synthesis_forge": "マルチスレッド式部品合成炉",
     "block.gtceu.multithreaded_component_synthesis_forge.tooltip.0": "§3§lマルチスレッド式部品組立装置",
@@ -1259,10 +1259,10 @@
     "block.gtceu.super_electric_ore_factory.tooltip.0": "§7限界まで強化された電動鉱石処理工場。",
     "block.gtceu.super_electric_ore_factory.tooltip.1": "§b1つだけ§rエネルギーハッチを使用可能",
 
-    "block.gtceu.atomic_synthesis_plant": "原子合成処理プラント",
-    "block.gtceu.atomic_synthesis_plant.tooltip.0": "§6§l化学の極み",
-    "block.gtceu.atomic_synthesis_plant.tooltip.1": "§7§6化学処理プラント§7のレシピはもちろん、化学合成の常識を凌駕するほどのレシピを実行可能な、非常に発展的な機械。",
-    "block.gtceu.atomic_synthesis_plant.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.atomic_materialization_plant": "原子合成処理プラント",
+    "block.gtceu.atomic_materialization_plant.tooltip.0": "§6§l化学の極み",
+    "block.gtceu.atomic_materialization_plant.tooltip.1": "§7§6化学処理プラント§7のレシピはもちろん、化学合成の常識を凌駕するほどのレシピを実行可能な、非常に発展的な機械。",
+    "block.gtceu.atomic_materialization_plant.tooltip.2": "§8-----------------------------------",
 
     "gtceu.absolute_reduction": "絶対的短縮型化学処理",
     "gtceu.enlightened_chemistry": "至高の化学合成",

@@ -58,9 +58,9 @@ ServerEvents.recipes(event => {
         6000, 48, 48 * 600, GTValues.VHA[GTValues.ZPM], 'gtceu:computer_monitor_cover')
     
     researchBuilder(assline, 'quantum_core', 
-        ['gtceu:weapon_grade_naquadah_frame', '4x kubejs:csg_energy_modulator', '16x gtceu:quantum_star', 
-            '6x gtceu:trinium_spring', '4x gtceu:zpm_electric_pump', '16x gtceu:fine_prismalium_wire', '16x gtceu:normal_laser_pipe',
-            '2x gtceu:naquadah_alloy_ball_bearing', '8x gtceu:naquadah_alloy_plate', '4x gtceu:osmiridium_bolt'], 
+        ['gtceu:weapon_grade_naquadah_frame', '4x kubejs:csg_energy_modulator', '16x gtceu:quantum_star', '2x gtceu:zpm_field_generator', 
+            '6x gtceu:trinium_spring', '4x gtceu:zpm_electric_pump', '16x gtceu:fine_prismalium_wire','16x gtceu:osthendah_foil', 
+            '8x gtceu:naquadah_alloy_plate', '4x gtceu:osmiridium_bolt'], 
         ['gtceu:nether_star_concentrate 864', 'gtceu:polybenzimidazole 1296'], 
         ['kubejs:quantum_core'], 
         6000, 48, 48 * 600, GTValues.VHA[GTValues.ZPM], 'gtceu:quantum_star');

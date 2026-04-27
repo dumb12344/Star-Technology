@@ -1,6 +1,6 @@
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-    event.create('atomic_synthesis_plant', 'multiblock')
+    event.create('atomic_materialization_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $CoiledMulti(holder))
         .recipeTypes(['chemical_skip'])

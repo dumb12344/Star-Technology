@@ -1723,7 +1723,7 @@
 				"6A82CC9F01960097"
 				"2DACE6EF41A118D9"
 			]
-			description: ["{ftbquests.draconic_age.atomic_synthesis_plant.description}"]
+			description: ["{ftbquests.draconic_age.atomic_materialization_plant.description}"]
 			id: "7C050BBD087D46BD"
 			rewards: [{
 				id: "0624D90E24CCA3B2"
@@ -1733,7 +1733,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "2B0B4B5EEA540F04"
-				item: "gtceu:atomic_synthesis_plant"
+				item: "gtceu:atomic_materialization_plant"
 				type: "item"
 			}]
 			x: 5.5d

@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.UV]); 
 
     event.recipes.gtceu.assembly_line(id('titan_forge'))
-        .itemInputs('gtceu:uv_machine_hull', '12x #gtceu:circuits/uv', '4x gtceu:dense_titan_steel_plate','64x gtceu:uhpic_chip',
+        .itemInputs('gtceu:uv_machine_hull', '12x #gtceu:circuits/uv', '4x gtceu:dense_tritan_steel_plate','64x gtceu:uhpic_chip',
             '8x gtceu:uv_electric_piston', '4x gtceu:small_pure_netherite_gear', '2x gtceu:enriched_naquadah_quadruple_fluid_pipe', '4x gtceu:uv_electric_pump')
         .inputFluids('gtceu:soldering_alloy 7200', 'gtceu:lubricant 5000', 'gtceu:naquadria 864')
         .itemOutputs('gtceu:titan_forge')
@@ -119,8 +119,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line(id('exotic_rock_crusher'))
         .itemInputs('gtceu:large_material_press', '8x gtceu:uv_electric_piston', '4x gtceu:heat_vent', '4x gtceu:silicon_bronze_frame', '4x #gtceu:circuits/uv',
-         '2x gtceu:titan_steel_ultradense_plate', '8x gtceu:titanium_carbide_plate', '4x gtceu:hsla_steel_plate' )
-        .inputFluids('gtceu:titan_steel 1296', 'gtceu:soldering_alloy 3744')
+         '2x gtceu:tritan_steel_ultradense_plate', '8x gtceu:titanium_carbide_plate', '4x gtceu:hsla_steel_plate' )
+        .inputFluids('gtceu:tritan_steel 1296', 'gtceu:soldering_alloy 3744')
         .itemOutputs('gtceu:exotic_tectonic_formation_apparatus')
         .duration(2400)
         .stationResearch(

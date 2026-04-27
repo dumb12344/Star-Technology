@@ -300,9 +300,9 @@ ServerEvents.recipes(event => {
     
     special_ultimate_casing('abyssal_inductor',['gtceu:uiv_emitter', '3x gtceu:lepton_resonant_thallium_antimonide_spring', '6x gtceu:draco_abyssal_screw', '6x gtceu:polonium_bismide_single_cable'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 720', 'gtceu:borealic_concentrate 576'], 'gtceu:blacklight');
 
-    event.recipes.gtceu.assembler(id('titanic_blasting_casing'))
-        .itemInputs('6x gtceu:titan_steel_plate', 'gtceu:naquadah_alloy_frame')
-        .itemOutputs('2x kubejs:titanic_blasting_casing')
+    event.recipes.gtceu.assembler(id('tritanic_blasting_casing'))
+        .itemInputs('6x gtceu:tritan_steel_plate', 'gtceu:naquadah_alloy_frame')
+        .itemOutputs('2x kubejs:tritanic_blasting_casing')
         .circuit(6)
         .duration(50)
         .EUt(16);

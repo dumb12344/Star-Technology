@@ -1148,6 +1148,8 @@
 				"194D29F7135DB256"
 			]
 			id: "7E55361BFC343CEC"
+			shape: "gear"
+			size: 1.25d
 			tasks: [{
 				id: "08CE86F41E13950F"
 				item: "kubejs:komaru_filament_t1"

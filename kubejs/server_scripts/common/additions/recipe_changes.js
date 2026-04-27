@@ -256,17 +256,17 @@ ServerEvents.recipes(event => {
     event.remove({id: 'gtceu:centrifuge/impure_enriched_naquadah_solution_separation' })
 
     event.recipes.gtceu.centrifuge(id('impure_naquadria_solution_separation'))
-        .inputFluids('gtceu:impure_naquadria_solution 6000')
-        .itemOutputs('gtceu:indium_phosphide_dust', '3x gtceu:trinium_sulfide_dust', '6x gtceu:antimony_trifluoride_dust')
+        .inputFluids('gtceu:impure_naquadria_solution 4000')
+        .itemOutputs('2x gtceu:indium_phosphide_dust', '1x gtceu:trinium_sulfide_dust', '4x gtceu:antimony_trifluoride_dust')
         .outputFluids('gtceu:naquadria_solution 3000')
-        .duration(1200)
-        .EUt(GTValues.VA[GTValues.EV]);
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.centrifuge(id('impure_enriched_naquadah_solution_separation'))
-        .inputFluids('gtceu:impure_enriched_naquadah_solution 6000')
-        .itemOutputs('3x gtceu:trinium_sulfide_dust', 'gtceu:indium_phosphide_dust', '6x gtceu:antimony_trifluoride_dust')
+        .inputFluids('gtceu:impure_enriched_naquadah_solution 4000')
+        .itemOutputs('3x gtceu:trinium_sulfide_dust','4x gtceu:antimony_trifluoride_dust')
         .outputFluids('gtceu:enriched_naquadah_solution 3000')
-        .duration(1200)
-        .EUt(GTValues.VA[GTValues.EV]);
+        .duration(800)
+        .EUt(GTValues.VHA[GTValues.IV]);
 
 });

@@ -2111,6 +2111,7 @@
 		}
 		{
 			dependencies: ["3A15777DD813EE71"]
+			icon: "gtceu:lv_chemical_reactor"
 			id: "2CE4C49C11FE9C36"
 			tasks: [
 				{
@@ -2120,8 +2121,8 @@
 					type: "item"
 				}
 				{
-					id: "123A665F1D70E503"
-					item: "gtceu:oxygen_bucket"
+					id: "3A8F2D8027D4C764"
+					item: "gtceu:chlorine_bucket"
 					optional_task: true
 					type: "item"
 				}
