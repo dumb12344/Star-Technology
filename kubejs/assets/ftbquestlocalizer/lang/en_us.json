@@ -143,6 +143,7 @@
     "ftbquests.ae2.autocrafting.description": "Patterns are the key to autocrafting with AE2.\n\nThey store the recipes that you want to craft, and when you put them in a pattern provider, AE2 will see how to craft that item.",
     "ftbquests.ae2.autocrafting.title": "AE2 Autocrafting",
     "ftbquests.ae2.cell_housings.title": "Cell Housings",
+    "ftbquests.ae2.mega_cell_housings.title": "Mega Cell Housings",
     "ftbquests.ae2.cheaper_cores.title": "Cheaper Cores",
     "ftbquests.ae2.ex_export_import_bus.title": "ME Extended Import/Export Bus",
     "ftbquests.ae2.extended_machines.title": "Extended Machines",
