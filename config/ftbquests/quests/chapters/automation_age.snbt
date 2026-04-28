@@ -2030,7 +2030,7 @@
 				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
-			x: -4.0d
+			x: -6.0d
 			y: -3.0d
 		}
 		{

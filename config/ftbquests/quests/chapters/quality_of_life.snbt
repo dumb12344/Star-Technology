@@ -371,7 +371,7 @@
 			y: -3.5d
 		}
 		{
-			description: ["{ftbquests.quality_of_life.gt_tools.description}"]
+			description: ["{ftbquests.quality_of_life.terminals.description}"]
 			id: "2AB07DDCE44FA5D4"
 			tasks: [
 				{
