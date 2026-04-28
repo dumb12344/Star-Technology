@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:ferrocene 1000', 'gtceu:dichlorobenzene 1000', 'gtceu:hexafluorophosphoric_acid 1000')
         .outputFluids('gtceu:iron_cyclopentadienyl_dichlorobenzene 1000', 'gtceu:hydrochloric_acid 1000', 'water 1000')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.LUV]);
+        .EUt(GTValues.VA[GTValues.LuV]);
 
     event.recipes.gtceu.large_chemical_reactor(id('fluorinated_ferrocene'))
         .inputFluids('gtceu:iron_cyclopentadienyl_dichlorobenzene 1000', 'gtceu:fluorine 1000')
