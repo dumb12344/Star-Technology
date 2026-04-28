@@ -99,38 +99,38 @@ ServerEvents.recipes(event => {
         .itemInputs('10x gtceu:carbon_dust')
         .outputFluids('gtceu:ferrocene 1000', 'gtceu:hydrochloric_acid 1000', 'water 1000')
         .duration(160)
-        .EUt(GTValues.VA[GTValues.MV]);
+        .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.large_chemical_reactor(id('iron_cyclopentadienyl_dichlorobenzene'))
         .inputFluids('gtceu:ferrocene 1000', 'gtceu:dichlorobenzene 1000', 'gtceu:hexafluorophosphoric_acid 1000')
         .outputFluids('gtceu:iron_cyclopentadienyl_dichlorobenzene 1000', 'gtceu:hydrochloric_acid 1000', 'water 1000')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.HV]);
+        .EUt(GTValues.VA[GTValues.LUV]);
 
     event.recipes.gtceu.large_chemical_reactor(id('fluorinated_ferrocene'))
         .inputFluids('gtceu:iron_cyclopentadienyl_dichlorobenzene 1000', 'gtceu:fluorine 1000')
         .outputFluids('gtceu:fluorinated_ferrocene 1000', 'gtceu:dichlorobenzene 1000')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.HV]);
+        .EUt(GTValues.VA[GTValues.LUV]);
 
     event.recipes.gtceu.large_chemical_reactor(id('ferrocenium_superoxide'))
         .inputFluids('gtceu:fluorinated_ferrocene 1000', 'gtceu:oxygen 1000')
         .outputFluids('gtceu:ferrocenium_superoxide 1000')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.HV]);
+        .EUt(GTValues.VA[GTValues.ZPM]);
 
     event.recipes.gtceu.modular_rocket_module(id('rp_1'))
-        .inputFluids('gtceu:rp_1 1000')
-        .duration(400)
+        .inputFluids('gtceu:rp_1 1')
+        .duration(200)
         .EUt(-32);
 
     event.recipes.gtceu.modular_rocket_module(id('monomethylhydrazine'))
-        .inputFluids('gtceu:monomethylhydrazine 1000')
-        .duration(600)
+        .inputFluids('gtceu:monomethylhydrazine 1')
+        .duration(400)
         .EUt(-32);
 
     event.recipes.gtceu.modular_rocket_module(id('sorbitol_hypergolic_fuel'))
-        .inputFluids('gtceu:sorbitol_hypergolic_fuel 1000')
-        .duration(800)
+        .inputFluids('gtceu:sorbitol_hypergolic_fuel 1')
+        .duration(600)
         .EUt(-32);
 });
