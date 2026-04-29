@@ -19,13 +19,13 @@ global.addedByStarT = {
         'multithreaded_component_synthesis_forge', 'subatomic_particle_lattice_isolation_terminal', 'superior_particulate_isolation_nexus', 
         'yielding_excression_advanced_seperation_transformator', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor', 
         'uiv_fusion_reactor', 'exotic_gas_siphon', 'ultimate_ebf', 'compact_assembly_line', 'supreme_plasma_turbine', 'vacuum_chemical_reaction_chamber', 'dual_chambered_vacuum_complex', 
-        'auroric_vacuum_isolation_reactor', 'advanced_synthesis_plant', 'nyinsane_plasma_turbine', 'component_part_assembly', 't1_combustion_module', 't2_combustion_module', 
-        't1_rocket_module', 't2_rocket_module', 'modular_combustion_frame', 'exotic_tectonic_formation_apparatus', 'ulv_barrel', 'ulv_stone_barrel', 'ulv_advanced_composter'
+        'auroric_vacuum_isolation_reactor', 'advanced_synthesis_plant', 'nyinsane_plasma_turbine', 'component_part_assembly', 'luv_combustion_module', 'zpm_combustion_module', 
+        'uv_combustion_module', 'uev_combustion_module', 'modular_combustion_frame', 'exotic_tectonic_formation_apparatus', 'ulv_barrel', 'ulv_stone_barrel', 'ulv_advanced_composter'
     ],
     isCore: [
         'hellforge', 'abyssal_harvester', 'abyssal_containment_room', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor',
         'uiv_fusion_reactor', 'ev_solar_cell', 'iv_solar_cell', 'luv_solar_cell', 'zpm_solar_cell', 'uv_solar_cell', 'uhv_solar_cell', 'ev_solar_panel', 'iv_solar_panel', 
-        'luv_solar_panel', 'uv_solar_array', 'uhv_solar_array', 't1_combustion_module', 't2_combustion_module', 't1_rocket_module', 't2_rocket_module', 'modular_combustion_frame'
+        'luv_solar_panel', 'uv_solar_array', 'uhv_solar_array', 'luv_combustion_module', 'zpm_combustion_module', 'uv_combustion_module', 'uev_combustion_module', 'modular_combustion_frame'
     ],
     modifiers: [
         'batch', 'paraBatch', 'subBatch', 'pocBatch', 'throughBatch', 'coilBatch', 'paraLayered', 'paraSubBatch', 'paraPocBatch', 'subThroughBatch', 'threadSubBatch', 'paraSubAssBatch',
