@@ -111,7 +111,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:iron_cyclopentadienyl_dichlorobenzene 1000', 'gtceu:fluorine 1000')
         .outputFluids('gtceu:fluorinated_ferrocene 1000', 'gtceu:dichlorobenzene 1000')
         .duration(200)
-        .EUt(GTValues.VA[GTValues.LUV]);
+        .EUt(GTValues.VA[GTValues.LuV]);
 
     event.recipes.gtceu.large_chemical_reactor(id('ferrocenium_superoxide'))
         .inputFluids('gtceu:fluorinated_ferrocene 1000', 'gtceu:oxygen 1000')
