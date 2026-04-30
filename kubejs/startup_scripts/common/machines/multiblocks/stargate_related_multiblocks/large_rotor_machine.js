@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('gate_construction')
         .setEUIO('in')
         .setMaxIOSize(4, 1, 2, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRUDER , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRUDER, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.METAL_PIPE)
         .setLayered();
 
@@ -13,25 +13,28 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('large_rotor_machine', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $LayeredWorkableElectricMultiblockMachine(holder))
+        .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
         .recipeType('large_rotor_machine')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('       ', 'B     B', '       ') 
-            .aisle('C B B C', 'BDB BDB', '       ') 
-            .aisle('BDBBBDB', 'BEFBFEB', 'C BBB C') 
-            .aisle('BBBBBBB', 'BGHIHGB', 'BBJBKBB') 
-            .aisle('BBBBBBB', 'LFGIGFL', 'BELMLEB') 
-            .aisle('BBBBBBB', 'NGHIHGN', 'BBKBJBB') 
-            .aisle('BBBBBBB', 'FFGIGFF', 'BELMLEB') 
-            .aisle('BBBBBBB', 'NGHIHGN', 'BBJBKBB') 
-            .aisle('BBBBBBB', 'LFGIGFL', 'BELMLEB') 
-            .aisle('BBBBBBB', 'BGHIHGB', 'BBKBJBB') 
-            .aisle('BDBBBDB', 'BEF@FEB', 'C BBB C') 
-            .aisle('C B B C', 'BDB BDB', '       ') 
-            .aisle('       ', 'B     B', '       ') 
+            .aisle('       ', 'B     B', '       ')
+            .aisle('C B B C', 'BDB BDB', '       ')
+            .aisle('BDBBBDB', 'BEFBFEB', 'C BBB C')
+            .aisle('BBBBBBB', 'BGHIHGB', 'BBJBKBB')
+            .aisle('BBBBBBB', 'LFGIGFL', 'BELMLEB')
+            .aisle('BBBBBBB', 'NGHIHGN', 'BBKBJBB')
+            .aisle('BBBBBBB', 'FFGIGFF', 'BELMLEB')
+            .aisle('BBBBBBB', 'NGHIHGN', 'BBJBKBB')
+            .aisle('BBBBBBB', 'LFGIGFL', 'BELMLEB')
+            .aisle('BBBBBBB', 'BGHIHGB', 'BBKBJBB')
+            .aisle('BDBBBDB', 'BEF@FEB', 'C BBB C')
+            .aisle('C B B C', 'BDB BDB', '       ')
+            .aisle('       ', 'B     B', '       ')
             .where(' ', Predicates.any())
             .where('B', Predicates.blocks('kubejs:enriched_naquadah_machine_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(0))
@@ -39,7 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(0))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(0))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))	
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where('C', Predicates.blocks('gtceu:trinaquadalloy_frame'))
             .where('D', Predicates.blocks('gtceu:assembly_line_grating'))
             .where('E', Predicates.blocks('kubejs:enriched_naquadah_heat_escape_casing'))
@@ -56,5 +59,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingModel('kubejs:block/casings/naquadah/casing',
             'gtceu:block/machines/lathe');
-            
+
 });

@@ -2,6 +2,29 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('supreme_plasma_turbine', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.gtceu.supreme_plasma_turbine.top.0"),
+            Text.translate("block.gtceu.supreme_plasma_turbine.top.1"),
+            Text.translate("block.start_core.breaker_line")
+        ])
+        .paginatedTooltips([
+            [
+                Text.translate("block.gtceu.supreme_plasma_turbine.p1.1"),
+                Text.translate("block.gtceu.supreme_plasma_turbine.p1.2"),
+                Text.translate("block.start_core.breaker_line"),
+                Text.translate("block.gtceu.supreme_plasma_turbine.p1.3")
+            ],
+            [
+                Text.translate("block.gtceu.supreme_plasma_turbine.p2.1"),
+                Text.translate("block.start_core.breaker_line"),
+                Text.translate("block.gtceu.supreme_plasma_turbine.p2.2"),
+                Text.translate("block.gtceu.supreme_plasma_turbine.p2.3")
+            ]
+        ])
+        .bottomTooltips([
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.gtceu.supreme_plasma_turbine.bottom")
+        ])
         .recipeType('plasma_generator')
         .generator(true)
         .machine((holder) => new $BoostedPlasmaTurbine(holder, GTValues.UHV))
@@ -28,29 +51,29 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('R', Predicates.abilities(PartAbility.ROTOR_HOLDER))
             .where(' ', Predicates.any())
             .build())
-        .paginatedTooltips(
-            [
-                Text.translate("block.gtceu.supreme_plasma_turbine.p1.1"),
-                Text.translate("block.gtceu.supreme_plasma_turbine.p1.2"),
-                Text.translate("block.start_core.breaker_line"),
-                Text.translate("block.gtceu.supreme_plasma_turbine.p1.3")
-            ],
-            [
-                Text.translate("block.gtceu.supreme_plasma_turbine.p2.1"),
-                Text.translate("block.start_core.breaker_line"),
-                Text.translate("block.gtceu.supreme_plasma_turbine.p2.2"),
-                Text.translate("block.gtceu.supreme_plasma_turbine.p2.3")
-            ]
-        )
-        .bottomTooltips(
-            Text.translate("block.start_core.breaker_line"),
-            Text.translate("block.gtceu.supreme_plasma_turbine.bottom")
-        )
         .workableCasingModel('kubejs:block/casings/naquadah/casing',
             'gtceu:block/multiblock/generator/large_plasma_turbine');
 
     event.create('nyinsane_plasma_turbine', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .paginatedTooltips([
+            [
+                Text.translate("block.gtceu.supreme_plasma_turbine.p1.1"),
+                Text.translate("block.gtceu.supreme_plasma_turbine.p1.2"),
+                Text.translate("block.start_core.breaker_line"),
+                Text.translate("block.gtceu.nyinsane_plasma_turbine.p1.3")
+            ],
+            [
+                Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.1"),
+                Text.translate("block.start_core.breaker_line"),
+                Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.2"),
+                Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.3")
+            ]
+        ])
+        .bottomTooltips([
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.gtceu.nyinsane_plasma_turbine.bottom")
+        ])
         .recipeType('plasma_generator')
         .generator(true)
         .machine((holder) => new $BoostedPlasmaTurbine(holder, GTValues.UIV))
@@ -77,24 +100,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('R', Predicates.abilities(PartAbility.ROTOR_HOLDER))
             .where(' ', Predicates.any())
             .build())
-        .paginatedTooltips(
-            [
-                Text.translate("block.gtceu.supreme_plasma_turbine.p1.1"),
-                Text.translate("block.gtceu.supreme_plasma_turbine.p1.2"),
-                Text.translate("block.start_core.breaker_line"),
-                Text.translate("block.gtceu.nyinsane_plasma_turbine.p1.3")
-            ],
-            [
-                Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.1"),
-                Text.translate("block.start_core.breaker_line"),
-                Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.2"),
-                Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.3")
-            ]
-        )
-        .bottomTooltips(
-            Text.translate("block.start_core.breaker_line"),
-            Text.translate("block.gtceu.nyinsane_plasma_turbine.bottom")
-        )
         .workableCasingModel('kubejs:block/casings/nyanium/casing',
             'gtceu:block/multiblock/generator/large_plasma_turbine');
 

@@ -2,14 +2,21 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('super_vacuum_freezer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
+        .bottomTooltips([
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.kubejs.only_one_hatch.tooltip")
+        ])
         .recipeType('vacuum_freezer')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('gtceu:frostproof_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('AAAAA', 'AAAAA', 'AABAA', 'AABAA', 'AAAAA') 
-            .aisle('AAAAA', 'ACCCA', 'AC#CA', 'AC#CA', 'AAAAA') 
-            .aisle('AAAAA', 'AC#CA', 'B###B', 'B###B', 'AAAAA') 
-            .aisle('AAAAA', 'AA@AA', 'ADDDA', 'ADDDA', 'AAAAA') 
+            .aisle('AAAAA', 'AAAAA', 'AABAA', 'AABAA', 'AAAAA')
+            .aisle('AAAAA', 'ACCCA', 'AC#CA', 'AC#CA', 'AAAAA')
+            .aisle('AAAAA', 'AC#CA', 'B###B', 'B###B', 'AAAAA')
+            .aisle('AAAAA', 'AA@AA', 'ADDDA', 'ADDDA', 'AAAAA')
             .where('A', Predicates.blocks('gtceu:frostproof_machine_casing').setMinGlobalLimited(5)
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
@@ -24,6 +31,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('D', Predicates.blocks('gtceu:tempered_glass'))
             .build())
         .workableCasingModel(`gtceu:block/casings/solid/machine_casing_frost_proof`,
-        `gtceu:block/multiblock/vacuum_freezer`);
+            `gtceu:block/multiblock/vacuum_freezer`);
 
 });

@@ -3,6 +3,21 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('auroric_vacuum_isolation_reactor', 'multiblock')
         .machine((holder) => new $VacuumChemicalReactorMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
+        .paginatedTooltips([[
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.0"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.1"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.2"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.3"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.4"),
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.5"),
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.gtceu.dual_chambered_vacuum_complex.p1.1"),
+            Text.translate("block.start_core.breaker_line")
+        ]])
         .recipeType('vacuum_chemical_reaction_chamber')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.VACUUM_CHEMICAL_REACTION_CHAMBER, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:absolute_annihilation_casing'))
@@ -35,18 +50,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('k', Predicates.blocks('kubejs:nyanium_engine_intake_casing'))
             .where('l', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .paginatedTooltipPage(
-            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.0"),
-            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.1"),
-            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.2"),
-            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.3"),
-            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.4"),
-            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.5"),
-            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.6"),
-            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.7"),
-            Text.translate("block.start_core.breaker_line"),
-            Text.translate("block.gtceu.dual_chambered_vacuum_complex.p1.1")
-        )
         .workableCasingModel('kubejs:block/casings/threading/absolute_annihilation_casing', 'gtceu:block/machines/chemical_reactor');
 
 });

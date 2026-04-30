@@ -2,21 +2,24 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('omega_pressure_heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
         .recipeType('pressure_heat_chamber')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:extreme_temperature_smelting_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle("    BBB    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "    BBB    ") 
-            .aisle("  CCCBCCC  ", "   D E D   ", "   D E D   ", "    EEE    ", "   DEFED   ", "    EEE    ", "   D E D   ", "   D E D   ", "  CCCBCCC  ") 
-            .aisle(" CCCCBCCCC ", "           ", "           ", "  D CCC D  ", "    CGC    ", "  D CCC D  ", "           ", "           ", " CCCCBCCCC ") 
-            .aisle(" CCBBBBBCC ", " D       D ", " D       D ", "    HHH    ", " D  HGH  D ", "    HHH    ", " D       D ", " D       D ", " CCBBBBBCC ") 
-            .aisle("BCCBCCCBCCB", "    III    ", "    HHH    ", " ECH   HCE ", " ECH   HCE ", " ECH   HCE ", "    HHH    ", "    III    ", "BCCBCCCBCCB") 
-            .aisle("BBBBCCCBBBB", " E  IGI  E ", " E  HGH  E ", " ECH   HCE ", " FGG   GGF ", " ECH   HCE ", " E  HGH  E ", " E  IGI  E ", "BBBBCFCBBBB") 
-            .aisle("BCCBCCCBCCB", "    III    ", "    HHH    ", " ECH   HCE ", " ECH   HCE ", " ECH   HCE ", "    HHH    ", "    III    ", "BCCBCCCBCCB") 
-            .aisle(" CCBBBBBCC ", "         D ", "         D ", "    HHH    ", " D  HGH  D ", "    HHH    ", " D       D ", " D       D ", " CCBBBBBCC ") 
-            .aisle(" CCCCBCCCC ", " D         ", " D         ", "  D CCC D  ", "    CGC    ", "  D CCC D  ", "           ", "           ", " CCCCBCCCC ") 
-            .aisle("  CCCBCCC  ", "   D E D   ", "   D E D   ", "    EEE    ", "   DE@ED   ", "    EEE    ", "   D E D   ", "   D E D   ", "  CCCBCCC  ") 
-            .aisle("    BBB    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "    BBB    ") 
+            .aisle("    BBB    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "    BBB    ")
+            .aisle("  CCCBCCC  ", "   D E D   ", "   D E D   ", "    EEE    ", "   DEFED   ", "    EEE    ", "   D E D   ", "   D E D   ", "  CCCBCCC  ")
+            .aisle(" CCCCBCCCC ", "           ", "           ", "  D CCC D  ", "    CGC    ", "  D CCC D  ", "           ", "           ", " CCCCBCCCC ")
+            .aisle(" CCBBBBBCC ", " D       D ", " D       D ", "    HHH    ", " D  HGH  D ", "    HHH    ", " D       D ", " D       D ", " CCBBBBBCC ")
+            .aisle("BCCBCCCBCCB", "    III    ", "    HHH    ", " ECH   HCE ", " ECH   HCE ", " ECH   HCE ", "    HHH    ", "    III    ", "BCCBCCCBCCB")
+            .aisle("BBBBCCCBBBB", " E  IGI  E ", " E  HGH  E ", " ECH   HCE ", " FGG   GGF ", " ECH   HCE ", " E  HGH  E ", " E  IGI  E ", "BBBBCFCBBBB")
+            .aisle("BCCBCCCBCCB", "    III    ", "    HHH    ", " ECH   HCE ", " ECH   HCE ", " ECH   HCE ", "    HHH    ", "    III    ", "BCCBCCCBCCB")
+            .aisle(" CCBBBBBCC ", "         D ", "         D ", "    HHH    ", " D  HGH  D ", "    HHH    ", " D       D ", " D       D ", " CCBBBBBCC ")
+            .aisle(" CCCCBCCCC ", " D         ", " D         ", "  D CCC D  ", "    CGC    ", "  D CCC D  ", "           ", "           ", " CCCCBCCCC ")
+            .aisle("  CCCBCCC  ", "   D E D   ", "   D E D   ", "    EEE    ", "   DE@ED   ", "    EEE    ", "   D E D   ", "   D E D   ", "  CCCBCCC  ")
+            .aisle("    BBB    ", "           ", "           ", "           ", "           ", "           ", "           ", "           ", "    BBB    ")
             .where(" ", Predicates.any())
             .where("B", Predicates.blocks("gtceu:high_temperature_smelting_casing"))
             .where("C", Predicates.blocks("kubejs:enriched_naquadah_machine_casing"))
@@ -33,5 +36,4 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingModel('kubejs:block/casings/nether_multis/extreme_temperature_smelting_casing',
             'gtceu:block/multiblock/implosion_compressor');
-            
-        });
+});

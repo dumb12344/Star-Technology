@@ -9,6 +9,13 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('exotic_tectonic_formation_apparatus', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
+        .bottomTooltips([
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.kubejs.only_one_hatch.tooltip")
+        ])
         .recipeType('exotic_rock_crushing')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
@@ -39,10 +46,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("h", Predicates.blocks("gtceu:naquadah_coil_block"))
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .bottomTooltips(
-            Text.translate("block.start_core.breaker_line"),
-            Text.translate("gtceu.tooltip.only_one_hatch")
-        )
         .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
             'gtceu:block/multiblock/fusion_reactor');
 });

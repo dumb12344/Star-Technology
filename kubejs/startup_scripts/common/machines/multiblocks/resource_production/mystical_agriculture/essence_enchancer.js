@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('mystical')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 0, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_MAGNET , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_MAGNET, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER);
 
 });
@@ -13,6 +13,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('essence_enchancer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
         .recipeType('essence_enchancing')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
@@ -38,6 +41,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.any())
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
-        'gtceu:block/multiblock/implosion_compressor');
-        
+            'gtceu:block/multiblock/implosion_compressor');
+
 });

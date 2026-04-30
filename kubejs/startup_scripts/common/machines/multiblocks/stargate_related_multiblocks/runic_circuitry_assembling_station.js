@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('gate_construction')
         .setEUIO('in')
         .setMaxIOSize(3, 1, 1, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_CIRCUIT , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_CIRCUIT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER);
 
 });
@@ -13,21 +13,24 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('runic_circuitry_assembling_station', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
         .recipeType('runic_circuitry_assembling_station')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:lumium_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('   BBCBB   ', '   B   B   ', '   C   C   ', '           ', '           ', '           ', '   C   C   ', '   B   B   ', '   BBCBB   ', '    BBB    ', '           ') 
-            .aisle(' BCBDDDBCB ', ' B  DDD  B ', ' C  DED  C ', '    C C    ', '           ', '    C C    ', ' C  DED  C ', ' B  DDD  B ', ' BCBDDDBCB ', '  BBBFBBB  ', '           ') 
-            .aisle(' CDDDGDDDC ', '  DDHHHDD  ', '  DDIIIDD  ', '  C III C  ', '    III    ', '  C III C  ', '  DDIIIDD  ', '  DDHHHDD  ', ' CDDDDDDDC ', ' BBFJEJFBB ', '    C C    ') 
-            .aisle('BBDDDGDDDBB', 'B DHKKKHD B', 'C DI   ID C', '   D   D   ', '   I   I   ', '   D   D   ', '  DI   ID C', 'B DHKKKHD B', 'BBDDDGDDDBB', ' BFEBBBEFB ', '    BBB    ') 
-            .aisle('BDDDGGGDDDB', ' DHKKKKKHD ', ' DI     ID ', ' CI     IC ', '  I     I  ', ' CI     IC ', 'CDI     ID ', ' DHKKKKKHD ', 'BDDDGGGDDDB', 'BBJBBLBBJBB', '  CBMJMBC  ') 
-            .aisle('CDGGGLGGGDC', ' DHKKLKKHD ', ' EI     IE ', '  I  N  I  ', '  I     I  ', '  I  N  I  ', ' EI     IE ', ' DHKKLKKHD ', 'CDDGGLGGDDC', 'BFEBLLLBEFB', '   BJJJB   ') 
-            .aisle('BDDDGGGDDDB', ' DHKKKKKHD ', ' DI     ID ', ' CI     IC ', '  I     I  ', ' CI     IC ', ' DI     ID ', ' DHKKKKKHD ', 'BDDDGGGDDDB', 'BBJBBLBBJBB', '  CBMJMBC  ') 
-            .aisle('BBDDDGDDDBB', 'B DHKKKHD B', 'C DI   ID C', '   D   D   ', '   I   I   ', '   D   D   ', 'C DI   ID C', 'B DHKKKHD B', 'BBDDDGDDDBB', ' BFEBBBEFB ', '    BBB    ') 
-            .aisle(' CDDDGDDDC ', '  DDHHHDD  ', '  DDIIIDD  ', '  C III C  ', '    III    ', '  C III C  ', '  DDIIIDD  ', '  DDHHHDD  ', ' CDDDDDDDC ', ' BBFJEJFBB ', '    C C    ') 
-            .aisle(' BCBDDDBCB ', ' B  D@D  B ', ' C  DED  C ', '    C C    ', '           ', '    C C    ', ' C  DED  C ', ' B  DDD  B ', ' BCBDDDBCB ', '  BBBFBBB  ', '           ') 
-            .aisle('   BBCBB   ', '   B   B   ', '   C   C   ', '           ', '           ', '           ', '   C   C   ', '   B   B   ', '   BBCBB   ', '    BBB    ', '           ') 
+            .aisle('   BBCBB   ', '   B   B   ', '   C   C   ', '           ', '           ', '           ', '   C   C   ', '   B   B   ', '   BBCBB   ', '    BBB    ', '           ')
+            .aisle(' BCBDDDBCB ', ' B  DDD  B ', ' C  DED  C ', '    C C    ', '           ', '    C C    ', ' C  DED  C ', ' B  DDD  B ', ' BCBDDDBCB ', '  BBBFBBB  ', '           ')
+            .aisle(' CDDDGDDDC ', '  DDHHHDD  ', '  DDIIIDD  ', '  C III C  ', '    III    ', '  C III C  ', '  DDIIIDD  ', '  DDHHHDD  ', ' CDDDDDDDC ', ' BBFJEJFBB ', '    C C    ')
+            .aisle('BBDDDGDDDBB', 'B DHKKKHD B', 'C DI   ID C', '   D   D   ', '   I   I   ', '   D   D   ', '  DI   ID C', 'B DHKKKHD B', 'BBDDDGDDDBB', ' BFEBBBEFB ', '    BBB    ')
+            .aisle('BDDDGGGDDDB', ' DHKKKKKHD ', ' DI     ID ', ' CI     IC ', '  I     I  ', ' CI     IC ', 'CDI     ID ', ' DHKKKKKHD ', 'BDDDGGGDDDB', 'BBJBBLBBJBB', '  CBMJMBC  ')
+            .aisle('CDGGGLGGGDC', ' DHKKLKKHD ', ' EI     IE ', '  I  N  I  ', '  I     I  ', '  I  N  I  ', ' EI     IE ', ' DHKKLKKHD ', 'CDDGGLGGDDC', 'BFEBLLLBEFB', '   BJJJB   ')
+            .aisle('BDDDGGGDDDB', ' DHKKKKKHD ', ' DI     ID ', ' CI     IC ', '  I     I  ', ' CI     IC ', ' DI     ID ', ' DHKKKKKHD ', 'BDDDGGGDDDB', 'BBJBBLBBJBB', '  CBMJMBC  ')
+            .aisle('BBDDDGDDDBB', 'B DHKKKHD B', 'C DI   ID C', '   D   D   ', '   I   I   ', '   D   D   ', 'C DI   ID C', 'B DHKKKHD B', 'BBDDDGDDDBB', ' BFEBBBEFB ', '    BBB    ')
+            .aisle(' CDDDGDDDC ', '  DDHHHDD  ', '  DDIIIDD  ', '  C III C  ', '    III    ', '  C III C  ', '  DDIIIDD  ', '  DDHHHDD  ', ' CDDDDDDDC ', ' BBFJEJFBB ', '    C C    ')
+            .aisle(' BCBDDDBCB ', ' B  D@D  B ', ' C  DED  C ', '    C C    ', '           ', '    C C    ', ' C  DED  C ', ' B  DDD  B ', ' BCBDDDBCB ', '  BBBFBBB  ', '           ')
+            .aisle('   BBCBB   ', '   B   B   ', '   C   C   ', '           ', '           ', '           ', '   C   C   ', '   B   B   ', '   BBCBB   ', '    BBB    ', '           ')
             .where(' ', Predicates.any())
             .where('B', Predicates.blocks('kubejs:enriched_naquadah_machine_casing'))
             .where('C', Predicates.blocks('gtceu:trinaquadalloy_frame'))
@@ -52,5 +55,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .build())
         .workableCasingModel('kubejs:block/casings/superconductors/casing_lumium',
             'gtceu:block/machines/laser_engraver');
-            
+
 });

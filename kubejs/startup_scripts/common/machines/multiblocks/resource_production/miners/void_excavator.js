@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('aqueous_void_excavation')
         .category('resource_production')
         .setMaxIOSize(0, 0, 1, 2)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.MINER);
 
 });
@@ -12,6 +12,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('void_excavator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
         .recipeTypes(['void_excavation', 'aqueous_void_excavation'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
@@ -38,6 +41,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.any())
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
-        'gtceu:block/multiblock/large_miner');
-        
+            'gtceu:block/multiblock/large_miner');
+
 });

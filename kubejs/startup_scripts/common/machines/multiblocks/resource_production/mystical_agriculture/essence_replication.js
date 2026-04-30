@@ -4,15 +4,18 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('mystical')
         .setEUIO('in')
         .setMaxIOSize(1, 1, 1, 1)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_REPLICATOR , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_REPLICATOR, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER);
 
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    
+
     event.create('essence_replicator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
         .recipeType('essence_replication')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(GTBlocks.CASING_INVAR_HEATPROOF)
@@ -37,6 +40,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.any())
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_heatproof',
-        'gtceu:block/multiblock/implosion_compressor');
-        
+            'gtceu:block/multiblock/implosion_compressor');
+
 });

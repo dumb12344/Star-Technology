@@ -2,16 +2,23 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('super_ebf', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
+        .bottomTooltips([
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.kubejs.only_one_hatch.tooltip")
+        ])
         .recipeType('electric_blast_furnace')
         .machine((holder) => new $CoiledMulti(holder))
         .recipeModifiers([GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('AABAA', 'C B C', 'C D C', 'CEEEC', 'C D C', 'C B C', 'AABAA') 
-            .aisle('ABBBA', ' FFF ', ' FFF ', 'EFFFE', ' FFF ', ' FFF ', 'ABBBA') 
-            .aisle('BBBBB', 'BF#FB', 'DF#FD', 'EF#FE', 'DF#FD', 'BF#FB', 'BBMBB') 
-            .aisle('ABBBA', ' FFF ', ' FFF ', 'EFFFE', ' FFF ', ' FFF ', 'ABBBA') 
-            .aisle('AA@AA', 'C B C', 'C D C', 'CEEEC', 'C D C', 'C B C', 'AABAA') 
+            .aisle('AABAA', 'C B C', 'C D C', 'CEEEC', 'C D C', 'C B C', 'AABAA')
+            .aisle('ABBBA', ' FFF ', ' FFF ', 'EFFFE', ' FFF ', ' FFF ', 'ABBBA')
+            .aisle('BBBBB', 'BF#FB', 'DF#FD', 'EF#FE', 'DF#FD', 'BF#FB', 'BBMBB')
+            .aisle('ABBBA', ' FFF ', ' FFF ', 'EFFFE', ' FFF ', ' FFF ', 'ABBBA')
+            .aisle('AA@AA', 'C B C', 'C D C', 'CEEEC', 'C D C', 'C B C', 'AABAA')
             .where('A', Predicates.blocks('gtceu:steel_firebox_casing'))
             .where('B', Predicates.blocks('gtceu:high_temperature_smelting_casing').setMinGlobalLimited(5)
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))

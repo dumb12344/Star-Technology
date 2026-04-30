@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('mechanical_sieve')
         .category('resource_production')
         .setMaxIOSize(2, 6, 0, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_SIFT , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_SIFT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.MACERATOR);
 
 });
@@ -12,6 +12,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('mechanical_sieve', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .bottomTooltips([
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.kubejs.only_one_hatch.tooltip")
+        ])
         .recipeType('mechanical_sieve')
         .appearanceBlock(() => Block.getBlock('kubejs:wood_casing'))
         .pattern(definition => FactoryBlockPattern.start()
@@ -25,11 +29,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1)))
-            .where('F', Predicates.blocks('gtceu:treated_wood_frame'))     
+            .where('F', Predicates.blocks('gtceu:treated_wood_frame'))
             .where('M', Predicates.blocks('kubejs:meshblock'))
             .where(' ', Predicates.any())
             .build())
         .workableCasingModel('kubejs:block/casings/basic/casing_wood',
-        'gtceu:block/machines/macerator');
-        
+            'gtceu:block/machines/macerator');
+
 });

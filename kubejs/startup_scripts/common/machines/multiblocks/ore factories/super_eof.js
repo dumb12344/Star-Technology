@@ -2,15 +2,22 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('super_electric_ore_factory', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
+        .bottomTooltips([
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.kubejs.only_one_hatch.tooltip")
+        ])
         .recipeType('electric_ore_processing')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_STAINLESS_CLEAN)
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle(' BBB ', ' AAA ', ' AAA ', '  A  ', '     ', '     ', '     ') 
-            .aisle('BAAAB', 'AC#CA', 'A###A', ' A#A ', ' AAA ', '  A  ', '  D  ') 
-            .aisle('BAAAB', 'A#E#A', 'A#E#A', 'A#E#A', ' AEA ', ' AMA ', ' D D ') 
-            .aisle('BAAAB', 'AC#CA', 'A###A', ' A#A ', ' AAA ', '  A  ', '  D  ') 
-            .aisle(' BBB ', ' A@A ', ' AAA ', '  A  ', '     ', '     ', '     ') 
+            .aisle(' BBB ', ' AAA ', ' AAA ', '  A  ', '     ', '     ', '     ')
+            .aisle('BAAAB', 'AC#CA', 'A###A', ' A#A ', ' AAA ', '  A  ', '  D  ')
+            .aisle('BAAAB', 'A#E#A', 'A#E#A', 'A#E#A', ' AEA ', ' AMA ', ' D D ')
+            .aisle('BAAAB', 'AC#CA', 'A###A', ' A#A ', ' AAA ', '  A  ', '  D  ')
+            .aisle(' BBB ', ' A@A ', ' AAA ', '  A  ', '     ', '     ', '     ')
             .where('A', Predicates.blocks('gtceu:clean_machine_casing').setMinGlobalLimited(5)
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
@@ -27,6 +34,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_clean_stainless_steel',
-        'kubejs:block/multiblock/primitive_blast_furnace');
+            'kubejs:block/multiblock/primitive_blast_furnace');
 
 });

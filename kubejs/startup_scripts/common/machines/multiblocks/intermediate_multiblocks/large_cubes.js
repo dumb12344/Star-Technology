@@ -11,11 +11,16 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-
     const largeCube = (type, casing) => {
-
         event.create(`t_large_${type}`, 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
+            .tooltips([
+                Text.translate("block.start_core.breaker_line")
+            ])
+            .bottomTooltips([
+                Text.translate("block.start_core.breaker_line"),
+                Text.translate("block.kubejs.only_one_hatch.tooltip")
+            ])
             .recipeType(type)
             .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.BATCH_MODE])
             .appearanceBlock(() => Block.getBlock(`kubejs:${casing}_casing`))
@@ -35,7 +40,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .build())
             .workableCasingModel(`kubejs:block/casings/large_cubes/${casing}_casing`,
                 `gtceu:block/machines/${type}`);
-
     }
 
     // Generic Cubes
@@ -55,7 +59,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     largeCube('pulverizer', 'galvanized_steel');
     largeCube('arc_furnace', 'black_steel');
     largeCube('electromagnetic_separator', 'manganin');
-
 
     // Large Rock Crusher
     event.create('large_rock_crusher', 'multiblock')

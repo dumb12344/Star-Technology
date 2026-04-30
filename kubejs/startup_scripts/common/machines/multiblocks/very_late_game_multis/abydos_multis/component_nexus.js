@@ -14,21 +14,28 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('component_nexus', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
+        .bottomTooltips([
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.kubejs.only_one_hatch.tooltip")
+        ])
         .recipeType('component_nexus')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:superdense_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('ABBBABBBAAABBBA    ', 'ACCCACCCADACCCA    ', '        AAA        ') 
-            .aisle('AEEEAEEEFFFEEEA    ', 'AGHGAGHGAIAGHGA    ', 'ACCCACCCAJACCCA    ') 
-            .aisle('AFFFFFFFFEFFFFA    ', 'IIIIIIIIIIIIIII    ', 'AAAAAAAAAJAAAAA    ') 
-            .aisle('AEEEAEEEFFFEEEA    ', 'AGHGAGHGAIAGHGA    ', 'ACCCACCCAJACCCA    ') 
-            .aisle('ABBBABBBAFABBBA    ', 'ACCCACCCAIACCCA    ', '        AJA        ') 
-            .aisle('        AFA        ', '        AIA        ', '        AJA        ') 
-            .aisle('    ABBBAFABBBABBBA', '    ACCCAIACCCACCCA', '        AJA        ') 
-            .aisle('    AEEEFFFEEEAEEEA', '    AGHGAIAGHGAGHGA', '    ACCCAJACCCACCCA') 
-            .aisle('    AFFFFEFFFFFFFFA', '    IIIIIIIIIIIIIII', '    AAAAAJAAAAAAAAA') 
-            .aisle('    AEEEFFFEEEAEEEA', '    AGHGAIAGHGAGHGA', '    ACCCAJACCCACCCA') 
-            .aisle('    ABBBAAABBBABBBA', '    ACCCA@ACCCACCCA', '        AAA        ') 
+            .aisle('ABBBABBBAAABBBA    ', 'ACCCACCCADACCCA    ', '        AAA        ')
+            .aisle('AEEEAEEEFFFEEEA    ', 'AGHGAGHGAIAGHGA    ', 'ACCCACCCAJACCCA    ')
+            .aisle('AFFFFFFFFEFFFFA    ', 'IIIIIIIIIIIIIII    ', 'AAAAAAAAAJAAAAA    ')
+            .aisle('AEEEAEEEFFFEEEA    ', 'AGHGAGHGAIAGHGA    ', 'ACCCACCCAJACCCA    ')
+            .aisle('ABBBABBBAFABBBA    ', 'ACCCACCCAIACCCA    ', '        AJA        ')
+            .aisle('        AFA        ', '        AIA        ', '        AJA        ')
+            .aisle('    ABBBAFABBBABBBA', '    ACCCAIACCCACCCA', '        AJA        ')
+            .aisle('    AEEEFFFEEEAEEEA', '    AGHGAIAGHGAGHGA', '    ACCCAJACCCACCCA')
+            .aisle('    AFFFFEFFFFFFFFA', '    IIIIIIIIIIIIIII', '    AAAAAJAAAAAAAAA')
+            .aisle('    AEEEFFFEEEAEEEA', '    AGHGAIAGHGAGHGA', '    ACCCAJACCCACCCA')
+            .aisle('    ABBBAAABBBABBBA', '    ACCCA@ACCCACCCA', '        AAA        ')
             .where('A', Predicates.blocks('kubejs:superdense_machine_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(4).setPreviewCount(0))
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(8).setPreviewCount(0))
@@ -48,6 +55,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/abydos_multis/superdense_machine_casing',
-        'gtceu:block/machines/assembler');
+            'gtceu:block/machines/assembler');
 
 });

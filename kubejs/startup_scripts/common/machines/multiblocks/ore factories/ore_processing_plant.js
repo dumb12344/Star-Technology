@@ -4,8 +4,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('ore_processing')
         .setEUIO('in')
         .setMaxIOSize(1, 6, 1, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW , FillDirection.LEFT_TO_RIGHT)
-		.setSound(GTSoundEntries.FURNACE);
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.FURNACE);
 
 });
 
@@ -13,6 +13,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('ore_processing_plant', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
         .recipeType('plant_ore_processing')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
@@ -38,6 +41,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.any())
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
-        'kubejs:block/multiblock/primitive_blast_furnace');
-       
+            'kubejs:block/multiblock/primitive_blast_furnace');
+
 });

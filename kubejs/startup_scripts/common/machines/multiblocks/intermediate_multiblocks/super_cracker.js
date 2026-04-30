@@ -2,16 +2,23 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('super_cracker', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
+        .bottomTooltips([
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.kubejs.only_one_hatch.tooltip")
+        ])
         .recipeType('cracker')
         .machine((holder) => new $CoiledMulti(holder))
         .recipeModifiers([GTRecipeModifiers.CRACKER_OVERCLOCK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_PALLADIUM_SUBSTATION)
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle(" BCCCDDDCCCB ", " B   BBB   B ", "BBBBBBEBBBBBB", " B   BBB   B ", " BCCCDDDCCCB ") 
-            .aisle(" B   BBB   B ", "BBFFF   FFFBB", "BBFFF   FFFBB", "BBFFF   FFFBB", " B   BBB   B ") 
-            .aisle("BBBBBBBBBBBBB", "BBFFF   FFFBB", "GHHHHHHHHHHHG", "BBFFF   FFFBB", "BBBBBBBBBBBBB") 
-            .aisle(" B   BBB   B ", "BBFFF   FFFBB", "BBFFF   FFFBB", "BBFFF   FFFBB", " B   BBB   B ") 
-            .aisle(" BCCCDDDCCCB ", " B   BBB   B ", "BBBBBB@BBBBBB", " B   BBB   B ", " BCCCDDDCCCB ") 
+            .aisle(" BCCCDDDCCCB ", " B   BBB   B ", "BBBBBBEBBBBBB", " B   BBB   B ", " BCCCDDDCCCB ")
+            .aisle(" B   BBB   B ", "BBFFF   FFFBB", "BBFFF   FFFBB", "BBFFF   FFFBB", " B   BBB   B ")
+            .aisle("BBBBBBBBBBBBB", "BBFFF   FFFBB", "GHHHHHHHHHHHG", "BBFFF   FFFBB", "BBBBBBBBBBBBB")
+            .aisle(" B   BBB   B ", "BBFFF   FFFBB", "BBFFF   FFFBB", "BBFFF   FFFBB", " B   BBB   B ")
+            .aisle(" BCCCDDDCCCB ", " B   BBB   B ", "BBBBBB@BBBBBB", " B   BBB   B ", " BCCCDDDCCCB ")
             .where(" ", Predicates.any())
             .where("B", Predicates.blocks("gtceu:palladium_substation")
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(2).setPreviewCount(1))
