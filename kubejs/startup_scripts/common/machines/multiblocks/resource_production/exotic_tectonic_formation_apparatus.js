@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('exotic_rock_crushing')
         .category('resource_production')
         .setMaxIOSize(3, 1, 2, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ASSEMBLER , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ASSEMBLER, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION);
 });
 
@@ -39,6 +39,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("h", Predicates.blocks("gtceu:naquadah_coil_block"))
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
+        .bottomTooltips(
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("gtceu.tooltip.only_one_hatch")
+        )
         .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-	    	'gtceu:block/multiblock/fusion_reactor');
+            'gtceu:block/multiblock/fusion_reactor');
 });

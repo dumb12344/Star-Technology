@@ -8,15 +8,15 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.VACUUM_CHEMICAL_REACTION_CHAMBER, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('gtceu:palladium_substation'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle('AAABB     ', 'C   C     ', 'C   C     ', 'C   C     ', 'AAABB     ') 
-            .aisle('ABBBB     ', ' DDD      ', ' DDD      ', ' DDD      ', 'ABBBB     ') 
-            .aisle('ABBBBBBBCC', ' DDD   BBC', ' E D    BB', ' DDD   BBC', 'ABBBBBBBCC') 
-            .aisle('ABBBBBBBBC', ' DDDDFDD  ', ' E DDFDD  ', ' DDDDFDD  ', 'ABBBBBBBBC') 
-            .aisle('ABBBBBBBBB', ' DDDDDDD  ', ' EGGGGGH  ', ' DGDDDGD  ', 'ABIIIIIBBB') 
-            .aisle('ABBBBBBBBC', ' DDDDFDD  ', ' E DDFDD  ', ' DDDDFDD  ', 'ABBBBBBBBC') 
-            .aisle('ABBBBBBBCC', ' DDD   BBC', ' E D    BB', ' DDD   BBC', 'ABBBBBBBCC') 
-            .aisle('ABBBB     ', ' DDD      ', ' DDD      ', ' DDD      ', 'ABBBB     ') 
-            .aisle('AAABB     ', 'CBBBC     ', 'CB@BC     ', 'CBBBC     ', 'AAABB     ') 
+            .aisle('AAABB     ', 'C   C     ', 'C   C     ', 'C   C     ', 'AAABB     ')
+            .aisle('ABBBB     ', ' DDD      ', ' DDD      ', ' DDD      ', 'ABBBB     ')
+            .aisle('ABBBBBBBCC', ' DDD   BBC', ' E D    BB', ' DDD   BBC', 'ABBBBBBBCC')
+            .aisle('ABBBBBBBBC', ' DDDDFDD  ', ' E DDFDD  ', ' DDDDFDD  ', 'ABBBBBBBBC')
+            .aisle('ABBBBBBBBB', ' DDDDDDD  ', ' EGGGGGH  ', ' DGDDDGD  ', 'ABIIIIIBBB')
+            .aisle('ABBBBBBBBC', ' DDDDFDD  ', ' E DDFDD  ', ' DDDDFDD  ', 'ABBBBBBBBC')
+            .aisle('ABBBBBBBCC', ' DDD   BBC', ' E D    BB', ' DDD   BBC', 'ABBBBBBBCC')
+            .aisle('ABBBB     ', ' DDD      ', ' DDD      ', ' DDD      ', 'ABBBB     ')
+            .aisle('AAABB     ', 'CBBBC     ', 'CB@BC     ', 'CBBBC     ', 'AAABB     ')
             .where('A', Predicates.blocks('kubejs:pallaridium_firebox_casing'))
             .where('B', Predicates.blocks('gtceu:palladium_substation')
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(8).setPreviewCount(0))
@@ -36,7 +36,16 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('I', Predicates.blocks('kubejs:pallaridium_engine_intake_casing'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingModel('gtceu:block/casings/solid/machine_casing_palladium_substation', 
+        .paginatedTooltipPage(
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.0"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.1"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.2"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.3"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.4"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.5"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.6"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.7")
+        )
+        .workableCasingModel('gtceu:block/casings/solid/machine_casing_palladium_substation',
             'gtceu:block/machines/chemical_reactor');
-
 });
