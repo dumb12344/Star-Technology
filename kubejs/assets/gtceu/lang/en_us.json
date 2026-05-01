@@ -869,6 +869,8 @@
     "block.gtceu.draco_infusion.tooltip.4": "§7The items must be correctly placed as shown in the recipe in the input buses of the Draconic Infusion Array from the perspective of the player facing the controller.",
     "block.gtceu.draco_infusion.tooltip.5": "§8-----------------------------------",
 
+    "block.gtceu.primordial_infusion": "§dPrimordial Infusion Array",
+
     "block.gtceu.mega_abs": "Hellfire Alloy Materializer",
     "block.gtceu.mega_abs.tooltip.0": "§c§lParallel Alloy Blast Smelter",
     "block.gtceu.mega_abs.tooltip.1": "§7A nether-forged blazing chamber channeling concentrated hellfire to rapidly smelt and alloy materials. Its searing heat accelerates alloying far beyond traditional flame.",
@@ -1432,6 +1434,10 @@
     "block.gtceu.super_cracker": "Fractional Disruption Furnace",
     "block.gtceu.super_pyrolyse": "Thermal Decomposition Array",
     "block.gtceu.super_barrel": "Industrial Accumulation Vessel",
+
+    "block.gtceu.super_gas_collector": "Compression Gas Siphon",
+    "block.gtceu.super_gas_collector.tooltip.0": "§7Collects gas just a bit faster.",
+    "block.gtceu.super_gas_collector.tooltip.1": "Can only have §bone§r Energy Hatch",
 
     "material.gtceu.akreyriadic_runixium": "Akreyriadic-Runixium",
     "material.gtceu.weapon_grade_stellarized_naquadah": "Weapon Grade §bStellarized§f Naquadah",

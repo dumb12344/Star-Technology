@@ -22,5 +22,6 @@ ServerEvents.tags('item', event => {
     event.remove('forge:ingots/red_alloy', 'projectred_core:red_ingot');
     event.remove('forge:ingots/electrotine', 'projectred_core:electrotine_ingot');
     event.remove('forge:dusts/electrotine', 'projectred_core:electrotine_dust');
+    event.add('c:logic_gates', /projectred_integration:.*_gate/);
 
 });

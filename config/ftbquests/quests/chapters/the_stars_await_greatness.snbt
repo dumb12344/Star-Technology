@@ -18,11 +18,7 @@
 	quests: [
 		{
 			dependencies: ["13508A2A55EAA6E1"]
-			description: [
-				"- to format to lang"
-				""
-				"\"Tier 2 Specialized Helixes\""
-			]
+			description: ["{ftbquests.dsg.specialized_helix_t2.description}"]
 			id: "48E30750B355F98F"
 			tasks: [
 				{
@@ -54,7 +50,7 @@
 				item: "minecraft:bedrock"
 				type: "item"
 			}]
-			title: "{ftbquests.draconic_age.dsg_gate_line.title}"
+			title: "{ftbquests.dsg.dsg_gate_line.title}"
 			x: 13.5d
 			y: -0.5d
 		}
@@ -69,7 +65,7 @@
 				item: "sgjourney:pegasus_stargate"
 				type: "item"
 			}]
-			title: "{ftbquests.draconic_age.draconic_stargate.title}"
+			title: "{ftbquests.dsg.draconic_stargate.title}"
 			x: 13.5d
 			y: 3.5d
 		}
@@ -81,9 +77,9 @@
 				"208863E121666BF4"
 			]
 			description: [
-				"{ftbquests.draconic_age.maxwell.description.1}"
+				"{ftbquests.dsg.maxwell.description.1}"
 				"{@pagebreak}"
-				"{ftbquests.draconic_age.maxwell.description.2}"
+				"{ftbquests.dsg.maxwell.description.2}"
 			]
 			id: "3BB8848F84026B45"
 			rewards: [{
@@ -94,7 +90,7 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "{ftbquests.draconic_age.maxwell.subtitle}"
+			subtitle: "{ftbquests.dsg.maxwell.subtitle}"
 			tasks: [{
 				id: "184862475E5F6DB3"
 				item: "placeablemaxwell:maxwell"
@@ -105,23 +101,23 @@
 		}
 		{
 			dependencies: ["3BB8848F84026B45"]
-			description: ["{ftbquests.draconic_age.completion.description}"]
+			description: ["{ftbquests.dsg.completion.description}"]
 			id: "46982CD51A50CD07"
 			shape: "pentagon"
 			size: 1.25d
-			subtitle: "{ftbquests.draconic_age.completion.subtitle}"
+			subtitle: "{ftbquests.dsg.completion.subtitle}"
 			tasks: [{
 				id: "5163F1D911C227BB"
-				title: "{ftbquests.draconic_age.completion.item_title}"
+				title: "{ftbquests.dsg.completion.item_title}"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.draconic_age.completion.title}"
+			title: "{ftbquests.dsg.completion.title}"
 			x: 10.875d
 			y: 4.745000000000001d
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
-			description: ["{ftbquests.draconic_age.vasilisa.description}"]
+			description: ["{ftbquests.dsg.vasilisa.description}"]
 			hide_dependency_lines: true
 			id: "0B475E2385B478C0"
 			rewards: [{
@@ -131,7 +127,7 @@
 			}]
 			shape: "none"
 			size: 1.25d
-			subtitle: "{ftbquests.draconic_age.vasilisa.subtitle}"
+			subtitle: "{ftbquests.dsg.vasilisa.subtitle}"
 			tasks: [{
 				id: "29314FA6BB5D9A2A"
 				item: "placeablemaxwell:vasilisa"
@@ -142,7 +138,7 @@
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
-			description: ["{ftbquests.draconic_age.valenok.description}"]
+			description: ["{ftbquests.dsg.valenok.description}"]
 			hide_dependency_lines: true
 			id: "53E595EAB1C90884"
 			rewards: [{
@@ -152,7 +148,7 @@
 			}]
 			shape: "none"
 			size: 1.25d
-			subtitle: "{ftbquests.draconic_age.valenok.subtitle}"
+			subtitle: "{ftbquests.dsg.valenok.subtitle}"
 			tasks: [{
 				id: "1738781A05EE828F"
 				item: "placeablemaxwell:valenok"
@@ -164,7 +160,7 @@
 		{
 			dependencies: ["2DACE6EF41A118D9"]
 			dependency_requirement: "one_started"
-			description: ["{ftbquests.draconic_age.mars.description}"]
+			description: ["{ftbquests.dsg.mars.description}"]
 			hide_dependency_lines: true
 			id: "61C534992FB17066"
 			rewards: [{
@@ -174,7 +170,7 @@
 			}]
 			shape: "none"
 			size: 1.25d
-			subtitle: "{ftbquests.draconic_age.mars.subtitle}"
+			subtitle: "{ftbquests.dsg.mars.subtitle}"
 			tasks: [{
 				id: "4646C0AA2053021D"
 				item: "placeablemaxwell:mars"
@@ -196,7 +192,7 @@
 		}
 		{
 			dependencies: ["2DACE6EF41A118D9"]
-			description: ["{ftbquests.draconic_age.poomba.description}"]
+			description: ["{ftbquests.dsg.poomba.description}"]
 			hide_dependency_lines: true
 			id: "208863E121666BF4"
 			shape: "none"
@@ -245,12 +241,12 @@
 			id: "325986460718E0F9"
 			tasks: [{
 				id: "13507A85BE4A7080"
-				title: "loaf"
+				title: "{ftbquests.dsg.loaf.title}"
 				type: "checkmark"
 			}]
 			x: 16.5d
 			y: -0.5d
 		}
 	]
-	title: "The Stars Await Greatness"
+	title: "{ftbquests.dsg.title}"
 }

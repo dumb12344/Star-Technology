@@ -1579,10 +1579,10 @@
 			optional: true
 			tasks: [{
 				id: "78581BF782B594DE"
-				title: "{ftbquests.resource_production.positioner.title}"
+				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
-			x: 1.0d
+			x: -1.5d
 			y: -4.5d
 		}
 		{
