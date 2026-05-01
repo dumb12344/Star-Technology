@@ -183,7 +183,7 @@
 		}
 		{
 			dependencies: ["3AA8F5EDD58D4F43"]
-			description: ["{ftbquests.processing_lines_chap.small_spurified_debris_dust.description}"]
+			description: ["{ftbquests.pl.small_purified_debris_dust.description}"]
 			id: "346DEF55D35A9E96"
 			size: 1.0d
 			tasks: [{
@@ -196,7 +196,7 @@
 		}
 		{
 			dependencies: ["3AA8F5EDD58D4F43"]
-			description: ["{ftbquests.processing_lines_chap.spurified_debris_dust.description}"]
+			description: ["{ftbquests.pl.spurified_debris_dust.description}"]
 			id: "2F561AA9ED46E0F8"
 			size: 1.0d
 			tasks: [{
@@ -204,7 +204,7 @@
 				item: "gtceu:purified_debris_dust"
 				type: "item"
 			}]
-			title: "{ftbquests.processing_lines_chap.spurified_debris_dust.title}"
+			title: "{ftbquests.pl.spurified_debris_dust.title}"
 			x: -13.5d
 			y: 1.5d
 		}
@@ -294,7 +294,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "toLang \"Debris Chemical Byproducts\""
+			title: "{ftbquests.pl.debris_byprods.title}"
 			x: -11.5d
 			y: 4.5d
 		}
@@ -321,7 +321,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "toLang \"Debris Chemical Inputs\""
+			title: "{ftbquests.pl.debris_inputs.title} \"Debris Chemical Inputs\""
 			x: -13.5d
 			y: 4.5d
 		}
@@ -488,7 +488,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.purified_galena_sphalerite.title}"
+			title: "{ftbquests.pl.purified_galena_sphalerite.title}"
 			x: -13.0d
 			y: -0.5d
 		}
@@ -627,7 +627,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.uranium_hexafluoride.title}"
+			title: "{ftbquests.pl.uranium_hexafluoride.title}"
 			x: -9.5d
 			y: -3.5d
 		}
@@ -655,7 +655,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.enriched_uranium_hexafluoride.title}"
+			title: "{ftbquests.pl.enriched_uranium_hexafluoride.title}"
 			x: -8.5d
 			y: -4.5d
 		}
@@ -683,7 +683,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.depleted_uranium_hexafluoride.title}"
+			title: "{ftbquests.pl.depleted_uranium_hexafluoride.title}"
 			x: -10.5d
 			y: -2.5d
 		}
@@ -859,7 +859,7 @@
 		}
 		{
 			dependencies: ["4BCC078B76C6CAE3"]
-			description: ["{ftbquests.processing_lines_chap.nether_star_shard.description}"]
+			description: ["{ftbquests.pl.nether_star_shard.description}"]
 			icon: "mysticalagradditions:nether_star_shard"
 			id: "200BA54AC5EC0BF0"
 			tasks: [
@@ -870,11 +870,11 @@
 				}
 				{
 					id: "30D9A1473D4A2A42"
-					title: "{ftbquests.processing_lines_chap.nether_star_shard.item_title}"
+					title: "{ftbquests.pl.nether_star_shard.item_title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.nether_star_shard.title}"
+			title: "{ftbquests.pl.nether_star_shard.title}"
 			x: 5.0d
 			y: -5.0d
 		}
@@ -1003,13 +1003,13 @@
 		}
 		{
 			dependencies: ["24CF3F64E74A027E"]
-			description: ["{ftbquests.processing_lines_chap.perfect_nether_star_looping.description}"]
+			description: ["{ftbquests.pl.perfect_nether_star_looping.description}"]
 			icon: "minecraft:nether_star"
 			id: "2AA8CBE804E07BC7"
 			optional: true
 			tasks: [{
 				id: "38C47CEF4F0CDF23"
-				title: "{ftbquests.processing_lines_chap.perfect_nether_star_looping.title}"
+				title: "{ftbquests.pl.perfect_nether_star_looping.title}"
 				type: "checkmark"
 			}]
 			x: 10.5d
@@ -1095,7 +1095,7 @@
 			tasks: [
 				{
 					id: "632E07BAB3C511C3"
-					title: "{ftbquests.processing_lines_chap.hot_naquadah_ingot.title}"
+					title: "{ftbquests.pl.hot_naquadah_ingot.title}"
 					type: "checkmark"
 				}
 				{
@@ -1153,7 +1153,7 @@
 				"0743A08E81AB84D3"
 				"1F416C7A641914EC"
 			]
-			description: ["{ftbquests.processing_lines_chap.naquadah_ingot.description}"]
+			description: ["{ftbquests.pl.naquadah_ingot.description}"]
 			id: "445BC7DFD3387DD4"
 			rewards: [{
 				count: 3
@@ -1501,7 +1501,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.pcb_coolant.title}"
+			title: "{ftbquests.pl.pcb_coolant.title}"
 			x: 3.0d
 			y: 2.5d
 		}
@@ -1529,7 +1529,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.hot_pcb_coolant.title}"
+			title: "{ftbquests.pl.hot_pcb_coolant.title}"
 			x: 4.0d
 			y: 2.5d
 		}
@@ -1568,7 +1568,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.benzene.title}"
+			title: "{ftbquests.pl.benzene.title}"
 			x: -1.5d
 			y: -1.5d
 		}
@@ -1596,7 +1596,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.chlorine.title}"
+			title: "{ftbquests.pl.chlorine.title}"
 			x: -1.5d
 			y: -0.5d
 		}
@@ -1627,7 +1627,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.dichlorobenzene.title}"
+			title: "{ftbquests.pl.dichlorobenzene.title}"
 			x: -0.5d
 			y: -1.0d
 		}
@@ -2024,5 +2024,5 @@
 			y: 8.5d
 		}
 	]
-	title: "toLang \"Processing Lines - 2\""
+	title: "{ftbquests.pl2.title}"
 }

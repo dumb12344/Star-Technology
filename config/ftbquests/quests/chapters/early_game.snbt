@@ -1,4 +1,5 @@
 {
+	autofocus_id: "0226D71E1F627A7F"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "early_game"
@@ -29,7 +30,7 @@
 		{
 			id: "01400DBE45C98AB4"
 			linked_quest: "76CD29559C341985"
-			x: -10.5d
+			x: -8.5d
 			y: 5.0d
 		}
 		{
@@ -983,6 +984,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{ftbquests.early_game.red_alloy.description}"]
+			hide_dependency_lines: true
 			id: "0843E56CA39E9822"
 			rewards: [{
 				id: "56F860D21CE643C7"
@@ -1334,7 +1336,7 @@
 				}
 			]
 			title: "{ftbquests.early_game.lava.title}"
-			x: -8.5d
+			x: -10.5d
 			y: 5.0d
 		}
 		{
@@ -2010,11 +2012,13 @@
 				{
 					id: "0FD57A804E9A6670"
 					item: "gtceu:steam_grinder"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "378E79F5C85853A5"
 					item: "gtceu:steam_oven"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2432,6 +2436,18 @@
 			}]
 			x: -2.5d
 			y: -3.0d
+		}
+		{
+			id: "0226D71E1F627A7F"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "1FCDF73D8E73C7D3"
+				title: "{ftbquests.positioner.title}"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
 		}
 	]
 	title: "{ftbquests.early_game.title}"

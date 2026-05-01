@@ -178,10 +178,10 @@ ServerEvents.recipes(event => {
 
     // Standard Casings
 
-    event.recipes.gtceu.assembler(id('wood_casing'))
+    event.recipes.gtceu.assembler(id('treatedwood_casing'))
         .itemInputs('gtceu:treated_wood_frame','6x gtceu:treated_wood_plate','4x gtceu:brass_screw')
         .inputFluids('gtceu:rubber 144')
-        .itemOutputs('2x kubejs:wood_casing')
+        .itemOutputs('2x kubejs:treatedwood_casing')
         .duration(100)
         .EUt(30);
 

@@ -1437,13 +1437,14 @@
 		{
 			id: "5D67E904C7D02AB8"
 			invisible: true
+			optional: true
 			tasks: [{
 				id: "76B74EE25F58E344"
-				title: "{ftbquests.ae2.positioner.title}"
+				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1781,6 +1782,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["272CE9BF358D64FE"]
 			id: "795C46D5A4EFCCB8"
 			tasks: [
 				{
@@ -1855,6 +1857,17 @@
 			title: "{ftbquests.ae2.expanded_stocking_hatches.title}"
 			x: -9.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["617E17824856450D"]
+			id: "145E8628D8EAB5A8"
+			tasks: [{
+				id: "5EC8800E511924D5"
+				item: "pccard:card_programmed_circuit"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
 		}
 	]
 	title: "{ftbquests.ae2.title}"
