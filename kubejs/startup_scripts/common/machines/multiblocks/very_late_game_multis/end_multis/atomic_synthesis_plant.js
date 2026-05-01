@@ -3,9 +3,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('atomic_synthesis_plant', 'multiblock')
         .machine((holder) => new $CoiledMulti(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeTypes(['chemical_skip'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:cattomolymer_casing'))

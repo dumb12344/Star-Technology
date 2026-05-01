@@ -16,8 +16,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .rotationState(RotationState.NON_Y_AXIS)
             .tooltips([
                 Text.translate("block.start_core.gap"),
-                Text.translate("block.kubejs.only_one_2a_hatch.tooltip"),
-                Text.translate("block.start_core.breaker_line")
+                Text.translate("block.kubejs.only_one_2a_hatch.tooltip")
             ])
             .recipeType(type)
             .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.BATCH_MODE])

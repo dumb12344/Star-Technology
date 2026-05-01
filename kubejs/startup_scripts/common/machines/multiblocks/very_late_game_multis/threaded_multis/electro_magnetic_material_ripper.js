@@ -4,10 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
         .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
-        .bottomTooltips([
-            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.start_core.gap"),
             Text.translate("block.kubejs.threading.tooltip")
         ])
         .recipeTypes(['polarizer', 'electromagnetic_separator', 'electrolyzer'])

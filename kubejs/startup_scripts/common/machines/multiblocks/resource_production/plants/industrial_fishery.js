@@ -13,9 +13,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('industrial_fishery', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeType('industrial_fishery')
         .appearanceBlock(() => Block.getBlock('gtceu:clean_machine_casing'))
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])

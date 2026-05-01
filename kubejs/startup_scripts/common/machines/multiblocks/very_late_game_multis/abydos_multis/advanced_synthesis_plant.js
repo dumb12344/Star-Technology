@@ -16,9 +16,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('advanced_synthesis_plant', 'multiblock')
         .machine((holder) => new $LayeredWorkableElectricMultiblockMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeTypes(['ordered_chemistry'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
         .appearanceBlock(() => Block.getBlock('kubejs:peek_casing'))

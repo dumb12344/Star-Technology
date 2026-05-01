@@ -9,9 +9,6 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('dimensional_destabiliser', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeType('dimensional_destabiliser')
         .recipeModifiers([$StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)

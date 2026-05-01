@@ -4,8 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .tooltips([
             Text.translate("block.start_core.gap"),
-            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip"),
-            Text.translate("block.start_core.breaker_line")
+            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
         ])
         .recipeType('electric_ore_processing')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])

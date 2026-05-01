@@ -12,9 +12,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('void_excavator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeTypes(['void_excavation', 'aqueous_void_excavation'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)

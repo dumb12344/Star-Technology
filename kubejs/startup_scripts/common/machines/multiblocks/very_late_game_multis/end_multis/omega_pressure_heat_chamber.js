@@ -2,9 +2,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('omega_pressure_heat_chamber', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeType('pressure_heat_chamber')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:extreme_temperature_smelting_casing'))

@@ -1095,7 +1095,7 @@
     "material.gtceu.liquefied_nutrient_paste": "Liquefied Nutrient Paste",
     "material.gtceu.biostimulating_mixture": "Biostimulating Mixture",
 
-    "block.gtceu.macerators.tooltip.1": "§7Macerators only produce byproducts shown in JEI at HV or higher",
+    "block.gtceu.macerators.tooltip.1": "§7Macerators only produce byproducts shown in JEI/EMI at HV or higher",
 
     "block.gtceu.ulv_fluid_input.tooltip.1": "Fluid Input for Primitive Multiblocks",
     "block.gtceu.ulv_fluid_input.tooltip.2": "§9Fluid Capacity:§r 2,000 mB",
@@ -1141,7 +1141,6 @@
 
     "block.gtceu.super_implosion_compressor": "High Intensity Imploder",
     "block.gtceu.super_implosion_compressor.tooltip.0": "§7The chaining of explosions helps this machine process at immense rates.",
-    "block.gtceu.super_implosion_compressor.tooltip.1": "§7Coils impact the machine the same they would a §fMulti Smelter§7.",
 
     "block.gtceu.super_cutter": "Large Cutter",
     "block.gtceu.super_cutter.tooltip.0": "§7A larger variant of the cutter that can process more materials at once.",
@@ -1245,7 +1244,7 @@
     "material.gtceu.brominated_chlorine_vapor": "Brominated Chlorine Vapor",
     "material.gtceu.acidic_bromine_exhaust": "Acidic Bromine Exhaust",
 
-    "block.gtceu.large_maceration_tower.tooltip.1": "Available Recipe Types: Macerator, Pulverizer",
+    "block.gtceu.large_maceration_tower.tooltip.1": "§aAvailable Recipe Types: Macerator, Pulverizer",
 
     "block.gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
     "gtceu.bacteria_synthesizer": "Bacteria Synthesizer",
@@ -1300,7 +1299,6 @@
 
     "block.gtceu.super_gas_collector": "Compression Gas Siphon",
     "block.gtceu.super_gas_collector.tooltip.0": "§7Collects gas just a bit faster.",
-    "block.gtceu.super_gas_collector.tooltip.1": "Can only have §bone§r Energy Hatch",
 
     "material.gtceu.akreyriadic_runixium": "Akreyriadic-Runixium",
     "material.gtceu.weapon_grade_stellarized_naquadah": "Weapon Grade §bStellarized§f Naquadah",
@@ -1308,7 +1306,7 @@
     "gtceu.exotic_rock_crushing": "Exotic Rock Crushing",
 
     "block.gtceu.exotic_tectonic_formation_apparatus": "Exotic Tectonic Formation Apparatus",
-    "block.gtceu.exotic_tectonic_formation_apparatus.tooltip.0": "§7A machine that can create tectonic formations with unique properties, allowing for the extraction of rare resources and the creation of specialized environments."
+    "block.gtceu.exotic_tectonic_formation_apparatus.tooltip.0": "§7A machine that can create tectonic formations with unique properties, allowing for the extraction of rare resources and the creation of specialized environments.",
     "material.gtceu.ferrocene": "Ferrocene",
     "material.gtceu.hexafluorophosphoric_acid": "Hexafluorophosphoric Acid",
     "material.gtceu.iron_cyclopentadienyl_dichlorobenzene": "Iron Cyclopentadienyl Dichlorobenzene",

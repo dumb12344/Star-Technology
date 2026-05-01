@@ -14,8 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.3"),
             Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.4"),
             Text.translate("block.start_core.breaker_line"),
-            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.5"),
-            Text.translate("block.start_core.breaker_line")
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.5")
         ]])
         .recipeType('vacuum_chemical_reaction_chamber')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.VACUUM_CHEMICAL_REACTION_CHAMBER, GTRecipeModifiers.BATCH_MODE])

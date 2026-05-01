@@ -11,8 +11,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .tooltips([
             Text.translate("block.start_core.gap"),
-            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip"),
-            Text.translate("block.start_core.breaker_line")
+            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
         ])
         .recipeType('exotic_rock_crushing')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])

@@ -27,9 +27,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('large_quantum_compressor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeTypes(['quantum_compressor_extraction', 'quantum_compressor_infusion'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_STRESS_PROOF)

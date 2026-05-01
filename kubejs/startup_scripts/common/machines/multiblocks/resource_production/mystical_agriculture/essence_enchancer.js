@@ -13,9 +13,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('essence_enchancer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeType('essence_enchancing')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)

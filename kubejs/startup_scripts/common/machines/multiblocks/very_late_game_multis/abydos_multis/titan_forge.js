@@ -2,9 +2,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('titan_forge', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeType('titan_forge')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT])
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))

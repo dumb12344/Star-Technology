@@ -5,7 +5,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tooltips([
             Text.translate("block.gtceu.supreme_plasma_turbine.top.0"),
             Text.translate("block.gtceu.supreme_plasma_turbine.top.1"),
-            Text.translate("block.start_core.breaker_line")
+            Text.translate("block.start_core.gap"),
+            Text.translate("block.gtceu.supreme_plasma_turbine.bottom")
         ])
         .paginatedTooltips([
             [
@@ -20,10 +21,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 Text.translate("block.gtceu.supreme_plasma_turbine.p2.2"),
                 Text.translate("block.gtceu.supreme_plasma_turbine.p2.3")
             ]
-        ])
-        .bottomTooltips([
-            Text.translate("block.start_core.breaker_line"),
-            Text.translate("block.gtceu.supreme_plasma_turbine.bottom")
         ])
         .recipeType('plasma_generator')
         .generator(true)
@@ -59,7 +56,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .tooltips([
             Text.translate("block.gtceu.supreme_plasma_turbine.top.0"),
             Text.translate("block.gtceu.supreme_plasma_turbine.top.1"),
-            Text.translate("block.start_core.breaker_line")
+            Text.translate("block.start_core.gap"),
+            Text.translate("block.gtceu.supreme_plasma_turbine.bottom")
         ])
         .paginatedTooltips([
             [
@@ -74,10 +72,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.2"),
                 Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.3")
             ]
-        ])
-        .bottomTooltips([
-            Text.translate("block.start_core.breaker_line"),
-            Text.translate("block.gtceu.nyinsane_plasma_turbine.bottom")
         ])
         .recipeType('plasma_generator')
         .generator(true)

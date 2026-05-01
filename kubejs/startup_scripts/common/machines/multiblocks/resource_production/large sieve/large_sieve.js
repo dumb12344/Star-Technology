@@ -13,9 +13,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('large_sieve', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeType('large_sieve')
         .appearanceBlock(GTBlocks.CASING_TUNGSTENSTEEL_ROBUST)
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])

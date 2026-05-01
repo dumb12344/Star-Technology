@@ -16,9 +16,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('draco_circuit_assembler', 'multiblock')
         .machine((holder) => new $AssemblyLineMulti(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeType('draco_circuit_assembler')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:enriched_naquadah_machine_casing'))

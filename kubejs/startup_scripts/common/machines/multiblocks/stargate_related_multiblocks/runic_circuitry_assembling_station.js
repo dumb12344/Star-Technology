@@ -13,9 +13,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('runic_circuitry_assembling_station', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeType('runic_circuitry_assembling_station')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:lumium_casing'))

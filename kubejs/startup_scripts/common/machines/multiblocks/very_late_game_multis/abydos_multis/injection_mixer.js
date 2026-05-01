@@ -15,9 +15,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('injection_mixer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('injection_mixer')
-        .tooltips([
-            Text.translate("block.start_core.breaker_line")
-        ])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:noble_mixing_casing'))
         .pattern(definition => FactoryBlockPattern.start()

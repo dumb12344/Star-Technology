@@ -7,8 +7,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             Text.translate("block.gtceu.draco_infusion.tooltip.1"),
             Text.translate("block.gtceu.draco_infusion.tooltip.2"),
             Text.translate("block.gtceu.draco_infusion.tooltip.3"),
-            Text.translate("block.gtceu.draco_infusion.tooltip.4"),
-            Text.translate("block.start_core.breaker_line")
+            Text.translate("block.gtceu.draco_infusion.tooltip.4")
         ])
         .machine((holder) => new $StarTDraconicInfusionMachine(holder))
         .recipeType('draco_infusion')
