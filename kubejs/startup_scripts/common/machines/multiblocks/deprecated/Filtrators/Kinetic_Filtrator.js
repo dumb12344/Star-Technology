@@ -27,7 +27,7 @@
 //             .where('X', Predicates.blocks('gtceu:bronze_firebox_casing'))     
 //             .where('M', Predicates.blocks('kubejs:meshblock'))
 //             .where('G', Predicates.blocks('thermal_extra:soul_infused_glass'))
-//             .where('T', Predicates.blocks('kubejs:wood_casing'))
+//             .where('T', Predicates.blocks('kubejs:treatedwood_casing'))
 //             .where('.', Predicates.any())
 //             .build())
 //         .workableCasingRenderer('gtceu:block/casings/steam/bricked_bronze/top',

@@ -632,11 +632,11 @@
 			optional: true
 			tasks: [{
 				id: "03D2F19E7E4E8C5A"
-				title: "{ftbquests.line_of_progression.positioner.title}"
+				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -1.0d
+			x: -3.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1097,7 +1097,7 @@
 					type: "item"
 				}
 				{
-					id: "2CC0EBC6D6B3DF4F"
+					id: "0C9B8D7285EAE051"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
@@ -1129,15 +1129,19 @@
 								}
 								{
 									Count: 1b
-									id: "gtceu:dimensional_destabiliser"
-								}
-								{
-									Count: 1b
 									id: "gtceu:mega_abs"
 								}
 								{
 									Count: 1b
 									id: "gtceu:chemical_plant"
+								}
+								{
+									Count: 1b
+									id: "gtceu:advanced_synthesis_plant"
+								}
+								{
+									Count: 1b
+									id: "gtceu:extreme_chemical_reactor"
 								}
 							]
 						}
@@ -1577,7 +1581,7 @@
 			]
 			id: "6C2A5583F90D6298"
 			tasks: [{
-				id: "2DD2E38EBE0CE6B8"
+				id: "0302EB54B8AC906D"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -1607,6 +1611,30 @@
 								Count: 1b
 								id: "gtceu:super_vacuum_freezer"
 							}
+							{
+								Count: 1b
+								id: "gtceu:super_gas_collector"
+							}
+							{
+								Count: 1b
+								id: "gtceu:super_cracker"
+							}
+							{
+								Count: 1b
+								id: "gtceu:super_pyrolyse"
+							}
+							{
+								Count: 1b
+								id: "gtceu:super_barrel"
+							}
+							{
+								Count: 1b
+								id: "gtceu:compact_assembly_line"
+							}
+							{
+								Count: 1b
+								id: "gtceu:dimensional_destabiliser"
+							}
 						]
 					}
 				}
@@ -1620,7 +1648,7 @@
 			dependencies: ["493DD013C818BB7B"]
 			id: "78FD32AC70AFE0CD"
 			tasks: [{
-				id: "2C6C8203867AE6BA"
+				id: "76FE6CE055369717"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -1685,6 +1713,18 @@
 							{
 								Count: 1b
 								id: "gtceu:component_part_hub"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ultimate_ebf"
+							}
+							{
+								Count: 1b
+								id: "gtceu:primordial_infusion"
+							}
+							{
+								Count: 1b
+								id: "start_core:fornaxs_infernal_rotary_engine"
 							}
 						]
 					}

@@ -1,4 +1,5 @@
 {
+	autofocus_id: "676CB078F9E4B9EF"
 	default_hide_dependency_lines: false
 	default_quest_shape: "square"
 	filename: "power"
@@ -866,241 +867,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["51639FA6915BC51A"]
-			description: ["{ftbquests.power.basic_energy_core.description}"]
-			id: "3DB836585182F614"
-			tasks: [{
-				id: "5AFD383C58F00AFC"
-				item: "kubejs:basic_energy_core"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["3DB836585182F614"]
-			id: "120C7AB980EAE90D"
-			tasks: [{
-				id: "587F1FE713F04F02"
-				item: "kubejs:regular_energy_core"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["120C7AB980EAE90D"]
-			id: "6E149057874AC992"
-			tasks: [{
-				id: "264FDE7BA1BFD770"
-				item: "kubejs:intermediate_energy_core"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["6E149057874AC992"]
-			id: "5B70B50435FD572D"
-			tasks: [{
-				id: "60393B8F173667FF"
-				item: "kubejs:advanced_energy_core"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["5B70B50435FD572D"]
-			id: "6F4474291CE8042C"
-			tasks: [{
-				id: "33CB0C708F1ACCC9"
-				item: "kubejs:elite_energy_core"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6F4474291CE8042C"]
-			id: "21C399BC8BE2785F"
-			tasks: [{
-				id: "6B0B411795F0AB60"
-				item: "kubejs:ultimate_energy_core"
-				type: "item"
-			}]
-			x: -8.5d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"3DB836585182F614"
-				"6F408C9FD7D65DF4"
-			]
-			id: "2C72517EAF0E4F9E"
-			tasks: [{
-				id: "284C2ED5169DA23C"
-				item: "solarflux:photovoltaic_cell_1"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"120C7AB980EAE90D"
-				"2C72517EAF0E4F9E"
-			]
-			id: "590C298B843E22D5"
-			tasks: [{
-				id: "7816AA5137301A94"
-				item: "solarflux:photovoltaic_cell_2"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"6E149057874AC992"
-				"590C298B843E22D5"
-			]
-			id: "0035C9FAB741E166"
-			tasks: [{
-				id: "08575E0E0090D598"
-				item: "solarflux:photovoltaic_cell_3"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"5B70B50435FD572D"
-				"0035C9FAB741E166"
-			]
-			id: "620F96D00BB9BFD0"
-			tasks: [{
-				id: "34A45E0E16ED6B9D"
-				item: "solarflux:photovoltaic_cell_4"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"6F4474291CE8042C"
-				"620F96D00BB9BFD0"
-			]
-			id: "18F6E5836D82D628"
-			tasks: [{
-				id: "0453AB2CCB7F5AF0"
-				item: "solarflux:photovoltaic_cell_5"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"21C399BC8BE2785F"
-				"18F6E5836D82D628"
-			]
-			id: "72DDEB53C9BDDBFC"
-			tasks: [{
-				id: "192DCD37C60A6BF1"
-				item: "solarflux:photovoltaic_cell_6"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"6F408C9FD7D65DF4"
-				"7AAF2D8BC72919DB"
-			]
-			id: "0C98CEC5242B2FB0"
-			tasks: [{
-				id: "0DDAB3E70391476D"
-				item: "solarflux:sp_1"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -7.0d
-		}
-		{
-			dependencies: [
-				"2C72517EAF0E4F9E"
-				"4F2692F874F68EF8"
-			]
-			id: "4A2B54786509F5E4"
-			tasks: [{
-				id: "0F635DF4A11646AB"
-				item: "solarflux:sp_2"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"590C298B843E22D5"
-				"121EFB24BE239D59"
-			]
-			id: "4DA961ED5AF34D63"
-			tasks: [{
-				id: "51EDB1B37B3DE1BE"
-				item: "solarflux:sp_3"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"0035C9FAB741E166"
-				"51F889E1432E4DAD"
-			]
-			id: "7E26E2727F86A2CE"
-			tasks: [{
-				id: "5C2DFEC63170686D"
-				item: "solarflux:sp_4"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"620F96D00BB9BFD0"
-				"0055CE82469F239C"
-			]
-			id: "470AEDAED3B9A2AA"
-			tasks: [{
-				id: "794967CF7B95255A"
-				item: "solarflux:sp_5"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"18F6E5836D82D628"
-				"5D107FD21879F54B"
-			]
-			id: "723224D36C88ACA9"
-			tasks: [{
-				id: "1CED4230D5648B99"
-				item: "solarflux:sp_6"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -2.0d
-		}
-		{
 			dependencies: [
 				"61E90638F79C5867"
 				"1B32FFCDA1C87B90"
@@ -1591,20 +1357,6 @@
 			title: "{ftbquests.power.diatrons.title}"
 			x: -1.5d
 			y: 5.0d
-		}
-		{
-			dependencies: [
-				"72DDEB53C9BDDBFC"
-				"007D5B58CBF1BBE2"
-			]
-			id: "2D9EFD27A3C32062"
-			tasks: [{
-				id: "4C72E978BB38D646"
-				item: "solarflux:sp_7"
-				type: "item"
-			}]
-			x: -10.5d
-			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -2328,20 +2080,6 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"7AAF2D8BC72919DB"
-				"51639FA6915BC51A"
-			]
-			id: "6F408C9FD7D65DF4"
-			tasks: [{
-				id: "56D5298101B5D5DE"
-				item: "solarflux:mirror"
-				type: "item"
-			}]
-			x: -9.5d
-			y: -7.0d
-		}
-		{
 			description: ["{ftbquests.power.solar.description}"]
 			icon: {
 				Count: 1
@@ -2359,7 +2097,7 @@
 				type: "checkmark"
 			}]
 			x: -8.5d
-			y: -7.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -2378,21 +2116,6 @@
 		}
 		{
 			dependencies: [
-				"2D9EFD27A3C32062"
-				"21B905AA3AE6059F"
-			]
-			description: ["{ftbquests.power.solar_panel_8.description}"]
-			id: "13675CDA1DE4A69A"
-			tasks: [{
-				id: "217C172DEC161D6F"
-				item: "solarflux:sp_8"
-				type: "item"
-			}]
-			x: -10.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
 				"6FB365E6C91B482E"
 				"1EE1007BA8202CC1"
 			]
@@ -2407,7 +2130,7 @@
 		}
 		{
 			dependencies: ["22B85F7F13C66730"]
-			description: ["{ftbquests.abydos.lucinducer.description}"]
+			description: ["{ftbquests.power.lucinducer.description}"]
 			id: "7E9A5A626648A859"
 			rewards: [{
 				id: "4A257F294C4D4C76"
@@ -2422,6 +2145,319 @@
 			}]
 			x: 5.0d
 			y: 5.5d
+		}
+		{
+			dependencies: [
+				"160E2FE8FA4DB488"
+				"121EFB24BE239D59"
+			]
+			id: "5E23FCABF626C29F"
+			tasks: [{
+				id: "59FA00A8AB5168D1"
+				item: "start_core:ev_solar_cell"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"5F44CB5F5616BE35"
+				"51F889E1432E4DAD"
+			]
+			id: "6EC8C1096EAF1BFE"
+			tasks: [{
+				id: "6C56EB30C2B99D73"
+				item: "start_core:iv_solar_cell"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"36C7BF9C8C18C2CE"
+				"0055CE82469F239C"
+			]
+			id: "658CF589584575D0"
+			tasks: [{
+				id: "5723BF04B4F21B6B"
+				item: "start_core:luv_solar_cell"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"0CC51BF39E0199F1"
+				"5D107FD21879F54B"
+			]
+			id: "1516E4626F352E93"
+			tasks: [{
+				id: "36DDDCC66B62C011"
+				item: "start_core:zpm_solar_cell"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"51E59F5818E85D31"
+				"007D5B58CBF1BBE2"
+			]
+			id: "345DB80DF8D2C2BB"
+			tasks: [{
+				id: "5DB8A4E3EDCAFAB1"
+				item: "start_core:uv_solar_cell"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"02A241CB22559017"
+				"21B905AA3AE6059F"
+			]
+			id: "727CF87728AD6D1F"
+			tasks: [{
+				id: "02E08CDBE235BF19"
+				item: "start_core:uhv_solar_cell"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["111B29686F6CA13D"]
+			id: "160E2FE8FA4DB488"
+			tasks: [{
+				id: "5520CC31573E94E4"
+				item: "kubejs:ev_photovoltaic_cell"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"34EF7438F121779F"
+				"160E2FE8FA4DB488"
+			]
+			id: "5F44CB5F5616BE35"
+			tasks: [{
+				id: "12655D2AC864CF85"
+				item: "kubejs:iv_photovoltaic_cell"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"194C7E4CB6175412"
+				"5F44CB5F5616BE35"
+			]
+			id: "36C7BF9C8C18C2CE"
+			tasks: [{
+				id: "59F2CD527F6EBB12"
+				item: "kubejs:luv_photovoltaic_cell"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5AD0B084EB77A52D"
+				"36C7BF9C8C18C2CE"
+			]
+			id: "0CC51BF39E0199F1"
+			tasks: [{
+				id: "2E36E6569F50B62A"
+				item: "kubejs:zpm_photovoltaic_cell"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6E4EAD3F0BD29B2B"
+				"0CC51BF39E0199F1"
+			]
+			id: "51E59F5818E85D31"
+			tasks: [{
+				id: "6FC16D54C0E2716B"
+				item: "kubejs:uv_photovoltaic_cell"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4CD60A997DB61F98"
+				"51E59F5818E85D31"
+			]
+			id: "02A241CB22559017"
+			tasks: [{
+				id: "6D33840581560F9D"
+				item: "kubejs:uhv_photovoltaic_cell"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51639FA6915BC51A"]
+			id: "111B29686F6CA13D"
+			tasks: [{
+				id: "35F0E3E5916D416F"
+				item: "kubejs:ev_energy_core"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["111B29686F6CA13D"]
+			id: "34EF7438F121779F"
+			tasks: [{
+				id: "20C1CF2FBB2720F5"
+				item: "kubejs:iv_energy_core"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["34EF7438F121779F"]
+			id: "194C7E4CB6175412"
+			tasks: [{
+				id: "58113279FBDAF578"
+				item: "kubejs:luv_energy_core"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["194C7E4CB6175412"]
+			id: "5AD0B084EB77A52D"
+			tasks: [{
+				id: "4A350ACDAF566204"
+				item: "kubejs:zpm_energy_core"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5AD0B084EB77A52D"]
+			id: "6E4EAD3F0BD29B2B"
+			tasks: [{
+				id: "15F2F4DE7E888979"
+				item: "kubejs:uv_energy_core"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6E4EAD3F0BD29B2B"]
+			id: "4CD60A997DB61F98"
+			tasks: [{
+				id: "0EB27EC6CE999080"
+				item: "kubejs:uhv_energy_core"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"51639FA6915BC51A"
+				"121EFB24BE239D59"
+			]
+			id: "3C5A19A94BE23F44"
+			tasks: [{
+				id: "2CA0DB650953EB49"
+				item: "start_core:ev_solar_panel"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3C5A19A94BE23F44"
+				"51F889E1432E4DAD"
+			]
+			id: "13A9762C44A12129"
+			tasks: [{
+				id: "151C0945AB4296DA"
+				item: "start_core:iv_solar_panel"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"13A9762C44A12129"
+				"0055CE82469F239C"
+			]
+			id: "71BD6B50184B8387"
+			tasks: [{
+				id: "2E95A3EDF3679EEF"
+				item: "start_core:luv_solar_panel"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"71BD6B50184B8387"
+				"007D5B58CBF1BBE2"
+			]
+			id: "424C146C7BF43536"
+			tasks: [{
+				id: "407A0279BB5602BD"
+				item: "start_core:uv_solar_array"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"424C146C7BF43536"
+				"21B905AA3AE6059F"
+			]
+			id: "4F1DB3A89CE95C74"
+			tasks: [{
+				id: "1972C30C0252897E"
+				item: "start_core:uhv_solar_array"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			id: "676CB078F9E4B9EF"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "0A52F661FF0497E5"
+				title: "{ftbquests.positioner.title}"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -0.5d
 		}
 	]
 	title: "{ftbquests.power.title}"

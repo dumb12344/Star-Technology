@@ -128,7 +128,7 @@
 		{
 			dependencies: ["7F4D5331B59AA5F0"]
 			dependency_requirement: "one_completed"
-			description: ["- explain Fuel rods"]
+			description: ["{ftbquests.pl_nuc.fuel_rods.description}"]
 			id: "7375D44BBE2E3BF1"
 			tasks: [{
 				id: "4A358818F51E440D"
@@ -501,7 +501,7 @@
 				"60ECE277341A9408"
 				"7C9719417055D0A0"
 			]
-			description: ["{ftbquests.processing_lines_chap.echo_shard.description}"]
+			description: ["{ftbquests.pl_nuc.echo_shard.description}"]
 			id: "2F87FC1D5BB43220"
 			rewards: [{
 				count: 3
@@ -746,5 +746,5 @@
 			y: 2.5d
 		}
 	]
-	title: "Nuclear Fission"
+	title: "{ftbquests.pl_nuc.title}"
 }

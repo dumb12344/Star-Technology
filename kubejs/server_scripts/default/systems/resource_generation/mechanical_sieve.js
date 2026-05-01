@@ -25,7 +25,7 @@ global.not_hardmode(() => {
 
         // Wood Casing & Mesh crafting recipe
 
-        event.shaped(Item.of('2x kubejs:wood_casing'), [
+        event.shaped(Item.of('2x kubejs:treatedwood_casing'), [
 
             'SDS',
             'WFW',
@@ -36,11 +36,11 @@ global.not_hardmode(() => {
             W: 'gtceu:treated_wood_plate',
             F: 'gtceu:treated_wood_frame',
             H: '#forge:tools/hammers'
-        }).id('start:shaped/wood_casing');
+        }).id('start:shaped/treatedwood_casing');
 
-        event.recipes.gtceu.assembler(id('wood_casing'))
+        event.recipes.gtceu.assembler(id('treatedwood_casing'))
             .itemInputs('4x gtceu:brass_screw', '2x gtceu:treated_wood_plate', 'gtceu:treated_wood_frame')
-            .itemOutputs('2x kubejs:wood_casing')
+            .itemOutputs('2x kubejs:treatedwood_casing')
             .circuit(6)
             .duration(50)
             .EUt(16)
