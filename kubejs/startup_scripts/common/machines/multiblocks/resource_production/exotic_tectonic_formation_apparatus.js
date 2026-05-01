@@ -2,13 +2,17 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('exotic_rock_crushing')
         .category('resource_production')
         .setMaxIOSize(3, 1, 2, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ASSEMBLER , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ASSEMBLER, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION);
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('exotic_tectonic_formation_apparatus', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.gap"),
+            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
+        ])
         .recipeType('exotic_rock_crushing')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GCYMBlocks.CASING_HIGH_TEMPERATURE_SMELTING)
@@ -40,5 +44,5 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-	    	'gtceu:block/multiblock/fusion_reactor');
+            'gtceu:block/multiblock/fusion_reactor');
 });
