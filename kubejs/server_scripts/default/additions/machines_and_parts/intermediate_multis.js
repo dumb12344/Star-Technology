@@ -91,6 +91,17 @@ global.not_hardmode(() => {
             H: 'gtceu:hssg_coil_block',
         });
 
+        event.shaped('gtceu:limitless_smelter', [
+            'FFF',
+            'RCR',
+            'BRB'
+        ], {
+            F: 'gtceu:multi_smelter',
+            C: 'gtceu:high_temperature_smelting_casing',
+            R: '#gtceu:circuits/luv',
+            B: 'gtceu:tungsten_single_cable',
+        });
+
         event.recipes.gtceu.assembly_line(id('super_vacuum_freezer'))
             .itemInputs('gtceu:aluminium_frame','2x #gtceu:circuits/luv','4x gtceu:double_kanthal_plate','2x gtceu:iv_fluid_regulator',
                 '8x gtceu:stainless_steel_tiny_fluid_pipe','4x gtceu:niobium_titanium_screw')

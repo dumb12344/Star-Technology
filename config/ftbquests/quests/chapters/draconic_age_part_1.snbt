@@ -519,6 +519,11 @@
 			size: 1.0d
 			tasks: [
 				{
+					id: "5AA40001BEE0AB08"
+					item: "gtceu:chalyblux_ingot"
+					type: "item"
+				}
+				{
 					id: "42A1C4E86DF3A7BD"
 					item: "gtceu:xeproda_ingot"
 					type: "item"
@@ -526,11 +531,6 @@
 				{
 					id: "175DE48B2735D239"
 					item: "gtceu:rhexis_ingot"
-					type: "item"
-				}
-				{
-					id: "5AA40001BEE0AB08"
-					item: "gtceu:chalyblux_ingot"
 					type: "item"
 				}
 			]
@@ -584,14 +584,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "3D239E0F7B45AE92"
-					item: "gtceu:abyssal_alloy_ingot"
+					id: "31FC25EDB350FB8E"
+					item: "gtceu:ohmderblux_alloy_ingot"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "31FC25EDB350FB8E"
-					item: "gtceu:ohmderblux_alloy_ingot"
+					id: "3D239E0F7B45AE92"
+					item: "gtceu:abyssal_alloy_ingot"
 					optional_task: true
 					type: "item"
 				}

@@ -3,7 +3,7 @@
 	default_quest_shape: "hexagon"
 	filename: "pl5"
 	group: "03EF8417F6D21A2E"
-	icon: "gtceu:komaru_frame_test"
+	icon: "start_core:komaru"
 	id: "476FEB7CF628FB3D"
 	order_index: 6
 	quest_links: [

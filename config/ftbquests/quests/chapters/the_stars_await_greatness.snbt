@@ -85,8 +85,8 @@
 			shape: "gear"
 			size: 1.625d
 			tasks: [{
-				id: "424CEAF907D8A023"
-				item: "gtceu:komaru_frame_test"
+				id: "259E1EAB35F81A14"
+				item: "start_core:komaru"
 				type: "item"
 			}]
 			x: 4.0d

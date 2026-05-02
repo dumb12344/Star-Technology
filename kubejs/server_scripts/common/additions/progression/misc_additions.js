@@ -35,6 +35,22 @@ ServerEvents.recipes (event => {
         .totalCWU(160 * 20 * 60)
         .EUt (GTValues.VHA[GTValues.UHV]);
 
+    event.recipes.gtceu.assembly_line(id('catto_shrine'))
+        .itemInputs('1x gtceu:naquadah_alloy_frame','64x minecraft:cod','64x minecraft:cod','64x minecraft:cod',
+            '64x minecraft:cod','2x #gtceu:circuits/zpm','64x minecraft:cod','64x minecraft:cod',
+            '64x minecraft:cod','64x minecraft:cod','1x gtceu:zpm_emitter','64x minecraft:cod',
+            '64x minecraft:cod','64x minecraft:cod','64x minecraft:cod','6x gtceu:osthendah_plate')
+        .inputFluids('gtceu:polybenzimidazole 7200')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of(`minecraft:cod`))
+                    .EUt(GTValues.VHA[GTValues.LuV])
+                    .CWUt(32)
+        )
+        .itemOutputs('gtceu:catto_shrine')
+        .duration(3072000)
+        .EUt(GTValues.VHA[GTValues.LV]);
+
     event.remove({ mod: 'placeablemaxwell' });
 
     const cat = (name,tier,dye,dye2,wire,scaler) => {
