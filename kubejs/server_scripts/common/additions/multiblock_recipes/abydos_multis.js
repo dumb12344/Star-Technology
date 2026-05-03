@@ -1,6 +1,19 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
+    event.recipes.gtceu.assembly_line(id('chemical_plant'))
+        .itemInputs('gtceu:zpm_machine_hull', '4x gtceu:zpm_electric_motor', 'gtceu:naquadah_alloy_rotor', '2x gtceu:niobium_titanium_large_fluid_pipe', '4x #gtceu:circuits/uv')
+        .inputFluids('gtceu:soldering_alloy 1872', 'gtceu:naquadria 288')
+        .itemOutputs('gtceu:chemical_plant')
+        .duration(1200)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:large_chemical_reactor'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(64)
+            )
+        .EUt(GTValues.VHA[GTValues.UHV]);
+
     event.recipes.gtceu.assembly_line(id('cyclonic_sifter'))
         .itemInputs('gtceu:zpm_machine_hull', '12x #gtceu:circuits/uv','56x gtceu:uhpic_chip', '16x gtceu:prismalium_gear',
             '8x gtceu:zpm_electric_pump', '4x gtceu:zpm_electric_motor', '2x gtceu:zpm_field_generator', '6x gtceu:pure_netherite_gear')

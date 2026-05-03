@@ -2,59 +2,6 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-        // Machine
-
-    event.recipes.gtceu.assembly_line(id('chemical_plant_controller'))
-        .itemInputs('gtceu:zpm_machine_hull', '4x gtceu:zpm_electric_motor', 'gtceu:naquadah_alloy_rotor', '2x gtceu:niobium_titanium_large_fluid_pipe', '4x #gtceu:circuits/uv')
-        .inputFluids('gtceu:soldering_alloy 1872', 'gtceu:naquadria 288')
-        .itemOutputs('gtceu:chemical_plant')
-        .duration(1200)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:large_chemical_reactor'))
-                .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(64)
-            )
-        .EUt(GTValues.VHA[GTValues.UHV]);
-
-    event.recipes.gtceu.assembler(id('peek_casing'))
-        .itemInputs('gtceu:robust_machine_casing')
-        .inputFluids('gtceu:polyether_ether_ketone 216')
-        .itemOutputs('kubejs:peek_casing')
-        .duration(600)
-        .EUt(GTValues.VA[GTValues.LuV]);
-
-    event.recipes.gtceu.assembly_line(id('atomic_materialization_plant_controller'))
-        .itemInputs('gtceu:uiv_machine_hull', '6x kubejs:rhenotax_coil', '8x gtceu:uiv_field_generator', '12x #gtceu:circuits/uiv',
-            '6x gtceu:uiv_electric_motor', '4x gtceu:nyanium_gear', '12x gtceu:draco_abyssal_rotor', '6x gtceu:small_draconyallium_gear',
-            '2x gtceu:uiv_robot_arm', '6x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_huge_fluid_pipe', '4x gtceu:uiv_fluid_regulator',
-            '4x gtceu:lepton_resonant_thallium_antimonide_spring', '64x gtceu:fine_rhenium_super_composite_alloy_wire', '32x gtceu:fine_rhenium_super_composite_alloy_wire')
-        .inputFluids('gtceu:naquadated_soldering_alloy 18720', 'gtceu:perfluoroelastomer_rubber 15696', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 10080', 'gtceu:calamatium 5040')
-        .itemOutputs('gtceu:atomic_materialization_plant')
-        .duration(1200)
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:chemical_plant'))
-                .EUt(GTValues.VA[GTValues.UIV])
-                .CWUt(216)
-            )
-        .EUt(GTValues.VHA[GTValues.UXV]);
-
-    event.recipes.gtceu.assembler(id('cattomolymer_casing'))
-        .itemInputs('kubejs:nyanium_machine_casing')
-        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 216')
-        .itemOutputs('kubejs:cattomolymer_casing')
-        .EUt(GTValues.VHA[GTValues.UHV])
-        .duration(750);
-
-    event.recipes.gtceu.assembler(id('rhenotax_coil'))
-        .itemInputs('gtceu:astrenalloy_nx_frame', '8x gtceu:rhenate_w_double_wire', '16x gtceu:tantalum_carbide_foil',
-            '32x gtceu:hafnide_ito_ceramic_ring', '64x gtceu:neutronium_silicon_carbide_foil')
-        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 432')
-        .itemOutputs('kubejs:rhenotax_coil')
-        .EUt(GTValues.VHA[GTValues.UIV])
-        .duration(1200);
-
     // === Chemical Skips ===
 
     event.recipes.gtceu.chemical_skip(id('fluoroantimonic_acid_skip'))

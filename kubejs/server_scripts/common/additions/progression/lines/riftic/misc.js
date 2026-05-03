@@ -28,4 +28,16 @@ ServerEvents.recipes (event => {
         .duration(100)
         .EUt(GTValues.VHA[GTValues.UXV]);
 
+    event.recipes.gtceu.ordered_chemistry(id('kaleidoscope_agitation_serum'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('2x gtceu:flerovium_dust')
+            .inputFluids('gtceu:borealic_concentrate 576')
+            .next()
+            .itemInputs('3x gtceu:einsteinium_253_dust')
+            .inputFluids('gtceu:void 576')
+        )
+        .outputFluids('gtceu:kaleidoscope_agitation_serum 1300')
+        .duration(900)
+        .EUt(GTValues.VA[GTValues.UIV] / 3);
+
 });

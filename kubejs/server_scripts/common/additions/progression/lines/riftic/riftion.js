@@ -74,35 +74,31 @@ ServerEvents.recipes (event => {
 
     let riftion = ['undina','sylvestris','gnomus','vulcanus','illustris','tenebrosus'];
 
-    riftion.forEach(riftion => {
+    for(let i = 0; i <=5; i++) {
 
-        event.recipes.gtceu.riftion_slammer(id(riftion + '_stabilization'))
-            .itemInputs(`32x kubejs:up_${riftion}_riftion`,`32x kubejs:down_${riftion}_riftion`)
-            .itemOutputsRanged(`kubejs:neutral_${riftion}_riftion`, 0, 72)
+        event.recipes.gtceu.riftion_slammer(id(riftion[i] + '_stabilization'))
+            .itemInputs(`32x kubejs:up_${riftion[i]}_riftion`,`32x kubejs:down_${riftion[i]}_riftion`)
+            .itemOutputsRanged(`kubejs:neutral_${riftion[i]}_riftion`, 0, 72)
             .itemOutputsRanged(`kubejs:wild_riftion`, 0, 56)
             .genericStartEU(50000000000) //consumes 50GEU to start the recipe
-            .duration(40)
-            .EUt(GTValues.VHA[GTValues.UV]);
-
-    });
-
-    for(let i = 0; i <=5; i++) {
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UIV]);
 
         event.recipes.gtceu.riftion_slammer(id(riftion[i] + '_flipping_down'))
             .itemInputs(`32x kubejs:up_${riftion[i]}_riftion`,`32x kubejs:wild_riftion`)
             .itemOutputsRanged(`kubejs:down_${riftion[i]}_riftion`, 0, 56)
             .itemOutputsRanged(`kubejs:wild_riftion`, 0, 72)
             .genericStartEU(50000000000) //consumes 50GEU to start the recipe
-            .duration(100)
-            .EUt(GTValues.VA[GTValues.UEV]);
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UIV]);
 
         event.recipes.gtceu.riftion_slammer(id(riftion[i] + '_flipping_up'))
             .itemInputs(`32x kubejs:down_${riftion[i]}_riftion`,`32x kubejs:wild_riftion`)
             .itemOutputsRanged(`kubejs:up_${riftion[i]}_riftion`, 0, 56)
             .itemOutputsRanged(`kubejs:wild_riftion`, 0, 72)
             .genericStartEU(50000000000) //consumes 50GEU to start the recipe
-            .duration(100)
-            .EUt(GTValues.VA[GTValues.UEV]);
+            .duration(20)
+            .EUt(GTValues.VHA[GTValues.UIV]);
 
         event.recipes.gtceu.riftion_injector(id(riftion[i] + '_singularity'))
             .itemInputs('gtceu:gravi_star',`256x kubejs:neutral_${riftion[i]}_riftion`)
@@ -121,29 +117,40 @@ ServerEvents.recipes (event => {
         .duration(600)
         .EUt(GTValues.VHA[GTValues.UXV]);
 
-    // TODO
     event.recipes.gtceu.supreme_chemist(id('primordial_residue'))
-            .layeredRecipe((layers) => layers
-                .inputFluids('gtceu:primordial_extract')
+        .layeredRecipe((layers) => layers
+            .inputFluids('gtceu:primordial_extract 750')
+            .next()
+            .itemInputs('2x gtceu:void_dust')
+            .next()
+            .itemInputs('gtceu:xeproda_dust')
         )
-        .fluidOutputs('gtceu:primordial_residue')
-        .duration(10)
-        .EUt(1);
+        .fluidOutputs('gtceu:primordial_residue 325')
+        .duration(480)
+        .EUt(GTValues.VHA[GTValues.UXV]);
 
     event.recipes.gtceu.supreme_chemist(id('riftic_concentrate'))
-            .layeredRecipe((layers) => layers
-                .inputFluids('gtceu:condensed_rimula')
+        .layeredRecipe((layers) => layers
+            .inputFluids('gtceu:condensed_rimula 750')
+            .next()
+            .itemInputs('2x gtceu:dragonsteel_dust')
+            .next()
+            .itemInputs('gtceu:rhexis_dust')
         )
-        .fluidOutputs('gtceu:riftic_concentrate')
-        .duration(10)
-        .EUt(1);
+        .fluidOutputs('gtceu:riftic_concentrate 325')
+        .duration(480)
+        .EUt(GTValues.VHA[GTValues.UXV]);
 
     event.recipes.gtceu.supreme_chemist(id('prismatic_hypergurmalium'))
-            .layeredRecipe((layers) => layers
-                .inputFluids('gtceu:faetic_extract')
+        .layeredRecipe((layers) => layers
+            .inputFluids('gtceu:faetic_extract 750')
+            .next()
+            .itemInputs('2x gtceu:aurourium_dust')
+            .next()
+            .itemInputs('gtceu:chalyblux_dust')
         )
-        .fluidOutputs('gtceu:prismatic_hypergurmalium')
-        .duration(10)
-        .EUt(1);
+        .fluidOutputs('gtceu:prismatic_hypergurmalium 325')
+        .duration(480)
+        .EUt(GTValues.VHA[GTValues.UXV]);
 
 });

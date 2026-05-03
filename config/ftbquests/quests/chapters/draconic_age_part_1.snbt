@@ -603,7 +603,7 @@
 				}
 			]
 			title: "{ftbquests.draconic_age.uiv_alloys.title}"
-			x: -2.5d
+			x: -4.5d
 			y: 7.0d
 		}
 		{
@@ -644,7 +644,7 @@
 				item: "gtceu:uiv_machine_hull"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: 7.0d
 		}
 		{
@@ -665,7 +665,7 @@
 				item: "gtceu:uiv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -0.5d
 			y: 7.0d
 		}
 		{
@@ -686,7 +686,7 @@
 				item: "gtceu:uiv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 1.5d
 			y: 5.0d
 		}
 		{
@@ -704,7 +704,7 @@
 				item: "gtceu:uiv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 3.5d
 			y: 5.0d
 		}
 		{
@@ -1611,7 +1611,7 @@
 				item: "gtceu:rhenium_super_composite_alloy_ingot"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -0.5d
 			y: 5.0d
 		}
 		{
@@ -1672,8 +1672,8 @@
 				}
 			]
 			title: "{ftbquests.draconic_age.draconic_qmds.title}"
-			x: -2.5d
-			y: 5.0d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["310FC3F86513555F"]
@@ -2167,7 +2167,7 @@
 				item: "kubejs:dragonic_reflector_casing"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -2.5d
 			y: 5.0d
 		}
 		{
@@ -2180,6 +2180,17 @@
 			}]
 			x: 1.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["31F87896FF834E63"]
+			id: "212353E6819931CD"
+			tasks: [{
+				id: "358435C7049A09C8"
+				item: "gtceu:true_synthesis_array"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
 		}
 	]
 	title: "{ftbquests.draconic_age.title}"

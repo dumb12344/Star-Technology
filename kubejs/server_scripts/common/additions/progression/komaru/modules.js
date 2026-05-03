@@ -50,7 +50,7 @@ ServerEvents.recipes (event => {
 
     // === Voidic ===
     event.recipes.gtceu.voidic_refinement(id('void_1_dust'))
-        .inputFluids('gtceu:kaleidoscope_agitation_serum 25')
+        .inputFluids('gtceu:kaleidoscope_agitation_serum 5')
         .itemOutputsRanged('gtceu:pentlandite_dust', 0, 768)
         .itemOutputsRanged('gtceu:sodalite_dust', 0, 768)
         .itemOutputsRanged('gtceu:gold_dust', 0, 768)
@@ -71,7 +71,7 @@ ServerEvents.recipes (event => {
         .EUt(GTValues.VA[GTValues.EV]);
 
     event.recipes.gtceu.voidic_refinement(id('void_2_dust'))
-        .inputFluids('gtceu:kaleidoscope_agitation_serum 25')     
+        .inputFluids('gtceu:kaleidoscope_agitation_serum 5')     
         .itemOutputsRanged('gtceu:barite_dust', 0, 512)
         .itemOutputsRanged('gtceu:chalcopyrite_dust', 0, 512)
         .itemOutputsRanged('gtceu:bornite_dust', 0, 512)
@@ -93,7 +93,7 @@ ServerEvents.recipes (event => {
         .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.voidic_refinement(id('void_1_ore'))
-        .inputFluids('gtceu:kaleidoscope_agitation_serum 25')
+        .inputFluids('gtceu:kaleidoscope_agitation_serum 8')
         .itemOutputsRanged('gtceu:crushed_pentlandite_ore', 0, 384)
         .itemOutputsRanged('gtceu:crushed_sodalite_ore', 0, 384)
         .itemOutputsRanged('gtceu:crushed_gold_ore', 0, 384)
@@ -113,7 +113,7 @@ ServerEvents.recipes (event => {
         .EUt(GTValues.VA[GTValues.EV]);
 
     event.recipes.gtceu.voidic_refinement(id('void_2_ore'))
-        .inputFluids('gtceu:kaleidoscope_agitation_serum 25')     
+        .inputFluids('gtceu:kaleidoscope_agitation_serum 8')     
         .itemOutputsRanged('gtceu:crushed_barite_ore', 0, 256)
         .itemOutputsRanged('gtceu:crushed_chalcopyrite_ore', 0, 256)
         .itemOutputsRanged('gtceu:crushed_bornite_ore', 0, 256)
@@ -135,7 +135,7 @@ ServerEvents.recipes (event => {
         .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.voidic_refinement(id('geode_1_dust'))
-        .inputFluids('gtceu:kaleidoscope_agitation_serum 25')
+        .inputFluids('gtceu:kaleidoscope_agitation_serum 4')
         .itemOutputsRanged('gtceu:diamond_dust', 0, 256)
         .itemOutputsRanged('gtceu:emerald_dust', 0, 256)
         .itemOutputsRanged('gtceu:ruby_dust', 0, 256)
@@ -155,7 +155,7 @@ ServerEvents.recipes (event => {
         .EUt(GTValues.VA[GTValues.HV]);
 
     event.recipes.gtceu.voidic_refinement(id('geode_1_ore'))
-        .inputFluids('gtceu:kaleidoscope_agitation_serum 25')
+        .inputFluids('gtceu:kaleidoscope_agitation_serum 6')
         .itemOutputsRanged('gtceu:crushed_diamond_ore', 0, 128)
         .itemOutputsRanged('gtceu:crushed_emerald_ore', 0, 128)
         .itemOutputsRanged('gtceu:crushed_ruby_ore', 0, 128)

@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('3x gtceu:tiny_void_dust')
         .duration(2400)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
-        .EUt(GTValues.VHA[GTValues.UIV]);
+        .EUt(GTValues.VA[GTValues.UIV] / 3);
 
     event.recipes.gtceu.injection_mixer(id('dragon_breath'))
         .itemInputs('gtceu:tiny_draconyallium_dust')

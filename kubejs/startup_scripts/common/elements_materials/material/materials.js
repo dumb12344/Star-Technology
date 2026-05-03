@@ -246,7 +246,7 @@ GTCEuStartupEvents.materialModification(event => {
     GTMaterials.get(`fermium`).setFormula(`Fm²⁵⁷`);
     GTMaterials.get(`americium`).setFormula(`Am²⁴⁵`);
     GTMaterials.get(`netherite_triselex_oxide`).setFormula(`Nr4Se3O2`);
-    GTMaterials.get('lepton_resonant_thallium_antimonide').setFormula('Tl=ℓ=Sb');
+    GTMaterials.get('lepton_resonant_thallium_antimonide').setFormula('Tl{ℓ}Sb');
 
 });
 

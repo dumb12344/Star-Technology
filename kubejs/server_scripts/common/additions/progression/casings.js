@@ -415,4 +415,27 @@ ServerEvents.recipes(event => {
     ].forEach(tier => {
         hermeticCasing(tier);
     })
+
+    event.recipes.gtceu.assembler(id('peek_casing'))
+        .itemInputs('gtceu:robust_machine_casing')
+        .inputFluids('gtceu:polyether_ether_ketone 216')
+        .itemOutputs('kubejs:peek_casing')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.assembler(id('cattomolymer_casing'))
+        .itemInputs('kubejs:nyanium_machine_casing')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 216')
+        .itemOutputs('kubejs:cattomolymer_casing')
+        .EUt(GTValues.VHA[GTValues.UHV])
+        .duration(750);
+
+    event.recipes.gtceu.assembler(id('rhenotax_coil'))
+        .itemInputs('gtceu:astrenalloy_nx_frame', '8x gtceu:rhenate_w_double_wire', '16x gtceu:tantalum_carbide_foil',
+            '32x gtceu:hafnide_ito_ceramic_ring', '64x gtceu:neutronium_silicon_carbide_foil')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 432')
+        .itemOutputs('kubejs:rhenotax_coil')
+        .EUt(GTValues.VHA[GTValues.UIV])
+        .duration(1200);
+
 });

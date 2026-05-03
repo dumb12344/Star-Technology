@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             '8x gtceu:uhv_fluid_regulator','4x gtceu:uhv_sensor','8x gtceu:pure_netherite_rotor')
         .inputFluids('gtceu:hsse 9216','gtceu:borosilicate_glass 147456')
         .itemOutputs('gtceu:folding_akreyrium_stabiliser')
-        .duration(32000)
+        .duration(1800)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('gtceu:large_engraving_laser'))
