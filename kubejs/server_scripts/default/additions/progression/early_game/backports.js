@@ -66,11 +66,11 @@ global.not_hardmode(() => {
                 .itemInputs(input)
                 .itemOutputs(output)
                 .duration(duration)
-                .EUt(4);
+                .EUt(30);
         }
 
-        kilnRecipe('wrought_iron', 'minecraft:iron_ingot', 'gtceu:wrought_iron_ingot', 200);
-        kilnRecipe('glass', 'gtceu:glass_dust', 'minecraft:glass', 150);
+        kilnRecipe('wrought_iron', 'minecraft:iron_ingot', 'gtceu:wrought_iron_ingot', 40);
+        kilnRecipe('glass', 'gtceu:glass_dust', 'minecraft:glass', 30);
 
     });
 });

@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('aqueous_void_excavation')
         .category('resource_production')
         .setMaxIOSize(0, 0, 1, 2)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_EXTRACT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.MINER);
 
 });
@@ -38,6 +38,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.any())
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
-        'gtceu:block/multiblock/large_miner');
-        
+            'gtceu:block/multiblock/large_miner');
+
 });

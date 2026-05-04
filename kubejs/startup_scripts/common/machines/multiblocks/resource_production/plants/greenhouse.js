@@ -4,21 +4,21 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
         .category('resource_production')
         .setEUIO('in')
         .setMaxIOSize(2, 2, 3, 1)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_SLICE , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_SLICE, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CHAINSAW_TOOL);
-    
+
     event.create('wild_garden')
         .category('resource_production')
         .setEUIO('in')
         .setMaxIOSize(2, 12, 0, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_SIFT , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_SIFT, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.CENTRIFUGE);
-    
+
     event.create('crop_greenhouse')
         .category('resource_production')
         .setEUIO('in')
         .setMaxIOSize(3, 2, 1, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.SAW_TOOL);
 
 });
@@ -57,6 +57,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where(' ', Predicates.any())
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_solid_steel',
-        'gtceu:block/multiblock/implosion_compressor');
-        
+            'gtceu:block/multiblock/implosion_compressor');
+
 });

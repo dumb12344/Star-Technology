@@ -338,6 +338,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('wrought_iron', frame);
     matmod('red_alloy', spring);
     matmod('netherite', no_decomp);
+    matmod('naquadah', frame);
     matmod('uranium_triplatinum', fine_wire);
     matmod('samarium_iron_arsenic_oxide', fine_wire);
 
@@ -1871,5 +1872,26 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(plates, frame, rod, dense_plate, long_rod, gear, foil, small_gear, rotor, fine_wire, no_decomp, no_abs_recipe);
 
     compGem('aquariadic_rimuli_dragonix', ['5x pure_dragon_breath','7x akreyriadic_runixium','4x raging_rimulatia'], 0x16269e, GEM_VERTICAL, [no_decomp]);    
+
+
+    //Combustion fuels and oxidizers
+
+    compLiquid(`kerosene`,[`12x carbon`,`26x hydrogen`],0xE8D44D, [no_decomp]);
+    compLiquid(`hydrofined_kerosene`,[`12x carbon`,`26x hydrogen`],0xF2EC9A , [no_decomp]);
+    compLiquid(`rp_1`,[`12x carbon`,`26x hydrogen`],0xF2EC9A , [no_decomp]);
+    compLiquidTemp(`liquid_fluorine`,85, [`2x fluorine`], 0xB5E0FF, [no_decomp]);
+    compLiquidTemp(`dioxygen_difluoride`, 110, [`2x oxygen`, `2x fluorine`], 0xE8F1FF, [no_decomp]);
+    compLiquid(`white_fuming_nitric_acid`, [`1x hydrogen`, `1x nitrogen`, `3x oxygen`], 0xFDFEFC, [no_decomp]);
+    compLiquid(`red_fuming_nitric_acid`, [`1x hydrogen`, `1x nitrogen`, `3x oxygen`], 0xFF0000, [no_decomp]);
+    compLiquid(`monomethylhydrazine`, [`1x carbon`, `6x hydrogen`, `2x nitrogen`], 0x9E9E9E, [no_decomp]);
+    compLiquid(`sorbitol_hypergolic_fuel`, [`6x carbon`, `20x hydrogen`, `6x oxygen`, `1x nitrogen`, `1x boron`], 0xF5F5F5, [no_decomp]);
+    compLiquid(`ferrocenium_superoxide`, [`15x carbon`, `5x hydrogen`, `15x fluorine`, `1x iron`, `2x oxygen`], 0xB87333, [no_decomp]);
+    compLiquid(`fuming_nitric_acid`, [`1x hydrogen`, `1x nitrogen`, `3x oxygen`], 0xF0F0F0, [no_decomp]);
+    compLiquid(`hydrazine`, [`2x nitrogen`, `4x hydrogen`], 0xC8C8C8, [no_decomp]);
+    compDust(`ammonia_borane`, [`1x nitrogen`, `1x boron`, `6x hydrogen`], 0xFFFFFF, [no_decomp]);
+    compLiquid(`ferrocene`, [`10x carbon`, `10x hydrogen`, `1x iron`], 0xFF8C00, [no_decomp]);
+    compLiquid(`hexafluorophosphoric_acid`, [`1x hydrogen`, `1x phosphorus`, `6x fluorine`], 0xE8E8FF, [no_decomp]);
+    compLiquid(`iron_cyclopentadienyl_dichlorobenzene`, [`16x carbon`, `14x hydrogen`, `1x iron`, `2x chlorine`, `1x phosphorus`, `6x fluorine`], 0xCC6600, [no_decomp]);
+    compLiquid(`fluorinated_ferrocene`, [`15x carbon`, `5x hydrogen`, `15x fluorine`, `1x iron`], 0x00AA00, [no_decomp]);
 
 });

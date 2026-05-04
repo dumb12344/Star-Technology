@@ -1,32 +1,50 @@
 // priority: 1000
 
 global.componentMaterials = {
+    ulv: {
+        tiers: { tier: 'ulv' },
+        materials: {
+            tierMaterial: 'wrought_iron',
+            cable: 'red_alloy',
+            cable1: 'tin',
+            chip: ''
+        }
+    },
     lv: {
+        tiers: { tier: 'lv' },
         materials: {
             tierMaterial: 'steel',
             wire: 'copper',
             cable: 'tin',
+            cable1: 'copper',
             glass: '#forge:glass',
+            chip: '',
             rotorMaterial: 'tin',
             grind: 'minecraft:diamond'
         }
     },
     mv: {
+        tiers: { tier: 'mv' },
         materials: {
             tierMaterial: 'aluminium',
             wire: 'cupronickel',
             cable: 'copper',
+            cable1: 'gold',
             glass: '#forge:glass',
+            chip: 'gtceu:ulpic',
             rotorMaterial: 'bronze',
             grind: 'minecraft:diamond'
         }
     },
     hv: {
+        tiers: { tier: 'hv' },
         materials: {
             tierMaterial: 'stainless_steel',
             wire: 'kanthal',
             cable: 'gold',
+            cable1: 'aluminium',
             glass: 'gtceu:tempered_glass',
+            chip: 'gtceu:lpic',
             rotorMaterial: 'steel',
             grind: 'gtceu:diamond_grinding_head'
         }
@@ -39,8 +57,10 @@ global.componentMaterials = {
             solder: 'soldering_alloy',
             lubricant: 'lubricant',
             cable: 'aluminium',
+            cable1: 'platinum',
             glass: 'gtceu:tempered_glass',
             superconductor: 'uranium_triplatinum',
+            chip: 'gtceu:mpic',
             battery: 'lapotron_crystal',
             rotorMaterial: 'stainless_steel',
             grind: 'gtceu:diamond_grinding_head'
@@ -58,8 +78,10 @@ global.componentMaterials = {
             solder: 'soldering_alloy',
             lubricant: 'lubricant',
             cable: 'platinum',
+            cable1: 'niobium_titanium',
             glass: 'gtceu:laminated_glass',
             superconductor: 'samarium_iron_arsenic_oxide',
+            chip: 'gtceu:hpic',
             battery: 'lapotronic_energy_orb',
             rotorMaterial: 'tungsten_steel',
             grind: 'gtceu:tungsten_grinding_head'

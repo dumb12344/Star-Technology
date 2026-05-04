@@ -14,6 +14,21 @@ ServerEvents.recipes(event => {
             )
         .EUt(GTValues.VHA[GTValues.UHV]);
 
+    event.recipes.gtceu.assembly_line(id(`advanced_synthesis_plant`))
+        .itemInputs('gtceu:zpm_machine_hull', '4x gtceu:zpm_sensor', '4x gtceu:zpm_robot_arm', '4x gtceu:zpm_fluid_regulator', '2x gtceu:naquadah_alloy_rotor',
+            '6x gtceu:niobium_titanium_large_fluid_pipe', '6x #gtceu:circuits/uv'
+        )
+        .inputFluids('gtceu:soldering_alloy 1872', 'gtceu:naquadria 288')
+        .itemOutputs('gtceu:advanced_synthesis_plant')
+        .duration(1200)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:zpm_chemical_reactor'))
+                .EUt(GTValues.VHA[GTValues.UV])
+                .CWUt(64)
+            )
+        .EUt(GTValues.VHA[GTValues.UHV])
+
     event.recipes.gtceu.assembly_line(id('cyclonic_sifter'))
         .itemInputs('gtceu:zpm_machine_hull', '12x #gtceu:circuits/uv','56x gtceu:uhpic_chip', '16x gtceu:prismalium_gear',
             '8x gtceu:zpm_electric_pump', '4x gtceu:zpm_electric_motor', '2x gtceu:zpm_field_generator', '6x gtceu:pure_netherite_gear')

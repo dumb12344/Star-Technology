@@ -672,7 +672,7 @@
 		}
 		{
 			dependencies: ["01AF9486EA6DA792"]
-			description: ["{ftbquests.processing_lines_chap.sterile_growth_medium.description}"]
+			description: ["{ftbquests.pl.sterile_growth_medium.description}"]
 			icon: {
 				Count: 1
 				id: "gtceu:sterilized_growth_medium_bucket"
@@ -707,7 +707,7 @@
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
-			description: ["{ftbquests.processing_lines_chap.echo.description}"]
+			description: ["{ftbquests.pl.echo.description}"]
 			icon: {
 				Count: 1
 				id: "gtceu:echo_r_bucket"
@@ -731,7 +731,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.echo.title}"
+			title: "{ftbquests.pl.echo.title}"
 			x: -1.5d
 			y: -6.5d
 		}
@@ -777,7 +777,7 @@
 				item: "kubejs:draconic_scale_cells"
 				type: "item"
 			}]
-			title: "{ftbquests.processing_lines_chap.cheaper_draconic_scale_cell.title}"
+			title: "{ftbquests.pl.cheaper_draconic_scale_cell.title}"
 			x: -6.0d
 			y: -6.5d
 		}
@@ -790,7 +790,7 @@
 				item: "gtceu:dragon_breath_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.processing_lines_chap.cheaper_dragon_breath.title}"
+			title: "{ftbquests.pl.cheaper_dragon_breath.title}"
 			x: 5.0d
 			y: -7.0d
 		}
@@ -803,7 +803,7 @@
 				item: "kubejs:draconic_stem_cells"
 				type: "item"
 			}]
-			title: "{ftbquests.processing_lines_chap.cheaper_draconic_stem_cells.title}"
+			title: "{ftbquests.pl.cheaper_draconic_stem_cells.title}"
 			x: 7.0d
 			y: -2.5d
 		}
@@ -816,7 +816,7 @@
 				item: "kubejs:draconic_brain_matter_cells"
 				type: "item"
 			}]
-			title: "Cheaper Draconic Brain Matter Cells"
+			title: "{ftbquests.pl.cheaper_draconic_brain_cells.title}"
 			x: 8.0d
 			y: -1.0d
 		}
@@ -1266,5 +1266,5 @@
 			y: 5.0d
 		}
 	]
-	title: "toLang \"Processing Lines - 5\""
+	title: "{ftbquests.pl5.title}"
 }

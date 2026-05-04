@@ -1,4 +1,5 @@
 {
+	autofocus_id: "0226D71E1F627A7F"
 	default_hide_dependency_lines: false
 	default_quest_shape: "hexagon"
 	filename: "early_game"
@@ -11,38 +12,38 @@
 		{
 			id: "2964E2E996CAC834"
 			linked_quest: "18080B4F89AD24D2"
-			x: 0.0d
-			y: 6.0d
+			x: 8.0d
+			y: 2.5d
 		}
 		{
 			id: "7A004610C6ADD6AC"
 			linked_quest: "73D5AA58DE5B72AA"
-			x: 1.5d
-			y: 3.0d
+			x: 0.0d
+			y: -1.5d
 		}
 		{
 			id: "0ABFD9248555F0BF"
 			linked_quest: "48374090EA89E869"
-			x: 2.5d
-			y: 3.0d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			id: "01400DBE45C98AB4"
 			linked_quest: "76CD29559C341985"
-			x: -6.25d
-			y: 2.0d
+			x: -4.0d
+			y: -1.5d
 		}
 		{
 			id: "3FE7870C91953C80"
 			linked_quest: "2A608D87158DF4CB"
-			x: -7.0d
-			y: 6.0d
+			x: -10.0d
+			y: 6.5d
 		}
 		{
 			id: "73A12DB8625E666F"
 			linked_quest: "27F5DD0860E43CFF"
-			x: 0.25d
-			y: -2.25d
+			x: 4.0d
+			y: 6.5d
 		}
 	]
 	quests: [
@@ -64,8 +65,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.oak_log.title}"
-			x: -7.0d
-			y: -1.0d
+			x: -10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -113,8 +114,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.lv_converters.title}"
-			x: 8.0d
-			y: 5.0d
+			x: 10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -151,8 +152,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.crooking.title}"
-			x: -5.5d
-			y: -1.0d
+			x: -8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7717C0904590E303"]
@@ -177,8 +178,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.sieves_and_meshes.title}"
-			x: -2.5d
-			y: -1.0d
+			x: -8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -213,8 +214,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.oak_crucible.title}"
-			x: -5.5d
-			y: 1.0d
+			x: -8.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["16A9D8E864A18B9E"]
@@ -242,13 +243,14 @@
 				}
 			]
 			title: "{ftbquests.early_game.pebbling.title}"
-			x: -4.5d
-			y: -4.0d
+			x: -10.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
 				"6C7DB3F0C3B85B9B"
 				"7E72B9CC8631769D"
+				"26D3E2C0599B43B2"
 			]
 			description: ["{ftbquests.early_game.blackstone.description}"]
 			id: "550A27AA2B500111"
@@ -270,8 +272,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.blackstone.title}"
-			x: -4.5d
-			y: 0.5d
+			x: -6.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
@@ -348,12 +350,13 @@
 				}
 			]
 			title: "{ftbquests.early_game.hammers.title}"
-			x: -4.5d
-			y: -2.5d
+			x: -8.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["07CBF849162D7BDF"]
 			description: ["{ftbquests.early_game.furnace.description}"]
+			hide_dependent_lines: true
 			id: "1801A2B1D6BD232F"
 			rewards: [{
 				id: "33A0C9431EAFB50C"
@@ -365,8 +368,8 @@
 				item: "minecraft:furnace"
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.0d
+			x: -10.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -414,8 +417,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.mud_sieving.title}"
-			x: -2.5d
-			y: 3.0d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -462,19 +465,17 @@
 				}
 			]
 			title: "{ftbquests.early_game.gravel_sieving.title}"
-			x: -2.5d
-			y: -2.5d
+			x: -6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
-				"64F15C7160BF5CBB"
 				"0843E56CA39E9822"
 				"7F716A5BCC5F6B34"
 				"07A407A268A4FC96"
 				"3B81632EF4586280"
 			]
 			description: ["{ftbquests.early_game.basic_electronic_circuit.description}"]
-			hide_dependent_lines: true
 			id: "20A12F3B992762F0"
 			rewards: [{
 				count: 2
@@ -489,8 +490,8 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.5d
+			x: 10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -498,6 +499,7 @@
 				"64F15C7160BF5CBB"
 			]
 			description: ["{ftbquests.early_game.lv_machine_hull.description}"]
+			hide_dependent_lines: true
 			icon: "gtceu:lv_machine_hull"
 			id: "124EDCAB18E85B9D"
 			rewards: [{
@@ -534,8 +536,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.lv_machine_hull.title}"
-			x: 8.0d
-			y: 2.0d
+			x: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -543,6 +545,7 @@
 				"063AF9790DA7ABE0"
 			]
 			description: ["{ftbquests.early_game.soul_infused_wire.description}"]
+			hide_dependency_lines: true
 			icon: "gtceu:soul_infused_single_wire"
 			id: "3AF688ADC18E580C"
 			rewards: [{
@@ -564,11 +567,11 @@
 				}
 			]
 			title: "{ftbquests.early_game.soul_infused_wire.title}"
-			x: 0.5d
-			y: 5.0d
+			x: 8.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["5094070DDE1BFA3D"]
+			dependencies: ["4EBEB19735285EF4"]
 			description: ["{ftbquests.early_game.andesite_alloy.description}"]
 			id: "039D327E919878BF"
 			optional: true
@@ -582,8 +585,8 @@
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -602,8 +605,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.mechanical_press.title}"
-			x: -2.0d
-			y: -5.0d
+			x: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -655,8 +658,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.cured_rubber.title}"
-			x: 8.0d
-			y: -2.5d
+			x: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
@@ -789,8 +792,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.gregtech_tools.title}"
-			x: -1.0d
-			y: -1.0d
+			x: -4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5094070DDE1BFA3D"]
@@ -815,8 +818,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.wrought_iron.title}"
-			x: -1.0d
-			y: -2.5d
+			x: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -859,8 +862,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.create_mixer.title}"
-			x: -2.5d
-			y: -6.0d
+			x: 2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -882,8 +885,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.rubber.title}"
-			x: 8.0d
-			y: -1.0d
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["03ACC7D2577A2C66"]
@@ -901,8 +904,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.ulv_barrel.title}"
-			x: -5.5d
-			y: 3.0d
+			x: -6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -935,12 +938,13 @@
 				}
 			]
 			title: "{ftbquests.early_game.primitive_blast_furnace.title}"
-			x: 2.0d
-			y: 2.0d
+			x: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["390CB178FC2D2CCC"]
 			description: ["{ftbquests.early_game.steel.description}"]
+			hide_dependency_lines: true
 			icon: "gtceu:steel_ingot"
 			id: "64F15C7160BF5CBB"
 			rewards: [{
@@ -969,8 +973,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.steel.title}"
-			x: 6.0d
-			y: 2.0d
+			x: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -980,6 +984,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{ftbquests.early_game.red_alloy.description}"]
+			hide_dependency_lines: true
 			id: "0843E56CA39E9822"
 			rewards: [{
 				id: "56F860D21CE643C7"
@@ -993,8 +998,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.red_alloy.title}"
-			x: 4.0d
-			y: -1.0d
+			x: 8.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3AC92138809F3783"]
@@ -1018,8 +1023,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.slime_resin.title}"
-			x: 3.5d
-			y: 4.25d
+			x: 6.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6D5287A0FB892DFF"]
@@ -1044,8 +1049,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.resin_circuit_board.title}"
-			x: 3.5d
-			y: 0.5d
+			x: 8.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1066,8 +1071,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.resistors.title}"
-			x: 5.0d
-			y: 4.25d
+			x: 8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1106,7 +1111,7 @@
 			]
 			title: "{ftbquests.early_game.glass.title}"
 			x: 6.0d
-			y: -2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1114,6 +1119,7 @@
 				"64F15C7160BF5CBB"
 			]
 			description: ["{ftbquests.early_game.vacuum_tubes.description}"]
+			hide_dependency_lines: true
 			id: "3B81632EF4586280"
 			rewards: [{
 				id: "4F41840F051793C3"
@@ -1127,8 +1133,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.vacuum_tubes.title}"
-			x: 6.0d
-			y: -1.0d
+			x: 10.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7E72B9CC8631769D"]
@@ -1146,8 +1152,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.soul_sand.title}"
-			x: -1.5d
-			y: 2.0d
+			x: -2.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1169,8 +1175,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.invar.title}"
-			x: 0.5d
-			y: 3.5d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1192,8 +1198,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.gold.title}"
-			x: 0.5d
-			y: -1.0d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1246,8 +1252,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.primitive_ore_factory.title}"
-			x: 2.0d
-			y: -1.0d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["550A27AA2B500111"]
@@ -1272,8 +1278,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.aqueous_accumulator.title}"
-			x: -1.5d
-			y: 0.5d
+			x: -6.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["5B3D8132C90D790B"]
@@ -1298,14 +1304,13 @@
 				}
 			]
 			title: "{ftbquests.early_game.bone_meal.title}"
-			x: -7.0d
-			y: 1.0d
+			x: -10.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
 				"634FB21D521253CF"
 				"53A9BA26813A1141"
-				"2D1184752D7ACA66"
 			]
 			description: ["{ftbquests.early_game.lava.description}"]
 			icon: "exnihilosequentia:fired_crucible"
@@ -1329,8 +1334,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.lava.title}"
-			x: -7.0d
-			y: 3.0d
+			x: -10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1361,7 +1366,7 @@
 				}
 			]
 			title: "{ftbquests.early_game.coke_oven.title}"
-			x: -2.5d
+			x: -6.0d
 			y: 4.5d
 		}
 		{
@@ -1394,8 +1399,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.large_farm.title}"
-			x: -1.5d
-			y: 5.5d
+			x: -4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
@@ -1427,8 +1432,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.large_barrel.title}"
-			x: -3.5d
-			y: 5.5d
+			x: -8.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["07C5B4C5EE2F948D"]
@@ -1460,8 +1465,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.large_stone_barrel.title}"
-			x: -2.5d
-			y: 6.0d
+			x: -6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6C7DB3F0C3B85B9B"]
@@ -1478,8 +1483,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.dirt_duping.title}"
-			x: -6.0d
-			y: -2.5d
+			x: -8.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["039D327E919878BF"]
@@ -1518,8 +1523,8 @@
 				title: "{ftbquests.early_game.create.title}"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -6.0d
+			x: 2.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -1554,8 +1559,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.steam_engine.title}"
-			x: 0.5d
-			y: -6.0d
+			x: 0.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -1620,8 +1625,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -5.0d
+			x: 4.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -1629,6 +1634,7 @@
 				"10126B9D6EC90F59"
 			]
 			description: ["{ftbquests.early_game.fluid_cell.description}"]
+			hide_dependency_lines: true
 			id: "3013B0CF1D1F3E20"
 			rewards: [{
 				id: "7E77F4EFC9D86E60"
@@ -1654,8 +1660,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.fluid_cell.title}"
-			x: 4.0d
-			y: -4.0d
+			x: 2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1683,8 +1689,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.bronze_brass.title}"
-			x: 2.0d
-			y: -2.5d
+			x: -4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1707,7 +1713,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.stone_barrel.title}"
-			x: -7.0d
+			x: -10.0d
 			y: 4.5d
 		}
 		{
@@ -1725,8 +1731,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.witch_water.title}"
-			x: -4.5d
-			y: 2.0d
+			x: -4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1747,8 +1753,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.nickel.title}"
-			x: 0.5d
-			y: 0.5d
+			x: -2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -1768,8 +1774,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.crushing_wheels.title}"
-			x: -2.0d
-			y: -7.0d
+			x: 2.0d
+			y: -9.5d
 		}
 		{
 			description: ["{ftbquests.early_game.start.description}"]
@@ -1781,11 +1787,15 @@
 				title: "{ftbquests.early_game.start.title}"
 				type: "checkmark"
 			}]
-			x: -7.0d
-			y: -4.0d
+			x: -10.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["3D0F6CA8028C074B"]
+			dependencies: [
+				"3D0F6CA8028C074B"
+				"6C7DB1CB4517B843"
+			]
+			dependency_requirement: "one_completed"
 			description: ["{ftbquests.early_game.dust_mixing.description}"]
 			hide_dependency_lines: false
 			id: "4FC0832128C3109C"
@@ -1813,8 +1823,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.dust_mixing.title}"
-			x: 4.0d
-			y: -2.5d
+			x: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["64F15C7160BF5CBB"]
@@ -1834,8 +1844,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.solid_blast_furnace.title}"
-			x: 7.0d
-			y: 0.5d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7EE1BE4043827F35"]
@@ -1852,11 +1862,12 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["53A9BA26813A1141"]
 			description: ["{ftbquests.early_game.firebrick.description}"]
+			hide_dependency_lines: true
 			icon: "gtceu:firebrick"
 			id: "64E79272B5003119"
 			tasks: [
@@ -1892,8 +1903,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.firebrick.title}"
-			x: 2.0d
-			y: 0.5d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1917,8 +1928,8 @@
 				item: "gtceu:steam_ore_factory"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.5d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1949,8 +1960,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.steam_alloy_smelter.title}"
-			x: 0.5d
-			y: -4.0d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1289465781707205"]
@@ -1964,13 +1975,12 @@
 				title: "{ftbquests.early_game.steam.title}"
 				type: "checkmark"
 			}]
-			x: 3.0d
-			y: -4.75d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2D1184752D7ACA66"]
 			description: ["{ftbquests.early_game.clay.description}"]
-			hide_dependent_lines: true
 			id: "53A9BA26813A1141"
 			tasks: [
 				{
@@ -1986,8 +1996,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.clay.title}"
-			x: -5.5d
-			y: 4.5d
+			x: -8.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -2006,11 +2016,13 @@
 				{
 					id: "0FD57A804E9A6670"
 					item: "gtceu:steam_grinder"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "378E79F5C85853A5"
 					item: "gtceu:steam_oven"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2021,11 +2033,11 @@
 				}
 			]
 			title: "{ftbquests.early_game.large_steam_machines.title}"
-			x: 1.0d
-			y: -3.0d
+			x: 2.0d
+			y: 6.5d
 		}
 		{
-			dependencies: ["10126B9D6EC90F59"]
+			dependencies: ["6E201D2B9E9A25B0"]
 			description: ["{ftbquests.early_game.steam_boilers.description}"]
 			id: "1289465781707205"
 			optional: true
@@ -2089,8 +2101,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.steam_boilers.title}"
-			x: 2.0d
-			y: -4.0d
+			x: 0.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["7EE1BE4043827F35"]
@@ -2106,14 +2118,11 @@
 				item: "gtceu:ulv_advanced_composter"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -4.0d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
-			dependencies: [
-				"53A9BA26813A1141"
-				"2D1184752D7ACA66"
-			]
+			dependencies: ["53A9BA26813A1141"]
 			description: ["{ftbquests.early_game.coke_brick.description}"]
 			icon: "gtceu:coke_oven_brick"
 			id: "753ECD744470EFF2"
@@ -2145,7 +2154,7 @@
 				}
 			]
 			title: "{ftbquests.early_game.coke_brick.title}"
-			x: -4.0d
+			x: -8.0d
 			y: 4.5d
 		}
 		{
@@ -2157,8 +2166,8 @@
 				item: "gtceu:coke_oven_hatch"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.5d
+			x: -6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -2178,8 +2187,8 @@
 				item: "gtceu:kiln"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.5d
+			x: -2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -2200,8 +2209,8 @@
 				item: "gtceu:steam_kiln"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 1.0d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6D5287A0FB892DFF"]
@@ -2237,8 +2246,8 @@
 				title: "{ftbquests.early_game.reach_upgrades.title}"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.25d
+			x: 4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["46E41B05B9F6FA82"]
@@ -2254,8 +2263,8 @@
 				item: "gtceu:ulv_casket"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 0.5d
+			x: 4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -2265,7 +2274,6 @@
 			]
 			dependency_requirement: "one_completed"
 			description: ["{ftbquests.early_game.vintage_rubber.description}"]
-			hide_dependency_lines: true
 			icon: "gtceu:raw_rubber_dust"
 			id: "3D78314A07F5782A"
 			optional: true
@@ -2290,8 +2298,8 @@
 				}
 			]
 			title: "{ftbquests.early_game.vintage_rubber.title}"
-			x: 9.5d
-			y: -1.0d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["70BE6905EC722DCA"]
@@ -2346,8 +2354,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.vintage.title}"
-			x: 0.0d
-			y: -7.0d
+			x: 4.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["16A9D8E864A18B9E"]
@@ -2359,8 +2367,89 @@
 				title: "{ftbquests.early_game.peaceful.title}"
 				type: "checkmark"
 			}]
-			x: -7.0d
-			y: -6.0d
+			x: -12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["10126B9D6EC90F59"]
+			description: ["{ftbquests.early_game.ulv_components.description}"]
+			id: "366227E714CDA617"
+			tasks: [{
+				id: "7C630178F862B24C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:ulv_conveyor_module"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ulv_robot_arm"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ulv_electric_pump"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.early_game.ulv_components.item_title}"
+				type: "item"
+			}]
+			title: "{ftbquests.early_game.ulv_components.title}"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["10126B9D6EC90F59"]
+			description: ["{ftbquests.early_game.steam_age_path.description}"]
+			hide_dependency_lines: true
+			icon: "gtceu:bronze_normal_fluid_pipe"
+			id: "6E201D2B9E9A25B0"
+			optional: true
+			shape: "diamond"
+			size: 1.75d
+			subtitle: "{ftbquests.early_game.steam_age_path.subtitle}"
+			tasks: [{
+				id: "4732C9ECADD2436D"
+				title: "{ftbquests.early_game.steam_age_path.title}"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5094070DDE1BFA3D"]
+			description: ["{ftbquests.early_game.create_path.description}"]
+			hide_dependency_lines: true
+			icon: "create:large_cogwheel"
+			id: "4EBEB19735285EF4"
+			optional: true
+			shape: "diamond"
+			size: 1.75d
+			subtitle: "{ftbquests.early_game.create_path.subtitle}"
+			tasks: [{
+				id: "0EED87C84628CBE1"
+				title: "{ftbquests.early_game.create_path.title}"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			id: "0226D71E1F627A7F"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "1FCDF73D8E73C7D3"
+				title: "{ftbquests.positioner.title}"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -0.5d
 		}
 	]
 	title: "{ftbquests.early_game.title}"

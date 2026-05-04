@@ -39,7 +39,7 @@
 				"2C354B0735DF8023"
 				"3C09E77C352B2A11"
 			]
-			description: ["{ftbquests.abydos.runic_casings.description}"]
+			description: ["{ftbquests.asg.runic_casings.description}"]
 			id: "379D69A44FC5B2F2"
 			rewards: [{
 				id: "06D88EE9C7DC14A5"
@@ -69,7 +69,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.abydos.runic_casings.title}"
+			title: "{ftbquests.asg.runic_casings.title}"
 			x: 1.0d
 			y: 4.5d
 		}
@@ -82,7 +82,7 @@
 				"25583D0BF59E1BC8"
 				"7AC55BA8BDD0F3D2"
 			]
-			description: ["{ftbquests.abydos.runic_inscribe_manipulate.description}"]
+			description: ["{ftbquests.asg.runic_inscribe_manipulate.description}"]
 			id: "2C354B0735DF8023"
 			rewards: [{
 				count: 2
@@ -109,7 +109,7 @@
 				"75F0388FAB52E0B3"
 				"30C974448C57F0EC"
 			]
-			description: ["{ftbquests.abydos.inscribe_casing.description}"]
+			description: ["{ftbquests.asg.inscribe_casing.description}"]
 			hide_dependency_lines: true
 			id: "624480A1E62B52EF"
 			rewards: [{
@@ -128,7 +128,7 @@
 		}
 		{
 			dependencies: ["2F26A144D29B00A5"]
-			description: ["{ftbquests.abydos.nether_armor.description}"]
+			description: ["{ftbquests.asg.nether_armor.description}"]
 			id: "59B0F5DB2C1E96DC"
 			rewards: [{
 				id: "25BD037BA00CCCA2"
@@ -183,13 +183,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.abydos.nether_armor.title}"
+			title: "{ftbquests.asg.nether_armor.title}"
 			x: -4.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
-			description: ["{ftbquests.abydos.naquadah_armor.description}"]
+			description: ["{ftbquests.asg.naquadah_armor.description}"]
 			hide_dependency_lines: true
 			id: "2F26A144D29B00A5"
 			rewards: [{
@@ -244,7 +244,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.abydos.naquadah_armor.title}"
+			title: "{ftbquests.asg.naquadah_armor.title}"
 			x: -6.0d
 			y: -7.0d
 		}
@@ -253,7 +253,7 @@
 				"60ECE277341A9408"
 				"7A5734E3CF682EBA"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.super_pressure_heat_chamber.description}"]
+			description: ["{ftbquests.asg.super_pressure_heat_chamber.description}"]
 			hide_dependent_lines: true
 			id: "59711F987DE95924"
 			rewards: [{
@@ -273,7 +273,7 @@
 		}
 		{
 			dependencies: ["239A0034C8425661"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.raw_void_ingot.description}"]
+			description: ["{ftbquests.asg.raw_void_ingot.description}"]
 			id: "0889A97E22C484CC"
 			rewards: [{
 				id: "515734ACECDB08A0"
@@ -294,7 +294,7 @@
 				"60ECE277341A9408"
 				"0889A97E22C484CC"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.void_ingot.description}"]
+			description: ["{ftbquests.asg.void_ingot.description}"]
 			id: "7A5734E3CF682EBA"
 			rewards: [{
 				count: 2
@@ -314,7 +314,7 @@
 		}
 		{
 			dependencies: ["2F87FC1D5BB43220"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.echo_r.description}"]
+			description: ["{ftbquests.asg.echo_r.description}"]
 			icon: {
 				Count: 1
 				id: "gtceu:echo_r_bucket"
@@ -339,13 +339,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.preparing_for_dimensional_travel.echo_r.title}"
+			title: "{ftbquests.asg.echo_r.title}"
 			x: -5.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["3479CEBD73550718"]
-			description: ["{ftbquests.abydos.runic_tablet_fragments.description}"]
+			description: ["{ftbquests.asg.runic_tablet_fragments.description}"]
 			id: "5744150A5658FE4D"
 			rewards: [{
 				id: "615C650D39461500"
@@ -385,13 +385,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.abydos.runic_tablet_fragments.title}"
+			title: "{ftbquests.asg.runic_tablet_fragments.title}"
 			x: 1.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["5744150A5658FE4D"]
-			description: ["{ftbquests.abydos.runic_tablet_complete.description}"]
+			description: ["{ftbquests.asg.runic_tablet_complete.description}"]
 			id: "146F88E5C1119649"
 			rewards: [{
 				id: "2DDF7ACB3920B1DA"
@@ -785,7 +785,7 @@
 				"58DCDBC6EE97CA5E"
 				"6E5A8D4641052624"
 			]
-			description: ["{ftbquests.abydos.ancient_stargate_ring_block.description}"]
+			description: ["{ftbquests.asg.ancient_stargate_ring_block.description}"]
 			id: "5DADD2204991B4D5"
 			rewards: [{
 				id: "0C6EE8224B97BBA5"
@@ -812,7 +812,7 @@
 				"101A7D0F395C7642"
 				"330F222D8230852A"
 			]
-			description: ["{ftbquests.abydos.ancient_stargate_base_block.description}"]
+			description: ["{ftbquests.asg.ancient_stargate_base_block.description}"]
 			id: "6F9793149DE81FCC"
 			rewards: [{
 				id: "5A3140CEAF2772E4"
@@ -841,7 +841,7 @@
 				"039D327E919878BF"
 				"2635B921AA9053D0"
 			]
-			description: ["{ftbquests.abydos.milky_way_stargate.description}"]
+			description: ["{ftbquests.asg.milky_way_stargate.description}"]
 			icon: {
 				Count: 1
 				id: "sgjourney:milky_way_stargate"
@@ -868,7 +868,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.abydos.milky_way_stargate.title}"
+			title: "{ftbquests.asg.milky_way_stargate.title}"
 			x: 0.0d
 			y: -7.0d
 		}
@@ -877,7 +877,7 @@
 				"5DADD2204991B4D5"
 				"21E115DFA9F2E14A"
 			]
-			description: ["{ftbquests.abydos.ancient_stargate_chevron_block.description}"]
+			description: ["{ftbquests.asg.ancient_stargate_chevron_block.description}"]
 			id: "63E36421AE07BC42"
 			rewards: [{
 				id: "1E1781F6129AF097"
@@ -966,12 +966,12 @@
 			optional: true
 			tasks: [{
 				id: "3A2B0003E5046083"
-				title: "{ftbquests.abydos.positioner.title}"
+				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 0.0d
 		}
 	]
-	title: "A Portal of Lost Worlds"
+	title: "{ftbquests.asg.title}"
 }

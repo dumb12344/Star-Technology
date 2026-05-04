@@ -570,24 +570,6 @@ ServerEvents.recipes(event => {
             }).id(`start:shaped/${tier}_muffler_hatch`);
 
             [
-                { amps: '1a', cableThickness: 'single' },
-                { amps: '2a', cableThickness: 'double' },
-                { amps: '4a', cableThickness: 'quadruple' },
-                { amps: '16a', cableThickness: 'hex' }
-            ].forEach(transformerData => {
-                event.shaped(Item.of(`gtceu:${tier}_transformer_${transformerData.amps}`), [
-                    'CLL',
-                    'UH ',
-                    'CLL'
-                ], {
-                    H: `gtceu:${tier}_machine_hull`,
-                    L: `gtceu:${cable}_${transformerData.cableThickness}_cable`,
-                    U: `gtceu:${cable1}_${transformerData.cableThickness}_cable`,
-                    C: `${chip}_chip`
-                }).id(`start:shaped/${tier}_transformer_${transformerData.amps}`);
-            });
-
-            [
                 { size: '4x', cableThickness: 'quadruple' },
                 { size: '8x', cableThickness: 'octal' },
                 { size: '16x', cableThickness: 'hex' }

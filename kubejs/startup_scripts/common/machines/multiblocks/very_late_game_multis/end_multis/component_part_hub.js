@@ -2,20 +2,24 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('component_part_hub', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([ 
+            Text.translate("block.start_core.gap"),
+            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
+        ])
         .recipeType('component_part_assembly')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:advanced_assembly_casing'))
         .pattern(definition => FactoryBlockPattern.start()
-            .aisle(' BBBBB   BBBBB ', ' BBBBB   BBBBB ', '  BBB     BBB  ') 
-            .aisle(' CDEDC   CDEDC ', ' FGHGF   FGHGF ', '  FIF     FIF  ') 
-            .aisle(' CDEDC   CDEDC ', ' FJHJF   FJHJF ', '  FIF     FIF  ') 
-            .aisle(' CDEDC   CDEDC ', ' FGHGF   FGHGF ', '  FIF     FIF  ') 
-            .aisle('BBEEEBBBBBEEEBB', 'BBHHHBBKBBHHHBB', ' BBBBBBBBBBBBB ') 
-            .aisle('BEEDEEEEEEEDEEB', 'BHHJHHHHHHHJHHB', ' BLLLBLLLBLLLB ') 
-            .aisle('BBEEEBBBBBEEEBB', 'BBHHHBB@BBHHHBB', ' BBBBBBBBBBBBB ') 
-            .aisle(' CDEDC   CDEDC ', ' FGHGF   FGHGF ', '  FIF     FIF  ') 
-            .aisle(' CDEDC   CDEDC ', ' FJHJF   FJHJF ', '  FIF     FIF  ') 
-            .aisle(' CDEDC   CDEDC ', ' FGHGF   FGHGF ', '  FIF     FIF  ') 
+            .aisle(' BBBBB   BBBBB ', ' BBBBB   BBBBB ', '  BBB     BBB  ')
+            .aisle(' CDEDC   CDEDC ', ' FGHGF   FGHGF ', '  FIF     FIF  ')
+            .aisle(' CDEDC   CDEDC ', ' FJHJF   FJHJF ', '  FIF     FIF  ')
+            .aisle(' CDEDC   CDEDC ', ' FGHGF   FGHGF ', '  FIF     FIF  ')
+            .aisle('BBEEEBBBBBEEEBB', 'BBHHHBBKBBHHHBB', ' BBBBBBBBBBBBB ')
+            .aisle('BEEDEEEEEEEDEEB', 'BHHJHHHHHHHJHHB', ' BLLLBLLLBLLLB ')
+            .aisle('BBEEEBBBBBEEEBB', 'BBHHHBB@BBHHHBB', ' BBBBBBBBBBBBB ')
+            .aisle(' CDEDC   CDEDC ', ' FGHGF   FGHGF ', '  FIF     FIF  ')
+            .aisle(' CDEDC   CDEDC ', ' FJHJF   FJHJF ', '  FIF     FIF  ')
+            .aisle(' CDEDC   CDEDC ', ' FGHGF   FGHGF ', '  FIF     FIF  ')
             .aisle(' BBBBB   BBBBB ', ' BBBBB   BBBBB ', '  BBB     BBB  ')
             .where('B', Predicates.blocks('kubejs:advanced_assembly_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(4).setPreviewCount(0))
@@ -38,6 +42,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/threading/advanced_assembly_casing',
-        'gtceu:block/machines/assembler');
+            'gtceu:block/machines/assembler');
 
 });

@@ -2,7 +2,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('exotic_rock_crushing')
         .category('resource_production')
         .setMaxIOSize(3, 1, 2, 0)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_ASSEMBLER , FillDirection.LEFT_TO_RIGHT)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_ASSEMBLER, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COMPUTATION);
 });
 
@@ -33,12 +33,12 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(2).setPreviewCount(0))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))
-                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(1).setPreviewCount(1)))
+                .or(Predicates.abilities(PartAbility.INPUT_ENERGY).setMaxGlobalLimited(2).setPreviewCount(1)))
             .where("d", Predicates.blocks("kubejs:tritanic_blasting_casing"))
             .where("e", Predicates.blocks("gtceu:silicon_bronze_frame"))
             .where("h", Predicates.blocks("gtceu:naquadah_coil_block"))
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-	    	'gtceu:block/multiblock/fusion_reactor');
+            'gtceu:block/multiblock/fusion_reactor');
 });

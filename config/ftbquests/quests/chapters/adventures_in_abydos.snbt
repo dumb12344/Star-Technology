@@ -31,6 +31,7 @@
 			id: "114E2ED3560BE835"
 			linked_quest: "01AF9486EA6DA792"
 			shape: "gear"
+			size: 1.5d
 			x: -6.5d
 			y: 0.5d
 		}
@@ -83,7 +84,7 @@
 				dimension: "sgjourney:abydos"
 				icon: "minecraft:suspicious_sand"
 				id: "0087D8D411DBF77E"
-				title: "The Sands Await"
+				title: "{ftbquests.abydos.world.item_title}"
 				type: "dimension"
 			}]
 			x: -10.5d
@@ -614,7 +615,7 @@
 			optional: true
 			tasks: [{
 				id: "6A826ED481004E31"
-				title: "{ftbquests.abydos.positioner.title}"
+				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -910,6 +911,7 @@
 				"07AD6651D0B40E22"
 				"57E4168A83E31D62"
 			]
+			description: ["{ftbquests.abydos.component_nexus.description}"]
 			id: "5DF4501BD2593465"
 			shape: "gear"
 			size: 1.5d
@@ -923,6 +925,7 @@
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
+			description: ["{ftbquests.abydos.uhv_stabilization_module.description}"]
 			hide_dependent_lines: true
 			id: "6CB6343BFD09B5C0"
 			tasks: [{
@@ -975,7 +978,7 @@
 		}
 		{
 			dependencies: ["01AF9486EA6DA792"]
-			description: ["{ftbquests.futuristic_mechanisms.wetware_circuit_board.description}"]
+			description: ["{ftbquests.abydos.wetware_circuit_board.description}"]
 			id: "68F878EC21CA1749"
 			rewards: [{
 				id: "04BE1D70705BBCD1"
@@ -1007,7 +1010,7 @@
 				"68F878EC21CA1749"
 				"3EEEC61CEE1B6BB2"
 			]
-			description: ["{ftbquests.futuristic_mechanisms.neuro_processing_unit.description}"]
+			description: ["{ftbquests.abydos.neuro_processing_unit.description}"]
 			id: "18D5591BF53AD07F"
 			rewards: [{
 				id: "5B036F742F1DFE1B"
@@ -1015,7 +1018,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.futuristic_mechanisms.neuro_processing_unit.subtitle}"
+			subtitle: "{ftbquests.abydos.neuro_processing_unit.subtitle}"
 			tasks: [{
 				id: "5993D645BF787D73"
 				item: "gtceu:neuro_processing_unit"
@@ -1033,7 +1036,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.futuristic_mechanisms.wetware_processor.subtitle}"
+			subtitle: "{ftbquests.abydos.wetware_processor.subtitle}"
 			tasks: [{
 				id: "3EE0849FE28BA5A7"
 				item: "gtceu:wetware_processor"
@@ -1044,7 +1047,7 @@
 		}
 		{
 			dependencies: ["01AF9486EA6DA792"]
-			description: ["{ftbquests.futuristic_mechanisms.stem_cells.description}"]
+			description: ["{ftbquests.abydos.stem_cells.description}"]
 			id: "3EEEC61CEE1B6BB2"
 			rewards: [{
 				id: "5F2F729A716E6C0C"
@@ -1073,7 +1076,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.futuristic_mechanisms.wetware_processor_computer.subtitle}"
+			subtitle: "{ftbquests.abydos.wetware_processor_computer.subtitle}"
 			tasks: [{
 				id: "52C4CAEB98BC9833"
 				item: "gtceu:wetware_processor_computer"
@@ -1091,7 +1094,7 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.futuristic_mechanisms.wetware_processor_assembly.subtitle}"
+			subtitle: "{ftbquests.abydos.wetware_processor_assembly.subtitle}"
 			tasks: [{
 				id: "26A0FC39A8C48BC1"
 				item: "gtceu:wetware_processor_assembly"
@@ -1105,7 +1108,7 @@
 				"2911EC7333E0E9C5"
 				"17946D19C10BFC9E"
 			]
-			description: ["{ftbquests.futuristic_mechanisms.darmstadtium_ingot.description}"]
+			description: ["{ftbquests.abydos.darmstadtium_ingot.description}"]
 			hide_dependent_lines: true
 			id: "27C0ED4305E84D21"
 			rewards: [{
@@ -1124,7 +1127,7 @@
 		}
 		{
 			dependencies: ["27C0ED4305E84D21"]
-			description: ["{ftbquests.futuristic_mechanisms.uv_machine_hull.description}"]
+			description: ["{ftbquests.abydos.uv_machine_hull.description}"]
 			id: "3F4C068368F97580"
 			rewards: [{
 				id: "16A9EF2CDC5E6B40"
@@ -1146,7 +1149,7 @@
 				"3B69844600AD5430"
 				"17946D19C10BFC9E"
 			]
-			description: ["{ftbquests.futuristic_mechanisms.tritanium_ingot.description}"]
+			description: ["{ftbquests.abydos.tritanium_ingot.description}"]
 			id: "6131A76D203DE6AB"
 			rewards: [{
 				id: "5DE37EDA23E177D0"
@@ -1167,7 +1170,7 @@
 				"2911EC7333E0E9C5"
 				"17946D19C10BFC9E"
 			]
-			description: ["{ftbquests.futuristic_mechanisms.americium_ingot.description}"]
+			description: ["{ftbquests.abydos.americium_ingot.description}"]
 			hide_dependent_lines: true
 			id: "70AA84848FB2A9BB"
 			rewards: [{
@@ -1189,7 +1192,7 @@
 				"3F4C068368F97580"
 				"7C182C34888AF189"
 			]
-			description: ["{ftbquests.futuristic_mechanisms.uv_energy_input_hatch.description}"]
+			description: ["{ftbquests.abydos.uv_energy_input_hatch.description}"]
 			id: "0B7A0924AFE58559"
 			rewards: [{
 				id: "6B95CCF09AF3CE9A"
@@ -1210,7 +1213,7 @@
 				"6131A76D203DE6AB"
 				"5DD60CB0D67AD39C"
 			]
-			description: ["{ftbquests.futuristic_mechanisms.tritanium_coil.description}"]
+			description: ["{ftbquests.abydos.tritanium_coil.description}"]
 			id: "678B90BF2ACE2BBA"
 			rewards: [{
 				count: 2
@@ -1230,7 +1233,7 @@
 		}
 		{
 			dependencies: ["0B7A0924AFE58559"]
-			description: ["{ftbquests.futuristic_mechanisms.uv_energy_input_hatch_4a.description}"]
+			description: ["{ftbquests.abydos.uv_energy_input_hatch_4a.description}"]
 			id: "155947C2913FFA42"
 			rewards: [{
 				id: "6C1602A5958BA368"
@@ -1248,7 +1251,7 @@
 		}
 		{
 			dependencies: ["155947C2913FFA42"]
-			description: ["{ftbquests.futuristic_mechanisms.uv_energy_input_hatch_16a.description}"]
+			description: ["{ftbquests.abydos.uv_energy_input_hatch_16a.description}"]
 			id: "1B4B0A67B86B7D58"
 			rewards: [{
 				id: "676897D5A44043C4"
@@ -1266,7 +1269,7 @@
 		}
 		{
 			dependencies: ["678B90BF2ACE2BBA"]
-			description: ["{ftbquests.futuristic_mechanisms.enriched_naquadah_trinium_europium_duranide_ingot.description}"]
+			description: ["{ftbquests.abydos.enriched_naquadah_trinium_europium_duranide_ingot.description}"]
 			hide_dependent_lines: true
 			id: "02606EBF230281A3"
 			rewards: [{
@@ -1285,7 +1288,7 @@
 		}
 		{
 			dependencies: ["6131A76D203DE6AB"]
-			description: ["{ftbquests.futuristic_mechanisms.sterilizing_filter_casing.description}"]
+			description: ["{ftbquests.abydos.sterilizing_filter_casing.description}"]
 			id: "6CC13BE9AD447218"
 			rewards: [{
 				id: "2850DA80D961611B"
@@ -1293,13 +1296,13 @@
 				type: "item"
 			}]
 			size: 1.0d
-			subtitle: "{ftbquests.futuristic_mechanisms.sterilizing_filter_casing.subtitle}"
+			subtitle: "{ftbquests.abydos.sterilizing_filter_casing.subtitle}"
 			tasks: [{
 				id: "1B9835C2886C3C1D"
 				item: "gtceu:sterilizing_filter_casing"
 				type: "item"
 			}]
-			title: "{ftbquests.futuristic_mechanisms.sterilizing_filter_casing.title}"
+			title: "{ftbquests.abydos.sterilizing_filter_casing.title}"
 			x: -4.5d
 			y: -1.5d
 		}
@@ -1308,7 +1311,7 @@
 				"68F878EC21CA1749"
 				"0687F0D2A9EC1AA4"
 			]
-			description: ["{ftbquests.futuristic_mechanisms.data_module.description}"]
+			description: ["{ftbquests.abydos.data_module.description}"]
 			id: "7C182C34888AF189"
 			rewards: [{
 				id: "06C89564F1B6E33A"
@@ -1329,6 +1332,7 @@
 		}
 		{
 			dependencies: ["7C182C34888AF189"]
+			description: ["{ftbquests.abydos.advanced_synthesis_plant.description}"]
 			id: "53B8A2EFCF2D4371"
 			tasks: [{
 				id: "6A01A251A9C02550"
@@ -1340,7 +1344,7 @@
 		}
 		{
 			dependencies: ["4C5DBB94345FF33B"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.wetware_processor_mainframe.description}"]
+			description: ["{ftbquests.abydos.wetware_processor_mainframe.description}"]
 			id: "707C2E9BA62A60C5"
 			rewards: [{
 				count: 2
@@ -1350,7 +1354,7 @@
 			}]
 			shape: "gear"
 			size: 1.25d
-			subtitle: "{ftbquests.preparing_for_dimensional_travel.wetware_processor_mainframe.subtitle}"
+			subtitle: "{ftbquests.abydos.wetware_processor_mainframe.subtitle}"
 			tasks: [{
 				id: "7D57266E37ABED15"
 				item: "gtceu:wetware_processor_mainframe"
@@ -1364,7 +1368,7 @@
 				"707C2E9BA62A60C5"
 				"02606EBF230281A3"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uv_fusion_reactor.description}"]
+			description: ["{ftbquests.abydos.uv_fusion_reactor.description}"]
 			id: "314B6ABE72E4A438"
 			rewards: [{
 				count: 2
@@ -1387,7 +1391,7 @@
 				"314B6ABE72E4A438"
 				"49F5F88C69586F13"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.neutronium.description}"]
+			description: ["{ftbquests.abydos.neutronium.description}"]
 			id: "5BDA17962F4630EB"
 			rewards: [{
 				count: 2
@@ -1407,7 +1411,7 @@
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.ruthenium_trinium_americium_neutronate_ingot.description}"]
+			description: ["{ftbquests.abydos.ruthenium_trinium_americium_neutronate_ingot.description}"]
 			id: "3ECCE739DE8F5F2C"
 			rewards: [{
 				id: "3DA5E57A968DB4AE"
@@ -1424,7 +1428,7 @@
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_machine_hull.description}"]
+			description: ["{ftbquests.abydos.uhv_machine_hull.description}"]
 			id: "5C39B74171CC21F9"
 			rewards: [{
 				id: "0183789A1E5AA702"
@@ -1444,7 +1448,7 @@
 				"5C39B74171CC21F9"
 				"73D0DC357821B395"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch.description}"]
+			description: ["{ftbquests.abydos.uhv_energy_input_hatch.description}"]
 			id: "11D51899B980082B"
 			rewards: [{
 				id: "2E474FF058F620B3"
@@ -1464,7 +1468,7 @@
 				"11D51899B980082B"
 				"139F1EF64FA349B1"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uhv_energy_input_hatch_4a.description}"]
+			description: ["{ftbquests.abydos.uhv_energy_input_hatch_4a.description}"]
 			id: "44B43694312BAAC8"
 			rewards: [{
 				id: "439C3636390FF949"
@@ -1498,14 +1502,14 @@
 		}
 		{
 			dependencies: ["7FFCAD92772A175F"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.uv_parallel_hatch.description}"]
+			description: ["{ftbquests.abydos.uv_parallel_hatch.description}"]
 			id: "27E656FA93E2A1F4"
 			rewards: [{
 				id: "2FC0A2A1510D510B"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.preparing_for_dimensional_travel.uv_parallel_hatch.subtitle}"
+			subtitle: "{ftbquests.abydos.uv_parallel_hatch.subtitle}"
 			tasks: [{
 				id: "24F1943A992D624E"
 				item: "gtceu:uv_parallel_hatch"
@@ -1516,7 +1520,7 @@
 		}
 		{
 			dependencies: ["1AC8CBF01196D1F3"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.highly_advanced_soc_wafer.description}"]
+			description: ["{ftbquests.abydos.highly_advanced_soc_wafer.description}"]
 			id: "3FE0B664F2D15942"
 			rewards: [{
 				id: "01E1C3C603E976E8"
@@ -1533,7 +1537,7 @@
 		}
 		{
 			dependencies: ["0F7A1EA1AB52F795"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.neutronium_wafer.description}"]
+			description: ["{ftbquests.abydos.neutronium_wafer.description}"]
 			id: "1AC8CBF01196D1F3"
 			rewards: [{
 				count: 2
@@ -1553,7 +1557,7 @@
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.neutronium_boule.description}"]
+			description: ["{ftbquests.abydos.neutronium_boule.description}"]
 			id: "0F7A1EA1AB52F795"
 			rewards: [{
 				id: "42D6FB3B7E75DE20"
@@ -1570,7 +1574,7 @@
 		}
 		{
 			dependencies: ["52B553FDB34B1475"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.melodium_wire.description}"]
+			description: ["{ftbquests.abydos.melodium_wire.description}"]
 			id: "622066696CCF9754"
 			rewards: [{
 				id: "17C57D476BB71F90"
@@ -1587,7 +1591,7 @@
 		}
 		{
 			dependencies: ["678B90BF2ACE2BBA"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.melodium_ingot.description}"]
+			description: ["{ftbquests.abydos.melodium_ingot.description}"]
 			id: "52B553FDB34B1475"
 			rewards: [{
 				id: "0A7609C4179CF5A2"
@@ -1607,7 +1611,7 @@
 				"52B553FDB34B1475"
 				"5BDA17962F4630EB"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.stellarium_ingot.description}"]
+			description: ["{ftbquests.abydos.stellarium_ingot.description}"]
 			id: "253AECE450920D99"
 			rewards: [{
 				id: "70C887ECBA6B4542"
@@ -1624,7 +1628,7 @@
 		}
 		{
 			dependencies: ["253AECE450920D99"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.stellarium_wire.description}"]
+			description: ["{ftbquests.abydos.stellarium_wire.description}"]
 			id: "55102B0E5D0238E1"
 			rewards: [{
 				id: "664E3AF7B9872F12"
@@ -1641,7 +1645,7 @@
 		}
 		{
 			dependencies: ["5BDA17962F4630EB"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.gravi_star.description}"]
+			description: ["{ftbquests.abydos.gravi_star.description}"]
 			id: "7FFCAD92772A175F"
 			rewards: [{
 				id: "41645C4A24DF3CD2"
@@ -1658,7 +1662,7 @@
 		}
 		{
 			dependencies: ["707C2E9BA62A60C5"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.mega_blast_furnace.description}"]
+			description: ["{ftbquests.abydos.mega_blast_furnace.description}"]
 			id: "2EE4C6540FE3D4CF"
 			optional: true
 			rewards: [{
@@ -1677,7 +1681,7 @@
 		}
 		{
 			dependencies: ["141911C5DD68CD2A"]
-			description: ["{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.description}"]
+			description: ["{ftbquests.abydos.wireless_covers_hatches.description}"]
 			id: "659690E81B3E3AE7"
 			rewards: [{
 				count: 2
@@ -1718,10 +1722,10 @@
 					}
 				}
 				optional_task: true
-				title: "{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.item_title}"
+				title: "{ftbquests.abydos.wireless_covers_hatches.item_title}"
 				type: "item"
 			}]
-			title: "{ftbquests.preparing_for_dimensional_travel.wireless_covers_hatches.title}"
+			title: "{ftbquests.abydos.wireless_covers_hatches.title}"
 			x: -10.5d
 			y: 6.5d
 		}
@@ -1731,18 +1735,26 @@
 				"3F3553DE7A3D87C6"
 				"70AA84848FB2A9BB"
 			]
-			description: ["{ftbquests.preparing_for_dimensional_travel.wireless_energy.description}"]
+			description: ["{ftbquests.abydos.wireless_energy.description}"]
 			id: "141911C5DD68CD2A"
 			rewards: [{
 				id: "73B232401A84DDAC"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "66552A0737028183"
-				item: "start_core:dream_link_node"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "66552A0737028183"
+					item: "start_core:dream_link_node"
+					type: "item"
+				}
+				{
+					id: "317B167D4342C13D"
+					item: "start_core:lucinducer"
+					optional_task: true
+					type: "item"
+				}
+			]
 			x: -8.5d
 			y: 6.5d
 		}
@@ -1752,7 +1764,7 @@
 				"464BB867FCF25A94"
 				"7C182C34888AF189"
 			]
-			description: ["{ftbquests.futuristic_mechanisms.chemical_plant.description}"]
+			description: ["{ftbquests.abydos.chemical_plant.description}"]
 			id: "3E1CA9FFB9953F42"
 			rewards: [{
 				count: 2
@@ -1776,7 +1788,7 @@
 				"3F3553DE7A3D87C6"
 				"70AA84848FB2A9BB"
 			]
-			description: ["{ftbquests.futuristic_mechanisms.cleaning_maintenance_hatch.description}"]
+			description: ["{ftbquests.abydos.cleaning_maintenance_hatch.description}"]
 			id: "3391903EBBB3F308"
 			rewards: [{
 				id: "5CAB5DD7B5EE938D"
@@ -1805,6 +1817,7 @@
 		}
 		{
 			dependencies: ["6110BA7B3E84F06F"]
+			description: ["{ftbquests.abydos.compact_assembly_line.description}"]
 			hide_dependent_lines: true
 			id: "57E4168A83E31D62"
 			tasks: [{
@@ -1864,7 +1877,7 @@
 				"560993E111853A54"
 				"02606EBF230281A3"
 			]
-			description: ["{ftbquests.futuristic_mechanisms.network_switch.description}"]
+			description: ["{ftbquests.abydos.network_switch.description}"]
 			id: "0687F0D2A9EC1AA4"
 			rewards: [{
 				id: "2B66FA09A1766701"
