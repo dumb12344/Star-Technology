@@ -3,10 +3,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('superior_particulate_isolation_nexus', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        // .tooltips([ //undo comment link when core updated
-        //     Text.translate("block.start_core.gap"),
-        //     Text.translate("block.kubejs.threading.tooltip")
-        // ])
+        .tooltips([ 
+            Text.translate("block.start_core.gap"),
+            Text.translate("block.kubejs.threading.tooltip")
+        ])
         .recipeTypes(['sifter', 'centrifuge', 'thermal_centrifuge'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:tectonic_defiance_casing'))

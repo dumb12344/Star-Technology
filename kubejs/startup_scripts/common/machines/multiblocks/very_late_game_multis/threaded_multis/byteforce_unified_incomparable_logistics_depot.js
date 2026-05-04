@@ -3,10 +3,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('byteforce_unified_incomparable_logistics_depot', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        // .tooltips([ //undo comment link when core updated
-        //     Text.translate("block.start_core.gap"),
-        //     Text.translate("block.kubejs.threading.tooltip")
-        // ])
+        .tooltips([ 
+            Text.translate("block.start_core.gap"),
+            Text.translate("block.kubejs.threading.tooltip")
+        ])
         .recipeTypes(['assembler', 'circuit_assembler', 'me_assembler'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:advanced_assembly_casing'))

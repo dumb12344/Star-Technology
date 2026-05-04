@@ -12,10 +12,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('mechanical_sieve', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        // .tooltips([ //undo comment link when core updated
-        //     Text.translate("block.start_core.gap"),
-        //     Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
-        // ])
+        .tooltips([ 
+            Text.translate("block.start_core.gap"),
+            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
+        ])
         .recipeType('mechanical_sieve')
         .appearanceBlock(() => Block.getBlock('kubejs:treatedwood_casing'))
         .pattern(definition => FactoryBlockPattern.start()

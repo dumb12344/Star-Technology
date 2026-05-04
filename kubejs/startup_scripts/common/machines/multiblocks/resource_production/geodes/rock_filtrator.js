@@ -12,10 +12,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('rock_filtrator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        // .tooltips([ //undo comment link when core updated
-        //     Text.translate("block.start_core.gap"),
-        //     Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
-        // ])
+        .tooltips([ 
+            Text.translate("block.start_core.gap"),
+            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
+        ])
         .recipeType('rock_filtrator')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()

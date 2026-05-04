@@ -2,10 +2,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('super_vacuum_freezer', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        // .tooltips([ //undo comment link when core updated
-        //     Text.translate("block.start_core.gap"),
-        //     Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
-        // ])
+        .tooltips([ 
+            Text.translate("block.start_core.gap"),
+            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
+        ])
         .recipeType('vacuum_freezer')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('gtceu:frostproof_machine_casing'))

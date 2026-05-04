@@ -14,10 +14,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     const largeCube = (type, casing) => {
         event.create(`t_large_${type}`, 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
-            // .tooltips([ //undo comment link when core updated
-            //     Text.translate("block.start_core.gap"),
-            //     Text.translate("block.kubejs.only_one_2a_hatch.tooltip")
-            // ])
+            .tooltips([ 
+                Text.translate("block.start_core.gap"),
+                Text.translate("block.kubejs.only_one_2a_hatch.tooltip")
+            ])
             .recipeType(type)
             .recipeModifiers([GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.BATCH_MODE])
             .appearanceBlock(() => Block.getBlock(`kubejs:${casing}_casing`))

@@ -2,10 +2,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('super_abs', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        // .tooltips([ //undo comment link when core updated
-        //     Text.translate("block.start_core.gap"),
-        //     Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
-        // ])
+        .tooltips([ 
+            Text.translate("block.start_core.gap"),
+            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
+        ])
         .recipeType('alloy_blast_smelter')
         .machine((holder) => new $CoiledMulti(holder))
         .recipeModifiers([GTRecipeModifiers.EBF_OVERCLOCK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])

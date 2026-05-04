@@ -119,18 +119,18 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
-    // event.recipes.gtceu.modular_rocket_module(id('rp_1')) //undo comment link when core updated
-    //     .inputFluids('gtceu:rp_1 1')
-    //     .duration(200)
-    //     .EUt(-32);
+    event.recipes.gtceu.modular_rocket_module(id('rp_1'))
+        .inputFluids('gtceu:rp_1 1')
+        .duration(200)
+        .EUt(-32);
 
-    // event.recipes.gtceu.modular_rocket_module(id('monomethylhydrazine'))
-    //     .inputFluids('gtceu:monomethylhydrazine 1')
-    //     .duration(400)
-    //     .EUt(-32);
+    event.recipes.gtceu.modular_rocket_module(id('monomethylhydrazine'))
+        .inputFluids('gtceu:monomethylhydrazine 1')
+        .duration(400)
+        .EUt(-32);
 
-    // event.recipes.gtceu.modular_rocket_module(id('sorbitol_hypergolic_fuel'))
-    //     .inputFluids('gtceu:sorbitol_hypergolic_fuel 1')
-    //     .duration(600)
-    //     .EUt(-32);
+    event.recipes.gtceu.modular_rocket_module(id('sorbitol_hypergolic_fuel'))
+        .inputFluids('gtceu:sorbitol_hypergolic_fuel 1')
+        .duration(600)
+        .EUt(-32);
 });
