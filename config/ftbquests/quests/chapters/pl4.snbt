@@ -301,7 +301,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.enriched_mystical_fluids.title}"
+			title: "{ftbquests.pl.enriched_mystical_fluids.title}"
 			x: -9.75d
 			y: -9.0d
 		}
@@ -2897,7 +2897,7 @@
 				"7ADE549CFFB6AB36"
 				"7791705FF3192010"
 			]
-			description: ["{ftbquests.processing_lines_chap.pedot_pss.description}"]
+			description: ["{ftbquests.pl.pedot_pss.description}"]
 			id: "1B6159E114BA50ED"
 			rewards: [{
 				count: 4
@@ -2912,7 +2912,7 @@
 				item: "gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.processing_lines_chap.pedot_pss.title}"
+			title: "{ftbquests.pl.pedot_pss.title}"
 			x: 8.0d
 			y: 3.5d
 		}
@@ -3224,7 +3224,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "1F8B168C07797665"
-				title: "{ftbquests.processing_lines_chap.abyss_harvesting.title}"
+				title: "{ftbquests.pl.abyss_harvesting.title}"
 				type: "checkmark"
 			}]
 			x: -16.0d
@@ -3907,5 +3907,5 @@
 			y: 8.5d
 		}
 	]
-	title: "toLang \"Processing Lines - 4\""
+	title: "{ftbquests.pl4.title}"
 }

@@ -65,7 +65,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.sulfur_dioxide.title}"
+			title: "{ftbquests.pl.sulfur_dioxide.title}"
 			x: -12.5d
 			y: -3.5d
 		}
@@ -91,7 +91,7 @@
 		}
 		{
 			dependencies: ["7F22CD2F778802BE"]
-			description: ["{ftbquests.processing_lines_chap.sulfuric_acid.description}"]
+			description: ["{ftbquests.pl.sulfuric_acid.description}"]
 			id: "104CAE7C2406E9BF"
 			shape: "gear"
 			size: 1.0d
@@ -203,7 +203,7 @@
 				"3F74E863172E757F"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.processing_lines_chap.ethanol.description}"]
+			description: ["{ftbquests.pl.ethanol.description}"]
 			icon: "gtceu:ethanol_bucket"
 			id: "3CB84935C465C540"
 			size: 1.0d
@@ -227,7 +227,7 @@
 						}
 					}
 					optional_task: true
-					title: "{ftbquests.processing_lines_chap.ethanol.title}"
+					title: "{ftbquests.pl.ethanol.title}"
 					type: "item"
 				}
 				{
@@ -235,7 +235,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.ethanol.title}"
+			title: "{ftbquests.pl.ethanol.title}"
 			x: -11.0d
 			y: 6.0d
 		}
@@ -842,7 +842,7 @@
 				"1BC9B0DBEB0F9AE5"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.processing_lines_chap.aluminium.description}"]
+			description: ["{ftbquests.pl.aluminium.description}"]
 			id: "0C029ABAE1BD9231"
 			rewards: [{
 				count: 3
@@ -1072,7 +1072,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.potassium_dust_naphthalene.title}"
+			title: "{ftbquests.pl.potassium_dust_naphthalene.title}"
 			x: 6.5d
 			y: 5.5d
 		}
@@ -1099,7 +1099,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.potassium_dichromate_dust_dimethylbenzene.title}"
+			title: "{ftbquests.pl.potassium_dichromate_dust_dimethylbenzene.title}"
 			x: 6.5d
 			y: 4.5d
 		}
@@ -1109,7 +1109,7 @@
 				"72C473F289A5CBA4"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{ftbquests.processing_lines_chap.rutile.description}"]
+			description: ["{ftbquests.pl.rutile.description}"]
 			id: "61A21D40EC64D60E"
 			size: 1.0d
 			tasks: [{
@@ -1148,7 +1148,7 @@
 			tasks: [
 				{
 					id: "3215A0791594DDE9"
-					title: "{ftbquests.processing_lines_chap.hot_titanium_ingot.title}"
+					title: "{ftbquests.pl.hot_titanium_ingot.title}"
 					type: "checkmark"
 				}
 				{
@@ -1352,7 +1352,7 @@
 		}
 		{
 			dependencies: ["550DB81B8DC91730"]
-			description: ["{ftbquests.processing_lines_chap.propene_chlorine_water.description}"]
+			description: ["{ftbquests.pl.propene_chlorine_water.description}"]
 			icon: "gtceu:propene_bucket"
 			id: "629C4DE28BB97660"
 			optional: true
@@ -1518,7 +1518,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.sapphires.title}"
+			title: "{ftbquests.pl.sapphires.title}"
 			x: -13.5d
 			y: -1.5d
 		}
@@ -1547,7 +1547,7 @@
 				"27CDE08D18C0AAE4"
 				"1A5AE57C3F996A31"
 			]
-			description: ["{ftbquests.processing_lines_chap.polydimethylsiloxane.description}"]
+			description: ["{ftbquests.pl.polydimethylsiloxane.description}"]
 			id: "6109BB0B2C118C28"
 			tasks: [{
 				id: "11557AB1EAFAFC78"
@@ -1573,7 +1573,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.chlorine.title}"
+			title: "{ftbquests.pl.chlorine.title}"
 			x: -10.5d
 			y: 3.5d
 		}
@@ -1593,7 +1593,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.water.title}"
+			title: "{ftbquests.pl.water.title}"
 			x: -11.5d
 			y: 4.25d
 		}
@@ -1613,7 +1613,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.processing_lines_chap.methane.title}"
+			title: "{ftbquests.pl.methane.title}"
 			x: -10.5d
 			y: 5.0d
 		}
@@ -1638,7 +1638,7 @@
 						]
 					}
 				}
-				title: "{ftbquests.processing_lines_chap.sapphire_dust.title}"
+				title: "{ftbquests.pl.sapphire_dust.title}"
 				type: "item"
 			}]
 			x: -12.0d
@@ -1783,7 +1783,7 @@
 				}
 				{
 					id: "4FEC77C9901A2916"
-					title: "{ftbquests.processing_lines_chap.concentrated_bromine_solution.title}"
+					title: "{ftbquests.pl.concentrated_bromine_solution.title}"
 					type: "checkmark"
 				}
 			]
@@ -1803,7 +1803,7 @@
 				}
 				{
 					id: "6AB51AF8AAF32F05"
-					title: "{ftbquests.processing_lines_chap.acidic_bromine_solution.title}"
+					title: "{ftbquests.pl.acidic_bromine_solution.title}"
 					type: "checkmark"
 				}
 			]
@@ -1823,7 +1823,7 @@
 				}
 				{
 					id: "7AA4976128855159"
-					title: "{ftbquests.processing_lines_chap.brominated_chlorine_vapor.title}"
+					title: "{ftbquests.pl.brominated_chlorine_vapor.title}"
 					type: "checkmark"
 				}
 			]
@@ -1843,7 +1843,7 @@
 				}
 				{
 					id: "1E17F518616149E2"
-					title: "{ftbquests.processing_lines_chap.hot_chlorinated_brominated_brine.title}"
+					title: "{ftbquests.pl.hot_chlorinated_brominated_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -1866,7 +1866,7 @@
 				}
 				{
 					id: "6B41042C6EA92503"
-					title: "{ftbquests.processing_lines_chap.hot_brine.title}"
+					title: "{ftbquests.pl.hot_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -1886,7 +1886,7 @@
 				}
 				{
 					id: "686AD61F8E1B0D36"
-					title: "{ftbquests.processing_lines_chap.acidic_bromine_exhaust.title}"
+					title: "{ftbquests.pl.acidic_bromine_exhaust.title}"
 					type: "checkmark"
 				}
 			]
@@ -1939,7 +1939,7 @@
 				"03B49B558B85346B"
 				"439D8AE6D3DC41AF"
 			]
-			description: ["{ftbquests.processing_lines_chap.polyvinyl_butyral.description}"]
+			description: ["{ftbquests.pl.polyvinyl_butyral.description}"]
 			id: "3306CAE5E57839A2"
 			rewards: [{
 				count: 3
@@ -1990,7 +1990,7 @@
 				}
 				{
 					id: "32E722FFBBEABECA"
-					title: "{ftbquests.processing_lines_chap.hot_brine.title}"
+					title: "{ftbquests.pl.hot_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -2010,7 +2010,7 @@
 				}
 				{
 					id: "2B604113D4EFF74C"
-					title: "{ftbquests.processing_lines_chap.raw_brine.title}"
+					title: "{ftbquests.pl.raw_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -2030,7 +2030,7 @@
 				}
 				{
 					id: "51043E6430D95FB7"
-					title: "{ftbquests.processing_lines_chap.hot_alkaline_debrominated_brine.title}"
+					title: "{ftbquests.pl.hot_alkaline_debrominated_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -2050,7 +2050,7 @@
 				}
 				{
 					id: "2CF9A32E88ED095F"
-					title: "{ftbquests.processing_lines_chap.hot_debrominated_brine.title}"
+					title: "{ftbquests.pl.hot_debrominated_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -2070,7 +2070,7 @@
 				}
 				{
 					id: "0CC2251D32527FF6"
-					title: "{ftbquests.processing_lines_chap.debrominated_brine.title}"
+					title: "{ftbquests.pl.debrominated_brine.title}"
 					type: "checkmark"
 				}
 			]
@@ -2090,7 +2090,7 @@
 				}
 				{
 					id: "2244321FCC5D2FB3"
-					title: "{ftbquests.processing_lines_chap.salt_water.title}"
+					title: "{ftbquests.pl.salt_water.title}"
 					type: "checkmark"
 				}
 			]
@@ -2135,5 +2135,5 @@
 			y: -5.0d
 		}
 	]
-	title: "toLang \"Processing Lines - 1\""
+	title: "{ftbquests.pl1.title}"
 }

@@ -29,9 +29,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle(' BBBBBCCCCCCCCCBBBBB ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ') 
             .aisle('     BBBBBBBBBBB     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ', '                     ') 
             .where('M', Predicates.abilities(PartAbility.MUFFLER))
-			.where(' ', Predicates.any())
+            .where(' ', Predicates.any())
             .where('B', Predicates.blocks('kubejs:reinforced_brimstone_casing'))
-            .where('C', Predicates.blocks('kubejs:extreme_temperature_smelting_casing')                
+            .where('C', Predicates.blocks('kubejs:extreme_temperature_smelting_casing')
                 .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(8).setPreviewCount(0))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(8).setPreviewCount(0))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(8).setPreviewCount(0))
@@ -47,9 +47,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('I', Predicates.blocks('gtceu:uev_rotor_holder'))
             .where('J', Predicates.heatingCoils())
             .where('K', Predicates.blocks('kubejs:nyanium_machine_casing'))
-			.where('@', Predicates.controller(Predicates.blocks(definition.get())))
-			.build())
-		.workableCasingModel('kubejs:block/casings/nether_multis/extreme_temperature_smelting_casing',
+            .where('@', Predicates.controller(Predicates.blocks(definition.get())))
+            .build())
+        .workableCasingModel('kubejs:block/casings/nether_multis/extreme_temperature_smelting_casing',
             'gtceu:block/multiblock/gcym/mega_blast_furnace')
         .additionalDisplay(global.coilMachineTempDisplay);
 

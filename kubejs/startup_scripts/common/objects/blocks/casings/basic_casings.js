@@ -9,7 +9,7 @@ StartupEvents.registry('block', event => {
 		.tagBlock('minecraft:needs_iron_tool')
 		.textureAll('kubejs:block/casings/basic/high_steam_machine_casing');
 
-    event.create('wood_casing')
+    event.create('treatedwood_casing')
         .hardness(5)
         .resistance(1)
         .soundType('wood')

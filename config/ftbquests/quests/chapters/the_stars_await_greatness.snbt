@@ -28,11 +28,7 @@
 				"13508A2A55EAA6E1"
 				"7D2E83192ABF08CA"
 			]
-			description: [
-				"- to format to lang"
-				""
-				"\"Tier 2 Specialized Helixes\""
-			]
+			description: ["{ftbquests.dsg.specialized_helix_t2.description}"]
 			id: "48E30750B355F98F"
 			size: 1.0d
 			tasks: [

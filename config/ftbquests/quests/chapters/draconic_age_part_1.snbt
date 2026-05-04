@@ -1135,8 +1135,8 @@
 				id: "19E2EB40AB845664"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.draconic_age.positioner.title}"
-			x: 0.0d
+			title: "{ftbquests.positioner.title}"
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -2027,11 +2027,7 @@
 		}
 		{
 			dependencies: ["4450509C08F416EC"]
-			description: [
-				"-to format to lang"
-				""
-				"\"Tier 1 Specialized Helixes\""
-			]
+			description: ["{ftbquests.draconic_age.specialized_t1.description}"]
 			id: "11EA350764763463"
 			size: 1.0d
 			tasks: [
@@ -2074,11 +2070,7 @@
 				"0032335FFAE6E012"
 				"07A6B3DF67E267A0"
 			]
-			description: [
-				"- to lang"
-				""
-				"\"something about helping find husk\""
-			]
+			description: ["{ftbquests.draconic_age.compass_of_the_flame.description}"]
 			hide_dependent_lines: true
 			id: "7255F8A417A52A46"
 			optional: true

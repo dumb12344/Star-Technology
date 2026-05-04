@@ -275,7 +275,7 @@ const getDataItem = (cwu) => (cwu >= 320) ? 'start_core:component_data_core' : (
 ServerEvents.recipes(event => {
 
   global.researchBuilder = (machineType, recId, inputsI, inputsF, outputsI, duration, cwuT, totalCWU, euT, researched) => {
-      const dataItem = getDataItem(cwuT);
+      const dataItem = global.getDataItem(cwuT);
       const id = global.id;
       
       let mainRecipe = event.recipes.gtceu[machineType](id(recId));

@@ -1,12 +1,26 @@
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-   event.create('auroric_vacuum_isolation_reactor', 'multiblock')
-       .machine((holder) => new $VacuumChemicalReactorMachine(holder))
-       .rotationState(RotationState.NON_Y_AXIS)
-       .recipeType('vacuum_chemical_reaction_chamber')
-       .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.VACUUM_CHEMICAL_REACTION_CHAMBER, GTRecipeModifiers.BATCH_MODE])
-       .appearanceBlock(() => Block.getBlock('kubejs:absolute_annihilation_casing'))
-       .pattern(definition => FactoryBlockPattern.start()
+    event.create('auroric_vacuum_isolation_reactor', 'multiblock')
+        .machine((holder) => new $VacuumChemicalReactorMachine(holder))
+        .rotationState(RotationState.NON_Y_AXIS)
+        .tooltips([
+            Text.translate("block.start_core.breaker_line")
+        ])
+        .paginatedTooltips([[
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.0"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.1"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.2"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.3"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.4"),
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.gtceu.vacuum_chemical_reaction_chamber.p1.5"),
+            Text.translate("block.start_core.breaker_line"),
+            Text.translate("block.gtceu.dual_chambered_vacuum_complex.p1.1")
+        ]])
+        .recipeType('vacuum_chemical_reaction_chamber')
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT, $StarTRecipeModifiers.VACUUM_CHEMICAL_REACTION_CHAMBER, GTRecipeModifiers.BATCH_MODE])
+        .appearanceBlock(() => Block.getBlock('kubejs:absolute_annihilation_casing'))
+        .pattern(definition => FactoryBlockPattern.start()
             .aisle('abbba abbba abbba abbba b bbbbb b', 'b   b b   b b   b b   b b bbbbb b', 'b   b b   b b   b b   b bbbbbbbbb', 'b   b b   b b   b b   b a b   b a', 'abbba abbba abbba abbba a b   b a', '                        a b   b a', '                        bbbbbbbbb', '                          b   b  ', '                          b   b  ', '                          b   b  ', '                          bbbbb  ', '                          b   b  ', '                          b   b  ', '                          b   b  ', '                         bbbbbbb ')
             .aisle('abbba abbba abbba abbba bdbbbbbdb', 'b   b b   b b   b b   b bddbbbddb', 'b   b b   b b   b b   b bbdddddbb', 'b   b b   b b   b b   b  ddddddd ', 'abbba abbba abbba abbba  ddddddd ', 'a   a a   a a   a a   a  ddddddd ', 'a   a a   a a   a a   a bdddddddb', 'a   a a   a a   a a   a  bdeeedb ', 'a   a a   a a   a a   a  bdeeedb ', 'a   a a   a a   a a   a  bdeeedb ', 'bbbbb bbbbb bbbbb bbbbb  bdddddb ', '                         bdddddb ', '                         bbdfdbb ', ' bbb   bbb   bbb   bbb   bbdddbb ', '                         bgggggb ')
             .aisle('bbbbb bbbbb bbbbb bbbbb bbbbbbbbb', 'bdddbdbdddbdbdddbdbdddbdddddddddb', 'bdhdbdbdhdbdbdhdbdbdhdbdddd   ddb', 'bdddbdbdddbdbdddbdbdddbdddd   ddb', 'bbbbb bbbbb bbbbb bbbbb  dd   ddb', ' ddd   ddd   ddd   ddd   dd   ddb', ' ded   ded   ded   ded  bdd   ddb', ' ded   ded   ded   ded   bd   db ', ' ded   ded   ded   ded   bd   db ', ' ddd   ddd   ddd   ddd   bd   db ', 'bbbbb bbbbb bbbbb bbbbb  bdbbbdb ', ' did   did   did   did    d   d  ', ' did   did   did   did    d   d  ', 'bgggb bgggb bgggb bgggb   d   d  ', '                         bgggggb ')

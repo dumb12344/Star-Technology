@@ -1,8 +1,8 @@
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('mega_abs', 'multiblock')
-        .rotationState(RotationState.NON_Y_AXIS)
         .machine((holder) => new $CoiledMulti(holder))
+        .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('alloy_blast_smelter')
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.EBF_OVERCLOCK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:extreme_temperature_smelting_casing'))
@@ -42,6 +42,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 			.build())
 		.workableCasingModel('kubejs:block/casings/nether_multis/extreme_temperature_smelting_casing',
             'gtceu:block/multiblock/gcym/blast_alloy_smelter')
-		.additionalDisplay(global.coilMachineTempDisplay);
+        .additionalDisplay(global.coilMachineTempDisplay);
 
 });
