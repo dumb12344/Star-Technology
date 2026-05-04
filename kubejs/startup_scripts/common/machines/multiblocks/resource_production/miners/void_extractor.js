@@ -12,10 +12,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('void_extractor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.gap"),
-            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
-        ])
+        // .tooltips([ //undo comment link when core updated
+        //     Text.translate("block.start_core.gap"),
+        //     Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
+        // ])
         .recipeType('void_excavation')
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .pattern(definition => FactoryBlockPattern.start()

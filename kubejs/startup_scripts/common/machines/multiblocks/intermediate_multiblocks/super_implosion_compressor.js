@@ -2,10 +2,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('super_implosion_compressor', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.gap"),
-            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
-        ])
+        // .tooltips([ //undo comment link when core updated
+        //     Text.translate("block.start_core.gap"),
+        //     Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
+        // ])
         .recipeType('implosion_compressor')
         .machine((holder) => new $CoiledMulti(holder))
         .recipeModifiers([GTRecipeModifiers.MULTI_SMELTER_PARALLEL, GTRecipeModifiers.BATCH_MODE])

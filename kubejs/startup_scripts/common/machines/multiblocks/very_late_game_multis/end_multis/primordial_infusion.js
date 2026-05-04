@@ -2,13 +2,13 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('primordial_infusion', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.gtceu.draco_infusion.tooltip.0"),
-            Text.translate("block.gtceu.draco_infusion.tooltip.1"),
-            Text.translate("block.gtceu.draco_infusion.tooltip.2"),
-            Text.translate("block.gtceu.draco_infusion.tooltip.3"),
-            Text.translate("block.gtceu.draco_infusion.tooltip.4")
-        ])
+        // .tooltips([ //undo comment link when core updated
+        //     Text.translate("block.gtceu.draco_infusion.tooltip.0"),
+        //     Text.translate("block.gtceu.draco_infusion.tooltip.1"),
+        //     Text.translate("block.gtceu.draco_infusion.tooltip.2"),
+        //     Text.translate("block.gtceu.draco_infusion.tooltip.3"),
+        //     Text.translate("block.gtceu.draco_infusion.tooltip.4")
+        // ])
         .machine((holder) => new $StarTDraconicInfusionMachine(holder))
         .recipeType('draco_infusion')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING])

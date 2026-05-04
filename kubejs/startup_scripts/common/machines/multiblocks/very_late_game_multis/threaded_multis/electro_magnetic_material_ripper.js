@@ -3,10 +3,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('electro_magnetic_material_ripper', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.gap"),
-            Text.translate("block.kubejs.threading.tooltip")
-        ])
+        // .tooltips([ //undo comment link when core updated
+        //     Text.translate("block.start_core.gap"),
+        //     Text.translate("block.kubejs.threading.tooltip")
+        // ])
         .recipeTypes(['polarizer', 'electromagnetic_separator', 'electrolyzer'])
         .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, $StarTRecipeModifiers.BULK_PROCESSING, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:aurouric_resilient_casing'))

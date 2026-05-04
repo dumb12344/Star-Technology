@@ -2,10 +2,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('super_pyrolyse', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.gap"),
-            Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
-        ])
+        // .tooltips([ //undo comment link when core updated
+        //     Text.translate("block.start_core.gap"),
+        //     Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
+        // ])
         .recipeType('pyrolyse_oven')
         .machine((holder) => new $CoiledMulti(holder))
         .recipeModifiers([GTRecipeModifiers.PYROLYZE_OVEN_OVERCLOCK, $StarTRecipeModifiers.THROUGHPUT_BOOSTING, GTRecipeModifiers.BATCH_MODE])

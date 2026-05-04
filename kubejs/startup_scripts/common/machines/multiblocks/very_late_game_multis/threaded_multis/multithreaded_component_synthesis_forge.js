@@ -25,10 +25,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('multithreaded_component_synthesis_forge', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.start_core.gap"),
-            Text.translate("block.kubejs.threading.tooltip")
-        ])
+        // .tooltips([ //undo comment link when core updated
+        //     Text.translate("block.start_core.gap"),
+        //     Text.translate("block.kubejs.threading.tooltip")
+        // ])
         .recipeTypes(['component_synthesis_forge', 'component_part_synthesis_forge'])
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:nyanium_machine_casing'))

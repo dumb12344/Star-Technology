@@ -2,26 +2,26 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('supreme_plasma_turbine', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.gtceu.supreme_plasma_turbine.top.0"),
-            Text.translate("block.gtceu.supreme_plasma_turbine.top.1"),
-            Text.translate("block.start_core.gap"),
-            Text.translate("block.gtceu.supreme_plasma_turbine.bottom")
-        ])
-        .paginatedTooltips([
-            [
-                Text.translate("block.gtceu.supreme_plasma_turbine.p1.1"),
-                Text.translate("block.gtceu.supreme_plasma_turbine.p1.2"),
-                Text.translate("block.start_core.breaker_line"),
-                Text.translate("block.gtceu.supreme_plasma_turbine.p1.3")
-            ],
-            [
-                Text.translate("block.gtceu.supreme_plasma_turbine.p2.1"),
-                Text.translate("block.start_core.breaker_line"),
-                Text.translate("block.gtceu.supreme_plasma_turbine.p2.2"),
-                Text.translate("block.gtceu.supreme_plasma_turbine.p2.3")
-            ]
-        ])
+        // .tooltips([ //undo comment link when core updated
+        //     Text.translate("block.gtceu.supreme_plasma_turbine.top.0"),
+        //     Text.translate("block.gtceu.supreme_plasma_turbine.top.1"),
+        //     Text.translate("block.start_core.gap"),
+        //     Text.translate("block.gtceu.supreme_plasma_turbine.bottom")
+        // ])
+        // .paginatedTooltips([
+        //     [
+        //         Text.translate("block.gtceu.supreme_plasma_turbine.p1.1"),
+        //         Text.translate("block.gtceu.supreme_plasma_turbine.p1.2"),
+        //         Text.translate("block.start_core.breaker_line"),
+        //         Text.translate("block.gtceu.supreme_plasma_turbine.p1.3")
+        //     ],
+        //     [
+        //         Text.translate("block.gtceu.supreme_plasma_turbine.p2.1"),
+        //         Text.translate("block.start_core.breaker_line"),
+        //         Text.translate("block.gtceu.supreme_plasma_turbine.p2.2"),
+        //         Text.translate("block.gtceu.supreme_plasma_turbine.p2.3")
+        //     ]
+        // ])
         .recipeType('plasma_generator')
         .generator(true)
         .machine((holder) => new $BoostedPlasmaTurbine(holder, GTValues.UHV))
@@ -53,26 +53,26 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('nyinsane_plasma_turbine', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
-            Text.translate("block.gtceu.supreme_plasma_turbine.top.0"),
-            Text.translate("block.gtceu.supreme_plasma_turbine.top.1"),
-            Text.translate("block.start_core.gap"),
-            Text.translate("block.gtceu.supreme_plasma_turbine.bottom")
-        ])
-        .paginatedTooltips([
-            [
-                Text.translate("block.gtceu.supreme_plasma_turbine.p1.1"),
-                Text.translate("block.gtceu.supreme_plasma_turbine.p1.2"),
-                Text.translate("block.start_core.breaker_line"),
-                Text.translate("block.gtceu.nyinsane_plasma_turbine.p1.3")
-            ],
-            [
-                Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.1"),
-                Text.translate("block.start_core.breaker_line"),
-                Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.2"),
-                Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.3")
-            ]
-        ])
+        // .tooltips([ //undo comment link when core updated
+        //     Text.translate("block.gtceu.supreme_plasma_turbine.top.0"),
+        //     Text.translate("block.gtceu.supreme_plasma_turbine.top.1"),
+        //     Text.translate("block.start_core.gap"),
+        //     Text.translate("block.gtceu.supreme_plasma_turbine.bottom")
+        // ])
+        // .paginatedTooltips([
+        //     [
+        //         Text.translate("block.gtceu.supreme_plasma_turbine.p1.1"),
+        //         Text.translate("block.gtceu.supreme_plasma_turbine.p1.2"),
+        //         Text.translate("block.start_core.breaker_line"),
+        //         Text.translate("block.gtceu.nyinsane_plasma_turbine.p1.3")
+        //     ],
+        //     [
+        //         Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.1"),
+        //         Text.translate("block.start_core.breaker_line"),
+        //         Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.2"),
+        //         Text.translate("block.gtceu.nyinsane_plasma_turbine.p2.3")
+        //     ]
+        // ])
         .recipeType('plasma_generator')
         .generator(true)
         .machine((holder) => new $BoostedPlasmaTurbine(holder, GTValues.UIV))
