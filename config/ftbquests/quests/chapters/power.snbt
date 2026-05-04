@@ -37,7 +37,7 @@
 				item: "thermal:dynamo_stirling"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -7.0d
 			y: 5.0d
 		}
 		{
@@ -53,8 +53,8 @@
 				item: "thermal:dynamo_lapidary"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 5.0d
+			x: -4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -69,7 +69,7 @@
 				item: "thermal:dynamo_compression"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -7.5d
 			y: 3.5d
 		}
 		{
@@ -81,7 +81,7 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.5d
 			y: 5.0d
 		}
 		{
@@ -93,7 +93,7 @@
 				item: "minecraft:coal"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.5d
 			y: 5.0d
 		}
 		{
@@ -105,8 +105,8 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 5.0d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["7910F6A8087A9E85"]
@@ -117,7 +117,7 @@
 				item: "gtceu:bio_diesel_bucket"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: 3.5d
 		}
 		{
@@ -129,7 +129,7 @@
 				item: "gtceu:diesel_bucket"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -10.0d
 			y: 3.5d
 		}
 		{
@@ -141,7 +141,7 @@
 				item: "gtceu:cetane_boosted_diesel_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: 3.5d
 		}
 		{
@@ -153,7 +153,7 @@
 				item: "gtceu:gasoline_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: 4.5d
 		}
 		{
@@ -165,7 +165,7 @@
 				item: "gtceu:high_octane_gasoline_bucket"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: 5.5d
 		}
 		{
@@ -191,7 +191,7 @@
 				}
 			]
 			title: "{ftbquests.power.boilers.title}"
-			x: -6.0d
+			x: -7.0d
 			y: 2.0d
 		}
 		{
@@ -211,7 +211,7 @@
 				title: "{ftbquests.power.thermal_dynamos.title}"
 				type: "checkmark"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: 3.5d
 		}
 		{
@@ -265,8 +265,8 @@
 				item: "gtceu:large_combustion_engine"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.0d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -281,8 +281,8 @@
 				item: "gtceu:extreme_combustion_engine"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 0.0d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -298,8 +298,8 @@
 				item: "gtceu:gas_large_turbine"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.5d
+			x: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -314,7 +314,7 @@
 				item: "gtceu:plasma_large_turbine"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: -4.0d
 		}
 		{
@@ -376,8 +376,8 @@
 				item: "gtceu:lv_combustion"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -4.0d
+			x: -1.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -391,8 +391,8 @@
 				item: "gtceu:mv_combustion"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -3.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -406,8 +406,8 @@
 				item: "gtceu:hv_combustion"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -2.0d
+			x: 0.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -423,7 +423,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -437,8 +437,8 @@
 				item: "gtceu:mv_gas_turbine"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -5.5d
+			x: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -452,8 +452,8 @@
 				item: "gtceu:hv_gas_turbine"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -477,7 +477,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.0d
 			y: 2.0d
 		}
 		{
@@ -501,7 +501,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
+			x: -4.0d
 			y: 2.0d
 		}
 		{
@@ -525,7 +525,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: 2.0d
 		}
 		{
@@ -549,7 +549,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
@@ -575,8 +575,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: -5.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -600,8 +600,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.5d
+			x: -4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -625,8 +625,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.5d
+			x: -3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -650,8 +650,8 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.5d
+			x: -2.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1355,8 +1355,8 @@
 				}
 			]
 			title: "{ftbquests.power.diatrons.title}"
-			x: -1.5d
-			y: 5.0d
+			x: -2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1379,7 +1379,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -5.0d
 			y: 0.5d
 		}
 		{
@@ -1404,7 +1404,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
+			x: -6.0d
 			y: 0.5d
 		}
 		{
@@ -1428,7 +1428,7 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
+			x: -4.0d
 			y: 0.5d
 		}
 		{
@@ -1452,7 +1452,7 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
+			x: -3.0d
 			y: 0.5d
 		}
 		{
@@ -1926,7 +1926,7 @@
 				item: "systeams:steamier_bucket"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.5d
 			y: 2.0d
 		}
 		{
@@ -1937,7 +1937,7 @@
 				item: "systeams:steam_bucket"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -8.5d
 			y: 2.0d
 		}
 		{
@@ -1948,7 +1948,7 @@
 				item: "systeams:steamiest_bucket"
 				type: "item"
 			}]
-			x: -9.5d
+			x: -10.5d
 			y: 2.0d
 		}
 		{
@@ -1959,7 +1959,7 @@
 				item: "systeams:steamiester_bucket"
 				type: "item"
 			}]
-			x: -10.5d
+			x: -11.5d
 			y: 2.0d
 		}
 		{
@@ -2005,7 +2005,7 @@
 				item: "gtceu:coke_gem"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.5d
 			y: 6.0d
 		}
 		{
@@ -2097,7 +2097,7 @@
 				type: "checkmark"
 			}]
 			x: -8.5d
-			y: -7.5d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -2111,7 +2111,7 @@
 				item: "gtceu:supreme_plasma_turbine"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: -3.0d
 		}
 		{
@@ -2125,7 +2125,7 @@
 				item: "gtceu:nyinsane_plasma_turbine"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
@@ -2389,7 +2389,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: -6.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -2403,7 +2403,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: -5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -2417,7 +2417,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -2431,7 +2431,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -2445,7 +2445,7 @@
 				type: "item"
 			}]
 			x: -8.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			id: "676CB078F9E4B9EF"
@@ -2456,8 +2456,82 @@
 				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
-			x: -4.0d
+			x: -0.5d
 			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6624D08A013284D5"
+				"0055CE82469F239C"
+			]
+			id: "047E440C408CAE5B"
+			tasks: [{
+				id: "7B5BDCE9AEECF02E"
+				item: "start_core:modular_combustion_frame"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"047E440C408CAE5B"
+				"0055CE82469F239C"
+			]
+			id: "0EF36B8794C1CD88"
+			tasks: [{
+				id: "35C5AA7085065C98"
+				item: "start_core:luv_combustion_module"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0EF36B8794C1CD88"
+				"5D107FD21879F54B"
+			]
+			id: "110C6B5AB76E0727"
+			tasks: [{
+				id: "1A35439A2BB0B624"
+				item: "start_core:zpm_combustion_module"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"110C6B5AB76E0727"
+				"007D5B58CBF1BBE2"
+			]
+			id: "3CF2C49F5D891ED3"
+			tasks: [{
+				id: "2B97ADFC994966F0"
+				item: "start_core:uv_combustion_module"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3CF2C49F5D891ED3"]
+			id: "31E87AFDD5EF27E4"
+			tasks: [
+				{
+					id: "6AFC3539CFFA8B9B"
+					title: "Modular R2"
+					type: "checkmark"
+				}
+				{
+					id: "150F6DDD8FE62966"
+					item: "start_core:uev_combustion_module"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.5d
 		}
 	]
 	title: "{ftbquests.power.title}"
