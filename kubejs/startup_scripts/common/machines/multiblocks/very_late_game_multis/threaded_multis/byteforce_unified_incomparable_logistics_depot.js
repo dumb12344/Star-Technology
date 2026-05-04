@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('byteforce_unified_incomparable_logistics_depot', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
+        .tooltips([ 
             Text.translate("block.start_core.gap"),
             Text.translate("block.kubejs.threading.tooltip")
         ])
@@ -43,6 +43,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/threading/advanced_assembly_casing',
-            'gtceu:block/multiblock/implosion_compressor');
+            'gtceu:block/machines/assembler');
 
 });

@@ -20,18 +20,20 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.ordered_chemistry(id('estaltadyne_hydride'))
         .layeredRecipe((layers) => layers
             .itemInputs('1x gtceu:estaltadyne_dust', '6x gtceu:carbon_dust')
-            .inputFluids('gtceu:carbon_dioxide 2000')
             .next()
             .itemInputs('4x gtceu:sodium_dust')
+            .inputFluids('gtceu:carbon_dioxide 2000')
             .next()
             .inputFluids('gtceu:hydrofluoric_acid 3500', 'gtceu:hydrogen 1500')
             .next()
-            .itemInputs('3x gtceu:magnesium_dust', '2x gtceu:sodium_hydroxide_dust')
+            .itemInputs('2x gtceu:magnesium_dust', '1x gtceu:sodium_hydroxide_dust')
+            .next()
+            .itemInputs('1x gtceu:sodium_hydroxide_dust')
             .inputFluids('gtceu:nitric_acid 2000')
         )
         .itemOutputs('gtceu:estaltadyne_hydride_dust')
-        .EUt(GTValues.VA[GTValues.UEV])
-        .duration(180);
+        .EUt(GTValues.VHA[GTValues.UEV])
+        .duration(160);
 
     event.recipes.gtceu.large_chemical_reactor(id('estalt_dust'))
         .itemInputs('1x gtceu:estaltadyne_hydride_dust')

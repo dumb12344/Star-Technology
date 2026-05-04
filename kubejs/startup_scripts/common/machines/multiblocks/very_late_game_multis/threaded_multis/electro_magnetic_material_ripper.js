@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('electro_magnetic_material_ripper', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
+        .tooltips([ 
             Text.translate("block.start_core.gap"),
             Text.translate("block.kubejs.threading.tooltip")
         ])
@@ -40,6 +40,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/threading/aurouric_resilient_casing',
-            'gtceu:block/multiblock/implosion_compressor');
+            'gtceu:block/machines/electrolyzer');
 
 });

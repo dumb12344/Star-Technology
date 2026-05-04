@@ -3437,8 +3437,8 @@
 			]
 			id: "7105D59889790CAE"
 			tasks: [{
-				id: "33EC53C8FA847389"
-				item: "gtceu:naquadite_solution_dust"
+				id: "3D4BAA25E33BA464"
+				item: "gtceu:naquadite_solution_bucket"
 				type: "item"
 			}]
 			x: -10.5d

@@ -3,7 +3,7 @@
 	default_quest_shape: "hexagon"
 	filename: "pl5"
 	group: "03EF8417F6D21A2E"
-	icon: "kubejs:why_are_you_worrying"
+	icon: "start_core:komaru"
 	id: "476FEB7CF628FB3D"
 	order_index: 6
 	quest_links: [
@@ -66,6 +66,30 @@
 			size: 1.5d
 			x: -7.0d
 			y: -3.25d
+		}
+		{
+			id: "6FFE4A6D78E56C7F"
+			linked_quest: "5C4FE0E51C67FDFA"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			id: "7615BD1D95880533"
+			linked_quest: "7C33054877B2DB16"
+			x: -8.0d
+			y: 3.0d
+		}
+		{
+			id: "1B6F970B9C1F88F3"
+			linked_quest: "1B6159E114BA50ED"
+			x: -8.0d
+			y: 5.0d
+		}
+		{
+			id: "746C84CB597356A0"
+			linked_quest: "6D573ACD05D0EF96"
+			x: -8.5d
+			y: 4.0d
 		}
 	]
 	quests: [
@@ -797,24 +821,449 @@
 			y: -1.0d
 		}
 		{
-			id: "79795DB067807E04"
+			dependencies: [
+				"30A558CAD3E962D6"
+				"38C2E3061C764F05"
+				"10019AD38638B628"
+			]
+			id: "1E9495EE98A83BFD"
 			tasks: [{
-				id: "2CC2DB91A502C01C"
-				title: "{ftbquests.pl.faematter_line.title}"
-				type: "checkmark"
+				id: "24E00A17A77B9A19"
+				item: "gtceu:riftion_plasma_bucket"
+				optional_task: true
+				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"492F2FED6328118F"
+				"6AB0E55EE7D7423D"
+			]
+			id: "30A558CAD3E962D6"
+			tasks: [{
+				id: "7E4F67F14188A16D"
+				item: "gtceu:riftion_extract_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["67A6378B37B88293"]
+			id: "3117841E06C473F9"
+			tasks: [{
+				id: "0454A45F41741EDB"
+				item: "gtceu:destabilized_rift_source_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1E9495EE98A83BFD"]
+			id: "3F610C3DCE18F8B9"
+			tasks: [
+				{
+					id: "2BACB78B2967A262"
+					item: "kubejs:up_undina_riftion"
+					type: "item"
+				}
+				{
+					id: "2E57198C25D97073"
+					item: "kubejs:down_undina_riftion"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1E9495EE98A83BFD"]
+			id: "7A678D844F49462F"
+			tasks: [
+				{
+					id: "59B88A2819BC227C"
+					item: "kubejs:up_sylvestris_riftion"
+					type: "item"
+				}
+				{
+					id: "1ADDEDB9206709DA"
+					item: "kubejs:down_sylvestris_riftion"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1E9495EE98A83BFD"]
+			id: "1C411A6BE8C50CCB"
+			tasks: [
+				{
+					id: "332593152E634A21"
+					item: "kubejs:up_gnomus_riftion"
+					type: "item"
+				}
+				{
+					id: "20A8E2DF5DB3CD9E"
+					item: "kubejs:down_gnomus_riftion"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1E9495EE98A83BFD"]
+			id: "6BE123D13C455F19"
+			tasks: [
+				{
+					id: "2B884A56032B6C50"
+					item: "kubejs:up_vulcanus_riftion"
+					type: "item"
+				}
+				{
+					id: "7B505CD08FBAE79D"
+					item: "kubejs:down_vulcanus_riftion"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1E9495EE98A83BFD"]
+			id: "2FAEBF81FEE8367A"
+			tasks: [
+				{
+					id: "520C7067DE6DDB46"
+					item: "kubejs:up_illustris_riftion"
+					type: "item"
+				}
+				{
+					id: "5ED5DDA4AE5DE374"
+					item: "kubejs:down_illustris_riftion"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1E9495EE98A83BFD"]
+			id: "66C72DBAA847E5C6"
+			tasks: [
+				{
+					id: "7FAE48DA04AD4ECD"
+					item: "kubejs:up_tenebrosus_riftion"
+					type: "item"
+				}
+				{
+					id: "2E4A0C3D5F28532B"
+					item: "kubejs:down_tenebrosus_riftion"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1C411A6BE8C50CCB"
+				"7A678D844F49462F"
+				"6BE123D13C455F19"
+				"66C72DBAA847E5C6"
+				"3F610C3DCE18F8B9"
+				"2FAEBF81FEE8367A"
+				"554E28F0B2A6CB25"
+				"492F2FED6328118F"
+			]
+			icon: "kubejs:wild_riftion"
+			id: "795C7DA2DD644F5A"
+			tasks: [
+				{
+					id: "262750B22E85DEC4"
+					item: "kubejs:wild_riftion"
+					type: "item"
+				}
+				{
+					id: "69BE9C93B5755E96"
+					item: "kubejs:neutral_undina_riftion"
+					type: "item"
+				}
+				{
+					id: "74801FC5DE7EB8A1"
+					item: "kubejs:neutral_sylvestris_riftion"
+					type: "item"
+				}
+				{
+					id: "18259CB78CF8D560"
+					item: "kubejs:neutral_gnomus_riftion"
+					type: "item"
+				}
+				{
+					id: "2BC7D0734C57D45E"
+					item: "kubejs:neutral_vulcanus_riftion"
+					type: "item"
+				}
+				{
+					id: "6284F0ABCB28EFC2"
+					item: "kubejs:neutral_illustris_riftion"
+					type: "item"
+				}
+				{
+					id: "798382061CEC4A0F"
+					item: "kubejs:neutral_tenebrosus_riftion"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"492F2FED6328118F"
+				"6AB0E55EE7D7423D"
+			]
+			id: "67A6378B37B88293"
+			tasks: [{
+				id: "2479EAB8E85B2638"
+				item: "gtceu:highly_unstable_rift_source_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5A6856892D99F5ED"
+				"3117841E06C473F9"
+			]
+			id: "16175EA6CBD36D19"
+			tasks: [{
+				id: "3128A43E10441FB4"
+				item: "gtceu:accension_rift_slurry_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3117841E06C473F9"]
+			id: "22463601F108D3E1"
+			tasks: [{
+				id: "592D036F0E498374"
+				item: "gtceu:abyssal_rift_slurry_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["22463601F108D3E1"]
+			id: "67C06CE0D962CC03"
+			tasks: [{
+				id: "58C196AEA394464D"
+				item: "gtceu:rimula_s_foundation_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["16175EA6CBD36D19"]
+			id: "5D3F963417092762"
+			tasks: [{
+				id: "33E52C913080E868"
+				item: "gtceu:rimula_t_foundation_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5D3F963417092762"
+				"67C06CE0D962CC03"
+			]
+			id: "0AED3CF0D740E059"
+			tasks: [{
+				id: "317005E1900B8C90"
+				item: "gtceu:true_rimula_foundation_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"795C7DA2DD644F5A"
+				"0AED3CF0D740E059"
+				"3137F3F544ACF245"
+			]
+			id: "42A47D5635CFA200"
+			tasks: [{
+				id: "68F5CFDF294E4FF9"
+				item: "gtceu:primordial_extract_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"795C7DA2DD644F5A"
+				"0AED3CF0D740E059"
+				"3137F3F544ACF245"
+			]
+			id: "260696AEE718A614"
+			tasks: [{
+				id: "049E6F4C5E634E74"
+				item: "gtceu:faetic_extract_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"795C7DA2DD644F5A"
+				"0AED3CF0D740E059"
+				"3137F3F544ACF245"
+			]
+			id: "06D6795B5152B7E1"
+			tasks: [{
+				id: "3EE36EF1AB881FA7"
+				item: "gtceu:condensed_rimula_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"5C4FE0E51C67FDFA"
+				"194D29F7135DB256"
+			]
+			id: "7E55361BFC343CEC"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "08CE86F41E13950F"
+				item: "kubejs:komaru_filament_t1"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["12DF6E4CCD8DE702"]
+			id: "19A621823829E686"
+			tasks: [{
+				id: "6C06D183EAC2C8E6"
+				item: "gtceu:infernal_stabilization_mixture_bucket"
+				type: "item"
+			}]
+			x: -6.0d
 			y: 3.0d
 		}
 		{
-			id: "6C8188C32D5172E2"
+			dependencies: [
+				"19A621823829E686"
+				"1F47B156F1AA198E"
+			]
+			id: "194D29F7135DB256"
 			tasks: [{
-				id: "6F5FD4C520583B37"
-				title: "{ftbquests.pl.rift_lines_p1.title}"
-				type: "checkmark"
+				id: "528327F575F66979"
+				item: "gtceu:draconic_stabilization_mixture_bucket"
+				type: "item"
 			}]
-			x: -0.5d
-			y: 5.5d
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1B6159E114BA50ED"
+				"7C33054877B2DB16"
+				"6D573ACD05D0EF96"
+			]
+			id: "12DF6E4CCD8DE702"
+			tasks: [{
+				id: "662E3B17E3694AC3"
+				item: "gtceu:stabilization_mixture_base_bucket"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["06D6795B5152B7E1"]
+			icon: "gtceu:riftic_concentrate_bucket"
+			id: "01A904AC91C3F022"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "2064A5312BF4BB76"
+				item: "gtceu:riftic_concentrate_bucket"
+				optional_task: true
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["260696AEE718A614"]
+			icon: "gtceu:prismatic_hypergurmalium_bucket"
+			id: "53B0C723F50526D9"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "718E6C8B095134C0"
+				item: "gtceu:prismatic_hypergurmalium_bucket"
+				optional_task: true
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["42A47D5635CFA200"]
+			icon: "gtceu:primordial_residue_bucket"
+			id: "586BADD5DCF46444"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "449DB8BC2224104E"
+				item: "gtceu:primordial_residue_bucket"
+				optional_task: true
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["492F2FED6328118F"]
+			id: "6AB0E55EE7D7423D"
+			tasks: [{
+				id: "5FFB2D62DD50A811"
+				item: "gtceu:kaleidoscope_agitation_serum_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["12DF6E4CCD8DE702"]
+			id: "1F47B156F1AA198E"
+			tasks: [{
+				id: "0A07658A684FF3BD"
+				item: "gtceu:abyssal_stabilization_mixture_bucket"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
 		}
 	]
 	title: "{ftbquests.pl5.title}"

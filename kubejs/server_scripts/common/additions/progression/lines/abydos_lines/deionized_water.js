@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
 
     const lcr = event.recipes.gtceu.large_chemical_reactor;
     const cb = event.recipes.gtceu.chemical_bath;
-    const sifter = event.recipes.gtceu.cyclonic_sifter;
+    const cycSifter = event.recipes.gtceu.cyclonic_sifter;
     const vcr = event.recipes.gtceu.vacuum_chemical_reaction_chamber;
     const dt = event.recipes.gtceu.distillation_tower;
     const beads = "ion_exchange_resin_beads";
@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     lcr(id(`dry_${beads}`))
         .inputFluids(`gtceu:styrene 10000`, `gtceu:oxygen 10000`, `gtceu:divinylbenzene 1000`)
         .itemOutputs(`40x kubejs:dry_${beads}`)
-        .duration(600)
+        .duration(480)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
     cb(id(beads))
@@ -38,35 +38,42 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(GTValues.VHA[GTValues.LuV]);
 
-    sifter(id(`purified_water`))
-        .chancedInput(`1x gtceu:carbon_fiber_mesh`, 5000, 0)
+    cycSifter(id(`purified_water_carbon`))
+        .chancedInput(`1x gtceu:carbon_fiber_mesh`, 2500, -250)
         .inputFluids(`gtceu:distilled_water 40000`)
         .outputFluids(`gtceu:purified_water 20000`)
-        .duration(1200)
-        .EUt(GTValues.VA[GTValues.UV]);
+        .duration(720)
+        .EUt(GTValues.VA[GTValues.ZPM]);
+
+    cycSifter(id(`purified_water_netherite`))
+        .chancedInput(`1x kubejs:netherite_reinforced_mesh`, 1000, -250)
+        .inputFluids(`gtceu:distilled_water 60000`)
+        .outputFluids(`gtceu:purified_water 40000`)
+        .duration(640)
+        .EUt(GTValues.VHA[GTValues.UV]);
 
     vcr(id(`acidic_water`))
         .inputFluids(`gtceu:purified_water 10000`)
         .itemInputs(`8x kubejs:${beads}`)
         .outputFluids(`gtceu:acidic_water 10000`)
         .itemOutputs(`5x kubejs:dirty_${beads}`)
-        .duration(200)
+        .duration(128)
         .EUt(GTValues.VHA[GTValues.UV])
         .vacuumLevel(85);
 
     dt(id(`deionized_water`))
         .inputFluids(`gtceu:acidic_water 10000`)
-        .outputFluids(`minecraft:water 250`, `gtceu:purified_water 1000`, `gtceu:distilled_water 500`, `gtceu:deionized_water 8000`)
-        .duration(200)
+        .outputFluids(`gtceu:deionized_water 8000`, `gtceu:purified_water 1000`, `gtceu:distilled_water 500`, `minecraft:water 250`)
+        .duration(320)
         .disableDistilleryRecipes(true)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
-        .EUt(GTValues.VHA[GTValues.UV]);
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     cb(id(`dry_${beads}`))
-        .inputFluids(`gtceu:sulfuric_acid 1000`)
+        .inputFluids(`gtceu:sulfuric_acid 125`)
         .itemInputs(`4x kubejs:dirty_${beads}`)
         .itemOutputs(`4x kubejs:dry_${beads}`)
-        .duration(100)
+        .duration(85)
         .EUt(GTValues.VHA[GTValues.LuV]);
     
 });

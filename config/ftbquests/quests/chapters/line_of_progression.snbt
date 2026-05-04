@@ -1676,7 +1676,7 @@
 							}
 							{
 								Count: 1b
-								id: "gtceu:molten_destabilizer"
+								id: "gtceu:molten_destabiliser"
 							}
 							{
 								Count: 1b
@@ -1692,7 +1692,7 @@
 							}
 							{
 								Count: 1b
-								id: "gtceu:atomic_synthesis_plant"
+								id: "gtceu:atomic_materialization_plant"
 							}
 							{
 								Count: 1b

@@ -18,14 +18,14 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/abydos_multis/quake_proof_casing');
 
-    event.create('titanic_blasting_casing')
+    event.create('tritanic_blasting_casing')
         .hardness(5)
         .resistance(10)
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .requiresTool(false)
-        .textureAll('kubejs:block/casings/abydos_multis/titanic_blasting_casing');
+        .textureAll('kubejs:block/casings/abydos_multis/tritanic_blasting_casing');
 
     event.create('superdense_assembly_control_casing', 'gtceu:active')
         .displayName('Superdense Assembly Control Casing')

@@ -300,9 +300,9 @@ ServerEvents.recipes(event => {
     
     special_ultimate_casing('abyssal_inductor',['gtceu:uiv_emitter', '3x gtceu:lepton_resonant_thallium_antimonide_spring', '6x gtceu:draco_abyssal_screw', '6x gtceu:polonium_bismide_single_cable'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 720', 'gtceu:borealic_concentrate 576'], 'gtceu:blacklight');
 
-    event.recipes.gtceu.assembler(id('titanic_blasting_casing'))
-        .itemInputs('6x gtceu:titan_steel_plate', 'gtceu:naquadah_alloy_frame')
-        .itemOutputs('2x kubejs:titanic_blasting_casing')
+    event.recipes.gtceu.assembler(id('tritanic_blasting_casing'))
+        .itemInputs('6x gtceu:tritan_steel_plate', 'gtceu:naquadah_alloy_frame')
+        .itemOutputs('2x kubejs:tritanic_blasting_casing')
         .circuit(6)
         .duration(50)
         .EUt(16);
@@ -415,4 +415,27 @@ ServerEvents.recipes(event => {
     ].forEach(tier => {
         hermeticCasing(tier);
     })
+
+    event.recipes.gtceu.assembler(id('peek_casing'))
+        .itemInputs('gtceu:robust_machine_casing')
+        .inputFluids('gtceu:polyether_ether_ketone 216')
+        .itemOutputs('kubejs:peek_casing')
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.LuV]);
+
+    event.recipes.gtceu.assembler(id('cattomolymer_casing'))
+        .itemInputs('kubejs:nyanium_machine_casing')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 216')
+        .itemOutputs('kubejs:cattomolymer_casing')
+        .EUt(GTValues.VHA[GTValues.UHV])
+        .duration(750);
+
+    event.recipes.gtceu.assembler(id('rhenotax_coil'))
+        .itemInputs('gtceu:astrenalloy_nx_frame', '8x gtceu:rhenate_w_double_wire', '16x gtceu:tantalum_carbide_foil',
+            '32x gtceu:hafnide_ito_ceramic_ring', '64x gtceu:neutronium_silicon_carbide_foil')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 432')
+        .itemOutputs('kubejs:rhenotax_coil')
+        .EUt(GTValues.VHA[GTValues.UIV])
+        .duration(1200);
+
 });

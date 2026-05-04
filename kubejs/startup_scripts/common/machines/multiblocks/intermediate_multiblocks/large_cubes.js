@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     const largeCube = (type, casing) => {
         event.create(`t_large_${type}`, 'multiblock')
             .rotationState(RotationState.NON_Y_AXIS)
-            .tooltips([
+            .tooltips([ 
                 Text.translate("block.start_core.gap"),
                 Text.translate("block.kubejs.only_one_2a_hatch.tooltip")
             ])

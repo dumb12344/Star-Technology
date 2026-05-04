@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('yielding_excression_advanced_seperation_transformator', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
+        .tooltips([ 
             Text.translate("block.start_core.gap"),
             Text.translate("block.kubejs.threading.tooltip")
         ])
@@ -41,6 +41,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('I', Predicates.blocks('start_core:threading_controller'))
             .build())
         .workableCasingModel('kubejs:block/casings/threading/quantumly_resistant_casing',
-            'gtceu:block/multiblock/implosion_compressor');
+            'gtceu:block/machines/distillery');
 
 });

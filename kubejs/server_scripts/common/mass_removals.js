@@ -103,8 +103,6 @@ ServerEvents.recipes(event => {
     event.remove({ input: Item.of('createdieselgenerators:mold')});
     event.remove({ output: 'createdieselgenerators:mold'});
 
-    event.remove({ id: /gtceu:assembler\/.*power_transformer/});
-
     //Pattern Buffer Research Removals
     event.remove({ id: 'gtceu:scanner/1_x_gtceu_luv_dual_input_hatch' });
     event.remove({ id: 'gtceu:research_station/1_x_gtceu_me_pattern_buffer' });

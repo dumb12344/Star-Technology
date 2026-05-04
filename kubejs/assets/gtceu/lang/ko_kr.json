@@ -113,7 +113,7 @@
 
     "block.gtceu.latex_plantation.tooltip.0": "§7라텍스를 빠르게 얻을 수 있는 멀티블록",
 
-    "block.gtceu.molten_destabilizer.tooltip.0": "§7복잡한 용융된 상태의 화학 물질들을 가공하기 위해 더 작은 덩어리로 분할 해주는 강력한 기계",
+    "block.gtceu.molten_destabiliser.tooltip.0": "§7복잡한 용융된 상태의 화학 물질들을 가공하기 위해 더 작은 덩어리로 분할 해주는 강력한 기계",
 
     "block.gtceu.cyclonic_sifter.tooltip.0": "§7쉬프터의 다음 단계로, 기존보다 강하고 정확한 성능을 통해 더 나은 정제가 가능합니다",
 
@@ -845,7 +845,7 @@
     "material.gtceu.americium_plas": "아메리슘",
 
     "gtceu.molten_destabilizing": "용융 분해",
-    "block.gtceu.molten_destabilizer": "용융 상태 불안정화 장치",
+    "block.gtceu.molten_destabiliser": "용융 상태 불안정화 장치",
 
     "gtceu.latex_plantation": "라텍스 농업",
     "block.gtceu.latex_plantation": "라텍스 농장",
@@ -1154,7 +1154,7 @@
     "block.gtceu.ulv_fluid_input.tooltip.2": "§9액체 용량:§r 2,000 mB",
 
     "material.gtceu.expetidalloy_d_17": "익스피티드합금 D-17",
-    "material.gtceu.titan_steel": "티탄 강철",
+    "material.gtceu.tritan_steel": "티탄 강철",
 
     "block.gtceu.multithreaded_component_synthesis_forge": "멀티 스레드 부품 종합 용광로",
     "block.gtceu.multithreaded_component_synthesis_forge.tooltip.0": "§3§l멀티 스레드 부품 조립기",
@@ -1247,10 +1247,10 @@
     "block.gtceu.super_pyrolyse.tooltip.5": "§8-----------------------------------",
     "block.gtceu.super_pyrolyse.tooltip.6": "오직 §b하나§r의 전력 해치만 사용 가능합니다",
 
-    "block.gtceu.atomic_synthesis_plant": "원자 종합 공장",
-    "block.gtceu.atomic_synthesis_plant.tooltip.0": "§6§l궁극의 화학 공장",
-    "block.gtceu.atomic_synthesis_plant.tooltip.1": "§7이 기계는 §6화학 설비§7의 일을 할 뿐만 아니라 알려진 모든 화학의 한계를 뛰어넘습니다.",
-    "block.gtceu.atomic_synthesis_plant.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.atomic_materialization_plant": "원자 종합 공장",
+    "block.gtceu.atomic_materialization_plant.tooltip.0": "§6§l궁극의 화학 공장",
+    "block.gtceu.atomic_materialization_plant.tooltip.1": "§7이 기계는 §6화학 설비§7의 일을 할 뿐만 아니라 알려진 모든 화학의 한계를 뛰어넘습니다.",
+    "block.gtceu.atomic_materialization_plant.tooltip.2": "§8-----------------------------------",
 
     "block.gtceu.omega_pressure_heat_chamber": "오메가 압력 열 챔버",
     "block.gtceu.omega_pressure_heat_chamber.tooltip.0": "§7많은 압력과 열로 재료를 강하게 융합합니다.",

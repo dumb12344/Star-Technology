@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('vacuum_chemical_reaction_chamber', 'multiblock')
         .machine((holder) => new $VacuumChemicalReactorMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
+        .tooltips([ 
             Text.translate("block.start_core.breaker_line")
         ])
         .paginatedTooltips([[

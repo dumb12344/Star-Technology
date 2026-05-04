@@ -4,8 +4,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.injection_mixer(id('dissipated_helish_concentrate'))
         .itemInputs('2x gtceu:plutonium_dust', '173x gtceu:warped_dust', '1x gtceu:astatine_dust', 
             '5x gtceu:netherite_dust', '3x thermal_extra:soul_sand_dust')
-        .inputFluids('gtceu:nether_star_concentrate 144', 'gtceu:infernal_concentrate 250', 'gtceu:enriched_mystical_concentrate 625', 
-            'gtceu:flerovium 288', 'gtceu:nether_air 18000')
+        .inputFluids('gtceu:nether_star_concentrate 144', 'gtceu:infernal_concentrate 250', 'gtceu:enriched_estalt 72', 
+            'gtceu:flerovium 288', 'gtceu:liquid_nether_air 63000')
         .outputFluids('gtceu:dissipated_helish_concentrate 7450')
         .duration(720)
         .EUt(GTValues.VHA[GTValues.UEV]);
@@ -87,12 +87,5 @@ ServerEvents.recipes(event => {
         .duration(600)
         .circuit(2)
         .EUt((GTValues.VHA[GTValues.UEV]));
-
-    event.recipes.gtceu.vacuum_chemical_reaction_chamber(id(`oganesson`))
-        .inputFluids(`gtceu:oganesson_plasma 500`)
-        .outputFluids(`gtceu:oganesson 500`)
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.UEV])
-        .vacuumLevel(90);
-
+        
 });

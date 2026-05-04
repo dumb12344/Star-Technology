@@ -1646,7 +1646,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "3FCFCFF6D0A94AE9"
-				item: "gtceu:molten_destabilizer"
+				item: "gtceu:molten_destabiliser"
 				type: "item"
 			}]
 			x: -4.5d

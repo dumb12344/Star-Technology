@@ -47,11 +47,11 @@ StartupEvents.registry('item', event => {
 
     });
 
-//Adjusted
-    event.create('runic_engraved_plating')
-        .tooltip(Text.translate('item.kubejs.runic_engraved_plating.tooltip'))
-        .texture('kubejs:item/stargate/runic_plating/rune_engraved_plating')
-        .rarity('epic');
+//Removed
+    // event.create('runic_engraved_plating')
+    //     .tooltip(Text.translate('item.kubejs.runic_engraved_plating.tooltip'))
+    //     .texture('kubejs:item/stargate/runic_plating/rune_engraved_plating')
+    //     .rarity('epic');
 
     // event.create('runic_pathway_engraved_plating')
     //     .texture('kubejs:item/stargate/runic_plating/runic_pathway_engraved_plating')
@@ -65,17 +65,16 @@ StartupEvents.registry('item', event => {
     //     .texture('kubejs:item/stargate/runic_plating/runic_transport_plating')
     //     .rarity('epic');
 
-//Removed
-    event.create('runic_energized_transportation_plating')
-        .texture('kubejs:item/stargate/runes/runic_transport_energized_plating')
-        .rarity('uncommon');
+    // event.create('runic_energized_transportation_plating')
+    //     .texture('kubejs:item/stargate/runes/runic_transport_energized_plating')
+    //     .rarity('uncommon');
 
-    event.create('runic_energized_pathway_plating')
-        .texture('kubejs:item/stargate/runes/runic_pathway_energized_plating')
-        .rarity('uncommon');
+    // event.create('runic_energized_pathway_plating')
+    //     .texture('kubejs:item/stargate/runes/runic_pathway_energized_plating')
+    //     .rarity('uncommon');
 
-    event.create('runic_energized_plating')
-        .texture('kubejs:item/stargate/runes/runic_energized_plating')
-        .rarity('rare');
+    // event.create('runic_energized_plating')
+    //     .texture('kubejs:item/stargate/runes/runic_energized_plating')
+    //     .rarity('rare');
 
 });

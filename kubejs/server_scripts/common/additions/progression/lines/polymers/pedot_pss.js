@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:sulfuric_acid 1000', 'gtceu:carbon_monoxide 1000')
         )
         .itemOutputs('4x gtceu:potassium_bromide_dust', '8x gtceu:sodium_nitrite_dust')
-        .outputFluids('gtceu:34_ethylenedioxythiophene 2000', 'gtceu:ethane 1000', 'minecraft:water 4000')
+        .outputFluids('gtceu:34_ethylenedioxythiophene 2000', 'gtceu:ethane 1000')
         .duration(242)
         .cleanroom(CleanroomType.CLEANROOM)
         .EUt(GTValues.VHA[GTValues.ZPM]);

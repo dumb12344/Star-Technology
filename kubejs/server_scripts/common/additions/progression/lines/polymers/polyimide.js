@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.large_chemical_reactor(id('polyimide'))
         .inputFluids('gtceu:polyamic_acid 1000', 'gtceu:ammonia 500')
-        .outputFluids('gtceu:polyimide 1000', 'minecraft:water 1750', 'gtceu:nitrous_oxide 250')
+        .outputFluids('gtceu:polyimide 1008', 'minecraft:water 1750', 'gtceu:nitrous_oxide 250')
         .duration(247)
         .EUt(GTValues.VA[GTValues.UV]);
 

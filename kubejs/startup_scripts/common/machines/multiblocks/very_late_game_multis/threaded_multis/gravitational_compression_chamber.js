@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('gravitational_compression_chamber', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
+        .tooltips([ 
             Text.translate("block.start_core.gap"),
             Text.translate("block.kubejs.threading.tooltip")
         ])
@@ -38,6 +38,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/threading/gravitationally_strained_stabilization_casing',
-            'gtceu:block/multiblock/implosion_compressor');
+            'gtceu:block/machines/compressor');
 
 });

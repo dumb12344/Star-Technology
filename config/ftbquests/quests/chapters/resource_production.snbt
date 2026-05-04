@@ -903,12 +903,8 @@
 			dependencies: ["5F9FBAC1FB36B1D3"]
 			id: "10C7D4ED5B634A07"
 			tasks: [{
-				id: "0C0552F481A68B32"
-				item: {
-					Count: 1
-					id: "gtceu:chromium_dust"
-					tag: { }
-				}
+				id: "1A634BDA9407482D"
+				item: "gtceu:chromite_dust"
 				type: "item"
 			}]
 			x: 3.5d

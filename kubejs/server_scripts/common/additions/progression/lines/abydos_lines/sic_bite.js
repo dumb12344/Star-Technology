@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
             .itemInputs('3x gtceu:tellurium_dust', '36x gtceu:sodium_borohydride_dust')
         )
         .itemOutputs('7x gtceu:silicon_carbide_over_bismuth_tritelluride_dust', '30x gtceu:sodium_nitrate_dust')
-        .outputFluids('minecraft:water 4000', 'gtceu:ammonia 2000', 'gtceu:diborane 3000', 'gtceu:oxygen 2000')
+        .outputFluids('gtceu:ammonia 2000', 'gtceu:diborane 3000', 'gtceu:oxygen 2000')
         .duration(250)
         .EUt(GTValues.VHA[GTValues.ZPM]);
 

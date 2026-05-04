@@ -1,6 +1,12 @@
 ServerEvents.recipes (event => {
     const id = global.id;
 
+    event.recipes.gtceu.assembler(id('husk_brick'))
+        .itemInputs('kubejs:extreme_temperature_smelting_casing')
+        .inputFluids('gtceu:ancient_netherite 864')
+        .itemOutputs('kubejs:husk_brick')
+        .duration(36000)
+        .EUt(480);
 
     let cpaRecipe = event.recipes.gtceu.component_part_assembly(id(`compass_of_the_flame`))
         .itemInputs(`gtceu:calamatium_frame`, `4x gtceu:dense_ancient_netherite_plate`, `4x #gtceu:circuits/uev`,`gtceu:uhv_sensor`, `gtceu:long_magnetic_zapolgium_rod`,`8x gtceu:isovol_screw`)
@@ -26,13 +32,68 @@ ServerEvents.recipes (event => {
             )
         )
         .CWUt(160)
-        .totalCWU(160*20*60)
+        .totalCWU(160 * 20 * 60)
         .EUt (GTValues.VHA[GTValues.UHV]);
-}) 
 
-        
+    event.recipes.gtceu.assembly_line(id('catto_shrine'))
+        .itemInputs('1x gtceu:naquadah_alloy_frame','64x minecraft:cod','64x minecraft:cod','64x minecraft:cod',
+            '64x minecraft:cod','2x #gtceu:circuits/zpm','64x minecraft:cod','64x minecraft:cod',
+            '64x minecraft:cod','64x minecraft:cod','1x gtceu:zpm_emitter','64x minecraft:cod',
+            '64x minecraft:cod','64x minecraft:cod','64x minecraft:cod','6x gtceu:osthendah_plate')
+        .inputFluids('gtceu:polybenzimidazole 7200')
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of(`minecraft:cod`))
+                    .EUt(GTValues.VHA[GTValues.LuV])
+                    .CWUt(32)
+        )
+        .itemOutputs('gtceu:catto_shrine')
+        .duration(3072000)
+        .EUt(GTValues.VHA[GTValues.LV]);
+
+    event.remove({ mod: 'placeablemaxwell' });
+
+    const cat = (name,tier,dye,dye2,wire,scaler) => {
+
+        event.recipes.gtceu.catto_shrine(id(name))
+            .layeredRecipe((layers) => layers
+                .itemInputs(`gtceu:${tier}_machine_hull`)
+                .next()
+                .itemInputs(`4x gtceu:${tier}_robot_arm`)
+                .next()
+                .itemInputs(`2x gtceu:${tier}_field_generator`)
+                .next()
+                .itemInputs(`1x gtceu:${tier}_fluid_regulator`)
+                .next()
+                .itemInputs(`2x gtceu:${tier}_sensor`)
+                .next()
+                .itemInputs(`8x gtceu:${wire}_single_wire`)
+            )
+            .inputFluids(`gtceu:${dye}_dye 1000000`)
+            .itemInputs(`512x minecraft:${dye2}_wool`,`512x #forge:cooked_fishes`)
+            .itemOutputs(`placeablemaxwell:${name}`)
+            .duration(168000)
+            .EUt(GTValues.VH[GTValues.ZPM] * (4 ** scaler))
+    
+    }
+
+    cat('mars','zpm','light_gray','gray','yttrium_barium_cuprate',1)
+    cat('vasilisa','uv','gray','white','europium',2)
+    cat('valenok','uhv','white','orange','cerium_tritelluride',3)
+    cat('poomba','uev','brown','white','polonium_bismide',4)
+    cat('maxwell','uiv','black','white','lepton_resonant_thallium_antimonide',5)
+
+    event.recipes.gtceu.mixer(id('osthendah_dust'))
+        .itemInputs('1x gtceu:osmium_dust','1x gtceu:ruthenium_dust','2x gtceu:naquadah_dust')
+        .itemOutputs('4x gtceu:osthendah_dust')
+        .circuit(3)
+        .duration(360)
+        .EUt(GTValues.VHA[GTValues.LuV])
+
+});
 
 ItemEvents.rightClicked('kubejs:compass_of_the_flame', event => {
+
     let { level,player } = event;
     if (!(level instanceof ServerLevel)) return
     let registryAccess = level.registryAccess();
@@ -66,4 +127,5 @@ ItemEvents.rightClicked('kubejs:compass_of_the_flame', event => {
     } else {
         player.tell(Text.translate(`item.kubejs.compass_of_the_flame.failed`));
     }
-})
+
+});

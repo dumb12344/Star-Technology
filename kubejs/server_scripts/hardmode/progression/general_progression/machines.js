@@ -350,10 +350,10 @@ ServerEvents.recipes(event => {
     // large_quantum_compressor, dimensional_finder, runic_circuitry_assembling_station, gate_assembly, runic_inscriber_manipulate, large_rotor_machine, stargate_component_assembly
 
     // Adv Non-Gate (Not Eta)
-    // folding_akreyrium_stabilizer, uhv_auxiliary_boosted_fusion_reactor, auxiliary_boosted_fusion_casing_mk1, auxiliary_fusion_coil_mk1, bacterial_breeding_vat, bacterial_runic_mutator, 
+    // folding_akreyrium_stabiliser, uhv_auxiliary_boosted_fusion_reactor, auxiliary_boosted_fusion_casing_mk1, auxiliary_fusion_coil_mk1, bacterial_breeding_vat, bacterial_runic_mutator, 
     // bacterial_hydrocarbon_harvester, chemical_plant, mega_abs, super_compact_heat_chamber, component_part_assembly, heat_chamber, super_pressure_heat_chamber,
     // cryostate_quantum_chiller, exotic_gas_siphon, cyclonic_sifter, draco_circuit_assembler, draco_infusion, super_compact_heat_chamber, injection_mixer, manifold_centrifuge, bulk_ore_processing_array,
-    // hellforge, molten_destabilizer, vibration_laser_engraver, hpca_nanofluidic_heat_sink_component, sterile_cleaning_maintenance_hatch, redstone_variadic_interface, wireless
+    // hellforge, molten_destabiliser, vibration_laser_engraver, hpca_nanofluidic_heat_sink_component, sterile_cleaning_maintenance_hatch, redstone_variadic_interface, wireless
     
     const MachineAssembly = (type,inputs,fluids,EUt,Duration) => {
         event.recipes.gtceu.advanced_machine_facility(id(type))
@@ -420,7 +420,7 @@ ServerEvents.recipes(event => {
     // 'electric_ore_factory', 
     // 'ore_processing_plant',
     // MachineAssemblyScanner('nuclear_reactor',['gtceu:ev_assembler'],['gtceu:soldering_alloy 864', 'gtceu:polyethylene 576', 'gtceu:rubber 432'],1920,1200,'gtceu:ev_fluid_heater',2400,480);
-    // dimensional_destabilizer, 
+    // dimensional_destabiliser, 
     // rock_sifter, 
     // large_sieve, 
     // void_excavator, 

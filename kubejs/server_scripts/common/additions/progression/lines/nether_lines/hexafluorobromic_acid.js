@@ -3,21 +3,6 @@ ServerEvents.recipes(event => {
 
     const CR = event.recipes.gtceu.large_chemical_reactor || event.recipes.gtceu.chemical_reactor
 
-        event.remove({id:'gtceu:evaporation/brine_evaporation'});
-        event.remove({id:'gtceu:fluid_heater/brine_heating'});
-
-        event.recipes.gtceu.fluid_heater(id('brines'))
-            .inputFluids('gtceu:salt_water 100000')
-            .outputFluids('gtceu:raw_brine 4500','gtceu:hot_brine 500')
-            .duration(6000)
-            .EUt(GTValues.VHA[GTValues.HV]);
-
-        event.recipes.gtceu.fluid_heater(id('hot_brine'))
-            .inputFluids('gtceu:raw_brine 1000')
-            .outputFluids('gtceu:hot_brine 1000')
-            .duration(1500)
-            .EUt(GTValues.VA[GTValues.HV]);
-
         CR(id('bromine_pentafluoride'))
             .inputFluids('gtceu:bromine 2000', 'gtceu:fluorine 10000')
             .notConsumable('1x gtceu:nickel_fluoride_dust')

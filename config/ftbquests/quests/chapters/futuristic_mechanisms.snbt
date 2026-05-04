@@ -12,14 +12,14 @@
 		{
 			id: "2D2DD0A279A4C76F"
 			linked_quest: "445BC7DFD3387DD4"
-			x: 0.0d
-			y: 1.0d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			id: "44FE2B6F74FCFC9B"
 			linked_quest: "70EE9D4811A27CF2"
-			x: -1.5d
-			y: 1.5d
+			x: -4.5d
+			y: 4.0d
 		}
 	]
 	quests: [
@@ -40,8 +40,8 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -1.0d
+			x: -6.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -61,8 +61,8 @@
 				item: "gtceu:iv_circuit_assembler"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.0d
+			x: -6.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -83,8 +83,8 @@
 				item: "gtceu:quantum_processor"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 3.0d
+			x: -8.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["06780B462515CAE2"]
@@ -101,8 +101,8 @@
 				item: "gtceu:quantum_processor_assembly"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 5.0d
+			x: -8.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4E77319DB3B30062"]
@@ -119,8 +119,8 @@
 				item: "gtceu:quantum_processor_computer"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 5.0d
+			x: -6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -143,8 +143,8 @@
 				item: "gtceu:quantum_processor_mainframe"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: -4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -172,8 +172,8 @@
 				}
 			]
 			title: "{ftbquests.futuristic_mechanisms.qubit_chip.title}"
-			x: -6.0d
-			y: 5.0d
+			x: -6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -193,8 +193,8 @@
 				item: "gtceu:zpm_energy_input_hatch"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 3.0d
+			x: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2587E109968EFBB4"]
@@ -211,8 +211,8 @@
 				item: "gtceu:zpm_machine_hull"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -232,8 +232,8 @@
 				item: "gtceu:luv_machine_hull"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["53A9F3758C218CDC"]
@@ -271,14 +271,14 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: -1.0d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"79428BAEAA7856E1"
 				"6AA4CC44DE1C8E1E"
-				"084F23122E4CA277"
+				"566709F0A48CEA6F"
 			]
 			description: ["{ftbquests.futuristic_mechanisms.advanced_quarktech_chestplate.description}"]
 			hide_dependent_lines: true
@@ -298,8 +298,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 0.0d
+			x: -9.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -317,8 +317,8 @@
 				item: "gtceu:rhodium_plated_palladium_ingot"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.0d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -339,8 +339,8 @@
 				item: "gtceu:iv_parallel_hatch"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -363,8 +363,8 @@
 				item: "gtceu:power_substation"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 1.0d
+			x: -8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -421,8 +421,8 @@
 				}
 			]
 			title: "{ftbquests.futuristic_mechanisms.assembly_line.title}"
-			x: -6.0d
-			y: -3.0d
+			x: -8.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -430,6 +430,7 @@
 				"7D492D6B39A22DDE"
 				"783BDF78D6C56815"
 				"79428BAEAA7856E1"
+				"2D7591517097D802"
 			]
 			description: ["{ftbquests.futuristic_mechanisms.luv_fusion_reactor.description}"]
 			id: "67ABB3BF6D0C183B"
@@ -446,8 +447,8 @@
 				item: "start_core:luv_fusion_reactor"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -3.0d
+			x: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5B72F7526494EAEC"]
@@ -472,8 +473,8 @@
 				}
 			]
 			title: "{ftbquests.futuristic_mechanisms.64a_ev_substation_hatch.title}"
-			x: -8.0d
-			y: 1.0d
+			x: -10.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3B2D79D40B9617D5"]
@@ -491,8 +492,8 @@
 				item: "gtceu:ruridit_ingot"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -3.0d
+			x: -6.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
@@ -509,8 +510,8 @@
 				item: "gtceu:luv_energy_input_hatch"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -5.0d
+			x: -6.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
@@ -527,8 +528,8 @@
 				item: "gtceu:luv_sensor"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -5.0d
+			x: -10.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
@@ -545,8 +546,8 @@
 				item: "gtceu:data_bank"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -5.0d
+			x: -8.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -585,8 +586,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: -7.0d
+			x: -6.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -607,8 +608,8 @@
 				item: "gtceu:research_station"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -7.0d
+			x: -8.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5AD5C15F6C0F4BC2"]
@@ -625,16 +626,12 @@
 				item: "gtceu:luv_scanner"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -7.0d
+			x: -10.5d
+			y: -6.0d
 		}
 		{
-			dependencies: [
-				"67ABB3BF6D0C183B"
-				"2D7591517097D802"
-			]
+			dependencies: ["67ABB3BF6D0C183B"]
 			description: ["{ftbquests.futuristic_mechanisms.europium.description}"]
-			hide_dependent_lines: true
 			id: "084F23122E4CA277"
 			rewards: [{
 				id: "71877D22B63F1155"
@@ -647,8 +644,8 @@
 				item: "gtceu:europium_bucket"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5ECF1A3EBB3F1BE5"]
@@ -665,8 +662,8 @@
 				item: "gtceu:crystal_soc"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -5.0d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5935F9CB5E1C099B"]
@@ -683,8 +680,8 @@
 				item: "gtceu:crystal_cpu"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.0d
+			x: 1.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5E3F7C06E05628F6"]
@@ -701,8 +698,8 @@
 				item: "gtceu:engraved_crystal_chip"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -5.0d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -722,8 +719,8 @@
 				item: "gtceu:raw_crystal_chip"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -3.0d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["376F9349C6E85AC8"]
@@ -741,8 +738,8 @@
 				item: "gtceu:exquisite_emerald_gem"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -1.0d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5E3F7C06E05628F6"]
@@ -759,8 +756,8 @@
 				item: "gtceu:raw_crystal_chip_parts"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -5.0d
+			x: 5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -780,8 +777,8 @@
 				item: "gtceu:crystal_processor"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -7.0d
+			x: 1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["70C2BB4FAA2FB1F2"]
@@ -798,8 +795,8 @@
 				item: "gtceu:crystal_processor_assembly"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -7.0d
+			x: 3.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["744CAEF994308983"]
@@ -816,8 +813,8 @@
 				item: "gtceu:crystal_processor_computer"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -7.0d
+			x: 5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["30A1077A14212FE2"]
@@ -836,8 +833,8 @@
 				item: "gtceu:crystal_processor_mainframe"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -5.0d
+			x: 7.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4E546CE15A52D7DD"]
@@ -866,8 +863,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -7.0d
+			x: -0.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -889,8 +886,8 @@
 				item: "gtceu:luv_parallel_hatch"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -3.0d
+			x: -4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -913,8 +910,8 @@
 				item: "start_core:zpm_fusion_reactor"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -3.0d
+			x: 7.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["36C01453717B249D"]
@@ -932,8 +929,8 @@
 				item: "gtceu:uranium_rhodium_dinaquadide_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -1.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["09E7AA7D98045727"]
@@ -950,8 +947,8 @@
 				item: "gtceu:naquadah_alloy_ingot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.0d
+			x: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
@@ -968,8 +965,8 @@
 				item: "gtceu:dragonsteel_ingot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.0d
+			x: 1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -991,8 +988,8 @@
 				item: "gtceu:naquadah_coil_block"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 3.0d
+			x: -0.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1015,8 +1012,8 @@
 				item: "gtceu:trinium_coil_block"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.0d
+			x: 5.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["111033FEFA89BA91"]
@@ -1033,8 +1030,8 @@
 				item: "gtceu:luv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -5.0d
+			x: -4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["62F3093B80681573"]
@@ -1051,8 +1048,8 @@
 				item: "gtceu:luv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -5.0d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["576C0430D0CDE409"]
@@ -1069,8 +1066,8 @@
 				item: "gtceu:zpm_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 3.0d
+			x: 7.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["417038F9E5A88B5C"]
@@ -1087,8 +1084,8 @@
 				item: "gtceu:zpm_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.0d
+			x: 9.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
@@ -1106,8 +1103,8 @@
 				item: "gtceu:zpm_parallel_hatch"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -7.0d
+			x: 7.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
@@ -1124,8 +1121,8 @@
 				item: "gtceu:indium_tin_barium_titanium_cuprate_ingot"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: -0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1154,8 +1151,8 @@
 				}
 			]
 			title: "{ftbquests.futuristic_mechanisms.uhpic_chip.title}"
-			x: 2.0d
-			y: -1.0d
+			x: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5C302CB1A1068EE1"]
@@ -1174,8 +1171,8 @@
 				item: "gtceu:naquadah_wafer"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.0d
+			x: -2.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["445BC7DFD3387DD4"]
@@ -1192,8 +1189,8 @@
 				item: "gtceu:naquadah_boule"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["36C01453717B249D"]
@@ -1210,8 +1207,8 @@
 				item: "gtceu:prismalium_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 1.0d
+			x: 7.5d
+			y: 2.0d
 		}
 		{
 			id: "6DD3126E3C45D1E7"
@@ -1224,8 +1221,8 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.positioner.title}"
-			x: -0.5d
-			y: -1.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1253,8 +1250,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.0d
+			x: -4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1274,8 +1271,8 @@
 				item: "gtceu:superconducting_coil"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.0d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
@@ -1300,8 +1297,8 @@
 				}
 			]
 			title: "{ftbquests.futuristic_mechanisms.parallel_resource_production.title}"
-			x: -8.0d
-			y: -3.0d
+			x: -10.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7FD0034E639F3B2D"]
@@ -1317,8 +1314,8 @@
 				item: "gtceu:dragonsteel_single_wire"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 5.0d
+			x: 3.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3325914DB92AEF1B"]
@@ -1334,8 +1331,8 @@
 				item: "gtceu:prismalium_single_wire"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.0d
+			x: 9.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1356,8 +1353,8 @@
 				item: "gtceu:reinforced_epoxy_resin_plate"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 3.0d
+			x: -10.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["45AAA2B53069E806"]
@@ -1379,8 +1376,8 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: 3.0d
+			x: -10.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["023794367F1B28D1"]
@@ -1397,8 +1394,8 @@
 				item: "start_core:redstone_variadic_interface"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: -0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["059FD3E475A05070"]
@@ -1418,8 +1415,8 @@
 				item: "gtceu:data_orb"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -7.0d
+			x: -4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1DA6B3308C263A6F"]
@@ -1430,8 +1427,8 @@
 				item: "gtceu:niobium_nitride_ingot"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 5.0d
+			x: -0.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["36C01453717B249D"]
@@ -1448,8 +1445,8 @@
 				item: "gtceu:trinaquadalloy_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.0d
+			x: 3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
@@ -1467,8 +1464,8 @@
 				item: "gtceu:mega_vacuum_freezer"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -7.0d
+			x: 9.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["464BB867FCF25A94"]
@@ -1481,8 +1478,8 @@
 				item: "gtceu:super_abs"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -1.0d
+			x: 9.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["36C01453717B249D"]
@@ -1492,8 +1489,8 @@
 				item: "gtceu:naquadria_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.0d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0094C2E72105E8CA"]
@@ -1506,8 +1503,8 @@
 				item: "gtceu:super_vacuum_freezer"
 				type: "item"
 			}]
-			x: -8.0d
-			y: -1.0d
+			x: -10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["65D76272BA5E67FC"]
@@ -1532,8 +1529,8 @@
 				}
 			]
 			title: "{ftbquests.futuristic_mechanisms.naquadah_byproducts.title}"
-			x: 4.0d
-			y: 1.0d
+			x: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["09E7AA7D98045727"]
@@ -1545,24 +1542,25 @@
 				item: "kubejs:basic_reflector_casing"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2D7591517097D802"]
 			id: "11595BF31117702B"
+			shape: "gear"
 			tasks: [{
 				id: "3D08617A5DA46BB6"
 				item: "kubejs:advanced_reflector_casing"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -5.0d
+			x: 9.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
-				"67ABB3BF6D0C183B"
 				"11595BF31117702B"
+				"2911EC7333E0E9C5"
 			]
 			description: ["{ftbquests.futuristic_mechanisms.duranium_ingot.description}"]
 			id: "3B69844600AD5430"
@@ -1577,8 +1575,8 @@
 				item: "gtceu:duranium_ingot"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -3.0d
+			x: 9.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3FC351F05F2AC743"]
@@ -1588,8 +1586,19 @@
 				item: "gtceu:hpca_advanced_computation_component"
 				type: "item"
 			}]
-			x: 11.0d
-			y: -4.0d
+			x: 8.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["65D76272BA5E67FC"]
+			id: "72A314546ED56F13"
+			tasks: [{
+				id: "346DA59A11A5B00D"
+				item: "gtceu:osthendah_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
 		}
 	]
 	title: "{ftbquests.futuristic_mechanisms.title}"

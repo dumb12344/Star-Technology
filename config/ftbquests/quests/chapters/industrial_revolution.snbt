@@ -12,20 +12,20 @@
 		{
 			id: "6C0C5B78AF1106A2"
 			linked_quest: "38B3A7FC309E12E2"
-			x: -10.0d
+			x: -13.0d
 			y: -7.5d
 		}
 		{
 			id: "356A14F888032D0F"
 			linked_quest: "261174370DC87FCB"
-			x: 16.0d
+			x: 13.0d
 			y: -3.5d
 		}
 		{
 			id: "5D572FCE21AE3A67"
 			linked_quest: "119983C3240B8F66"
 			shape: "circle"
-			x: 5.0d
+			x: 2.0d
 			y: 5.5d
 		}
 		{
@@ -33,32 +33,32 @@
 			linked_quest: "73931EAA3EC5C9A9"
 			shape: "gear"
 			size: 1.5d
-			x: 16.0d
+			x: 13.0d
 			y: 3.5d
 		}
 		{
 			id: "26F528AF6BE91442"
 			linked_quest: "34EDF98BDC245F77"
-			x: 7.0d
+			x: 4.0d
 			y: -2.5d
 		}
 		{
 			id: "52C3F702006D771B"
 			linked_quest: "261174370DC87FCB"
-			x: 16.0d
+			x: 13.0d
 			y: -3.5d
 		}
 		{
 			id: "48E65B5F36753A0C"
 			linked_quest: "6F7EE9A1BC718801"
-			x: 13.0d
+			x: 10.0d
 			y: 5.5d
 		}
 		{
 			id: "55744AFFF2FDE97F"
 			linked_quest: "119983C3240B8F66"
 			shape: "circle"
-			x: 5.0d
+			x: 2.0d
 			y: 5.5d
 		}
 	]
@@ -78,7 +78,7 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -5.0d
 			y: -7.5d
 		}
 		{
@@ -96,7 +96,7 @@
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -7.0d
 			y: -5.5d
 		}
 		{
@@ -114,7 +114,7 @@
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -3.0d
 			y: -7.5d
 		}
 		{
@@ -131,7 +131,7 @@
 				item: "gtceu:lv_polarizer"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -13.0d
 			y: -1.5d
 		}
 		{
@@ -151,7 +151,7 @@
 				item: "gtceu:lv_electric_motor"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -7.0d
 			y: -3.5d
 		}
 		{
@@ -178,7 +178,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.industrial_revolution.electric_ore_factory.title}"
-			x: 0.0d
+			x: -3.0d
 			y: 0.5d
 		}
 		{
@@ -195,7 +195,7 @@
 				item: "gtceu:lv_alloy_smelter"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -13.0d
 			y: -5.5d
 		}
 		{
@@ -213,7 +213,7 @@
 				item: "gtceu:lv_mixer"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -7.0d
 			y: -1.5d
 		}
 		{
@@ -230,7 +230,7 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -5.0d
 			y: -3.5d
 		}
 		{
@@ -246,7 +246,7 @@
 				item: "gtceu:lv_electric_piston"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -5.0d
 			y: -5.5d
 		}
 		{
@@ -263,7 +263,7 @@
 				item: "gtceu:lv_macerator"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -7.0d
 			y: -7.5d
 		}
 		{
@@ -280,7 +280,7 @@
 				item: "gtceu:lv_forge_hammer"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -3.0d
 			y: -5.5d
 		}
 		{
@@ -297,7 +297,7 @@
 				item: "gtceu:lv_robot_arm"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -3.0d
 			y: -3.5d
 		}
 		{
@@ -314,7 +314,7 @@
 				item: "gtceu:lv_conveyor_module"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -5.0d
 			y: -1.5d
 		}
 		{
@@ -334,7 +334,7 @@
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -3.0d
 			y: -1.5d
 		}
 		{
@@ -354,7 +354,7 @@
 				item: "gtceu:lv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -1.0d
 			y: -1.5d
 		}
 		{
@@ -374,7 +374,7 @@
 				item: "gtceu:lv_cutter"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -5.0d
 			y: 0.5d
 		}
 		{
@@ -391,7 +391,7 @@
 				item: "gtceu:cobalt_brass_buzz_saw_blade"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -5.0d
 			y: 2.5d
 		}
 		{
@@ -413,7 +413,7 @@
 				item: "gtceu:cobalt_dust"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -3.0d
 			y: 2.5d
 		}
 		{
@@ -430,7 +430,7 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -9.0d
 			y: -5.5d
 		}
 		{
@@ -447,7 +447,7 @@
 				item: "gtceu:lv_electric_pump"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -9.0d
 			y: -1.5d
 		}
 		{
@@ -467,7 +467,7 @@
 				item: "gtceu:lv_gas_collector"
 				type: "item"
 			}]
-			x: -4.0d
+			x: -7.0d
 			y: 0.5d
 		}
 		{
@@ -484,7 +484,7 @@
 				item: "gtceu:lv_fluid_solidifier"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -11.0d
 			y: -1.5d
 		}
 		{
@@ -502,7 +502,7 @@
 				item: "gtceu:lv_extractor"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -11.0d
 			y: 0.5d
 		}
 		{
@@ -519,7 +519,7 @@
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -11.0d
 			y: -5.5d
 		}
 		{
@@ -540,7 +540,7 @@
 				item: "gtceu:graphite_dust"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 1.0d
 			y: -5.5d
 		}
 		{
@@ -558,7 +558,7 @@
 				item: "gtceu:lv_arc_furnace"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -1.0d
 			y: -5.5d
 		}
 		{
@@ -575,7 +575,7 @@
 				item: "thermal_extra:soul_infused_glass"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -13.0d
 			y: 0.5d
 		}
 		{
@@ -604,7 +604,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
+			x: -4.0d
 			y: -0.5d
 		}
 		{
@@ -621,7 +621,7 @@
 				item: "gtceu:lv_super_chest"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -13.0d
 			y: -3.5d
 		}
 		{
@@ -646,7 +646,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.industrial_revolution.electric_blast_furnace.title}"
-			x: 6.0d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
@@ -672,7 +672,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 3.0d
 			y: -3.5d
 		}
 		{
@@ -689,7 +689,7 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.0d
 			y: -1.5d
 		}
 		{
@@ -711,7 +711,7 @@
 				item: "gtceu:realgar_dust"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 0.0d
 			y: 3.5d
 		}
 		{
@@ -731,7 +731,7 @@
 				item: "gtceu:gallium_arsenide_dust"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 1.0d
 			y: 4.5d
 		}
 		{
@@ -748,7 +748,7 @@
 				item: "gtceu:sphalerite_dust"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -1.0d
 			y: 4.5d
 		}
 		{
@@ -765,7 +765,7 @@
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 3.0d
 			y: 4.5d
 		}
 		{
@@ -785,7 +785,7 @@
 				item: "gtceu:silicon_boule"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 3.0d
 			y: 2.5d
 		}
 		{
@@ -808,7 +808,7 @@
 				item: "gtceu:silicon_wafer"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.0d
 			y: 3.5d
 		}
 		{
@@ -828,7 +828,7 @@
 				item: "gtceu:vanadium_steel_ingot"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 1.0d
 			y: 0.5d
 		}
 		{
@@ -848,7 +848,7 @@
 				item: "gtceu:mv_cutter"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.0d
 			y: 0.5d
 		}
 		{
@@ -865,7 +865,7 @@
 				item: "gtceu:mv_machine_hull"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 7.0d
 			y: -1.5d
 		}
 		{
@@ -913,7 +913,7 @@
 				title: "{ftbquests.industrial_revolution.mv_energy_converter.title}"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.0d
 			y: -3.5d
 		}
 		{
@@ -930,7 +930,7 @@
 				item: "gtceu:mv_laser_engraver"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 7.0d
 			y: 0.5d
 		}
 		{
@@ -961,7 +961,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: 3.0d
 			y: 6.5d
 		}
 		{
@@ -986,7 +986,7 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.0d
 			y: 6.5d
 		}
 		{
@@ -1005,7 +1005,7 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 9.0d
 			y: 6.5d
 		}
 		{
@@ -1022,7 +1022,7 @@
 				item: "gtceu:greenhouse"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.0d
 			y: 5.0d
 		}
 		{
@@ -1039,7 +1039,7 @@
 				item: "gtceu:pyrolyse_oven"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 9.0d
 			y: -3.5d
 		}
 		{
@@ -1060,7 +1060,7 @@
 				item: "gtceu:basic_integrated_circuit"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 9.0d
 			y: 4.5d
 		}
 		{
@@ -1078,7 +1078,7 @@
 				item: "gtceu:good_integrated_circuit"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 11.0d
 			y: 4.5d
 		}
 		{
@@ -1119,7 +1119,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.ilc_chip.title}"
-			x: 10.0d
+			x: 7.0d
 			y: 4.5d
 		}
 		{
@@ -1160,7 +1160,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.ulpic_chip.title}"
-			x: 10.0d
+			x: 7.0d
 			y: 2.5d
 		}
 		{
@@ -1183,7 +1183,7 @@
 				item: "gtceu:mv_energy_input_hatch"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 9.0d
 			y: 0.5d
 		}
 		{
@@ -1201,7 +1201,7 @@
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 9.0d
 			y: -1.5d
 		}
 		{
@@ -1218,7 +1218,7 @@
 				item: "gtceu:lv_super_tank"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 13.0d
 			y: -5.5d
 		}
 		{
@@ -1244,7 +1244,7 @@
 				}
 				type: "item"
 			}]
-			x: 13.0d
+			x: 10.0d
 			y: -2.5d
 		}
 		{
@@ -1290,7 +1290,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.rare_earth_metals.title}"
-			x: -2.0d
+			x: -5.0d
 			y: 4.5d
 		}
 		{
@@ -1311,7 +1311,7 @@
 				item: "ae2:certus_quartz_crystal"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 3.0d
 			y: -5.5d
 		}
 		{
@@ -1338,7 +1338,7 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
+			x: 11.0d
 			y: 2.5d
 		}
 		{
@@ -1355,7 +1355,7 @@
 				item: "gtceu:stainless_steel_ingot"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 9.0d
 			y: 2.5d
 		}
 		{
@@ -1372,7 +1372,7 @@
 				item: "gtceu:kanthal_ingot"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 11.0d
 			y: 0.5d
 		}
 		{
@@ -1392,7 +1392,7 @@
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 11.0d
 			y: -1.5d
 		}
 		{
@@ -1418,7 +1418,7 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
+			x: 11.0d
 			y: -3.5d
 		}
 		{
@@ -1453,7 +1453,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.inscriber_presses.title}"
-			x: 10.5d
+			x: 7.5d
 			y: -7.0d
 		}
 		{
@@ -1495,7 +1495,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.printed_circuits.title}"
-			x: 12.0d
+			x: 9.0d
 			y: -5.5d
 		}
 		{
@@ -1509,7 +1509,7 @@
 				item: { Count: 8, id: "gtceu:basic_electronic_circuit" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -11.0d
 			y: -3.5d
 		}
 		{
@@ -1531,7 +1531,7 @@
 				item: "gtceu:rock_filtrator"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 1.0d
 			y: -3.5d
 		}
 		{
@@ -1561,7 +1561,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: -1.0d
 			y: 0.5d
 		}
 		{
@@ -1585,7 +1585,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
+			x: -3.0d
 			y: 4.5d
 		}
 		{
@@ -1609,7 +1609,7 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
+			x: 1.0d
 			y: 2.5d
 		}
 		{
@@ -1631,7 +1631,7 @@
 				title: "{ftbquests.industrial_revolution.etching_liquids.title}"
 				type: "checkmark"
 			}]
-			x: 4.0d
+			x: 1.0d
 			y: 6.5d
 		}
 		{
@@ -1644,7 +1644,7 @@
 				title: "{ftbquests.industrial_revolution.resource_production_chapter.title}"
 				type: "checkmark"
 			}]
-			x: 2.0d
+			x: -1.0d
 			y: 2.5d
 		}
 		{
@@ -1656,7 +1656,7 @@
 				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -1669,7 +1669,7 @@
 				title: "{ftbquests.industrial_revolution.ae2_chapter.title}"
 				type: "checkmark"
 			}]
-			x: 14.0d
+			x: 11.0d
 			y: -5.5d
 		}
 		{
@@ -1687,7 +1687,7 @@
 				item: "gtceu:annealed_copper_ingot"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 13.0d
 			y: 6.5d
 		}
 		{
@@ -1706,7 +1706,7 @@
 				}
 				type: "item"
 			}]
-			x: 16.0d
+			x: 13.0d
 			y: -1.5d
 		}
 		{
@@ -1748,7 +1748,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.ram_chips.title}"
-			x: 10.0d
+			x: 7.0d
 			y: 3.5d
 		}
 		{
@@ -1765,7 +1765,7 @@
 				title: "{ftbquests.industrial_revolution.power_chapter.title}"
 				type: "checkmark"
 			}]
-			x: -7.0d
+			x: -10.0d
 			y: -4.5d
 		}
 		{
@@ -1778,7 +1778,7 @@
 				item: "gtceu:mechanical_sieve"
 				type: "item"
 			}]
-			x: 2.0d
+			x: -1.0d
 			y: -3.5d
 		}
 		{
@@ -1799,7 +1799,7 @@
 				item: "gtceu:cupronickel_coil_block"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 1.0d
 			y: -1.5d
 		}
 		{
@@ -1825,7 +1825,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.tin_alloy.title}"
-			x: 3.0d
+			x: 0.0d
 			y: -0.5d
 		}
 		{
@@ -1853,7 +1853,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.mv_processing_machines.title}"
-			x: 10.0d
+			x: 7.0d
 			y: -3.5d
 		}
 		{
@@ -1870,7 +1870,7 @@
 				item: "ae2:sky_dust"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 4.5d
 			y: -7.0d
 		}
 		{
@@ -1897,7 +1897,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.lubricant_production.title}"
-			x: -6.0d
+			x: -9.0d
 			y: 0.5d
 		}
 		{
@@ -1919,7 +1919,7 @@
 				}
 			]
 			title: "{ftbquests.industrial_revolution.lubricant.title}"
-			x: -6.0d
+			x: -9.0d
 			y: 2.5d
 		}
 	]

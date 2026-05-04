@@ -1784,6 +1784,7 @@
 			dependencies: [
 				"2D4F9DFF6B559C65"
 				"215D430EAC4CE323"
+				"020048FAC9576691"
 			]
 			description: ["{ftbquests.automation_age.hpic_chip.description}"]
 			hide_dependency_lines: true
@@ -2030,7 +2031,7 @@
 				title: "{ftbquests.positioner.title}"
 				type: "checkmark"
 			}]
-			x: -6.0d
+			x: -3.5d
 			y: -3.0d
 		}
 		{

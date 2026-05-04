@@ -20,16 +20,16 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.ordered_chemistry(id('mythrillic_hydroxide'))
         .layeredRecipe((layers) => layers
             .itemInputs('gtceu:mythrillic_dust')
-            .inputFluids('gtceu:hydrogen 5000')
+            .inputFluids('gtceu:hydrogen 2875')
             .next()
             .itemInputs('3x gtceu:carbon_dust')
-            .inputFluids('gtceu:hydrogen 2500')
+            .inputFluids('gtceu:hydrogen 3250')
             .next()
-            .itemInputs('3x gtceu:sodium_hydroxide_dust')
-            .inputFluids('gtceu:hydrochloric_acid 2500')
+            .itemInputs('2x gtceu:sodium_hydroxide_dust')
+            .inputFluids('gtceu:hydrochloric_acid 1875')
         )
-            .inputFluids('gtceu:oxygen 2500')
-        .duration(120)
+            .inputFluids('gtceu:oxygen 1875')
+        .duration(116)
         .itemOutputs('6x gtceu:mythrillic_hydride_dust')
         .EUt(GTValues.VA[GTValues.UEV]);
 

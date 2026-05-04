@@ -25,7 +25,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('multithreaded_component_synthesis_forge', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
+        .tooltips([ 
             Text.translate("block.start_core.gap"),
             Text.translate("block.kubejs.threading.tooltip")
         ])

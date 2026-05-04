@@ -4,16 +4,22 @@ ServerEvents.recipes(event => {
     // Pre - Array
 
     event.recipes.gtceu.extractor(id('dragon_breath'))
-        .itemInputs('minecraft:dragon_breath')
-        .outputFluids('gtceu:dragon_breath 250')
-        .itemOutputs('minecraft:glass_bottle')
+        .itemInputs('minecraft:dragon_egg')
+        .outputFluids('gtceu:dragon_breath 750')
+        .duration(1000)
+        .EUt(GTValues.VHA[GTValues.UIV]);
+
+    event.recipes.gtceu.canner(id('dragon_breath'))
+        .itemInputs('minecraft:glass_bottle')
+        .inputFluids('gtceu:dragon_breath 250')
+        .itemOutputs('minecraft:dragon_breath')
         .duration(100)
-        .EUt(GTValues.VHA[GTValues.UEV]);
+        .EUt(GTValues.VHA[GTValues.UIV]);
     
     event.remove({id: 'minecraft:popped_chorus_fruit'});
     event.replaceInput({ input: 'minecraft:popped_chorus_fruit' },'minecraft:popped_chorus_fruit','minecraft:chorus_fruit');
     event.recipes.gtceu.assembly_line(id('true_absolute_chorus'))
-        .itemInputs('kubejs:void_core', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', 
+        .itemInputs('kubejs:voidic_core', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', 
         '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', 
         '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', 
         '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit', '64x minecraft:popped_chorus_fruit')
@@ -50,9 +56,8 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembly_line(id('draco_infusion'))
         .itemInputs(
             'gtceu:void_frame','6x gtceu:uev_robot_arm','2x gtceu:uev_field_generator','6x gtceu:dense_nyanium_plate','1x gtceu:uev_electric_pump',
-            '64x kubejs:uepic_chip', '48x gtceu:fine_enriched_pallarovium_alloy_wire','3x gtceu:echo_shard_lens'
-        )
-        .inputFluids('gtceu:indium_tin_lead_cadmium_soldering_alloy 57600','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 21600','gtceu:dragon_breath 500')
+            '64x kubejs:uepic_chip', '48x gtceu:fine_enriched_pallarovium_alloy_wire','3x gtceu:echo_shard_lens')
+        .inputFluids('gtceu:naquadated_soldering_alloy 57600','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 21600','gtceu:dragon_breath 500')
         .itemOutputs('gtceu:draco_infusion')
         .duration(2400)
         .stationResearch(
@@ -62,6 +67,21 @@ ServerEvents.recipes(event => {
                 .CWUt(216)
             )
         .EUt(GTValues.VA[GTValues.UIV]);
+
+    event.recipes.gtceu.assembly_line(id('primordial_infusion'))
+        .itemInputs(
+            'gtceu:draco_abyssal_frame','3x #gtceu:circuits/uxv','6x gtceu:uiv_robot_arm','2x gtceu:uiv_field_generator','6x gtceu:draconyallium_ultradense_plate','1x gtceu:uiv_electric_pump',
+            '64x kubejs:uipic_chip', '48x gtceu:fine_rhenium_super_composite_alloy_wire')
+        .inputFluids('gtceu:neutrindium_soldering_alloy 57600','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 43200','gtceu:pure_dragon_breath 15000')
+        .itemOutputs('gtceu:primordial_infusion')
+        .duration(2400)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:draco_infusion'))
+                .EUt(GTValues.VA[GTValues.UIV])
+                .CWUt(312)
+            )
+        .EUt(GTValues.VA[GTValues.UXV]);
 
     // Infusion
 
@@ -82,8 +102,8 @@ ServerEvents.recipes(event => {
     'gtceu:double_abyssal_alloy_plate','2x kubejs:draconic_scale_cells','2x kubejs:draconic_stem_cells', '4x gtceu:draconyallium_foil', 
     '2x kubejs:helish_star',400,GTValues.VHA[GTValues.UIV]);
 
-    Infusion('draco_stem_cells','4x kubejs:draconic_stem_cells','gtceu:dragon_breath 125','32x gtceu:stem_cells', 'gtceu:echo_shard_plate', 
-    'gtceu:nether_star_plate','8x gtceu:quantum_star','8x minecraft:popped_chorus_fruit','gtceu:echo_shard_lens',
+    Infusion('draco_stem_cells','8x kubejs:draconic_stem_cells','gtceu:dragon_breath 125','32x gtceu:stem_cells', 'gtceu:echo_shard_plate', 
+    'gtceu:nether_star_plate','4x gtceu:quantum_star','4x minecraft:popped_chorus_fruit','gtceu:echo_shard_lens',
     'gtceu:nether_star_lens',640,GTValues.VHA[GTValues.UHV]);
 
     Infusion('draco_brain_matter_cells','4x kubejs:draconic_brain_matter_cells','thermal:ender 10000','4x kubejs:draconic_stem_cells',
@@ -131,12 +151,12 @@ ServerEvents.recipes(event => {
     Infusion('saturation_core_high','32x kubejs:saturation_core_3','gtceu:dragon_breath 100','gtceu:energy_cluster','gtceu:tungsten_carbide_plate','gtceu:void_rod','gtceu:hsse_gear',
     'gtceu:double_hsse_plate','gtceu:void_ring','gtceu:small_tungsten_carbide_gear',400,GTValues.VA[GTValues.UHV]);
 
-    Infusion('soul_of_the_flame','kubejs:soul_of_the_flame','start_core:corefire_nectar 1000000','kubejs:heart_of_the_flame','2x gtceu:trinaquadalloy_ultradense_plate','2x gtceu:draco_abyssal_ultradense_plate',
-    '8x kubejs:void_core','8x gtceu:uiv_field_generator','2x gtceu:hvga_steel_ultradense_plate','2x gtceu:draconyallium_ultradense_plate',1500,GTValues.VA[GTValues.UXV]);
+    Infusion('soul_of_the_flame','kubejs:soul_of_the_flame','gtceu:riftic_concentrate 22500','kubejs:heart_of_the_flame','2x gtceu:trinaquadalloy_ultradense_plate','2x gtceu:draco_abyssal_ultradense_plate',
+    '8x kubejs:voidic_core','8x gtceu:uiv_field_generator','2x gtceu:hvga_steel_ultradense_plate','2x gtceu:draconyallium_ultradense_plate',1500,GTValues.VA[GTValues.UXV]);
 
     event.recipes.gtceu.assembler(id('voidic_sponge'))
         .itemInputs('16x minecraft:sponge','24x gtceu:fine_enderium_wire','6x kubejs:voidic_reinforced_mesh')
-        .inputFluids('gtceu:polyether_ether_ketone 432')
+        .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 288')
         .itemOutputs('16x kubejs:void_saturation_sponge')
         .duration(900)
         .circuit(3)

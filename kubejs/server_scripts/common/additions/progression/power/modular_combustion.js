@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes(event => { 
 
     const id = global.id;
     const componentMaterials = global.componentMaterials;

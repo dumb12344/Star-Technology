@@ -33,6 +33,8 @@
         // .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, $StarTRecipeModifiers.THREADING_MACHINE])
             // gives threading abilities, goes after OC determinate
 
+    const $KomaruFrameMachine = Java.loadClass('com.startechnology.start_core.machine.komaru.StarTKomaruFrameMachine');
+
     const $StarTDraconicInfusionMachine = Java.loadClass('com.startechnology.start_core.machine.draconic_infusion.StarTDraconicInfusionMachine')
         //.machine((holder) => new $StarTDraconicInfusionMachine(holder))
             //Draco Infusion Ordered Inputs

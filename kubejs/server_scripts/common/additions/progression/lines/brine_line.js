@@ -3,6 +3,18 @@ ServerEvents.recipes(event => {
     
     const id = global.id;
 
+    event.recipes.gtceu.fluid_heater(id('brines'))
+        .inputFluids('gtceu:salt_water 100000')
+        .outputFluids('gtceu:raw_brine 4500','gtceu:hot_brine 500')
+        .duration(6000)
+        .EUt(GTValues.VHA[GTValues.HV]);
+
+    event.recipes.gtceu.fluid_heater(id('hot_brine'))
+        .inputFluids('gtceu:raw_brine 1000')
+        .outputFluids('gtceu:hot_brine 1000')
+        .duration(1500)
+        .EUt(GTValues.VA[GTValues.HV]);
+
     event.recipes.gtceu.chemical_reactor(id('brine_chlorination'))
         .inputFluids('gtceu:hot_brine 1000', 'gtceu:chlorine 1000')
         .outputFluids('gtceu:hot_chlorinated_brominated_brine 2000')

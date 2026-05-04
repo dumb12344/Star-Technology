@@ -67,6 +67,7 @@ ServerEvents.recipes (event => {
 
     vcr(id(`aerogel_ingot`))
         .itemInputs(`kubejs:wet_aerogel_ingot`)
+        .inputFluids(`gtceu:air 5000`)
         .outputFluids(`gtceu:ethanol 500`, `minecraft:water 500`)
         .itemOutputs(`gtceu:aerogel_ingot`)
         .duration(200)

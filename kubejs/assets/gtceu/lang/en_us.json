@@ -18,6 +18,12 @@
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.2": "§8-----------------------------------",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.3": "§6Stabilisation Matrix Lens:",
     "block.gtceu.folding_akreyrium_stabiliser.tooltip.4": "§7The folding stabiliser utilises a lens to focus the reintegration, The proper type should be chosen based on the Akreyrium variant, reinsertion is necessary after every use.",
+    "block.gtceu.folding_akreyrium_stabiliser.tooltip.5": "§8-----------------------------------",
+
+    "block.gtceu.abyssal_akreyriadix_stabiliser": "Abyssal Akreyriadix Stabiliser",
+    "block.gtceu.abyssal_akreyriadix_stabiliser.tooltip.0": "§6§lBoosted Akreyrium Processor",
+    "block.gtceu.abyssal_akreyriadix_stabiliser.tooltip.1": "wip tooltip",
+    "gtceu.abyssal_akreyriadix_stabiliser": "Abyssal Akreyriadix Stabilisation",
 
     "block.gtceu.gate_assembly.tooltip.0": "§7A forge powerful enough to fuse together the parts of a stargate into one.",
 
@@ -102,7 +108,7 @@
 
     "block.gtceu.latex_plantation.tooltip.0": "§7A multiblock that is way faster then the arboreal extractor for gathering latex",
 
-    "block.gtceu.molten_destabilizer.tooltip.0": "§7A powerful machine that can splice complex molten chemicals into smaller chunks for processing",
+    "block.gtceu.molten_destabiliser.tooltip.0": "§7A powerful machine that can splice complex molten chemicals into smaller chunks for processing",
 
     "block.gtceu.cyclonic_sifter.tooltip.0": "§7An advanced tier of sifter that is more precise and stronger than the basic tier, allowing it to run better recipes.",
 
@@ -409,7 +415,7 @@
     "gtceu.injection_mixer": "Injection Mixing",
 
     "block.gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser",
-    "gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabiliser",
+    "gtceu.folding_akreyrium_stabiliser": "Folding Akreyrium Stabilisation",
 
     "gtceu.machine.energy_converter.tooltip_tool_usage": "Starts as §fEU Converter§7, use Soft Mallet to change",
 
@@ -820,7 +826,7 @@
     "material.gtceu.americium_plas": "Americium",
 
     "gtceu.molten_destabilizing": "Molten Destabilization",
-    "block.gtceu.molten_destabilizer": "Molten Destabilizer",
+    "block.gtceu.molten_destabiliser": "Molten Destabiliser",
 
     "gtceu.latex_plantation": "Latex Plantation",
     "block.gtceu.latex_plantation": "Latex Plantation",
@@ -842,8 +848,11 @@
     "block.gtceu.draco_infusion.tooltip.2": "§8-----------------------------------",
     "block.gtceu.draco_infusion.tooltip.3": "§6Ritual Placement:",
     "block.gtceu.draco_infusion.tooltip.4": "§7The items must be correctly placed as shown in the recipe in the input buses of the Draconic Infusion Array from the perspective of the player facing the controller.",
+    "block.gtceu.draco_infusion.tooltip.5": "§8-----------------------------------",
 
-    "block.gtceu.primordial_infusion": "§dPrimordial Infusion Array",
+    "block.gtceu.primordial_infusion": "§5Primordial Infusion",
+    "block.gtceu.primordial_infusion.tooltip.0": "§6§lBoosted Draconic Infusion Array",
+    "block.gtceu.primordial_infusion.tooltip.1": "wip tooltip",
 
     "block.gtceu.mega_abs": "Hellfire Alloy Materializer",
     "block.gtceu.mega_abs.tooltip.0": "§c§lParallel Alloy Blast Smelter",
@@ -852,7 +861,17 @@
     "block.gtceu.ultimate_ebf": "Catalytic Hellfire Energized Furnace",
     "block.gtceu.ultimate_ebf.tooltip.0": "§c§lBoosted Rotary Hearth Furnace",
     "block.gtceu.ultimate_ebf.tooltip.1": "§7A blazing forge energized with extreme heating fluids and concentrations layering complex integrations of thermodynamic in syncrosis.",
+    "block.gtceu.ultimate_ebf.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.ultimate_ebf.tooltip.3": "§6Coil Overclocking:",
+    "block.gtceu.ultimate_ebf.tooltip.4": "§7For every §f900K§7 above the recipe temperature, a multiplicative §f95%%§7 energy multiplier is applied pre-overclocking.",
+    "block.gtceu.ultimate_ebf.tooltip.5": "§7For every §f1800K§7 above the recipe temperature, one overclock becomes §f100%% efficient§7 (perfect overclock).",
+    "block.gtceu.ultimate_ebf.tooltip.6": "§7For every voltage tier above §bMV§7, temperature is increased by §f100K§7.",
+    "block.gtceu.ultimate_ebf.tooltip.7": "§8-----------------------------------",
 
+    "block.gtceu.ultimate_abs": "Limitless Overactive Alloy Fuser",
+    "block.gtceu.ultimate_abs.tooltip.0": "§c§lBoosted Hellfire Alloy Materializer",
+    "block.gtceu.ultimate_abs.tooltip.1": "wip tooltip",
+   
     "block.gtceu.supreme_plasma_turbine": "Supreme Plasma Turbine",
     "block.gtceu.supreme_plasma_turbine.top.0": "§3§lBoosted Large Plasma Turbine",
     "block.gtceu.supreme_plasma_turbine.top.1": "§7A massive turbine capable of being boosted consuming extreme quantities of fuel for extreme quantities of power.",
@@ -1101,7 +1120,7 @@
     "block.gtceu.ulv_fluid_input.tooltip.2": "§9Fluid Capacity:§r 2,000 mB",
 
     "material.gtceu.expetidalloy_d_17": "Expetidalloy D-17",
-    "material.gtceu.titan_steel": "Titan Steel",
+    "material.gtceu.tritan_steel": "Tritan Steel",
 
     "block.gtceu.multithreaded_component_synthesis_forge": "Multi-threaded Component Synthesis Forge",
     "block.gtceu.multithreaded_component_synthesis_forge.tooltip.0": "§3§lMulti-threaded Component Assembler",
@@ -1157,9 +1176,10 @@
     "block.gtceu.super_pyrolyse.tooltip.0": "§6§lBoosted Pyrolyse Oven",
     "block.gtceu.super_pyrolyse.tooltip.1": "§7A high throughput thermochemical processing suite engineered for the controlled breakdown of organic and inorganic matter",
 
-    "block.gtceu.atomic_synthesis_plant": "Atomic Synthesis Plant",
-    "block.gtceu.atomic_synthesis_plant.tooltip.0": "§6§lParagon of Chemistry",
-    "block.gtceu.atomic_synthesis_plant.tooltip.1": "§7Not only is this machine capable of performing the task of a §6Chemical Plant§7 but it also pushes beyond what the known synthesis of chemistry beholds.",
+    "block.gtceu.atomic_materialization_plant": "Atomic Materialization Plant",
+    "block.gtceu.atomic_materialization_plant.tooltip.0": "§6§lParagon of Chemistry",
+    "block.gtceu.atomic_materialization_plant.tooltip.1": "§7Not only is this machine capable of performing the task of a §6Chemical Plant§7 but it also pushes beyond what the known synthesis of chemistry beholds.",
+    "block.gtceu.atomic_materialization_plant.tooltip.2": "§8-----------------------------------",
 
     "block.gtceu.omega_pressure_heat_chamber": "Omega Pressure Heat Chamber",
     "block.gtceu.omega_pressure_heat_chamber.tooltip.0": "§7It turns out the more pressure you add the stronger the fusing of materials becomes.",
@@ -1301,7 +1321,8 @@
     "block.gtceu.super_gas_collector.tooltip.0": "§7Collects gas just a bit faster.",
 
     "material.gtceu.akreyriadic_runixium": "Akreyriadic-Runixium",
-    "material.gtceu.weapon_grade_stellarized_naquadah": "Weapon Grade §bStellarized§f Naquadah",
+    "material.gtceu.stellarized_weapon_grade_naquadah": "§bStellarized§f Weapon Grade Naquadah",
+    "material.gtceu.primordially_stellarized_weapon_grade_naquadah": "§5Primordially §bStellarized§f Weapon Grade Naquadah",
 
     "gtceu.exotic_rock_crushing": "Exotic Rock Crushing",
 
@@ -1323,6 +1344,94 @@
     "material.gtceu.rp_1": "RP-1",
     "material.gtceu.hydrofined_kerosene": "Hydrofined Kerosene",
     "material.gtceu.liquid_fluorine": "Liquid Fluorine",
-    "material.gtceu.dioxygen_difluoride": "Dioxygen Difluoride"
-    
+    "material.gtceu.dioxygen_difluoride": "Dioxygen Difluoride",
+
+    "material.gtceu.osthendah": "Osthendah",
+    "material.gtceu.raging_rimulatia": "Raging Rimulatia",
+    "material.gtceu.neutrindium_soldering_alloy": "Neutrindium Soldering Alloy",
+    "material.gtceu.aquariadic_rimuli_dragonix_dust": "Aquariadic Rimuli-Dragonix",
+    "material.gtceu.netherite_triselex_oxide": "Netherite Triselex-Oxide",
+    "material.gtceu.primordial_extract": "Primordial Extract",
+    "material.gtceu.infernal_stabilization_mixture": "Infernal Stabilization Mixture",
+    "material.gtceu.riftion": "Riftion",
+    "material.gtceu.condensed_rimula": "Condensed Rimula",
+    "material.gtceu.faematter": "Faematter",
+    "material.gtceu.riftion_extract": "Riftion Extract",
+    "material.gtceu.impure_faematter": "Impure Faematter",
+    "material.gtceu.true_rimula_foundation": "True Rimula Foundation",
+    "material.gtceu.primordial_residue": "Primordial Residue",
+    "material.gtceu.kaleidoscope_agitation_serum": "Kaleidoscope Agitation Serum",
+    "material.gtceu.rimula_t_foundation": "Rimula-Tempus Foundation",
+    "material.gtceu.abyssal_rift_slurry": "Abyssal Rift Slurry",
+    "material.gtceu.draconic_stabilization_mixture": "Draconic Stabilization Serum",
+    "material.gtceu.riftic_concentrate": "Riftic Concentrate",
+    "material.gtceu.faetic_extract": "Faetic Extract",
+    "material.gtceu.prismatic_hypergurmalium": "Prismatic Hypergurmalium",
+    "material.gtceu.rimula_s_foundation": "Rimula-Spacial Foundation",
+    "material.gtceu.destabilized_rift_source": "Destabilized Rift Source",
+    "material.gtceu.accension_rift_slurry": "Accension Rift Slurry",
+    "material.gtceu.highly_unstable_rift_source": "Highly Unstable Rift Source",
+    "material.gtceu.abyssal_stabilization_mixture": "Abyssal Stabilization Mixture",
+    "material.gtceu.stabilization_mixture_base": "Stabilization Mixture Base",
+
+    "block.gtceu.kaleidoscopic_fractalizer": "Kaleidoscopic Fractalizer",
+    "block.gtceu.kaleidoscopic_fractalizer.tooltip.0": "wip toolip",
+    "gtceu.kaleidoscopic_fractalizer": "Kaleidoscopic Fractalization",
+
+    "block.gtceu.riftion_accelerator": "Riftion Accelerator",
+    "block.gtceu.riftion_accelerator.tooltip.0": "wip toolip",
+    "gtceu.riftion_accelerator": "Riftion Acceleration",
+
+    "block.gtceu.riftion_injector": "Riftion Injector",
+    "block.gtceu.riftion_injector.tooltip.0": "wip toolip",
+    "gtceu.riftion_injector": "Riftion Injection",
+
+    "block.gtceu.riftion_slammer": "Riftion Slammer",
+    "block.gtceu.riftion_slammer.tooltip.0": "wip toolip",
+    "gtceu.riftion_slammer": "Riftion Smashing",
+
+    "block.gtceu.magmatic_drilling_module": "Magmatic Drilling Unit",
+    "block.gtceu.magmatic_drilling_module.tooltip.0": "wip tooltip",
+    "block.gtceu.magmatic_drilling_module.tooltip.1": "K.O.M.A.R.U Module Tier: Basic",
+    "gtceu.magmatic_drill": "Magmatic Drilling",
+
+    "block.gtceu.voidic_refinement_module": "Voidic Refinement Unit",
+    "block.gtceu.voidic_refinement_module.tooltip.0": "wip tooltip",
+    "block.gtceu.voidic_refinement_module.tooltip.1": "K.O.M.A.R.U Module Tier: Basic",
+    "gtceu.voidic_refinement": "Voidic Refinement",
+
+    "block.gtceu.rimula_extraction_module": "Rimula Extraction Unit",
+    "block.gtceu.rimula_extraction_module.tooltip.0": "wip tooltip",
+    "block.gtceu.rimula_extraction_module.tooltip.1": "K.O.M.A.R.U Module Tier: Basic",
+    "gtceu.rimula_extraction": "Rimula Extraction",
+
+    "block.gtceu.riftic_infusion_assembly_module": "Riftic Infusion Assemblying Unit",
+    "block.gtceu.riftic_infusion_assembly_module.tooltip.0": "wip tooltip",
+    "block.gtceu.riftic_infusion_assembly_module.tooltip.1": "K.O.M.A.R.U Module Tier: Advanced",
+    "gtceu.riftic_infusion_assembly": "Riftic Infusion Assembly",
+
+    "block.gtceu.riftic_enhancement_module": "Riftic Enhancing Unit",
+    "block.gtceu.riftic_enhancement_module.tooltip.0": "wip tooltip",
+    "block.gtceu.riftic_enhancement_module.tooltip.1": "K.O.M.A.R.U Module Tier: Advanced",
+    "gtceu.riftic_enhancement": "Riftic Enhancement",
+
+    "block.gtceu.limitless_smelter": "Limitless Smelter",
+    "block.gtceu.limitless_smelter.tooltip.0": "§6§lExponential Multi Smelter",
+
+    "block.gtceu.incomprehensible_chemical_reactor": "Incomprehensible Chemical Reactor",
+    "block.gtceu.incomprehensible_chemical_reactor.tooltip.0": "§6§lBoosted Extreme Chemical Reactor",
+
+    "block.gtceu.true_synthesis_array": "True Synthesis Array",
+    "block.gtceu.true_synthesis_array.tooltip.0": "§6§lBoosted Advanced Synthesis Plant",
+    "gtceu.supreme_chemistry": "Supreme Chemistry Sythesis",
+
+    "block.gtceu.titan_forge": "Titan Forge",
+    "block.gtceu.titan_forge.tooltip.0": "wip tooltip",
+    "gtceu.titan_forge": "Titan Forge",
+
+    "block.gtceu.catto_shrine": "Catto Shrine",
+    "block.gtceu.catto_shrine.tooltip.0": "wip tooltip",
+    "block.gtceu.catto_shrine.tooltip.1": "make your offerings known",
+    "gtceu.catto_shrine": "Catto Shrine"
+
 }

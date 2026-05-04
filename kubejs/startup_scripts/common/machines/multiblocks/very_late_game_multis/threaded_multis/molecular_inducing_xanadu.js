@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('molecular_inducing_xanadu', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
+        .tooltips([ 
             Text.translate("block.start_core.gap"),
             Text.translate("block.kubejs.threading.tooltip")
         ])
@@ -46,6 +46,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('J', Predicates.blocks('start_core:threading_controller'))
             .build())
         .workableCasingModel('kubejs:block/casings/threading/atomic_convergence_casing',
-            'gtceu:block/multiblock/implosion_compressor');
+            'gtceu:block/machines/mixer');
 
 });

@@ -17,6 +17,9 @@ ServerEvents.tags('item', event => {
     event.remove('minecraft:planks', 'gtceu:treated_wood_planks');
     event.remove('minecraft:wooden_slabs', 'gtceu:treated_wood_slab');
 
+    event.add('start_core:komaru/filaments/tier_1', 'kubejs:komaru_filament_t1');
+    event.add('start_core:komaru/filaments/tier_2', 'kubejs:komaru_filament_t2');
+
     const knifeTagRemove = ['netherite','flint','iron','diamond','golden']    
     knifeTagRemove.forEach((item)=> {
         event.remove('forge:tools/knives',`farmersdelight:${item}_knife`)
@@ -68,6 +71,7 @@ ServerEvents.tags('item', event => {
     event.remove('forge:ingots/vanadium', 'vintage:vanadium_ingot');
     event.remove('minecraft:beacon_payment_items', 'vintage:vanadium_ingot');
     event.remove('minecraft:trim_materials', 'vintage:vanadium_ingot');
+
 });
 
 ServerEvents.tags('item', event=>{
@@ -198,5 +202,7 @@ ServerEvents.tags('fluid', event => {
     event.remove('forge:sulfuric_acid','vintage:sulfuric_acid');
 
     event.removeAllTagsFrom(/^thermal_extra:(?!.*_oil$).*/);
+
+    event.add('start_core:komaru/faematter','gtceu:faematter');
 
 });

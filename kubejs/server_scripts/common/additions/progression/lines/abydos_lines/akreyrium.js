@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             '8x gtceu:uhv_fluid_regulator','4x gtceu:uhv_sensor','8x gtceu:pure_netherite_rotor')
         .inputFluids('gtceu:hsse 9216','gtceu:borosilicate_glass 147456')
         .itemOutputs('gtceu:folding_akreyrium_stabiliser')
-        .duration(32000)
+        .duration(1800)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('gtceu:large_engraving_laser'))
@@ -324,25 +324,26 @@ ServerEvents.recipes(event => {
         .duration(160)
         .EUt(GTValues.VHA[GTValues.UV] * 3);
 
-    event.recipes.gtceu.quantum_compressor_infusion(id('lepton_akreyrium_catalyst'))
+    event.recipes.gtceu.injection_mixer(id('lepton_akreyrium_catalyst'))
         .itemInputs('kubejs:crystalline_akreyrium')
         .inputFluids('gtceu:dense_electron_akreyrium 100','gtceu:dense_muon_akreyrium 200','gtceu:dense_tau_akreyrium 200')
         .itemOutputs('kubejs:leptonic_akreyrium_catalyst')
         .duration(400)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    event.recipes.gtceu.injection_mixer(id('lepton_dense_akreyrium'))
-        .itemInputs('kubejs:leptonic_akreyrium_catalyst')
+    event.recipes.gtceu.folding_akreyrium_stabiliser(id('lepton_dense_akreyrium'))
+        .itemInputs('kubejs:leptonic_akreyrium_catalyst','gtceu:gray_glass_lens')
         .inputFluids('gtceu:lepton_flux_akreyrium 500')
-        .outputFluids('gtceu:lepton_dense_akreyrium 1000')
+        .itemOutputs('gtceu:gray_glass_lens')
+        .outputFluids('gtceu:lepton_dense_akreyrium 1000','gtceu:lepton_coalescing_superalloy 416')
         .duration(240)
         .EUt(GTValues.VHA[GTValues.UHV]);
 
-    event.recipes.gtceu.folding_akreyrium_stabiliser(id('lepton_resonant_thallium_antimonide'))
-        .itemInputs('gtceu:gray_glass_lens','gtceu:tiny_thallium_antimonide_dust')
+    event.recipes.gtceu.abyssal_akreyriadix_stabiliser(id('lepton_resonant_thallium_antimonide'))
+        .itemInputs('gtceu:tiny_thallium_antimonide_dust')
         .inputFluids('gtceu:lepton_dense_akreyrium 1000')
-        .itemOutputs('gtceu:gray_glass_lens','gtceu:tiny_lepton_resonant_thallium_antimonide_dust')
-        .outputFluids('gtceu:utopian_akreyrium 750','gtceu:lepton_coalescing_superalloy 416')
+        .itemOutputs('gtceu:tiny_lepton_resonant_thallium_antimonide_dust')
+        .outputFluids('gtceu:utopian_akreyrium 750')
         .duration(18)
         .EUt(GTValues.VHA[GTValues.UIV]);
 });

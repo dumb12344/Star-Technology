@@ -270,7 +270,7 @@ global.getRecipeTier = (tier) => {
     return recipeTier;
 }
 
-global.getDataItem = (cwu) => (cwu >= 160) ? 'start_core:data_dna_disk' : (cwu >=32) ? 'gtceu:data_module' : 'gtceu:data_orb' ;
+global.getDataItem = (cwu) => (cwu >= 320) ? 'start_core:component_data_core' : (cwu >= 160) ? 'start_core:data_dna_disk' : (cwu >=32) ? 'gtceu:data_module' : 'gtceu:data_orb' ;
 
 ServerEvents.recipes(event => {
 

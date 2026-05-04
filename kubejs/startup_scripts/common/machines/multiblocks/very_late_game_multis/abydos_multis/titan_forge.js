@@ -29,7 +29,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('C', Predicates.blocks('kubejs:enriched_naquadah_firebox_casing'))
             .where('D', Predicates.blocks('kubejs:enriched_naquadah_pipe_casing'))
             .where('E', Predicates.blocks('gtceu:naquadah_alloy_frame'))
-            .where('F', Predicates.blocks('kubejs:titanic_blasting_casing'))
+            .where('F', Predicates.blocks('kubejs:tritanic_blasting_casing'))
             .where('G', Predicates.blocks('kubejs:enriched_naquadah_heat_escape_casing'))
             .where('H', Predicates.blocks('kubejs:enriched_naquadah_engine_intake_casing'))
             .where('I', Predicates.blocks('gtceu:tritanium_coil_block'))

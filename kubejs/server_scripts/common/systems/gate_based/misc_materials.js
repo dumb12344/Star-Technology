@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:naquadria 1008', 'gtceu:fluorine 12000')
         .itemOutputs('29x gtceu:weapon_grade_naquadah_dust')
         .duration(1200)
-        .EUt(346000);
+        .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.heat_chamber(id('nether_star_concentrate'))
         .itemInputs('16x gtceu:tiny_nether_star_dust')
@@ -32,8 +32,16 @@ ServerEvents.recipes(event => {
         .itemInputs('7x gtceu:runic_laser_source_base_dust', '4x gtceu:ancient_runicalium_dust', '2x gtceu:strontium_titanium_oxide_dust')
         .inputFluids('gtceu:utopian_akreyrium 5000')
         .itemOutputs('18x gtceu:akreyriadic_runixium_dust')
-        .duration(9600)
+        .duration(10800)
         .EUt(GTValues.VHA[GTValues.UEV]);
+
+    event.recipes.gtceu.injection_mixer(id('aquariadic_rimuli_dragonix_dust'))
+        .itemInputs('7x gtceu:akreyriadic_runixium_dust', '4x gtceu:raging_rimulatia_dust')
+        .inputFluids('gtceu:pure_dragon_breath 5000', 'minecraft:water 1000000000')
+        .itemOutputs('16x gtceu:aquariadic_rimuli_dragonix_dust')
+        .duration(7350)
+        .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
+        .EUt(GTValues.VHA[GTValues.UXV]);
 
     event.remove({type: 'gtceu:implosion_compressor', input: 'gtceu:naquadic_netherite_dust'});
 
@@ -61,6 +69,15 @@ ServerEvents.recipes(event => {
         .chancedOutput('gtceu:dark_ash_dust', 2500, 0)
         .duration(800)
         .EUt(GTValues.VHA[GTValues.LuV]);
+
+    event.remove({type: 'gtceu:implosion_compressor', input: 'gtceu:aquariadic_rimuli_dragonix_dust'});
+
+    event.recipes.gtceu.implosion_compressor(id(`aquariadic_rimuli_dragonix_industrial_tnt`))
+        .itemInputs('4x gtceu:aquariadic_rimuli_dragonix_dust', '64x gtceu:industrial_tnt', '64x gtceu:industrial_tnt')
+        .itemOutputs('gtceu:aquariadic_rimuli_dragonix_gem')
+        .chancedOutput('gtceu:dark_ash_dust', 2500, 0)
+        .duration(1500)
+        .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.laser_engraver(id('coordinate_crystal'))
         .itemInputs('gtceu:exquisite_purified_naquadah_gem')
@@ -101,7 +118,7 @@ ServerEvents.recipes(event => {
         Fluid.of('gtceu:xenon 10')
     );
 
-    event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_weapon_grade_stellarized_naquadah_gas'},
+    event.replaceInput({id: 'gtceu:electric_blast_furnace/blast_stellarized_weapon_grade_naquadah_gas'},
         Fluid.of('gtceu:krypton 10'),
         Fluid.of('gtceu:xenon 10')
     );

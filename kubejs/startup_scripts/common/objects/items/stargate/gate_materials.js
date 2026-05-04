@@ -30,12 +30,12 @@ StartupEvents.registry('item', event => {
 
 //OLD
     // === Cores and Fragments
-    event.create('empty_coordinate_core')
-        .texture('kubejs:item/stargate/gate_items/empty_coordinate_core');
+    // event.create('empty_coordinate_core')
+    //     .texture('kubejs:item/stargate/gate_items/empty_coordinate_core');
 
-    event.create('draconic_coordinate_core')
-        .tooltip(Text.translate('item.kubejs.draconic_coordinate_core.tooltip'))
-        .texture('kubejs:item/stargate/gate_items/draconic_core');
+    // event.create('draconic_coordinate_core')
+    //     .tooltip(Text.translate('item.kubejs.draconic_coordinate_core.tooltip'))
+    //     .texture('kubejs:item/stargate/gate_items/draconic_core');
 
     // event.create('inferno_fragment')
     //     .texture('kubejs:item/stargate/gate_items/inferno_fragment');
@@ -43,10 +43,10 @@ StartupEvents.registry('item', event => {
     // event.create('abyss_fragment')
     //     .texture('kubejs:item/stargate/gate_items/abyss_fragment');
 
-    event.create('hell_core')
-        .texture('kubejs:item/stargate/gate_items/hell_core');
+    // event.create('hell_core')
+    //     .texture('kubejs:item/stargate/gate_items/hell_core');
 
-    event.create('void_core')
-        .texture('kubejs:item/stargate/gate_items/void_core');
+    // event.create('void_core')
+    //     .texture('kubejs:item/stargate/gate_items/void_core');
 
 });

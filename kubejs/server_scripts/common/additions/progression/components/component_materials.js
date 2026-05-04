@@ -1,62 +1,94 @@
 // priority: 1000
 
 global.componentMaterials = {
+    ulv: {
+        tiers: { tier: 'ulv' },
+        materials: {
+            tierMaterial: 'wrought_iron',
+            cable: 'red_alloy',
+            cable1: 'tin',
+            chip: ''
+        }
+    },
     lv: {
+        tiers: { tier: 'lv' },
         materials: {
             tierMaterial: 'steel',
             wire: 'copper',
             cable: 'tin',
+            cable1: 'copper',
             glass: '#forge:glass',
+            chip: '',
             rotorMaterial: 'tin',
             grind: 'minecraft:diamond'
         }
     },
     mv: {
+        tiers: { tier: 'mv' },
         materials: {
             tierMaterial: 'aluminium',
             wire: 'cupronickel',
             cable: 'copper',
+            cable1: 'gold',
             glass: '#forge:glass',
+            chip: 'gtceu:ulpic',
             rotorMaterial: 'bronze',
             grind: 'minecraft:diamond'
         }
     },
     hv: {
+        tiers: { tier: 'hv' },
         materials: {
             tierMaterial: 'stainless_steel',
             wire: 'kanthal',
             cable: 'gold',
+            cable1: 'aluminium',
             glass: 'gtceu:tempered_glass',
+            chip: 'gtceu:lpic',
             rotorMaterial: 'steel',
             grind: 'gtceu:diamond_grinding_head'
         }
     },
     ev: {
+        tiers: { tier: 'ev', tier0: 'iv', tier1: 'hv', tier2: 'mv' },
         materials: {
             tierMaterial: 'titanium',
             wire: 'nichrome',
             solder: 'soldering_alloy',
             lubricant: 'lubricant',
             cable: 'aluminium',
+            cable1: 'platinum',
             glass: 'gtceu:tempered_glass',
             superconductor: 'uranium_triplatinum',
+            chip: 'gtceu:mpic',
             battery: 'lapotron_crystal',
             rotorMaterial: 'stainless_steel',
             grind: 'gtceu:diamond_grinding_head'
+        },
+        scaling: {
+            scaler: 1,
+            EU: GTValues.VA[GTValues.HV]
         }
     },
     iv: {
+        tiers: { tier: 'iv', tier0: 'luv', tier1: 'ev', tier2: 'hv' },
         materials: {
             tierMaterial: 'tungsten_steel',
             wire: 'rtm_alloy',
             solder: 'soldering_alloy',
             lubricant: 'lubricant',
             cable: 'platinum',
+            cable1: 'niobium_titanium',
             glass: 'gtceu:laminated_glass',
             superconductor: 'samarium_iron_arsenic_oxide',
+            chip: 'gtceu:hpic',
             battery: 'lapotronic_energy_orb',
             rotorMaterial: 'tungsten_steel',
             grind: 'gtceu:tungsten_grinding_head'
+        },
+        scaling: {
+            scaler: 1,
+            EU: GTValues.VA[GTValues.EV]
         }
     },
     luv: {
@@ -107,7 +139,7 @@ global.componentMaterials = {
         tiers: { tier: 'zpm', tier0: 'uv', tier1: 'luv', tier2: 'iv' },
         materials: {
             tierMaterial: 'naquadah_alloy',
-            primMaterial: 'naquadah_alloy',
+            primMaterial: 'osthendah',
             supMaterial: 'osmiridium',
             wire: 'naquadah',
             wireMechanical: 'europium',
@@ -150,7 +182,7 @@ global.componentMaterials = {
         tiers: { tier: 'uv', tier0: 'uhv', tier1: 'zpm', tier2: 'luv' },
         materials: {
             tierMaterial: 'darmstadtium',
-            primMaterial: 'titan_steel',
+            primMaterial: 'tritan_steel',
             supMaterial: 'pure_netherite',
             wire: 'naquadah_alloy',
             wireMechanical: 'americium',
@@ -199,6 +231,7 @@ global.componentMaterials = {
             wire: 'zirconium_selenide_diiodide',
             wireMechanical: 'zirconium',
             wireCoil: 'thorium_plut_duranide_241',
+            pipeCoil: 'neutronium',
             elctrlyzWire: 'trinium',
             tierFluid: 'naquadria',
             coolant: 'liquid_helium',
@@ -243,6 +276,7 @@ global.componentMaterials = {
             wire: 'astatium_bioselex_carbonite',
             wireMechanical: 'adamantine',
             wireCoil: 'aurourium',
+            pipeCoil: 'mythrolic_alloy',
             elctrlyzWire: 'tritanium',
             tierFluid: 'isovol',
             coolant: 'superstate_helium_3',
@@ -285,7 +319,8 @@ global.componentMaterials = {
             supMaterial: 'abyssal_alloy',
             wire: 'hafnide_ito_ceramic',
             wireMechanical: 'xeproda',
-            wireCoil: 'magmada_alloy',
+            wireCoil: 'rhenate_w',
+            pipeCoil: 'nyanium',
             elctrlyzWire: 'tritanium',
             tierFluid: 'calamatium',
             coolant: 'superstate_helium_3',

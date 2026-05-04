@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
             .stationResearch(
                 researchRecipeBuilder => researchRecipeBuilder
                     .researchStack(Item.of(`${researchItem}`))
-                    .EUt(eu * .5)
+                    .EUt(eu / 2)
                     .CWUt(cwu)
                 )
             .duration(Dur).EUt(eu);  
@@ -65,8 +65,8 @@ ServerEvents.recipes(event => {
             .itemInputs(researchItem)
             .itemOutputs(Item.of(`${dataItem}`, `{assembly_line_research:{research_id:"${researchNBT}",research_type:"${recipeType}"}}`))
             .CWUt(cwu)
-            .totalCWU(((Dur + 1600)/2) ** 2)
-            .EUt(eu * .5);
+            .totalCWU(Dur * cwu * 3)
+            .EUt(eu / 2);
     
     }
 
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
         `24x ${Tra}`,
         `32x gtceu:void_foil`,
         '1x gtceu:energy_module',
-        `64x ${PEDOT_PSS}_foil`, 
+        `64x gtceu:aerogel_foil`, 
         '32x gtceu:polonium_bismide_single_wire',  
         '4x gtceu:aurourium_plate'
         ], [`${Solder} 2304`,`${PEDOT_PSS} 1152`,`${DB} 500`], 
@@ -234,6 +234,65 @@ ServerEvents.recipes(event => {
         ], [`${Solder} 432`, `${PEDOT_PSS} 216`, `${DES} 75`], 
         100, GTValues.VHA[GTValues.UIV] * 1.2, 
         'kubejs:rift_infused_soc', 216
+    );
+
+    // === Bulk Circuits ===
+
+    const DracoBulkCircuiter = (quant,output,ItemIn,FluidIn,Dur,eu,cwu) => {
+        
+        event.recipes.gtceu.draco_bulk_circuiter(id(output.split(':')[1]))
+            .itemInputs(ItemIn).inputFluids(FluidIn).itemOutputs(quant + 'x ' + output)
+            .stationResearch(
+                researchRecipeBuilder => researchRecipeBuilder
+                    .researchStack(Item.of(`${output}`))
+                    .EUt(eu / 2)
+                    .CWUt(cwu)
+                )
+            .duration(Dur).EUt(eu);  
+
+        let researchBaseID = `${output.replace(':','_')}`;
+        let researchRecipeID = `1_x_${researchBaseID}`;
+        let researchNBT = `1x_${researchBaseID}`;
+        let dataItem = (cwu > 0 && cwu < 32) ? 'gtceu:data_orb' : (cwu < 160) ? 'gtceu:data_module' : 'start_core:data_dna_disk';
+        let recipeType = 'gtceu:draco_bulk_circuiter';
+    
+        event.recipes.gtceu.research_station(researchRecipeID)
+            .itemInputs(dataItem)
+            .itemInputs(output)
+            .itemOutputs(Item.of(`${dataItem}`, `{assembly_line_research:{research_id:"${researchNBT}",research_type:"${recipeType}"}}`))
+            .CWUt(cwu)
+            .totalCWU(Dur * cwu)
+            .EUt(eu / 2);
+    
+    }
+    
+    DracoBulkCircuiter(24,'kubejs:ulv_universal_circuit',
+        ['gtceu:plastic_printed_circuit_board','gtceu:simple_soc','2x gtceu:red_alloy_bolt','2x gtceu:fine_tin_wire'],
+        'gtceu:soldering_alloy 72',200,GTValues.VA[GTValues.HV] / 3.5,4
+    );
+    DracoBulkCircuiter(12,'kubejs:lv_universal_circuit',
+        ['gtceu:plastic_printed_circuit_board','gtceu:soc','2x gtceu:fine_copper_wire','2x gtceu:tin_bolt'],
+        'gtceu:soldering_alloy 72',25,GTValues.VA[GTValues.IV] / 3.5,16
+    );
+    DracoBulkCircuiter(8,'kubejs:mv_universal_circuit',
+        ['gtceu:plastic_printed_circuit_board','gtceu:soc','4x gtceu:fine_red_alloy_wire','4x gtceu:annealed_copper_bolt'],
+        'gtceu:soldering_alloy 72',25,GTValues.VA[GTValues.LuV] / 3.5,32
+    );
+    DracoBulkCircuiter(8,'kubejs:hv_universal_circuit',
+        ['gtceu:epoxy_printed_circuit_board','gtceu:advanced_soc','4x gtceu:fine_electrum_wire','4x gtceu:platinum_bolt'],
+        'gtceu:soldering_alloy 72',25,GTValues.VA[GTValues.ZPM] / 3.5,64
+    );
+    DracoBulkCircuiter(8,'kubejs:ev_universal_circuit',
+        ['gtceu:fiber_reinforced_printed_circuit_board','gtceu:advanced_soc','12x gtceu:fine_platinum_wire','8x gtceu:niobium_titanium_bolt'],
+        'gtceu:soldering_alloy 72',25,GTValues.VA[GTValues.UV] / 3.5,96
+    );
+    DracoBulkCircuiter(8,'kubejs:iv_universal_circuit',
+        ['gtceu:multilayer_fiber_reinforced_printed_circuit_board','gtceu:crystal_soc','8x gtceu:fine_niobium_titanium_wire','8x gtceu:yttrium_barium_cuprate_bolt'],
+        'gtceu:soldering_alloy 72',50,GTValues.VA[GTValues.UV] / 3.5,128
+    );
+    DracoBulkCircuiter(8,'kubejs:luv_universal_circuit',
+        ['gtceu:neuro_processing_unit','gtceu:highly_advanced_soc','8x gtceu:fine_yttrium_barium_cuprate_wire','8x gtceu:naquadah_bolt'],
+        'gtceu:soldering_alloy 72',50,GTValues.VA[GTValues.UHV] / 3.5,144
     );
     
 });

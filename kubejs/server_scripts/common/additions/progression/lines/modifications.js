@@ -54,9 +54,13 @@ ServerEvents.recipes(event => {
     // === Rare Earth Centrifuging Fix ===
     event.remove({ id: 'gtceu:centrifuge/rare_earth_separation' });
     event.recipes.gtceu.centrifuge(id('rare_earth_speraration'))
-        .itemInputs('5x gtceu:rare_earth_dust')
-        .itemOutputs('gtceu:neodymium_dust','gtceu:samarium_dust','gtceu:cerium_dust','gtceu:yttrium_dust','gtceu:lanthanum_dust')
-        .duration(56)
+        .itemInputs('1x gtceu:rare_earth_dust')
+        .chancedOutput('1x gtceu:neodymium_dust',500,50)
+        .chancedOutput('1x gtceu:samarium_dust',500,50)
+        .chancedOutput('1x gtceu:cerium_dust',500,50)
+        .chancedOutput('1x gtceu:yttrium_dust',500,50)
+        .chancedOutput('1x gtceu:lanthanum_dust',500,50)
+        .duration(12)
         .EUt(80);
 
     //carbon acid fixes

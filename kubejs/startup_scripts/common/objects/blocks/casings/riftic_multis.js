@@ -37,4 +37,22 @@ StartupEvents.registry('block', event => {
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/riftic_multis/soul_of_the_flame');
 
+    event.create('particle_rod_holder', 'gtceu:active')
+        .hardness(5)
+        .resistance(10)
+        .soundType('metal')
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .requiresTool(true)
+        .bloom('kubejs:block/casings/riftic_multis/particle_rod_holder');
+
+    event.create('riftion_injection_core', 'gtceu:active')
+        .hardness(5)
+        .resistance(10)
+        .soundType('metal')
+        .tagBlock('mineable/pickaxe')
+        .tagBlock('minecraft:needs_iron_tool')
+        .requiresTool(true)
+        .bloom('kubejs:block/casings/riftic_multis/riftion_injection_core');
+
 });

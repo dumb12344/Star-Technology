@@ -22,22 +22,10 @@
 			y: -7.0d
 		}
 		{
-			id: "6EBA3C9601A8DDCC"
-			linked_quest: "5080743917931298"
-			x: -6.5d
-			y: 7.0d
-		}
-		{
-			id: "02B087F0A2892890"
-			linked_quest: "2F6115002741F26F"
-			x: -4.5d
-			y: 5.0d
-		}
-		{
 			id: "79C75C36CC2FA699"
 			linked_quest: "143CFCE710B59455"
-			x: 11.5d
-			y: -5.0d
+			x: 10.5d
+			y: -6.0d
 		}
 		{
 			id: "65840D605A762529"
@@ -51,7 +39,7 @@
 			dependencies: [
 				"5E7153B7A10FC241"
 				"59B0F5DB2C1E96DC"
-				"2635B921AA9053D0"
+				"1086D88615F8AB90"
 			]
 			description: ["{ftbquests.draconic_age.the_nether.description}"]
 			icon: {
@@ -63,7 +51,7 @@
 			}
 			id: "4DF07CB3D60C901C"
 			shape: "rsquare"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				icon: "minecraft:netherrack"
@@ -146,8 +134,8 @@
 				item: "gtceu:cryostate_quantum_chiller"
 				type: "item"
 			}]
-			x: -8.5d
-			y: -5.0d
+			x: -6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -168,11 +156,18 @@
 			}]
 			shape: "gear"
 			size: 1.5d
-			tasks: [{
-				id: "5A3365B01BF98E8E"
-				item: "start_core:hellforge"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5A3365B01BF98E8E"
+					item: "start_core:hellforge"
+					type: "item"
+				}
+				{
+					id: "04BFB2FB927005B1"
+					item: "kubejs:heart_of_the_flame"
+					type: "item"
+				}
+			]
 			x: -6.5d
 			y: -1.0d
 		}
@@ -241,9 +236,15 @@
 					optional_task: true
 					type: "item"
 				}
+				{
+					id: "3C0A2DC887A27895"
+					item: "gtceu:oganesson_bucket"
+					optional_task: true
+					type: "item"
+				}
 			]
 			title: "{ftbquests.draconic_age.coolants.title}"
-			x: -6.5d
+			x: -4.5d
 			y: -5.0d
 		}
 		{
@@ -257,13 +258,13 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 1.0d
+			size: 1.5d
 			tasks: [{
 				id: "2B4AB49F78A510B0"
 				item: "kubejs:magmada_alloy_coil_block"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.5d
 			y: -3.0d
 		}
 		{
@@ -288,7 +289,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["799F6F79B9FF86DF"]
+			dependencies: [
+				"799F6F79B9FF86DF"
+				"00333140377A33F5"
+			]
 			description: ["{ftbquests.draconic_age.uev_energy_input_hatch_4a.description}"]
 			id: "538113DD6E1EA84D"
 			rewards: [{
@@ -306,10 +310,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"538113DD6E1EA84D"
-				"00333140377A33F5"
-			]
+			dependencies: ["538113DD6E1EA84D"]
 			description: ["{ftbquests.draconic_age.uev_energy_input_hatch_16a.description}"]
 			id: "11971C9E5BF28E5C"
 			rewards: [{
@@ -329,14 +330,15 @@
 		{
 			dependencies: ["310FC3F86513555F"]
 			description: ["{ftbquests.draconic_age.end_armor.description}"]
-			hide_dependent_lines: true
+			hide_dependency_lines: true
 			id: "6180202612DCDBF4"
 			rewards: [{
 				id: "006592623F96E0FB"
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			size: 1.0d
+			shape: "gear"
+			size: 1.25d
 			tasks: [
 				{
 					id: "7AAEF6C77BE5E1AA"
@@ -383,13 +385,14 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
-			y: -3.0d
+			x: -12.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
 				"5E7153B7A10FC241"
 				"6180202612DCDBF4"
+				"7809407ED588BCBD"
 			]
 			description: ["{ftbquests.draconic_age.the_end.description}"]
 			icon: {
@@ -401,7 +404,7 @@
 			}
 			id: "28DE3D2A96C4D0C8"
 			shape: "rsquare"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				dimension: "minecraft:the_end"
 				icon: "minecraft:end_stone"
@@ -410,7 +413,7 @@
 				type: "dimension"
 			}]
 			x: -10.5d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0168A45EB73911AC"]
@@ -497,13 +500,14 @@
 				item: "kubejs:draconic_processing_unit"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -4.5d
 			y: 1.0d
 		}
 		{
 			dependencies: [
 				"5080743917931298"
 				"2F6115002741F26F"
+				"18FD654260DFF1D6"
 			]
 			description: ["{ftbquests.draconic_age.voidic_metals.description}"]
 			id: "7EB9C44EE7515882"
@@ -515,6 +519,11 @@
 			size: 1.0d
 			tasks: [
 				{
+					id: "5AA40001BEE0AB08"
+					item: "gtceu:chalyblux_ingot"
+					type: "item"
+				}
+				{
 					id: "42A1C4E86DF3A7BD"
 					item: "gtceu:xeproda_ingot"
 					type: "item"
@@ -524,14 +533,9 @@
 					item: "gtceu:rhexis_ingot"
 					type: "item"
 				}
-				{
-					id: "5AA40001BEE0AB08"
-					item: "gtceu:chalyblux_ingot"
-					type: "item"
-				}
 			]
 			title: "{ftbquests.draconic_age.voidic_metals.title}"
-			x: -4.5d
+			x: -6.5d
 			y: 7.0d
 		}
 		{
@@ -567,6 +571,7 @@
 			dependencies: [
 				"7EB9C44EE7515882"
 				"75C33909E2CD5EC0"
+				"07872C5ED6FAE66E"
 			]
 			description: ["{ftbquests.draconic_age.uiv_alloys.description}"]
 			hide_dependency_lines: true
@@ -579,14 +584,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "3D239E0F7B45AE92"
-					item: "gtceu:abyssal_alloy_ingot"
+					id: "31FC25EDB350FB8E"
+					item: "gtceu:ohmderblux_alloy_ingot"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "31FC25EDB350FB8E"
-					item: "gtceu:ohmderblux_alloy_ingot"
+					id: "3D239E0F7B45AE92"
+					item: "gtceu:abyssal_alloy_ingot"
 					optional_task: true
 					type: "item"
 				}
@@ -598,8 +603,8 @@
 				}
 			]
 			title: "{ftbquests.draconic_age.uiv_alloys.title}"
-			x: -2.5d
-			y: 5.0d
+			x: -4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -621,7 +626,7 @@
 				item: "kubejs:abyssal_alloy_coil_block"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 1.5d
 			y: 3.0d
 		}
 		{
@@ -640,10 +645,13 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 3.0d
+			y: 7.0d
 		}
 		{
-			dependencies: ["3F9D1B0CED0D4133"]
+			dependencies: [
+				"3F9D1B0CED0D4133"
+				"0E75A2FC17ED0C28"
+			]
 			description: ["{ftbquests.draconic_age.uiv_energy_input_hatch.description}"]
 			id: "45E628CF1DA8D380"
 			rewards: [{
@@ -658,10 +666,13 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 3.0d
+			y: 7.0d
 		}
 		{
-			dependencies: ["45E628CF1DA8D380"]
+			dependencies: [
+				"45E628CF1DA8D380"
+				"31F87896FF834E63"
+			]
 			description: ["{ftbquests.draconic_age.uiv_energy_input_hatch_4a.description}"]
 			id: "69493DCA3D764771"
 			rewards: [{
@@ -675,14 +686,11 @@
 				item: "gtceu:uiv_energy_input_hatch_4a"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 1.5d
 			y: 5.0d
 		}
 		{
-			dependencies: [
-				"69493DCA3D764771"
-				"31F87896FF834E63"
-			]
+			dependencies: ["69493DCA3D764771"]
 			description: ["{ftbquests.draconic_age.uiv_energy_input_hatch_16a.description}"]
 			id: "54944370404CEA94"
 			rewards: [{
@@ -696,8 +704,8 @@
 				item: "gtceu:uiv_energy_input_hatch_16a"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 7.0d
+			x: 3.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4DF07CB3D60C901C"]
@@ -809,8 +817,8 @@
 				item: "kubejs:draconic_microchip_processor"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 1.0d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["169C2E9DA1CF8F53"]
@@ -847,8 +855,8 @@
 				item: "kubejs:draconic_processor_assembly"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 1.0d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["66D49CB8D8819E3F"]
@@ -866,7 +874,7 @@
 				item: "kubejs:draconic_processor_computer"
 				type: "item"
 			}]
-			x: 1.5d
+			x: -0.5d
 			y: -1.0d
 		}
 		{
@@ -887,8 +895,8 @@
 				item: "kubejs:draconic_processor_mainframe"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -3.0d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5944C4DE27F98FF3"]
@@ -908,7 +916,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3AE729D3F47E9A2B"]
@@ -925,7 +933,7 @@
 				item: "kubejs:draco_boule"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 5.5d
 			y: -3.0d
 		}
 		{
@@ -945,7 +953,7 @@
 				item: "kubejs:draco_wafer"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 5.5d
 			y: -5.0d
 		}
 		{
@@ -968,8 +976,8 @@
 		}
 		{
 			dependencies: [
-				"310FC3F86513555F"
 				"1B6159E114BA50ED"
+				"059CB064A515B157"
 			]
 			description: ["{ftbquests.draconic_age.sterile_cleaning_maintenance_hatch.description}"]
 			hide_dependent_lines: true
@@ -986,13 +994,10 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
-			dependencies: [
-				"6A82CC9F01960097"
-				"31F87896FF834E63"
-			]
+			dependencies: ["31F87896FF834E63"]
 			description: ["{ftbquests.draconic_age.abyssal_containment_room.description}"]
 			id: "09B55AFE7C06EC82"
 			rewards: [{
@@ -1008,7 +1013,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["75C33909E2CD5EC0"]
@@ -1026,8 +1031,8 @@
 				item: "gtceu:draconyallium_ingot"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.0d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1050,7 +1055,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1075,7 +1080,7 @@
 			}]
 			title: "{ftbquests.draconic_age.pure_dragon_breath.title}"
 			x: 5.5d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3AE729D3F47E9A2B"]
@@ -1100,8 +1105,8 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: -5.0d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3B1453C435E3950B"]
@@ -1119,7 +1124,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			id: "51FAA26B6A537091"
@@ -1131,7 +1136,7 @@
 				type: "checkmark"
 			}]
 			title: "{ftbquests.positioner.title}"
-			x: -3.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -1178,8 +1183,8 @@
 				item: "gtceu:mega_abs"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -3.0d
+			x: -8.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5944C4DE27F98FF3"]
@@ -1205,8 +1210,8 @@
 				}
 			]
 			title: "{ftbquests.draconic_age.uev_parallels.title}"
-			x: 1.5d
-			y: -5.0d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["218CABD676F3B732"]
@@ -1224,8 +1229,8 @@
 				item: "gtceu:nyanium_ingot"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 2.0d
+			x: -10.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["28DE3D2A96C4D0C8"]
@@ -1245,7 +1250,7 @@
 				type: "structure"
 			}]
 			x: -10.5d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1261,8 +1266,8 @@
 				title: "{ftbquests.draconic_age.dragon_breath_looping.title}"
 				type: "checkmark"
 			}]
-			x: -5.5d
-			y: 4.0d
+			x: -4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1305,8 +1310,8 @@
 				item: "kubejs:end_talisman"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 7.0d
+			x: -12.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5944C4DE27F98FF3"]
@@ -1322,8 +1327,8 @@
 				item: "start_core:daydream_spire"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -3.0d
+			x: 3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["16FDCABFC80579D5"]
@@ -1342,8 +1347,8 @@
 				item: "kubejs:abyssal_processor_mainframe"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 3.0d
+			x: 9.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3AE6E85C2FC76DE9"]
@@ -1361,8 +1366,8 @@
 				item: "kubejs:abyssal_processor_computer"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 5.0d
+			x: 9.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6F50E6C2CBCF8272"]
@@ -1404,7 +1409,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1425,7 +1430,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["64DC78AF9E2FAB32"]
@@ -1453,7 +1458,7 @@
 					type: "item"
 				}
 			]
-			x: -8.5d
+			x: -6.5d
 			y: 1.0d
 		}
 		{
@@ -1472,15 +1477,15 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
-				"2DACE6EF41A118D9"
 				"3FBD3851CCB3F14E"
+				"2BD5C9B89DCEC339"
+				"2DACE6EF41A118D9"
 			]
 			description: ["{ftbquests.draconic_age.lepton_resonant_thallium_antimonide_ingot.description}"]
-			hide_dependent_lines: true
 			id: "31F87896FF834E63"
 			rewards: [{
 				count: 3
@@ -1494,15 +1499,17 @@
 				item: "gtceu:lepton_resonant_thallium_antimonide_ingot"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 3.5d
 			y: 3.0d
 		}
 		{
 			dependencies: [
 				"37F9C85CFCFFDA5F"
 				"3D239E0F7B45AE92"
+				"45E628CF1DA8D380"
 			]
 			description: ["{ftbquests.draconic_age.draco_abyssal_ingot.description}"]
+			hide_dependency_lines: true
 			id: "6A82CC9F01960097"
 			rewards: [{
 				id: "3210FE0BBF45E34D"
@@ -1515,8 +1522,8 @@
 				item: "gtceu:draco_abyssal_ingot"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.0d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1583,11 +1590,14 @@
 				}
 			]
 			title: "{ftbquests.draconic_age.super_heavy_elements.title}"
-			x: -10.5d
-			y: -7.0d
+			x: -12.5d
+			y: -5.0d
 		}
 		{
-			dependencies: ["45E628CF1DA8D380"]
+			dependencies: [
+				"45E628CF1DA8D380"
+				"07872C5ED6FAE66E"
+			]
 			description: ["{ftbquests.draconic_age.rhenium_super_composite_alloy_ingot.description}"]
 			id: "33FBF8561A3D901D"
 			rewards: [{
@@ -1601,8 +1611,8 @@
 				item: "gtceu:rhenium_super_composite_alloy_ingot"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: -0.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4DF07CB3D60C901C"]
@@ -1621,8 +1631,8 @@
 				title: "{ftbquests.draconic_age.bastion.title}"
 				type: "structure"
 			}]
-			x: -12.5d
-			y: -3.0d
+			x: -10.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1B6159E114BA50ED"]
@@ -1662,13 +1672,12 @@
 				}
 			]
 			title: "{ftbquests.draconic_age.draconic_qmds.title}"
-			x: -5.5d
-			y: 2.0d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["310FC3F86513555F"]
 			description: ["{ftbquests.draconic_age.polonium_bismide_ingot.description}"]
-			hide_dependent_lines: true
 			id: "00333140377A33F5"
 			rewards: [{
 				id: "4ADD6A8943EA9210"
@@ -1681,8 +1690,8 @@
 				item: "gtceu:polonium_bismide_ingot"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.0d
+			x: 1.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1699,14 +1708,11 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
-			dependencies: [
-				"6A82CC9F01960097"
-				"2DACE6EF41A118D9"
-			]
-			description: ["{ftbquests.draconic_age.atomic_synthesis_plant.description}"]
+			dependencies: ["31F87896FF834E63"]
+			description: ["{ftbquests.draconic_age.atomic_materialization_plant.description}"]
 			id: "7C050BBD087D46BD"
 			rewards: [{
 				id: "0624D90E24CCA3B2"
@@ -1716,10 +1722,10 @@
 			size: 1.0d
 			tasks: [{
 				id: "2B0B4B5EEA540F04"
-				item: "gtceu:atomic_synthesis_plant"
+				item: "gtceu:atomic_materialization_plant"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 3.5d
 			y: 1.0d
 		}
 		{
@@ -1759,8 +1765,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: 3.0d
+			x: 5.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6D6C79E7CBBCC893"]
@@ -1778,7 +1784,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1795,7 +1801,7 @@
 				type: "item"
 			}]
 			x: 9.5d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["11EA350764763463"]
@@ -1917,7 +1923,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["074635DC3322DC99"]
@@ -1955,14 +1961,11 @@
 				item: "kubejs:prisma_helical_nucleus"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 7.5d
 			y: -5.0d
 		}
 		{
-			dependencies: [
-				"2DACE6EF41A118D9"
-				"6A82CC9F01960097"
-			]
+			dependencies: ["31F87896FF834E63"]
 			id: "70F533114F1D74B2"
 			size: 1.0d
 			tasks: [{
@@ -1970,8 +1973,8 @@
 				item: "gtceu:ultimate_ebf"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 1.0d
+			x: 5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7C7300975C25047A"]
@@ -1983,8 +1986,8 @@
 				item: "kubejs:abyssal_processor"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 5.0d
+			x: 9.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5A724E912A475EAB"]
@@ -1995,21 +1998,22 @@
 				item: "kubejs:abyssal_processing_unit"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 5.0d
+			x: 7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
 				"112C0821547F18B2"
 				"6A49DA8ECA601B4B"
 			]
+			icon: "gtceu:oganesson_plasma_bucket"
 			id: "5FAEC6FD93ACC381"
 			size: 1.0d
 			tasks: [
 				{
-					id: "4FB3DB9E35967567"
-					item: "gtceu:oganesson_bucket"
-					type: "item"
+					id: "0A40A0A86C660693"
+					title: "-toLang \"Noblest \"Gas\"\""
+					type: "checkmark"
 				}
 				{
 					id: "36A35F698B08CADD"
@@ -2018,7 +2022,7 @@
 					type: "item"
 				}
 			]
-			x: -4.5d
+			x: -6.5d
 			y: -5.0d
 		}
 		{
@@ -2047,7 +2051,10 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["07A6B3DF67E267A0"]
+			dependencies: [
+				"07A6B3DF67E267A0"
+				"7F8D144334941F9D"
+			]
 			id: "6A49DA8ECA601B4B"
 			size: 1.0d
 			tasks: [{
@@ -2064,15 +2071,16 @@
 				"07A6B3DF67E267A0"
 			]
 			description: ["{ftbquests.draconic_age.compass_of_the_flame.description}"]
-			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "7255F8A417A52A46"
+			optional: true
 			tasks: [{
 				id: "7B34E58D08A73A5A"
 				item: "kubejs:compass_of_the_flame"
 				type: "item"
 			}]
 			x: -10.5d
-			y: -1.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["28DE3D2A96C4D0C8"]
@@ -2091,8 +2099,90 @@
 					type: "item"
 				}
 			]
-			x: -10.5d
+			x: -8.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["2E34F23A42004285"]
+			id: "5A6856892D99F5ED"
+			tasks: [{
+				id: "03CD93D6A3F4C4B3"
+				item: "gtceu:borealic_concentrate_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["799F6F79B9FF86DF"]
+			hide_dependency_lines: true
+			id: "7809407ED588BCBD"
+			shape: "gear"
+			tasks: [{
+				id: "3C82B2D2AF0F6099"
+				item: "kubejs:end_coordinate_crystal"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3B1453C435E3950B"
+				"694E1F6458D5F72F"
+			]
+			id: "6BAC4AC1B7032B93"
+			tasks: [{
+				id: "6542FCC23D69CF5C"
+				item: "gtceu:primordial_infusion"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["09B55AFE7C06EC82"]
+			id: "10019AD38638B628"
+			tasks: [{
+				id: "3A40738B3A56C2E2"
+				item: "kubejs:prismalic_reflector_casing"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0E75A2FC17ED0C28"]
+			id: "07872C5ED6FAE66E"
+			tasks: [{
+				id: "102068348306ABB6"
+				item: "kubejs:dragonic_reflector_casing"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6A82CC9F01960097"]
+			id: "2BD5C9B89DCEC339"
+			tasks: [{
+				id: "7C71CE2BE4CF25FF"
+				item: "gtceu:abyssal_akreyriadix_stabiliser"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["31F87896FF834E63"]
+			id: "212353E6819931CD"
+			tasks: [{
+				id: "358435C7049A09C8"
+				item: "gtceu:true_synthesis_array"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
 		}
 	]
 	title: "{ftbquests.draconic_age.title}"

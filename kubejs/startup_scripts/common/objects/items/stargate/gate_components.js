@@ -23,11 +23,11 @@ StartupEvents.registry('item', event => {
 
     ['csg','asg','dsg'].forEach(tier => {
 
-        event.create(`${tier}_field_stabilizer`)
-            .tooltip(Text.translate(`item.kubejs.${tier}_field_stabilizer.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/${tier}_field_stabilizer`);
+        event.create(`${tier}_field_stabiliser`)
+            .tooltip(Text.translate(`item.kubejs.${tier}_field_stabiliser.tooltip`))
+            // .texture(`kubejs:item/stargate/gate_items/components/${tier}_field_stabiliser`);
             .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/components/field_stabilizer`,
+                layer0: `kubejs:item/stargate/gate_items/components/field_stabiliser`,
                 layer1: `kubejs:item/stargate/gate_items/components/${tier}`
             })
 

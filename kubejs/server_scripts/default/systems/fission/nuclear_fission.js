@@ -39,33 +39,93 @@ global.not_hardmode(() => {
                 .itemInputs(cell)
                 .itemInputs(composition)
                 .itemOutputs('kubejs:' + type + '_fuel_rod')
-                .duration(1600 / (2 ** tier))
-                .EUt(GTValues.VHA[GTValues.HV] * (4 ** tier));
+                .duration(1200 / (2 ** tier))
+                .EUt(GTValues.VA[GTValues.HV] * (4 ** tier));
 
             event.recipes.gtceu.centrifuge(id('depleted_' + type + '_fuel_rod_decomposition'))
                 .itemInputs('kubejs:depleted_' + type + '_fuel_rod')
                 .itemOutputs(cell)
                 .itemOutputs(decomposition)
-                .duration(2000 / (2 ** tier))
+                .duration(1600 / (2 ** tier))
                 .EUt(GTValues.VHA[GTValues.HV] * (4 ** tier));
 
         }
 
-        nuclearRod(`thr`,1,`4x ${Th230}`,`4x ${U235}`);
-        nuclearRod(`leu238`,1,`4x ${U238}`,[`2x ${Pu244}`,`2x ${Np237}`]);
-        nuclearRod(`heu`,2,`4x ${U235}`,[`3x ${Pu241}`, `1x ${waste}`]);
-        nuclearRod(`plu`,2,`4x ${Pu244}`,[`2x ${Pu239}`,`1x ${Pu241}`,`1x ${Am241}`]);
-        nuclearRod(`mox239`,2,[`2x ${U238}`,`2x ${Pu239}`],[`2x ${Am241}`,`1x ${Pu241}`, `1x ${waste}`]);
-        nuclearRod(`amr`,3,`4x ${Am241}`,[`2x ${Cm244}`,`1x ${Pu238}`,`1x ${Np237}`]);
-        nuclearRod(`nep`,3,`4x ${Np237}`,[`2x ${Pu238}`,`1x ${Pu239}`, `1x ${waste}`]);
-        nuclearRod(`crm`,4,`4x ${Cm244}`,[`2x ${Cf252}`,`2x ${Pu239}`]);
-        nuclearRod(`mox241`,4,[`2x ${U238}`,`2x ${Pu241}`],[`3x ${Pu239}`,`1x ${Am241}`]);
-        nuclearRod(`tpu`,4,[`2x ${Th230}`,`2x ${Pu239}`],[`3x ${U233}`,`1x ${Am241}`]);
-        nuclearRod(`mox238`,4,[`3x ${Pu238}`,`1x ${Cf252}`],[`3x ${Cm244}`,`1x ${Pu239}`]);
-        nuclearRod(`caf`,5,`4x ${Cf252}`,[`2x ${Fm257}`,`2x ${Pu241}`]);
-        nuclearRod(`etu`,5,[`2x ${Cm244}`,`1x ${Cf252}`,`1x ${Am241}`],[`2x ${Pu238}`,`2x ${Es253}`]);
-        nuclearRod(`leu233`,5,`4x ${U233}`,[`2x ${Pu239}`,`1x ${Cf252}`, `1x ${waste}`]);
-        nuclearRod(`nqe`,6,[`2x ${Nq404}`,`2x ${Es253}`],[`2x ${Ec404}`, `1x ${Nq402}`, `1x ${waste}`]);
+        nuclearRod(`thr`,
+            1,
+            `4x ${Th230}`,
+            `4x ${U235}`
+        );
+        nuclearRod(`leu238`,
+            1,
+            `4x ${U238}`,
+            [`2x ${Pu244}`,`2x ${Np237}`]
+        );
+        nuclearRod(`heu`,
+            2,
+            `4x ${U235}`,
+            [`3x ${Pu241}`, `1x ${waste}`]
+        );
+        nuclearRod(`plu`,
+            2,
+            `4x ${Pu244}`,
+            [`2x ${Pu239}`,`1x ${Pu241}`,`1x ${Am241}`]
+        );
+        nuclearRod(`mox239`,
+            2,
+            [`2x ${U238}`,`2x ${Pu239}`],
+            [`2x ${Am241}`,`1x ${Pu241}`, `1x ${waste}`]
+        );
+        nuclearRod(`amr`,
+            3,
+            `4x ${Am241}`,
+            [`2x ${Cm244}`,`1x ${Pu238}`,`1x ${Np237}`]
+        );
+        nuclearRod(`nep`,
+            3,
+            `4x ${Np237}`,
+            [`2x ${Pu238}`,`1x ${Pu239}`, `1x ${waste}`]
+        );
+        nuclearRod(`crm`,
+            4,
+            `4x ${Cm244}`,
+            [`2x ${Cf252}`,`2x ${Pu239}`]
+        );
+        nuclearRod(`mox241`,
+            4,
+            [`2x ${U238}`,`2x ${Pu241}`],
+            [`3x ${Pu239}`,`1x ${Am241}`]
+        );
+        nuclearRod(`tpu`,
+            4,
+            [`2x ${Th230}`,`2x ${Pu239}`],
+            [`3x ${U233}`,`1x ${Am241}`]
+        );
+        nuclearRod(`mox238`,
+            4,
+            [`3x ${Pu238}`,`1x ${Cf252}`],
+            [`3x ${Cm244}`,`1x ${Pu239}`]
+        );
+        nuclearRod(`caf`,
+            5,
+            `4x ${Cf252}`,
+            [`2x ${Fm257}`,`2x ${Pu241}`]
+        );
+        nuclearRod(`etu`,
+            5,
+            [`2x ${Cm244}`,`1x ${Cf252}`,`1x ${Am241}`],
+            [`2x ${Pu238}`,`2x ${Es253}`]
+        );
+        nuclearRod(`leu233`,
+            5,
+            `4x ${U233}`,
+            [`2x ${Pu239}`,`1x ${Cf252}`, `1x ${waste}`]
+        );
+        nuclearRod(`nqe`,
+            6,
+            [`2x ${Nq404}`,`2x ${Es253}`],
+            [`2x ${Ec404}`, `1x ${Nq402}`, `1x ${waste}`]
+        );
 
     });
 

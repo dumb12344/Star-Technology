@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('auroric_vacuum_isolation_reactor', 'multiblock')
         .machine((holder) => new $VacuumChemicalReactorMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
+        .tooltips([ 
             Text.translate("block.start_core.breaker_line")
         ])
         .paginatedTooltips([[
@@ -49,6 +49,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('k', Predicates.blocks('kubejs:nyanium_engine_intake_casing'))
             .where('l', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
-        .workableCasingModel('kubejs:block/casings/threading/absolute_annihilation_casing', 'gtceu:block/machines/chemical_reactor');
-
+       .workableCasingModel('kubejs:block/casings/threading/absolute_annihilation_casing',  
+        'gtceu:block/machines/chemical_reactor');
+        
 });

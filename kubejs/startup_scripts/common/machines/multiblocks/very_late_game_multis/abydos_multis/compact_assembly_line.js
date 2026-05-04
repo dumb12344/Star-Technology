@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('compact_assembly_line', 'multiblock')
         .machine((holder) => new $AssemblyLineMulti(holder))
         .rotationState(RotationState.NON_Y_AXIS)
-        .tooltips([
+        .tooltips([ 
             Text.translate("block.start_core.gap"),
             Text.translate("gtceu.multiblock.exact_hatch_1.tooltip")
         ])

@@ -3,8 +3,8 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('pressure_heat_chamber')
         .category('highly_advanced')
         .setEUIO('in')
-        .setMaxIOSize(2, 1, 2, 1)
-        .setProgressBar(GuiTextures.PROGRESS_BAR_CRYSTALLIZATION, FillDirection.LEFT_TO_RIGHT)
+        .setMaxIOSize(2, 2, 2, 2)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_CRYSTALLIZATION , FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ARC);
 
 });

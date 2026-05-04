@@ -194,6 +194,16 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VH[GTValues.UHV])
         .circuit(8);
 
+    event.recipes.gtceu.alloy_blast_smelter(id('neutrindium_soldering_alloy'))
+        .itemInputs('2x gtceu:neutronium_dust', '51x gtceu:indium_dust', '6x gtceu:tin_dust',
+             '4x gtceu:darmstadtium_dust', '5x gtceu:cadmium_dust', '4x gtceu:enriched_naquadah_dust',
+             '2x gtceu:hafnium_dust')
+        .outputFluids('gtceu:neutrindium_soldering_alloy 10656')
+        .duration(4810)
+        .blastFurnaceTemp(14895)
+        .EUt(GTValues.VH[GTValues.UIV])
+        .circuit(7);
+
     event.remove({ output: 'gtceu:uv_voltage_coil' });
     event.recipes.gtceu.assembler(id('uv_voltage_coil'))
         .itemInputs('gtceu:magnetic_dysprosium_rod', '16x gtceu:fine_tritanium_wire')
@@ -246,17 +256,17 @@ ServerEvents.recipes(event => {
     event.remove({id: 'gtceu:centrifuge/impure_enriched_naquadah_solution_separation' })
 
     event.recipes.gtceu.centrifuge(id('impure_naquadria_solution_separation'))
-        .inputFluids('gtceu:impure_naquadria_solution 6000')
-        .itemOutputs('gtceu:indium_phosphide_dust', '3x gtceu:trinium_sulfide_dust', '6x gtceu:antimony_trifluoride_dust')
+        .inputFluids('gtceu:impure_naquadria_solution 4000')
+        .itemOutputs('2x gtceu:indium_phosphide_dust', '1x gtceu:trinium_sulfide_dust', '4x gtceu:antimony_trifluoride_dust')
         .outputFluids('gtceu:naquadria_solution 3000')
-        .duration(1200)
-        .EUt(GTValues.VA[GTValues.EV]);
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.IV]);
 
     event.recipes.gtceu.centrifuge(id('impure_enriched_naquadah_solution_separation'))
-        .inputFluids('gtceu:impure_enriched_naquadah_solution 6000')
-        .itemOutputs('3x gtceu:trinium_sulfide_dust', 'gtceu:indium_phosphide_dust', '6x gtceu:antimony_trifluoride_dust')
+        .inputFluids('gtceu:impure_enriched_naquadah_solution 4000')
+        .itemOutputs('3x gtceu:trinium_sulfide_dust','4x gtceu:antimony_trifluoride_dust')
         .outputFluids('gtceu:enriched_naquadah_solution 3000')
-        .duration(1200)
-        .EUt(GTValues.VA[GTValues.EV]);
+        .duration(800)
+        .EUt(GTValues.VHA[GTValues.IV]);
 
 });

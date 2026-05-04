@@ -8,9 +8,9 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:uv_fermenter'))
+                .researchStack(Item.of('gtceu:zpm_fermenter'))
                 .EUt(GTValues.VHA[GTValues.ZPM])
-                .CWUt(128)
+                .CWUt(32)
             )
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
@@ -21,9 +21,9 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:uv_brewery'))
+                .researchStack(Item.of('gtceu:zpm_brewery'))
                 .EUt(GTValues.VHA[GTValues.ZPM])
-                .CWUt(128)
+                .CWUt(32)
             )
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
@@ -34,9 +34,9 @@ ServerEvents.recipes(event => {
         .duration(1200)
         .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('gtceu:uv_distillery'))
+                .researchStack(Item.of('gtceu:zpm_distillery'))
                 .EUt(GTValues.VHA[GTValues.ZPM])
-                .CWUt(128)
+                .CWUt(32)
             )
         .EUt(GTValues.VHA[GTValues.ZPM]);
 

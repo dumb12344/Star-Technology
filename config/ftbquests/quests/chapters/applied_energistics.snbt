@@ -1869,6 +1869,17 @@
 			x: 10.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["1E15558A3C50312D"]
+			id: "0D861EADBA0E8735"
+			tasks: [{
+				id: "5CF4649A48F2B646"
+				item: "expandedgt:dual_me_stocking_input_hatch"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 7.0d
+		}
 	]
 	title: "{ftbquests.ae2.title}"
 }

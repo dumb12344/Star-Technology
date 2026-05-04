@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
         .itemInputs('6x gtceu:estalt_dust')
         .inputFluids('gtceu:fluoroantimonic_acid 2000')
         .outputFluids('gtceu:impure_calamatium_solution 1000', 'gtceu:impure_isovol_solution 1000', 'gtceu:fluorine 4000')
-        .duration(1200)
+        .duration(480)
         .EUt(GTValues.VHA[GTValues.ZPM])
         .vacuumLevel(90);
 

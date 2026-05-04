@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     Fusion(4,'neutronium',144,'americium',216,'naquadria',288,98304,45,600);
     Fusion(1,'lutetium',144,'lanthanum',144,'silicon',144,7680,7.2,80);
     Fusion(2,'argon_plasma',1000,'carbon',144,'magnesium',144,24576,7.2,180);
-    Fusion(4,'americium_plasma',144,'plutonium_241',144,'hydrogen',1000,98304,15.6,760);
+    Fusion(4,'americium_plasma',144,'plutonium_238',144,'hydrogen',3500,98304,15.6,760);
     Fusion(2,'tin_plasma',144,'silver',144,'helium_3',1500,24576,7.2,280);
     Fusion(5,'aurourium',144,'nether_star_concentrate',396,'seaborgium',108,884736,19.2,888);
     Fusion(6,'paradox_plasma',144,'chaos_centric_void',200,'order_centric_void',200,294912,16.2,900);

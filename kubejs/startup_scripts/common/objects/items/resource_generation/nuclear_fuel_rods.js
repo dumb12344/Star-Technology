@@ -44,7 +44,7 @@ StartupEvents.registry('item', event => {
 
     nuclearRod('crm','zpm','96% §eCm²⁴⁴','48% Cf²⁵² | 48% Pu²³⁹',false);
 
-    nuclearRod('mox241','zpm','48% §eU²³⁸ §7|§r48%  §ePu²⁴¹','72% Pu²³⁹ | 24% Am²⁴¹',false);
+    nuclearRod('mox241','zpm','48% §eU²³⁸ §7|§r 48%  §ePu²⁴¹','72% Pu²³⁹ | 24% Am²⁴¹',false);
 
     nuclearRod('tpu','zpm','48% §eTh²³⁰ §7|§f 48% §ePu²³⁹','72% U²³³ | 24% Am²⁴¹',false);
 

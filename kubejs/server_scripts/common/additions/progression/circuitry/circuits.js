@@ -223,6 +223,7 @@ ServerEvents.recipes(event => {
         .itemInputs('4x gtceu:meat_dust','4x gtceu:salt_dust','3x gtceu:calcium_dust','4x gtceu:agar_dust','1x gtceu:strontium_dust')
         .inputFluids('gtceu:mutagen 4000')
         .outputFluids('gtceu:raw_growth_medium 7500')
+        .cleanroom(CleanroomType.STERILE_CLEANROOM)
         .duration(1500)
         .EUt(GTValues.VA[GTValues.IV]);
 
@@ -247,7 +248,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.circuit_assembler(id('runic_convergence_processing_unit'))
         .itemInputs(`1x kubejs:runic_printed_circuit_board`,'4x gtceu:uhpic_chip','8x gtceu:polyether_ether_ketone_small_fluid_pipe',
-            '32x gtceu:silicone_rubber_foil','8x gtceu:trinaquadalloy_plate','8x gtceu:zircalloy_4_bolt')
+            '8x gtceu:trinaquadalloy_plate','16x gtceu:polybenzimidazole_foil','8x gtceu:zircalloy_4_bolt')
         .inputFluids(`gtceu:runic_convergence_infusion 250`)
         .itemOutputs(`1x kubejs:runic_convergence_processing_unit`)
         .duration(600)
@@ -266,7 +267,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.circuit_assembler(id('draconic_processing_unit'))
         .itemInputs('1x kubejs:draconic_printed_circuit_board','4x kubejs:draconic_brain_matter_cells',
             '8x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_small_fluid_pipe', 
-            '16x gtceu:polyimide_foil','8x gtceu:void_plate','8x gtceu:titan_steel_bolt')
+            '8x gtceu:void_plate','16x gtceu:polyimide_foil','8x gtceu:tritan_steel_bolt')
         .inputFluids('gtceu:dragon_breath 75')
         .itemOutputs('1x kubejs:draconic_processing_unit')
         .duration(600)
@@ -284,7 +285,7 @@ ServerEvents.recipes(event => {
         
     event.recipes.gtceu.circuit_assembler(id('abyssal_processing_unit'))
         .itemInputs('1x kubejs:abyssal_printed_circuit_board','16x kubejs:draconic_brain_matter_cells','8x gtceu:nyanium_small_fluid_pipe', 
-            '32x gtceu:polyimide_foil','8x gtceu:abyssal_alloy_plate','8x gtceu:hvga_steel_bolt')
+            '8x gtceu:abyssal_alloy_plate','16x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_foil','8x gtceu:hvga_steel_bolt')
         .inputFluids('gtceu:draconic_enrichment_serum 200')
         .itemOutputs('1x kubejs:abyssal_processing_unit')
         .duration(1200)
