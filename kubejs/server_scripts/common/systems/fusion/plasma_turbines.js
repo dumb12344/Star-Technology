@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.LuV]);
 
     event.recipes.gtceu.assembler(id('zpm_rotor_holder'))
-        .itemInputs('gtceu:zpm_machine_hull','4x gtceu:trinium_gear','gtceu:zpm_electric_motor','4x gtceu:small_naquadah_alloy_gear','6x gtceu:osmiridium_round','gtceu:naquadah_alloy_ring','8x gtceu:fine_europium_wire')
+        .itemInputs('gtceu:zpm_machine_hull','4x gtceu:trinium_gear','gtceu:zpm_electric_motor','4x gtceu:small_osthendah_gear','6x gtceu:osmiridium_round','gtceu:osthendah_ring','8x gtceu:fine_europium_wire')
         .inputFluids('gtceu:polybenzimidazole 144')
         .itemOutputs('gtceu:zpm_rotor_holder')
         .circuit(3)

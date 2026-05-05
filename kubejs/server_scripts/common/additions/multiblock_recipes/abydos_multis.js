@@ -27,7 +27,20 @@ ServerEvents.recipes(event => {
                 .EUt(GTValues.VHA[GTValues.UV])
                 .CWUt(64)
             )
-        .EUt(GTValues.VHA[GTValues.UHV])
+        .EUt(GTValues.VHA[GTValues.UHV]);
+
+    event.recipes.gtceu.assembly_line(id('bacteria_synthesizer'))
+        .itemInputs('gtceu:uv_machine_hull', '4x gtceu:uhv_electric_motor', 'gtceu:darmstadtium_rotor', '2x gtceu:uv_fluid_regulator', '4x #gtceu:circuits/uhv')
+        .inputFluids('gtceu:soldering_alloy 1872', 'gtceu:naquadria 288')
+        .itemOutputs('gtceu:bacteria_synthesizer')
+        .duration(1200)
+        .stationResearch(
+            researchRecipeBuilder => researchRecipeBuilder
+                .researchStack(Item.of('gtceu:uv_chemical_reactor'))
+                .EUt(GTValues.VHA[GTValues.UHV])
+                .CWUt(64)
+            )
+        .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.assembly_line(id('cyclonic_sifter'))
         .itemInputs('gtceu:zpm_machine_hull', '12x #gtceu:circuits/uv','56x gtceu:uhpic_chip', '16x gtceu:prismalium_gear',

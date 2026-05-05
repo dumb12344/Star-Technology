@@ -39,7 +39,7 @@
 			id: "251255FB361F38BE"
 			linked_quest: "4A4275186719AD8D"
 			x: -9.5d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			id: "055E80BF97224848"
@@ -63,7 +63,7 @@
 			id: "400BFC5E40D565E2"
 			linked_quest: "0C78BD4A7A0B98E4"
 			x: -9.5d
-			y: -3.0d
+			y: -1.0d
 		}
 	]
 	quests: [
