@@ -44,6 +44,7 @@ ServerEvents.recipes (event => {
         .inputFluids(`gtceu:chlorine 4000`)
         .outputFluids(`gtceu:silicon_tetrachloride 1000`)
         .duration(200)
+        .circuit(0)
         .EUt(GTValues.VHA[GTValues.ZPM]);
     
     lcr(id(`tetraethyl_orthosilicate`))
