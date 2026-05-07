@@ -108,7 +108,10 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["179A15014A5716B5"]
+			dependencies: [
+				"179A15014A5716B5"
+				"27C0ED4305E84D21"
+			]
 			description: ["{ftbquests.abydos.cyclonic_sifter.description}"]
 			id: "1A8F645AC1B30411"
 			rewards: [{
@@ -1092,30 +1095,28 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"2911EC7333E0E9C5"
-				"17946D19C10BFC9E"
-			]
+			dependencies: ["2911EC7333E0E9C5"]
 			description: ["{ftbquests.abydos.darmstadtium_ingot.description}"]
-			hide_dependent_lines: true
 			id: "27C0ED4305E84D21"
 			rewards: [{
 				id: "2CB2FD24D7187D27"
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			shape: "circle"
 			size: 1.0d
 			tasks: [{
 				id: "68CB622EF69BE297"
 				item: "gtceu:darmstadtium_ingot"
 				type: "item"
 			}]
-			x: -4.5d
-			y: -5.5d
+			x: -6.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["27C0ED4305E84D21"]
 			description: ["{ftbquests.abydos.uv_machine_hull.description}"]
+			hide_dependency_lines: true
 			id: "3F4C068368F97580"
 			rewards: [{
 				id: "16A9EF2CDC5E6B40"
@@ -1172,8 +1173,8 @@
 				item: "gtceu:americium_ingot"
 				type: "item"
 			}]
-			x: -6.5d
-			y: -7.5d
+			x: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [

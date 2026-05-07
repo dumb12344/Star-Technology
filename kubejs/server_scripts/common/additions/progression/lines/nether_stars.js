@@ -91,9 +91,9 @@ ServerEvents.recipes(event => {
 
         event.recipes.gtceu.heat_chamber(id(`energized_${element}`))
             .itemInputs(`1x kubejs:energized_nether_star_shard`)
-            .inputFluids(`gtceu:${element} 432`)
-            .outputFluids(`gtceu:energized_${element} 432`)
-            .duration(560)
+            .inputFluids(`gtceu:${element} 1728`)
+            .outputFluids(`gtceu:energized_${element} 1728`)
+            .duration(960)
             .EUt(GTValues.VA[GTValues.LuV]);
 
         event.recipes.gtceu.reflector_fusion_reactor(id(`nether_tempered_${element}`))

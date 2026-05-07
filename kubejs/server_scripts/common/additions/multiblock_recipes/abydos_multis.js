@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.UHV]);
 
     event.recipes.gtceu.assembly_line(id('bacteria_synthesizer'))
-        .itemInputs('gtceu:uv_machine_hull', '4x gtceu:uhv_electric_motor', 'gtceu:darmstadtium_rotor', '2x gtceu:uv_fluid_regulator', '4x #gtceu:circuits/uhv')
+        .itemInputs('gtceu:uhv_machine_hull', '4x gtceu:uhv_electric_motor', 'gtceu:naquadah_alloy_rotor', '2x gtceu:uhv_fluid_regulator', '4x #gtceu:circuits/uhv')
         .inputFluids('gtceu:soldering_alloy 1872', 'gtceu:naquadria 288')
         .itemOutputs('gtceu:bacteria_synthesizer')
         .duration(1200)
@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('gtceu:uv_chemical_reactor'))
                 .EUt(GTValues.VHA[GTValues.UHV])
-                .CWUt(64)
+                .CWUt(96)
             )
         .EUt(GTValues.VHA[GTValues.UHV]);
 
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('gtceu:large_sifting_funnel'))
                 .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(144)
+                .CWUt(24)
         )
         .EUt(GTValues.VA[GTValues.UV]); 
 
@@ -95,7 +95,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('gtceu:large_distillery'))
                 .EUt(GTValues.VHA[GTValues.UV])
-                .CWUt(144)
+                .CWUt(24)
         )
         .EUt(GTValues.VA[GTValues.UV]); 
 
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('gtceu:large_extruder'))
                 .EUt(GTValues.VA[GTValues.ZPM])
-                .CWUt(128)
+                .CWUt(64)
         )
         .EUt(GTValues.VHA[GTValues.UV]); 
 
