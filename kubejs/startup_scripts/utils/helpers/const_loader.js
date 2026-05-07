@@ -95,3 +95,6 @@
     
     // Formatting Util
     const $FormattingUtil = Java.loadClass('com.gregtechceu.gtceu.utils.FormattingUtil');
+
+    // Optical Computation Machine (for multiblocks that use CWU)
+    const $OpticalComputationMachine = Java.loadClass('com.gregtechceu.gtceu.common.machine.multiblock.electric.research.OpticalComputationMachine');

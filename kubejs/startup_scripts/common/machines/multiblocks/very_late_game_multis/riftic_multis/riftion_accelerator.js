@@ -13,6 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
     event.create('riftion_accelerator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
+        .machine(holder => new $OpticalComputationMachine(holder))
         .recipeType('riftion_accelerator')
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(() => Block.getBlock('kubejs:draco_ware_casing'))
