@@ -274,8 +274,8 @@ global.getDataItem = (cwu) => (cwu >= 320) ? 'start_core:component_data_core' : 
 
 ServerEvents.recipes(event => {
 
-  global.researchBuilder = (machineType, recId, inputsI, inputsF, outputsI, duration, cwuT, totalCWU, euT, researched) => {
-      const dataItem = global.getDataItem(cwuT);
+  global.researchBuilder = (machineType, recId, inputsI, inputsF, outputsI, duration, cwuT, totalCWU, euT, researched, otherDataItem) => {
+      const dataItem = otherDataItem || global.getDataItem(cwuT);
       const id = global.id;
       
       let mainRecipe = event.recipes.gtceu[machineType](id(recId));
@@ -295,6 +295,7 @@ ServerEvents.recipes(event => {
           .stationResearch(
             researchRecipeBuilder => researchRecipeBuilder
               .researchStack(Item.of(researched))
+              .dataStack(Item.of(dataItem))
               .CWUt(cwuT)
               .EUt(euT)
           )
