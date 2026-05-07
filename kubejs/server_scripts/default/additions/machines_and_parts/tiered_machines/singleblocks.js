@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
                 H: `gtceu:${tier}_machine_hull`
             }).id(`start:shaped/${tier}_electric_furnace`);
 
-            event.shaped(Item.of(`gtceu:${tier}_electric_blast_furnace`), [
+            event.shaped(Item.of(`gtceu:${tier}_electric_blaster`), [
                 'IDI',
                 'WHW',
                 'CQC'
@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
                 H: `gtceu:${tier}_machine_hull`,
                 Q: `gtceu:${wire}_quadruple_wire`,
                 D: `gtceu:double_${tierMaterial}_plate`
-            }).id(`start:shaped/${tier}_electric_blast_furnace`);
+            }).id(`start:shaped/${tier}_electric_blaster`);
 
             event.shaped(Item.of(`gtceu:${tier}_electric_smoker`), [
                 'ISI',
