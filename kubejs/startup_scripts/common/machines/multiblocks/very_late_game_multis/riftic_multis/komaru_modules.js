@@ -147,6 +147,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             'gtceu:block/multiblock/hpca');
 
     event.create(`riftic_enhancement_module`, 'multiblock')
+        .machine(holder => new $OpticalComputationMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('riftic_enhancement')
         .appearanceBlock(() => Block.getBlock('kubejs:draco_ware_casing'))
