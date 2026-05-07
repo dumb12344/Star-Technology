@@ -4,6 +4,10 @@ ServerEvents.recipes(event => {
     // Chem Cracking Removal
     event.remove({id: /gtceu:chemical_reactor\/lightly.*crack.*/})
     event.remove({id: /gtceu:chemical_reactor\/severely.*crack.*/})
+    event.remove({id: /gtceu:chemical_reactor\/hydro_crack.*/})
+    event.remove({id: /gtceu:chemical_reactor\/steam_crack.*/})
+    event.remove({id: /gtceu:large_chemical_reactor\/steam_crack.*/})
+    event.remove({id: /gtceu:large_chemical_reactor\/hydro_crack.*/})
     event.remove({id: /gtceu:large_chemical_reactor\/lightly.*crack.*/})
     event.remove({id: /gtceu:large_chemical_reactor\/severely.*crack.*/})
 
