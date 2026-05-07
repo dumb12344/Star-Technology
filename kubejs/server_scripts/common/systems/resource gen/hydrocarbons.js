@@ -3,6 +3,8 @@ ServerEvents.recipes(event => {
 
     // Chem Cracking Removal
     event.remove({id: /gtceu:chemical_reactor\/lightly.*crack.*/})
+    event.remove({id: /gtceu:chemical_reactor\/severely.*crack.*/})
+    event.remove({id: /gtceu:large_chemical_reactor\/lightly.*crack.*/})
     event.remove({id: /gtceu:large_chemical_reactor\/severely.*crack.*/})
 
     const chem = event.recipes.gtceu.large_chemical_reactor || event.recipes.gtceu.chemical_reactor;
