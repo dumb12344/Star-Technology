@@ -927,7 +927,7 @@
     "ftbquests.mechanics.threading.description.4": "§d효율성§r 효과: \n\n§730 포인트마다 소모되는 전력이 감소됩니다.\n\n§f§n예시:§r\n\n- 30 포인트에서 EU/t 사용량이 50%%, 1/2이 됩니다.\n\n- 60 포인트에서 EU/t 사용량이 66.6%%, 1/3이 됩니다.\n\n- 90 포인트에서 EU/t 사용량이 75%%, 1/4이 됩니다.",
     "ftbquests.mechanics.threading.description.5": "§c병렬성§r 효과: \n\n§720 포인트마다 추가적인 병렬 처리를 획득하지만, 제작 시간이 sqrt(병렬 처리 수) 만큼 증가합니다.\n\n§f§n예시:§r\n\n- 20 포인트를 배정 시 총 2 병렬 처리가 가능하며, ~41%%의 제작 시간이 증가합니다.\n §7~41%% 증가 = sqrt(2)\n\n§r- 60 포인트를 배정 시 총 4 병렬 처리가 가능하며, 100%%의 제작 시간이 증가합니다.\n §7100%% 증가 = sqrt(4)",
     "ftbquests.mechanics.threading.description.6": "§9스레딩§r 효과: \n\n§75 포인트마다 멀티 스레딩을 추가로 획득합니다. 멀티 스레딩은 한 번에 추가적인 다른 타입의 제작법을 처리 가능하게 해줍니다.\n\n§f§n예시:§r\n\n- 5 포인트를 배정하면 1 멀티 스레딩을 획득해 한 번에 2가지의 제작을 할 수 있게 됩니다(텅스텐 판과 티타늄 판을 동시에 제작하는 것 같이요). 대신 최대 2대의 기계가 사용하는 전기량을 동시에 사용합니다.\n\n- 15 포인트를 배정하면 3 멀티 스레딩을 확득해 한 번에 4가지의 제작을 할 수 있게 됩니다. 대신 최대 4대의 기계가 사용하는 전기량을 동시에 사용합니다.\n\n",
-    "ftbquests.mechanics.threading.title": "§9스레딩§r & 분광 스레딩 집중 해치에 대해",
+    "ftbquests.mechanics.threading.title": "§9스레딩§r과 분광 스레딩 집중 해치에 대해",
     "ftbquests.mechanics.throughput_boosting.description.1": "§b처리 부스팅§r은 기계가 한 번에 여러 재료를 처리하게 도와줍니다.\n\n한 번에 8개를 처리하게 해주는 증기 병렬 처리와 비슷하게 작동하는 전기 버전입니다.\n\n\n§7다음 페이지에 설명이 있습니다.",
     "ftbquests.mechanics.throughput_boosting.description.2": "§n작동 방식:§r\n\n§b처리 부스팅§r을 가진 멀티블록이 만약 한 번에 4개의 제작을 처리할 수 있는 양의 아이템이나 액체가 존재하면 작동합니다.\n\n- §24§r개의 제작을 동시에 처리합니다.\n\n- 제작 시간이 §c40%%§r 증가합니다.\n\n- EU/t 소모량이 §210%%§r 감소합니다.",
     "ftbquests.mechanics.throughput_boosting.title": "처리 부스팅§r",
