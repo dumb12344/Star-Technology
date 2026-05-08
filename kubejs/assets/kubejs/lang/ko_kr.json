@@ -23,6 +23,8 @@
 
     "effect.kubejs.reach": "범위 증가",
 
+    "information.kubejs.coordinate_crystals": "웅크린 상태로 공중에 우클릭을 해 좌표 수정에 숨겨진 지식을 습득할 수 있습니다.\n\n좌표 수정을 스타게이트에 사용해 해당 차원의 접근 권한을 얻을 수 있습니다.",
+
     "item.kubejs.sweetcorn_beer": "옥수수 맥주",
     "item.kubejs.sweetcorn_beer.tooltip": "§6성급함§7을 주는 단 맥주",
     "fluid.kubejs.sweetcorn_beer": "옥수수 맥주",
@@ -367,7 +369,7 @@
     "item.kubejs.uv_photovoltaic_cell": "태양광 셀 V",
     "item.kubejs.uhv_photovoltaic_cell": "태양광 셀 VI",
 
-    "item.kubejs.crude_stargate_rod": "생 스타게이트 막대기",
+    "item.kubejs.crude_stargate_rod": "엉성한 스타게이트 막대기",
     "item.kubejs.crude_stargate_rod.tooltip": "사용하기엔 아직 조용한 것 같습니다...",
     "item.kubejs.stargate_rod": "스타게이트 막대기",
     "item.kubejs.stargate_rod.tooltip": "스타게이트의 근육, 만약 원한다면...",
@@ -667,25 +669,8 @@
     "block.kubejs.galvanized_steel_casing": "아연 도금 강철 케이싱",
 
     "block.kubejs.added_by_StarT.tooltip": "§8§oAdded by Star Technology",
-    "block.kubejs.batch.tooltip": "§e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.paraBatch.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.subBatch.tooltip": "§c서브틱 병렬 처리§r와 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.pocBatch.tooltip": "§6완벽한 오버클록§r과 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.throughBatch.tooltip": "§b처리량 부스팅§r과 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.coilBatch.tooltip": "§b코일 병렬§r과 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.paraLayered.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §9레이어 입력§r을 가지고 있습니다.",
-    "block.kubejs.paraSubBatch.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §c서브틱 병렬 처리§r와 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.paraPocBatch.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §6완벽한 오버클록§r과 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.subThroughBatch.tooltip": "§c서브틱 병렬 처리§r, §b처리량 부스팅§r과 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.threadSubBatch.tooltip": "§5스레딩§r, §c서브틱 병렬 처리§r와 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.paraSubBulkBatch.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §c서브틱 병렬 처리§r, §5대량 처리§r, 그리고 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.paraSubAssBatch.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §c서브틱 병렬 처리§r, §9조립 라인 처럼§r 그리고 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.paraSubThroughBatch.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §c서브틱 병렬 처리§r, §b처리량 부스팅§r 그리고 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.paraThreadBulkBatch.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §5스레딩§r, §5대량 처리§r, 그리고 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.subAssThroughBatch.tooltip": "§c서브틱 병렬 처리§r, §9조립 라인 처럼§r 작동하며, §b처리량 부스팅§r 그리고 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.paraSubBulkThroughBatch.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §c서브틱 병렬 처리§r, §5대량 처리§r, §b처리량 부스팅§r 그리고 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.paraPocSubBulkThroughBatch.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §6완벽한 오버클록§r, §c서브틱 병렬 처리§r, §5대량 처리§r, §b처리량 부스팅§r 그리고 §e배치 처리§r를 가지고 있습니다.",
-    "block.kubejs.paraThreadSubBulkBatch.tooltip": "§3병렬 처리§r 해치를 사용할 수 있으며, §5스레딩§r, §c서브틱 병렬 처리§r, §5대량 처리§r 그리고 §e배치 처리§r를 가지고 있습니다.",
+    "block.kubejs.threading.tooltip": "§5스레딩§r을 가지고 있습니다",
+    "block.kubejs.only_one_2a_hatch.tooltip": "§f오직 §6하나의 §f2§eA §f전력 해치만 사용할 수 있습니다.",
 
     "item.kubejs.basic_neutron_reflector": "일반 중성자 반사판",
     "item.kubejs.basic_neutron_reflector.tooltip": "§7\"간단한\" 융합 반응로에 사용됩니다.",
