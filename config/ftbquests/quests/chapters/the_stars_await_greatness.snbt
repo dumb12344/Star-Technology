@@ -961,5 +961,5 @@
 			y: 3.0d
 		}
 	]
-	title: "The Stars Await Greatness"
+	title: "{ftbquests.dsg.title}"
 }
