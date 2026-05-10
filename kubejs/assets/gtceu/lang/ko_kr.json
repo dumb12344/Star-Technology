@@ -1292,11 +1292,11 @@
     "block.gtceu.electro_magnetic_material_ripper.tooltip.2": "§8-----------------------------------",
     "block.gtceu.electro_magnetic_material_ripper.tooltip.3": "§7가능한 레시피 타입: §f폴라라이저§7, §f전기 분해기§7, §f전해조",
 
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity": "수목 재생 유기체 발효 처리 시설",
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity.tooltip.0": "§3§l멀티 스레드 농장",
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity.tooltip.1": "§7생물학적 거대 구조체로, 식물, 동물이나 미생물 기질을 강제적으로 지속적인 대사 과잉 상태로 만들어 비정상적인 생태학적 리듬으로 자원을 생산하게 합니다.",
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity.tooltip.2": "§8-----------------------------------",
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity.tooltip.3": "§7가능한 레시피 타입: §f수경 온실§7, §f비료화 공장§7, §f공업용 어망§7, §f나무 온실",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity": "수목 재생 유기체 발효 처리 시설",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity.tooltip.0": "§3§l멀티 스레드 농장",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity.tooltip.1": "§7생물학적 거대 구조체로, 식물, 동물이나 미생물 기질을 강제적으로 지속적인 대사 과잉 상태로 만들어 비정상적인 생태학적 리듬으로 자원을 생산하게 합니다.",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity.tooltip.3": "§7가능한 레시피 타입: §f수경 온실§7, §f비료화 공장§7, §f공업용 어망§7, §f나무 온실",
 
     "block.gtceu.gravitational_compression_chamber": "과중력 압축 챔버",
     "block.gtceu.gravitational_compression_chamber.tooltip.0": "§3§l멀티 스레드 압축기",

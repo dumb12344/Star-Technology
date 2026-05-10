@@ -32,6 +32,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_palladium_substation',
-            'gtceu:block/multiblock/cracking_unit');
+            'gtceu:block/multiblock/cracking_unit')
+        .additionalDisplay(global.crackerOverclockDisplay);
 
 });

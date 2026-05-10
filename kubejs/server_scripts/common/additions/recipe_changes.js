@@ -65,14 +65,6 @@ ServerEvents.recipes(event => {
             }).id(`start:shaped/${material}_mallet`);
     });
 
-    //B(SiO)7 Foil
-    event.recipes.gtceu.bender(id('borosilicate_glas_foil'))
-        .itemInputs('gtceu:borosilicate_glass_ingot')
-        .itemOutputs('4x gtceu:borosilicate_glas_foil')
-        .circuit(10)
-        .duration(32)
-        .EUt(30);
-
     ['iron','steel','neodymium','samarium','zapolgium','pure_netherite','holmium'].forEach(Magnetic=>{
     event.remove({id: `gtceu:alloy_smelter/alloy_smelt_magnetic_${Magnetic}_dust_to_block`});
     });

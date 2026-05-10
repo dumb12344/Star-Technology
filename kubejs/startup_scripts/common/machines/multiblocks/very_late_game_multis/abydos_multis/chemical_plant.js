@@ -27,15 +27,16 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('kubejs:peek_casing').setMinGlobalLimited(40)
                 .or(Predicates.autoAbilities(definition.getRecipeTypes()))
                 .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
-                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1))) 
+                .or(Predicates.abilities(PartAbility.PARALLEL_HATCH).setMaxGlobalLimited(1)))
             .where('E', Predicates.blocks('kubejs:enriched_naquadah_engine_intake_casing'))
-            .where('H', Predicates.blocks(GCYMBlocks.HEAT_VENT.get()))     
+            .where('H', Predicates.blocks(GCYMBlocks.HEAT_VENT.get()))
             .where('M', Predicates.heatingCoils())
             .where('P', Predicates.blocks(GTBlocks.CASING_POLYTETRAFLUOROETHYLENE_PIPE.get()))
             .where('T', Predicates.blocks('gtceu:tungsten_frame'))
             .where(' ', Predicates.any())
             .build())
         .workableCasingModel('kubejs:block/casings/basic/machine_casing_peek',
-            'gtceu:block/multiblock/large_chemical_reactor');
+            'gtceu:block/multiblock/large_chemical_reactor')
+        .additionalDisplay(global.chemicalOverclockDisplay);
 
 });

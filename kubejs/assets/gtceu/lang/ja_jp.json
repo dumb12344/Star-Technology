@@ -1307,11 +1307,11 @@
     "block.gtceu.electro_magnetic_material_ripper.tooltip.2": "§8-----------------------------------",
     "block.gtceu.electro_magnetic_material_ripper.tooltip.3": "§7使用可能なレシピの種類: §f磁化装置§7、§f電磁分離機§7、§f電解槽",
 
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity": "発酵樹木再生統合装置",
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity.tooltip.0": "§3§lマルチスレッド式植物栽培機",
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity.tooltip.1": "§7動植物や微生物の基質を永続的に代謝を活発化させ、人工的に植物資源を大量に生み出す、バイオマテリアル巨大装置。",
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity.tooltip.2": "§8-----------------------------------",
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity.tooltip.3": "§7使用可能なレシピの種類: §f水耕栽培ガーデン§7、§f堆肥工場§7、§f工業用漁獲機§7、§f樹木温室",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity": "発酵樹木再生統合装置",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity.tooltip.0": "§3§lマルチスレッド式植物栽培機",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity.tooltip.1": "§7動植物や微生物の基質を永続的に代謝を活発化させ、人工的に植物資源を大量に生み出す、バイオマテリアル巨大装置。",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity.tooltip.2": "§8-----------------------------------",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity.tooltip.3": "§7使用可能なレシピの種類: §f水耕栽培ガーデン§7、§f堆肥工場§7、§f工業用漁獲機§7、§f樹木温室",
 
     "block.gtceu.gravitational_compression_chamber": "重力型素材圧縮室",
     "block.gtceu.gravitational_compression_chamber.tooltip.0": "§3§lマルチスレッド式圧縮機",

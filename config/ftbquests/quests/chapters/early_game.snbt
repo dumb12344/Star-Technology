@@ -42,7 +42,7 @@
 		{
 			id: "73A12DB8625E666F"
 			linked_quest: "27F5DD0860E43CFF"
-			x: 4.0d
+			x: 0.0d
 			y: 6.5d
 		}
 	]
@@ -1961,7 +1961,7 @@
 				}
 			]
 			title: "{ftbquests.early_game.steam_alloy_smelter.title}"
-			x: 4.0d
+			x: 2.0d
 			y: 4.5d
 		}
 		{
@@ -1976,7 +1976,7 @@
 				title: "{ftbquests.early_game.steam.title}"
 				type: "checkmark"
 			}]
-			x: 2.0d
+			x: 0.0d
 			y: 4.5d
 		}
 		{
@@ -2034,7 +2034,7 @@
 				}
 			]
 			title: "{ftbquests.early_game.large_steam_machines.title}"
-			x: 2.0d
+			x: -2.0d
 			y: 6.5d
 		}
 		{
@@ -2102,7 +2102,7 @@
 				}
 			]
 			title: "{ftbquests.early_game.steam_boilers.title}"
-			x: 0.0d
+			x: -2.0d
 			y: 4.5d
 		}
 		{
@@ -2120,7 +2120,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["53A9BA26813A1141"]
@@ -2188,7 +2188,7 @@
 				item: "gtceu:kiln"
 				type: "item"
 			}]
-			x: -2.0d
+			x: 2.0d
 			y: 6.5d
 		}
 		{
@@ -2210,7 +2210,7 @@
 				item: "gtceu:steam_kiln"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 4.0d
 			y: 6.5d
 		}
 		{
@@ -2372,7 +2372,7 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["10126B9D6EC90F59"]
+			dependencies: ["46E41B05B9F6FA82"]
 			description: ["{ftbquests.early_game.ulv_components.description}"]
 			id: "366227E714CDA617"
 			tasks: [{
@@ -2401,8 +2401,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.early_game.ulv_components.title}"
-			x: -4.0d
-			y: 4.5d
+			x: 4.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["10126B9D6EC90F59"]
@@ -2419,7 +2419,7 @@
 				title: "{ftbquests.early_game.steam_age_path.title}"
 				type: "checkmark"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: 4.5d
 		}
 		{

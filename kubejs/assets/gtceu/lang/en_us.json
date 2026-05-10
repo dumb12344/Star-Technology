@@ -765,7 +765,7 @@
     "material.gtceu.reactive_dense_residue": "Reactivity Dense Residue",
     "material.gtceu.rare_earth_sulfate_solution": "Rare Earth Sulfate Solution",
     "material.gtceu.rare_earth_leach_mixture": "Rare Earth Leach Mixture",
-    "material.gtceu.rare_earth_concentrate": "Rare Eath Concentrate",
+    "material.gtceu.rare_earth_concentrate": "Rare Earth Concentrate",
     "material.gtceu.xenotime": "Xenotime",
     "material.gtceu.kitkaite": "Kitkaite",
     "material.gtceu.abydos_magma_slag": "Abydos Magma Slag",
@@ -1209,9 +1209,9 @@
     "block.gtceu.electro_magnetic_material_ripper.tooltip.0": "§3§lMulti-threaded Energizer",
     "block.gtceu.electro_magnetic_material_ripper.tooltip.1": "§7A violent yet impossibly controlled field-flux engine that tears molecular alignments apart and reconfigures them under overwhelming authority.",
 
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity": "Fermenting Arboreal Rejuvination Monstronsity [FARM]",
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity.tooltip.0": "§3§lMulti-threaded Farm",
-    "block.gtceu.fermenting_arboreal_rejuvination_monstronsity.tooltip.1": "§7A biomaterial megastructure that coerces flora, fauna, and microbial substrates into perpetual metabolic overdrive, yielding resources at an unnatural ecological cadence.",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity": "Fermenting Arboreal Rejuvenation Monstrosity [FARM]",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity.tooltip.0": "§3§lMulti-threaded Farm",
+    "block.gtceu.fermenting_arboreal_rejuvenation_monstrosity.tooltip.1": "§7A biomaterial megastructure that coerces flora, fauna, and microbial substrates into perpetual metabolic overdrive, yielding resources at an unnatural ecological cadence.",
 
     "block.gtceu.gravitational_compression_chamber": "Gravitational Compression Chamber [GCC]",
     "block.gtceu.gravitational_compression_chamber.tooltip.0": "§3§lMulti-threaded Compressor",

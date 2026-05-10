@@ -514,9 +514,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create(name).liquid(new GTFluidBuilder().temperature(temp)).plasma().components(elements).color(color).flags(flags);
     }
 
-    // Temp
-    event.create('borosilicate_glas').components('1x boron','7x silicon_dioxide').color(0xFAFAFA).secondaryColor(0xfaf5c0).iconSet(SHINY).flags(no_decomp,not_alloy,foil);
-
     // Materials
 
     elemDust('uranium_233',0x4fbb4f,[no_smelt]);

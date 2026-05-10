@@ -30,6 +30,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('gtceu:block/casings/gcym/stress_proof_casing',
-            'gtceu:block/multiblock/implosion_compressor');
+            'gtceu:block/multiblock/implosion_compressor')
+        .additionalDisplay(global.multiSmelterParallelDisplay);
 
 });
