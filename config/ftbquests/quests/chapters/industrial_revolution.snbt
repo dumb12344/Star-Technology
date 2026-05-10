@@ -1262,11 +1262,6 @@
 			}]
 			tasks: [
 				{
-					id: "2C62C8A037C09032"
-					item: "gtceu:cadmium_dust"
-					type: "item"
-				}
-				{
 					id: "19E88383752F60EA"
 					item: "gtceu:neodymium_dust"
 					type: "item"

@@ -1,6 +1,17 @@
 ServerEvents.recipes (event => {
     const id = global.id;
 
+    event.shaped('start_core:mechanical_memory_card', [
+        'WPW',
+        'SBS',
+        'WPW'
+    ], {
+        W: 'gtceu:annealed_copper_single_wire',
+        P: 'gtceu:wrought_iron_plate',
+        S: 'gtceu:wrought_iron_screw',
+        B: 'gtceu:resin_printed_circuit_board'
+    }).id('start:shaped/mechanical_memory_card');
+
     event.recipes.gtceu.assembler(id('husk_brick'))
         .itemInputs('kubejs:extreme_temperature_smelting_casing')
         .inputFluids('gtceu:ancient_netherite 864')
