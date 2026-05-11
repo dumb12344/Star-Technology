@@ -135,10 +135,41 @@
       },
     ]);
 
-    scene.idle(40);
-    scene.rotateCameraY(-90);
     scene.idle(60);
     scene.addKeyframe();
+
+    scene
+      .overlay()
+      .showText(80)
+      .text(
+        "To dial and enter the Stargate you need a §dAbydos §dInscribed §dCoordinate §dCrystal§r. Sneak and right-click it while looking at the air to absorbe its knowledge."
+      );
+
+    scene.idle(100);
+
+    scene
+      .overlay()
+      .showText(80)
+      .text(
+        "Then right-click the base block of the stargate with the crystal be allowed to enter the dimension."
+      );
+
+    scene
+      .overlay()
+      .showControls(
+        util.vector().blockSurface([4, 1, 4], Direction.UP),
+        PonderPointing.DOWN,
+        80
+      )
+      .withItem("kubejs:abydos_coordinate_crystal")
+      .rightClick();
+
+    scene.idle(100);
+
+    scene.idle(20);
+    scene.addKeyframe();
+    scene.rotateCameraY(-90);
+    scene.idle(20);
 
     scene
       .overlay()
@@ -295,7 +326,7 @@
       .overlay()
       .showText(120)
       .text(
-        "Right-click the §eDHD§r and start dialing in the address of your destination."
+        "Right-click the §eDHD§r and start dialing in the address you got when you absorbed the crystal knowledge."
       );
 
     scene.idle(20);

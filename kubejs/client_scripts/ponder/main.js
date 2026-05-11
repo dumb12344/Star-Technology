@@ -23,25 +23,36 @@
     return result;
   }
 
+  let gtMachines = getGregtechMachines("multiblock");
+  let stargateBlocks = [
+    "sgjourney:classic_stargate",
+    "sgjourney:classic_stargate_base_block",
+    "sgjourney:classic_stargate_chevron_block",
+    "sgjourney:classic_stargate_ring_block",
+    "sgjourney:crystal_interface",
+    "sgjourney:classic_dhd",
+  ];
+
   Ponder.tags((event) => {
     event.createTag(
       "kubejs:gtceu",
       "gtceu:electric_blast_furnace",
       "GregTech Multiblocks",
       "Informations on how to use GregTech Multiblocks",
-      getGregtechMachines("multiblock")
+      gtMachines
+    );
+
+    event.createTag(
+      "kubejs:stargate",
+      "Stargate Travel",
+      "Informations on how to use the Stargates of this modpack",
+      stargateBlocks
     );
   });
 
   Ponder.registry((event) => {
     event
-      .create([
-        "sgjourney:classic_stargate_base_block",
-        "sgjourney:classic_stargate_chevron_block",
-        "sgjourney:classic_stargate_ring_block",
-        "sgjourney:crystal_interface",
-        "sgjourney:classic_dhd",
-      ])
+      .create(stargateBlocks)
       .scene(
         "classic_stargate",
         "Classic Stargate",
@@ -49,7 +60,7 @@
       );
 
     event
-      .create(getGregtechMachines("multiblock"))
+      .create(gtMachines)
       .scene(
         "multiblock_introduction",
         "Multiblock Introduction",
