@@ -6,6 +6,7 @@ StartupEvents.registry('block', event => {
         .lightLevel(0)
         .soundType('metal')
         .requiresTool(true)
+        .noValidSpawns(true)
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/deprecated/casing_austenitic_stainless_steel_304');
@@ -16,6 +17,7 @@ StartupEvents.registry('block', event => {
         .lightLevel(0)
         .soundType('metal')
         .requiresTool(true)
+        .noValidSpawns(true)
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/deprecated/casing_inconel_625');

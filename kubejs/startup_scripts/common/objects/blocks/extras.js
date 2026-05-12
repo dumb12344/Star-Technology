@@ -6,8 +6,9 @@ StartupEvents.registry('block', event => {
         .resistance(2)
         .soundType('wood')
         .transparent(true)
-        .defaultTranslucent() 
-        .requiresTool(false)
+        .defaultTranslucent()
+        .requiresTool(true)
+        .noValidSpawns(true)
         .tagBlock('mineable/axe')
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/misc/meshblock');

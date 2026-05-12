@@ -9,7 +9,8 @@ StartupEvents.registry('block', event => {
         .coilMaterial(() => GTMaterials.get('zalloy'))
         .hardness(5)
         .soundType('metal')
-        .requiresTool(true);
+        .requiresTool(true)
+        .noValidSpawns(true);
 
     event.create('magmada_alloy_coil_block', 'gtceu:coil')
         .temperature(16199)
@@ -19,7 +20,8 @@ StartupEvents.registry('block', event => {
         .coilMaterial(() => GTMaterials.get('magmada_alloy'))
         .hardness(5)
         .soundType('metal')
-        .requiresTool(true);
+        .requiresTool(true)
+        .noValidSpawns(true);
 
     event.create('abyssal_alloy_coil_block', 'gtceu:coil')
         .temperature(18888)
@@ -29,7 +31,8 @@ StartupEvents.registry('block', event => {
         .coilMaterial(() => GTMaterials.get('abyssal_alloy'))
         .hardness(5)
         .soundType('metal')
-        .requiresTool(true);
+        .requiresTool(true)
+        .noValidSpawns(true);
 
     event.create('rhenotax_coil', 'gtceu:active')
         .displayName('Rhenotax Coil')
@@ -38,7 +41,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/wrench')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .bloom('kubejs:block/coils/rhenotax/coil');
 
 });

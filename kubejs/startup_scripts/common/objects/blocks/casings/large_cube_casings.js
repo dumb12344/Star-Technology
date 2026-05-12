@@ -5,6 +5,7 @@ StartupEvents.registry('block', event => {
             .resistance(1)
             .soundType('metal')
             .requiresTool(true)
+            .noValidSpawns(true)
             .tagBlock('mineable/pickaxe')
             .tagBlock('minecraft:needs_iron_tool')
             .textureAll(`kubejs:block/casings/large_cubes/${type}_casing`);

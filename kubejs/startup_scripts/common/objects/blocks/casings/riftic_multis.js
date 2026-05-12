@@ -6,7 +6,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .textureAll('kubejs:block/casings/riftic_multis/absolute_temperature_smelting_casing');
 
     event.create('aberration_casing')
@@ -15,7 +16,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .textureAll('kubejs:block/casings/riftic_multis/aberration_casing');
 
     event.create('infernally_reinforced_casing')
@@ -24,15 +26,17 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .textureAll('kubejs:block/casings/riftic_multis/infernally_reinforced_casing');
-    
+
     event.create('soul_of_the_flame')
         .hardness(5)
         .resistance(10)
         .lightLevel(10)
         .soundType('metal')
         .requiresTool(true)
+        .noValidSpawns(true)
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/riftic_multis/soul_of_the_flame');
@@ -44,6 +48,7 @@ StartupEvents.registry('block', event => {
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .requiresTool(true)
+        .noValidSpawns(true)
         .bloom('kubejs:block/casings/riftic_multis/particle_rod_holder');
 
     event.create('riftion_injection_core', 'gtceu:active')
@@ -53,6 +58,7 @@ StartupEvents.registry('block', event => {
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .requiresTool(true)
+        .noValidSpawns(true)
         .bloom('kubejs:block/casings/riftic_multis/riftion_injection_core');
 
 });
