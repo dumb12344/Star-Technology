@@ -20,7 +20,7 @@
     "ftbquests.abydos.cartouche.title": "Buried Tombs",
     "ftbquests.abydos.chemical_plant.description": "This beautiful machine allows you to compress entire processing lines into one machine.",
     "ftbquests.abydos.advanced_synthesis_plant.description": "A multi-step chemical processing plant that uses precisely dosed materials in specific orders to produce chemicals of unseen levels of complexity.",
-    "ftbquests.abydos.compact_assembly_line.description": "An assembly line capable of running multiple recipes at once.\n\nIt accepts more than just ULV input buses, but still uses ordered inputs.",
+    "ftbquests.abydos.compact_assembly_line.description": "An assembly line capable of running multiple recipes at once.\n\nIt accepts more than just ULV input buses, but still uses ordered inputs.\n\n\n§4§lSpecial Note§r:\nDue to how stocking hatches work, if you want to use them for recipes using item stacks larger than 64, you will need to rename the items.",
     "ftbquests.abydos.uhv_stabilization_module.description": "A special module that can be installed on a select few machines to boost their precise manufacturing capabilities.",
     "ftbquests.abydos.component_nexus.description": "An upgraded (and larger) version of the component assembly that can assemble multiple components at high speeds, without ordering your inputs.\n\nThis process however, even when stabilized using stabilization modules, can only be applied to components below UHV",
     "ftbquests.abydos.classic_chevron_assembly.description": "An array of Chevrons that can store more complex data.",
