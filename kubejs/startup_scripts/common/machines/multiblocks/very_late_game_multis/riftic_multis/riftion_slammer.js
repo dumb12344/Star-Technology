@@ -50,6 +50,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/nyanium/casing', 
-            'kubejs:block/casings/multiblock/riftion_slammer');
+            'kubejs:block/multiblock/riftion/slammer');
         
 });

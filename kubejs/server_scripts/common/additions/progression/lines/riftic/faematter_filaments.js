@@ -21,7 +21,7 @@ ServerEvents.recipes (event => {
     event.recipes.gtceu.mixer(id('stabilization_mixture_base'))
         .itemInputs('5x gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate_dust')
         .inputFluids('gtceu:utopian_akreyrium 10000','gtceu:runic_convergence_infusion 17000')
-        .outputFluids('gtceu:stabilization_mixture_base 22000')
+        .outputFluids('gtceu:stabilization_mixture_base 32000')
         .cleanroom($StarTAbyssalContainmentMachine.ABYSSAL_CONTAINMENT_ROOM)
         .duration(960)
         .EUt(GTValues.VA[GTValues.UEV] / 3);
@@ -42,7 +42,7 @@ ServerEvents.recipes (event => {
 
     event.recipes.gtceu.pressure_heat_chamber(id('draconic_stabilization_mixture'))
         .inputFluids('gtceu:abyssal_stabilization_mixture 10000','gtceu:infernal_stabilization_mixture 10000')
-        .outputFluids('gtceu:draconic_stabilization_mixture 15705')
+        .outputFluids('gtceu:draconic_stabilization_mixture 10000')
         .duration(230)
         .EUt(GTValues.VHA[GTValues.UXV] / 3);
 

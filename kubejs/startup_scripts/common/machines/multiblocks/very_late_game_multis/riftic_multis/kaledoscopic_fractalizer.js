@@ -60,6 +60,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
        .workableCasingModel('kubejs:block/casings/riftic_multis/aberration_casing',  
-            'kubejs:block/casings/multiblock/kaleidoscopic_fractionizer');
+            'kubejs:block/multiblock/riftion/fractalizer');
         
 });

@@ -1829,7 +1829,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('impure_faematter', ['1x mystery','1x faetic','1x mystery'], 0xe8bce7, [no_decomp]);
     compLiquid('faematter', ['1x faetic'], 0xf593f3, [no_decomp]);
 
-    compLiquid('stabilization_mixture_base', ['3x poly_34_ethylenedioxythiophene_polystyrene_sulfate','8x runic_convergence_infusion','2x utopian_akreyrium'], 0xb6b4c2, [no_decomp]);
+    compLiquid('stabilization_mixture_base', ['5x poly_34_ethylenedioxythiophene_polystyrene_sulfate','17x runic_convergence_infusion','10x utopian_akreyrium'], 0xb6b4c2, [no_decomp]);
     compLiquid('infernal_stabilization_mixture', ['24x stabilization_mixture_base','1x magmada_alloy'], 0xbd4444, [no_decomp]);
     compLiquid('abyssal_stabilization_mixture', ['24x stabilization_mixture_base','1x abyssal_alloy'], 0x7e44bd, [no_decomp]);
     compLiquid('draconic_stabilization_mixture', ['1x abyssal_stabilization_mixture','1x infernal_stabilization_mixture'], 0x302185, [no_decomp]);

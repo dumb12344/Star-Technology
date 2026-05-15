@@ -58,6 +58,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('N', Predicates.abilities(PartAbility.IMPORT_FLUIDS))
             .build())
         .workableCasingModel('kubejs:block/casings/end_multis/draco_ware_casing', 
-            'kubejs:block/casings/multiblock/riftion_accelerator');
+            'kubejs:block/multiblock/riftion/accelerator');
         
 });

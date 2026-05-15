@@ -51,6 +51,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/threading/gravitationally_strained_stabilization_casing',
-            'kubejs:block/casings/multiblock/riftion_injector');
+            'kubejs:block/multiblock/riftion/injector');
         
 });

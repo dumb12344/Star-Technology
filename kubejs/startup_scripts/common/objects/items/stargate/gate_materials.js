@@ -6,7 +6,7 @@ StartupEvents.registry('item', event => {
         //2x ASG, 3x DSG
     event.create(`${fragment}_fragment`)
         .tooltip(Text.translate(`item.kubejs.${fragment}_fragment.tooltip`))
-        // .texture(`kubejs:item/stargate/runes/proto/proto_${rune}_rune`)
+        // .texture(`kubejs:item/stargate/gate_items/materials/fragment/${fragment}`)
         .textureJson({ //temp
                 layer0: `kubejs:item/stargate/gate_items/materials/fragment`,
                 layer1: `kubejs:item/stargate/gate_items/materials/${fragment}`
@@ -20,7 +20,7 @@ StartupEvents.registry('item', event => {
         //1x CSG, 3x ASG, 4x DSG
     event.create(`${core}_core`)
         .tooltip(Text.translate(`item.kubejs.${core}_core.tooltip`))
-        // .texture(`kubejs:item/stargate/runes/proto/proto_${rune}_rune`)
+        // .texture(`kubejs:item/stargate/gate_items/materials/core/${core}`)
         .textureJson({ //temp
                 layer0: `kubejs:item/stargate/gate_items/materials/core`,
                 layer1: `kubejs:item/stargate/gate_items/materials/${core}`
