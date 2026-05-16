@@ -210,7 +210,7 @@
     "gtceu.greenhouse_growing": "Mystical Greenhouse Growing",
     "block.gtceu.primitive_ore_factory": "Primitive Ore Factory [POF]",
     "gtceu.primitive_ore_processing": "Primitive Ore Processing",
-    "block.gtceu.large_barrel": "Large Barrel [LB]",
+    "block.gtceu.large_barrel": "Large Barrel [LBl]",
     "gtceu.large_barrel": "Barrel Transformation",
     "material.gtceu.echo_r": "Echo Fluid",
     "material.gtceu.raw_void": "Raw Void",
@@ -232,7 +232,7 @@
     "gtceu.runic_circuitry_assembling_station": "Runic Circuitry Assembly Station",
     "block.gtceu.electric_ore_factory": "Electric Ore Factory [EOF]",
     "gtceu.electric_ore_processing": "Ore Processing",
-    "block.gtceu.large_stone_barrel": "Large Stone Barrel [LSB]",
+    "block.gtceu.large_stone_barrel": "Large Stone Barrel [LSBl]",
     "gtceu.large_stone_barrel": "Large Stone Barrel",
     "material.gtceu.zapolgium_diiodide_oxide": "Zapolgium Diiodide Oxide",
     "material.gtceu.austenitic_stainless_steel_304": "Austenitic Stainless Steel 304",
@@ -276,13 +276,13 @@
     "gtceu.nuclear_fission": "Nuclear Fission",
     "block.gtceu.nuclear_reactor": "Nuclear Reactor [NR]",
     "gtceu.chemical_skip": "Chemical Line Reduction",
-    "block.gtceu.chemical_plant": "Chemical Plant [CHP]",
+    "block.gtceu.chemical_plant": "Chemical Plant [CmP]",
     "gtceu.component_part_assembly": "Component Part Assembly",
     "block.gtceu.component_part_assembly": "Component Part Assembly [CPA]",
     "gtceu.large_farm": "Farming",
     "block.gtceu.large_farm": "Large Farm [LF]",
     "gtceu.large_sieve": "Large Sieve",
-    "block.gtceu.large_sieve": "Large Sieve [LS]",
+    "block.gtceu.large_sieve": "Large Sieve [LSv]",
     "gtceu.plant_ore_processing": "Ore Processing",
     "block.gtceu.ore_processing_plant": "Ore Processing Plant [OPP]",
 
@@ -317,7 +317,7 @@
     "material.gtceu.supremium_steel": "Supremium Steel",
     "material.gtceu.awakened_supremium_steel": "Awakened Supremium Steel",
     "material.gtceu.insanium_steel": "Insanium Steel",
-    "block.gtceu.mechanical_sieve": "Mechanical Sieve [MS]",
+    "block.gtceu.mechanical_sieve": "Mechanical Sieve [MSv]",
     "gtceu.mechanical_sieve": "Mechanical Sieve",
     "block.gtceu.petrochemistry_plant": "Petrochemistry Plant [PCP]",
     "gtceu.petrochemistry_plant": "Oil Refining",
@@ -333,9 +333,9 @@
     "material.gtceu.zamak": "Zamak",
     "material.gtceu.tumbaga": "Tumbaga",
     "gtceu.t_large_bender": "Large Bender",
-    "block.gtceu.t_large_bender": "Large Bender [LB]",
+    "block.gtceu.t_large_bender": "Large Bender [LBd]",
     "gtceu.t_large_centrifuge": "Large Centrifuge",
-    "block.gtceu.t_large_centrifuge": "Large Centrifuge [LC]",
+    "block.gtceu.t_large_centrifuge": "Large Centrifuge [LCn]",
     "gtceu.t_large_electrolyzer": "Large Electrolyzer",
     "block.gtceu.t_large_electrolyzer": "Large Electrolyzer [LE]",
     "gtceu.t_large_extruder": "Large Extruder",
@@ -345,13 +345,13 @@
     "gtceu.t_large_lathe": "Large Lather",
     "block.gtceu.t_large_lathe": "Large Lathe [LL]",
     "gtceu.t_large_macerator": "Large Macerator",
-    "block.gtceu.t_large_macerator": "Large Macerator [LM]",
+    "block.gtceu.t_large_macerator": "Large Macerator [LMc]",
     "gtceu.t_large_mixer": "Large Mixer",
-    "block.gtceu.t_large_mixer": "Large Mixer [LM]",
+    "block.gtceu.t_large_mixer": "Large Mixer [LMx]",
     "gtceu.t_large_ore_washer": "Large Ore Washer",
     "block.gtceu.t_large_ore_washer": "Large Ore Washer [LOW]",
     "gtceu.t_large_sifter": "Large Sifter",
-    "block.gtceu.t_large_sifter": "Large Sifter [LS]",
+    "block.gtceu.t_large_sifter": "Large Sifter [LSr]",
     "gtceu.t_large_thermal_centrifuge": "Large Thermal Centrifuge",
     "block.gtceu.t_large_thermal_centrifuge": "Large Thermal Centrifuge [LTC]",
     "gtceu.t_large_wiremill": "Large Wiremill",
@@ -405,7 +405,7 @@
     "material.gtceu.alternating_phase_electron_infusion_flux": "Alternating §dElectron§r Infusion Flux",
 
 
-    "block.gtceu.cyclonic_sifter": "Cyclonic Sifter [CS]",
+    "block.gtceu.cyclonic_sifter": "Cyclonic Sifter [CSf]",
     "gtceu.cyclonic_sifter": "Cyclonic Sifting",
 
     "block.gtceu.manifold_centrifuge": "Manifold Centrifuge [MC]",
@@ -452,7 +452,7 @@
     "gtceu.rock_filtrator": "Rock Filtrator",
     "block.gtceu.rock_filtrator": "Rock Filtrator [RF]",
     "gtceu.rock_sifter": "Rock Sifter",
-    "block.gtceu.rock_sifter": "Rock Sifter [RS]",
+    "block.gtceu.rock_sifter": "Rock Sifter [RSf]",
 
     "gtceu.void_excavation": "Void Excavation",
     "block.gtceu.void_extractor": "Void Extractor [VET]",
@@ -829,7 +829,7 @@
     "block.gtceu.molten_destabiliser": "Molten Destabiliser [MD]",
 
     "gtceu.latex_plantation": "Latex Plantation",
-    "block.gtceu.latex_plantation": "Latex Plantation [LP]",
+    "block.gtceu.latex_plantation": "Latex Plantation [LxP]",
 
     "gtceu.draco_circuit_assembler": "Draconic Circuit Assembler",
     "gtceu.draco_bulk_circuiter": "Draco Bulk Circuiter",
@@ -1157,7 +1157,7 @@
     "block.gtceu.super_implosion_compressor": "High Intensity Imploder [HII]",
     "block.gtceu.super_implosion_compressor.tooltip.0": "§7The chaining of explosions helps this machine process at immense rates.",
 
-    "block.gtceu.super_cutter": "Large Cutter [LC]",
+    "block.gtceu.super_cutter": "Large Cutter [LCt]",
     "block.gtceu.super_cutter.tooltip.0": "§7A larger variant of the cutter that can process more materials at once.",
 
     "block.gtceu.super_electric_ore_factory": "Ore Processing Factory [OPF]",
@@ -1239,10 +1239,10 @@
 
     "material.gtceu.galvanized_steel": "Galvanized Steel",
     "gtceu.pulverizer": "Pulverizer",
-    "block.gtceu.t_large_pulverizer": "Large Pulverizer [LP]",
+    "block.gtceu.t_large_pulverizer": "Large Pulverizer [LPv]",
     "block.gtceu.t_large_pulverizer.tooltip.0": "§7A larger variant of the pulverizier that can process materials with more energy efficiency.",
 
-    "block.gtceu.t_large_arc_furnace": "Large Arc Furnace [LAF]",
+    "block.gtceu.t_large_arc_furnace": "Large Arc Furnace [LAFn]",
     "block.gtceu.t_large_arc_furnace.tooltip.0": "§7A larger variant of the arc furnace that can process materials with more energy efficiency.",
 
     "material.gtceu.manganin": "Manganin",
@@ -1383,7 +1383,7 @@
     "block.gtceu.riftion_injector.tooltip.0": "wip toolip",
     "gtceu.riftion_injector": "Riftion Injection",
 
-    "block.gtceu.riftion_slammer": "Riftion Slammer [RS]",
+    "block.gtceu.riftion_slammer": "Riftion Slammer [RSl]",
     "block.gtceu.riftion_slammer.tooltip.0": "wip toolip",
     "gtceu.riftion_slammer": "Riftion Smashing",
 
@@ -1397,7 +1397,7 @@
     "block.gtceu.voidic_refinement_module.tooltip.1": "K.O.M.A.R.U Module Tier: Basic",
     "gtceu.voidic_refinement": "Voidic Refinement",
 
-    "block.gtceu.rimula_extraction_module": "Rimula Extraction Unit [REU]",
+    "block.gtceu.rimula_extraction_module": "Rimula Extraction Unit [RmEU]",
     "block.gtceu.rimula_extraction_module.tooltip.0": "wip tooltip",
     "block.gtceu.rimula_extraction_module.tooltip.1": "K.O.M.A.R.U Module Tier: Basic",
     "gtceu.rimula_extraction": "Rimula Extraction",
@@ -1407,12 +1407,12 @@
     "block.gtceu.riftic_infusion_assembly_module.tooltip.1": "K.O.M.A.R.U Module Tier: Advanced",
     "gtceu.riftic_infusion_assembly": "Riftic Infusion Assembly",
 
-    "block.gtceu.riftic_enhancement_module": "Riftic Enhancing Unit [REU]",
+    "block.gtceu.riftic_enhancement_module": "Riftic Enhancing Unit [RfEU]",
     "block.gtceu.riftic_enhancement_module.tooltip.0": "wip tooltip",
     "block.gtceu.riftic_enhancement_module.tooltip.1": "K.O.M.A.R.U Module Tier: Advanced",
     "gtceu.riftic_enhancement": "Riftic Enhancement",
 
-    "block.gtceu.limitless_smelter": "Limitless Smelter [LS]",
+    "block.gtceu.limitless_smelter": "Limitless Smelter [LSm]",
     "block.gtceu.limitless_smelter.tooltip.0": "§6§lExponential Multi Smelter",
 
     "block.gtceu.incomprehensible_chemical_reactor": "Incomprehensible Chemical Reactor [ICR]",
@@ -1426,7 +1426,7 @@
     "block.gtceu.titan_forge.tooltip.0": "wip tooltip",
     "gtceu.titan_forge": "Titan Forge",
 
-    "block.gtceu.catto_shrine": "Catto Shrine [CS]",
+    "block.gtceu.catto_shrine": "Catto Shrine [ᗢSh]",
     "block.gtceu.catto_shrine.tooltip.0": "wip tooltip",
     "block.gtceu.catto_shrine.tooltip.1": "make your offerings known",
     "gtceu.catto_shrine": "Catto Shrine"
