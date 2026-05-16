@@ -16,16 +16,16 @@
 			y: -1.0d
 		}
 		{
-			id: "6F75E4AACB0561E6"
-			linked_quest: "342969434CB3B5DE"
-			x: -5.0d
-			y: 2.0d
-		}
-		{
 			id: "7A4DCD40CD71CDDF"
 			linked_quest: "6AEB17C2D2AF5344"
 			x: -17.0d
 			y: -2.0d
+		}
+		{
+			id: "1430169EC4785F21"
+			linked_quest: "2A070F5D1D7CEAE1"
+			x: -5.0d
+			y: 2.0d
 		}
 	]
 	quests: [
@@ -357,7 +357,7 @@
 		{
 			dependencies: [
 				"1C515302A357B1B8"
-				"342969434CB3B5DE"
+				"2A070F5D1D7CEAE1"
 			]
 			description: ["{ftbquests.csg.runic_laser_source_base_dust.description}"]
 			id: "5C3AF136913CF8BE"

@@ -697,8 +697,8 @@
 				item: "gtceu:neptunium_dust"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.5d
+			x: 7.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["775D74B68C7354E3"]
@@ -719,8 +719,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.5d
+			x: 7.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7965F4C1213E5133"]
@@ -742,8 +742,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: 3.5d
+			y: 4.0d
 		}
 	]
 	title: "{ftbquests.pl_nuc.title}"
