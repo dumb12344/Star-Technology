@@ -3,28 +3,25 @@ StartupEvents.registry('item', event => {
     // === Fragments ===
 
     ['inferno','abyss','prismalic','riftic','primordial'].forEach(fragment => {
-        //2x ASG, 3x DSG
-    event.create(`${fragment}_fragment`)
-        .tooltip(Text.translate(`item.kubejs.${fragment}_fragment.tooltip`))
-        // .texture(`kubejs:item/stargate/gate_items/materials/fragment/${fragment}`)
-        .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/materials/fragment`,
-                layer1: `kubejs:item/stargate/gate_items/materials/${fragment}`
-            })
-
+        event.create(`${fragment}_fragment`)
+            .tooltip(Text.translate(`item.kubejs.${fragment}_fragment.tooltip`))
+            .texture(`kubejs:item/stargate/gate_items/materials/fragment/${fragment}`)
+            .textureJson({ //temp
+                    layer0: `kubejs:item/stargate/gate_items/materials/fragment/${fragment}/base`,
+                    layer1: `kubejs:item/stargate/gate_items/materials/fragment/${fragment}/overlay`
+            });
     });
 
     // === Core ===
 
     ['quantum','helish','voidic','draconic','prismafae_illuminatus','spatium_ruptura','primus_tempus','ascension'].forEach(core => {
-        //1x CSG, 3x ASG, 4x DSG
-    event.create(`${core}_core`)
-        .tooltip(Text.translate(`item.kubejs.${core}_core.tooltip`))
-        // .texture(`kubejs:item/stargate/gate_items/materials/core/${core}`)
-        .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/materials/core`,
-                layer1: `kubejs:item/stargate/gate_items/materials/${core}`
-            })
+        event.create(`${core}_core`)
+            .tooltip(Text.translate(`item.kubejs.${core}_core.tooltip`))
+            .texture(`kubejs:item/stargate/gate_items/materials/core/${core}`);
+            // .textureJson({ //temp
+            //     layer0: `kubejs:item/stargate/gate_items/materials/core`,
+            //     layer1: `kubejs:item/stargate/gate_items/materials/${core}`
+            // })
 
     });
 

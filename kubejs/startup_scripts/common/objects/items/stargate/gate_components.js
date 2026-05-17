@@ -41,11 +41,7 @@ StartupEvents.registry('item', event => {
 
         event.create(`${tier}_stellar_dialer`)
             .tooltip(Text.translate(`item.kubejs.${tier}_stellar_dialer.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/${tier}/stellar_dialer`);
-            .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/temp/stellar_dialer`,
-                layer1: `kubejs:item/stargate/gate_items/temp/${tier}`
-            })
+            .texture(`kubejs:item/stargate/gate_items/components/${tier}/stellar_dialer`);
             
         event.create(`${tier}_dpu`)
             .tooltip(Text.translate(`item.kubejs.${tier}_dpu.tooltip`))
@@ -64,11 +60,7 @@ StartupEvents.registry('item', event => {
 
         event.create(`${tier}_stellar_access_point`)
             .tooltip(Text.translate(`item.kubejs.${tier}_stellar_access_point.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/${tier}/stellar_access_point`);
-            .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/temp/stellar_access_point`,
-                layer1: `kubejs:item/stargate/gate_items/temp/${tier}`
-            })
+            .texture(`kubejs:item/stargate/gate_items/components/${tier}/stellar_access_point`);
             
         event.create(`${tier}_chevron`)
             .tooltip(Text.translate(`item.kubejs.${tier}_chevron.tooltip`))
@@ -84,11 +76,7 @@ StartupEvents.registry('item', event => {
 
         event.create(`${tier}_reinforced_plating`)
             .tooltip(Text.translate(`item.kubejs.${tier}_reinforced_plating.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/${tier}/dimensional_supercomputer`);
-            .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/temp/reinforced_plating`,
-                layer1: `kubejs:item/stargate/gate_items/temp/${tier}`
-            })
+            .texture(`kubejs:item/stargate/gate_items/components/${tier}/reinforced_plating`);
 
         event.create(`${tier}_stargate_rod_base`)
             .tooltip(Text.translate(`item.kubejs.${tier}_stargate_rod_base.tooltip`))

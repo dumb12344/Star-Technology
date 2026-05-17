@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 
     researchBuilder(cpa, 'csg_reinforced_plating',
         ['gtceu:dense_trinaquadalloy_plate', 'gtceu:zpm_electric_piston', 'gtceu:dense_naquadah_alloy_plate',
-            '2x #gtceu:circuits/uv', 'gtceu:dense_enriched_naquadah_plate', '8x gtceu:yttrium_barium_cuprate_single_cable'],
+            '1x #gtceu:circuits/uv', 'gtceu:dense_enriched_naquadah_plate', '8x gtceu:yttrium_barium_cuprate_single_cable'],
         ['gtceu:naquadria 288', 'gtceu:indium_tin_lead_cadmium_soldering_alloy 864'],
         ['kubejs:csg_reinforced_plating'],
         6000, 24, 24 * 600, GTValues.VHA[GTValues.ZPM], 'gtceu:dense_trinaquadalloy_plate');
