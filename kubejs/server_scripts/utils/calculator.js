@@ -619,12 +619,12 @@ let calculatorDefinitions = (() => {
             let args = Array.from(arguments);
             if (args.length === 0) {
               throw new Error(
-                "wrong argument count for max: expected 1 or more, got 0",
+                "wrong argument count for min: expected 1 or more, got 0",
               );
             }
             if (!args.some((arg) => arg.t !== "number")) {
               throw new Error(
-                "wrong argument types for max: expected all numbers",
+                "wrong argument types for min: expected all numbers",
               );
             }
             return {
