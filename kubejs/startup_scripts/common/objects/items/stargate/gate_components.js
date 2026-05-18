@@ -25,19 +25,11 @@ StartupEvents.registry('item', event => {
 
         event.create(`${tier}_field_stabiliser`)
             .tooltip(Text.translate(`item.kubejs.${tier}_field_stabiliser.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/${tier}/field_stabiliser`);
-            .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/temp/field_stabiliser`,
-                layer1: `kubejs:item/stargate/gate_items/temp/${tier}`
-            })
+            .texture(`kubejs:item/stargate/gate_items/components/${tier}/field_stabiliser`);
 
         event.create(`${tier}_energy_modulator`)
             .tooltip(Text.translate(`item.kubejs.${tier}_energy_modulator.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/${tier}/energy_modulator`);
-            .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/temp/energy_modulator`,
-                layer1: `kubejs:item/stargate/gate_items/temp/${tier}`
-            })
+            .texture(`kubejs:item/stargate/gate_items/components/${tier}/energy_modulator`);
 
         event.create(`${tier}_stellar_dialer`)
             .tooltip(Text.translate(`item.kubejs.${tier}_stellar_dialer.tooltip`))
@@ -52,11 +44,7 @@ StartupEvents.registry('item', event => {
             
         event.create(`${tier}_computational_matrix`)
             .tooltip(Text.translate(`item.kubejs.${tier}_computational_matrix.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/${tier}/computational_matrix`);
-            .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/temp/computational_matrix`,
-                layer1: `kubejs:item/stargate/gate_items/temp/${tier}`
-            })
+            .texture(`kubejs:item/stargate/gate_items/components/${tier}/computational_matrix`);
 
         event.create(`${tier}_stellar_access_point`)
             .tooltip(Text.translate(`item.kubejs.${tier}_stellar_access_point.tooltip`))
@@ -68,11 +56,7 @@ StartupEvents.registry('item', event => {
             
         event.create(`${tier}_dimensional_supercomputer`)
             .tooltip(Text.translate(`item.kubejs.${tier}_dimensional_supercomputer.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/${tier}/dimensional_supercomputer`);
-            .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/temp/dimensional_supercomputer`,
-                layer1: `kubejs:item/stargate/gate_items/temp/${tier}`
-            })
+            .texture(`kubejs:item/stargate/gate_items/components/${tier}/dimensional_supercomputer`);
 
         event.create(`${tier}_reinforced_plating`)
             .tooltip(Text.translate(`item.kubejs.${tier}_reinforced_plating.tooltip`))
