@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.draco_infusion(id('ascension_core'))
         .itemInputs('kubejs:draconic_core','kubejs:prismafae_illuminatus_core','kubejs:primordial_fragment','kubejs:riftic_fragment','kubejs:spatium_ruptura_core',
             'kubejs:primus_tempus_core','kubejs:prismalic_fragment')
-        .inputFluids('gtceu:borealic_concentrate 73728')
+        .inputFluids('gtceu:raging_rimulatia 41472')
         .itemOutputs('kubejs:ascension_core')
         .duration(6000)
         .EUt(GTValues.VHA[GTValues.UXV]);

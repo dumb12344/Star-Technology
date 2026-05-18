@@ -17,11 +17,10 @@ StartupEvents.registry('item', event => {
     ['quantum','helish','voidic','draconic','prismafae_illuminatus','spatium_ruptura','primus_tempus','ascension'].forEach(core => {
         event.create(`${core}_core`)
             .tooltip(Text.translate(`item.kubejs.${core}_core.tooltip`))
-            .texture(`kubejs:item/stargate/gate_items/materials/core/${core}`);
-            // .textureJson({ //temp
-            //     layer0: `kubejs:item/stargate/gate_items/materials/core`,
-            //     layer1: `kubejs:item/stargate/gate_items/materials/${core}`
-            // })
+            .textureJson({
+                layer0: `kubejs:item/stargate/gate_items/materials/core/${core}/base`,
+                layer1: `kubejs:item/stargate/gate_items/materials/core/${core}/overlay`
+            });
 
     });
 
