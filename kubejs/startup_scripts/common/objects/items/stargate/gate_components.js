@@ -11,11 +11,11 @@ StartupEvents.registry('item', event => {
 
         event.create(`${rod}_stargate_rod`)
             .tooltip(Text.translate(`item.kubejs.${rod}_stargate_rod.tooltip`))
-            // .texture(`kubejs:item/stargate/gate_items/components/rods/${rod}`);
-            .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/temp/rods/rod`,
-                layer1: `kubejs:item/stargate/gate_items/temp/rods/${rod}`
-            })
+            .texture(`kubejs:item/stargate/gate_items/components/rods/${rod}`);
+            // .textureJson({ //temp
+            //     layer0: `kubejs:item/stargate/gate_items/temp/rods/rod`,
+            //     layer1: `kubejs:item/stargate/gate_items/temp/rods/${rod}`
+            // })
 
     });
 
