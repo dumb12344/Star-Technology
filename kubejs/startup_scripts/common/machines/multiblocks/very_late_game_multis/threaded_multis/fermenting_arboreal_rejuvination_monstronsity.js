@@ -1,6 +1,6 @@
 GTCEuStartupEvents.registry('gtceu:machine', event => {
 
-    event.create('fermenting_arboreal_rejuvination_monstronsity', 'multiblock')
+    event.create('fermenting_arboreal_rejuvenation_monstrosity', 'multiblock')
         .machine((holder) => new $StarTThreadingCapableMachine(holder))
         .rotationState(RotationState.NON_Y_AXIS)
         .tooltips([ 

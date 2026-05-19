@@ -320,6 +320,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     matmod('vanadium_gallium', fine_wire);
     matmod('titanium', foil);
     matmod('rhodium_plated_palladium', [frame, foil]);
+    matmod('palladium', [rotor]);
     matmod('darmstadtium', [frame, foil]);
     matmod('ruthenium_trinium_americium_neutronate', fine_wire);
     matmod('gold', gear);
@@ -514,9 +515,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create(name).liquid(new GTFluidBuilder().temperature(temp)).plasma().components(elements).color(color).flags(flags);
     }
 
-    // Temp
-    event.create('borosilicate_glas').components('1x boron','7x silicon_dioxide').color(0xFAFAFA).secondaryColor(0xfaf5c0).iconSet(SHINY).flags(no_decomp,not_alloy,foil);
-
     // Materials
 
     elemDust('uranium_233',0x4fbb4f,[no_smelt]);
@@ -584,17 +582,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     if (global.packmode !== 'hard'){(() => { 
 
         //Non HM Superconductors
-        conductorSuper('soul_infused', ['1x invar', '2x soul'], 0xcc9966, [], [V('lv'), 4, 0, true], [150, 130, 2, 3000]);
-        conductorSuper('signalum', ['1x silver', '3x copper', '4x redstone'], 0xff3300, [1700, 'low', VA('mv'), 800], [V('mv'), 16, 0, true], [190, 120, 3, 4000]);
-        conductorSuper('lumium', ['1x silver', '3x tin', '2x glowstone'], 0xffffb3, [1700, 'low', VA('hv'), 1000], [V('hv'), 16, 0, true], [220, 130, 4, 5500]);
-        conductorSuper('enderium', ['3x lead', '1x diamond', '2x ender_pearl'], 0x006666, [3500, 'low', VA('ev'), 1200], [V('ev'), 32, 0, true], [300, 140, 5, 7500]);
-        conductorSuper('shellite', ['1x black_bronze', '3x signalum'], 0x9933ff, [4400, 'mid', VA('iv'), 1400], [V('iv'), 64, 0, true], [450, 150, 6, 10000]);
-        conductorSuper('twinite', ['3x manganese_phosphide', '2x amethyst', '1x lumium'], 0xf66999, [5300, 'mid', VA('luv'), 1600], [V('luv'), 64, 0, true], [700, 160, 7, 13000]);
-        conductorSuper('dragonsteel', ['4x tungsten', '8x magnesium_diboride', '2x cadmium'], 0x3333cc, [7100, 'high', VA('zpm'), 1800], [V('zpm'), 96, 0, true], [1100, 170, 8, 16500]);
-        conductorSuper('prismalium', ['8x naquadah', '4x mercury_barium_calcium_cuprate', '7x tungsten_carbide'], 0x66ffff, [9000, 'high', VA('zpm'), 2000], [V('uv'), 48, 0, true], [1600, 180, 9, 20500]);
-        conductorSuper('melodium', ['2x uranium_triplatinum', '14x electrum', '3x amethyst', '4x darmstadtium', '7x europium'], 0xd9b3ff, [10000, 'higher', VA('uv'), 2200], [V('uv'), 128, 0, true], [2000, 200, 10, 26000]);
-        conductorSuper('stellarium', ['12x neutronium', '4x melodium', '1x samarium_iron_arsenic_oxide'], 0xccffff, [10799, 'highest', VA('uhv'), 2400], [V('uhv'), 192, 0, true], [3200, 215, 12, 32000]);
-        conductorSuper('ancient_runicalium', ['5x zapolgium', '18x stellarium', '8x zirconium'], 0xFAB922, [11749, 'highest', V('uhv') + 1, 3000], [V('uev'), 256, 0, true], [6400, 240, 15, 38500]);
+        conductorSuper('soul_infused', ['1x invar', '2x soul'], 0xcc9966, [], [V('lv'), 4, 0, true], [150, 120, 2, 3000]);
+        conductorSuper('signalum', ['1x silver', '3x copper', '4x redstone'], 0xff3300, [1700, 'low', VA('mv'), 800], [V('mv'), 16, 0, true], [190, 140, 3, 4000]);
+        conductorSuper('lumium', ['1x silver', '3x tin', '2x glowstone'], 0xffffb3, [1700, 'low', VA('hv'), 1000], [V('hv'), 16, 0, true], [220, 160, 4, 5500]);
+        conductorSuper('enderium', ['3x lead', '1x diamond', '2x ender_pearl'], 0x006666, [3500, 'low', VA('ev'), 1200], [V('ev'), 32, 0, true], [300, 180, 5, 7500]);
+        conductorSuper('shellite', ['1x black_bronze', '3x signalum'], 0x9933ff, [4400, 'mid', VA('iv'), 1400], [V('iv'), 64, 0, true], [450, 200, 6, 10000]);
+        conductorSuper('twinite', ['3x manganese_phosphide', '2x amethyst', '1x lumium'], 0xf66999, [5300, 'mid', VA('luv'), 1600], [V('luv'), 64, 0, true], [700, 220, 7, 13000]);
+        conductorSuper('dragonsteel', ['4x tungsten', '8x magnesium_diboride', '2x cadmium'], 0x3333cc, [7100, 'high', VA('zpm'), 1800], [V('zpm'), 96, 0, true], [1100, 240, 8, 16500]);
+        conductorSuper('prismalium', ['8x naquadah', '4x mercury_barium_calcium_cuprate', '7x tungsten_carbide'], 0x66ffff, [9000, 'high', VA('zpm'), 2000], [V('uv'), 48, 0, true], [1600, 260, 9, 20500]);
+        conductorSuper('melodium', ['2x uranium_triplatinum', '14x electrum', '3x amethyst', '4x darmstadtium', '7x europium'], 0xd9b3ff, [10000, 'higher', VA('uv'), 2200], [V('uv'), 128, 0, true], [2000, 280, 10, 26000]);
+        conductorSuper('stellarium', ['12x neutronium', '4x melodium', '1x samarium_iron_arsenic_oxide'], 0xccffff, [10799, 'highest', VA('uhv'), 2400], [V('uhv'), 192, 0, true], [3200, 300, 12, 32000]);
+        conductorSuper('ancient_runicalium', ['5x zapolgium', '18x stellarium', '8x zirconium'], 0xFAB922, [11749, 'highest', V('uhv') + 1, 3000], [V('uev'), 256, 0, true], [6400, 320, 15, 38500]);
     
     })()} else if (global.packmode == 'hard'){(() => {
 	
@@ -957,9 +955,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         // Alloys and other compounds
         conductor('zalloy', ['3x zapolgium', '4x duranium', '2x europium'], 0xff66ff, METALLIC, [10799, 'highest', VHA('zpm'), 3000], [V('uv'), 2, 4, false], [plates, frame, rod, bolt_and_screw, round, long_rod, gear, small_gear, ring, dense_plate]);
 
-        conductor('zirconium_selenide_diiodide', ['1x zirconium', '1x selenium', '2x iodine'], 0x6600cc, DULL, [8900, 'higher', VA('luv'), 4000], [V('uhv'), 8, 16, false], [spring]);
+        conductor('zirconium_selenide_diiodide', ['1x zirconium', '1x selenium', '2x iodine'], 0x6600cc, DULL, [9600, 'higher', VA('luv'), 3600], [V('uhv'), 8, 16, false], [spring]);
 
-        compIngotLiquid('zircalloy_4', ['251x zirconium', '3x tin', '2x chromium', '1x iron'], 0xff9999, DULL, [8900, 'higher', VA('luv'), 2000], [gear, small_gear, rotor, round, frame]);
+        compIngotLiquid('zircalloy_4', ['251x zirconium', '3x tin', '2x chromium', '1x iron'], 0xff9999, DULL, [9100, 'higher', VA('luv'), 1800], [gear, small_gear, rotor, round, frame]);
 
     // Misc
     compIngotLiquid('indium_tin_lead_cadmium_soldering_alloy', ['14x indium', '3x tin', '2x lead', '1x cadmium'], 0xa6a6a6, [], [], []);
@@ -1251,9 +1249,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compDustIcon('boron_trioxide', ['2x boron', '3x oxygen'], 0xDACABB, DULL, []);
 
     // Ultimate Multis
-    compIngotLiquid('astrenalloy_nx', ['1x hastelloy_x', '4x enriched_naquadah', '3x zirconium', '6x tantalum_carbide', '4x osmiridium', '3x boron_nitride'], 0x63478e, SHINY, [10090, 'highest', VA('uv'), 2800], [plates, rod, frame]);
+    compIngotLiquid('astrenalloy_nx', ['1x hastelloy_x', '4x enriched_naquadah', '3x zirconium', '6x tantalum_carbide', '4x osmiridium', '3x boron_nitride'], 0x63478e, SHINY, [8650, 'highest', VHA('zpm'), 2100], [plates, rod, frame]);
     
-    compIngotLiquid('thacoloy_nq_42x', ['6x incoloy_ma_956', '4x enriched_naquadah', '2x niobium_titanium', '4x osmiridium', '4x thallium_tungstate'], 0x467624, SHINY, [9190, 'highest', VA('zpm'), 3400], [plates, rod, frame]);
+    compIngotLiquid('thacoloy_nq_42x', ['6x incoloy_ma_956', '4x enriched_naquadah', '2x niobium_titanium', '4x osmiridium', '4x thallium_tungstate'], 0x467624, SHINY, [8800, 'highest', VHA('zpm'), 1800], [plates, rod, frame]);
 
     compIngotLiquidSecColor('tritan_steel', ['7x tritanium', '3x maraging_steel_300', '2x enriched_naquadah', '3x titanium_tungsten_carbide', '1x boron_nitride'], 0x9a445d, 0x2d095a, METALLIC, [8990, 'highest', VHA('uv'), 2400], [plates, rod, frame, small_gear, gear, round, ring, bolt_and_screw, long_rod, foil, dense_plate]);
 
@@ -1327,7 +1325,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquidStill('dense_electron_akreyrium', ['1x utopian_akreyrium', '1x mystery'], [no_decomp]);
 
     // Resource Gen
-    compLiquid('brackish_water', ['1x water', '1x mystery'], 0x459ea4, [no_decomp]);
+    // compLiquid('brackish_water', ['1x water', '1x mystery'], 0x459ea4, [no_decomp]);
 
     compLiquid('iron_mixture', ['1x mystery'], 0xc42626, [no_decomp]);
     
@@ -1652,7 +1650,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .blastTemp(18880, 'highest', VA('uxv'), 600)
         .iconSet(SHINY)
         .flags(plates, frame, rod, dense_plate, long_rod, gear, foil, small_gear, rotor, fine_wire, no_decomp, no_abs_recipe)
-        .rotorStats(12800, 250, 50, 45000);
+        .rotorStats(12800, 400, 50, 45000);
 
     //Threaded
     compIngotPlasmaSecColor('expetidalloy_d_17',['2x hafnide_ceramic_base', '11x hastelloy_c_276', '3x dragonsteel', '1x rhodium_plated_palladium'],0xa78e99,0x948da6,SHINY,[18880, 'highest', VA('uxv'), 600],[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, no_abs_recipe]);
@@ -1832,7 +1830,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('impure_faematter', ['1x mystery','1x faetic','1x mystery'], 0xe8bce7, [no_decomp]);
     compLiquid('faematter', ['1x faetic'], 0xf593f3, [no_decomp]);
 
-    compLiquid('stabilization_mixture_base', ['3x poly_34_ethylenedioxythiophene_polystyrene_sulfate','8x runic_convergence_infusion','2x utopian_akreyrium'], 0xb6b4c2, [no_decomp]);
+    compLiquid('stabilization_mixture_base', ['5x poly_34_ethylenedioxythiophene_polystyrene_sulfate','17x runic_convergence_infusion','10x utopian_akreyrium'], 0xb6b4c2, [no_decomp]);
     compLiquid('infernal_stabilization_mixture', ['24x stabilization_mixture_base','1x magmada_alloy'], 0xbd4444, [no_decomp]);
     compLiquid('abyssal_stabilization_mixture', ['24x stabilization_mixture_base','1x abyssal_alloy'], 0x7e44bd, [no_decomp]);
     compLiquid('draconic_stabilization_mixture', ['1x abyssal_stabilization_mixture','1x infernal_stabilization_mixture'], 0x302185, [no_decomp]);
@@ -1857,9 +1855,17 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('faetic_extract', ['1x riftic','1x faetic','1x mystery'], 0x7da7b0, [no_decomp]);
     compLiquid('prismatic_hypergurmalium', ['1x riftic','1x faetic'], 0x4fdfff, [no_decomp]);
 
-    //DSG
-    compIngotLiquidSecColor('raging_rimulatia',['1x rifitc','1x draco_abyssal','1x riftic'],0xe357f2,0x163f5e,SHINY,'',[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, fine_wire])
-    
+    //DSG   
+    event.create('raging_rimulatia') //Shadowyrm
+        .components('1x rifitc','1x draco_abyssal','1x riftic')
+        .ingot()
+        .fluid()
+        .color(0xe357f2)
+        .secondaryColor(0x163f5e)
+        .iconSet(SHINY)
+        .flags(plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, fine_wire)
+        .rotorStats(14400, 560, 100, 96000);
+
     event.create('primordially_stellarized_weapon_grade_naquadah')
         .components('1x voidic','157x stellarized_weapon_grade_naquadah','1x voidic')
         .ingot()

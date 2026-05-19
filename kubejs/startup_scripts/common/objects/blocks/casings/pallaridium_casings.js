@@ -8,6 +8,7 @@ StartupEvents.registry('block', event => {
             .lightLevel(0)
             .soundType('metal')
             .requiresTool(true)
+            .noValidSpawns(true)
             .tagBlock('mineable/pickaxe')
             .tagBlock('minecraft:needs_iron_tool')
             .textureAll(`kubejs:block/casings/pallaridium/${texture}`);
@@ -23,7 +24,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .firebox('gtceu:block/casings/solid/machine_casing_palladium_substation',
                 'kubejs:block/casings/pallaridium/firebox_casing',
                 'gtceu:block/casings/solid/machine_casing_palladium_substation');
@@ -35,7 +37,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .simple('kubejs:block/casings/pallaridium/engine_intake_casing');
 
 });

@@ -8,6 +8,7 @@ StartupEvents.registry('block', event => {
             .lightLevel(2)
             .soundType('stone')
             .requiresTool(true)
+            .noValidSpawns(true)
             .tagBlock('mineable/pickaxe')
             .tagBlock('minecraft:needs_diamond_tool')
             .textureAll(`kubejs:block/casings/runic/${texture}`);

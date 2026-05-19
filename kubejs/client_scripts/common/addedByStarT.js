@@ -15,7 +15,7 @@ global.addedByStarT = {
         'stargate_component_assembly', 'super_pressure_heat_chamber', 'omega_pressure_heat_chamber', 'super_compact_heat_chamber', 'heat_chamber', 'super_abs', 'super_cutter', 
         'super_ebf', 'super_implosion_compressor', 'super_vacuum_freezer', 'super_electric_ore_factory', 'super_barrel', 'super_cracker', 'super_pyrolyse', 'super_gas_collector',
         'aqueous_transformation_processing_center', 'ascendant_engraving_matrix', 'byteforce_unified_incomparable_logistics_depot',
-        'electro_magnetic_material_ripper', 'fermenting_arboreal_rejuvination_monstronsity', 'gravitational_compression_chamber', 'material_annihilation_array',
+        'electro_magnetic_material_ripper', 'fermenting_arboreal_rejuvenation_monstrosity', 'gravitational_compression_chamber', 'material_annihilation_array',
         'molecular_inducing_xanadu', 'multithreaded_component_synthesis_forge', 'subatomic_particle_lattice_isolation_terminal', 'superior_particulate_isolation_nexus',
         'yielding_excression_advanced_seperation_transformator', 'luv_fusion_reactor', 'zpm_fusion_reactor', 'uv_fusion_reactor', 'uhv_fusion_reactor', 'uev_fusion_reactor',
         'uiv_fusion_reactor', 'exotic_gas_siphon', 'ultimate_ebf', 'compact_assembly_line', 'supreme_plasma_turbine', 'vacuum_chemical_reaction_chamber',

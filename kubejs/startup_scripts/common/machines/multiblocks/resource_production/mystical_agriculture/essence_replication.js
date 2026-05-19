@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('essence_replicator', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .recipeType('essence_replication')
-        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.PARALLEL_HATCH, GTRecipeModifiers.OC_PERFECT, GTRecipeModifiers.BATCH_MODE])
         .appearanceBlock(GTBlocks.CASING_INVAR_HEATPROOF)
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('IIIII', '     ', '     ', '     ', 'IIIII')

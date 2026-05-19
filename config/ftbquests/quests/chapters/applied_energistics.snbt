@@ -440,6 +440,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -454,6 +455,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -468,6 +470,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -482,6 +485,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -496,6 +500,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -510,6 +515,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 			]
@@ -1487,7 +1493,7 @@
 			]
 			title: "{ftbquests.ae2.assembler_matrix.title}"
 			x: -11.0d
-			y: 3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["478A02E7D8C0A1C8"]
@@ -1729,7 +1735,7 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["29D7E2B8D3BF1D9E"]
@@ -1779,7 +1785,7 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["272CE9BF358D64FE"]
@@ -1879,6 +1885,28 @@
 			}]
 			x: -11.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["0094C2E72105E8CA"]
+			id: "4E9302D20943CC77"
+			tasks: [{
+				id: "68481E491D8FF1B6"
+				item: "gtceu:me_pattern_buffer"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4E9302D20943CC77"]
+			id: "3750F37A0F2A98E1"
+			tasks: [{
+				id: "27F46532EA7E6560"
+				item: "gtceu:me_pattern_buffer_proxy"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 3.0d
 		}
 	]
 	title: "{ftbquests.ae2.title}"

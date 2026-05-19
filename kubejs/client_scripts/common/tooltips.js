@@ -6,7 +6,7 @@ ItemEvents.tooltip(event => {
         "lv", "mv", "hv", "ev", "iv", "luv", "zpm", "uv", "uhv", "uev", "uiv"
     ];
     const addedByStarTSingles = [
-        "electric_blast_furnace", "electric_smoker", "me_assembler"
+        "electric_blaster", "electric_smoker", "me_assembler"
     ];
 
     tiers.forEach(tier => {

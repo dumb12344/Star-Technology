@@ -272,11 +272,11 @@ ServerEvents.recipes(event => {
     );
     DracoBulkCircuiter(12,'kubejs:lv_universal_circuit',
         ['gtceu:plastic_printed_circuit_board','gtceu:soc','2x gtceu:fine_copper_wire','2x gtceu:tin_bolt'],
-        'gtceu:soldering_alloy 72',25,GTValues.VA[GTValues.IV] / 3.5,16
+        'gtceu:soldering_alloy 72',25,GTValues.VA[GTValues.IV] / 3.5,12
     );
     DracoBulkCircuiter(8,'kubejs:mv_universal_circuit',
         ['gtceu:plastic_printed_circuit_board','gtceu:soc','4x gtceu:fine_red_alloy_wire','4x gtceu:annealed_copper_bolt'],
-        'gtceu:soldering_alloy 72',25,GTValues.VA[GTValues.LuV] / 3.5,32
+        'gtceu:soldering_alloy 72',25,GTValues.VA[GTValues.LuV] / 3.5,24
     );
     DracoBulkCircuiter(8,'kubejs:hv_universal_circuit',
         ['gtceu:epoxy_printed_circuit_board','gtceu:advanced_soc','4x gtceu:fine_electrum_wire','4x gtceu:platinum_bolt'],

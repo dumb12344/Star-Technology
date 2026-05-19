@@ -8,9 +8,8 @@ StartupEvents.registry('item', event => {
     event.create(`proto_${rune}_rune`)
         .tooltip(Text.translate(`item.kubejs.proto_rune.tooltip`))
         .tooltip(Text.translate(`item.kubejs.proto_${rune}_rune.tooltip`))
-        // .texture(`kubejs:item/stargate/runes/proto/proto_${rune}_rune`)
-        .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/runes/proto/backing`,
+        .textureJson({
+                layer0: `kubejs:item/stargate/gate_items/components/csg/enscription_plate`,
                 layer1: `kubejs:item/stargate/gate_items/runes/proto/${rune}`
             })
 
@@ -23,9 +22,8 @@ StartupEvents.registry('item', event => {
     event.create(`runic_${rune}_plating`)
         .tooltip(Text.translate(`item.kubejs.runic_plating.tooltip`))
         .tooltip(Text.translate(`item.kubejs.runic_${rune}_plating.tooltip`))
-        // .texture(`kubejs:item/stargate/runes/runic/runic_${rune}_plating`)
-        .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/runes/runic/backing`,
+        .textureJson({
+                layer0: `kubejs:item/stargate/gate_items/components/asg/enscription_plate`,
                 layer1: `kubejs:item/stargate/gate_items/runes/runic/${rune}`
             })
 
@@ -39,9 +37,8 @@ StartupEvents.registry('item', event => {
     event.create(`transcension_engraved_${rune}_sigil`)
         .tooltip(Text.translate(`item.kubejs.transcension_engraved_sigil.tooltip`))
         .tooltip(Text.translate(`item.kubejs.transcension_engraved_${rune}_sigil.tooltip`))
-        // .texture(`kubejs:item/stargate/runes/sigil/transcension_engraved_${rune}_sigil`)
-        .textureJson({ //temp
-                layer0: `kubejs:item/stargate/gate_items/runes/sigil/backing`,
+        .textureJson({
+                layer0: `kubejs:item/stargate/gate_items/components/dsg/enscription_plate`,
                 layer1: `kubejs:item/stargate/gate_items/runes/sigil/${rune}`
             })
 

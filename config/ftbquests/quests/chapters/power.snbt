@@ -1752,7 +1752,6 @@
 				"64F15C7160BF5CBB"
 				"2490AD30E2772475"
 			]
-			description: [""]
 			hide_dependent_lines: true
 			icon: "kubejs:lv_universal_circuit"
 			id: "1B32FFCDA1C87B90"
@@ -2516,20 +2515,16 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["3CF2C49F5D891ED3"]
-			id: "31E87AFDD5EF27E4"
-			tasks: [
-				{
-					id: "6AFC3539CFFA8B9B"
-					title: "Modular R2"
-					type: "checkmark"
-				}
-				{
-					id: "150F6DDD8FE62966"
-					item: "start_core:uev_combustion_module"
-					type: "item"
-				}
+			dependencies: [
+				"3CF2C49F5D891ED3"
+				"3F34F4AC99C45E6F"
 			]
+			id: "31E87AFDD5EF27E4"
+			tasks: [{
+				id: "150F6DDD8FE62966"
+				item: "start_core:uev_combustion_module"
+				type: "item"
+			}]
 			x: 0.0d
 			y: 2.5d
 		}

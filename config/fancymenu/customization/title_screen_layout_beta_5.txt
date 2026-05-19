@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = true
-  last_edited_time = 1774084254288
+  last_edited_time = 1778770695013
   is_enabled = true
   randommode = true
   randomgroup = 1
   randomonlyfirsttime = true
   layout_index = 0
-  [loading_requirement_container_meta:25f758a1-18eb-4200-872f-596d2275e169-1774084098678] = [groups:][instances:]
+  [loading_requirement_container_meta:742e812b-628d-4f48-923e-b8fe761cd64a-1778770530247] = [groups:][instances:]
 }
 
 customization {
@@ -160,7 +160,7 @@ element {
   button_element_executable_block_identifier = 0e0825ea-4348-4f48-a563-808805721f15-1759742627608
   [executable_action_instance:95cb418f-eac6-4b06-9937-af0f30328b48-1759742711975][action_type:openlink] = https://discord.com/invite/startechnology
   [executable_block:0e0825ea-4348-4f48-a563-808805721f15-1759742627608][type:generic] = [executables:95cb418f-eac6-4b06-9937-af0f30328b48-1759742711975;]
-  backgroundnormal = [source:local]/config/fancymenu/assets/discord_normal_orange_100x20.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/discord_normal_orange_100x20.png 
   backgroundhovered = [source:local]/config/fancymenu/assets/discord_hover_orange_100x20.png
   restartbackgroundanimations = true
   nine_slice_custom_background = false
@@ -170,7 +170,7 @@ element {
   navigatable = true
   widget_active_state_requirement_container_identifier = 1cf098c4-577a-483c-8062-97ffb99025d6-1759742627608
   [loading_requirement_container_meta:1cf098c4-577a-483c-8062-97ffb99025d6-1759742627608] = [groups:][instances:30864307-fdc0-426e-93ea-0e807534c37b-1759742858140;]
-  [loading_requirement:is_internet_connection_available][requirement_mode:if][req_id:30864307-fdc0-426e-93ea-0e807534c37b-1759742858140] = 
+
   is_template = false
   template_apply_width = false
   template_apply_height = false

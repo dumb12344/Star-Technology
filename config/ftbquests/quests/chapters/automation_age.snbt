@@ -18,7 +18,7 @@
 		{
 			id: "723EBAAA2CB2DA89"
 			linked_quest: "3306CAE5E57839A2"
-			x: -14.5d
+			x: -12.5d
 			y: 2.0d
 		}
 		{
@@ -39,7 +39,7 @@
 			id: "251255FB361F38BE"
 			linked_quest: "4A4275186719AD8D"
 			x: -9.5d
-			y: -1.0d
+			y: -3.0d
 		}
 		{
 			id: "055E80BF97224848"
@@ -63,7 +63,7 @@
 			id: "400BFC5E40D565E2"
 			linked_quest: "0C78BD4A7A0B98E4"
 			x: -9.5d
-			y: -3.0d
+			y: -1.0d
 		}
 	]
 	quests: [
@@ -349,12 +349,14 @@
 							value: "forge:lenses/light_blue"
 						}
 					}
+					optional_task: true
 					title: "{ftbquests.automation_age.cpu_chip.item_title}"
 					type: "item"
 				}
 				{
 					id: "1A1986FD48A7F1D5"
 					item: "gtceu:cpu_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1017,67 +1019,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4FFD2642BC183495"]
-			description: ["{ftbquests.automation_age.drilling_rig.description}"]
-			id: "22BC7BDE5E132A30"
-			rewards: [{
-				id: "26043A495658B8EF"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			subtitle: "{ftbquests.automation_age.drilling_rig.subtitle}"
-			tasks: [{
-				id: "7857528275E1A624"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:mv_fluid_drilling_rig"
-								tag: { }
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_fluid_drilling_rig"
-								tag: { }
-							}
-							{
-								Count: 1b
-								id: "gtceu:ev_fluid_drilling_rig"
-								tag: { }
-							}
-						]
-					}
-				}
-				title: "{ftbquests.automation_age.drilling_rig.title}"
-				type: "item"
-			}]
-			x: -10.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["73931EAA3EC5C9A9"]
-			description: ["{ftbquests.automation_age.prospector.description}"]
-			hide_dependency_lines: true
-			id: "4FFD2642BC183495"
-			rewards: [{
-				id: "08BAC9B75D29DFC8"
-				item: "kubejs:coin"
-				type: "item"
-			}]
-			size: 1.0d
-			tasks: [{
-				id: "39F1C5A4137CC90D"
-				item: "gtceu:prospector.hv"
-				type: "item"
-			}]
-			x: -12.5d
-			y: 2.0d
-		}
-		{
 			dependencies: ["170C262792DA7123"]
 			description: ["{ftbquests.automation_age.desulfurize.description}"]
 			icon: "gtceu:sulfur_dust"
@@ -1131,7 +1072,6 @@
 				"3BD1916DC5208255"
 				"49B2298EC48C7F97"
 				"073989ADB68D1F92"
-				"61483DE9D5859D78"
 				"4BA7A1EBD0E9A16B"
 			]
 			dependency_requirement: "one_completed"
@@ -1170,7 +1110,7 @@
 				type: "item"
 			}]
 			x: -14.5d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1310,11 +1250,13 @@
 				{
 					id: "31DE2CEF7FC2AE07"
 					item: "gtceu:brown_glass_lens"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4C279F1227E00850"
 					item: "gtceu:mpic_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1438,11 +1380,13 @@
 				{
 					id: "3E6960F178BA0BF3"
 					item: "gtceu:yellow_glass_lens"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4C83CA52492C81B0"
 					item: "gtceu:soc_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1584,6 +1528,7 @@
 				{
 					id: "53C362EB686FE9E5"
 					item: "gtceu:nano_cpu_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1629,11 +1574,13 @@
 				{
 					id: "25B0DF166BBC970A"
 					item: "gtceu:pink_glass_lens"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2BFAF15BFD996818"
 					item: "gtceu:nor_memory_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1800,6 +1747,7 @@
 				{
 					id: "0805322CDFFA96C4"
 					item: "gtceu:hpic_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2043,11 +1991,13 @@
 				{
 					id: "78983E5E875409CA"
 					item: "gtceu:gray_glass_lens"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7A6C4F52309534F7"
 					item: "gtceu:nand_memory_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -2088,7 +2038,7 @@
 				item: "gtceu:laminated_glass"
 				type: "item"
 			}]
-			x: -14.5d
+			x: -12.5d
 			y: 0.0d
 		}
 		{
@@ -2105,7 +2055,7 @@
 				item: "gtceu:industrial_barrel"
 				type: "item"
 			}]
-			x: -12.5d
+			x: -10.5d
 			y: 0.0d
 		}
 		{
@@ -2119,7 +2069,7 @@
 				type: "checkmark"
 			}]
 			x: -10.5d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["261174370DC87FCB"]

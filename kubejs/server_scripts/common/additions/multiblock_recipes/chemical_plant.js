@@ -99,11 +99,11 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.ZPM]);
 
     event.recipes.gtceu.chemical_skip(id('mutagen_skip'))
-        .itemInputs('64x gtceu:bio_chaff','64x gtceu:bio_chaff','64x gtceu:bio_chaff','24x gtceu:bio_chaff','5x gtceu:naquadria_dust')
-        .inputFluids('gtceu:distilled_water 77250')
-        .outputFluids('gtceu:mutagen 9000')
-        .duration(558)
-        .EUt(GTValues.VA[GTValues.UEV])
+        .itemInputs('1x gtceu:naquadria_dust')
+        .inputFluids('gtceu:biomass 9000','gtceu:bacteria 9000')
+        .outputFluids('gtceu:mutagen 1800')
+        .duration(12)
+        .EUt(GTValues.VHA[GTValues.UEV])
         .cleanroom(CleanroomType.STERILE_CLEANROOM);
 
     event.recipes.gtceu.chemical_skip(id('sic_skip'))

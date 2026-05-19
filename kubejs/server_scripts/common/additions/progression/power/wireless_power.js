@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
 
                 let UVtierFluid = (tier == 'uv') ? 1 : 2 ;
 
-                let prior = (amperage === 2) ? '2a_dream_link_cover_item' : (amperage === 4) ? `4a_dream_link_energy_hatch` : `${amperage / 4}a_dream_link_energy_hatch` ;
+                let prior = (amperage === 2) ? '2a_dream_link_cover_item' : (amperage === 4) ? `2a_dream_link_energy_hatch` : `${amperage / 4}a_dream_link_energy_hatch`;
 
                 let inputHatch = (amperage === 2) ? `gtceu:${tier}_energy_input_hatch` : (amperage === 64) ? `gtceu:${tier}_substation_input_hatch_64a` : 
                     (amperage === 256) ? `gtceu:${tier}_256a_laser_target_hatch` : `gtceu:${tier}_energy_input_hatch_${amperage}a` ;

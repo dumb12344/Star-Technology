@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'gtceu:platinum_salt_gem' , type: 'gtceu:implosion_compressor' });
     event.remove({ output: 'gtceu:palladium_salt_gem' , type: 'gtceu:implosion_compressor' });
 
-    const CR = event.recipes.gtceu.chemical_reactor || event.recipes.gtceu.large_chemical_reactor ;
+    const CR = event.recipes.gtceu.chemical_reactor;
     const Cent = event.recipes.gtceu.centrifuge ;
     const Mix = event.recipes.gtceu.mixer ;
     const Sift = event.recipes.gtceu.sifter ;

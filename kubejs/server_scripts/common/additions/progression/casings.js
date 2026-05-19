@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
     casingDouble('nyanium_machine','nyanium' ,'kubejs');
 
     event.recipes.gtceu.assembler(id('silicone_rubber_casing'))
-        .itemInputs('gtceu:solid_machine_casing') 
+        .itemInputs('gtceu:solid_machine_casing')
         .inputFluids('gtceu:silicone_rubber 216')
         .itemOutputs('kubejs:silicone_rubber_casing')
         .duration(50)
@@ -166,7 +166,7 @@ ServerEvents.recipes(event => {
             H: '#forge:tools/hammers',
             W: '#forge:tools/wrenches'
         }).id(`${casing_id}:${type}_gearbox`);
-    
+
         event.recipes.gtceu.assembler(id(`${material}_gearbox`))
             .itemInputs(`4x gtceu:${material}_plate`,`2x gtceu:${frame}_gear`,`gtceu:${frame}_frame`)
             .itemOutputs(`2x ${casing_id}:${type}_gearbox`)
@@ -226,10 +226,10 @@ ServerEvents.recipes(event => {
 
     };
 
-    engine_intake('pallaridium','iridium','iridium','kubejs','gtceu:palladium_substation');
+    engine_intake('pallaridium','palladium','iridium','kubejs','gtceu:palladium_substation');
     engine_intake('enriched_naquadah','enriched_naquadah','enriched_naquadah','kubejs','kubejs:enriched_naquadah_machine_casing');
     engine_intake('nyanium','nyanium','nyanium','kubejs','kubejs:nyanium_machine_casing');
-    
+
     event.recipes.gtceu.assembler(id('extreme_temperature_smelting_casing'))
         .itemInputs('4x gtceu:calamatium_plate', '2x gtceu:astatium_bioselex_carbonite_plate', 'gtceu:enriched_estalt_frame')
         .itemOutputs('2x kubejs:extreme_temperature_smelting_casing')
@@ -297,9 +297,12 @@ ServerEvents.recipes(event => {
     special_ultimate_casing('draco_ware_casing',['gtceu:trikoductive_neutro_steel_frame', '6x kubejs:draconic_brain_matter_cells', '2x #gtceu:circuits/uev', 'gtceu:uev_sensor', '32x gtceu:fine_aurourium_wire', '32x gtceu:fine_magmada_alloy_wire'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1008', 'gtceu:dragon_breath 2250'], 'gtceu:high_power_casing');
     special_ultimate_casing('draco_resilient_fusion_glass',['kubejs:reinforced_fusion_glass', '12x kubejs:draconic_scale_cells', '1x gtceu:uhv_field_generator', '6x kubejs:borealic_neutron_reflector'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1008', 'gtceu:dragon_breath 1250'], 'gtceu:fusion_glass');
     special_ultimate_casing('abyssal_inductor_hull',['gtceu:abyssal_alloy_frame', '2x kubejs:abyssal_inductor', 'kubejs:uiv_microfluidic_flow_valve', '2x kubejs:voidic_reinforced_mesh', '#gtceu:circuits/uiv', '8x gtceu:polonium_bismide_single_cable'], ['gtceu:naquadated_soldering_alloy 864', 'gtceu:dragon_breath 400'], 'kubejs:abyssal_inductor');
-    
+
     special_ultimate_casing('abyssal_inductor',['gtceu:uiv_emitter', '3x gtceu:lepton_resonant_thallium_antimonide_spring', '6x gtceu:draco_abyssal_screw', '6x gtceu:polonium_bismide_single_cable'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 720', 'gtceu:borealic_concentrate 576'], 'gtceu:blacklight');
 
+    special_ultimate_casing('primordial_assembly_grating',['gtceu:draco_abyssal_frame', '5x gtceu:abyssal_alloy_rotor', '2x gtceu:uiv_electric_motor', '12x gtceu:draconyallium_foil'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 3024', 'gtceu:pure_dragon_breath 875'], 'kubejs:draco_assembly_grating');
+    special_ultimate_casing('primordial_ware_casing',['gtceu:draconyallium_frame', '16x kubejs:draconic_brain_matter_cells', '2x #gtceu:circuits/uiv', 'gtceu:uiv_sensor', '32x gtceu:fine_rhenate_w_wire', '32x gtceu:fine_draco_abyssal_wire'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 3024', 'gtceu:dragon_breath 1000'], 'kubejs:draco_ware_casing');
+    
     event.recipes.gtceu.assembler(id('tritanic_blasting_casing'))
         .itemInputs('6x gtceu:tritan_steel_plate', 'gtceu:naquadah_alloy_frame')
         .itemOutputs('2x kubejs:tritanic_blasting_casing')
@@ -419,6 +422,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler(id('peek_casing'))
         .itemInputs('gtceu:robust_machine_casing')
         .inputFluids('gtceu:polyether_ether_ketone 216')
+        .circuit(6)
         .itemOutputs('kubejs:peek_casing')
         .duration(600)
         .EUt(GTValues.VA[GTValues.LuV]);
@@ -426,6 +430,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.assembler(id('cattomolymer_casing'))
         .itemInputs('kubejs:nyanium_machine_casing')
         .inputFluids('gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 216')
+        .circuit(6)
         .itemOutputs('kubejs:cattomolymer_casing')
         .EUt(GTValues.VHA[GTValues.UHV])
         .duration(750);

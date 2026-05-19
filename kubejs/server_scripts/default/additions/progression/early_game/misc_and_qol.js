@@ -128,9 +128,9 @@ global.not_hardmode(() => {
         
         //pebble compressor recipes
         [
-            "diorite", "blackstone", "basalt", "tuff", "deepslate", "dripstone", "granite", "calcite", "andesite", "stone"
+            'diorite', 'blackstone', 'basalt', 'tuff', 'deepslate', 'dripstone', 'granite', 'calcite', 'andesite', 'stone'
         ].forEach(stone => {
-            let output = (stone == "dripstone") ? "dripstone_block" : (stone == "stone") ? "cobblestone" : stone;
+            let output = (stone == 'dripstone') ? 'dripstone_block' : (stone == 'stone') ? 'cobblestone' : stone;
             event.recipes.gtceu.compressor(id(`compress_${stone}_pebble`))
                 .itemInputs(`4x exnihilosequentia:${stone}_pebble`)
                 .itemOutputs(`minecraft:${output}`)

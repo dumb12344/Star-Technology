@@ -403,6 +403,11 @@
 					}
 					type: "item"
 				}
+				{
+					id: "6263EBAC28B385E7"
+					item: "start_core:mechanical_memory_card"
+					type: "item"
+				}
 			]
 			title: "{ftbquests.quality_of_life.terminals.title}"
 			x: -1.5d

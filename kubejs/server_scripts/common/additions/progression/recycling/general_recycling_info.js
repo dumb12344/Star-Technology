@@ -185,8 +185,8 @@ global.singleblockRecyclingDetails = { //if specialSingle = true, the next 3 are
         extraCasings: 0, 
         extraCables: 0
     },
-    electric_blast_furnace: {
-        name: "electric_blast_furnace",
+    electric_blaster: {
+        name: "electric_blaster",
         specialSingle: true,
         components: " ",
         extraCasings: 0, 

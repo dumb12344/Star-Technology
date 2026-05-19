@@ -17,14 +17,12 @@ ServerEvents.recipes(event => {
     largeBarrelItem('minecraft:dirt', 'minecraft:water', 5, 'minecraft', 'mud');
     largeBarrelItem('minecraft:red_mushroom_block', 'exnihilosequentia:witch_water', 10, 'minecraft', 'slime_block');
     largeBarrelItem('minecraft:brown_mushroom_block', 'exnihilosequentia:witch_water', 10, 'minecraft', 'red_mushroom_block');
-    largeBarrelItem('exnihilosequentia:mycelium_spores', 'exnihilosequentia:witch_water', 10, 'minecraft', 'brown_mushroom_block');
 
     event.recipes.gtceu.large_barrel(id('witch_water'))
         .notConsumable('exnihilosequentia:mycelium_spores')
         .inputFluids('minecraft:water 1000')
         .outputFluids('exnihilosequentia:witch_water 1000')
-        .duration(80)
-        .circuit(1) ;
+        .duration(80);
 
     event.recipes.gtceu.large_barrel(id('slimeshroom_dupe'))
         .notConsumable('thermal:slime_mushroom_spores')
@@ -44,18 +42,25 @@ ServerEvents.recipes(event => {
 
     });
 
+    event.recipes.gtceu.large_barrel(id(`brown_mushroom_block_large_barrel`))
+        .itemInputs('exnihilosequentia:mycelium_spores')
+        .notConsumable('minecraft:brown_mushroom')
+        .inputFluids(`exnihilosequentia:witch_water 250`)
+        .itemOutputs(`minecraft:brown_mushroom_block`)
+        .duration(10);
+
     // Mycelium => Leather
     event.recipes.gtceu.large_barrel(id('mycelium_growth_bonemeal'))
         .duration(600)
         .itemInputs('minecraft:bone_meal', 'exnihilosequentia:mycelium_spores')
-        .inputFluids(`minecraft:water 500`)
+        .inputFluids(`exnihilosequentia:witch_water 250`)
         .itemOutputs('kubejs:mycelium_growth');
     
     // Mycelium Duping
     event.recipes.gtceu.large_barrel(id('mycelium_spores'))
         .duration(300)
-        .notConsumable('minecraft:red_mushroom')
         .itemInputs('4x minecraft:dirt')
+        .notConsumable('minecraft:red_mushroom')
         .inputFluids(`exnihilosequentia:witch_water 750`)
         .chancedOutput('exnihilosequentia:mycelium_spores', 8500, 0);
 
@@ -80,26 +85,28 @@ ServerEvents.recipes(event => {
         .circuit(10)
         .duration(5);
 
-    const pebblesLargeStoneBarrel = (type, circuitType, aqueous, fluid_quantity) => {
+
+    const pebblesLargeStoneBarrel = (type, aqueous) => {
 
         event.recipes.gtceu.large_stone_barrel(id(`${type}_pebbles`))
-            .inputFluids(`minecraft:lava ${fluid_quantity}`, `${aqueous} ${fluid_quantity}`)
+            .notConsumable(`1x exnihilosequentia:${type}_pebble`)
+            .notConsumableFluid(`minecraft:lava 1`)
+            .notConsumableFluid(`${aqueous} 1`)
             .chancedOutput(`exnihilosequentia:${type}_pebble`, 6000, 0)
-            .circuit(circuitType)
             .duration(1);
 
     }
 
-    pebblesLargeStoneBarrel('stone', 0, 'minecraft:water', 1);
-    pebblesLargeStoneBarrel('andesite', 1, 'minecraft:water', 1);
-    pebblesLargeStoneBarrel('diorite', 2, 'minecraft:water', 1);
-    pebblesLargeStoneBarrel('granite', 3, 'minecraft:water', 1);
-    pebblesLargeStoneBarrel('dripstone', 4, 'minecraft:water', 1);
-    pebblesLargeStoneBarrel('deepslate', 5, 'minecraft:water', 2);
-    pebblesLargeStoneBarrel('calcite', 6, 'minecraft:water', 1);
-    pebblesLargeStoneBarrel('tuff', 7, 'minecraft:water', 1);
-    pebblesLargeStoneBarrel('blackstone', 0, 'exnihilosequentia:witch_water', 1);
-    pebblesLargeStoneBarrel('basalt', 1, 'exnihilosequentia:witch_water', 1);
+    pebblesLargeStoneBarrel('stone', 'minecraft:water');
+    pebblesLargeStoneBarrel('andesite', 'minecraft:water');
+    pebblesLargeStoneBarrel('diorite', 'minecraft:water');
+    pebblesLargeStoneBarrel('granite', 'minecraft:water');
+    pebblesLargeStoneBarrel('dripstone', 'minecraft:water');
+    pebblesLargeStoneBarrel('deepslate', 'minecraft:water');
+    pebblesLargeStoneBarrel('calcite', 'minecraft:water');
+    pebblesLargeStoneBarrel('tuff', 'minecraft:water');
+    pebblesLargeStoneBarrel('blackstone', 'exnihilosequentia:witch_water');
+    pebblesLargeStoneBarrel('basalt', 'exnihilosequentia:witch_water');
 
     // === INDUSTRIAL BARREL ===
 
@@ -109,28 +116,28 @@ ServerEvents.recipes(event => {
         .duration(1600)
         .EUt(GTValues.VHA[GTValues.LV]);
 
-    const industrialBarrelPebbles = (type, circuitType, aqueous, fluid_quantity) => {
+    const industrialBarrelPebbles = (type, aqueous) => {
 
         event.recipes.gtceu.industrial_barrel_magmatic(id(`${type}_pebbles`))
-            .notConsumableFluid(`minecraft:lava ${fluid_quantity}`)
-            .notConsumableFluid(`${aqueous} ${fluid_quantity}`)
+            .notConsumable(`1x exnihilosequentia:${type}_pebble`)
+            .notConsumableFluid(`minecraft:lava 1`)
+            .notConsumableFluid(`${aqueous} 1`)
             .itemOutputs(`64x exnihilosequentia:${type}_pebble`)
-            .circuit(circuitType)
             .duration(1 * 64)
             .EUt(GTValues.VHA[GTValues.LV]);
 
     }
 
-    industrialBarrelPebbles('stone', 0, 'minecraft:water', 1);
-    industrialBarrelPebbles('andesite', 1, 'minecraft:water', 1);
-    industrialBarrelPebbles('diorite', 2, 'minecraft:water', 1);
-    industrialBarrelPebbles('granite', 3, 'minecraft:water', 1);
-    industrialBarrelPebbles('dripstone', 4, 'minecraft:water', 1);
-    industrialBarrelPebbles('deepslate', 5, 'minecraft:water', 2);
-    industrialBarrelPebbles('calcite', 6, 'minecraft:water', 1);
-    industrialBarrelPebbles('tuff', 7, 'minecraft:water', 1);
-    industrialBarrelPebbles('blackstone', 0, 'exnihilosequentia:witch_water', 1);
-    industrialBarrelPebbles('basalt', 1, 'exnihilosequentia:witch_water', 1);
+    industrialBarrelPebbles('stone', 'minecraft:water');
+    industrialBarrelPebbles('andesite', 'minecraft:water');
+    industrialBarrelPebbles('diorite', 'minecraft:water');
+    industrialBarrelPebbles('granite', 'minecraft:water');
+    industrialBarrelPebbles('dripstone', 'minecraft:water');
+    industrialBarrelPebbles('deepslate', 'minecraft:water');
+    industrialBarrelPebbles('calcite', 'minecraft:water');
+    industrialBarrelPebbles('tuff', 'minecraft:water');
+    industrialBarrelPebbles('blackstone', 'exnihilosequentia:witch_water');
+    industrialBarrelPebbles('basalt', 'exnihilosequentia:witch_water');
 
     const industrialBarrelItemAqueous = (item, fluid, dur, mod, output) => {
 
@@ -147,8 +154,15 @@ ServerEvents.recipes(event => {
     industrialBarrelItemAqueous('minecraft:dirt', 'minecraft:water', 5, 'minecraft', 'mud');
     industrialBarrelItemAqueous('minecraft:red_mushroom_block', 'exnihilosequentia:witch_water', 10, 'minecraft', 'slime_block');
     industrialBarrelItemAqueous('minecraft:brown_mushroom_block', 'exnihilosequentia:witch_water', 10, 'minecraft', 'red_mushroom_block');
-    industrialBarrelItemAqueous('exnihilosequentia:mycelium_spores', 'exnihilosequentia:witch_water', 10, 'minecraft', 'brown_mushroom_block');
     
+    event.recipes.gtceu.industrial_barrel_aqueous(id(`brown_mushroom_block_large_barrel`))
+        .itemInputs('exnihilosequentia:mycelium_spores')
+        .notConsumable('minecraft:brown_mushroom')
+        .inputFluids(`exnihilosequentia:witch_water 250`)
+        .itemOutputs(`minecraft:brown_mushroom_block`)
+        .duration(10)
+            .EUt(GTValues.VHA[GTValues.LV]);
+
     event.recipes.gtceu.industrial_barrel_aqueous(id(`crimson_nylium_spores`))
         .itemInputs('exnihilosequentia:mycelium_spores', 'mysticalagriculture:nether_agglomeratio')
         .inputFluids(`gtceu:nether_air 500`)

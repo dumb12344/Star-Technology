@@ -966,11 +966,19 @@
 				type: "item"
 			}]
 			size: 1.0d
-			tasks: [{
-				id: "096716469F4806A5"
-				item: "kubejs:draco_advanced_soc_wafer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "096716469F4806A5"
+					item: "kubejs:draco_advanced_soc_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7684F69F462F6565"
+					item: "kubejs:draco_advanced_soc"
+					type: "item"
+				}
+			]
 			x: 5.5d
 			y: -7.0d
 		}
@@ -1095,13 +1103,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "14D8819BD3B9A996"
-					item: "kubejs:uipic_chip"
+					id: "471872EA9404A875"
+					item: "kubejs:uipic_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "471872EA9404A875"
-					item: "kubejs:uipic_wafer"
+					id: "14D8819BD3B9A996"
+					item: "kubejs:uipic_chip"
 					type: "item"
 				}
 			]
@@ -1886,7 +1895,7 @@
 							}
 							{
 								Count: 1b
-								id: "gtceu:fermenting_arboreal_rejuvination_monstronsity"
+								id: "gtceu:fermenting_arboreal_rejuvenation_monstrosity"
 							}
 							{
 								Count: 1b
@@ -2009,25 +2018,19 @@
 			icon: "gtceu:oganesson_plasma_bucket"
 			id: "5FAEC6FD93ACC381"
 			size: 1.0d
-			tasks: [
-				{
-					id: "0A40A0A86C660693"
-					title: "-toLang \"Noblest \"Gas\"\""
-					type: "checkmark"
-				}
-				{
-					id: "36A35F698B08CADD"
-					item: "gtceu:oganesson_plasma_bucket"
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "36A35F698B08CADD"
+				item: "gtceu:oganesson_plasma_bucket"
+				optional_task: true
+				type: "item"
+			}]
+			title: "{ftbquests.draconic_age.oganesson.title}"
 			x: -6.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["4450509C08F416EC"]
-			description: ["{ftbquests.draconic_age.specialized_t1.description}"]
+			description: ["{ftbquests.draconic_age.specialized_helix_t1.description}"]
 			id: "11EA350764763463"
 			size: 1.0d
 			tasks: [
@@ -2047,6 +2050,7 @@
 					type: "item"
 				}
 			]
+			title: "{ftbquests.draconic_age.specialized_helix_t1.title}"
 			x: 9.5d
 			y: -7.0d
 		}

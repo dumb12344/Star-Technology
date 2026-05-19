@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
                 .researchStack(Item.of('kubejs:coordinate_crystal'))
                 .EUt(GTValues.VHA[GTValues.ZPM])
-                .CWUt(40)
+                .CWUt(24)
             )
         .EUt(GTValues.VHA[GTValues.ZPM]);
 

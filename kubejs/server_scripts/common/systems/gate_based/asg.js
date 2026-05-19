@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
 
     researchBuilder(assline, 'asg_reinforced_plating', 
         ['gtceu:neutronium_ultradense_plate', 'gtceu:tritan_steel_ultradense_plate', 'gtceu:zalloy_ultradense_plate', 'gtceu:naquadria_ultradense_plate', 
-            '2x kubejs:csg_reinforced_plating', '2x gtceu:uhv_electric_piston', '2x #gtceu:circuits/uev', '18x gtceu:cerium_tritelluride_single_cable'], 
+            '2x kubejs:csg_reinforced_plating', '2x gtceu:uhv_electric_piston', '1x #gtceu:circuits/uev', '18x gtceu:cerium_tritelluride_single_cable'], 
         ['gtceu:naquadated_soldering_alloy 1728', 'gtceu:runic_convergence_infusion 2250', 'gtceu:utopian_akreyrium 1750'], 
         ['kubejs:asg_reinforced_plating'], 
         6000, 144, 144 * 1200, GTValues.VHA[GTValues.UHV], 'kubejs:csg_reinforced_plating');
@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:runic_convergence_infusion 12500')
             .next()
             .itemInputs('kubejs:activated_stargate_rod','gtceu:americium_wire_spool')
-            .inputFluids('gtceu:runic_convergence_infusion 12500')
+            .inputFluids('gtceu:utopian_akreyrium 2500')
             .next()
             .itemInputs('gtceu:long_void_rod','gtceu:prismalium_wire_spool')
             .inputFluids('gtceu:runic_convergence_infusion 12500')

@@ -465,14 +465,14 @@ ServerEvents.recipes(event => {
         .EUt(30);
 
     event.recipes.gtceu.assembler(id('kanthal_coil_block'))
-        .itemInputs('gtceu:steel_frame','8x gtceu:kanthal_double_wire','8x gtceu:aluminium_foil','16x gtceu:borosilicate_glas_foil')
+        .itemInputs('gtceu:steel_frame','8x gtceu:kanthal_double_wire','8x gtceu:aluminium_foil','16x gtceu:borosilicate_glass_foil')
         .inputFluids('gtceu:copper 144')
         .itemOutputs('gtceu:kanthal_coil_block')
         .duration(300)
         .EUt(120);
 
     event.recipes.gtceu.assembler(id('nichrome_coil_block'))
-        .itemInputs('gtceu:red_steel_frame','8x gtceu:nichrome_double_wire','8x gtceu:stainless_steel_foil','32x gtceu:borosilicate_glas_foil')
+        .itemInputs('gtceu:red_steel_frame','8x gtceu:nichrome_double_wire','8x gtceu:stainless_steel_foil','32x gtceu:borosilicate_glass_foil')
         .inputFluids('gtceu:aluminium 144')
         .itemOutputs('gtceu:nichrome_coil_block')
         .duration(400)

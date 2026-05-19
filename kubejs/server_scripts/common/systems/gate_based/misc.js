@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
             .researchStack(Item.of('gtceu:zpm_lathe'))
             .EUt(GTValues.VHA[GTValues.ZPM])
-            .CWUt(32)
+            .CWUt(16)
         )
         .duration(3600)
         .EUt(GTValues.VHA[GTValues.ZPM]);
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
             researchRecipeBuilder => researchRecipeBuilder
             .researchStack(Item.of('gtceu:zpm_laser_engraver'))
             .EUt(GTValues.VHA[GTValues.ZPM])
-            .CWUt(32)
+            .CWUt(16)
         )
         .duration(6000)
         .EUt(GTValues.VHA[GTValues.ZPM]);
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
     researchRecipeBuilder => researchRecipeBuilder
             .researchStack(Item.of('kubejs:activated_stargate_rod'))
             .EUt(GTValues.VHA[GTValues.ZPM])
-            .CWUt(48)
+            .CWUt(24)
         )
         .EUt(GTValues.VHA[GTValues.ZPM]);
                 
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
                 researchRecipeBuilder => researchRecipeBuilder
                     .researchStack(Item.of('gtceu:exquisite_runic_laser_source_base_gem'))
                     .EUt(GTValues.VHA[GTValues.ZPM])
-                    .CWUt(48)
+                    .CWUt(24)
             )
             .duration(7200)
             .EUt(GTValues.VHA[GTValues.ZPM]);

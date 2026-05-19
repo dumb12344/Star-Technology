@@ -170,7 +170,7 @@ element {
   navigatable = true
   widget_active_state_requirement_container_identifier = 1cf098c4-577a-483c-8062-97ffb99025d6-1759742627608
   [loading_requirement_container_meta:1cf098c4-577a-483c-8062-97ffb99025d6-1759742627608] = [groups:][instances:30864307-fdc0-426e-93ea-0e807534c37b-1759742858140;]
-  [loading_requirement:is_internet_connection_available][requirement_mode:if][req_id:30864307-fdc0-426e-93ea-0e807534c37b-1759742858140] = 
+
   is_template = false
   template_apply_width = false
   template_apply_height = false

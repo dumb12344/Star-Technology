@@ -36,6 +36,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where("@", Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('gtceu:block/casings/solid/machine_casing_robust_tungstensteel',
-            'gtceu:block/multiblock/pyrolyse_oven');
+            'gtceu:block/multiblock/pyrolyse_oven')
+        .additionalDisplay(global.pyrolyzeOvenOverclockDisplay);
 
 });

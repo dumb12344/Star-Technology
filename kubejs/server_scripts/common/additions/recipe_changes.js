@@ -65,14 +65,6 @@ ServerEvents.recipes(event => {
             }).id(`start:shaped/${material}_mallet`);
     });
 
-    //B(SiO)7 Foil
-    event.recipes.gtceu.bender(id('borosilicate_glas_foil'))
-        .itemInputs('gtceu:borosilicate_glass_ingot')
-        .itemOutputs('4x gtceu:borosilicate_glas_foil')
-        .circuit(10)
-        .duration(32)
-        .EUt(30);
-
     ['iron','steel','neodymium','samarium','zapolgium','pure_netherite','holmium'].forEach(Magnetic=>{
     event.remove({id: `gtceu:alloy_smelter/alloy_smelt_magnetic_${Magnetic}_dust_to_block`});
     });
@@ -107,7 +99,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.V[GTValues.UHV]);
 
     event.recipes.gtceu.circuit_assembler(id('component_data_core'))
-        .itemInputs('kubejs:abyssal_printed_circuit_board','2x #gtceu:circuits/uiv','56x kubejs:qram_chip', 
+        .itemInputs('kubejs:abyssal_printed_circuit_board','2x #gtceu:circuits/uiv','18x kubejs:stellar_ram_chip', 
             '48x kubejs:hyper_nor_memory_chip','48x kubejs:hyper_nand_memory_chip','32x gtceu:fine_polonium_bismide_wire')
         .inputFluids('gtceu:naquadated_soldering_alloy 1152')
         .itemOutputs('start_core:component_data_core')

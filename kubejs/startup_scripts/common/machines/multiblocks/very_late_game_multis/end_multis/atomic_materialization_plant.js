@@ -42,6 +42,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/end_multis/cattomolymer_casing',
-            'gtceu:block/multiblock/large_chemical_reactor');
-        
+            'gtceu:block/multiblock/large_chemical_reactor')
+        .additionalDisplay(global.chemicalOverclockDisplay);
+
 });

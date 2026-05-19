@@ -361,6 +361,17 @@ let calculatorDefinitions = (() => {
         implementation: componentsOverloads(Math.sqrt),
       },
       {
+        name: "abs",
+        usage: formatOverloads("abs", [
+          ["value:number"],
+          ["value:vec2"],
+          ["value:vec3"],
+        ]),
+        description:
+          "returns the absolute value of the input; if the input is a vector, it's applied to all the components",
+        implementation: componentsOverloads(Math.abs),
+      },
+      {
         name: "floor",
         usage: formatOverloads("floor", [
           ["value:number"],
@@ -456,7 +467,7 @@ let calculatorDefinitions = (() => {
         implementation: [
           {
             arguments: ["vec2"],
-            fn: (v) => ({ t: "number", v: Math.atan2(v[1], v[0]) }),
+            fn: (v) => ({ t: "number", v: Math.atan2(v.v[1], v.v[0]) }),
           },
           {
             arguments: ["number", "number"],
@@ -555,7 +566,7 @@ let calculatorDefinitions = (() => {
             arguments: ["number", "number"],
             fn: (base, v) => ({
               t: "number",
-              v: fn(JavaMath.log(v.v) / JavaMath.log(base.v)),
+              v: JavaMath.log(v.v) / JavaMath.log(base.v),
             }),
           },
           {
@@ -608,12 +619,12 @@ let calculatorDefinitions = (() => {
             let args = Array.from(arguments);
             if (args.length === 0) {
               throw new Error(
-                "wrong argument count for max: expected 1 or more, got 0",
+                "wrong argument count for min: expected 1 or more, got 0",
               );
             }
             if (!args.some((arg) => arg.t !== "number")) {
               throw new Error(
-                "wrong argument types for max: expected all numbers",
+                "wrong argument types for min: expected all numbers",
               );
             }
             return {
@@ -630,25 +641,27 @@ let calculatorDefinitions = (() => {
         name: "max",
         usage: formatOverloads("max", [[["...values:number[]"]]]),
         description: "returns the largest of the numbers given as input",
-        fn: function () {
-          let args = Array.from(arguments);
-          if (args.length === 0) {
-            throw new Error(
-              "wrong argument count for max: expected 1 or more, got 0",
-            );
-          }
-          if (args.some((arg) => arg.t !== "number")) {
-            throw new Error(
-              "wrong argument types for max: expected all numbers",
-            );
-          }
-          return {
-            t: "number",
-            v: Math.max.apply(
-              null,
-              args.map((arg) => arg.v),
-            ),
-          };
+        implementation: {
+          fn: function () {
+            let args = Array.from(arguments);
+            if (args.length === 0) {
+              throw new Error(
+                "wrong argument count for max: expected 1 or more, got 0",
+              );
+            }
+            if (args.some((arg) => arg.t !== "number")) {
+              throw new Error(
+                "wrong argument types for max: expected all numbers",
+              );
+            }
+            return {
+              t: "number",
+              v: Math.max.apply(
+                null,
+                args.map((arg) => arg.v),
+              ),
+            };
+          },
         },
       },
       {
@@ -972,7 +985,7 @@ let calculatorDefinitions = (() => {
               identifier.length <= 3 &&
               identifier.match(/^[xy]+$/)
             ) {
-              return vecAccessors(value, identifier.v);
+              return vecAccessors(value, identifier);
             }
             throw new Error(
               "non-existing member " + identifier + " for type " + value.t,
@@ -995,7 +1008,7 @@ let calculatorDefinitions = (() => {
               identifier.length <= 3 &&
               identifier.match(/^[xyz]+$/)
             ) {
-              return vecAccessors(value, identifier.v);
+              return vecAccessors(value, identifier);
             }
             throw new Error(
               "non-existing member " + identifier + " for type " + value.t,
@@ -1307,7 +1320,7 @@ let calculatorExec = (() => {
   function execOverloaded(options, args, error) {
     for (let option of options) {
       if (option.arguments) {
-        if (args.every((arg, i) => option.arguments[i] === arg.t)) {
+        if (args.length === option.arguments.length && args.every((arg, i) => option.arguments[i] === arg.t)) {
           return option.fn.apply(null, args);
         }
       } else {

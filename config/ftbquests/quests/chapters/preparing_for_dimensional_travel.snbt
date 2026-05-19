@@ -16,16 +16,16 @@
 			y: -1.0d
 		}
 		{
-			id: "6F75E4AACB0561E6"
-			linked_quest: "342969434CB3B5DE"
-			x: -5.0d
-			y: 2.0d
-		}
-		{
 			id: "7A4DCD40CD71CDDF"
 			linked_quest: "6AEB17C2D2AF5344"
 			x: -17.0d
 			y: -2.0d
+		}
+		{
+			id: "1430169EC4785F21"
+			linked_quest: "2A070F5D1D7CEAE1"
+			x: -5.0d
+			y: 2.0d
 		}
 	]
 	quests: [
@@ -209,14 +209,14 @@
 			dependencies: ["2EDE996312B1C69E"]
 			description: ["{ftbquests.csg.classic_stargate_display.description}"]
 			hide_dependency_lines: true
+			icon: "effortlessbuilding:building_techniques_book"
 			id: "653AD979AE4D0581"
 			optional: true
 			size: 1.0d
 			tasks: [{
-				id: "080109B2F5298E4A"
-				item: "gtceu:classic_stargate_display"
-				optional_task: true
-				type: "item"
+				id: "226CB0D7781A07F3"
+				title: "{ftbquests.csg.classic_stargate_display.checkmark}"
+				type: "checkmark"
 			}]
 			title: "{ftbquests.csg.classic_stargate_display.title}"
 			x: -13.5d
@@ -357,7 +357,7 @@
 		{
 			dependencies: [
 				"1C515302A357B1B8"
-				"342969434CB3B5DE"
+				"2A070F5D1D7CEAE1"
 			]
 			description: ["{ftbquests.csg.runic_laser_source_base_dust.description}"]
 			id: "5C3AF136913CF8BE"
@@ -545,6 +545,7 @@
 		}
 		{
 			dependencies: ["28005E2D4B9F1BFF"]
+			description: ["{ftbquests.csg.field_stabiliser.description}"]
 			hide_dependent_lines: true
 			id: "17E5780E37981A5F"
 			size: 1.0d
@@ -562,6 +563,7 @@
 				"3325914DB92AEF1B"
 				"73D0DC357821B395"
 			]
+			description: ["{ftbquests.csg.energy_modulator.description}"]
 			id: "28005E2D4B9F1BFF"
 			size: 1.0d
 			tasks: [{
@@ -577,6 +579,8 @@
 				"3C94BE7E80FCB8ED"
 				"73D0DC357821B395"
 			]
+			description: ["{ftbquests.csg.stellar_dialer.description}"]
+			hide_dependent_lines: true
 			id: "062A42026FFE75AB"
 			size: 1.0d
 			tasks: [{
@@ -593,6 +597,7 @@
 				"5C47DBDF58A5D177"
 				"7FB86A5B9F6F6F35"
 			]
+			description: ["{ftbquests.csg.dpu.description}"]
 			id: "17AE9F70B3FB9F1D"
 			size: 1.0d
 			tasks: [
@@ -612,6 +617,7 @@
 		}
 		{
 			dependencies: ["17AE9F70B3FB9F1D"]
+			description: ["{ftbquests.csg.computational_matrix.description}"]
 			hide_dependent_lines: true
 			id: "3C94BE7E80FCB8ED"
 			size: 1.0d
@@ -628,6 +634,7 @@
 				"3C94BE7E80FCB8ED"
 				"73D0DC357821B395"
 			]
+			description: ["{ftbquests.csg.stellar_access_point.description}"]
 			hide_dependent_lines: true
 			id: "7206FC928A9886DB"
 			size: 1.0d
@@ -645,6 +652,7 @@
 				"17E5780E37981A5F"
 				"2D713622FA2D6FCA"
 			]
+			description: ["{ftbquests.csg.chevron.description}"]
 			id: "38FFAFA0D097BD5F"
 			size: 1.0d
 			tasks: [{
@@ -660,6 +668,7 @@
 				"38C00A89E975F525"
 				"3C94BE7E80FCB8ED"
 			]
+			description: ["{ftbquests.csg.dimensional_supercomputer.description}"]
 			id: "2BED524C6AA13D88"
 			size: 1.0d
 			tasks: [{
@@ -675,6 +684,7 @@
 				"5DD60CB0D67AD39C"
 				"73D0DC357821B395"
 			]
+			description: ["{ftbquests.csg.reinforced_plating.description}"]
 			hide_dependent_lines: true
 			id: "7820DBEBCAF2502A"
 			size: 1.0d
@@ -688,6 +698,7 @@
 		}
 		{
 			dependencies: ["027C5CE3CFCB5649"]
+			description: ["{ftbquests.csg.stargate_rod_base.description}"]
 			id: "5B5C58702877B8D0"
 			size: 1.0d
 			tasks: [{
@@ -700,6 +711,7 @@
 		}
 		{
 			dependencies: ["12B23627DD0026B5"]
+			description: ["{ftbquests.csg.enscription_plates.description}"]
 			hide_dependency_lines: true
 			id: "5C47DBDF58A5D177"
 			size: 1.0d
@@ -717,6 +729,7 @@
 				"6D169C5E35C9EF6C"
 				"7FB86A5B9F6F6F35"
 			]
+			description: ["{ftbquests.csg.proto_runes.description}"]
 			id: "3AADFC254BF9C5C9"
 			size: 1.0d
 			tasks: [
@@ -736,6 +749,7 @@
 					type: "item"
 				}
 			]
+			title: "{ftbquests.csg.proto_runes.title}"
 			x: -10.0d
 			y: -5.0d
 		}
@@ -788,6 +802,7 @@
 				"44423D7786E15D7E"
 				"7FB86A5B9F6F6F35"
 			]
+			description: ["{ftbquests.csg.activated_stargate rod.description}"]
 			id: "13CC2A2C63F4FE8C"
 			size: 1.0d
 			tasks: [{
@@ -803,6 +818,7 @@
 				"5B5C58702877B8D0"
 				"4DE40B37D609B921"
 			]
+			description: ["{ftbquests.csg.raw_stargate_rod.description}"]
 			id: "44423D7786E15D7E"
 			size: 1.0d
 			tasks: [{
@@ -887,6 +903,7 @@
 		}
 		{
 			dependencies: ["09E7AA7D98045727"]
+			description: ["{ftbquests.csg.vacuum_chemical_reactor.description}"]
 			id: "4974D7E690B02ECA"
 			shape: "gear"
 			size: 1.25d
@@ -902,7 +919,9 @@
 			dependencies: [
 				"7FB86A5B9F6F6F35"
 				"4DE40B37D609B921"
+				"28005E2D4B9F1BFF"
 			]
+			description: ["{ftbquests.csg.quantum_core.description}"]
 			hide_dependent_lines: true
 			id: "38C00A89E975F525"
 			size: 1.0d

@@ -39,7 +39,8 @@ ServerEvents.recipes(event => {
         'gtceu:macerator/macerate_mega_vacuum_freezer', 'gtceu:arc_furnace/arc_mega_blast_furnace', 'gtceu:macerator/macerate_mega_blast_furnace', 'gtceu:coke_oven/coal_to_coke', 
         'gtceu:coke_oven/coal_to_coke_block', 'gtceu:large_chemical_reactor/iodine', 'gtceu:chemical_reactor/iodine', 'gtceu:autoclave/raw_crystal_chip_from_part_bacterial_sludge', 
         'gtceu:autoclave/raw_crystal_chip_from_part_mutagen', 'gtceu:autoclave/raw_crystal_chip_olivine', 'gtceu:pyrolyse_oven/bio_chaff_to_fermented_biomass', 'gtceu:fermenter/fermented_biomass',
-        'gtceu:pyrolyse_oven/bio_chaff_to_biomass', 'gtceu:large_chemical_reactor/bacterial_sludge', 'gtceu:brewery/bacteria', 'gtceu:pyrolyse_oven/log_to_heavy_oil', 'expandedae:crafting/giga_pattern_provider'
+        'gtceu:pyrolyse_oven/bio_chaff_to_biomass', 'gtceu:large_chemical_reactor/bacterial_sludge', 'gtceu:brewery/bacteria', 'gtceu:pyrolyse_oven/log_to_heavy_oil', 'expandedae:crafting/giga_pattern_provider',
+        'create:cutting/runtime_generated/compat/create/tag_runtime_generated/compat/gtceu/rubber_to_rubber_planks'
     ];
 
     const toRemoveType = ['thermal:sawmill', 'thermal:pulverizer', 'thermal:insolator', 'thermal:centrifuge', 'thermal:crucible', 'thermal:chiller', 'thermal:refinery',
@@ -102,8 +103,5 @@ ServerEvents.recipes(event => {
     event.remove({ input: /exnihilosequentia:.*_nugget/});
     event.remove({ input: Item.of('createdieselgenerators:mold')});
     event.remove({ output: 'createdieselgenerators:mold'});
-
-    //Pattern Buffer Research Removals
-    event.remove({ id: 'gtceu:scanner/1_x_gtceu_luv_dual_input_hatch' });
-    event.remove({ id: 'gtceu:research_station/1_x_gtceu_me_pattern_buffer' });
+    event.remove({ id: /create:crushing\/.*horse_armor/});
 });

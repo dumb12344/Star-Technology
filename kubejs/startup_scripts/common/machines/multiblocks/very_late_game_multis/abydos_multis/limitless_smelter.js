@@ -25,6 +25,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('gtceu:block/casings/gcym/high_temperature_smelting_casing',
-            'gtceu:block/machines/electric_furnace');
-        
+            'gtceu:block/machines/electric_furnace')
+        .additionalDisplay(global.multiSmelterParallelDisplay);
+
 });

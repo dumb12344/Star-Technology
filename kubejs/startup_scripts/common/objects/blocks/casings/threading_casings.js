@@ -7,6 +7,7 @@ StartupEvents.registry('block', event => {
             .resistance(10)
             .soundType('metal')
             .requiresTool(true)
+            .noValidSpawns(true)
             .tagBlock('mineable/pickaxe')
             .tagBlock('minecraft:needs_diamond_tool')
             .textureAll(`kubejs:block/casings/threading/${type}`);
@@ -23,7 +24,7 @@ StartupEvents.registry('block', event => {
     ThreadingCasing('subatomically_secure_casing');
     ThreadingCasing('quantumly_resistant_casing');
     ThreadingCasing('absolute_annihilation_casing');
-    ThreadingCasing('absolute_annihilators');    
+    ThreadingCasing('absolute_annihilators');
     ThreadingCasing('tectonic_defiance_casing');
     ThreadingCasing('true_revitilization_casing');
 
@@ -33,6 +34,7 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .bloom('kubejs:block/casings/threading/aurouric_polarization_cell');
 });

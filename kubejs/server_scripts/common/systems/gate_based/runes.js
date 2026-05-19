@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
 
     for (let i = 1; i <= 6; i++) {
         let o = (i === 6) ? 1 : i + 1;
-    event.recipes.gtceu.scanner(`runic_tablet_${i}_to_${o}`)
+    event.recipes.gtceu.scanner(id(`runic_tablet_${i}_to_${o}`))
         .itemInputs(`16x gtceu:ancient_runicalium_foil`,`1x kubejs:runic_tablet_${i}`) //Gives more control over tablet type (reduced exploration rng)
         .inputFluids('gtceu:naquadria 1080')        
         .itemOutputs(`kubejs:runic_tablet_${o}`)

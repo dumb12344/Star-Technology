@@ -29,6 +29,12 @@ StartupEvents.registry('item', event => {
 
         event.create(`${riftion[i]}_singularity`)
             .texture(`kubejs:item/progression/riftic/singularity/${riftion[i]}`)
+            .textureJson({ 
+                    layer0: `kubejs:item/progression/riftic/singularity/${riftion[i]}/base`,
+                    layer1: `kubejs:item/progression/riftic/singularity/overlay`,
+                    layer2: `kubejs:item/progression/riftic/singularity/${riftion[i]}/orbit_1`,
+                    layer3: `kubejs:item/progression/riftic/singularity/${riftion[i]}/orbit_2`,
+                })
             .tooltip('ψ§l' + riftionSymbol[i] + '§r');
 
         for(let j = 0; j<= 2; j++) {

@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'kubejs:abyssal_processor_mainframe');
 
     researchBuilder(riftAss, 'dsg_dhd', 
-        ['sgjourney:classic_dhd', 'kubejs:dsg_stellar_dialer', '6x ' + u_rune, '6x ' + s_rune, '6x ' + g_rune, '6x ' + v_rune, '6x ' + i_rune, '6x ' + t_rune], 
+        ['sgjourney:milky_way_dhd', 'kubejs:dsg_stellar_dialer', '6x ' + u_rune, '6x ' + s_rune, '6x ' + g_rune, '6x ' + v_rune, '6x ' + i_rune, '6x ' + t_rune], 
         ['gtceu:neutrindium_soldering_alloy 9216', 'gtceu:faematter 7500', 'gtceu:draconic_stabilization_mixture 6250'], 
         ['sgjourney:pegasus_dhd'], 
         6000, 500, 500 * 1200, GTValues.VHA[GTValues.UIV], 'sgjourney:milky_way_dhd');
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
 
     researchBuilder(riftAss, 'dsg_chevron', 
         ['3x gtceu:raging_rimulatia_frame', 'gtceu:exquisite_aquariadic_rimuli_dragonix_gem', '6x kubejs:dsg_field_stabiliser','8x kubejs:dsg_computational_matrix',
-            '24x gtceu:uiv_sensor', '256x kubejs:komaru_filament_t1', '8x gtceu:uiv_electric_motor', '6x gtceu:long_raging_rimulatia_rod',
+            '24x gtceu:uiv_sensor', '256x kubejs:komaru_filament_t2', '8x gtceu:uiv_electric_motor', '6x gtceu:long_raging_rimulatia_rod',
             '320x gtceu:nether_star_foil', '96x gtceu:lepton_resonant_thallium_antimonide_double_cable'], 
         ['gtceu:neutrindium_soldering_alloy 36864', 'gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 6912', 'gtceu:faematter 17500'], 
         ['kubejs:dsg_chevron'], 
@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
     researchBuilder(assline, 'dsg_reinforced_plating', 
         ['2x gtceu:melastrium_mox_ultradense_plate', '2x gtceu:vastaqalloy_cr_4200x_ultradense_plate', '2x gtceu:soul_ascendant_cuperite_ultradense_plate', 
             '2x gtceu:aerorelient_steel_ultradense_plate','2x gtceu:zeroidic_trinate_steel_ultradense_plate','2x gtceu:expetidalloy_d_17_ultradense_plate',
-            '4x kubejs:asg_reinforced_plating', '3x #gtceu:circuits/uev', '3x gtceu:hvga_steel_gear','4x gtceu:uiv_robot_arm', 
+            '4x kubejs:asg_reinforced_plating', '1x #gtceu:circuits/uxv', '3x gtceu:hvga_steel_gear','4x gtceu:uiv_robot_arm', 
             '3x gtceu:small_draconyallium_gear','42x gtceu:lepton_resonant_thallium_antimonide_single_cable'], 
         ['gtceu:neutrindium_soldering_alloy 1152', 'gtceu:faematter 750', 'gtceu:draconic_stabilization_mixture 625'], 
         ['kubejs:dsg_reinforced_plating'], 
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.draco_infusion(id('ascension_core'))
         .itemInputs('kubejs:draconic_core','kubejs:prismafae_illuminatus_core','kubejs:primordial_fragment','kubejs:riftic_fragment','kubejs:spatium_ruptura_core',
             'kubejs:primus_tempus_core','kubejs:prismalic_fragment')
-        .inputFluids('gtceu:borealic_concentrate 73728')
+        .inputFluids('gtceu:raging_rimulatia 41472')
         .itemOutputs('kubejs:ascension_core')
         .duration(6000)
         .EUt(GTValues.VHA[GTValues.UXV]);
@@ -175,13 +175,13 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:pure_dragon_breath 3750')
             .next()
             .itemInputs('kubejs:awakened_abyss_stargate_rod','kubejs:awakened_inferno_stargate_rod','gtceu:draco_abyssal_wire_spool')
-            .inputFluids('gtceu:pure_dragon_breath 3750')
+            .inputFluids('gtceu:borealic_concentrate 6912')
             .next()
             .itemInputs('gtceu:long_raging_rimulatia_rod','gtceu:long_borealic_steel_rod','gtceu:stellarium_wire_spool')
             .inputFluids('gtceu:pure_dragon_breath 3750')
             .next()
             .itemInputs('kubejs:awakened_abyss_stargate_rod','kubejs:awakened_inferno_stargate_rod','gtceu:lepton_resonant_thallium_antimonide_wire_spool')
-            .inputFluids('gtceu:pure_dragon_breath 3750')
+            .inputFluids('gtceu:borealic_concentrate 6912')
         )
         .itemOutputs('kubejs:dsg_stargate_rod_base')
         .duration(800)
@@ -274,20 +274,26 @@ ServerEvents.recipes(event => {
     stargateComponent('dsg_ring')
         .layeredRecipe((layers) => layers
             .itemInputs('gtceu:raging_rimulatia_frame','24x kubejs:riftic_stargate_rod','24x kubejs:temporic_stargate_rod','24x kubejs:faetic_stargate_rod')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
             .next()
             .itemInputs('8x ' + u_rune,'6x ' + t_rune,'4x ' + g_rune,'2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:faematter 100000')
             .next()
             .itemInputs('8x ' + v_rune,'6x ' + u_rune,'4x ' + t_rune,'2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
             .next()
             .itemInputs('8x ' + i_rune,'6x ' + v_rune,'4x ' + u_rune,'2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:faematter 100000')
             .next()
             .itemInputs('8x ' + s_rune,'6x ' + i_rune,'4x ' + v_rune,'2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
             .next()
             .itemInputs('8x ' + g_rune,'6x ' + s_rune,'4x ' + i_rune,'2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:faematter 100000')
             .next()
             .itemInputs('8x ' + t_rune,'6x ' + g_rune,'4x ' + s_rune,'2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
         )
-        .inputFluids('gtceu:draconic_stabilization_mixture 100000')
         .itemOutputs('kubejs:draconic_stargate_ring_block')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UXV]);
@@ -295,20 +301,26 @@ ServerEvents.recipes(event => {
     stargateComponent('dsg_chevron')
         .layeredRecipe((layers) => layers
             .itemInputs('kubejs:draconic_stargate_ring_block','kubejs:dsg_chevron','8x kubejs:dsg_field_stabiliser','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
             .next()
             .itemInputs('6x ' + t_rune,'4x ' + i_rune,'4x kubejs:temporic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:faematter 100000')
             .next()
             .itemInputs('6x ' + s_rune,'4x ' + u_rune,'4x kubejs:faetic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
             .next()
             .itemInputs('6x ' + i_rune,'4x ' + v_rune,'4x kubejs:riftic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:faematter 100000')
             .next()
             .itemInputs('6x ' + u_rune,'4x ' + g_rune,'4x kubejs:temporic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
             .next()
             .itemInputs('6x ' + v_rune,'4x ' + t_rune,'4x kubejs:faetic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:faematter 100000')
             .next()
             .itemInputs('6x ' + g_rune,'4x ' + s_rune,'4x kubejs:riftic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
         )
-        .inputFluids('gtceu:draconic_stabilization_mixture 100000')
         .itemOutputs('kubejs:draconic_stargate_chevron_block')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UXV]);
@@ -316,20 +328,26 @@ ServerEvents.recipes(event => {
     stargateComponent('dsg_base')
         .layeredRecipe((layers) => layers
             .itemInputs('kubejs:draconic_stargate_ring_block','kubejs:dsg_dimensional_supercomputer','8x kubejs:dsg_stellar_access_point','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:faematter 100000')
             .next()
             .itemInputs('10x ' + s_rune,'4x ' + i_rune,'8x kubejs:riftic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
             .next()
             .itemInputs('10x ' + g_rune,'4x ' + t_rune,'8x kubejs:temporic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:faematter 100000')
             .next()
             .itemInputs('10x ' + u_rune,'4x ' + s_rune,'8x kubejs:faetic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
             .next()
             .itemInputs('10x ' + v_rune,'4x ' + g_rune,'8x kubejs:riftic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:faematter 100000')
             .next()
             .itemInputs('10x ' + t_rune,'4x ' + u_rune,'8x kubejs:temporic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:draconic_stabilization_mixture 100000')
             .next()
             .itemInputs('10x ' + i_rune,'4x ' + v_rune,'8x kubejs:faetic_stargate_rod','2x kubejs:dsg_reinforced_plating')
+            .inputFluids('gtceu:faematter 100000')
         )
-        .inputFluids('gtceu:draconic_stabilization_mixture 100000')
         .itemOutputs('kubejs:draconic_stargate_base_block')
         .duration(1200)
         .EUt(GTValues.VHA[GTValues.UXV]);

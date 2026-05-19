@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
             `24x kubejs:uiv_micropower_router`, `32x gtceu:borealic_steel_screw`],`gtceu:uiv_electrolyzer`,[`gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 345168`,
             `gtceu:perfluoroelastomer_rubber 285964`,`gtceu:naquadated_soldering_alloy 221184`],18000,240,GTValues.VHA[GTValues.UIV]);
         
-        assemblyThreadMachine(`fermenting_arboreal_rejuvination_monstronsity`,`gtceu:soul_ascendant_cuperite_frame`,`uxv`, 8,[`64x gtceu:hydroponic_garden`, `64x gtceu:tree_synthesizer`,
+        assemblyThreadMachine(`fermenting_arboreal_rejuvenation_monstrosity`,`gtceu:soul_ascendant_cuperite_frame`,`uxv`, 8,[`64x gtceu:hydroponic_garden`, `64x gtceu:tree_synthesizer`,
             `64x gtceu:industrial_fishery`, `64x gtceu:composting_factory`],[`24x gtceu:uiv_conveyor_module`, `16x gtceu:uiv_robot_arm`, `24x kubejs:uiv_microfluidic_flow_valve`, 
             `24x kubejs:uiv_micropower_router`, `32x gtceu:soul_ascendant_cuperite_screw`],`gtceu:hydroponic_garden`,[`gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 345168`,
             `gtceu:perfluoroelastomer_rubber 285964`,`gtceu:naquadated_soldering_alloy 221184`],18000,240,GTValues.VHA[GTValues.UIV]);

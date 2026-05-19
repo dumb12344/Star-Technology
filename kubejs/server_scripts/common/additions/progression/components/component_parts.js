@@ -341,8 +341,8 @@ ServerEvents.recipes(event => {
             
         mtscfComponentPart('catalyst_core', [
                 `${4 * scalerMCSF * 0.75}x gtceu:${primMaterial}_rod`, 
-                glass, 
-                catalyst, 
+                `${scalerMCSF * 0.75}x ${glass}`, 
+                `${scalerMCSF * 0.75}x ${catalyst.split(' ')[1]}`, 
                 `${0.5 * scalerMCSF * 0.75}x gtceu:${superconductor}_wire_spool`, 
                 `${1 * scalerMCSF * 0.75}x gtceu:${tier1}_emitter`, 
                 `${4 * scalerMCSF * 0.75}x gtceu:${supMaterial}_ring`

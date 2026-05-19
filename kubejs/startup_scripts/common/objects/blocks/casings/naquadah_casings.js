@@ -8,6 +8,7 @@ StartupEvents.registry('block', event => {
             .lightLevel(0)
             .soundType('metal')
             .requiresTool(true)
+            .noValidSpawns(true)
             .tagBlock('mineable/pickaxe')
             .tagBlock('minecraft:needs_iron_tool')
             .textureAll(`kubejs:block/casings/naquadah/${texture}`);
@@ -24,7 +25,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .firebox('kubejs:block/casings/naquadah/casing',
                 'kubejs:block/casings/naquadah/firebox_casing',
                 'kubejs:block/casings/naquadah/casing');
@@ -35,7 +37,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .simple('kubejs:block/casings/naquadah/engine_intake_casing');
 
     event.create('enriched_naquadah_heat_escape_casing', 'gtceu:active')
@@ -44,7 +47,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .bloom('kubejs:block/casings/naquadah/heat_escape');
 
 });

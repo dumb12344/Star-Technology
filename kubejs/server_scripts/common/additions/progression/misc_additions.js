@@ -1,6 +1,17 @@
 ServerEvents.recipes (event => {
     const id = global.id;
 
+    event.shaped('start_core:mechanical_memory_card', [
+        'WPW',
+        'SBS',
+        'WPW'
+    ], {
+        W: 'gtceu:annealed_copper_single_wire',
+        P: 'gtceu:wrought_iron_plate',
+        S: 'gtceu:wrought_iron_screw',
+        B: 'gtceu:resin_printed_circuit_board'
+    }).id('start:shaped/mechanical_memory_card');
+
     event.recipes.gtceu.assembler(id('husk_brick'))
         .itemInputs('kubejs:extreme_temperature_smelting_casing')
         .inputFluids('gtceu:ancient_netherite 864')
@@ -82,6 +93,44 @@ ServerEvents.recipes (event => {
     cat('valenok','uhv','white','orange','cerium_tritelluride',3)
     cat('poomba','uev','brown','white','polonium_bismide',4)
     cat('maxwell','uiv','black','white','lepton_resonant_thallium_antimonide',5)
+
+    event.recipes.gtceu.catto_shrine(id('worries_about_it'))
+        .layeredRecipe((layers) => layers
+            .itemInputs('placeablemaxwell:mars')
+            .next()
+            .itemInputs('placeablemaxwell:vasilisa')
+            .next()
+            .itemInputs('placeablemaxwell:valenok')
+            .next()
+            .itemInputs('placeablemaxwell:poomba')
+            .next()
+            .itemInputs('placeablemaxwell:maxwell')
+        )
+        .itemOutputs(`kubejs:worries_about_it`)
+        .duration(429496728)
+        .EUt(69)
+
+    event.recipes.gtceu.catto_shrine(id('why_are_you_worrying'))
+        .layeredRecipe((layers) => layers
+            .itemInputs(`start_core:komaru`)
+            .itemInputs('komarumod:komaru_spawn_egg')
+            .next()
+            .itemInputs(`start_core:komaru`)
+            .itemInputs('komarumod:komaru_powder')
+            .next()
+            .itemInputs(`start_core:komaru`)
+            .itemInputs('komarumod:komaru_spawn_egg')
+            .next()
+            .itemInputs(`start_core:komaru`)
+            .itemInputs('komarumod:komaru_powder')
+            .next()
+            .itemInputs(`start_core:komaru`)
+            .itemInputs('komarumod:komaru_spawn_egg')
+        )
+        .itemInputs(`64x kubejs:worries_about_it`)
+        .itemOutputs(`kubejs:why_are_you_worrying`)
+        .duration(429496728)
+        .EUt(420)
 
     event.recipes.gtceu.mixer(id('osthendah_dust'))
         .itemInputs('1x gtceu:osmium_dust','1x gtceu:ruthenium_dust','2x gtceu:naquadah_dust')

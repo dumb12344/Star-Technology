@@ -23,7 +23,6 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .aisle(' SCS ', '  E  ', '  E  ', '  E  ', '     ', '     ', '     ', '     ', '     ', '     ', '     ', '     ')
             .where('C', Predicates.controller(Predicates.blocks(definition.get())))
             .where('S', Predicates.blocks('gtceu:robust_machine_casing')
-                .or(Predicates.abilities(PartAbility.IMPORT_ITEMS).setMaxGlobalLimited(1).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setMaxGlobalLimited(1).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setMaxGlobalLimited(4).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setMaxGlobalLimited(4).setPreviewCount(1))

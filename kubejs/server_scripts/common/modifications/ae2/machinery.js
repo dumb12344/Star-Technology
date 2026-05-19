@@ -515,12 +515,12 @@ ServerEvents.recipes(event => {
     ['bus', 'hatch'].forEach(type => {
         assembler(`me_tag_filter_stocking_${type}`, `expandedgt:me_tag_filter_stocking_${type}`, [
             `gtceu:me_stocking_input_${type}`, Item.of('gtceu:item_tag_filter'), '4x gtceu:naquadah_alloy_plate', 'gtceu:zpm_sensor', 'gtceu:zpm_emitter'
-        ], GTValues.VA[GTValues.UV]);
+        ], GTValues.VHA[GTValues.ZPM]);
     });
 
     assemblerFluid('dual_me_stocking_input_hatch', 'expandedgt:dual_me_stocking_input_hatch', [
         'expandedgt:expanded_me_stocking_input_hatch', 'expandedgt:expanded_me_stocking_input_bus', '2x #gtceu:circuits/uv', 'gtceu:zpm_emitter', 'gtceu:zpm_sensor'
-    ], 'indium_tin_lead_cadmium_soldering_alloy 576', GTValues.VHA[GTValues.ZPM]);
+    ], 'indium_tin_lead_cadmium_soldering_alloy 576', GTValues.VA[GTValues.ZPM]);
         
     //Misc
     assemblerFluid('linked_terminal', 'expandedgt:linked_terminal', [

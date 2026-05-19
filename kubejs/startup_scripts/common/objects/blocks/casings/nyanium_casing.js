@@ -8,6 +8,7 @@ StartupEvents.registry('block', event => {
             .lightLevel(0)
             .soundType('metal')
             .requiresTool(true)
+            .noValidSpawns(true)
             .tagBlock('mineable/pickaxe')
             .tagBlock('minecraft:needs_iron_tool')
             .textureAll(`kubejs:block/casings/nyanium/${texture}`);
@@ -24,7 +25,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .firebox('kubejs:block/casings/nyanium/casing',
                 'kubejs:block/casings/nyanium/firebox_casing',
                 'kubejs:block/casings/nyanium/casing');
@@ -36,7 +38,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .simple('kubejs:block/casings/nyanium/engine_intake_casing');
 
     event.create('nyanium_heat_escape_casing', 'gtceu:active')
@@ -45,7 +48,8 @@ StartupEvents.registry('block', event => {
         .soundType('metal')
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
-        .requiresTool(false)
+        .requiresTool(true)
+        .noValidSpawns(true)
         .bloom('kubejs:block/casings/nyanium/heat_escape');
 
 });

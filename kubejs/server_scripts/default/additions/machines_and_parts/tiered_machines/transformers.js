@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
             ].forEach(transformerData => {
 
                 event.remove({output:`gtceu:${tier}_transformer_${transformerData.amps}`});
-                event.remove({input:`gtceu:${tier}_transformer_${transformerData.amps}`}); //maybe add to recycler helper?
+                event.remove({not: { output: 'gtceu:active_transformer' }, input:`gtceu:${tier}_transformer_${transformerData.amps}`}); //maybe add to recycler helper?
 
                 let priorMachine = (transformerData.amps === '1a') ? `machine_hull` : `transformer_${transformerData.prior}`
 

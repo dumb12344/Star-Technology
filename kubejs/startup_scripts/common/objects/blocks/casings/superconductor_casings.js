@@ -9,6 +9,7 @@ StartupEvents.registry('block', event => {
             .lightLevel((emmits_light) ? 2 : 0)
             .soundType('metal')
             .requiresTool(true)
+            .noValidSpawns(true)
             .tagBlock('mineable/pickaxe')
             .tagBlock('minecraft:needs_iron_tool')
             .textureAll(`kubejs:block/casings/superconductors/${'casing_'+ material}`);

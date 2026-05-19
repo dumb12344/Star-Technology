@@ -5,6 +5,7 @@ StartupEvents.registry('block', event => {
 		.resistance(1)
 		.soundType('stone')
 		.requiresTool(true)
+        .noValidSpawns(true)
 		.tagBlock("mineable/pickaxe")
 		.tagBlock('minecraft:needs_iron_tool')
 		.textureAll('kubejs:block/casings/basic/high_steam_machine_casing');
@@ -14,6 +15,7 @@ StartupEvents.registry('block', event => {
         .resistance(1)
         .soundType('wood')
         .requiresTool(true)
+        .noValidSpawns(true)
         .tagBlock('mineable/axe')
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/casings/basic/casing_wood');
@@ -23,6 +25,7 @@ StartupEvents.registry('block', event => {
         .resistance(1)
         .soundType('metal')
         .requiresTool(true)
+        .noValidSpawns(true)
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/basic/machine_casing_peek');
@@ -32,6 +35,7 @@ StartupEvents.registry('block', event => {
         .resistance(1)
         .soundType('metal')
         .requiresTool(true)
+        .noValidSpawns(true)
         .tagBlock('mineable/pickaxe')
         .tagBlock('minecraft:needs_iron_tool')
         .textureAll('kubejs:block/casings/basic/fluix_casing');
@@ -41,6 +45,7 @@ StartupEvents.registry('block', event => {
         .resistance(1)
         .soundType(`metal`)
         .requiresTool(true)
+        .noValidSpawns(true)
         .tagBlock(`mineable/pickaxe`)
         .tagBlock(`minecraft:needs_iron_tool`)
         .textureAll(`kubejs:block/casings/basic/machine_casing_polycarbonate`);

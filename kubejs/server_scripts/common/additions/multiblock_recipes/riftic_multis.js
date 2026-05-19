@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         ['4x start_core:uiv_fusion_reactor','24x gtceu:uiv_fluid_regulator','16x kubejs:runic_wave_generator','128x kubejs:prismalic_neutron_reflector'], 
         ['gtceu:neutrindium_soldering_alloy 17280','gtceu:pure_dragon_breath 22500'], 
         ['gtceu:riftion_accelerator'], 
-        1200, 500, 500 * 1200, GTValues.VA[GTValues.UIV], 'kubejs:particle_rod_holder');
+        1200, 500, 500 * 1200, GTValues.VA[GTValues.UIV], 'gtceu:neutronium_block');
 
     researchBuilder(riftAss, 'riftion_slammer', 
         ['4x gtceu:uiv_compressor','24x gtceu:uiv_electric_piston','16x kubejs:runic_wave_generator','128x kubejs:prismalic_neutron_reflector'], 
@@ -39,39 +39,39 @@ ServerEvents.recipes(event => {
         ['4x gtceu:uiv_scanner','24x gtceu:uiv_emitter','16x kubejs:runic_wave_generator','128x kubejs:prismalic_neutron_reflector'], 
         ['gtceu:neutrindium_soldering_alloy 17280','gtceu:pure_dragon_breath 22500'], 
         ['gtceu:riftion_injector'], 
-        1200, 500, 500 * 1200, GTValues.VA[GTValues.UIV], 'kubejs:riftion_injection_core');
+        1200, 500, 500 * 1200, GTValues.VA[GTValues.UIV], 'gtceu:injection_mixer');
 
     researchBuilder(riftAss, 'kaleidoscopic_fractalizer', 
         ['4x gtceu:uiv_mixer','24x gtceu:uiv_sensor','16x kubejs:runic_wave_generator','128x kubejs:prismalic_neutron_reflector'], 
         ['gtceu:neutrindium_soldering_alloy 17280','gtceu:pure_dragon_breath 22500'], 
         ['gtceu:kaleidoscopic_fractalizer'], 
-        1200, 500, 500 * 1200, GTValues.VA[GTValues.UIV], 'gtceu:injection_mixer');
+        1200, 500, 500 * 1200, GTValues.VA[GTValues.UIV], 'gtceu:cyclonic_sifter');
 
-    event.recipes.gtceu.assembly_line(id('particle_rod_holder'))
-        .itemInputs('gtceu:draco_abyssal_frame', '4x #gtceu:circuits/uxv', '4x gtceu:hvga_steel_ultradense_plate','2x kubejs:runic_wave_generator',
-            '96x kubejs:uipic_chip','16x gtceu:uiv_field_generator')
-        .inputFluids('gtceu:neutrindium_soldering_alloy 122688','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 81792')
-        .itemOutputs('kubejs:particle_rod_holder')
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('kubejs:laser_casing'))
-                .EUt(GTValues.VHA[GTValues.UIV])
-                .CWUt(324)
-            )
-        .duration(2400)
-        .EUt(GTValues.VHA[GTValues.UIV]);
+    // event.recipes.gtceu.assembly_line(id('particle_rod_holder'))
+    //     .itemInputs('gtceu:draco_abyssal_frame', '4x #gtceu:circuits/uxv', '4x gtceu:hvga_steel_ultradense_plate','2x kubejs:runic_wave_generator',
+    //         '96x kubejs:uipic_chip','16x gtceu:uiv_field_generator')
+    //     .inputFluids('gtceu:neutrindium_soldering_alloy 122688','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 81792')
+    //     .itemOutputs('kubejs:particle_rod_holder')
+    //     .stationResearch(
+    //         researchRecipeBuilder => researchRecipeBuilder
+    //             .researchStack(Item.of('kubejs:laser_casing'))
+    //             .EUt(GTValues.VHA[GTValues.UIV])
+    //             .CWUt(324)
+    //         )
+    //     .duration(2400)
+    //     .EUt(GTValues.VHA[GTValues.UIV]);
 
-    event.recipes.gtceu.assembly_line(id('riftion_injection_core'))
-        .itemInputs('gtceu:hvga_steel_frame', '24x #gtceu:circuits/uiv','4x kubejs:runic_wave_generator','4x gtceu:uiv_field_generator')
-        .inputFluids('gtceu:neutrindium_soldering_alloy 70848','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 47232')
-        .itemOutputs('kubejs:riftion_injection_core')
-        .stationResearch(
-            researchRecipeBuilder => researchRecipeBuilder
-                .researchStack(Item.of('kubejs:inscribe_casing'))
-                .EUt(GTValues.VHA[GTValues.UIV])
-                .CWUt(324)
-            )
-        .duration(900)
-        .EUt(GTValues.VHA[GTValues.UIV]);
+    // event.recipes.gtceu.assembly_line(id('riftion_injection_core'))
+    //     .itemInputs('gtceu:hvga_steel_frame', '24x #gtceu:circuits/uiv','4x kubejs:runic_wave_generator','4x gtceu:uiv_field_generator')
+    //     .inputFluids('gtceu:neutrindium_soldering_alloy 70848','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 47232')
+    //     .itemOutputs('kubejs:riftion_injection_core')
+    //     .stationResearch(
+    //         researchRecipeBuilder => researchRecipeBuilder
+    //             .researchStack(Item.of('kubejs:inscribe_casing'))
+    //             .EUt(GTValues.VHA[GTValues.UIV])
+    //             .CWUt(324)
+    //         )
+    //     .duration(900)
+    //     .EUt(GTValues.VHA[GTValues.UIV]);
    
 });

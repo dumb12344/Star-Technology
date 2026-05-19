@@ -6,8 +6,9 @@ StartupEvents.registry('block', event => {
         .resistance(2)
         .soundType('wood')
         .transparent(true)
-        .defaultTranslucent() 
-        .requiresTool(false)
+        .defaultTranslucent()
+        .requiresTool(true)
+        .noValidSpawns(true)
         .tagBlock('mineable/axe')
         .tagBlock('minecraft:needs_stone_tool')
         .textureAll('kubejs:block/misc/meshblock');
@@ -23,6 +24,6 @@ StartupEvents.registry('block', event => {
         .hardness(1)
         .resistance(1)
         .soundType('metal')
-        .textureAll('kubejs:item/stargate/gate_items/worry');
+        .textureAll('kubejs:item/stargate/gate_items/misc/worry');
 
 });

@@ -9,11 +9,11 @@ global.not_hardmode(() => {
             'sand': 'minecraft:sand',
             'dust': 'exnihilosequentia:dust',
             'blackstone': 'exnihilosequentia:crushed_blackstone',
-            'netherrack': 'exnihilosequentia:crushed_netherrack',
-            'endstone': 'exnihilo:crushed_end_stone',
             'mud': 'minecraft:mud',
             'rooted_dirt': 'minecraft:rooted_dirt',
-            'mycelium': 'minecraft:mycelium'
+            'mycelium': 'minecraft:mycelium',
+            'gran': 'exnihilosequentia:crushed_granite',
+            'dior': 'exnihilosequentia:crushed_diorite'
         }
 
         const SievingRecipeHandler = {
@@ -109,8 +109,6 @@ global.not_hardmode(() => {
             }
         }
 
-
-
         const id = global.id;
         const dirt = 'minecraft:dirt';
         const gravel = 'minecraft:gravel';
@@ -118,8 +116,6 @@ global.not_hardmode(() => {
         const sand = 'minecraft:sand';
         const dust = 'exnihilosequentia:dust';
         const black = 'exnihilosequentia:crushed_blackstone'
-        const netherrack = 'exnihilosequentia:crushed_netherrack'
-        const endstone = 'exnihilo:crushed_end_stone'
         const mud = 'minecraft:mud'
         const rdirt = 'minecraft:rooted_dirt'
         const myc = 'minecraft:mycelium'
@@ -240,6 +236,29 @@ global.not_hardmode(() => {
             .add('minecraft:red_mushroom', .05)
             .add('minecraft:dirt', .5)
             .add('exnihilosequentia:mycelium_spores', .3)
+            // Pebbles
+            .input(csi.gran)
+            .add('exnihilosequentia:andesite_pebble', 0.05)
+            .add('exnihilosequentia:basalt_pebble', 0.05)
+            .add('exnihilosequentia:blackstone_pebble', 0.05)
+            .add('exnihilosequentia:calcite_pebble', 0.05)
+            .add('exnihilosequentia:deepslate_pebble', 0.05)
+            .add('exnihilosequentia:diorite_pebble', 0.05)
+            .add('exnihilosequentia:dripstone_pebble', 0.05)
+            .add('exnihilosequentia:granite_pebble', 0.05)
+            .add('exnihilosequentia:stone_pebble', 0.05)
+            .add('exnihilosequentia:tuff_pebble', 0.05)
+            .input(csi.dior)
+            .add('exnihilosequentia:andesite_pebble', 0.05)
+            .add('exnihilosequentia:basalt_pebble', 0.05)
+            .add('exnihilosequentia:blackstone_pebble', 0.05)
+            .add('exnihilosequentia:calcite_pebble', 0.05)
+            .add('exnihilosequentia:deepslate_pebble', 0.05)
+            .add('exnihilosequentia:diorite_pebble', 0.05)
+            .add('exnihilosequentia:dripstone_pebble', 0.05)
+            .add('exnihilosequentia:granite_pebble', 0.05)
+            .add('exnihilosequentia:stone_pebble', 0.05)
+            .add('exnihilosequentia:tuff_pebble', 0.05)
             .build(event);
 
         //Dirts

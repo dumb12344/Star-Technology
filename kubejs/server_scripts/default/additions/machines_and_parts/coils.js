@@ -29,21 +29,21 @@ global.not_hardmode(() => {
 
         // === Nichrome, RTM, HSS-G (T1 Insulators) === 
         event.recipes.gtceu.assembler(id('nichrome_coil_block'))
-            .itemInputs('8x gtceu:nichrome_double_wire','8x gtceu:stainless_steel_foil','4x gtceu:borosilicate_glas_foil')
+            .itemInputs('8x gtceu:nichrome_double_wire','8x gtceu:stainless_steel_foil','4x gtceu:borosilicate_glass_foil')
             .inputFluids('gtceu:aluminium 144')
             .itemOutputs('gtceu:nichrome_coil_block')
             .duration(400)
             .EUt(480);
 
         event.recipes.gtceu.assembler(id('rtm_alloy_coil_block'))
-            .itemInputs('8x gtceu:rtm_alloy_double_wire','8x gtceu:vanadium_steel_foil','8x gtceu:borosilicate_glas_foil')
+            .itemInputs('8x gtceu:rtm_alloy_double_wire','8x gtceu:vanadium_steel_foil','8x gtceu:borosilicate_glass_foil')
             .inputFluids('gtceu:nichrome 144')
             .itemOutputs('gtceu:rtm_alloy_coil_block')
             .duration(500)
             .EUt(1920);
         
         event.recipes.gtceu.assembler(id('hssg_coil_block'))
-            .itemInputs('8x gtceu:hssg_double_wire','8x gtceu:tungsten_carbide_foil','16x gtceu:borosilicate_glas_foil')
+            .itemInputs('8x gtceu:hssg_double_wire','8x gtceu:tungsten_carbide_foil','16x gtceu:borosilicate_glass_foil')
             .inputFluids('gtceu:tungsten 144')
             .itemOutputs('gtceu:hssg_coil_block')
             .duration(600)
