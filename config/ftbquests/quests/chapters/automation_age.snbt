@@ -349,12 +349,14 @@
 							value: "forge:lenses/light_blue"
 						}
 					}
+					optional_task: true
 					title: "{ftbquests.automation_age.cpu_chip.item_title}"
 					type: "item"
 				}
 				{
 					id: "1A1986FD48A7F1D5"
 					item: "gtceu:cpu_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1248,11 +1250,13 @@
 				{
 					id: "31DE2CEF7FC2AE07"
 					item: "gtceu:brown_glass_lens"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4C279F1227E00850"
 					item: "gtceu:mpic_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1376,11 +1380,13 @@
 				{
 					id: "3E6960F178BA0BF3"
 					item: "gtceu:yellow_glass_lens"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "4C83CA52492C81B0"
 					item: "gtceu:soc_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1522,6 +1528,7 @@
 				{
 					id: "53C362EB686FE9E5"
 					item: "gtceu:nano_cpu_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1567,11 +1574,13 @@
 				{
 					id: "25B0DF166BBC970A"
 					item: "gtceu:pink_glass_lens"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "2BFAF15BFD996818"
 					item: "gtceu:nor_memory_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1738,6 +1747,7 @@
 				{
 					id: "0805322CDFFA96C4"
 					item: "gtceu:hpic_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1981,11 +1991,13 @@
 				{
 					id: "78983E5E875409CA"
 					item: "gtceu:gray_glass_lens"
+					optional_task: true
 					type: "item"
 				}
 				{
 					id: "7A6C4F52309534F7"
 					item: "gtceu:nand_memory_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{

@@ -406,7 +406,7 @@
     );
 
     scene.idle(100);
-    scene.overlay().showText(80).text("Have fun exploring §5Abydos§r!");
+    scene.overlay().showText(80).text("Have fun exploring §eAbydos§r!");
     scene.idle(100);
   });
 

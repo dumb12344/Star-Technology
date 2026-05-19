@@ -103,4 +103,5 @@ ServerEvents.recipes(event => {
     event.remove({ input: /exnihilosequentia:.*_nugget/});
     event.remove({ input: Item.of('createdieselgenerators:mold')});
     event.remove({ output: 'createdieselgenerators:mold'});
+    event.remove({ id: /create:crushing\/.*horse_armor/});
 });

@@ -180,9 +180,8 @@ ServerEvents.recipes(event => {
     TurbineBlade('draco_abyssal','gtceu:void 720');
 
     event.recipes.gtceu.assembly_line(id('draco_abyssal_turbine_rotor'))
-        .itemInputs(
-            'gtceu:void_frame','kubejs:uiv_transmission_assembly','8x gtceu:draco_abyssal_turbine_blade','16x gtceu:fine_rhenium_super_composite_alloy_wire'
-        )
+        .itemInputs('gtceu:void_frame','kubejs:uiv_transmission_assembly','8x gtceu:draco_abyssal_turbine_blade',
+            '16x gtceu:fine_rhenium_super_composite_alloy_wire')
         .inputFluids('gtceu:tungsten_disulfide 15000','gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 1080')
         .itemOutputs(Item.of('gtceu:turbine_rotor', '{GT.PartStats:{Material:"gtceu:draco_abyssal"}}'))
         .duration(600)

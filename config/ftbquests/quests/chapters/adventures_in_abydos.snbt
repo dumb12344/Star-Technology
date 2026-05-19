@@ -547,13 +547,14 @@
 			}]
 			tasks: [
 				{
-					id: "132E31B87F79A4F1"
-					item: "kubejs:uepic_chip"
+					id: "46EB924BF05D6536"
+					item: "kubejs:uepic_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "46EB924BF05D6536"
-					item: "kubejs:uepic_wafer"
+					id: "132E31B87F79A4F1"
+					item: "kubejs:uepic_chip"
 					type: "item"
 				}
 			]
@@ -1513,11 +1514,19 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
-			tasks: [{
-				id: "2A3F83FB2817AD19"
-				item: "gtceu:highly_advanced_soc_wafer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2A3F83FB2817AD19"
+					item: "gtceu:highly_advanced_soc_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6407379F380AC0E5"
+					item: "gtceu:highly_advanced_soc"
+					type: "item"
+				}
+			]
 			x: 5.5d
 			y: -7.5d
 		}

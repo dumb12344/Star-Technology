@@ -3,11 +3,9 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('primordial_infusion', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
         .tooltips([ 
-            Text.translate("block.gtceu.draco_infusion.tooltip.0"),
-            Text.translate("block.gtceu.draco_infusion.tooltip.1"),
-            Text.translate("block.gtceu.draco_infusion.tooltip.2"),
             Text.translate("block.gtceu.draco_infusion.tooltip.3"),
-            Text.translate("block.gtceu.draco_infusion.tooltip.4")
+            Text.translate("block.gtceu.draco_infusion.tooltip.4"),
+            Text.translate("block.gtceu.draco_infusion.tooltip.5")
         ])
         .machine((holder) => new $StarTDraconicInfusionMachine(holder))
         .recipeType('draco_infusion')

@@ -17,7 +17,7 @@ StartupEvents.registry('block', event => {
             .texture('south', `kubejs:block/stargate/${gate}_stargate_block_${side}`)
             .texture('north', `kubejs:block/stargate/${gate}_stargate_block_${front}`);
 
-    }//possible moving these textures to a model ".model('modelpath')" would be a good thing, for helpers todo?
+    }
 
     // === ASG ===
     GateRingBlocks('ancient','ring','ring','ring');

@@ -2,14 +2,12 @@ ServerEvents.recipes(event => {
     const id = global.id;
 
     event.shaped('gtceu:industrial_fishery', [
-        'ABC',
-        'DEF',
+        'ABF',
+        'AEG',
         'BGF'
     ], {
         A: 'gtceu:tungsten_single_cable',
         B: '#gtceu:circuits/iv',
-        C: 'gtceu:iv_sensor',
-        D: 'gtceu:iv_field_generator',
         E: 'gtceu:iv_fisher',
         F: 'gtceu:iv_robot_arm',
         G: 'gtceu:iv_electric_pump',

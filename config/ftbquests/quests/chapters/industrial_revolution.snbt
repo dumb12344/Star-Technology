@@ -1037,6 +1037,7 @@
 				item: "kubejs:coin"
 				type: "item"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "327430270A92C05F"
 				item: "gtceu:pyrolyse_oven"
@@ -1107,12 +1108,14 @@
 							value: "forge:lenses/red"
 						}
 					}
+					optional_task: true
 					title: "{ftbquests.industrial_revolution.ilc_chip.title}"
 					type: "item"
 				}
 				{
 					id: "1232D48FFF388B69"
 					item: "gtceu:ilc_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1148,12 +1151,14 @@
 							value: "forge:lenses/blue"
 						}
 					}
+					optional_task: true
 					title: "{ftbquests.industrial_revolution.ulpic_chip.item_title}"
 					type: "item"
 				}
 				{
 					id: "393AAA5C3FAFC495"
 					item: "gtceu:ulpic_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
@@ -1737,12 +1742,14 @@
 							value: "forge:lenses/green"
 						}
 					}
+					optional_task: true
 					title: "{ftbquests.industrial_revolution.ram_chips.item_title}"
 					type: "item"
 				}
 				{
 					id: "0244C45E0905E9B9"
 					item: "gtceu:ram_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{

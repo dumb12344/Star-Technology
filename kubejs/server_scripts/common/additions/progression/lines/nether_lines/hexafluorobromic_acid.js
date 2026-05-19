@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     const id = global.id;
 
-    const CR = event.recipes.gtceu.large_chemical_reactor || event.recipes.gtceu.chemical_reactor
+    const CR = event.recipes.gtceu.chemical_reactor //autogens LCR
 
         CR(id('bromine_pentafluoride'))
             .inputFluids('gtceu:bromine 2000', 'gtceu:fluorine 10000')

@@ -15,8 +15,8 @@
 			linked_quest: "439D8AE6D3DC41AF"
 			shape: "gear"
 			size: 1.5d
-			x: 4.5d
-			y: 7.0d
+			x: 4.0d
+			y: 6.5d
 		}
 		{
 			id: "427772AB7DFDCDFA"
@@ -35,8 +35,8 @@
 			linked_quest: "0AB3A8C14C3A0512"
 			shape: "gear"
 			size: 1.5d
-			x: 6.0d
-			y: 1.5d
+			x: 4.0d
+			y: 2.0d
 		}
 	]
 	quests: [
@@ -1630,7 +1630,7 @@
 				}
 			]
 			title: "{ftbquests.resource_production.sulfuric_heavy_fuel.title}"
-			x: 6.5d
+			x: 6.0d
 			y: 3.5d
 		}
 		{
@@ -1658,8 +1658,8 @@
 				}
 			]
 			title: "{ftbquests.resource_production.sulfuric_light_fuel.title}"
-			x: 7.5d
-			y: 4.0d
+			x: 7.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["307FA3025E294979"]
@@ -1686,8 +1686,8 @@
 				}
 			]
 			title: "{ftbquests.resource_production.sulfuric_naptha.title}"
-			x: 8.5d
-			y: 4.5d
+			x: 8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["307FA3025E294979"]
@@ -1714,8 +1714,8 @@
 				}
 			]
 			title: "{ftbquests.resource_production.sulfuric_gas.title}"
-			x: 9.5d
-			y: 5.0d
+			x: 9.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5B257F1A37D54D75"]
@@ -1773,7 +1773,7 @@
 			]
 			title: "{ftbquests.resource_production.light_fuel.title}"
 			x: 7.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["1102B794BA4446CF"]
@@ -1802,7 +1802,7 @@
 			]
 			title: "{ftbquests.resource_production.naphtha.title}"
 			x: 8.0d
-			y: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5AB4194223AAE768"]
@@ -1831,7 +1831,7 @@
 			]
 			title: "{ftbquests.resource_production.refinery_gas.title}"
 			x: 9.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -1849,7 +1849,7 @@
 				title: "{ftbquests.resource_production.steam_cracking.title}"
 				type: "checkmark"
 			}]
-			x: 7.0d
+			x: 8.0d
 			y: 6.5d
 		}
 		{
@@ -1868,8 +1868,8 @@
 				title: "{ftbquests.resource_production.hydro_cracking.title}"
 				type: "checkmark"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 7.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
@@ -1928,8 +1928,8 @@
 				}
 			]
 			title: "{ftbquests.resource_production.oil_production.title}"
-			x: 8.5d
-			y: 3.0d
+			x: 7.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
@@ -1982,7 +1982,7 @@
 				}
 			]
 			x: 3.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0AB3A8C14C3A0512"]
@@ -2068,7 +2068,7 @@
 				}
 			]
 			x: 2.5d
-			y: 5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["439D8AE6D3DC41AF"]
@@ -2191,8 +2191,8 @@
 				title: "{ftbquests.resource_production.hydrocarbons.title}"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 9.5d
+			x: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["22BC7BDE5E132A30"]
@@ -2371,7 +2371,7 @@
 					type: "checkmark"
 				}
 			]
-			x: 0.5d
+			x: 0.0d
 			y: 8.0d
 		}
 		{
@@ -2471,7 +2471,7 @@
 						]
 					}
 				}
-				title: "{ftbquests.automation_age.drilling_rig.title}"
+				title: "{ftbquests.resource_production.drilling_rig.title}"
 				type: "item"
 			}]
 			title: "{ftbquests.resource_production.drilling_rig.title}"

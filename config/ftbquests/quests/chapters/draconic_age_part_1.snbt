@@ -966,11 +966,19 @@
 				type: "item"
 			}]
 			size: 1.0d
-			tasks: [{
-				id: "096716469F4806A5"
-				item: "kubejs:draco_advanced_soc_wafer"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "096716469F4806A5"
+					item: "kubejs:draco_advanced_soc_wafer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7684F69F462F6565"
+					item: "kubejs:draco_advanced_soc"
+					type: "item"
+				}
+			]
 			x: 5.5d
 			y: -7.0d
 		}
@@ -1095,13 +1103,14 @@
 			size: 1.0d
 			tasks: [
 				{
-					id: "14D8819BD3B9A996"
-					item: "kubejs:uipic_chip"
+					id: "471872EA9404A875"
+					item: "kubejs:uipic_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "471872EA9404A875"
-					item: "kubejs:uipic_wafer"
+					id: "14D8819BD3B9A996"
+					item: "kubejs:uipic_chip"
 					type: "item"
 				}
 			]

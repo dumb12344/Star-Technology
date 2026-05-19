@@ -4,7 +4,7 @@ ServerEvents.recipes (event => {
     // === Rimula ===
     event.recipes.gtceu.rimula_extraction(id('riftion'))
         .chancedInput('kubejs:runic_wave_generator', 10, -1)
-        .inputFluids('gtceu:kaleidoscope_agitation_serum 625000')
+        .inputFluids('gtceu:kaleidoscope_agitation_serum 1250')
         .outputFluids('gtceu:riftion_extract 128000')
         .outputFluids('gtceu:highly_unstable_rift_source 27500')
         .duration(1800)
@@ -14,7 +14,7 @@ ServerEvents.recipes (event => {
     // === Magmatic ===
     event.recipes.gtceu.magmatic_drill(id('abydos'))
         .notConsumable('minecraft:sand')
-        .inputFluids('gtceu:kaleidoscope_agitation_serum 250')
+        .inputFluids('gtceu:kaleidoscope_agitation_serum 25')
         .itemOutputsRanged('gtceu:zapolite_dust', 0, 8192)
         .itemOutputsRanged('gtceu:celestine_dust', 0, 3072)
         .itemOutputsRanged('gtceu:scheelite_dust', 0, 3072)
@@ -34,7 +34,7 @@ ServerEvents.recipes (event => {
 
     event.recipes.gtceu.magmatic_drill(id('nether'))
         .notConsumable('minecraft:netherrack')
-        .inputFluids('gtceu:kaleidoscope_agitation_serum 250')
+        .inputFluids('gtceu:kaleidoscope_agitation_serum 50')
         .itemOutputsRanged('gtceu:netherrack_dust', 0, 128)
         .itemOutputsRanged('gtceu:atomic_nether_sludge_dust', 0, 96)
         .itemOutputsRanged('gtceu:estaltadyne_dust', 0, 64)

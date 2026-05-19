@@ -1142,6 +1142,7 @@
 				{
 					id: "4569F8A976468DF1"
 					item: "gtceu:uhpic_wafer"
+					optional_task: true
 					type: "item"
 				}
 				{

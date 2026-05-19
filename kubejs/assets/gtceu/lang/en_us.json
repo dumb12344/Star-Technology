@@ -22,7 +22,7 @@
 
     "block.gtceu.abyssal_akreyriadix_stabiliser": "Abyssal Akreyriadix Stabiliser [AAS]",
     "block.gtceu.abyssal_akreyriadix_stabiliser.tooltip.0": "§6§lBoosted Akreyrium Processor",
-    "block.gtceu.abyssal_akreyriadix_stabiliser.tooltip.1": "wip tooltip",
+    "block.gtceu.abyssal_akreyriadix_stabiliser.tooltip.1": "§7An evolved device designed to recombine Akreyriadic Materials. By folding the distinct variantions of Akreyrium through a precise stabilization matrixes, a highly refined and pure version of Akreyriadic Materials can be obtained.",
     "gtceu.abyssal_akreyriadix_stabiliser": "Abyssal Akreyriadix Stabilisation",
 
     "block.gtceu.gate_assembly.tooltip.0": "§7A forge powerful enough to fuse together the parts of a stargate into one.",
@@ -845,7 +845,7 @@
     "gtceu.draco_infusion": "§dDraconic Infusion",
     "block.gtceu.draco_infusion": "§dDraconic Infusion Array [DIA]",
     "block.gtceu.draco_infusion.tooltip.0": "§5§lMystical Enhancement and Awakening",
-    "block.gtceu.draco_infusion.tooltip.1": "§7A mystic convergence of abyssal energies, channeling primal draconic forces to awaken and enhance matter at a fundamental level. It transforms the ordinary into the extraordinary through ritualistic infusion with a catalyst.",
+    "block.gtceu.draco_infusion.tooltip.1": "§7A mystic convergence of abyssal energies, channeling primal draconic forces to awaken and enhance matter at a fundamental level. It transforms the ordinary into the extraordinary through ritualistic infusion.",
     "block.gtceu.draco_infusion.tooltip.2": "§8-----------------------------------",
     "block.gtceu.draco_infusion.tooltip.3": "§6Ritual Placement:",
     "block.gtceu.draco_infusion.tooltip.4": "§7The items must be correctly placed as shown in the recipe in the input buses of the Draconic Infusion Array from the perspective of the player facing the controller.",
@@ -853,7 +853,7 @@
 
     "block.gtceu.primordial_infusion": "§5Primordial Infusion Array [PIA]",
     "block.gtceu.primordial_infusion.tooltip.0": "§6§lBoosted Draconic Infusion Array",
-    "block.gtceu.primordial_infusion.tooltip.1": "wip tooltip",
+    "block.gtceu.primordial_infusion.tooltip.1": "§7A mystic convergence of draconic energies, channeling primal voidic forces to awaken and enhance matter at a fundamental level. It transforms the ordinary into the extraordinary through ritualistic infusion.",
 
     "block.gtceu.mega_abs": "Hellfire Alloy Materializer [HAM]",
     "block.gtceu.mega_abs.tooltip.0": "§c§lParallel Alloy Blast Smelter",
@@ -863,15 +863,11 @@
     "block.gtceu.ultimate_ebf.tooltip.0": "§c§lBoosted Rotary Hearth Furnace",
     "block.gtceu.ultimate_ebf.tooltip.1": "§7A blazing forge energized with extreme heating fluids and concentrations layering complex integrations of thermodynamic in syncrosis.",
     "block.gtceu.ultimate_ebf.tooltip.2": "§8-----------------------------------",
-    "block.gtceu.ultimate_ebf.tooltip.3": "§6Coil Overclocking:",
-    "block.gtceu.ultimate_ebf.tooltip.4": "§7For every §f900K§7 above the recipe temperature, a multiplicative §f95%%§7 energy multiplier is applied pre-overclocking.",
-    "block.gtceu.ultimate_ebf.tooltip.5": "§7For every §f1800K§7 above the recipe temperature, one overclock becomes §f100%% efficient§7 (perfect overclock).",
-    "block.gtceu.ultimate_ebf.tooltip.6": "§7For every voltage tier above §bMV§7, temperature is increased by §f100K§7.",
-    "block.gtceu.ultimate_ebf.tooltip.7": "§8-----------------------------------",
 
     "block.gtceu.ultimate_abs": "Limitless Overactive Alloy Fuser [LOAF]",
     "block.gtceu.ultimate_abs.tooltip.0": "§c§lBoosted Hellfire Alloy Materializer",
-    "block.gtceu.ultimate_abs.tooltip.1": "wip tooltip",
+    "block.gtceu.ultimate_abs.tooltip.1": "§7A ascended forge powered by extreme heating fluids and concentrations layering complex integrations of thermodynamic in syncrosis beyond thermostable bounds.",
+    "block.gtceu.ultimate_abs.tooltip.2": "§8-----------------------------------",
 
     "block.gtceu.supreme_plasma_turbine": "Supreme Plasma Turbine [SPT]",
     "block.gtceu.supreme_plasma_turbine.top.0": "§3§lBoosted Large Plasma Turbine",
@@ -1373,44 +1369,44 @@
     "material.gtceu.aquariadic_rimuli_dragonix": "Aquariadic Rimuli-Dragonix",
 
     "block.gtceu.kaleidoscopic_fractalizer": "Kaleidoscopic Fractalizer [KF]",
-    "block.gtceu.kaleidoscopic_fractalizer.tooltip.0": "wip toolip",
+    "block.gtceu.kaleidoscopic_fractalizer.tooltip.0": "§7Through the intense ramming of Riftions together properly infuses materials so they are in a unique and useable state.",
     "gtceu.kaleidoscopic_fractalizer": "Kaleidoscopic Fractalization",
 
     "block.gtceu.riftion_accelerator": "Riftion Accelerator [RA]",
-    "block.gtceu.riftion_accelerator.tooltip.0": "wip toolip",
+    "block.gtceu.riftion_accelerator.tooltip.0": "§7Accelerate plasma to immense speeds only to smash it into ultradense material to split into various permutations.",
     "gtceu.riftion_accelerator": "Riftion Acceleration",
 
     "block.gtceu.riftion_injector": "Riftion Injector [RI]",
-    "block.gtceu.riftion_injector.tooltip.0": "wip toolip",
+    "block.gtceu.riftion_injector.tooltip.0": "§7Infuse materials with physics beyond this realm.",
     "gtceu.riftion_injector": "Riftion Injection",
 
     "block.gtceu.riftion_slammer": "Riftion Slammer [RSl]",
-    "block.gtceu.riftion_slammer.tooltip.0": "wip toolip",
+    "block.gtceu.riftion_slammer.tooltip.0": "§7Slam riftions together to manipulate there state of being.",
     "gtceu.riftion_slammer": "Riftion Smashing",
 
     "block.gtceu.magmatic_drilling_module": "Magmatic Drilling Unit [MDU]",
-    "block.gtceu.magmatic_drilling_module.tooltip.0": "wip tooltip",
-    "block.gtceu.magmatic_drilling_module.tooltip.1": "K.O.M.A.R.U Module Tier: Basic",
+    "block.gtceu.magmatic_drilling_module.tooltip.0": "§7Extract Magmatic Byproducts from the Rift.",
+    "block.gtceu.magmatic_drilling_module.tooltip.1": "K.O.M.A.R.U Module Tier: §bBasic",
     "gtceu.magmatic_drill": "Magmatic Drilling",
 
     "block.gtceu.voidic_refinement_module": "Voidic Refinement Unit [VRU]",
-    "block.gtceu.voidic_refinement_module.tooltip.0": "wip tooltip",
-    "block.gtceu.voidic_refinement_module.tooltip.1": "K.O.M.A.R.U Module Tier: Basic",
+    "block.gtceu.voidic_refinement_module.tooltip.0": "§7Extract Voidic Byproducts from the Rift.",
+    "block.gtceu.voidic_refinement_module.tooltip.1": "K.O.M.A.R.U Module Tier: §bBasic",
     "gtceu.voidic_refinement": "Voidic Refinement",
 
     "block.gtceu.rimula_extraction_module": "Rimula Extraction Unit [RmEU]",
-    "block.gtceu.rimula_extraction_module.tooltip.0": "wip tooltip",
-    "block.gtceu.rimula_extraction_module.tooltip.1": "K.O.M.A.R.U Module Tier: Basic",
+    "block.gtceu.rimula_extraction_module.tooltip.0": "§7Extract Rifitc Materials from their Origin.",
+    "block.gtceu.rimula_extraction_module.tooltip.1": "K.O.M.A.R.U Module Tier: §bBasic",
     "gtceu.rimula_extraction": "Rimula Extraction",
 
     "block.gtceu.riftic_infusion_assembly_module": "Riftic Infusion Assemblying Unit [RIA]",
-    "block.gtceu.riftic_infusion_assembly_module.tooltip.0": "wip tooltip",
-    "block.gtceu.riftic_infusion_assembly_module.tooltip.1": "K.O.M.A.R.U Module Tier: Advanced",
+    "block.gtceu.riftic_infusion_assembly_module.tooltip.0": "§7Assemble parts and machines using the immense energy of the rift.",
+    "block.gtceu.riftic_infusion_assembly_module.tooltip.1": "K.O.M.A.R.U Module Tier: §6Advanced",
     "gtceu.riftic_infusion_assembly": "Riftic Infusion Assembly",
 
     "block.gtceu.riftic_enhancement_module": "Riftic Enhancing Unit [RfEU]",
-    "block.gtceu.riftic_enhancement_module.tooltip.0": "wip tooltip",
-    "block.gtceu.riftic_enhancement_module.tooltip.1": "K.O.M.A.R.U Module Tier: Advanced",
+    "block.gtceu.riftic_enhancement_module.tooltip.0": "§7Enhance materials and components using the power of the rift to new and enlightened states of being.",
+    "block.gtceu.riftic_enhancement_module.tooltip.1": "K.O.M.A.R.U Module Tier: §6Advanced",
     "gtceu.riftic_enhancement": "Riftic Enhancement",
 
     "block.gtceu.limitless_smelter": "Limitless Smelter [LSm]",
@@ -1424,12 +1420,12 @@
     "gtceu.supreme_chemistry": "Supreme Chemistry Sythesis",
 
     "block.gtceu.titan_forge": "Titan Forge [TF]",
-    "block.gtceu.titan_forge.tooltip.0": "wip tooltip",
+    "block.gtceu.titan_forge.tooltip.0": "§7A forge capable of molding materials into ultra condensed variations of themselves.",
     "gtceu.titan_forge": "Titan Forge",
 
     "block.gtceu.catto_shrine": "Catto Shrine [ᗢSh]",
-    "block.gtceu.catto_shrine.tooltip.0": "wip tooltip",
-    "block.gtceu.catto_shrine.tooltip.1": "make your offerings known",
+    "block.gtceu.catto_shrine.tooltip.0": "§7§o5 Hours Nyan Cat",
+    "block.gtceu.catto_shrine.tooltip.1": "§8§oMake your offerings known....",
     "gtceu.catto_shrine": "Catto Shrine"
 
 }

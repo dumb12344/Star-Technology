@@ -3,7 +3,7 @@ global.not_hardmode(() => {
     ServerEvents.recipes(event => {
         const id = global.id;
         
-        const CR = event.recipes.gtceu.chemical_reactor || event.recipes.gtceu.large_chemical_reactor ;
+        const CR = event.recipes.gtceu.chemical_reactor; //Autogens LCR
 
         //plastic boards
         [
@@ -20,34 +20,26 @@ global.not_hardmode(() => {
 
         // non-cleanroom etching with CuCl
         [
-            {board: 'phenolic', foil: 'silver', foil_count: 4, amount: 50, duration: 300, energy: 30},
-            {board: 'plastic', foil: 'copper', foil_count: 6, amount: 125, duration: 600, energy: 30},
-            {board: 'epoxy', foil: 'electrum', foil_count: 8, amount: 250, duration: 900, energy: 30}
+            {clean: 0, board: 'phenolic', foil: 'silver', foil_count: 4, amount: 50, duration: 300, energy: 30},
+            {clean: 0, board: 'plastic', foil: 'copper', foil_count: 6, amount: 125, duration: 600, energy: 30},
+            {clean: 0, board: 'epoxy', foil: 'electrum', foil_count: 8, amount: 250, duration: 900, energy: 30},
+            {clean: 1, board: 'fiber_reinforced', foil: 'annealed_copper', foil_count: 12, amount: 500, duration: 1200, energy: 30},
+            {clean: 1, board: 'multilayer_fiber_reinforced', foil: 'platinum', foil_count: 8, amount: 1000, duration: 1500, energy: 120},
+            {clean: 1, board: 'wetware', foil: 'niobium_titanium', foil_count: 16, amount: 2500, duration: 1800, energy: 480}
         ].forEach(type=>{
-            CR(id(`${type.board}_circuit_board_copper`))
+            let CuClBoard = CR(id(`${type.board}_circuit_board_copper`))
                 .itemInputs(`gtceu:${type.board}_circuit_board`, `${type.foil_count}x gtceu:${type.foil}_foil`)
                 .inputFluids(`gtceu:cupric_chloride_solution ${type.amount}`)
                 .itemOutputs(`gtceu:${type.board}_printed_circuit_board`)
                 .duration(type.duration)
                 .EUt(type.energy);
-            });
-    
-    
-        // cleanroom etching with CuCl
-        [
-            {board: 'fiber_reinforced', foil: 'annealed_copper', foil_count: 12, amount: 500, duration: 1200, energy: 30},
-            {board: 'multilayer_fiber_reinforced', foil: 'platinum', foil_count: 8, amount: 1000, duration: 1500, energy: 120},
-            {board: 'wetware', foil: 'niobium_titanium', foil_count: 16, amount: 2500, duration: 1800, energy: 480}
-        ].forEach(type=>{
-            CR(id(`${type.board}_circuit_board_copper`))
-                .itemInputs(`gtceu:${type.board}_circuit_board`, `${type.foil_count}x gtceu:${type.foil}_foil`)
-                .inputFluids(`gtceu:cupric_chloride_solution ${type.amount}`)
-                .itemOutputs(`gtceu:${type.board}_printed_circuit_board`)
-                .cleanroom(CleanroomType.CLEANROOM)
-                .duration(type.duration)
-                .EUt(type.energy);
-            });
 
+            if(type.clean){
+                CuClBoard.cleanroom(CleanroomType.CLEANROOM)
+            }
+
+        });
+    
         event.remove({output: 'gtceu:wetware_printed_circuit_board'});
         CR(id(`wetware_circuit_board_iron3`))
             .itemInputs(`gtceu:wetware_circuit_board`, `12x gtceu:niobium_titanium_foil`)
@@ -71,15 +63,15 @@ global.not_hardmode(() => {
             {board: 'abyssal', foil: 'polonium_bismide', foil_count: 32, amount: 20000, duration: 2700, energy: 30720}
         ].forEach(type=> {
             [
-            {id: 'copper', name: 'cupric_chloride_solution', multiplier: 1},
-            {id: 'iron', name: 'iron_iii_chloride', multiplier: 2},
-            {id: 'sodium', name: 'sodium_persulfate', multiplier: 4}
+                {id: 'copper', name: 'cupric_chloride_solution', multiplier: 1},
+                {id: 'iron', name: 'iron_iii_chloride', multiplier: 2},
+                {id: 'sodium', name: 'sodium_persulfate', multiplier: 4}
             ].forEach(fluid => {
                 CR(id(`${type.board}_circuit_board_${fluid.id}`))
                     .itemInputs(`kubejs:${type.board}_circuit_board`, `${type.foil_count}x gtceu:${type.foil}_foil`)
                     .inputFluids(`gtceu:${fluid.name} ${type.amount*fluid.multiplier}`)
                     .itemOutputs(`kubejs:${type.board}_printed_circuit_board`)
-                    .cleanroom(CleanroomType.CLEANROOM)
+                    .cleanroom(CleanroomType.STERILE_CLEANROOM)
                     .duration(type.duration)
                     .EUt(type.energy); 
             });

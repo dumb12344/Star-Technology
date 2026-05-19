@@ -2,8 +2,8 @@ ServerEvents.recipes(event => {
     const id = global.id;
 
     event.remove('gtceu:distillation_tower/distill_coal_tar');
-    event.remove('gtceu:mixer/rocket_fuel_from_oxygen');
-    event.remove('gtceu:mixer/rocket_fuel_from_dinitrogen_tetroxide');
+    // event.remove('gtceu:mixer/rocket_fuel_from_oxygen');
+    // event.remove('gtceu:mixer/rocket_fuel_from_dinitrogen_tetroxide');
     event.remove('gtceu:combustion_generator/rocket_fuel');
 
     event.recipes.gtceu.distillation_tower(id('distill_coal_tar'))
@@ -118,10 +118,15 @@ ServerEvents.recipes(event => {
         .outputFluids('gtceu:ferrocenium_superoxide 1000')
         .duration(200)
         .EUt(GTValues.VA[GTValues.ZPM]);
+    
+    event.recipes.gtceu.modular_rocket_module(id('rocket_fuel'))
+        .inputFluids('gtceu:rocket_fuel 1')
+        .duration(160)
+        .EUt(-32);
 
     event.recipes.gtceu.modular_rocket_module(id('rp_1'))
         .inputFluids('gtceu:rp_1 1')
-        .duration(200)
+        .duration(240)
         .EUt(-32);
 
     event.recipes.gtceu.modular_rocket_module(id('monomethylhydrazine'))
@@ -131,6 +136,6 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.modular_rocket_module(id('sorbitol_hypergolic_fuel'))
         .inputFluids('gtceu:sorbitol_hypergolic_fuel 1')
-        .duration(600)
+        .duration(640)
         .EUt(-32);
 });

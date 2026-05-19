@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
             .inputFluids('gtceu:runic_convergence_infusion 12500')
             .next()
             .itemInputs('kubejs:activated_stargate_rod','gtceu:americium_wire_spool')
-            .inputFluids('gtceu:runic_convergence_infusion 12500')
+            .inputFluids('gtceu:utopian_akreyrium 2500')
             .next()
             .itemInputs('gtceu:long_void_rod','gtceu:prismalium_wire_spool')
             .inputFluids('gtceu:runic_convergence_infusion 12500')

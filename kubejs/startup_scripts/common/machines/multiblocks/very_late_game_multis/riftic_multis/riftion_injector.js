@@ -46,11 +46,11 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             .where('F', Predicates.blocks('kubejs:nyanium_pipe_casing'))
             .where('G', Predicates.blocks('start_core:advanced_fusion_coil'))
             .where('H', Predicates.blocks('kubejs:draco_resilient_fusion_glass'))
-            .where('I', Predicates.blocks('kubejs:riftion_injection_core'))
+            .where('I', Predicates.blocks('kubejs:core_casing'))
             .where('J', Predicates.blocks('kubejs:nyanium_gearbox'))
             .where('@', Predicates.controller(Predicates.blocks(definition.get())))
             .build())
         .workableCasingModel('kubejs:block/casings/threading/gravitationally_strained_stabilization_casing',
-            'kubejs:block/multiblock/riftion/injector');
+            'gtceu:block/multiblock/hpca');
         
 });

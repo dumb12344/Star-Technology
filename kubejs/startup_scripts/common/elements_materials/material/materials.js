@@ -1855,8 +1855,18 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     compLiquid('prismatic_hypergurmalium', ['1x riftic','1x faetic'], 0x4fdfff, [no_decomp]);
 
     //DSG
-    compIngotLiquidSecColor('raging_rimulatia',['1x rifitc','1x draco_abyssal','1x riftic'],0xe357f2,0x163f5e,SHINY,'',[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, fine_wire])
+    // compIngotLiquidSecColor('raging_rimulatia',['1x rifitc','1x draco_abyssal','1x riftic'],0xe357f2,0x163f5e,SHINY,'',[plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, fine_wire])
     
+    event.create('raging_rimulatia') //Shadowyrm
+        .components('1x rifitc','1x draco_abyssal','1x riftic')
+        .ingot()
+        .fluid()
+        .color(0xe357f2)
+        .secondaryColor(0x163f5e)
+        .iconSet(SHINY)
+        .flags(plates, frame, rod, bolt_and_screw, dense_plate, long_rod, gear, small_gear, no_decomp, fine_wire)
+        .rotorStats(14400, 500, 100, 96000);
+
     event.create('primordially_stellarized_weapon_grade_naquadah')
         .components('1x voidic','157x stellarized_weapon_grade_naquadah','1x voidic')
         .ingot()

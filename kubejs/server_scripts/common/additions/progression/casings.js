@@ -300,6 +300,9 @@ ServerEvents.recipes(event => {
 
     special_ultimate_casing('abyssal_inductor',['gtceu:uiv_emitter', '3x gtceu:lepton_resonant_thallium_antimonide_spring', '6x gtceu:draco_abyssal_screw', '6x gtceu:polonium_bismide_single_cable'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 720', 'gtceu:borealic_concentrate 576'], 'gtceu:blacklight');
 
+    special_ultimate_casing('primordial_assembly_grating',['gtceu:draco_abyssal_frame', '5x gtceu:abyssal_alloy_rotor', '2x gtceu:uiv_electric_motor', '12x gtceu:draconyallium_foil'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 3024', 'gtceu:pure_dragon_breath 875'], 'kubejs:draco_assembly_grating');
+    special_ultimate_casing('primordial_ware_casing',['gtceu:draconyallium_frame', '16x kubejs:draconic_brain_matter_cells', '2x #gtceu:circuits/uiv', 'gtceu:uiv_sensor', '32x gtceu:fine_rhenate_w_wire', '32x gtceu:fine_draco_abyssal_wire'], ['gtceu:poly_34_ethylenedioxythiophene_polystyrene_sulfate 3024', 'gtceu:dragon_breath 1000'], 'kubejs:draco_ware_casing');
+    
     event.recipes.gtceu.assembler(id('tritanic_blasting_casing'))
         .itemInputs('6x gtceu:tritan_steel_plate', 'gtceu:naquadah_alloy_frame')
         .itemOutputs('2x kubejs:tritanic_blasting_casing')
