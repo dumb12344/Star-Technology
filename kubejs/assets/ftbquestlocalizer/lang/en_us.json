@@ -250,7 +250,7 @@
     "ftbquests.automation_age.ev_energy_input_hatch_4a.description": "This hatch can do something called Speed Overclocking.\n\nA Speed Overclock is a special kind of Overclocking, that makes your machine run recipes at the next tier of voltage.\n\nHowever, unlike normal Overclock, it will not make the machine be able to do recipes at that higher tier.\n\nAs an example, a 4A §5EV§r Hatch will let a machine run at §9IV§r speed, but only do §5EV§r or lower recipes.",
     "ftbquests.automation_age.ev_machine_hull.description": "The heart of every §5EV§r machine.",
     "ftbquests.automation_age.ev_upgrade_kit.description": "Will increase the power of anything thermal by 48x. This is the final Upgrade Kit you can make for them.",
-    "ftbquests.automation_age.graphene_dust.description": "Carbon Nanotubes",
+    "ftbquests.automation_age.graphene_dust.description": "Super strong sheets of carbon",
     "ftbquests.automation_age.hpic_chip.description": "This Chip is used in both §9IV§r and §dLuV§r Energy Hatches and Transformers as well as Assembly Line Casings.",
     "ftbquests.automation_age.hpic_chip.title": "HPIC Chips",
     "ftbquests.automation_age.hsse_ingot.description": "A more malleable HSS.",
