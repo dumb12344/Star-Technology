@@ -1,3 +1,4 @@
+//requires: pipez
 global.not_hardmode(() => {
 
     ServerEvents.recipes(event => {
