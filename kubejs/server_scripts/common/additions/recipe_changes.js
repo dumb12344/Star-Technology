@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
     });
 
     ['iron','steel','neodymium','samarium','zapolgium','pure_netherite','holmium'].forEach(Magnetic=>{
-    event.remove({id: `gtceu:alloy_smelter/alloy_smelt_magnetic_${Magnetic}_dust_to_block`});
+        event.remove({id: `gtceu:alloy_smelter/alloy_smelt_magnetic_${Magnetic}_dust_to_block`});
     });
 
     // Mycelium Leather
@@ -224,7 +224,6 @@ ServerEvents.recipes(event => {
         .itemInputs('gtceu:silicon_dioxide_dust')
         .inputFluids('gtceu:echo_r 144')
         .itemOutputs('gtceu:echo_shard_dust')
-        .circuit(1)
         .duration(160)
         .EUt(GTValues.VA[GTValues.ZPM]);
 
