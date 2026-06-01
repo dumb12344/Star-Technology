@@ -1456,6 +1456,7 @@
 			optional: true
 			rewards: [{
 				command: "/gamerule doDaylightCycle false"
+				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "3EB38A984CAA9456"
 				title: "{ftbquests.shop.disable_daylight_cycle.title}"
@@ -1479,6 +1480,7 @@
 			optional: true
 			rewards: [{
 				command: "/gamerule doWeatherCycle false"
+				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "5AE2822D8BC289FE"
 				title: "{ftbquests.shop.disable_weather_cycle.title}"
@@ -1502,6 +1504,7 @@
 			optional: true
 			rewards: [{
 				command: "/gamerule doDaylightCycle true"
+				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "4FB40FA2C1F1AE47"
 				title: "{ftbquests.shop.enable_daylight_cycle.title}"
@@ -1555,6 +1558,7 @@
 			optional: true
 			rewards: [{
 				command: "/gamerule doWeatherCycle true"
+				elevate_perms: true
 				icon: "ae2:singularity"
 				id: "095C9F5A75C8759E"
 				title: "{ftbquests.shop.enable_weather_cycle.title}"
